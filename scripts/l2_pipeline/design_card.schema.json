@@ -1,0 +1,443 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nes:l2-design-card:1",
+  "title": "L2 design card",
+  "description": "Readiness is earned by stages; a valid card is only intake.",
+  "type": "object",
+  "properties": {
+    "comparison_group": {
+      "enum": [
+        "never_treated",
+        "not_yet_treated"
+      ]
+    },
+    "design_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,119}$"
+    },
+    "policy_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mechanism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_scale": {
+      "enum": [
+        "rate",
+        "count"
+      ],
+      "default": "rate",
+      "description": "Prospective count-type outcomes default to population rates; exact frozen/finished cards retain their original measurement scale. Births use women in the declared age group per 1,000; mortality uses declared population per 100,000."
+    },
+    "outcome_transform": {
+      "enum": [
+        "level",
+        "log"
+      ],
+      "default": "level",
+      "description": "R3: level (default) or natural log of the registered catalog series (units log points). Registered at S0 before any outcome value is read; strictly positive series only; never changed afterwards."
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v[1-9][0-9]*$"
+    },
+    "track": {
+      "enum": [
+        "DiD",
+        "RDD",
+        "RCT"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "coverage_end": {
+            "type": "string",
+            "minLength": 1
+          },
+          "complete_list": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "source_id",
+          "url",
+          "locator",
+          "license"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "lineage": {
+      "type": "object",
+      "properties": {
+        "queue_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "screen_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_text_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "legal_instrument_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "queue_version",
+        "screen_version",
+        "source_text_ids"
+      ],
+      "additionalProperties": false
+    },
+    "population": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "filters": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "description",
+        "filters"
+      ],
+      "additionalProperties": false
+    },
+    "outcome": {
+      "type": "object"
+    },
+    "treatment": {
+      "type": "object"
+    },
+    "analysis": {
+      "type": "object"
+    },
+    "transition_year_drop": {
+      "type": "boolean",
+      "default": false,
+      "description": "V8b: omit each treated state's effective calendar year and begin treatment the following year; retain all never-treated years."
+    },
+    "sensitivities": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "automation": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "supersedes": {
+      "type": "string",
+      "minLength": 1
+    },
+    "first_order": {
+      "type": "object",
+      "description": "Optional for reading archival cards; mandatory for prospective S0/S4 readiness.",
+      "anyOf": [
+        {
+          "properties": {
+            "literature_refs": {
+              "minItems": 1
+            }
+          }
+        },
+        {
+          "properties": {
+            "purpose_route": {
+              "const": "statute"
+            },
+            "statute_refs": {
+              "minItems": 1
+            }
+          },
+          "required": [
+            "purpose_route"
+          ]
+        }
+      ],
+      "properties": {
+        "purpose_route": {
+          "enum": [
+            "statute",
+            "established_literature"
+          ]
+        },
+        "target_outcome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primary_outcome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relation": {
+          "enum": [
+            "direct",
+            "closest_proxy"
+          ]
+        },
+        "proxy_justification": {
+          "type": "string"
+        },
+        "statute_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ]
+          },
+          "minItems": 0
+        },
+        "literature_refs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ]
+          },
+          "minItems": 0
+        },
+        "availability": {
+          "enum": [
+            "available",
+            "unavailable"
+          ]
+        },
+        "secondary_outcomes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "outcome": {
+                "type": "string",
+                "minLength": 1
+              },
+              "role": {
+                "const": "secondary"
+              },
+              "connector": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "outcome",
+              "role",
+              "connector"
+            ]
+          }
+        },
+        "purpose_direction": {
+          "enum": [
+            -1,
+            0,
+            1,
+            null
+          ]
+        },
+        "purpose_direction_evidence": {
+          "anyOf": [
+            {
+              "type": "object"
+            },
+            {
+              "enum": [
+                null
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "target_outcome",
+        "primary_outcome",
+        "relation",
+        "statute_refs",
+        "literature_refs",
+        "availability",
+        "secondary_outcomes"
+      ]
+    },
+    "l3_export_v2": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "enum": [
+            "l2_addendum_v2_c64"
+          ]
+        }
+      },
+      "required": [
+        "schema"
+      ],
+      "additionalProperties": true
+    },
+    "l3_amendment_v2": {
+      "type": "object",
+      "description": "Prospective N13\u2013N16 blind metadata inputs. Complete source/coverage/coder validation occurs before the write-once C70 supplemental specification; missing input remains null.",
+      "properties": {
+        "statute_variant": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            {
+              "enum": [
+                null
+              ]
+            }
+          ]
+        },
+        "interruption_ledger": {
+          "anyOf": [
+            {
+              "type": "object"
+            },
+            {
+              "enum": [
+                null
+              ]
+            }
+          ]
+        },
+        "pub_ledger": {
+          "anyOf": [
+            {
+              "type": "object"
+            },
+            {
+              "enum": [
+                null
+              ]
+            }
+          ]
+        },
+        "pub_ledger_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "enum": [
+                null
+              ]
+            }
+          ]
+        },
+        "targets_file": {
+          "const": "data/l3_meta/replication_targets/TARGETS.json"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "version",
+    "design_id",
+    "policy_family",
+    "mechanism",
+    "track",
+    "unit",
+    "outcome_family",
+    "sources",
+    "lineage",
+    "population",
+    "outcome",
+    "treatment",
+    "analysis",
+    "sensitivities"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+*.log
+.work/
+# data is never committed: fetch it with the connectors, see DATA_MANIFEST.md
+/data/
+/deploy_output/
+*.dta
+*.sas7bdat
+*.zip
+*.parquet

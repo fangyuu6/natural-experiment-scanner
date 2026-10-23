@@ -1,0 +1,198 @@
+{
+ "stamp": {
+  "rule_id": "EX-1",
+  "plan_sha256": "1cbb13afe20025691b2ed3fb3311581751874e9fb587470d3d0d5989f6efa68a",
+  "run_utc": "2026-10-21T23:07:06Z",
+  "x6_results_sha256": "600336bf9bead9d6ccfae1a97139671d7018dec8ee3a23a1a160238103963808"
+ },
+ "result": {
+  "question": "Q3 need and gain",
+  "refresh": "data/l3_meta/refresh/20261021_r1",
+  "registered_slope": {
+   "n_designs": 50,
+   "n_series": 106,
+   "n_cells": 2526,
+   "beta": 0.33172359322587885,
+   "placebo_slope_mean": -0.2039405153735649,
+   "placebo_slope_sd": 0.135942465046451,
+   "excess": 0.5356641085994438,
+   "excess_in_null_sd": 3.940373660404124,
+   "p_two_sided": 0.0001,
+   "family_block_ci95": [
+    -0.04817886347985875,
+    0.5517107386602904
+   ],
+   "family_block_interval_excludes_null_mean": true,
+   "lag5": {
+    "beta": 0.1304395383492933,
+    "placebo_mean": -0.2671346301615468,
+    "excess": 0.39757416851084015,
+    "excess_in_null_sd": 3.165861042476102,
+    "p": 0.0021
+   },
+   "kappa_scaled": {
+    "beta": 0.25649887998230436,
+    "excess_in_null_sd": 3.3870166706079585,
+    "p": 0.001
+   },
+   "class_none": {
+    "feasible": true,
+    "n_cells": 722,
+    "n_series": 46,
+    "n_designs": 37,
+    "beta_observed": -0.1143155501044013,
+    "null_mean": -0.3135562668026252,
+    "null_sd": 0.22028754010205212,
+    "null_q05_q95": [
+     -0.6781994304224231,
+     0.049777657890143
+    ],
+    "excess": 0.1992407166982239,
+    "excess_in_null_sd": 0.9044574949900576,
+    "rank_p_two_sided": 0.362,
+    "pooled_correlation_z_G": -0.05701536542670006
+   },
+   "class_channel": {
+    "feasible": true,
+    "n_cells": 425,
+    "n_series": 44,
+    "n_designs": 36,
+    "beta_observed": 0.5813879528466074,
+    "null_mean": 0.010267273472112195,
+    "null_sd": 0.3121379022299379,
+    "null_q05_q95": [
+     -0.5092344234848356,
+     0.5231405559447894
+    ],
+    "excess": 0.5711206793744952,
+    "excess_in_null_sd": 1.8297062782006406,
+    "rank_p_two_sided": 0.0692,
+    "pooled_correlation_z_G": 0.21024188441371433
+   }
+  },
+  "earlier_run_r4": {
+   "n_designs": 28,
+   "beta": 0.262,
+   "placebo_slope_mean": -0.217,
+   "excess": 0.479,
+   "excess_in_null_sd": 2.7,
+   "p": 0.007
+  },
+  "leave_one_policy_family_out": {
+   "n": 34,
+   "excess_sd_min": 3.033697264218601,
+   "excess_sd_max": 4.216536578623823,
+   "slope_min": 0.20956246177203755,
+   "slope_max": 0.3730119709480295,
+   "sign_kept": true,
+   "lowest_when_dropping": "firearms"
+  },
+  "outcome_families_with_excess_ge_2sd": [
+   {
+    "outcome_family": "earnings_income",
+    "n_cells": 124,
+    "n_designs": 36,
+    "beta": 2.5845942422009047,
+    "placebo_mean": 0.3366868986734415,
+    "excess_in_null_sd": 4.147677724924248,
+    "p": 0.0001
+   },
+   {
+    "outcome_family": "public_finance",
+    "n_cells": 177,
+    "n_designs": 49,
+    "beta": 2.199427922994288,
+    "placebo_mean": 1.165160826904387,
+    "excess_in_null_sd": 3.122234049970752,
+    "p": 0.0022
+   },
+   {
+    "outcome_family": "births_fertility",
+    "n_cells": 103,
+    "n_designs": 43,
+    "beta": -0.06127207465449356,
+    "placebo_mean": -1.3105688012185739,
+    "excess_in_null_sd": 2.5427464890972455,
+    "p": 0.0122
+   }
+  ],
+  "outcome_families_n": 14,
+  "by_domain": {
+   "crime": {
+    "n_designs": 9,
+    "n_cells": 339,
+    "beta": 0.3774069144037242,
+    "placebo_mean": 0.05347404244183553,
+    "excess_in_null_sd": 0.9733934913572028,
+    "p": 0.3271
+   },
+   "health": {
+    "n_designs": 17,
+    "n_cells": 861,
+    "beta": 0.13161405414743454,
+    "placebo_mean": -0.20432019788464606,
+    "excess_in_null_sd": 1.4711354856955254,
+    "p": 0.1416
+   },
+   "other": {
+    "n_designs": 9,
+    "n_cells": 327,
+    "beta": 0.6226037806810628,
+    "placebo_mean": -0.2705719096204236,
+    "excess_in_null_sd": 2.3321057885446392,
+    "p": 0.0233
+   }
+  },
+  "domains_too_few": {
+   "environment": 4,
+   "public_finance": 4,
+   "labor": 5,
+   "education": 2
+  },
+  "design_level": {
+   "n_designs": 50,
+   "median_excess": 0.213661,
+   "share_positive": 0.86,
+   "mean_excess_z": 0.8886330966188164,
+   "approx_z_of_mean": 6.283584886059656,
+   "note": "designs share states, so the sqrt(n) scaling overstates; block bootstrap below is the guard",
+   "median_excess_family_block_ci95": [
+    0.135695525,
+    0.3002854249999964
+   ],
+   "one_vote_per_law": {
+    "n_laws": 40,
+    "median_excess": 0.1956845,
+    "share_positive": 0.825
+   },
+   "by_domain": {
+    "crime": {
+     "n": 9,
+     "median_excess": 0.19510300000000003,
+     "share_positive": 1.0
+    },
+    "education": "too few (2)",
+    "environment": "too few (4)",
+    "health": {
+     "n": 17,
+     "median_excess": 0.230918,
+     "share_positive": 0.9411764705882353
+    },
+    "labor": "too few (5)",
+    "other": {
+     "n": 9,
+     "median_excess": 0.26698500000000003,
+     "share_positive": 0.6666666666666666
+    },
+    "public_finance": "too few (4)"
+   }
+  },
+  "pattern_rule": {
+   "excess_ge_2sd": true,
+   "family_block_interval_excludes_placebo_mean": true,
+   "lag5_same_sign_and_excess_positive": true,
+   "leave_one_family_out_sign_kept": true
+  },
+  "pattern": true
+ }
+}

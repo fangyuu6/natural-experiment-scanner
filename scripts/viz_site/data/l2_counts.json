@@ -1,0 +1,25 @@
+{
+  "processed": 125,
+  "estimated": 48,
+  "not_evaluable": 77,
+  "pipeline_processed": 104,
+  "pipeline_estimated": 27,
+  "in_progress": 7,
+  "parked_unfinished": 6,
+  "stopped_after_run": 6,
+  "reportable": 42,
+  "as_of": "2026-10-11",
+  "snapshot_utc": "2026-10-11T20:45:03Z",
+  "gates": {
+    "support": 36,
+    "history": 12,
+    "connector": 15,
+    "ri": 5,
+    "fresh": 5,
+    "pre_run_stop": 2,
+    "other": 1,
+    "v3": 1
+  },
+  "source": "data/l2_pipeline/registry/SCOREBOARD_SNAPSHOT_20261011.json",
+  "source_sha256": "5f266a500e332fde28b92e063766a8580556a2b13e0e7e58fd629f7d3cd2062c"
+}

@@ -1,0 +1,526 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nes:l3-meta-metadata-v1",
+  "title": "Prospective L3 design/outcome metadata; no estimates accepted",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "designs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "l3-meta-metadata-v1"
+    },
+    "designs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/design"
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "sha": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "probability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outcome_id",
+        "definition",
+        "unit",
+        "sign_alignment"
+      ],
+      "properties": {
+        "outcome_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "definition": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sign_alignment": {
+          "enum": [
+            -1,
+            1,
+            null
+          ]
+        }
+      }
+    },
+    "positive_forecaster": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "forecaster_id",
+        "p_positive"
+      ],
+      "properties": {
+        "forecaster_id": {
+          "$ref": "#/$defs/text"
+        },
+        "p_positive": {
+          "$ref": "#/$defs/probability"
+        }
+      }
+    },
+    "threshold_forecaster": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "forecaster_id",
+        "p_exceeds_positive",
+        "p_inside_noise",
+        "p_exceeds_negative"
+      ],
+      "properties": {
+        "forecaster_id": {
+          "$ref": "#/$defs/text"
+        },
+        "p_exceeds_positive": {
+          "$ref": "#/$defs/probability"
+        },
+        "p_inside_noise": {
+          "$ref": "#/$defs/probability"
+        },
+        "p_exceeds_negative": {
+          "$ref": "#/$defs/probability"
+        }
+      },
+      "$comment": "CLI also checks probabilities sum to 1 and forecaster IDs are unique."
+    },
+    "forecast": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ledger_sha256",
+        "locked_at",
+        "lock_verified_before_estimation",
+        "estimator_target",
+        "probability_semantics",
+        "forecasters"
+      ],
+      "properties": {
+        "ledger_sha256": {
+          "$ref": "#/$defs/sha"
+        },
+        "locked_at": {
+          "$ref": "#/$defs/text"
+        },
+        "lock_verified_before_estimation": {
+          "type": "boolean"
+        },
+        "estimator_target": {
+          "$ref": "#/$defs/text"
+        },
+        "probability_semantics": {
+          "enum": [
+            "positive_effect",
+            "exclusive_noise_categories"
+          ]
+        },
+        "threshold_spec_id": {
+          "$ref": "#/$defs/text"
+        },
+        "forecasters": {
+          "type": "array",
+          "minItems": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "probability_semantics": {
+                "const": "positive_effect"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "threshold_spec_id"
+              ]
+            },
+            "properties": {
+              "forecasters": {
+                "items": {
+                  "$ref": "#/$defs/positive_forecaster"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "probability_semantics": {
+                "const": "exclusive_noise_categories"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "threshold_spec_id"
+            ],
+            "properties": {
+              "forecasters": {
+                "items": {
+                  "$ref": "#/$defs/threshold_forecaster"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "literature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "match_id",
+        "source_url",
+        "comparison_spec_sha256",
+        "match_verified"
+      ],
+      "properties": {
+        "match_id": {
+          "$ref": "#/$defs/text"
+        },
+        "source_url": {
+          "$ref": "#/$defs/text"
+        },
+        "comparison_spec_sha256": {
+          "$ref": "#/$defs/sha"
+        },
+        "match_verified": {
+          "type": "boolean"
+        }
+      }
+    },
+    "adoption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "covariate_spec_id",
+        "source_record_ids",
+        "lock_sha256"
+      ],
+      "properties": {
+        "covariate_spec_id": {
+          "$ref": "#/$defs/text"
+        },
+        "source_record_ids": {
+          "$ref": "#/$defs/ids"
+        },
+        "lock_sha256": {
+          "$ref": "#/$defs/sha"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registry_snapshot_sha256",
+        "source_record_ids",
+        "metadata_reviewed_at"
+      ],
+      "properties": {
+        "registry_snapshot_sha256": {
+          "$ref": "#/$defs/sha"
+        },
+        "source_record_ids": {
+          "$ref": "#/$defs/ids"
+        },
+        "metadata_reviewed_at": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "design": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "design_id",
+        "registry_design_id",
+        "policy_id",
+        "policy_family_id",
+        "source_text_ids",
+        "domain",
+        "design_type",
+        "status",
+        "stop_reason",
+        "exposed_before_prereg",
+        "spec_sha256",
+        "outcomes",
+        "forecast",
+        "literature",
+        "adoption",
+        "missing_reasons",
+        "provenance",
+        "enrolled_at",
+        "status_updated_at",
+        "terminal_at"
+      ],
+      "properties": {
+        "design_id": {
+          "$ref": "#/$defs/text"
+        },
+        "registry_design_id": {
+          "$ref": "#/$defs/text"
+        },
+        "policy_id": {
+          "$ref": "#/$defs/text"
+        },
+        "policy_family_id": {
+          "$ref": "#/$defs/text"
+        },
+        "source_text_ids": {
+          "$ref": "#/$defs/ids"
+        },
+        "domain": {
+          "enum": [
+            "labor",
+            "public_finance",
+            "health",
+            "crime",
+            "education",
+            "environment",
+            "other"
+          ]
+        },
+        "design_type": {
+          "enum": [
+            "did",
+            "rdd",
+            "rct",
+            "rct_lottery"
+          ]
+        },
+        "status": {
+          "enum": [
+            "pending",
+            "ready",
+            "estimated",
+            "stopped",
+            "unestimated"
+          ]
+        },
+        "stop_reason": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exposed_before_prereg": {
+          "type": "boolean"
+        },
+        "spec_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sha"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "outcomes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "$ref": "#/$defs/outcome"
+          }
+        },
+        "forecast": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/forecast"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "literature": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/literature"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "adoption": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/adoption"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_reasons": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "spec_sha256": {
+              "$ref": "#/$defs/text"
+            },
+            "forecast": {
+              "$ref": "#/$defs/text"
+            },
+            "literature": {
+              "$ref": "#/$defs/text"
+            },
+            "adoption": {
+              "$ref": "#/$defs/text"
+            },
+            "outcome.outcome_id": {
+              "$ref": "#/$defs/text"
+            },
+            "outcome.definition": {
+              "$ref": "#/$defs/text"
+            },
+            "outcome.unit": {
+              "$ref": "#/$defs/text"
+            },
+            "outcome.sign_alignment": {
+              "$ref": "#/$defs/text"
+            },
+            "terminal_at": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "enrolled_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status_updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "terminal_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "stopped"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "stop_reason": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "stop_reason": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "estimated",
+                  "stopped",
+                  "unestimated"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "terminal_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "terminal_at": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ],
+      "$comment": "CLI also checks registry/design ID equality, unique design IDs, and exact null/missing-reason correspondence; no outcomes or result bundles are ingested. CLI checks timezone-aware timestamp order and terminal dispositions; timestamps preserve age60/censoring denominators."
+    }
+  }
+}

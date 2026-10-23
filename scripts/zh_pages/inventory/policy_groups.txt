@@ -1,0 +1,50 @@
+# policy_groups.html: user-visible English strings (TSV: kind<TAB>location<TAB>string<TAB>count)
+# auto-scan: 38 unique strings, 44 occurrences, ~38 block units (<p>/<td>/<li>/... count once).
+# Excluded: <code>/<pre> text, identifiers, numbers, API data values. Text nodes are split at inline tags
+# (<strong>, <code>, <a>): translate whole <p>/<td> raw substrings, not the fragments. L### = source line.
+# js:<function> = string literal inside inline JS (concatenated fragments; keep quotes/escapes valid).
+title	L5 <title>	Policy Groups — Natural Experiment Tracker	1
+text	L62 <h1>	Natural Experiment Scanner	1
+text	L64 <a>	Documentation	1
+text	L69 <p.subtitle>	Cross-state policy families for staggered DID event study discovery	1
+text	L70 <strong>	Warning:	1
+text	L70 <div.warning-callout>	Expect bugs, errors, and hallucinations. All research design suggestions are LLM-generated and have not been manually verified. Use as a discovery tool only — always verify against primary sources.	1
+text	L72 <span>	Policy Groups	2
+text	L73 <span>	Total Policies	1
+text	L74 <span>	Jurisdictions	1
+text	L77 <a.vt-btn>	Policy Table	1
+attr	L80 @placeholder <input#groupSearch>	Search policy groups...	1
+text	L82 <span.filter-label>	Topic	1
+text	L84 <option value=all>	All Topics	1
+text	L87 <p.loading>	Loading policy groups...	2
+text	L90 <footer>	Open to any collaborations and PhD opportunities!	1
+text	L90 <a>	Get in touch: fangyu@usc.edu	1
+text	L90 <footer>	Author: Fangyu Liu ·	1
+js	L139 js:container	Policy Groups (	1
+js	L142 js:container	No groups match your filter.	1
+js	L157 js:rdDid	policies	1
+js	L158 js:rdDid	jurisdictions	1
+js	L162 js:rdDid	Loading...	2
+js	L179 js:nextDisabled	Prev	2
+js	L180 js:nextDisabled	Page	2
+js	L180 js:nextDisabled	groups)	1
+js	L181 js:nextDisabled	Next	2
+js	L207 js:data	Failed to load group detail.	1
+js	L214 js:html	Jurisdiction	1
+js	L214 js:html	Date	1
+js	L214 js:html	Title	1
+js	L214 js:html	Score	1
+js	L214 js:html	Design	1
+js	L226 js:chapterBadge	Split into	1
+js	L226 js:chapterBadge	chapters; showing the strongest chapter	1
+js	L226 js:chapterBadge	chapters	1
+js	L245 js:nextDis	policies)	1
+js	L259 js:data	Failed to load page.	1
+js	L288 js:data	Failed to load groups:	1
+# ---- hand-maintained supplement (inventory/manual/policy_groups.txt): fragments the scanner cannot classify ----
+# kind<TAB>location<TAB>string-or-note<TAB>count. Hand-maintained; appended to inventory/policy_groups.txt by build.py --inventory.
+manual	L180 renderGroupsPagination	 / 	1	# 'Page <n> / <total> (<m> groups)'
+manual	L180 renderGroupsPagination	 (	1	# opening paren before count
+manual	L230 renderGroupDetail	N/A	1	# date fallback
+manual	L126 fetchTopics	(data-driven) topic option text	1	# t.replace(/_/g,' ').replace(/\b\w/g, upper): 'Agriculture Food' here vs 'Agriculture & Food' on policy_db -> needs display map
+manual	L154 renderGroupsList	(data-driven) g.display_name	1	# English free text built by the Worker from policy_family; stays English

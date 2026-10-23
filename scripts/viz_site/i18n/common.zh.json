@@ -1,0 +1,23 @@
+{
+  "site.subtitle": "自然实验扫描器",
+  "url.documentation": "/zh/documentation.html",
+  "url.policy_db": "/zh/policy_db.html",
+  "url.policy_groups": "/zh/policy_groups.html",
+  "switch.hreflang": "en",
+  "nav.documentation": "方法",
+  "nav.synthesize": "探索",
+  "nav.aria": "视图",
+  "nav.policy_table": "首页",
+  "nav.policy_groups": "政策族",
+  "nav.overview": "概览",
+  "nav.funnel": "筛选漏斗",
+  "nav.adoption": "政策领域",
+  "footer.invite": "欢迎合作交流，也欢迎提供博士项目机会！",
+  "footer.contact": "联系我：fangyu@usc.edu",
+  "footer.author": "作者：Fangyu Liu",
+  "footer.license": "MIT License",
+  "nav.worked_examples": "估计",
+  "nav.design_opportunity": "政策时点",
+  "nav.policy_exposure": "政策暴露",
+  "nav.screening": "筛查"
+}

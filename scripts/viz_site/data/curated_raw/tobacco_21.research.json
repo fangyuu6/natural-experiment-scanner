@@ -1,0 +1,573 @@
+{
+  "policy_id": "tobacco_21",
+  "name_en": "Tobacco 21 (state law)",
+  "name_zh": "21岁购烟（州法）",
+  "definition_en": "State law raising the minimum legal sales age for tobacco/nicotine products to 21 for the general population; year the state's own law took effect (the Dec 2019 federal law is excluded).",
+  "definition_zh": "州法将烟草/尼古丁制品的最低销售年龄提高到21岁（针对一般人群），年份为该州自身法律生效年，仅沿用2019年12月联邦法的州记为空。",
+  "year_basis": "Year the STATE law took effect (operative date), not signing year; states that only followed the federal law = null; local ordinances excluded.",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+    "https://tobacco21.org/grade_card/arkansas/",
+    "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm",
+    "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction",
+    "https://www.cdc.gov/statesystem/factsheets/mlsa/Minimum-Legal-Sales-Age.html",
+    "https://countertobacco.org/policy/tobacco-21/"
+  ],
+  "states": {
+    "AK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction",
+        "https://www.cdc.gov/statesystem/factsheets/mlsa/Minimum-Legal-Sales-Age.html"
+      ],
+      "confidence": "high",
+      "note": "State minimum age is 19; follows federal 21 only (since 2019-12-20)."
+    },
+    "AL": {
+      "year": 2021,
+      "date": "2021-08-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/alabama/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "AR": {
+      "year": 2019,
+      "date": "2019-09-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/arkansas/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Act 580 eff. 2019-09-01 (T21.org); PMC review table lists 2020-01-01."
+    },
+    "AZ": {
+      "year": 2025,
+      "date": "2025-09-26",
+      "sources": [
+        "https://www.azag.gov/press-release/state-law-raising-tobacco-sales-age-21-now-effect-across-arizona",
+        "https://en.wikipedia.org/wiki/Tobacco_21"
+      ],
+      "confidence": "high",
+      "note": "SB 1247 (2025) amended A.R.S. 13-3622; AZ AG: age 21 in effect 2025-09-26."
+    },
+    "CA": {
+      "year": 2016,
+      "date": "2016-06-09",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/california/",
+        "https://en.wikipedia.org/wiki/Tobacco_21"
+      ],
+      "confidence": "high",
+      "note": "Effective 2016-06-09; T21.org card shows signing date 2016-05-04."
+    },
+    "CO": {
+      "year": 2020,
+      "date": "2020-07-14",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/colorado/",
+        "https://leg.colorado.gov/bills/hb20-1001",
+        "https://tobacco21.org/colorado-governor-signs-strong-tobacco-21-legislation/"
+      ],
+      "confidence": "high",
+      "note": "HB20-1001 signed and effective 2020-07-14; T21.org card lists 2020-06-14."
+    },
+    "CT": {
+      "year": 2019,
+      "date": "2019-10-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/connecticut/",
+        "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm"
+      ],
+      "confidence": "high",
+      "note": "CDC/PMC effective 2019-10-01; T21.org card lists 2019-06-18 (apparently enactment)."
+    },
+    "DC": {
+      "year": 2018,
+      "date": "2018-10-01",
+      "sources": [
+        "https://dbh.dc.gov/release/department-behavioral-health-announces-results-program-curb-illegal-tobacco-sales-minors-1",
+        "https://code.dccouncil.gov/us/dc/council/code/sections/7-1721.02",
+        "https://code.dccouncil.gov/us/dc/council/laws/21-191"
+      ],
+      "confidence": "medium",
+      "note": "Enacted 2016 (L21-191, eff. 2017-02-18) but applicability awaited funding; DBH: in force 2018-10-01. CDC/PMC list 2016."
+    },
+    "DE": {
+      "year": 2019,
+      "date": "2019-07-16",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/delaware/",
+        "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "FL": {
+      "year": 2021,
+      "date": "2021-10-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/florida/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "GA": {
+      "year": 2020,
+      "date": "2020-07-22",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/georgia/",
+        "https://coastalhealthdistrict.org/tobacco-21-law/"
+      ],
+      "confidence": "high",
+      "note": "SB 375 signed 2020-07-22, effective immediately."
+    },
+    "HI": {
+      "year": 2016,
+      "date": "2016-01-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/hawaii/",
+        "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm",
+        "https://countertobacco.org/policy/tobacco-21/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "IA": {
+      "year": 2020,
+      "date": "2020-06-29",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/iowa/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "ID": {
+      "year": 2022,
+      "date": "2022-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/idaho/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "IL": {
+      "year": 2019,
+      "date": "2019-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/illinois/",
+        "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "IN": {
+      "year": 2020,
+      "date": "2020-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/indiana/",
+        "https://www.in.gov/health/tpc/tobacco-21/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "KS": {
+      "year": 2023,
+      "date": "2023-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/kansas/",
+        "https://kansasreflector.com/2023/04/11/kansas-governor-signs-law-raising-minimum-age-for-tobacco-products-to-21/",
+        "https://sos.ks.gov/publications/sessionlaws/2023/Chapter-18-HB-2269.html"
+      ],
+      "confidence": "high",
+      "note": "HB 2269 signed Apr 2023, effective 2023-07-01; T21.org card lists 2023-04-10."
+    },
+    "KY": {
+      "year": 2020,
+      "date": "2020-03-26",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/kentucky/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "LA": {
+      "year": 2021,
+      "date": "2021-08-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/louisiana/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MA": {
+      "year": 2018,
+      "date": "2018-12-31",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/massachusetts/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "CDC/PMC effective 2018-12-31; T21.org card shows 2018-12-21."
+    },
+    "MD": {
+      "year": 2019,
+      "date": "2019-10-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/maryland/",
+        "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "ME": {
+      "year": 2018,
+      "date": "2018-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/maine/",
+        "https://countertobacco.org/policy/tobacco-21/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MI": {
+      "year": 2022,
+      "date": "2022-07-21",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/michigan/",
+        "https://www.michigan.gov/whitmer/news/press-releases/2022/07/21/governor-whitmer-signs-legislation-to-protect-public-health-and-other-legislation"
+      ],
+      "confidence": "high",
+      "note": "PA 167-170 signed with immediate effect 2022-07-21; T21.org card lists 2022-07-22."
+    },
+    "MN": {
+      "year": 2020,
+      "date": "2020-08-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/minnesota/",
+        "https://www.health.state.mn.us/news/pressrel/2020/tobacco080320.html"
+      ],
+      "confidence": "high",
+      "note": "Signed 2020-05-16 (T21.org date); law took effect 2020-08-01."
+    },
+    "MO": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction",
+        "https://www.cdc.gov/statesystem/factsheets/mlsa/Minimum-Legal-Sales-Age.html"
+      ],
+      "confidence": "high",
+      "note": "State minimum age is 18; follows federal 21 only (since 2019-12-20)."
+    },
+    "MS": {
+      "year": 2020,
+      "date": "2020-07-08",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/mississippi/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction",
+        "https://www.cdc.gov/statesystem/factsheets/mlsa/Minimum-Legal-Sales-Age.html"
+      ],
+      "confidence": "high",
+      "note": "State minimum age is 18; follows federal 21 only (since 2019-12-20)."
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction",
+        "https://www.cdc.gov/statesystem/factsheets/mlsa/Minimum-Legal-Sales-Age.html"
+      ],
+      "confidence": "high",
+      "note": "State minimum age is 18; follows federal 21 only (since 2019-12-20)."
+    },
+    "ND": {
+      "year": 2021,
+      "date": "2021-08-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/north-dakota/",
+        "https://ndlegis.gov/assembly/67-2021/regular/bill-overview/bo2156.html"
+      ],
+      "confidence": "high",
+      "note": "SB 2156 signed 2021-03-31 (PMC date), effective 2021-08-01."
+    },
+    "NE": {
+      "year": 2020,
+      "date": "2020-10-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/nebraska/",
+        "https://ago.nebraska.gov/news/nebraskas-new-legal-minimum-age-use-or-purchase-tobacco-products"
+      ],
+      "confidence": "high",
+      "note": "LB1064 signed Aug 2020; NE AG says age 21 from 2020-10-01; PMC lists 2020-08-16, T21.org 08-15."
+    },
+    "NH": {
+      "year": 2020,
+      "date": "2020-07-29",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/new-hampshire/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NJ": {
+      "year": 2017,
+      "date": "2017-11-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/new-jersey/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NM": {
+      "year": 2021,
+      "date": "2021-01-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/new-mexico/",
+        "https://www.governor.state.nm.us/2020/02/19/tobacco-bill-gets-final-approval/"
+      ],
+      "confidence": "medium",
+      "note": "SB 131 (Tobacco Products Act) eff. 2021-01-01 per PMC and NM sources; T21.org card lists 2020-08-30."
+    },
+    "NV": {
+      "year": 2021,
+      "date": "2021-05-27",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/nevada/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NY": {
+      "year": 2019,
+      "date": "2019-11-13",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/new-york/",
+        "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "OH": {
+      "year": 2019,
+      "date": "2019-10-17",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/ohio/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "OK": {
+      "year": 2020,
+      "date": null,
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/oklahoma/",
+        "https://oksenate.gov/press-releases/bill-raising-age-tobacco-products-21-becomes-law"
+      ],
+      "confidence": "high",
+      "note": "SB 1423 signed 2020-05-19/20; exact effective date unconfirmed (PMC 05-19, T21.org 05-16)."
+    },
+    "OR": {
+      "year": 2018,
+      "date": "2018-01-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/oregon/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "SB 754 signed 2017-08-09, effective 2018-01-01 (T21.org card lists signing date)."
+    },
+    "PA": {
+      "year": 2020,
+      "date": "2020-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/pennsylvania/",
+        "https://www.palegis.us/statutes/unconsolidated/law-information?sessYr=2019&sessInd=0&actNum=111"
+      ],
+      "confidence": "high",
+      "note": "Act 111 of 2019 signed 2019-11-27; effective 2020-07-01."
+    },
+    "RI": {
+      "year": 2021,
+      "date": "2021-07-07",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/rhode-island/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction",
+        "https://www.cdc.gov/statesystem/factsheets/mlsa/Minimum-Legal-Sales-Age.html"
+      ],
+      "confidence": "high",
+      "note": "State minimum age is 18; follows federal 21 only (since 2019-12-20)."
+    },
+    "SD": {
+      "year": 2020,
+      "date": "2020-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/south-dakota/"
+      ],
+      "confidence": "high",
+      "note": "T21.org card shows signing 2020-03-02; PMC lists effective 2020-07-01."
+    },
+    "TN": {
+      "year": 2021,
+      "date": "2021-01-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/tennessee/",
+        "https://www.tn.gov/content/dam/tn/agriculture/documents/tobacco/2021/2021_Tobacco_Retailer_Guide.pdf"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "TX": {
+      "year": 2019,
+      "date": "2019-09-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/texas/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Effective 2019-09-01; T21.org card lists signing date 2019-06-07."
+    },
+    "UT": {
+      "year": 2020,
+      "date": "2020-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/utah/",
+        "https://le.utah.gov/~2020/bills/static/SB0037.html"
+      ],
+      "confidence": "high",
+      "note": "HB 324 (2019) phased 20 on 2020-07-01, 21 on 2021-07-01; SB 37 (2020) set 21 eff. 2020-07-01."
+    },
+    "VA": {
+      "year": 2019,
+      "date": "2019-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/virginia/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "VT": {
+      "year": 2019,
+      "date": "2019-09-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/vermont/",
+        "https://www.cdc.gov/mmwr/volumes/69/wr/mm6907a3.htm"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "WA": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/washington/",
+        "https://www.fredhutch.org/en/news/center-news/2019/03/tobacco-21-law.html"
+      ],
+      "confidence": "high",
+      "note": "HB 1074 signed 2019-04-05 (T21.org date), effective 2020-01-01."
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://en.wikipedia.org/wiki/History_of_tobacco_minimum_purchase_age_by_U.S._jurisdiction",
+        "https://www.cdc.gov/statesystem/factsheets/mlsa/Minimum-Legal-Sales-Age.html"
+      ],
+      "confidence": "high",
+      "note": "State minimum age is 18; follows federal 21 only (since 2019-12-20)."
+    },
+    "WV": {
+      "year": 2024,
+      "date": "2024-06-07",
+      "sources": [
+        "https://tobacco21.org/grade_card/west-virginia/",
+        "https://www.wecard.org/state-summary/WV",
+        "https://code.wvlegislature.gov/16-9A-3/"
+      ],
+      "confidence": "high",
+      "note": "HB 5084 passed 2024-03-09, effective 90 days later (~2024-06-07)."
+    },
+    "WY": {
+      "year": 2020,
+      "date": "2020-07-01",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11740794/",
+        "https://tobacco21.org/grade_card/wyoming/",
+        "https://halfwheel.com/wyoming-increasing-minimum-age-to-purchase-tobacco-to-21/374184/"
+      ],
+      "confidence": "high",
+      "note": "SF 50 signed 2020-03-13 (T21.org date); age 21 effective 2020-07-01."
+    }
+  },
+  "n_with_law": 45,
+  "year_min": 2016,
+  "year_max": 2025,
+  "researched_by": "agent",
+  "method_notes": "Baseline: PMC11740794 Table 1 (CDC STATE data, 43 jurisdictions) cross-checked with tobacco21.org grade cards; conflicts resolved by statutes/official pages (AR, DC, NE, NM, UT, WV, AZ). Some URLs seen only in search results."
+}

@@ -1,0 +1,13 @@
+# kind<TAB>location<TAB>string-or-note<TAB>count. Hand-maintained; appended to inventory/policy_db.txt by build.py --inventory.
+manual	L452 renderTable	 / 	1	# separator in '<matched> / <grand total>'; numbers use toLocaleString() (browser locale)
+manual	L493 renderTable	N/A	1	# date fallback
+manual	L514 updatePagination	 of 	1	# 'Showing <a>–<b> of <n>'; also the en dash range
+manual	L620 buildDetailHtml	 (feasible)	1	# suffix after score in Overview badge
+manual	L598 buildChapterStripHtml	)	1	# closing of '§ CHAPTERS (n)'; label also contains the section sign
+manual	L773 buildDetailHtml	…and <n> more	1	# split as '…and ' + n + ' more' (two fragments, reorder may be needed in zh)
+manual	L775 buildDetailHtml	 policies)	1	# '(<n> policies)' after 'Policy Family: <name>'
+manual	L421 populateFilters	(data-driven) status option text	1	# capitalised API value enacted/proposed/unknown -> needs display map
+manual	L420 populateFilters	(data-driven) topic option text	1	# topicDisplayMap[v] || v ; API topic trade_commerce is missing from the map (shows raw code)
+manual	L396 renderStats	(data-driven) source family + sub labels	1	# escape(family), escape(s.name) straight from /api/stats, incl. server-built 'Other N states'
+manual	L439 statusBadge	(data-driven) status label	1	# Enacted/Passed/Signed/Vetoed/Proposed/Introduced/Failed, else raw status or em dash
+manual	L632-637 buildDetailHtml	(data-driven) badges	1	# primary_design, 'Best: '+best_design, policy_topic/policy_family with _ -> space, status raw

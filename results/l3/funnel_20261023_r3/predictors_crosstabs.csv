@@ -1,0 +1,174 @@
+outcome,sample,predictor,level,n_estimated,n_not_eval,share_not_eval,n_support,n_ri,n_history,n_other,test,p,p_cluster_perm,effect_stat,effect_value,ci_lo,ci_hi,n_used,n_families_used,note
+status,all163,src_class,autopilot,33.0,64.0,0.66,,,,,,,,,,,,155,106,
+status,all163,src_class,early_stop,0.0,10.0,1.0,,,,,,,,,,,,155,106,
+status,all163,src_class,hand_run,48.0,0.0,0.0,,,,,,,,,,,,155,106,
+status,all163,src_class,ALL,,,,,,,,MC perm chi2 (20000),0.0,0.0,cramers_V,0.661,0.56,0.78,155,106,
+status,all163,fam_grp,adult_use_cannabis_legalization,3.0,2.0,0.4,,,,,,,,,,,,155,106,
+status,all163,fam_grp,firearms,5.0,6.0,0.545,,,,,,,,,,,,155,106,
+status,all163,fam_grp,medical_cannabis_law,6.0,1.0,0.143,,,,,,,,,,,,155,106,
+status,all163,fam_grp,other_small,62.0,54.0,0.466,,,,,,,,,,,,155,106,
+status,all163,fam_grp,road_safety,4.0,6.0,0.6,,,,,,,,,,,,155,106,
+status,all163,fam_grp,voting_access,1.0,5.0,0.833,,,,,,,,,,,,155,106,
+status,all163,fam_grp,ALL,,,,,,,,MC perm chi2 (20000),0.2166,1.0,cramers_V,0.215,0.049,0.323,155,106,
+status,all163,domain_g,crime,13.0,14.0,0.519,,,,,,,,,,,,155,106,
+status,all163,domain_g,education,2.0,6.0,0.75,,,,,,,,,,,,155,106,
+status,all163,domain_g,environment,5.0,3.0,0.375,,,,,,,,,,,,155,106,
+status,all163,domain_g,health,24.0,26.0,0.52,,,,,,,,,,,,155,106,
+status,all163,domain_g,labor,18.0,4.0,0.182,,,,,,,,,,,,155,106,
+status,all163,domain_g,other,12.0,19.0,0.613,,,,,,,,,,,,155,106,
+status,all163,domain_g,public_finance,7.0,2.0,0.222,,,,,,,,,,,,155,106,
+status,all163,domain_g,ALL,,,,,,,,MC perm chi2 (20000),0.0119,0.1017,cramers_V,0.317,0.232,0.501,155,106,
+status,all163,nbin_scr,11-20,14.0,21.0,0.6,,,,,,,,,,,,100,63,
+status,all163,nbin_scr,21+,25.0,22.0,0.468,,,,,,,,,,,,100,63,
+status,all163,nbin_scr,<=10,5.0,13.0,0.722,,,,,,,,,,,,100,63,
+status,all163,nbin_scr,ALL,,,,,,,,MC perm chi2 (20000),0.1558,0.2762,cramers_V,0.194,0.052,0.409,100,63,
+status,all163,scr_roster_missing,0,44.0,56.0,0.56,,,,,,,,,,,,155,106,
+status,all163,scr_roster_missing,1,37.0,18.0,0.327,,,,,,,,,,,,155,106,
+status,all163,scr_roster_missing,ALL,,,,,,,,Fisher exact 2x2,0.0071,0.001,risk_diff(1 - 0),-0.233,-0.405,-0.07,155,106,
+status,all163,nbin_op,11-20,30.0,18.0,0.375,,,,,,,,,,,,144,101,
+status,all163,nbin_op,21+,32.0,16.0,0.333,,,,,,,,,,,,144,101,
+status,all163,nbin_op,<=10,17.0,31.0,0.646,,,,,,,,,,,,144,101,
+status,all163,nbin_op,ALL,,,,,,,,MC perm chi2 (20000),0.0033,0.0266,cramers_V,0.278,0.126,0.44,144,101,
+status,all163,era,1990-2004,14.0,11.0,0.44,,,,,,,,,,,,134,92,
+status,all163,era,<1990,3.0,5.0,0.625,,,,,,,,,,,,134,92,
+status,all163,era,>=2005,56.0,45.0,0.446,,,,,,,,,,,,134,92,
+status,all163,era,ALL,,,,,,,,MC perm chi2 (20000),0.6662,0.8867,cramers_V,0.086,0.026,0.291,134,92,
+status,all163,osrc_g,CDC_OTHER,4.0,4.0,0.5,,,,,,,,,,,,153,104,
+status,all163,osrc_g,CDC_WONDER,11.0,17.0,0.607,,,,,,,,,,,,153,104,
+status,all163,osrc_g,CPS,13.0,5.0,0.278,,,,,,,,,,,,153,104,
+status,all163,osrc_g,FARS,12.0,13.0,0.52,,,,,,,,,,,,153,104,
+status,all163,osrc_g,FBI_UCR,8.0,8.0,0.5,,,,,,,,,,,,153,104,
+status,all163,osrc_g,QCEW,6.0,4.0,0.4,,,,,,,,,,,,153,104,
+status,all163,osrc_g,other_small,25.0,23.0,0.479,,,,,,,,,,,,153,104,
+status,all163,osrc_g,ALL,,,,,,,,MC perm chi2 (20000),0.5289,0.4835,cramers_V,0.184,0.136,0.407,153,104,
+status,all163,l1_any_text,0,47.0,50.0,0.515,,,,,,,,,,,,155,106,
+status,all163,l1_any_text,1,34.0,24.0,0.414,,,,,,,,,,,,155,106,
+status,all163,l1_any_text,ALL,,,,,,,,Fisher exact 2x2,0.2472,0.1538,risk_diff(1 - 0),-0.102,-0.262,0.073,155,106,
+status,all163,l1_shortl_any,0,60.0,63.0,0.512,,,,,,,,,,,,155,106,
+status,all163,l1_shortl_any,1,21.0,11.0,0.344,,,,,,,,,,,,155,106,
+status,all163,l1_shortl_any,ALL,,,,,,,,Fisher exact 2x2,0.1126,0.0429,risk_diff(1 - 0),-0.168,-0.362,0.053,155,106,
+status,all163,l1_linked,0,71.0,73.0,0.507,,,,,,,,,,,,155,106,
+status,all163,l1_linked,1,10.0,1.0,0.091,,,,,,,,,,,,155,106,
+status,all163,l1_linked,ALL,,,,,,,,Fisher exact 2x2,0.0099,0.4341,risk_diff(1 - 0),-0.416,-0.568,-0.007,155,106,
+status,all163,scr_n_treated,estimated,44.0,,,,,,,,,,,,,,100,63,"median 21 IQR [17, 27.2]"
+status,all163,scr_n_treated,not_evaluable,,56.0,,,,,,,,,,,,,100,63,"median 19 IQR [11, 28.2]"
+status,all163,scr_n_treated,ALL,44.0,56.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.2991,0.2338,AUC P(x_notEval > x_est),0.438,0.32,0.565,100,63,
+status,all163,n_treated_states,estimated,79.0,,,,,,,,,,,,,,144,101,"median 18 IQR [11, 25]"
+status,all163,n_treated_states,not_evaluable,,65.0,,,,,,,,,,,,,144,101,"median 11 IQR [6, 20]"
+status,all163,n_treated_states,ALL,79.0,65.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.0055,0.0331,AUC P(x_notEval > x_est),0.366,0.269,0.476,144,101,
+status,all163,median_adoption_year,estimated,73.0,,,,,,,,,,,,,,134,92,"median 2.01e+03 IQR [2e+03, 2.02e+03]"
+status,all163,median_adoption_year,not_evaluable,,61.0,,,,,,,,,,,,,134,92,"median 2.01e+03 IQR [2e+03, 2.01e+03]"
+status,all163,median_adoption_year,ALL,73.0,61.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.3532,0.386,AUC P(x_notEval > x_est),0.453,0.344,0.562,134,92,
+status,all163,scr_median_year,estimated,44.0,,,,,,,,,,,,,,100,63,"median 2.01e+03 IQR [2.01e+03, 2.02e+03]"
+status,all163,scr_median_year,not_evaluable,,56.0,,,,,,,,,,,,,100,63,"median 2.01e+03 IQR [2e+03, 2.01e+03]"
+status,all163,scr_median_year,ALL,44.0,56.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.551,0.5799,AUC P(x_notEval > x_est),0.465,0.35,0.596,100,63,
+status,all163,l1_family_mean_score,estimated,34.0,,,,,,,,,,,,,,58,38,"median 3.2 IQR [3.04, 3.46]"
+status,all163,l1_family_mean_score,not_evaluable,,24.0,,,,,,,,,,,,,58,38,"median 3.09 IQR [2.9, 3.28]"
+status,all163,l1_family_mean_score,ALL,34.0,24.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.0975,0.1517,AUC P(x_notEval > x_est),0.371,0.19,0.529,58,38,
+status,all163,l1_shortlisted_texts,estimated,34.0,,,,,,,,,,,,,,58,38,"median 1 IQR [0, 8]"
+status,all163,l1_shortlisted_texts,not_evaluable,,24.0,,,,,,,,,,,,,58,38,"median 0 IQR [0, 1]"
+status,all163,l1_shortlisted_texts,ALL,34.0,24.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.0984,0.2765,AUC P(x_notEval > x_est),0.378,0.247,0.54,58,38,
+status,all163,n_l1_family_texts,estimated,81.0,,,,,,,,,,,,,,155,106,"median 0 IQR [0, 4]"
+status,all163,n_l1_family_texts,not_evaluable,,74.0,,,,,,,,,,,,,155,106,"median 0 IQR [0, 1]"
+status,all163,n_l1_family_texts,ALL,81.0,74.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.1479,0.0695,AUC P(x_notEval > x_est),0.442,0.356,0.527,155,106,
+status,all163,l1_linked_score_mean,estimated,17.0,,,,,,,,,,,,,,22,14,"median 2.35 IQR [1.6, 2.62]"
+status,all163,l1_linked_score_mean,not_evaluable,,5.0,,,,,,,,,,,,,22,14,"median 1.8 IQR [1.75, 1.8]"
+status,all163,l1_linked_score_mean,ALL,17.0,5.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.5423,0.7718,AUC P(x_notEval > x_est),0.406,0.077,0.917,22,14,
+status,autopilot105,fam_grp,adult_use_cannabis_legalization,3.0,2.0,0.4,,,,,,,,,,,,97,54,
+status,autopilot105,fam_grp,firearms,2.0,4.0,0.667,,,,,,,,,,,,97,54,
+status,autopilot105,fam_grp,medical_cannabis_law,6.0,1.0,0.143,,,,,,,,,,,,97,54,
+status,autopilot105,fam_grp,other_small,17.0,46.0,0.73,,,,,,,,,,,,97,54,
+status,autopilot105,fam_grp,road_safety,4.0,6.0,0.6,,,,,,,,,,,,97,54,
+status,autopilot105,fam_grp,voting_access,1.0,5.0,0.833,,,,,,,,,,,,97,54,
+status,autopilot105,fam_grp,ALL,,,,,,,,MC perm chi2 (20000),0.0255,1.0,cramers_V,0.355,0.067,0.541,97,54,
+status,autopilot105,domain_g,crime,2.0,12.0,0.857,,,,,,,,,,,,97,54,
+status,autopilot105,domain_g,education,0.0,5.0,1.0,,,,,,,,,,,,97,54,
+status,autopilot105,domain_g,environment,2.0,2.0,0.5,,,,,,,,,,,,97,54,
+status,autopilot105,domain_g,health,13.0,23.0,0.639,,,,,,,,,,,,97,54,
+status,autopilot105,domain_g,labor,3.0,3.0,0.5,,,,,,,,,,,,97,54,
+status,autopilot105,domain_g,other,10.0,17.0,0.63,,,,,,,,,,,,97,54,
+status,autopilot105,domain_g,public_finance,3.0,2.0,0.4,,,,,,,,,,,,97,54,
+status,autopilot105,domain_g,ALL,,,,,,,,MC perm chi2 (20000),0.253,0.7319,cramers_V,0.284,0.23,0.557,97,54,
+status,autopilot105,nbin_scr,11-20,10.0,21.0,0.677,,,,,,,,,,,,87,50,
+status,autopilot105,nbin_scr,21+,20.0,21.0,0.512,,,,,,,,,,,,87,50,
+status,autopilot105,nbin_scr,<=10,2.0,13.0,0.867,,,,,,,,,,,,87,50,
+status,autopilot105,nbin_scr,ALL,,,,,,,,MC perm chi2 (20000),0.0463,0.1333,cramers_V,0.27,0.096,0.494,87,50,
+status,autopilot105,scr_roster_missing,0,32.0,55.0,0.632,,,,,,,,,,,,97,54,
+status,autopilot105,scr_roster_missing,1,1.0,9.0,0.9,,,,,,,,,,,,97,54,
+status,autopilot105,scr_roster_missing,ALL,,,,,,,,Fisher exact 2x2,0.1568,0.1693,risk_diff(1 - 0),0.268,0.014,0.474,97,54,
+status,autopilot105,nbin_op,11-20,10.0,18.0,0.643,,,,,,,,,,,,87,50,
+status,autopilot105,nbin_op,21+,19.0,13.0,0.406,,,,,,,,,,,,87,50,
+status,autopilot105,nbin_op,<=10,3.0,24.0,0.889,,,,,,,,,,,,87,50,
+status,autopilot105,nbin_op,ALL,,,,,,,,MC perm chi2 (20000),0.0005,0.0627,cramers_V,0.411,0.214,0.612,87,50,
+status,autopilot105,era,1990-2004,5.0,9.0,0.643,,,,,,,,,,,,87,50,
+status,autopilot105,era,<1990,3.0,5.0,0.625,,,,,,,,,,,,87,50,
+status,autopilot105,era,>=2005,24.0,41.0,0.631,,,,,,,,,,,,87,50,
+status,autopilot105,era,ALL,,,,,,,,MC perm chi2 (20000),1.0,1.0,cramers_V,0.01,0.029,0.355,87,50,
+status,autopilot105,osrc_g,CDC_OTHER,1.0,4.0,0.8,,,,,,,,,,,,97,54,
+status,autopilot105,osrc_g,CDC_WONDER,3.0,15.0,0.833,,,,,,,,,,,,97,54,
+status,autopilot105,osrc_g,CPS,0.0,3.0,1.0,,,,,,,,,,,,97,54,
+status,autopilot105,osrc_g,FARS,11.0,12.0,0.522,,,,,,,,,,,,97,54,
+status,autopilot105,osrc_g,FBI_UCR,6.0,8.0,0.571,,,,,,,,,,,,97,54,
+status,autopilot105,osrc_g,other_small,12.0,22.0,0.647,,,,,,,,,,,,97,54,
+status,autopilot105,osrc_g,ALL,,,,,,,,MC perm chi2 (20000),0.2384,0.1526,cramers_V,0.266,0.168,0.507,97,54,
+status,autopilot105,l1_any_text,0,20.0,41.0,0.672,,,,,,,,,,,,97,54,
+status,autopilot105,l1_any_text,1,13.0,23.0,0.639,,,,,,,,,,,,97,54,
+status,autopilot105,l1_any_text,ALL,,,,,,,,Fisher exact 2x2,0.8254,0.7941,risk_diff(1 - 0),-0.033,-0.258,0.226,97,54,
+status,autopilot105,l1_shortl_any,0,23.0,53.0,0.697,,,,,,,,,,,,97,54,
+status,autopilot105,l1_shortl_any,1,10.0,11.0,0.524,,,,,,,,,,,,97,54,
+status,autopilot105,l1_shortl_any,ALL,,,,,,,,Fisher exact 2x2,0.1927,0.2485,risk_diff(1 - 0),-0.174,-0.45,0.187,97,54,
+status,autopilot105,l1_linked,0,25.0,63.0,0.716,,,,,,,,,,,,97,54,
+status,autopilot105,l1_linked,1,8.0,1.0,0.111,,,,,,,,,,,,97,54,
+status,autopilot105,l1_linked,ALL,,,,,,,,Fisher exact 2x2,0.0006,0.413,risk_diff(1 - 0),-0.605,-0.797,0.203,97,54,
+status,autopilot105,scr_n_treated,estimated,32.0,,,,,,,,,,,,,,87,50,"median 24 IQR [17.8, 29]"
+status,autopilot105,scr_n_treated,not_evaluable,,55.0,,,,,,,,,,,,,87,50,"median 19 IQR [11, 27.5]"
+status,autopilot105,scr_n_treated,ALL,32.0,55.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.0611,0.0382,AUC P(x_notEval > x_est),0.38,0.247,0.516,87,50,
+status,autopilot105,n_treated_states,estimated,32.0,,,,,,,,,,,,,,87,50,"median 23.5 IQR [17.8, 27]"
+status,autopilot105,n_treated_states,not_evaluable,,55.0,,,,,,,,,,,,,87,50,"median 13 IQR [6, 20]"
+status,autopilot105,n_treated_states,ALL,32.0,55.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.0008,0.0563,AUC P(x_notEval > x_est),0.29,0.181,0.42,87,50,
+status,autopilot105,median_adoption_year,estimated,32.0,,,,,,,,,,,,,,87,50,"median 2.01e+03 IQR [2e+03, 2.01e+03]"
+status,autopilot105,median_adoption_year,not_evaluable,,55.0,,,,,,,,,,,,,87,50,"median 2.01e+03 IQR [2.01e+03, 2.01e+03]"
+status,autopilot105,median_adoption_year,ALL,32.0,55.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.6853,0.7073,AUC P(x_notEval > x_est),0.474,0.34,0.637,87,50,
+status,autopilot105,scr_median_year,estimated,32.0,,,,,,,,,,,,,,87,50,"median 2.01e+03 IQR [2e+03, 2.02e+03]"
+status,autopilot105,scr_median_year,not_evaluable,,55.0,,,,,,,,,,,,,87,50,"median 2.01e+03 IQR [2e+03, 2.01e+03]"
+status,autopilot105,scr_median_year,ALL,32.0,55.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.7408,0.7396,AUC P(x_notEval > x_est),0.478,0.335,0.631,87,50,
+status,autopilot105,l1_family_mean_score,estimated,13.0,,,,,,,,,,,,,,36,18,"median 3.19 IQR [3.04, 3.39]"
+status,autopilot105,l1_family_mean_score,not_evaluable,,23.0,,,,,,,,,,,,,36,18,"median 3.1 IQR [2.97, 3.35]"
+status,autopilot105,l1_family_mean_score,ALL,13.0,23.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.2372,0.0497,AUC P(x_notEval > x_est),0.38,0.098,0.596,36,18,
+status,autopilot105,l1_shortlisted_texts,estimated,13.0,,,,,,,,,,,,,,36,18,"median 2 IQR [1, 8]"
+status,autopilot105,l1_shortlisted_texts,not_evaluable,,23.0,,,,,,,,,,,,,36,18,"median 0 IQR [0, 1]"
+status,autopilot105,l1_shortlisted_texts,ALL,13.0,23.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.0226,0.2807,AUC P(x_notEval > x_est),0.281,0.11,0.573,36,18,
+status,autopilot105,n_l1_family_texts,estimated,33.0,,,,,,,,,,,,,,97,54,"median 0 IQR [0, 6]"
+status,autopilot105,n_l1_family_texts,not_evaluable,,64.0,,,,,,,,,,,,,97,54,"median 0 IQR [0, 1.25]"
+status,autopilot105,n_l1_family_texts,ALL,33.0,64.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.4811,0.5582,AUC P(x_notEval > x_est),0.462,0.307,0.617,97,54,
+status,autopilot105,l1_linked_score_mean,estimated,10.0,,,,,,,,,,,,,,15,7,"median 2.35 IQR [2.35, 2.55]"
+status,autopilot105,l1_linked_score_mean,not_evaluable,,5.0,,,,,,,,,,,,,15,7,"median 1.8 IQR [1.75, 1.8]"
+status,autopilot105,l1_linked_score_mean,ALL,10.0,5.0,,,,,,"Mann-Whitney rank-sum, permutation (20000)",0.2059,0.698,AUC P(x_notEval > x_est),0.29,0.0,0.857,15,7,
+gate_type,closed86,domain_g,crime,,14.0,,11.0,0.0,0.0,3.0,,,,,,,,74,51,
+gate_type,closed86,domain_g,education,,6.0,,6.0,0.0,0.0,0.0,,,,,,,,74,51,
+gate_type,closed86,domain_g,environment,,3.0,,1.0,2.0,0.0,0.0,,,,,,,,74,51,
+gate_type,closed86,domain_g,health,,26.0,,17.0,4.0,3.0,2.0,,,,,,,,74,51,
+gate_type,closed86,domain_g,labor,,4.0,,2.0,0.0,0.0,2.0,,,,,,,,74,51,
+gate_type,closed86,domain_g,other,,19.0,,12.0,1.0,1.0,5.0,,,,,,,,74,51,
+gate_type,closed86,domain_g,public_finance,,2.0,,1.0,0.0,0.0,1.0,,,,,,,,74,51,
+gate_type,closed86,domain_g,ALL,,,,,,,,MC perm chi2 (20000),0.0865,0.2038,cramers_V,0.35,0.247,0.569,74,51,descriptive only (gate type)
+gate_type,closed86,nbin_scr,11-20,,21.0,,16.0,0.0,0.0,5.0,,,,,,,,56,40,
+gate_type,closed86,nbin_scr,21+,,22.0,,15.0,5.0,0.0,2.0,,,,,,,,56,40,
+gate_type,closed86,nbin_scr,<=10,,13.0,,11.0,2.0,0.0,0.0,,,,,,,,56,40,
+gate_type,closed86,nbin_scr,ALL,,,,,,,,MC perm chi2 (20000),0.0614,0.1143,cramers_V,0.281,0.214,0.444,56,40,descriptive only (gate type)
+gate_type,closed86,era,1990-2004,,11.0,,10.0,1.0,0.0,0.0,,,,,,,,61,43,
+gate_type,closed86,era,<1990,,5.0,,3.0,1.0,0.0,1.0,,,,,,,,61,43,
+gate_type,closed86,era,>=2005,,45.0,,32.0,5.0,0.0,8.0,,,,,,,,61,43,
+gate_type,closed86,era,ALL,,,,,,,,MC perm chi2 (20000),0.5798,0.4654,cramers_V,0.156,0.136,0.438,61,43,descriptive only (gate type)
+gate_type,closed86,osrc_g,CDC_OTHER,,4.0,,2.0,0.0,2.0,0.0,,,,,,,,74,51,
+gate_type,closed86,osrc_g,CDC_WONDER,,17.0,,10.0,2.0,0.0,5.0,,,,,,,,74,51,
+gate_type,closed86,osrc_g,CPS,,5.0,,5.0,0.0,0.0,0.0,,,,,,,,74,51,
+gate_type,closed86,osrc_g,FARS,,13.0,,6.0,3.0,1.0,3.0,,,,,,,,74,51,
+gate_type,closed86,osrc_g,FBI_UCR,,8.0,,8.0,0.0,0.0,0.0,,,,,,,,74,51,
+gate_type,closed86,osrc_g,QCEW,,4.0,,4.0,0.0,0.0,0.0,,,,,,,,74,51,
+gate_type,closed86,osrc_g,other_small,,23.0,,15.0,2.0,1.0,5.0,,,,,,,,74,51,
+gate_type,closed86,osrc_g,ALL,,,,,,,,MC perm chi2 (20000),0.0364,0.0932,cramers_V,0.372,0.276,0.6,74,51,descriptive only (gate type)
+gate_type,closed86,source_group,autopilot_park,,64.0,,42.0,7.0,4.0,11.0,,,,,,,,74,51,
+gate_type,closed86,source_group,early_s3_stop,,8.0,,8.0,0.0,0.0,0.0,,,,,,,,74,51,
+gate_type,closed86,source_group,pre_run_stop,,2.0,,0.0,0.0,0.0,2.0,,,,,,,,74,51,
+gate_type,closed86,source_group,ALL,,,,,,,,MC perm chi2 (20000),0.0554,0.2411,cramers_V,0.302,0.17,0.445,74,51,descriptive only (gate type)

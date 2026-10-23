@@ -1,0 +1,565 @@
+{
+  "policy_id": "license_recognition",
+  "name_en": "Universal occupational licensing recognition",
+  "name_zh": "职业执照普遍互认",
+  "definition_en": "State law letting people already licensed in another state obtain a license by recognition (not reciprocity with named states) across all or most occupations; year the law was signed. Narrow, single-occupation, military-spouse-only and pure reciprocity laws excluded.",
+  "definition_zh": "州法允许已在他州持证者通过认可（而非仅与特定州互惠）获得本州执照，覆盖全部或大部分职业；年份为法案签署年，狭窄/单一职业/仅军属/纯互惠法律不计。",
+  "year_basis": "Year the law was SIGNED (enacted); scope-based: broad any-state recognition across most occupations.",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+    "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing",
+    "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/",
+    "https://www.goldwaterinstitute.org/universalrecognition/",
+    "https://compacts.csg.org/comparing-universal-licensure-recognition-policies/",
+    "https://www.ncsl.org/labor-and-employment/2022-occupational-licensing-trends"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "AK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "AZ": {
+      "year": 2019,
+      "date": "2019-04-10",
+      "sources": [
+        "https://www.goldwaterinstitute.org/arizona-is-now-the-first-state-to-recognize-occupational-licenses-from-other-states/",
+        "https://azgovernor.gov/governor/news/2019/04/word-street-national-acclaim-arizonas-universal-licensing-recognition",
+        "https://cronkitenews.azpbs.org/2019/04/10/license-bill/",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/",
+        "https://statecapitallobbyist.com/politics/occupational-universal-licensing-legislation/"
+      ],
+      "confidence": "high",
+      "note": "HB 2569 signed 2019-04-10 (eff. 2019-08-27); residency required."
+    },
+    "AR": {
+      "year": 2023,
+      "date": null,
+      "sources": [
+        "https://www.labor.arkansas.gov/wp-content/uploads/ACT457.SB90.pdf",
+        "https://edwardjtimmons.substack.com/p/are-states-complying-with-universal",
+        "https://uca.edu/acre/2023/03/10/occupational-licensing-related-bills-will-benefit-arkansans/"
+      ],
+      "confidence": "high",
+      "note": "SB 90 / Act 457 signed Apr 2023; residency required."
+    },
+    "CA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "CO": {
+      "year": 2020,
+      "date": "2020-06-25",
+      "sources": [
+        "https://www.colorado.gov/governor/news/governor-polis-signs-hb20-1326",
+        "https://www.buckley.spaceforce.mil/News/Article-Display/Article/2234286/new-colorado-occupational-license-bill-passed/",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/",
+        "https://www.johnlocke.org/nine-states-now-have-enacted-universal-license-recognition-why-not-north-carolina/"
+      ],
+      "confidence": "high",
+      "note": "HB20-1326 credential portability program; substantially-similar test."
+    },
+    "CT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "DE": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "DC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "FL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://ij.org/press-release/governor-signs-bill-making-it-easier-for-floridians-to-work/",
+        "https://floridaprofessionallicense.com/florida-passes-the-mobile-act/",
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/"
+      ],
+      "confidence": "low",
+      "note": "Trackers count FL, but 2020 HB 1193 (barber/cosmetology) and 2024-06-18 SB 1600 (health only) are narrow."
+    },
+    "GA": {
+      "year": 2023,
+      "date": "2023-04-27",
+      "sources": [
+        "https://www.billtrack50.com/billdetail/1553719",
+        "https://www.georgiapolicy.org/news/another-crack-at-reforming-occupational-licensing/"
+      ],
+      "confidence": "medium",
+      "note": "HB 155 signed 2023-04-27 (eff. 2023-07-01); title stresses military spouses; substantially-similar test."
+    },
+    "HI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "ID": {
+      "year": 2020,
+      "date": "2020-03-17",
+      "sources": [
+        "https://legislature.idaho.gov/statutesrules/idstat/title67/t67ch94/sect67-9409/",
+        "https://idahofreedom.org/effective-july-1-universal-licensure/",
+        "https://www.billtrack50.com/BillDetail/1209852",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/"
+      ],
+      "confidence": "high",
+      "note": "S 1351 (eff. 2020-07-01); amended 2023."
+    },
+    "IL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "IN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/"
+      ],
+      "confidence": "unknown",
+      "note": "CSG 2024 survey counts IN (health occupations only per WVU); no enactment source found."
+    },
+    "IA": {
+      "year": 2020,
+      "date": "2020-06-25",
+      "sources": [
+        "https://governor.iowa.gov/press-release/gov-reynolds-signs-comprehensive-licensure-legislation",
+        "https://northiowatoday.com/2020/06/25/gov-reynolds-signs-comprehensive-licensure-legislation/",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/"
+      ],
+      "confidence": "high",
+      "note": "HF 2627; residency required."
+    },
+    "KS": {
+      "year": 2021,
+      "date": "2021-04-21",
+      "sources": [
+        "https://www.goldwaterinstitute.org/goldwater-helps-kansas-put-skilled-workers-first-legislature-says-yes-to-universal-recognition/",
+        "https://www.kansascommerce.gov/2021/04/governor-laura-kelly-signs-military-family-bill/",
+        "https://klrd.gov/publications/summary-of-legislation-2021/expansion-of-military-spouse-and-servicemembers-expedited-licensure-expedited-occupational-and-temporary-credentialing-during-states-of-emergency-sub-for-hb-2066/"
+      ],
+      "confidence": "high",
+      "note": "Sub. for HB 2066; residency required."
+    },
+    "KY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://apps.legislature.ky.gov/record/26rs/HB458.html"
+      ],
+      "confidence": "medium",
+      "note": "HB 458 (universal recognition) only introduced Jan 2026; none enacted by 2025-12-31."
+    },
+    "LA": {
+      "year": 2024,
+      "date": "2024-05-23",
+      "sources": [
+        "https://gov.louisiana.gov/news/4517",
+        "https://www.goldwaterinstitute.org/louisiana-governor-signs-landmark-universal-licensing-reform-into-law/",
+        "https://lailluminator.com/2024/03/26/occupational-licenses/"
+      ],
+      "confidence": "high",
+      "note": "SB 60 Welcome Home Act, Act 253 (eff. 2024-08-01); residency required."
+    },
+    "ME": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "MD": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "MA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "MI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://glsolutions.com/regulatory-agency-software-blog/28-states-puerto-rico-with-universal-recognition-in-2026/"
+      ],
+      "confidence": "low",
+      "note": "A 2026 vendor blog hints at MI action; no enacted universal law found by 2025-12-31."
+    },
+    "MN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "MS": {
+      "year": 2021,
+      "date": null,
+      "sources": [
+        "https://www.wlbt.com/2021/03/25/gov-reeves-signs-universal-recognition-legislation-into-law/",
+        "https://www.wjtv.com/news/state/mississippi-governor-signs-universal-recognition-bill-into-law/",
+        "https://www.goldwaterinstitute.org/mississippi-governor-signs-goldwaters-universal-recognition-law/",
+        "https://statecapitallobbyist.com/politics/occupational-universal-licensing-legislation/"
+      ],
+      "confidence": "high",
+      "note": "HB 1263 signed Mar 2021 (eff. 2021-07-01); exact day not confirmed."
+    },
+    "MO": {
+      "year": 2020,
+      "date": "2020-07-06",
+      "sources": [
+        "https://themissouritimes.com/parson-expands-license-reciprocity-in-missouri/",
+        "https://www.kmmo.com/2020/07/06/new-legislation-expands-licensing-reciprocity-in-missouri/",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/",
+        "https://www.johnlocke.org/nine-states-now-have-enacted-universal-license-recognition-why-not-north-carolina/"
+      ],
+      "confidence": "high",
+      "note": "HB 2046 (WVU survey also cites an earlier 2018 law; HB 2046 is the any-state version)."
+    },
+    "MT": {
+      "year": 2019,
+      "date": null,
+      "sources": [
+        "https://www.minneapolisfed.org/article/2024/universal-licensure-recognition-a-case-study-of-montana",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/",
+        "https://www.johnlocke.org/nine-states-now-have-enacted-universal-license-recognition-why-not-north-carolina/"
+      ],
+      "confidence": "high",
+      "note": "HB 105 signed Mar 2019 (before AZ's Apr signing, yet trackers call AZ first); exact day not confirmed."
+    },
+    "NE": {
+      "year": 2024,
+      "date": "2024-03-05",
+      "sources": [
+        "https://ij.org/press-release/gov-pillen-signs-bill-expanding-universal-licensing-recognition-and-fresh-start-initiatives/",
+        "https://nebraskaexaminer.com/2024/03/13/platte-institute-other-advocates-celebrate-new-nebraska-occupational-licensing-reforms/",
+        "https://www.goldwaterinstitute.org/workers-welcome-nebraska-legislators-cut-red-tape-with-universal-recognition/"
+      ],
+      "confidence": "high",
+      "note": "LB 16."
+    },
+    "NV": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://compacts.csg.org/comparing-universal-licensure-recognition-policies/",
+        "https://legislature.maine.gov/testimony/resources/IDEA20210316@OPLA132623651105034790.pdf",
+        "https://archive.leg.state.nv.us/Session/79th2017/Bills/Amendments/CA_SB69_R2_CA8.pdf"
+      ],
+      "confidence": "medium",
+      "note": "SB 69 (2017); pre-AZ endorsement-by-regulation, 'substantially similar' test; CSG counts as ULR."
+    },
+    "NH": {
+      "year": 2023,
+      "date": "2023-06-28",
+      "sources": [
+        "https://www.nhpr.org/politics/2023-06-29/out-of-state-professionals-can-transfer-their-licenses-to-nh-under-new-law",
+        "https://jbartlett.org/2023/06/n-h-becomes-first-new-england-state-to-grant-universal-license-recognition/",
+        "https://www.wcax.com/2023/07/04/sununu-signs-new-license-reciprocity-law/"
+      ],
+      "confidence": "high",
+      "note": "Signed 2023-06-28 (sources cite HB 594 and HB 481); 2018 HB 1825 was only a temporary license."
+    },
+    "NJ": {
+      "year": 2018,
+      "date": "2018-08-10",
+      "sources": [
+        "https://pub.njleg.gov/bills/2018/PL18/78_.HTM",
+        "https://statecapitallobbyist.com/politics/occupational-universal-licensing-legislation/",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/",
+        "https://compacts.csg.org/comparing-universal-licensure-recognition-policies/"
+      ],
+      "confidence": "low",
+      "note": "P.L.2018 c.78 (A1531) widened 2013 law; pre-AZ; CSG lists NJ 2013; Badger says 2019."
+    },
+    "NM": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://www.nmlegis.gov/Sessions/16%20Regular/bills/senate/SB0105.HTML",
+        "https://compacts.csg.org/comparing-universal-licensure-recognition-policies/",
+        "https://legislature.maine.gov/testimony/resources/IDEA20210316@OPLA132623651105034790.pdf"
+      ],
+      "confidence": "medium",
+      "note": "SB 105 (eff. 2016-07-01); pre-AZ 'substantially equivalent' endorsement; CSG counts as ULR."
+    },
+    "NY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "ND": {
+      "year": 2025,
+      "date": "2025-04-03",
+      "sources": [
+        "https://www.billtrack50.com/billdetail/1805949",
+        "https://www.goldwaterinstitute.org/workers-welcome-nd-wv-champion-universal-license-recognition/",
+        "https://edwardjtimmons.substack.com/p/universal-recognition-april-2025?r=4nu5ki"
+      ],
+      "confidence": "high",
+      "note": "SB 2395; substantially-similar clause (Archbridge: bronze)."
+    },
+    "OH": {
+      "year": 2023,
+      "date": "2023-01-02",
+      "sources": [
+        "https://governor.ohio.gov/media/news-and-media/governor-dewine-signs-bills-into-law-01-03-2023",
+        "https://www.goldwaterinstitute.org/ohio-governor-signs-goldwaters-universal-recognition-reform-into-law/",
+        "https://reason.com/2023/01/18/ohio-to-honor-occupational-licenses-from-other-states/",
+        "https://ohiocapitaljournal.com/2023/01/05/dewine-signs-23-bills-into-law-vetoes-one/"
+      ],
+      "confidence": "high",
+      "note": "SB 131 passed Dec 2022, signed Jan 2023; NCSL files it under 2022."
+    },
+    "OK": {
+      "year": 2021,
+      "date": null,
+      "sources": [
+        "https://www.thecentersquare.com/oklahoma/article_11156972-ae8f-11eb-b6bc-c7ca510fa629.html",
+        "https://www.oklegislature.gov/cf_pdf/2021-22%20ENR/hB/HB2873%20ENR.PDF",
+        "https://www.goldwaterinstitute.org/universalrecognition/"
+      ],
+      "confidence": "high",
+      "note": "HB 2873 Universal Licensing Recognition Act, signed May 2021; residency required; lighter version."
+    },
+    "OR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "PA": {
+      "year": 2019,
+      "date": "2019-07-02",
+      "sources": [
+        "https://knowledgecenter.csg.org/kc/content/pennsylvania-joins-arizona-universal-license-recognition",
+        "https://www.nspe.org/career-growth/pe-magazine/september-2019/pa-governor-signs-occupational-licensure-reciprocity-bill",
+        "https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2019&sessInd=0&act=41",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/"
+      ],
+      "confidence": "high",
+      "note": "Act 41 (HB 1172); endorsement for 29 BPOA boards; substantially-similar test."
+    },
+    "RI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "SD": {
+      "year": 2021,
+      "date": null,
+      "sources": [
+        "https://platteinstitute.org/south-dakota-passes-universal-recognition-of-job-licensing/",
+        "https://www.johnlocke.org/nine-states-now-have-enacted-universal-license-recognition-why-not-north-carolina/",
+        "https://statecapitallobbyist.com/politics/occupational-universal-licensing-legislation/",
+        "https://legislature.maine.gov/testimony/resources/IDEA20210316@OPLA132623651105034790.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 1077 (ch. 169), passed 2021-02-17; exact signing date not found; substantially-equivalent test."
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": "SB 716 was only under consideration in 2025; no state law."
+    },
+    "UT": {
+      "year": 2020,
+      "date": "2020-03-30",
+      "sources": [
+        "https://trackbill.com/bill/utah-senate-bill-23-division-of-occupational-and-professional-licensing-amendments/1814467/",
+        "https://libertas.institute/bill/sb-23-improving-occupational-licensure-portability/",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/"
+      ],
+      "confidence": "high",
+      "note": "SB 23."
+    },
+    "VT": {
+      "year": 2020,
+      "date": "2020-09-23",
+      "sources": [
+        "https://legislature.vermont.gov/bill/status/2020/S.233",
+        "https://legislature.vermont.gov/statutes/section/03/005/00136a"
+      ],
+      "confidence": "medium",
+      "note": "S.233/Act 152 added 3 VSA 136a (eff. 2021-04-01; OPR professions only); NCSL dates VT 2022."
+    },
+    "VA": {
+      "year": 2023,
+      "date": "2023-03-03",
+      "sources": [
+        "https://ij.org/press-release/virginia-enacts-universal-recognition-for-out-of-state-licenses/",
+        "https://alec.org/article/universal-recognition-on-its-way-to-becoming-all-american/"
+      ],
+      "confidence": "high",
+      "note": "HB 2180/SB 1213; IJ calls VA the 20th state."
+    },
+    "WA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "WV": {
+      "year": 2025,
+      "date": "2025-04-07",
+      "sources": [
+        "https://edwardjtimmons.substack.com/p/universal-recognition-april-2025?r=4nu5ki",
+        "https://governor.wv.gov/article/governor-patrick-morrisey-signs-universal-licensing-reciprocity-law-urges-senate-pass-power",
+        "https://www.goldwaterinstitute.org/workers-welcome-nd-wv-champion-universal-license-recognition/"
+      ],
+      "confidence": "high",
+      "note": "SB 458 signed 2025-04-07."
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.archbridgeinstitute.org/state-occupational-licensing-index/",
+        "https://edwardjtimmons.substack.com/p/the-2025-state-occupational-licensing"
+      ],
+      "confidence": "medium",
+      "note": ""
+    },
+    "WY": {
+      "year": 2021,
+      "date": null,
+      "sources": [
+        "https://wyoleg.gov/2021/Enroll/SF0018.pdf",
+        "https://www.washingtonexaminer.com/opinion/op-eds/other-states-should-follow-wyomings-lead-on-universal-recognition-laws",
+        "https://platteinstitute.org/frequently-asked-questions-about-universal-recognition-of-job-licensing/",
+        "https://www.goldwaterinstitute.org/universalrecognition/"
+      ],
+      "confidence": "high",
+      "note": "SF 0018 (Enrolled Act 13), reportedly signed 2021-02-09 (unverified); substantially-equivalent test."
+    }
+  },
+  "n_with_law": 26,
+  "year_min": 2016,
+  "year_max": 2025,
+  "researched_by": "agent",
+  "method_notes": "IJ/CSG tracker pages returned 403; years from statutes, governor releases, Badger/Goldwater/Timmons. Trackers count 28 states; FL and IN nulled (health-only). NJ/NM/NV pre-2019 endorsement laws kept, low/medium confidence. Some URLs seen only in search results."
+}

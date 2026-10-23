@@ -1,0 +1,61 @@
+block,stage,n,share_of_previous,source_file,note
+A_L1,L1 unique policy texts,483414,,deploy_output/funnel_data.json (scripts/build_funnel_data.py); viable_strict count checked against data/output/derived/derived_views.csv,
+A_L1,L1 strictly enacted,100311,0.2075,deploy_output/funnel_data.json (scripts/build_funnel_data.py); viable_strict count checked against data/output/derived/derived_views.csv,
+A_L1,L1 no adoption wave (wave_flag=0),94505,0.9421,deploy_output/funnel_data.json (scripts/build_funnel_data.py); viable_strict count checked against data/output/derived/derived_views.csv,
+A_L1,L1 outside COVID window,87545,0.9264,deploy_output/funnel_data.json (scripts/build_funnel_data.py); viable_strict count checked against data/output/derived/derived_views.csv,
+A_L1,L1 public data linkable,27808,0.3176,deploy_output/funnel_data.json (scripts/build_funnel_data.py); viable_strict count checked against data/output/derived/derived_views.csv,
+A_L1,"L1 candidates: min-gate >=3 (shortlist, viable_strict)",7781,0.2798,deploy_output/funnel_data.json (scripts/build_funnel_data.py); viable_strict count checked against data/output/derived/derived_views.csv,
+B_L2,L2 designs processed (counted live set),155,,data/l3_meta/refresh/20261022_r3/live/l2_set_live.json,"NOT a subset of the 7,781 shortlist: most designs are hand-picked from the literature, see linkage rows"
+B_L2,L2 not counted: in flight,39,,l2_set_live.json excluded_not_counted,12 of these are ledger-closed ids reopened after the ledger
+B_L2,L2 not counted: gate0 park,2,,l2_set_live.json excluded_not_counted,
+B_L2,L2 not counted: insufficient work (queue park),8,,l2_set_live.json excluded_not_counted,
+B_L2,L2 not counted: prescreen park,1,,l2_set_live.json excluded_not_counted,same id as one gate0 park (b1011c_cigarette_tax_hike_1usd): 43 unique ids among the 44 rows
+B_L2,"L2 unclassified parks (not in 163, not in the 44)",6,,l2_set_live.json unclassified,PARKED reason not mappable to a gate
+B_L2,Estimated,81,0.5226,l2_set_live.json,share of 163 processed
+B_L2,  of which reportable,69,0.8519,l2_set_live.json,share of estimated
+B_L2,"  of which stopped after run, estimate kept (internal only)",12,0.1481,l2_set_live.json,share of estimated
+B_L2,Loop FINISHED (autopilot estimates),41,0.4227,data/l2_pipeline/registry/LOOP_STATE.json next_counts.FINISHED; live set autopilot_estimate=33,share of 97 loop designs (autopilot_estimate 29 + autopilot_park 76 in the live set); other 48 estimated are hand batches/prototypes/registry runs
+B_L2,Not evaluable (named gate),74,0.4774,l2_set_live.json,share of 163
+C_gate_live,not_evaluable by live gate: support,50,0.6757,l2_set_live.json,share of not-evaluable
+C_gate_live,not_evaluable by live gate: ri,7,0.0946,l2_set_live.json,share of not-evaluable
+C_gate_live,not_evaluable by live gate: connector,7,0.0946,l2_set_live.json,share of not-evaluable
+C_gate_live,not_evaluable by live gate: history,4,0.0541,l2_set_live.json,share of not-evaluable
+C_gate_live,not_evaluable by live gate: pre_run_stop,2,0.027,l2_set_live.json,share of not-evaluable
+C_gate_live,not_evaluable by live gate: fresh,2,0.027,l2_set_live.json,share of not-evaluable
+C_gate_live,not_evaluable by live gate: v3,1,0.0135,l2_set_live.json,share of not-evaluable
+C_gate_live,not_evaluable by live gate: other,1,0.0135,l2_set_live.json,share of not-evaluable
+D_gate_named_among_live_NE,not_evaluable by ledger gate: S3_COUNT_FLOOR,24,0.3243,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: S3_SERIES_HOLES,16,0.2162,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: RI_FEASIBILITY_0.90,6,0.0811,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: S3_SIDECAR_PRESCREEN,3,0.0405,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: PURPOSE_NO_SERIES,3,0.0405,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: RECONCILE_C43_GATES,3,0.0405,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: S0_OUTCOME_UNAVAILABLE,2,0.027,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: AUDIT_V3_1,1,0.0135,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: S0_NO_SAME_CONSTRUCT_SERIES,1,0.0135,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: S2_C46,1,0.0135,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+D_gate_named_among_live_NE,not_evaluable by ledger gate: HISTORY_CONTRACT_EXHAUSTED,1,0.0135,FINAL_DECISIONS_20261020.json,share of 86 live not-evaluable; 13 have no ledger row
+E_gate_named_all_89_ledger,ledger gate: S3_COUNT_FLOOR,26,0.2921,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: S3_SERIES_HOLES,19,0.2135,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: HISTORY_INSUFFICIENT,16,0.1798,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: RI_FEASIBILITY_0.90,11,0.1236,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: PURPOSE_NO_SERIES,3,0.0337,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: RECONCILE_C43_GATES,3,0.0337,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: S3_SIDECAR_PRESCREEN,3,0.0337,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: S0_OUTCOME_UNAVAILABLE,2,0.0225,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: GATE0_PARK_S3_RI,1,0.0112,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: S0_NO_SAME_CONSTRUCT_SERIES,1,0.0112,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: GATE0_PARK_S3_SIBLING,1,0.0112,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: AUDIT_V3_1,1,0.0112,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: HISTORY_CONTRACT_EXHAUSTED,1,0.0112,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+E_gate_named_all_89_ledger,ledger gate: S2_C46,1,0.0112,FINAL_DECISIONS_20261020.json,share of 89 ledger rows (includes 20 ids not in the live NE set)
+F_l1_linkage,live designs 163: explicit L1 policy_id in card lineage (any candidate card),5,0.0323,design_features.csv,card lineage.source_text_ids intersected with L1 policy_id (share of 163)
+F_l1_linkage,"  of which that text is in the 7,781 shortlist",2,0.0129,design_features.csv, (share of 163)
+F_l1_linkage,live designs with inferred state-year-keyword match to a shortlisted state-legislation text,9,0.0581,design_features.csv,"heuristic (analyst): State Legislation texts, state in treated roster, |year-adoption year|<=1, all family keyword stems in title+family (share of 163)"
+F_l1_linkage,live designs with inferred match to any L1 state-legislation text (shortlisted or not),18,0.1161,design_features.csv, (share of 163)
+F_l1_linkage,live designs queue_v3 family cross-reference (family level),2,0.0129,design_features.csv,intake records l1_cross_reference (share of 163)
+F_l1_linkage,live designs linked to the shortlist by any method (l1_linked=1),11,0.071,design_features.csv,explicit_card_lineage_text_id or inferred_state_year_keyword (share of 163)
+F_l1_linkage,live designs tracing to any L1 text at all (l1_traces_to_any_l1_text=1),22,0.1419,design_features.csv, (share of 163)
+F_l1_linkage,live designs whose card cites an L1 queue_v2/v3/v4 lineage,27,0.1742,design_features.csv,"card lineage.queue_version; queue_v3/v4 cards cite a family/record NAME, not an L1 policy_id (share of 163)"
+F_l1_linkage,  of which the family name matches an L1 queue_v3 DiD family (name/stem heuristic),7,0.0452,design_features.csv,analyst heuristic (share of 163)
+F_l1_linkage,  of which that queue family has >=1 source text in the shortlist,5,0.0323,design_features.csv,queue_v3 source_records ids intersected with viable_strict (share of 163)

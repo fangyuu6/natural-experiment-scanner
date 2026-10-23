@@ -1,0 +1,6 @@
+# kind<TAB>location<TAB>string-or-note<TAB>count. Hand-maintained; appended to inventory/policy_groups.txt by build.py --inventory.
+manual	L180 renderGroupsPagination	 / 	1	# 'Page <n> / <total> (<m> groups)'
+manual	L180 renderGroupsPagination	 (	1	# opening paren before count
+manual	L230 renderGroupDetail	N/A	1	# date fallback
+manual	L126 fetchTopics	(data-driven) topic option text	1	# t.replace(/_/g,' ').replace(/\b\w/g, upper): 'Agriculture Food' here vs 'Agriculture & Food' on policy_db -> needs display map
+manual	L154 renderGroupsList	(data-driven) g.display_name	1	# English free text built by the Worker from policy_family; stays English

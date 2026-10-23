@@ -1,0 +1,21 @@
+{
+  "page.title": "Screening Funnel and Policy Areas · Natural Experiment Scanner",
+  "page.description": "Two views of policy texts: a screening funnel, and a state-by-year view of database coverage by policy area.",
+  "intro.h": "Screening funnel and policy areas",
+  "intro.p_html": "The funnel screens policy texts into a candidate shortlist. The policy-area view shows the first labelled record for each jurisdiction in the sampled state-bill database.",
+  "scope.label": "Scope.",
+  "scope.text": "US federal legislation and regulations, state bills and executive orders. Dated state bills span {y0}–{y1}.",
+  "funnel.h": "Screening funnel",
+  "funnel.desc": "Five gates classify policy texts into a screening shortlist. Removals are grouped by missing information and failed rules.",
+  "funnel.stat1": "policy texts → candidate shortlist ({pct} of all)",
+  "funnel.go": "Open the funnel →",
+  "adoption.h": "Policy areas",
+  "adoption.desc": "Database coverage by policy area. First labelled record in the sampled state-bill database.",
+  "adoption.go": "Open the policy-area view →",
+  "prov.generated": "Data generated {funnel} (funnel), {coverage} (coverage), {adoption} (policy areas). Source: policy database.",
+  "prov.generated_same": "Data generated {date}. Source: policy database.",
+  "prov.docs": "Methodology: Documentation →",
+  "noscript": "These headline numbers need JavaScript.",
+  "adoption.stat1_one": "policy area shown",
+  "adoption.stat1_other": "policy areas shown"
+}

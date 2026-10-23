@@ -1,0 +1,53 @@
+{
+  "archive_policy": "Original data copies are unchanged evidence and must never be imported or executed by the current pipeline.",
+  "adapters": [
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/adapter.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/adapter.py",
+      "archived_sha256": "e6d795f63fb1c5fb6d9d1dfbf9a12e88e96d1bb33ea22dd95b70dadc4788890e",
+      "archived_size_bytes": 6606
+    },
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/verify.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/verify.py",
+      "archived_sha256": "321c1b789df44dd0e01528fc8bfe320f5e93cb2aa8ef5cbff50642981ba97963",
+      "archived_size_bytes": 10112
+    },
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/intake_selection.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/intake_selection.py",
+      "archived_sha256": "7ce7d3a2835a1ed7ac719997ba0b95421706a88e3d3d7d848b640c3233a78b99",
+      "archived_size_bytes": 7787
+    },
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/cdc/fetch_cdc.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/cdc/fetch_cdc.py",
+      "archived_sha256": "6da3d7d20df4edd2b334cdd9b453af946bf4ebbfbe2dc56de099d163fc518bf2",
+      "archived_size_bytes": 2537
+    },
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/cdc/parse_cdc.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/cdc/parse_cdc.py",
+      "archived_sha256": "0fddbade417ccad59a549439a68ac3008408aa5834f6ad24d8984dc7927e91bb",
+      "archived_size_bytes": 10228
+    },
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/cms/adapter.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/cms/adapter.py",
+      "archived_sha256": "70f835dafec925704b96dd3fefc6efd6d34789dc48d5751c18aa85c61f4a1027",
+      "archived_size_bytes": 6279
+    },
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/pdaps/build_pdaps.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/pdaps/build_pdaps.py",
+      "archived_sha256": "78eeece8b6d4e013a56b50b6380d1fa0ad8280a16d01d460a7cfa4c605483f82",
+      "archived_size_bytes": 9772
+    },
+    {
+      "archived_path": "data/l2_pipeline/runs/run6/social/build_social.py",
+      "active_path": "scripts/l2_pipeline/run6_adapters/social/build_social.py",
+      "archived_sha256": "2f0130719fe5a859755fd7d0a43b0c9b972ec91ff31c3086aba9ef16d942c6d5",
+      "archived_size_bytes": 16993
+    }
+  ]
+}

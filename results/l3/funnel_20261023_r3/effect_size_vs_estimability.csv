@@ -1,0 +1,46 @@
+section,item,group_a,group_b,n_a,n_b,stat_a,stat_b,effect,ci_lo,ci_hi,p,p_cluster,note
+i_features,n adopting states (screening roster),estimated,not_evaluable,44.0,56.0,"median 21 IQR [17, 27.2]","median 19 IQR [11, 28.2]",0.438,0.32,0.565,0.2991,0.2338,AUC P(x_notEval > x_est); n_used=100
+i_features,median adoption year,estimated,not_evaluable,73.0,61.0,"median 2.01e+03 IQR [2e+03, 2.02e+03]","median 2.01e+03 IQR [2e+03, 2.01e+03]",0.453,0.344,0.562,0.3532,0.386,AUC P(x_notEval > x_est); n_used=134
+i_features,L1 family mean composite score,estimated,not_evaluable,34.0,24.0,"median 3.2 IQR [3.04, 3.46]","median 3.09 IQR [2.9, 3.28]",0.371,0.19,0.529,0.0975,0.1517,AUC P(x_notEval > x_est); n_used=58
+i_features,number of L1 family texts,estimated,not_evaluable,81.0,74.0,"median 0 IQR [0, 4]","median 0 IQR [0, 1]",0.442,0.356,0.527,0.1479,0.0695,AUC P(x_notEval > x_est); n_used=155
+i_features,adopting states bin,estimated,not_evaluable,44.0,56.0,11-20: 14 est/21 NE; 21+: 25 est/22 NE; <=10: 5 est/13 NE,,0.194,0.052,0.409,0.1558,0.2762,cramers_V; n_used=100
+i_features,era class,estimated,not_evaluable,73.0,61.0,1990-2004: 14 est/11 NE; <1990: 3 est/5 NE; >=2005: 56 est/45 NE,,0.086,0.026,0.291,0.6662,0.8867,cramers_V; n_used=134
+i_features,domain,estimated,not_evaluable,81.0,74.0,crime: 13 est/14 NE; education: 2 est/6 NE; environment: 5 est/3 NE; health: 24 est/26 NE; labor: 18 est/4 NE; other: 12 est/19 NE; public_finance: 7 est/2 NE,,0.317,0.232,0.501,0.0119,0.1017,cramers_V; n_used=155
+i_features,outcome source,estimated,not_evaluable,79.0,74.0,CDC_OTHER: 4 est/4 NE; CDC_WONDER: 11 est/17 NE; CPS: 13 est/5 NE; FARS: 12 est/13 NE; FBI_UCR: 8 est/8 NE; QCEW: 6 est/4 NE; other_small: 25 est/23 NE,,0.184,0.136,0.407,0.5289,0.4835,cramers_V; n_used=153
+i_features,L1 linked,estimated,not_evaluable,81.0,74.0,0: 71 est/73 NE; 1: 10 est/1 NE,,-0.416,-0.568,-0.007,0.0099,0.4341,risk_diff(1 - 0); n_used=155
+i_features,source class,estimated,not_evaluable,81.0,74.0,autopilot: 33 est/64 NE; early_stop: 0 est/10 NE; hand_run: 48 est/0 NE,,0.661,0.56,0.78,0.0,0.0,cramers_V; n_used=155
+ii_estimated,|est|/preSD ~ n adopting states (scr),Spearman rho,,34.0,19.0,,,-0.159,-0.518,0.337,0.367,0.5823,n_b = families; 
+ii_estimated,|est|/preSD ~ n treated (operative),Spearman rho,,60.0,42.0,,,0.031,-0.259,0.33,0.8147,0.7512,n_b = families; 
+ii_estimated,|est|/preSD ~ median adoption year,Spearman rho,,60.0,42.0,,,0.239,-0.061,0.5,0.0676,0.4829,n_b = families; 
+ii_estimated,|est|/preSD ~ L1 family mean score,Spearman rho,,21.0,14.0,,,0.344,-0.057,0.688,0.1206,0.1089,n_b = families; 
+ii_estimated,|z| est/noise_sd ~ n adopting states (scr),Spearman rho,,41.0,26.0,,,-0.008,-0.319,0.393,0.9599,0.9693,n_b = families; 
+ii_estimated,|z| est/noise_sd ~ n treated (operative),Spearman rho,,76.0,57.0,,,0.145,-0.11,0.381,0.2081,0.1072,n_b = families; 
+ii_estimated,|z| est/noise_sd ~ median adoption year,Spearman rho,,70.0,52.0,,,0.15,-0.155,0.415,0.2149,0.5374,n_b = families; 
+ii_estimated,|z| est/noise_sd ~ L1 family mean score,Spearman rho,,32.0,24.0,,,0.03,-0.341,0.363,0.8722,0.8665,n_b = families; 
+ii_estimated,|z| est/se ~ n adopting states (scr),Spearman rho,,12.0,12.0,,,0.487,-0.042,0.796,0.1085,0.1081,n_b = families; 
+ii_estimated,|z| est/se ~ n treated (operative),Spearman rho,,47.0,44.0,,,0.258,-0.013,0.496,0.0843,0.0828,n_b = families; 
+ii_estimated,|z| est/se ~ median adoption year,Spearman rho,,41.0,39.0,,,0.054,-0.27,0.344,0.7389,0.7427,n_b = families; 
+ii_estimated,|z| est/se ~ L1 family mean score,Spearman rho,,21.0,20.0,,,0.201,-0.311,0.633,0.3827,0.3909,n_b = families; 
+ii_estimated,sign positive ~ n adopting states (scr),Spearman rho,,44.0,29.0,,,-0.039,-0.34,0.33,0.801,0.7668,n_b = families; 
+ii_estimated,sign positive ~ n treated (operative),Spearman rho,,79.0,60.0,,,0.256,0.029,0.49,0.0233,0.0402,n_b = families; 
+ii_estimated,sign positive ~ median adoption year,Spearman rho,,73.0,55.0,,,0.157,-0.072,0.377,0.1887,0.1191,n_b = families; 
+ii_estimated,sign positive ~ L1 family mean score,Spearman rho,,34.0,26.0,,,0.086,-0.352,0.408,0.6386,0.6512,n_b = families; 
+ii_estimated,|est|/preSD by era class,Kruskal H (perm 5000),,60.0,42.0,,,3.779,,,0.1582,0.4667,>=2005: n=44 med=0.118; 1990-2004: n=13 med=0.0338; <1990: n=3 med=0.0137
+ii_estimated,|z| est/noise_sd by era class,Kruskal H (perm 5000),,70.0,52.0,,,1.53,,,0.4871,0.6023,>=2005: n=53 med=1; 1990-2004: n=14 med=0.684; <1990: n=3 med=0.161
+ii_estimated,|est|/preSD by outcome source (grouped),Kruskal H (perm 5000),,60.0,42.0,,,8.918,,,0.1792,0.2523,FARS: n=11 med=0.126; CDC_WONDER: n=11 med=0.171; CDC_OTHER: n=4 med=0.144; other_small: n=18 med=0.0608; FBI_UCR: n=6 med=0.0845; QCEW: n=3 med=0.0285; CPS: n=7 med=0.0822
+ii_estimated,|z| est/noise_sd by outcome source (grouped),Kruskal H (perm 5000),,77.0,58.0,,,4.406,,,0.6395,0.7327,FARS: n=12 med=1.43; CDC_WONDER: n=11 med=1.18; CDC_OTHER: n=4 med=1.52; other_small: n=24 med=0.923; FBI_UCR: n=8 med=1.23; CPS: n=13 med=0.841; QCEW: n=5 med=0.944
+iii_closed_vs_estimated,closed TWFE all identified (68): share positive,closed,estimated77,67.0,81.0,0.433,0.432,,,,1.0,,"counts pos/neg closed [29, 38] vs est [35, 46]; Fisher exact"
+iii_closed_vs_estimated,closed TWFE all identified (68): median |est|/preSD,closed,estimated(57 with preSD),67.0,61.0,0.12,0.106,,,,0.5842,,"permutation of median difference (20000); my seed, worker C used seed 3"
+iii_closed_vs_estimated,closed TWFE all identified (68): share |z|>1.96 (closed: TWFE CR1 z; est: est/noise_sd),closed,estimated(74 with noise_sd),67.0,78.0,0.254,0.192,,,,0.4248,,"counts [17, 50] vs [15, 63]; z definitions differ, only roughly comparable"
+iii_closed_vs_estimated,closed TWFE all identified (68): share |z|>1.96 (est: est/se where se present),closed,estimated(48 with se),67.0,48.0,0.254,0.167,,,,0.3599,,"counts [17, 50] vs [8, 40]"
+iii_closed_vs_estimated,closed TWFE dedup: share positive,closed,estimated77,65.0,81.0,0.446,0.432,,,,0.8686,,"counts pos/neg closed [29, 36] vs est [35, 46]; Fisher exact"
+iii_closed_vs_estimated,closed TWFE dedup: median |est|/preSD,closed,estimated(57 with preSD),65.0,61.0,0.129,0.106,,,,0.3747,,"permutation of median difference (20000); my seed, worker C used seed 3"
+iii_closed_vs_estimated,closed TWFE dedup: share |z|>1.96 (closed: TWFE CR1 z; est: est/noise_sd),closed,estimated(74 with noise_sd),65.0,78.0,0.262,0.192,,,,0.4206,,"counts [17, 48] vs [15, 63]; z definitions differ, only roughly comparable"
+iii_closed_vs_estimated,closed TWFE dedup: share |z|>1.96 (est: est/se where se present),closed,estimated(48 with se),65.0,48.0,0.262,0.167,,,,0.2595,,"counts [17, 48] vs [8, 40]"
+iii_closed_vs_estimated,family-cluster bootstrap: share positive difference (closed - est),,,67.0,81.0,,,0.001,-0.154,0.163,,,"95 families, 2000 resamples"
+iii_closed_vs_estimated,family-cluster bootstrap: median |est|/preSD difference (closed - est),,,67.0,57.0,,,0.014,-0.035,0.077,,,95 families
+iii_within_family,within-family difference in |est|/preSD (closed - est),closed,estimated,17.0,22.0,,,-0.02,,,0.9084,,"7 families with both (equal-weight mean of within-family mean difference); labels permuted within family; method differs (closed = ungated TWFE, estimated = pipeline estimator) so a difference mixes selection and method"
+iii_within_family,within-family difference in share positive (closed - est),closed,estimated,17.0,22.0,,,0.119,,,0.5329,,"7 families with both (equal-weight mean of within-family mean difference); labels permuted within family; method differs (closed = ungated TWFE, estimated = pipeline estimator) so a difference mixes selection and method"
+iii_power,"minimum detectable difference, Fisher exact two-sided 5%, 80% power: share positive (baseline .455)",,,67.0,81.0,,,0.24,,,,,"power at +0.10: 0.22, at +0.15: 0.44 (assuming independent designs; clustering lowers power further)"
+iii_power,"minimum detectable difference, Fisher exact two-sided 5%, 80% power: share |z|>1.96 (baseline .20)",,,67.0,81.0,,,0.22,,,,,"power at +0.10: 0.27, at +0.15: 0.50 (assuming independent designs; clustering lowers power further)"
+iii_power,"minimum detectable standardised mean shift (d) for |est|/preSD, 68 vs 57, 80% power",,,67.0,57.0,,,0.496,,,,,normal approximation; design-clustering ignored

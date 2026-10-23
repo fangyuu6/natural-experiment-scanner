@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "version": "v1",
+  "design_id": "example_did",
+  "policy_family": "invented_family",
+  "mechanism": "one verified intervention",
+  "track": "DiD",
+  "unit": "state",
+  "outcome_family": "employment",
+  "sources": [
+    {
+      "source_id": "source1",
+      "url": "https://example.invalid/replace-with-authoritative-complete-list",
+      "locator": "table1",
+      "license": "verify before freeze"
+    }
+  ],
+  "lineage": {
+    "queue_version": "v2",
+    "screen_version": "fixture",
+    "source_text_ids": [
+      "text1"
+    ]
+  },
+  "population": {
+    "description": "civilian noninstitutional men ages 25\u201354",
+    "filters": {
+      "age_min": 25,
+      "age_max": 54,
+      "sex": "male",
+      "civilian_noninstitutional": true
+    }
+  },
+  "outcome": {
+    "connector": "cps_monthly_aggregates",
+    "paths": [
+      "public_monthly.csv"
+    ],
+    "years": [
+      1994,
+      2025
+    ],
+    "units": [
+      "AL",
+      "AK"
+    ],
+    "frequency": "annual",
+    "population_filters": {
+      "age_min": 25,
+      "age_max": 54,
+      "sex": "male",
+      "civilian_noninstitutional": true
+    },
+    "source_population_filters": {
+      "age_min": 25,
+      "age_max": 54,
+      "sex": "male",
+      "civilian_noninstitutional": true
+    },
+    "outcome_unit": "percentage points",
+    "measure_id": "employment_share"
+  },
+  "treatment": {
+    "universe": [
+      "AL",
+      "AK"
+    ],
+    "seed": 20261007,
+    "complete_list_source_id": "source1",
+    "predicate": "one verified intervention",
+    "coverage_end": "2025-12-31",
+    "historical_convention": "cumulative ever-adopted complete list"
+  },
+  "analysis": {
+    "min_pre_periods": 3,
+    "min_controls": 5,
+    "min_cohorts": 2,
+    "min_treated": 6,
+    "estimand": "cohort-size weighted supported-post ATT",
+    "clock": "calendar_year",
+    "controls": "never_treated",
+    "weights": "equal states within cell; cohort-size supported-post aggregation",
+    "inference": "Webb first; complete-control-path CT fallback; point+RI if uncertified",
+    "diagnostics": [
+      "pretrend_joint",
+      "pretrend_economic",
+      "placebo"
+    ],
+    "stop_rules": [
+      "support",
+      "registered_calibration",
+      "fail_closed_integrity"
+    ]
+  },
+  "sensitivities": [
+    {
+      "name": "start_plus_one",
+      "changes": {
+        "treatment": {
+          "start_shift": 1
+        }
+      }
+    }
+  ],
+  "first_order": {
+    "target_outcome": "employment_share",
+    "primary_outcome": "employment_share",
+    "relation": "direct",
+    "availability": "available",
+    "statute_refs": [
+      {
+        "source_ref": "source1",
+        "locator": "REPLACE: statute employment-target purpose"
+      }
+    ],
+    "literature_refs": [
+      {
+        "source_ref": "REPLACE: labor-policy literature",
+        "locator": "REPLACE: primary employment definition"
+      }
+    ],
+    "secondary_outcomes": []
+  }
+}

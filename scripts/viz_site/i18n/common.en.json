@@ -1,0 +1,23 @@
+{
+  "site.subtitle": "",
+  "url.documentation": "/documentation.html",
+  "url.policy_db": "/policy_db.html",
+  "url.policy_groups": "/policy_groups.html",
+  "switch.hreflang": "zh-CN",
+  "nav.documentation": "Method",
+  "nav.synthesize": "Explore",
+  "nav.aria": "Views",
+  "nav.policy_table": "Home",
+  "nav.policy_groups": "Policy groups",
+  "nav.overview": "Overview",
+  "nav.funnel": "Funnel",
+  "nav.adoption": "Policy areas",
+  "footer.invite": "Open to any collaborations and PhD opportunities!",
+  "footer.contact": "Get in touch: fangyu@usc.edu",
+  "footer.author": "Author: Fangyu Liu",
+  "footer.license": "MIT License",
+  "nav.worked_examples": "Estimates",
+  "nav.design_opportunity": "Policy timing",
+  "nav.policy_exposure": "Policy exposure",
+  "nav.screening": "Screening"
+}

@@ -1,0 +1,214 @@
+# policy_db.html: user-visible English strings (TSV: kind<TAB>location<TAB>string<TAB>count)
+# auto-scan: 195 unique strings, 238 occurrences, ~226 block units (<p>/<td>/<li>/... count once).
+# Excluded: <code>/<pre> text, identifiers, numbers, API data values. Text nodes are split at inline tags
+# (<strong>, <code>, <a>): translate whole <p>/<td> raw substrings, not the fragments. L### = source line.
+# js:<function> = string literal inside inline JS (concatenated fragments; keep quotes/escapes valid).
+title	L6 <title>	Natural Experiment Scanner	2
+text	L131 <a>	Documentation	1
+text	L136 <strong>	Warning:	2
+text	L136 <div.warning-callout>	Expect bugs, errors, and hallucinations. All research design suggestions are LLM-generated and have not been manually verified. Use as a discovery tool only — always verify against primary sources.	1
+text	L139 <div.sl>	Bills	1
+attr	L146 @placeholder <input#searchInput>	Search bill ID, title, treatment, outcomes, datasets...	1
+text	L150 <button.filter-btn>	All	7
+text	L151 <button.filter-btn>	RD Only	1
+text	L152 <button.filter-btn>	DID Only	1
+text	L154 <span.filter-label>	Year	1
+text	L155 <option value=all>	All Years	1
+text	L156 <span.filter-label>	Jurisdiction	1
+text	L158 <span.filter-label>	Source	2
+text	L161 <span.filter-label>	Literature	2
+text	L164 <option value=blue_ocean>	Untapped	3
+text	L165 <option value=emerging>	Emerging	3
+text	L166 <option value=competitive>	Studied	3
+text	L167 <option value=crowded>	Saturated	3
+text	L169 <span.filter-label>	Best Design	1
+text	L174 <option value=Zero>	Zero	1
+text	L176 <span.filter-label>	Feasibility	1
+text	L179 <option value=excellent>	Excellent	1
+text	L180 <option value=good>	Good	1
+text	L181 <option value=moderate>	Moderate	1
+text	L182 <option value=challenging>	Challenging	1
+text	L183 <option value=difficult>	Difficult	1
+text	L185 <span.filter-label>	Status	2
+text	L188 <option value=enacted>	Enacted	2
+text	L189 <option value=proposed>	Proposed	3
+text	L190 <option value=unknown>	Unknown	1
+text	L193 <span.filter-label>	Topic	1
+text	L194 <option value=all>	All Topics	1
+attr	L196 @title <button#ignoreDataBtn.filter-btn>	Rank by identification strategy quality only, ignoring data availability constraints	1
+text	L196 <button#ignoreDataBtn.filter-btn>	Ignore Data	1
+attr	L197 @title <button#resetBtn.filter-btn>	Reset all filters	1
+text	L197 <button#resetBtn.filter-btn>	Reset	1
+text	L200 <div>	Policy Table	1
+text	L201 <a#groupsLink>	Policy Groups	1
+text	L208 <th>	Title	1
+text	L209 <th>	Bill ID	1
+text	L210 <th>	Jur.	1
+text	L211 <th>	Date	1
+text	L213 <th>	Score	1
+text	L214 <th.col-design>	Design	1
+text	L216 <th>	Link	1
+text	L219 <td>	Loading...	1
+text	L223 <label>	Per page	1
+text	L229 <button#btnFirst>	First	1
+text	L230 <button#btnPrev>	Previous	1
+text	L231 <button#btnNext>	Next	1
+text	L232 <button#btnLast>	Last	1
+text	L945 <footer>	Open to any collaborations and PhD opportunities!	1
+text	L945 <a>	Get in touch: fangyu@usc.edu	1
+text	L945 <footer>	Author: Fangyu Liu ·	1
+js	L260 js:topicDisplayMap	Labor Market	1
+js	L260 js:topicDisplayMap	Taxation & Fiscal	1
+js	L261 js:topicDisplayMap	Social Insurance	1
+js	L261 js:topicDisplayMap	Energy & Environment	1
+js	L262 js:topicDisplayMap	Finance & Monetary	1
+js	L262 js:topicDisplayMap	Product Market	1
+js	L263 js:topicDisplayMap	Education	1
+js	L263 js:topicDisplayMap	Public Health	1
+js	L264 js:topicDisplayMap	Criminal Justice	1
+js	L264 js:topicDisplayMap	Political Institutions	1
+js	L265 js:topicDisplayMap	Technology & Data	1
+js	L265 js:topicDisplayMap	Agriculture & Food	1
+js	L266 js:topicDisplayMap	Immigration	1
+js	L266 js:topicDisplayMap	Transportation & Infrastructure	1
+js	L267 js:topicDisplayMap	Government Administration	1
+js	L268 js:topicDisplayMap	Housing & Land Use	1
+js	L268 js:topicDisplayMap	Veterans & Military	1
+js	L269 js:topicDisplayMap	Appropriations & Budget	1
+js	L269 js:topicDisplayMap	Ceremonial	1
+js	L269 js:topicDisplayMap	Other	3
+js	L272 js:familyColors	State Legislation	3
+js	L272 js:familyColors	Federal Regulations	3
+js	L273 js:familyColors	Federal Legislation	3
+js	L273 js:familyColors	Legal Reference	3
+js	L274 js:familyColors	State/Local Executive	3
+js	L274 js:familyColors	Archive	2
+js	L275 js:familyColors	International	2
+js	L290 js:showError	Retry	1
+js	L431 js:map	Passed	2
+js	L432 js:map	Signed	2
+js	L433 js:map	Vetoed	1
+js	L435 js:map	Introduced	1
+js	L436 js:map	Failed	1
+js	L444 js:srcBadgeClass	State Legislature	1
+js	L454 js:tbody	No results found	1
+js	L466 js:badges	Pre-filtered	1
+js	L467 js:badges	CONFOUND FATAL	1
+js	L468 js:badges	High Risk	1
+js	L469 js:badges	Meas. Mismatch	1
+js	L470 js:badges	No Parallel Trends	1
+js	L486 js:chapterBadge	This bill was split into	1
+js	L486 js:chapterBadge	chapters; showing the strongest chapter	1
+js	L486 js:chapterBadge	chapters	1
+js	L498 js:chapterBadge	View	1
+js	L500 js:chapterBadge	Loading detail...	1
+js	L514 js:end	0 results	1
+js	L514 js:end	Showing	1
+js	L520 js:maxPage	Use search or filters to narrow results	1
+js	L543 js:r	Failed to load detail:	1
+js	L593 js:skippedPills	Boilerplate / skipped by LLM (char_len=	1
+js	L595 js:skippedPills	skip	1
+js	L598 js:skippedPills	§ CHAPTERS (	1
+js	L610 js:r	Failed to load chapter:	1
+js	L619 js:scoreDisplay	(excl. data)	1
+js	L628 js:overviewHtml	Overview	1
+js	L631 js:overviewHtml	Score:	1
+js	L633 js:overviewHtml	Best:	1
+js	L634 js:overviewHtml	Tier	1
+js	L640 js:overviewHtml	Policy significance:	1
+js	L640 js:overviewHtml	· Identification:	1
+js	L640 js:overviewHtml	· Treatment intensity:	1
+js	L640 js:overviewHtml	· Data:	1
+js	L640 js:overviewHtml	(excluded)	1
+js	L641 js:overviewHtml	Verdict:	1
+js	L649 js:grid	Identifier:	1
+js	L650 js:grid	Type:	1
+js	L651 js:grid	Subject:	1
+js	L652 js:grid	Sponsor:	1
+js	L653 js:grid	Session:	1
+js	L654 js:grid	Signed:	1
+js	L655 js:grid	Passage:	1
+js	L656 js:grid	Last Action:	1
+js	L657 js:grid	Bill Info	1
+js	L664 js:grid	Fetch:	1
+js	L665 js:grid	Chars:	1
+js	L667 js:grid	Source:	1
+js	L667 js:grid	Open source document	1
+js	L669 js:grid	Landing page:	1
+js	L669 js:grid	Open source page	1
+js	L670 js:grid	Full text / PDF:	1
+js	L670 js:grid	Open fetched text	1
+js	L672 js:grid	Only title/summary fallback was available.	1
+js	L673 js:grid	Text Provenance	1
+js	L684 js:controlGroup	Treatment:	1
+js	L685 js:controlGroup	Control:	1
+js	L686 js:controlGroup	Timing:	1
+js	L687 js:controlGroup	Outcomes:	1
+js	L688 js:controlGroup	Datasets:	1
+js	L689 js:controlGroup	Enforcement:	1
+js	L690 js:controlGroup	Best Design:	1
+js	L691 js:controlGroup	Evidence Tier:	1
+js	L692 js:controlGroup	DID Control:	1
+js	L693 js:controlGroup	ID (RD/DID):	1
+js	L694 js:controlGroup	What & Who	1
+js	L704 js:litStudies	Landscape:	1
+js	L709 js:studies	Known similar studies:	1
+js	L711 js:title	Untitled	1
+js	L718 js:title	None known	1
+js	L719 js:title	Known similar:	1
+js	L721 js:title	Novel contribution:	1
+js	L722 js:title	Note: Literature assessment is based on the LLM's training data (cutoff: Jul 2024). Papers published after this date may not be reflected.	1
+js	L735 js:bpObj	None (novel)	2
+js	L736 js:bpObj	Benchmark:	2
+js	L745 js:searchQ	Angle	1
+js	L746 js:searchQ	Method:	1
+js	L747 js:searchQ	Outcome:	1
+js	L750 js:searchQ	Research Angles	1
+js	L773 js:moreText	…and	1
+js	L773 js:moreText	more	1
+js	L775 js:moreText	Policy Family:	2
+js	L775 js:moreText	policies)	1
+js	L777 js:moreText	View full group →	1
+js	L782 js:moreText	No other policies in this family yet.	1
+js	L790 js:rdHtml	RD Assessment	1
+js	L791 js:rdHtml	No details	1
+js	L792 js:rdHtml	RD type:	1
+js	L792 js:rdHtml	— requires IV/2SLS estimation	1
+js	L794 js:rdHtml	Threshold structure:	1
+js	L794 js:rdHtml	(lump-sum cost → strong bunching incentives)	1
+js	L795 js:rdHtml	Manipulation channels:	1
+js	L796 js:rdHtml	Dynamic selection risk:	1
+js	L797 js:rdHtml	Manipulation Risk (	1
+js	L797 js:rdHtml	Running variable may be manipulated	1
+js	L798 js:rdHtml	Measurement mismatch:	1
+js	L799 js:rdHtml	Statistical power:	1
+js	L800 js:rdHtml	Data access:	1
+js	L801 js:rdHtml	Confounding policies	2
+js	L809 js:didHtml	DID Assessment	1
+js	L811 js:didHtml	Parallel trends:	1
+js	L812 js:didHtml	Staggered adoption bias:	1
+js	L812 js:didHtml	→ use Callaway-Sant'Anna (2021) or Sun-Abraham (2021)	1
+js	L813 js:didHtml	Anticipation risk:	1
+js	L814 js:didHtml	Spillover / SUTVA risk:	1
+js	L815 js:didHtml	Policy endogeneity:	1
+js	L816 js:didHtml	Recommended estimator:	2
+js	L816 js:didHtml	TWFE (clean design)	1
+js	L817 js:didHtml	Pre-period data:	1
+js	L826 js:comboHtml	RD + DID:	1
+js	L826 js:comboHtml	Consider Difference-in-Discontinuities design combining both.	1
+js	L828 js:comboHtml	Not identified as RD or DID candidate	1
+js	L834 js:flagsHtml	Red flags:	1
+# ---- hand-maintained supplement (inventory/manual/policy_db.txt): fragments the scanner cannot classify ----
+# kind<TAB>location<TAB>string-or-note<TAB>count. Hand-maintained; appended to inventory/policy_db.txt by build.py --inventory.
+manual	L452 renderTable	 / 	1	# separator in '<matched> / <grand total>'; numbers use toLocaleString() (browser locale)
+manual	L493 renderTable	N/A	1	# date fallback
+manual	L514 updatePagination	 of 	1	# 'Showing <a>–<b> of <n>'; also the en dash range
+manual	L620 buildDetailHtml	 (feasible)	1	# suffix after score in Overview badge
+manual	L598 buildChapterStripHtml	)	1	# closing of '§ CHAPTERS (n)'; label also contains the section sign
+manual	L773 buildDetailHtml	…and <n> more	1	# split as '…and ' + n + ' more' (two fragments, reorder may be needed in zh)
+manual	L775 buildDetailHtml	 policies)	1	# '(<n> policies)' after 'Policy Family: <name>'
+manual	L421 populateFilters	(data-driven) status option text	1	# capitalised API value enacted/proposed/unknown -> needs display map
+manual	L420 populateFilters	(data-driven) topic option text	1	# topicDisplayMap[v] || v ; API topic trade_commerce is missing from the map (shows raw code)
+manual	L396 renderStats	(data-driven) source family + sub labels	1	# escape(family), escape(s.name) straight from /api/stats, incl. server-built 'Other N states'
+manual	L439 statusBadge	(data-driven) status label	1	# Enacted/Passed/Signed/Vetoed/Proposed/Introduced/Failed, else raw status or em dash
+manual	L632-637 buildDetailHtml	(data-driven) badges	1	# primary_design, 'Best: '+best_design, policy_topic/policy_family with _ -> space, status raw

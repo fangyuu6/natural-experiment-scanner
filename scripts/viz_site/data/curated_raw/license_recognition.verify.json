@@ -1,0 +1,66 @@
+{
+  "policy_id": "license_recognition",
+  "verified_by": "agent-V1",
+  "as_of": "2025-12-31",
+  "n_states_blind": 27,
+  "n_agree": 26,
+  "n_year_diff": 0,
+  "n_only_them": 0,
+  "n_only_us": 1,
+  "details": {
+    "FL": {
+      "status": "ADDED",
+      "research_year": null,
+      "verifier_year": 2024,
+      "final_year": 2024,
+      "why": "SB 1600 (Ch.2024-274, signed 2024-06-28): s.455.2135 DBPR + s.456.0145 DOH, any state, 5 yrs; not health-only. 2020 HB1193 narrow",
+      "sources": [
+        "https://www.flsenate.gov/Session/Bill/2024/1600",
+        "https://www.flsenate.gov/Session/Bill/2024/1600/BillText/er/HTML",
+        "https://thecapitolist.com/desantis-signs-bill-easing-professional-licensure-for-out-of-state-workers/",
+        "https://reason.org/commentary/florida-passes-major-occupational-licensing-reform/",
+        "https://www.iccsafe.org/building-safety-journal/bsj-dives/floridas-occupational-freedom-and-opportunity-act-revamps-occupational-licensing-provisions/",
+        "https://www.forbes.com/sites/patrickgleason/2024/07/17/florida-becomes-twenty-first-state-with-universal-licensure/"
+      ]
+    },
+    "NJ": {
+      "status": "DISPUTED",
+      "research_year": 2018,
+      "verifier_year": 2018,
+      "final_year": null,
+      "why": "Blind AGREE 2018 but any-state endorsement already in P.L.2013 c.182 (appr. 2014-01-13); NCSL/Badger 2019, CSG 2013. Year undefensible",
+      "sources": [
+        "https://pub.njleg.gov/bills/2018/AL18/78_.HTM",
+        "https://pub.njleg.gov/bills/2012/AL13/182_.HTM",
+        "https://www.badgerinstitute.org/universal-licensure-recognition-bills-gain-momentum/",
+        "https://www.ncsl.org/labor-and-employment/2022-occupational-licensing-trends"
+      ]
+    }
+  },
+  "notes": {
+    "blind_matching": "Blind list (27 adopters: 26 research states + FL) matched research years 26/26; NJ later downgraded to disputed on statute review. Final adopters = 26 (research 26 - NJ + FL); year range 2016-2025.",
+    "excluded_by_both": {
+      "IN": "health-care-only reciprocity, no broad law (Capital Chronicle Oct 2023); trackers (CSG/WVU/Archbridge) may count it",
+      "NC": "HB 763 (2025) named-neighbour reciprocity only",
+      "TX": "SB 716 (2025) stayed in committee",
+      "TN": "military-family recognition only",
+      "KY": "HB 458 introduced 2026 only",
+      "MI": "none enacted by 2025-12-31"
+    },
+    "tracker_conflicts_resolved_to_signed_year": {
+      "MT": "UCA/IJ list 2020 vs statute 2019 (no 2020 MT session)",
+      "NH": "UCA/IJ list 2018 (temp licence) vs HB594 2023",
+      "VT": "NCSL 2022 vs Act 152 signed 2020-09-23",
+      "OH": "NCSL 2022 (passage) vs signed 2023-01-02"
+    },
+    "scope_caveats_kept": {
+      "VT": "tracker-counted; Act 152 spans OPR plus several other boards",
+      "SD": "Goldwater: lighter version",
+      "OK": "Goldwater: lighter version",
+      "GA": "substantially similar test",
+      "NV": "substantially similar test; regulatory bodies named in NRS chapters",
+      "NM": "UCA cites a 2020 follow-up not examined"
+    },
+    "search_budget_note": "WebSearch budget (200) was exhausted mid-run; remaining checks done via WebFetch; CSG, IJ state pages, SD Searchlight and Forbes returned 403."
+  }
+}

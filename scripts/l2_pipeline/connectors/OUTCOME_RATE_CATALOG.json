@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "Prospective count outcomes only; exact frozen and finished cards keep their original source scale",
+  "default_count_scale": "rate",
+  "allowed_card_scales": ["rate", "count"],
+  "mortality_rate_multiplier": 100000,
+  "birth_rate_multiplier": 1000,
+  "birth_denominator": "Women in the exact declared maternal-age population, never total resident population",
+  "published_rate_peers": {
+    "births_count": "birth_rate",
+    "cdc_teen_births": "cdc_teen_birth_rate",
+    "cdc_firearm_deaths": "cdc_firearm_crude_rate",
+    "nchs_summary_births": "nchs_summary_fertility_rate"
+  },
+  "local_denominator_contract": {
+    "csv_columns": ["unit", "year", "population"],
+    "required_provenance": ["paths", "source_sha256", "source_urls", "license", "population_filters", "sex"],
+    "population_filters": "Exact equality with the card; birth sex=female; mortality/events match declared sex (female, male, all)",
+    "suppression": "Numerator suppression remains missing even when a population or published rate exists"
+  },
+  "wonder_population": "Use Population from the receipt-bound exact state/year/cause/age export; preserve Crude Rate reliability flags",
+  "wonder_birth_population": "Use Female Population from the receipt-bound exact state/year/maternal-age export; 1999-2002 and under15/50+ unavailable",
+  "unavailable_denominator_disposition": "Park; no fallback to count, no inferred population or changed age group, no outcome association or model dispatch",
+  "outcome_association_calls": 0,
+  "new_downloads": []
+}

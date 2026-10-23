@@ -1,0 +1,20 @@
+{
+  "pipe.aria": "Research pipeline in five steps",
+  "pipe.core": "Core",
+  "pipe.step1.name": "Collect",
+  "pipe.step1.desc": "Federal bills and rules (GovInfo, Federal Register) plus 50 state legislatures ({from}–{to} in this database); full text",
+  "pipe.step2.name": "Classify",
+  "pipe.step2.desc": "Skip ceremonial, memorial and naming bills; split long federal bills into chapters",
+  "pipe.step3.name": "Extract",
+  "pipe.step3.desc": "An LLM reads each bill or chapter and flags RD, DiD, both or none; schema-validated",
+  "pipe.step4.name": "Score",
+  "pipe.step4.desc": "Composite of identification, significance, intensity and data feasibility; hard caps",
+  "pipe.step5.name": "Screen",
+  "pipe.step5.desc": "Strictly enacted, no 3‑state wave, non‑COVID, open data, weakest sub-score ≥3",
+  "pipe.step5.cta": "See the funnel →",
+  "pipe.step5.link": "/documentation.html#screening",
+  "pipe.branches.aria": "Branch off the main flow",
+  "pipe.branch.skip": "Ceremonial bills → skipped (stub row)",
+  "pipe.more": "Full pipeline diagram →",
+  "pipe.doc.link": "/documentation.html#overview-pipeline"
+}

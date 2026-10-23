@@ -1,0 +1,141 @@
+{
+  "recorded_at_utc": "2026-10-08T02:08:47.932032+00:00",
+  "stage": "PROTOCOL_AND_SKELETON_ONLY_NOT_EXECUTION_READY",
+  "checks": {
+    "synthetic_tests_normal": {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/l3_meta",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/scratch/l3_meta_synthetic_tests_normal.log",
+      "log_sha256": "a19817393d874d43527f026d1bf09bb3e4822943a3ab16937c9a1684ccd29cb1"
+    },
+    "synthetic_tests_optimized": {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-O",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/l3_meta",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/scratch/l3_meta_synthetic_tests_optimized.log",
+      "log_sha256": "a19817393d874d43527f026d1bf09bb3e4822943a3ab16937c9a1684ccd29cb1"
+    },
+    "plan_cli": {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "scripts/l3_meta/cli.py",
+        "plan"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/scratch/l3_meta_plan_cli.log",
+      "log_sha256": "5dd56676c2eaac8fa41cc7355540904354b2a4d2a50cfc56d03eaafdf5f5f06c"
+    },
+    "power_cli": {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "scripts/l3_meta/cli.py",
+        "power"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/scratch/l3_meta_power_cli.log",
+      "log_sha256": "0d4c099adf59a914bb68a9caf0e539bac727ebd368fb450918c123f4b3a4f2c2"
+    },
+    "freeze_verify": {
+      "command": [
+        ".venv_did/bin/python",
+        "-B",
+        "scripts/did_samples/freeze.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/scratch/l3_meta_freeze_verify.log",
+      "log_sha256": "3c26ddc5648bbef00eb531a7116e65d5317b36db690e6f83ff000127caed83cf",
+      "verifier_output": {
+        "issues": [],
+        "actual_data_estimation_calls": 0
+      }
+    },
+    "freeze_cases_verify": {
+      "command": [
+        ".venv_did/bin/python",
+        "-B",
+        "scripts/did_samples/cases/freeze_cases.py",
+        "--verify",
+        "--code-path",
+        "scripts/did_samples/amendment5_audit.py",
+        "--code-path",
+        "scripts/did_samples/crosscheck/run_crosscheck.py"
+      ],
+      "exit_code": 0,
+      "log": "/tmp/scratch/l3_meta_freeze_cases_verify.log",
+      "log_sha256": "3c26ddc5648bbef00eb531a7116e65d5317b36db690e6f83ff000127caed83cf",
+      "verifier_output": {
+        "issues": [],
+        "actual_data_estimation_calls": 0
+      }
+    }
+  },
+  "synthetic_tests_each_mode": 19,
+  "prereg_lines": 106,
+  "prereg_limit": 150,
+  "protected_files_rehashed": 1647,
+  "protected_changed": [],
+  "input_drift": [],
+  "independent_method_review": "No unresolved MUST at proposal/skeleton stage; full resampling implementation and size validation remain prerequisites",
+  "real_l2_outcome_ingestion_calls": 0,
+  "real_estimation_calls": 0,
+  "real_forecast_scoring_calls": 0,
+  "new_downloads": [],
+  "new_download_bytes": 0,
+  "local_third_party_scan_performed": false,
+  "source_handling": "Primary-source web-tool results treated as untrusted data; no separate local/model scan claimed",
+  "deliverables": {
+    "scripts/l3_meta/INPUT_INVENTORY.json": {
+      "sha256": "da849c65ba59c780ae42fd54f0f6ea6ceb3e1a9a410f45e42d982829a9049378",
+      "bytes": 10953
+    },
+    "scripts/l3_meta/README.md": {
+      "sha256": "da06f4a8730361cd9c32d54e676a91a25b8175d5f33243b031a9ddb570a1ea11",
+      "bytes": 5332
+    },
+    "scripts/l3_meta/cli.py": {
+      "sha256": "c0ea5dabd5c7f4ee8908cc6cf25a7c0fc47ee69a14dac32f863f974410287d7b",
+      "bytes": 14747
+    },
+    "scripts/l3_meta/contracts.schema.json": {
+      "sha256": "50ad134928202f90085e51a9b992b3d829eb485b3d28ec18fd91a5befe1daa42",
+      "bytes": 11828
+    },
+    "scripts/l3_meta/plan.json": {
+      "sha256": "bf42bfcf3dbbbf98345d3b1a22963429d32628b640a078f0cab279e97b61b131",
+      "bytes": 7088
+    },
+    "scripts/l3_meta/test_cli.py": {
+      "sha256": "10e0e27392d80a5d81ee0893538bf85407532ad9e931a96c11dbd4cc87929dc3",
+      "bytes": 10750
+    },
+    "docs/plans/l3-meta/PREREG_L3_META.md": {
+      "sha256": "80c18eb59d299006c3838c578c753edbf8c1e29ed8083cfc092a642ad8992c01",
+      "bytes": 24953
+    }
+  }
+}

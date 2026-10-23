@@ -1,0 +1,70 @@
+<style>
+{{css:design_hero}}
+.home-v5{max-width:1100px;margin:24px auto;color:#111827;font-size:16px;line-height:1.6;min-width:0}
+.home-v5 *{box-sizing:border-box}.home-v5 h1{font:600 38px/1.15 var(--nx-display);max-width:960px;margin:0 0 16px;letter-spacing:normal;text-wrap:balance}
+.home-v5 .home-nb{white-space:nowrap}.home-v5 .home-key{color:var(--nx-accent)}
+.home-v5 p{margin:0 0 12px;overflow-wrap:anywhere}
+.home-thesis>p{max-width:860px}.home-route{display:flex;flex-wrap:wrap;gap:0 12px;align-items:center;margin:8px 0 18px;font-size:16px}
+.home-v5 a{display:inline-flex;align-items:center;min-height:44px;color:#1d4ed8;text-underline-offset:3px}.home-route a{min-width:44px}
+.home-v5 .home-meta{font-size:13px;line-height:1.6;color:#526071}
+.home-hero{margin-bottom:32px}.home-hero>*{min-width:0}.home-v5 .nx-herocard{min-width:0}.home-v5 .nx-mapcard{max-width:100%}.home-v5 .home-figure p{overflow-wrap:normal}.home-v5 .home-mapnote{grid-column:2;margin:0}
+.home-v5:lang(zh){line-height:1.75}.home-v5:lang(zh) h1{font-family:var(--nx-sans)}.home-v5:lang(zh) h1{text-wrap:balance;line-height:1.15;font-size:38px;word-break:keep-all;overflow-wrap:anywhere}
+@media(max-width:700px){.home-v5{margin:24px auto}.home-v5:lang(zh){line-height:1.75}}
+.home-v5:lang(zh) .home-meta,.home-v5:lang(zh) .sm-cap{line-height:var(--nx-lh-cap)}
+.home-v5:lang(zh) .home-thesis>p{word-break:keep-all;overflow-wrap:anywhere}
+.home-v5 .nx-ladder{margin-top:calc(var(--nx-gap) - 32px);--lv-word:var(--nx-type-feature,28px)}
+@media(max-width:759px){.home-v5 .nx-ladder{--lv-word:22px}}
+.home-v5:lang(zh) .nx-lv-word{font-size:var(--lv-word);line-height:1.2}
+.home-v5 .nx-lv-word a{display:inline-flex;align-items:center;min-height:44px;padding-block:6px;color:inherit;text-decoration:underline;text-decoration-color:var(--nx-slate);text-decoration-thickness:1px;text-underline-offset:.16em}
+.home-v5 .nx-lv-word a:hover,.home-v5 .nx-lv-word a:focus-visible{color:var(--nx-accent);text-decoration-color:currentColor}
+.home-v5 .nx-lv{list-style:none;margin:0;padding-inline:0}
+.home-v5 .nx-nd{margin:0;overflow-wrap:normal}
+.home-v5 .nx-stair .nx-st[data-nx-intro].nx-motion-complete [data-nx-reveal]{opacity:1}
+@media(max-width:600px){.home-v5 h1,.home-v5:lang(zh) h1{font-size:30px}.home-v5 .nx-frame{margin-inline:0}.home-v5 .nx-in{padding-inline:8px}}
+@media(max-width:340px){.home-v5:lang(zh) h1{font-size:28px}}
+@media (min-width:601px) and (max-width:650px){.nx-herocard .sm .nx-legend{min-height:74px}}
+@media (min-width:361px) and (max-width:390px){.home-v5:not(:lang(zh)) .sm-pn{font-size:min(15px,calc((100vw - 60px)/22))}}
+</style>
+<main class="home-v5" data-component="home-story" aria-label="{{t:story.aria}}">
+<div class="home-hero nx-herogrid">
+<header class="home-thesis nx-herotext" data-home-block="1"><h1>{{t:story.thesis_html}}</h1><p>{{t:story.intro_html}}</p></header>
+<div class="nx-herocard home-figure">{{partial:story_map}}<p class="home-meta home-mapnote"><a href="/viz/{{lang_code}}/adoption.html#map-sources">{{t:story.map.sources}}</a></p></div>
+</div>
+{{v5_home}}
+<script>
+(function(){
+ var root=document.querySelector('.nx-stair'),motion=window.NXMotion;if(!root||!motion)return;
+ var stages=[].slice.call(root.querySelectorAll('.nx-st')),tallies=[].slice.call(root.querySelectorAll('.nx-tally')),
+     finals=tallies.map(function(e){return e.textContent});
+ function finish(){root.classList.remove('lv-end-reached');stages.forEach(function(s){s.classList.remove('lv-reached')});tallies.forEach(function(e,i){e.textContent=finals[i]})}
+ var handle=motion.once(root,function(ctx){
+  // Count clocks run alongside the shared row reveals, without occupying the
+  // illustration queue or creating delayed fade/rise animations.
+  ctx.releaseIntro();
+  var mobile=window.innerWidth<760,starts=mobile?[0,650,1300]:[0,950,1800];
+  var curve=window.getComputedStyle(document.documentElement),valueEase=curve.getPropertyValue?curve.getPropertyValue('--nx-ease-value'):'';
+  var cp=(valueEase.match(/[.\d]+/g)||['.2','.7','.2','1']).map(Number);
+  function eased(f){var lo=0,hi=1,t=f;for(var j=0;j<16;j++){t=(lo+hi)/2;var u=1-t,x=3*u*u*t*cp[0]+3*u*t*t*cp[2]+t*t*t;if(x<f)lo=t;else hi=t}var u=1-t;return 3*u*u*t*cp[1]+3*u*t*t*cp[3]+t*t*t}
+  tallies.forEach(function(e){e.style.minWidth=e.getBoundingClientRect().width+'px'});
+  function tally(e,value){
+   var total=Number(value.replace(/[^0-9]/g,'')),elapsed=0,last=null;if(!Number.isFinite(total))return;
+   e.textContent='0';
+   function tick(t){if(!ctx.active())return;if(last!==null)elapsed+=Math.min(48,t-last);last=t;
+    var f=Math.min(1,elapsed/600);e.textContent=Math.round(total*eased(f)).toLocaleString('en-US');
+    if(f<1)ctx.raf(tick);else e.textContent=value;
+   }ctx.raf(tick);
+  }
+  stages.forEach(function(stage,i){
+   ctx.timer(function(){
+    if(i===0){tally(tallies[0],finals[0]);tally(tallies[1],finals[1])}stage.classList.add('lv-reached');
+   },starts[i]);
+
+  });
+  ctx.timer(function(){ctx.finish('complete')},mobile?2400:2900);
+ },{finish:finish,threshold:.40,maxDuration:3500});
+ var reveals=stages.map(function(stage){return motion.revealOnce(stage,stage.querySelectorAll('[data-nx-reveal]'))});
+ if(reveals.every(function(reveal){return reveal.state==='finished'}))handle.finish('static');
+ root.addEventListener('focusin',function(){handle.finish('focus');reveals.forEach(function(reveal){reveal.finish('focus')})});
+})();
+</script>
+</main>

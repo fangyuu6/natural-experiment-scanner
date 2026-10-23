@@ -1,0 +1,642 @@
+{
+  "policy_id": "tnc_framework",
+  "name_en": "Ride-hailing (TNC) framework laws",
+  "name_zh": "网约车（TNC）州级框架法",
+  "definition_en": "Statewide statute (not a city rule, pilot or regulator decision) creating a regulatory framework for Transportation Network Companies (Uber/Lyft): authorises TNC operation with permit or registration, insurance and driver-vetting rules, typically pre-empting local rules.",
+  "definition_zh": "州级成文法为网约车平台（TNC，如Uber/Lyft）建立全州监管框架：合法化其运营并规定许可或登记、保险与司机审查，通常排除地方自行立法。",
+  "year_basis": "Year the first statewide TNC framework statute was signed (Kansas: veto override). Insurance-only statutes, local ordinances and regulator decisions (CA CPUC 2013) are not counted; their years appear in notes. As-of date 2025-12-31.",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf",
+    "https://nationalsecurity.gmu.edu/wp-content/uploads/2018/03/Ridesharing-Policy-Challenges-R-Street-1.pdf",
+    "https://policy.tti.tamu.edu/technology/tnc-legislation/",
+    "https://www.iii.org/article/ride-sharing-and-insurance-qa",
+    "https://en.wikipedia.org/wiki/Legality_of_TNCs_by_jurisdiction",
+    "https://content.naic.org/cipr-topics/commercial-ride-sharing",
+    "https://www.revisor.mn.gov/statutes/cite/181C.10",
+    "https://lrb.hawaii.gov/wp-content/uploads/2022_Acts.pdf",
+    "https://leginfo.ca.gov/pub/13-14/bill/asm/ab_2251-2300/ab_2293_bill_20140917_chaptered.pdf"
+  ],
+  "states": {
+    "AL": {
+      "year": 2018,
+      "date": "2018-03-01",
+      "sources": [
+        "https://governor.alabama.gov/newsroom/2018/03/governor-ivey-signs-statewide-ridesharing-bill-into-law/",
+        "https://governor.alabama.gov/newsroom/2018/06/governor-ivey-announces-ridesharing-law-effective-across-alabama/",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "Framework Act 2018-127 (HB190). Earlier Act 2016-409 (SB262) was insurance-only, not counted.",
+      "verification": "verified"
+    },
+    "AK": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://legiscan.com/AK/bill/HB132/2017",
+        "https://www.akleg.gov/basis/get_documents.asp?session=30&docid=14144",
+        "https://www.commerce.alaska.gov/web/cbpl/BusinessLicensing/TransportationNetworkDrivers.aspx"
+      ],
+      "confidence": "medium",
+      "note": "HB 132 (Let's Ride Alaska Act, AS 28.23), signed mid-June 2017; pages seen only via search results, exact date unverified. | V3: akleg/legiscan pages returned 403 when opened; my own search results also showed HB 132 signed 2017-06-15 (ch. 10 SLA 2017, eff. 2017-06-16). Not opened, so single_source.",
+      "verification": "single_source"
+    },
+    "AZ": {
+      "year": 2015,
+      "date": "2015-04-09",
+      "sources": [
+        "https://www.azleg.gov/legtext/52leg/1r/laws/0235.htm",
+        "https://insurance.az.gov/regulatory-bulletin-2015-04-insuring-transportation-network-company-drivers"
+      ],
+      "confidence": "high",
+      "note": "HB 2135 (Laws 2015 ch. 235); ARS 28-9551ff.",
+      "verification": "verified"
+    },
+    "AR": {
+      "year": 2015,
+      "date": "2015-04-04",
+      "sources": [
+        "https://www.arkleg.state.ar.us/Bills/Detail?ddBienniumSession=2015%2F2015R&measureno=SB800",
+        "https://apsc.arkansas.gov/utilities/transportation-network-companies/",
+        "https://www.sos.arkansas.gov/uploads/rulesRegs/Arkansas%20Register/2016/march2016/126.04.16-002.pdf"
+      ],
+      "confidence": "high",
+      "note": "SB 800 = Act 1050 of 2015 (TNC Services Act); 'act date' 2015-04-04 per legislature site.",
+      "verification": "verified"
+    },
+    "CA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://leginfo.ca.gov/pub/13-14/bill/asm/ab_2251-2300/ab_2293_bill_20140917_chaptered.pdf",
+        "https://docs.cpuc.ca.gov/PublishedDocs/Efile/G000/M112/K116/112116134.PDF",
+        "https://mobilitylab.org/research/ridesharing/uber-and-lyft-are-lobbying-states-to-prohibit-local-regulation/",
+        "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PUC&division=2.&title=&part=&chapter=8.&article=7.",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "low",
+      "note": "V3 DISPUTED (excluded): candidates 2013 = CPUC D.13-09-045 (regulator decision, excluded by definition); 2014 = AB 2293 (Stats. 2014 ch. 389, approved 2014-09-17; digest \"TNCs: insurance coverage\", insurance-only); 2019 = PUC 5445.2/5445.3 (Stats. 2019 ch. 618/497) statutory driver background checks, but the permit regime is still CPUC under the Charter-party Carriers Act. No single enactment clearly creates the framework by statute. | Researcher note was: No framework statute: CPUC D.13-09-045 (Sept 2013) created TNC rules; AB 2293 (signed 2014-09-17) is insurance-only.",
+      "verification": "disputed"
+    },
+    "CO": {
+      "year": 2014,
+      "date": "2014-06-05",
+      "sources": [
+        "https://content.leg.colorado.gov/sites/default/files/16-34_transportation_network_companies_ib_two.pdf",
+        "https://www.iii.org/article/ride-sharing-and-insurance-qa",
+        "https://en.wikipedia.org/wiki/Legality_of_TNCs_by_jurisdiction",
+        "https://cdle.colorado.gov/labor-law-stats/labor-laws-by-topic/transportation-network-company-tnc"
+      ],
+      "confidence": "high",
+      "note": "SB14-125, first statewide TNC statute (PUC permits).",
+      "verification": "verified"
+    },
+    "CT": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.cga.ct.gov/2017/act/pa/2017PA-00140-R00HB-07126-PA.htm",
+        "https://www.cga.ct.gov/2017/ACT/PA/2017PA-00203-R00SB-00807-PA.htm",
+        "https://www.cga.ct.gov/OLR/Documents/year/AA/2017AA-0135_2017%20Acts%20Affecting%20Transportation.pdf",
+        "https://codes.findlaw.com/ct/title-13b-transportation/ct-gen-st-sect-13b-116.html"
+      ],
+      "confidence": "medium",
+      "note": "PA 17-140 (HB 7126) and PA 17-203 (SB 807), both 2017; exact signing dates not verified. | V3: AS 13b-116ff statute text exists (FindLaw) but shows no year; cga.ct.gov pages failed TLS, so PA 17-140/17-203 year not independently opened. 2017 matches my prior. single_source.",
+      "verification": "single_source"
+    },
+    "DE": {
+      "year": 2016,
+      "date": "2016-08-10",
+      "sources": [
+        "https://legis.delaware.gov/SessionLaws/Chapter?id=15856",
+        "https://law.justia.com/codes/delaware/2022/title-2/chapter-19/section-1908-d-1/"
+      ],
+      "confidence": "high",
+      "note": "SB 262, Laws of Delaware ch. 374 (Title 2 ch. 19). 2015 DelDOT-Uber MOU was not a statute.",
+      "verification": "verified"
+    },
+    "DC": {
+      "year": 2014,
+      "date": "2014-11-18",
+      "sources": [
+        "https://code.dccouncil.gov/us/dc/council/laws/20-197",
+        "https://www.nbcwashington.com/news/local/dc-taxis-to-protest-councils-planned-uber-vote/67935/",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "Council act, not a state statute: D.C. Law 20-197 signed by Mayor 2014-11-18, effective 2015-03-10.",
+      "verification": "verified"
+    },
+    "FL": {
+      "year": 2017,
+      "date": "2017-05-09",
+      "sources": [
+        "https://www.flsenate.gov/Committees/BillSummaries/2017/html/221",
+        "https://www.wjhg.com/content/news/Florida-Governor-Rick-Scott-signs-UberLyft-bill-into-law-421806483.html",
+        "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699%2F0627%2FSections%2F0627.748.html"
+      ],
+      "confidence": "high",
+      "note": "CS/HB 221, Ch. 2017-12, effective 2017-07-01; preempts local rules (s. 627.748).",
+      "verification": "verified"
+    },
+    "GA": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://codes.findlaw.com/ga/title-40-motor-vehicles-and-traffic/ga-code-sect-40-1-190/",
+        "https://nationalsecurity.gmu.edu/wp-content/uploads/2018/03/Ridesharing-Policy-Challenges-R-Street-1.pdf",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf",
+        "https://gamccd.net/Documents/FAQ_For-Hire_Tranportation_Service.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 225 (2015-16 session; OCGA 40-1-190 'ride share network service'); year from R Street citation, signing date not verified. | V3: R Street (opened) cites HB 225 legislation dated 2015-05-06; DPS FAQ (opened) confirms OCGA 40-1-190 ride-share registration program. HB 190 (insurance) signed same week. Year 2015 certain; exact signing date not seen.",
+      "verification": "verified"
+    },
+    "HI": {
+      "year": 2022,
+      "date": null,
+      "sources": [
+        "https://law.justia.com/codes/hawaii/2016/title-24/chapter-431/section-431-10c-703",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf",
+        "https://lrb.hawaii.gov/wp-content/uploads/2022_Acts.pdf",
+        "https://data.capitol.hawaii.gov/sessions/session2022/bills/HB1681_SD1_.HTM",
+        "https://data.capitol.hawaii.gov/sessions/session2022/bills/HB1681_HD2_.HTM"
+      ],
+      "confidence": "medium",
+      "note": "V3 FIXED: Act 57 (2022), HB 1681 HD2 SD1 (LRB list as of 2022-07-12), effective 2023-01-01, enacts statewide TNC regulation: DOT permit (up to $25,000 fee), driver background checks, preemption of local rules, permanent insurance. Act 236 of 2016 (insurance-only) is NOT the framework; researcher missed Act 57. Exact signing date not seen (2022 act). | Researcher note was: Insurance-only TNC statute (Act 236 of 2016, HRS 431:10C-701ff); no licensing framework or preemption. Null by definition.",
+      "verification": "fixed"
+    },
+    "ID": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://legislature.idaho.gov/statutesrules/idstat/Title49/T49CH37/SECT49-3701/",
+        "https://legislature.idaho.gov/sessioninfo/2015/legislation/H0316/",
+        "https://legislature.idaho.gov/wp-content/uploads/statutesrules/idstat/Title49/T49CH37.pdf"
+      ],
+      "confidence": "high",
+      "note": "TNC Services Act (Idaho Code 49-37), 2015 ch. 267; H316 (signed 2015-04-10) added insurance rules. Framework signing date unverified. | V3: H316 (signed 2015-04-10) is insurance-only; the framework short title TNC Services Act is 2015 ch. 267 - both 2015.",
+      "verification": "verified"
+    },
+    "IL": {
+      "year": 2015,
+      "date": "2015-01-12",
+      "sources": [
+        "https://legal.iml.org/file.cfm?key=18274",
+        "https://codes.findlaw.com/il/chapter-625-vehicles/il-st-sect-625-57-33/",
+        "https://www.ilga.gov/ftp/Public%20Acts/98/098-1173.htm",
+        "https://www.mevorahlaw.com/blog/ridesharing-illinois-new-uber-law",
+        "https://will.illinois.edu/news/story/quinn-vetoes-illinois-ridesharing-regulations",
+        "https://www.insurancejournal.com/news/midwest/2014/12/05/349082.htm"
+      ],
+      "confidence": "high",
+      "note": "TNP Act = PA 98-1173, effective 2015-06-01 (PA 99-56 added preemption). Signing date not verified; may be Dec 2014/Jan 2015. | V3: SB 2774 (=PA 98-1173) passed in Dec 2014 veto session; signed 2015-01-12 by Quinn on his last day (Chicago Business/Daily Herald seen in search results; mevorahlaw opened says January); eff. 2015-06-01. HB 4075 was vetoed 2014-08-25.",
+      "verification": "verified"
+    },
+    "IN": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://statecodesfiles.justia.com/indiana/2015/title-8/article-2.1/chapter-19.1/chapter-19.1.pdf",
+        "https://law.justia.com/codes/indiana/2015/title-8/article-2.1/chapter-19.1/"
+      ],
+      "confidence": "high",
+      "note": "IC 8-2.1-19.1 (DOR permit) added by P.L.175-2015; signing date not verified.",
+      "verification": "verified"
+    },
+    "IA": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://iowadot.gov/motor-carriers/paid-rideshare",
+        "https://www.legis.iowa.gov/docs/code/321N.1.pdf",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "HF 2414 (Iowa Code ch. 321N), signed May 2016 per search summary; exact date not verified.",
+      "verification": "verified"
+    },
+    "KS": {
+      "year": 2015,
+      "date": "2015-05-05",
+      "sources": [
+        "https://www.kslegislature.gov/li_2016/b2015_16/measures/sb117/",
+        "https://kslegislature.gov/li_2016/b2015_16/measures/documents/summary_sb_117_2015.pdf",
+        "https://ksrevisor.gov/statutes/chapters/ch08/008_027_0001.html"
+      ],
+      "confidence": "high",
+      "note": "H Sub for SB 117: governor vetoed 2015-04-29; override 2015-05-05 made it law (eff. 2015-05-14). Date = override.",
+      "verification": "verified"
+    },
+    "KY": {
+      "year": 2015,
+      "date": "2015-03-19",
+      "sources": [
+        "https://apps.legislature.ky.gov/record/15rs/sb153.html",
+        "https://apps.legislature.ky.gov/law/acts/15RS/documents/0019.pdf",
+        "https://apps.legislature.ky.gov/CommitteeDocuments/10/26662/04.%20Uber%20in%20Kentucky.pdf"
+      ],
+      "confidence": "high",
+      "note": "SB 153 (Acts ch. 19) put TNC certificate/insurance into KRS 281; earlier 601 KAR 1:113 rule was administrative only.",
+      "verification": "verified"
+    },
+    "LA": {
+      "year": 2019,
+      "date": "2019-06-11",
+      "sources": [
+        "https://www.legis.la.gov/legis/BillInfo.aspx?s=19RS&b=HB575&sbi=y",
+        "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1142618",
+        "https://www.legis.la.gov/legis/ViewDocument.aspx?d=957559",
+        "https://www.dotd.louisiana.gov/about/office-of-multimodal-commerce/public-transportation/transportation-network-companies/"
+      ],
+      "confidence": "high",
+      "note": "Framework: Act 286 (HB 575) creates TNC permits, eff. 2019-07-01. Act 266 of 2015 (SB 172) was insurance/safety only, not counted.",
+      "verification": "verified"
+    },
+    "ME": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://legislature.maine.gov/legis/bills/bills_127th/chapters/PUBLIC279.asp",
+        "https://legislature.maine.gov/statutes/29-a/title29-Asec1672.html"
+      ],
+      "confidence": "high",
+      "note": "PL 2015 ch. 279 (LD 1379, emergency law): title says insurance but adds SoS permit, driver rules, municipal preemption. | V3 opened PL 2015 ch. 279: title says insurance but text adds annual SoS permit ($10,000), background checks, insurance - qualifies as framework.",
+      "verification": "verified"
+    },
+    "MD": {
+      "year": 2015,
+      "date": "2015-05-12",
+      "sources": [
+        "https://mgaleg.maryland.gov/2015RS/chapters_noln/Ch_204_sb0868T.pdf",
+        "https://mgaleg.maryland.gov/mgawebsite/legislation/details/sb0054?ys=2016RS"
+      ],
+      "confidence": "high",
+      "note": "SB 868, Ch. 204 of 2015 (PSC registration). Ch. 16 of 2016 (SB 54, signed 2016-04-07) only clarified it.",
+      "verification": "verified"
+    },
+    "MA": {
+      "year": 2016,
+      "date": "2016-08-05",
+      "sources": [
+        "https://malegislature.gov/Laws/SessionLaws/Acts/2016/Chapter187",
+        "https://www.mma.org/governor-signs-bill-to-regulate-transportation-network-companies/"
+      ],
+      "confidence": "high",
+      "note": "Chapter 187 of the Acts of 2016 (DPU oversight).",
+      "verification": "verified"
+    },
+    "MI": {
+      "year": 2016,
+      "date": "2016-12-21",
+      "sources": [
+        "https://www.legislature.mi.gov/documents/2015-2016/publicact/htm/2016-PA-0345.htm",
+        "https://www.legislature.mi.gov/documents/mcl/archive/2023/October/mcl-Act-345-of-2016.pdf"
+      ],
+      "confidence": "high",
+      "note": "PA 345 of 2016 (HB 4637), effective 2017-03-21; preempts local rules.",
+      "verification": "verified"
+    },
+    "MN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.revisor.mn.gov/statutes/cite/65B.472",
+        "https://minnesotareformer.com/2024/05/21/heres-whats-in-the-bill-regulating-uber-and-lyft-driver-pay-and-labor-standards/",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf",
+        "https://www.revisor.mn.gov/statutes/cite/181C",
+        "https://www.revisor.mn.gov/statutes/cite/181C.10",
+        "https://www.revisor.mn.gov/statutes/cite/181C.09"
+      ],
+      "confidence": "high",
+      "note": "V3: Minn. Stat. 65B.472 (2015 c 48) is insurance-only; ch. 181C (2024 c 127 art 17) = driver pay transparency, minimum compensation, deactivation, plus preemption of local rules on those topics; 181C.09 shows local units still license TNCs; no state permit or driver vetting. Null. | Researcher note was: Insurance-only TNC statute (Minn. Stat. 65B.472, 2015). 2024 law (signed 2024-05-24) is driver pay/deactivation rules. Null by definition.",
+      "verification": "verified"
+    },
+    "MS": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://www.mid.ms.gov/legal/regulations/20169reg.pdf",
+        "https://billstatus.ls.state.ms.us/documents/2016/html/HB/1300-1399/HB1381IN.htm",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 1381, 2016 Regular Session (Miss. Code Title 77 ch. 8); insurance dept rule eff. 2016-10-01; signing date not verified.",
+      "verification": "verified"
+    },
+    "MO": {
+      "year": 2017,
+      "date": "2017-04-24",
+      "sources": [
+        "https://themissouritimes.com/ridesharing-companies-celebrate-greitens-signs-uber-bill/",
+        "https://revisor.mo.gov/main/OneSection.aspx?section=387.400",
+        "https://www.governing.com/archive/tns-uber-greitens-missouri.html"
+      ],
+      "confidence": "high",
+      "note": "HB 130 signed by Gov. Greitens (date from Missouri Times); DOR licence required from 2017-08-28.",
+      "verification": "verified"
+    },
+    "MT": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://flatheadbeacon.com/2015/05/13/new-law-will-allow-rideshare-companies-to-operate-in-montana/",
+        "https://billingsgazette.com/news/state-and-regional/govt-and-politics/new-legislation-paves-the-way-for-uber-and-lyft-to/article_99b48636-717e-5b01-9079-7b9813d604de.html",
+        "https://mca.legmt.gov/bills/mca/title_0690/chapter_0120/part_0010/section_0010/0690-0120-0010-0010.html"
+      ],
+      "confidence": "medium",
+      "note": "SB 396 (signed ~early May 2015) created PSC Class E TNC licence; exact signing date not verified. | V3: only Flathead Beacon (2015-05-13) opened: law signed the previous week creating PSC TNC licence class. MCA page not opened. single_source.",
+      "verification": "single_source"
+    },
+    "NE": {
+      "year": 2015,
+      "date": "2015-05-27",
+      "sources": [
+        "https://nebraskalegislature.gov/FloorDocs/104/PDF/Slip/LB629.pdf",
+        "https://nebraskalegislature.gov/laws/statutes.php?statute=75-324"
+      ],
+      "confidence": "high",
+      "note": "LB 629 (Laws 2015), PSC permits; no state preemption of local rules.",
+      "verification": "verified"
+    },
+    "NV": {
+      "year": 2015,
+      "date": "2015-05-29",
+      "sources": [
+        "https://skift.com/2015/05/31/las-vegas-gets-one-step-closer-to-welcoming-uber-thanks-to-nevadas-governor/",
+        "https://nta.nv.gov/uploadedfiles/ntanvgov/content/About/AB176_Enrolled.pdf",
+        "https://www.reviewjournal.com/news/politics-and-government/nevada/legislature-approves-bill-authorizing-uber-lyft-in-nevada/"
+      ],
+      "confidence": "high",
+      "note": "AB 176 (Ch. 279, 2015; NRS 706A), NTA regulates; signing 'Friday' before 2015-05-31 per Skift.",
+      "verification": "verified"
+    },
+    "NH": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://www.insurancejournal.com/news/east/2016/06/27/418374.htm",
+        "https://legiscan.com/NH/text/HB1697/2016",
+        "https://law.justia.com/codes/new-hampshire/2016/title-xxxiv/chapter-376-a/"
+      ],
+      "confidence": "medium",
+      "note": "HB 1697 (RSA 376-A, replaced by RSA 359-U in 2023), law in effect by 2016-06-27; LegiScan lists signing 2016-06-21 (unverified). | V3: only Insurance Journal (2016-06-27) opened: Hassan signed; criminal checks, insurance, preemption. single_source.",
+      "verification": "single_source"
+    },
+    "NJ": {
+      "year": 2017,
+      "date": "2017-02-10",
+      "sources": [
+        "https://pub.njleg.gov/bills/2016/PL17/26_.HTM",
+        "https://nj.gov/mvc/pdf/about/2017-07_TNC.pdf"
+      ],
+      "confidence": "high",
+      "note": "P.L.2017 c.26 (A3695), TNC Safety and Regulatory Act, effective 2017-05-10.",
+      "verification": "verified"
+    },
+    "NM": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://www.nmlegis.gov/Sessions/16%20Regular/bills/house/HB0168.HTML",
+        "https://law.justia.com/codes/new-mexico/2021/chapter-65/article-7/section-65-7-1/",
+        "https://roadrunnerlaw.com/new-mexico-rideshare-laws/",
+        "https://www.nmlegis.gov/Sessions/16%20Regular/final/HB0168.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 168 = Laws 2016 ch. 80 (TNC Services Act, PRC), effective 2016-05-18; signing date not verified.",
+      "verification": "verified"
+    },
+    "NY": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.dfs.ny.gov/apps_and_licensing/property_insurers/trans_network_co_ride_sharing_faqs",
+        "https://tax.ny.gov/pdf/memos/multitax/m17_1m_1s.pdf",
+        "https://www.nysenate.gov/legislation/laws/VAT/1691"
+      ],
+      "confidence": "high",
+      "note": "Part AAA, Ch. 59 Laws 2017 (VTL Art. 44-B), April 2017 budget; operation outside NYC from 2017-06-29. NYC covered by TLC rules.",
+      "verification": "verified"
+    },
+    "NC": {
+      "year": 2015,
+      "date": "2015-09-04",
+      "sources": [
+        "https://www.ncleg.gov/BillLookUp/2015/S541",
+        "https://nccriminallaw.sog.unc.edu/need-a-ride-call-uber-its-officially-regulated/"
+      ],
+      "confidence": "high",
+      "note": "SB 541, S.L. 2015-237, effective 2015-10-01.",
+      "verification": "verified"
+    },
+    "ND": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://ndlegis.gov/assembly/64-2015/regular/bill-overview/bo1144.html",
+        "https://ndlegis.gov/sites/default/files/statutorily-mandated-reports/dot-transportation-networks-2015-report.pdf",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 1144 (64th Assembly, 2015): insurance chapter 26.1-40.1 plus NDCC 39-34 TNC rules; signed ~2015-04-22/23, sources differ. | V3: official bill overview shows HB 1144 (64th Assembly, 2015 session) filed with Secretary of State April 22; the page itself says nothing on year but ND meets only in odd years. 2015.",
+      "verification": "verified"
+    },
+    "OH": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://www.news5cleveland.com/news/state/ohio-gov-john-kasich-has-signs-bill-that-affects-ride-sharing-companies-like-uber-lyft",
+        "https://lsc.ohio.gov/assets/organizations/legislative-service-commission/files/digest-of-2015-enactments-highways-and-transportation.pdf",
+        "https://www.legislature.ohio.gov/legislation/legislation-summary?id=GA131-HB-237"
+      ],
+      "confidence": "medium",
+      "note": "HB 237 signed Dec 2015, effective 2016-03-23 (ORC 4925, 3942; PUCO permits). | V3: only news5cleveland opened (HB 237 signed Dec 2015, eff. Mar 2016); official digest not opened. single_source.",
+      "verification": "single_source"
+    },
+    "OK": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://oklahoma.gov/occ/divisions/transportation/transportation-network-companies.html",
+        "https://justfacts.votesmart.org/bill/20064/52721/defines-transportation-network-company-services",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "medium",
+      "note": "TNC Services Act, 47 O.S. 1010-1030, effective 2015-07-01 (bill signed May 2015 per search summary). | V3: OCC page says 47 O.S. 1010-1030 effective 2015-07-01 (so enacted in 2015 session); enactment/signing date not seen. single_source.",
+      "verification": "single_source"
+    },
+    "OR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://olis.oregonlegislature.gov/liz/2021R1/Measures/Overview/HB2393",
+        "https://www.opb.org/article/2021/12/31/ride-hailing-companies-must-provide-insurance-coverage-for-oregon-drivers-and-passengers-starting-jan-1/",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "medium",
+      "note": "V3: HB 2393 (2021 c 222) = PIP insurance only; OPB 2021 says Oregon was one of the last states without a statewide law; WA guide Jan 2019: only state with none. Nothing found 2022-2025 (search budget exhausted), so check is strongest through 2021. | Researcher note was: No framework statute: HB 2393 (2021 ch. 222) only mandates PIP insurance for TNC/taxi drivers; TNCs are regulated locally (Portland).",
+      "verification": "verified"
+    },
+    "PA": {
+      "year": 2016,
+      "date": "2016-11-04",
+      "sources": [
+        "https://philapark.org/2016/11/act-164-legalizing-tncs-taxicab-and-limousine-amendments/",
+        "https://www.senatorbartolotta.com/2016/11/04/bartolottas-transportation-network-company-bill-signed-into-law/",
+        "https://www.puc.pa.gov/press-release/2016/puc-establishes-application-process-for-ride-hailing-services-to-request-permanent-operating-authority"
+      ],
+      "confidence": "high",
+      "note": "Act 164 (SB 984); PUC and Philadelphia Parking Authority regulate.",
+      "verification": "verified"
+    },
+    "RI": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://webserver.rilegislature.gov/BillText/BillText16/SenateText16/S2864Aaa.pdf",
+        "https://ripuc.ri.gov/sites/g/files/xkgbur841/files/eventsactions/docket/D_17_27_TNC_notice.pdf",
+        "https://law.justia.com/codes/rhode-island/title-39/chapter-39-14-2/section-39-14-2-5/",
+        "http://webserver.rilegislature.gov/Statutes/TITLE39/39-14.2/39-14.2-1.HTM"
+      ],
+      "confidence": "high",
+      "note": "S 2864 Sub A (RIGL 39-14.2, DPUC permits), 2016; signing date not verified (separate tax bill signed 2016-06-24).",
+      "verification": "verified"
+    },
+    "SC": {
+      "year": 2015,
+      "date": "2015-06-24",
+      "sources": [
+        "https://www.scstatehouse.gov/sess121_2015-2016/bills/3525.htm",
+        "https://abcnews4.com/news/local/taxi-companies-want-treatment-equal-to-uber-lyft"
+      ],
+      "confidence": "high",
+      "note": "H 3525 = Act 88 (S.C. Code 58-23-1600ff; ORS permits).",
+      "verification": "verified"
+    },
+    "SD": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://sdlegislature.gov/api/Statutes/32-40.html?all=true",
+        "http://sodakliberty.com/2016/03/23/another-11-bills-announced-signed-law-gov-daugaard-mar-21-22/",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 1091 (SL 2016 ch. 167): driver checks + insurance, no TNC permit; signed 2016-03-21/22 per SoDakLiberty. | V3: SL 2016 ch. 167 (all of ch. 32-40). Insurance plus driver vetting and operating rules but no TNC permit; kept as framework (statewide minimum rules).",
+      "verification": "verified"
+    },
+    "TN": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://trackbill.com/bill/tennessee-house-bill-992-transportation-dept-of-as-enacted-enacts-the-transportation-network-company-services-act-amends-tca-title-7-title-54-title-55-title-56-and-title-65/1135990/",
+        "https://www.tn.gov/commerce/news/2016/2/24/tdci-reminds-tennesseans-of-new-ridesharing-laws.html",
+        "https://www.tennesseeinjurylawcenter.com/new-state-legislation-for-uber-lyft-and-other-ride-sharing-companies/",
+        "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=HB0992&GA=109"
+      ],
+      "confidence": "high",
+      "note": "HB 992 TNC Services Act enacted 2015 (signing ~2015-05-20 per trackbill, unverified); operating rules effective 2016-01-01. | V3: official bill page (as summarised) shows HB 992 signed 2015-06-03, Pub. Ch. 520 (page also lists effective 2015-05-20, inconsistent); year 2015 unaffected.",
+      "verification": "verified"
+    },
+    "TX": {
+      "year": 2017,
+      "date": "2017-05-29",
+      "sources": [
+        "https://gov.texas.gov/news/post/governor-abbott-signs-bill-ending-local-regulations-of-transportation-netwo",
+        "https://www.texastribune.org/2017/05/29/texas-gov-greg-abbott-signs-measure-creating-statewide-regulations-rid/",
+        "https://policy.tti.tamu.edu/technology/tnc-legislation/"
+      ],
+      "confidence": "high",
+      "note": "HB 100 (Occ. Code ch. 2402), effective immediately; preempts local rules (e.g. Austin).",
+      "verification": "verified"
+    },
+    "UT": {
+      "year": 2015,
+      "date": "2015-03-31",
+      "sources": [
+        "https://le.utah.gov/~2015/bills/static/SB0294.html",
+        "https://le.utah.gov/lfa/fnotes/2015/SB0294.fn.pdf"
+      ],
+      "confidence": "high",
+      "note": "SB 294 (ch. 461), TNC Registration Act, effective 2015-05-12.",
+      "verification": "verified"
+    },
+    "VT": {
+      "year": 2018,
+      "date": "2018-06-19",
+      "sources": [
+        "https://legislature.vermont.gov/bill/status/2018.1/H.10",
+        "https://legislature.vermont.gov/statutes/fullchapter/23/010"
+      ],
+      "confidence": "high",
+      "note": "Act 3 of the 2018 Special Session (H.10, absorbing H.143), 23 V.S.A. ch. 10.",
+      "verification": "verified"
+    },
+    "VA": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://statescoop.com/virginia-governor-signs-bill-legalizing-uber-lyft-in-state/",
+        "https://www.washingtonpost.com/news/dr-gridlock/wp/2015/02/18/uber-and-lyft-are-now-legal-in-virginia/",
+        "https://legacylis.virginia.gov/cgi-bin/legp604.exe?151+ful+CHAP0002+pdf="
+      ],
+      "confidence": "high",
+      "note": "HB 1662/SB 1025 (Ch. 2 of 2015), DMV licensing; signed 2015-02-17 or 18 (sources differ). | V3: Chapter 2 of 2015 (HB 1662) approval shown as 2015-02-16 (summary), news says 02-17/18; year 2015 unaffected.",
+      "verification": "verified"
+    },
+    "WA": {
+      "year": 2022,
+      "date": "2022-03-31",
+      "sources": [
+        "https://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session%20Laws/House/2076-S.SL.pdf",
+        "https://mrsc.org/stay-informed/mrsc-insight/july-2022/new-legislation-regulates-tncs",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "Framework: ESHB 2076 (Ch. 281, 2022; DOL permit, preemption). ESSB 5550 (signed 2015-05-11) was insurance-only, not counted. | V3 read ESHB 2076 session law: secs. 15-32 create DOL TNC permit ($5,000), driver background checks, insurance and field preemption; approved 2022-03-31. ESSB 5550 (2015) insurance-only.",
+      "verification": "verified"
+    },
+    "WV": {
+      "year": 2016,
+      "date": "2016-03-15",
+      "sources": [
+        "https://www.wvlegislature.gov/bill_status/bills_history.cfm?input=4228&year=2016&sessiontype=RS&btype=bill",
+        "https://code.wvlegislature.gov/17-29-1/"
+      ],
+      "confidence": "high",
+      "note": "HB 4228 (Acts ch. 159), W. Va. Code 17-29, effective 2016-07-01.",
+      "verification": "verified"
+    },
+    "WI": {
+      "year": 2015,
+      "date": "2015-05-01",
+      "sources": [
+        "https://docs.legis.wisconsin.gov/2015/related/acts/16.pdf",
+        "https://docs.legis.wisconsin.gov/statutes/statutes/440/iv/40"
+      ],
+      "confidence": "high",
+      "note": "2015 Wisconsin Act 16 (AB 143), Wis. Stat. 440.40; date of enactment per Act.",
+      "verification": "verified"
+    },
+    "WY": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://wyoleg.gov/2017/Enroll/HB0080.pdf",
+        "https://law.justia.com/codes/wyoming/title-31/chapter-20/section-31-20-111/",
+        "https://leg.wa.gov/media/4y2cnvbo/tnc_policyguidefinal.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 80 (2017 Session Laws ch. 132) created W.S. 31-20-101ff; signing date not verified. | V3: Enrolled Act 84 (HB 80, 2017 General Session) creates W.S. 31-20-101..111: driver requirements, insurance, local preemption; signing date not shown.",
+      "verification": "verified"
+    }
+  },
+  "n_with_law": 48,
+  "year_min": 2014,
+  "year_max": 2022,
+  "researched_by": "agent",
+  "method_notes": "Built state by state from session laws/bill pages (official where reachable) plus news/agency pages; NCSL and IIHS trackers were not reachable. Some URLs seen only in search results. Year = first comprehensive TNC statute; IL signing date unverified (low). | Verification (agent-V3, 2026-10): blind list vs research then per-state official-page checks. WebSearch budget ran out mid-run, so later checks used direct page fetches only; verification label: verified = official/primary page opened by V3 confirms year (or news+statute for null states), single_source = only a news/secondary page or none could be opened, fixed = changed by V3 (HI added: Act 57 of 2022), disputed = excluded, conflicting candidates in note (CA). ",
+  "verified_by": "agent-V3"
+}

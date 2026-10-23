@@ -1,0 +1,335 @@
+{
+ "live_pin": "data/l3_meta/refresh/20261022_r3/live/l2_set_live.json",
+ "tag": "pin_refresh_20261022_r3_T265base",
+ "counts": {
+  "coded": 141,
+  "coded_in_pin": 126,
+  "pin_designs": 155,
+  "unclear_match": 0,
+  "unclear_direction": 2,
+  "matched_same": 45,
+  "directed": 45,
+  "directed_non_inferred": 39,
+  "estimated_with_noise_line_main": 14,
+  "estimated_with_noise_line_incl_inferred": 15,
+  "sens_AB_agree_same": 32,
+  "sens_disputes_moved_rows": 43,
+  "coded_prospective_not_evaluable": 78,
+  "coded_retrospective_estimated": 63
+ },
+ "main": {
+  "n": 14,
+  "bins": {
+   "sold": 2,
+   "none": 10,
+   "opposite": 2
+  },
+  "wilson95": {
+   "sold": [
+    0.04,
+    0.399
+   ],
+   "none": [
+    0.454,
+    0.883
+   ],
+   "opposite": [
+    0.04,
+    0.399
+   ]
+  },
+  "chance_reference_share": {
+   "sold": 0.024,
+   "opposite": 0.024,
+   "none": 0.952,
+   "n": 14
+  },
+  "by_domain": {
+   "crime": {
+    "n": 2,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "health": {
+    "n": 1,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "labor": {
+    "n": 2,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "other": {
+    "n": 5,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "public_finance": {
+    "n": 4,
+    "note": "count only (fewer than 8 tagged designs)"
+   }
+  }
+ },
+ "incl_inferred": {
+  "n": 15,
+  "bins": {
+   "sold": 2,
+   "none": 11,
+   "opposite": 2
+  },
+  "wilson95": {
+   "sold": [
+    0.037,
+    0.379
+   ],
+   "none": [
+    0.48,
+    0.891
+   ],
+   "opposite": [
+    0.037,
+    0.379
+   ]
+  },
+  "chance_reference_share": {
+   "sold": 0.024,
+   "opposite": 0.024,
+   "none": 0.952,
+   "n": 15
+  },
+  "by_domain": {
+   "crime": {
+    "n": 2,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "health": {
+    "n": 1,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "labor": {
+    "n": 2,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "other": {
+    "n": 6,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "public_finance": {
+    "n": 4,
+    "note": "count only (fewer than 8 tagged designs)"
+   }
+  }
+ },
+ "sens_AB_agree_same": {
+  "n": 13,
+  "bins": {
+   "sold": 2,
+   "none": 9,
+   "opposite": 2
+  },
+  "wilson95": {
+   "sold": [
+    0.043,
+    0.422
+   ],
+   "none": [
+    0.424,
+    0.873
+   ],
+   "opposite": [
+    0.043,
+    0.422
+   ]
+  },
+  "chance_reference_share": {
+   "sold": 0.024,
+   "opposite": 0.024,
+   "none": 0.952,
+   "n": 13
+  },
+  "by_domain": {
+   "crime": {
+    "n": 1,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "health": {
+    "n": 1,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "labor": {
+    "n": 2,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "other": {
+    "n": 5,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "public_finance": {
+    "n": 4,
+    "note": "count only (fewer than 8 tagged designs)"
+   }
+  }
+ },
+ "sens_disputes_moved": {
+  "n": 16,
+  "bins": {
+   "sold": 2,
+   "none": 12,
+   "opposite": 2
+  },
+  "wilson95": {
+   "sold": [
+    0.035,
+    0.36
+   ],
+   "none": [
+    0.505,
+    0.898
+   ],
+   "opposite": [
+    0.035,
+    0.36
+   ]
+  },
+  "chance_reference_share": {
+   "sold": 0.025,
+   "opposite": 0.025,
+   "none": 0.951,
+   "n": 16
+  },
+  "by_domain": {
+   "crime": {
+    "n": 2,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "health": {
+    "n": 1,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "labor": {
+    "n": 3,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "other": {
+    "n": 5,
+    "note": "count only (fewer than 8 tagged designs)"
+   },
+   "public_finance": {
+    "n": 5,
+    "note": "count only (fewer than 8 tagged designs)"
+   }
+  }
+ },
+ "units_main": [
+  {
+   "design_id": "b1010b_pdmp_mandatory_query",
+   "domain": "health",
+   "bin": "sold",
+   "ratio": 1.2001712893130392,
+   "chance_beyond": 0.046634189637875245,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "b1011cfl_state_motor_fuel_tax_package_capital_outlay",
+   "domain": "public_finance",
+   "bin": "none",
+   "ratio": 0.11946374457612875,
+   "chance_beyond": 0.052686915246042076,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "prototype:shall_issue",
+   "domain": "crime",
+   "bin": "opposite",
+   "ratio": 1.0342306490858861,
+   "chance_beyond": 0.059781710153979706,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "b1010_handheld_ban_all",
+   "domain": "other",
+   "bin": "opposite",
+   "ratio": 1.0249028801870725,
+   "chance_beyond": 0.049562863010768954,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "prototype:primary_seat_belt",
+   "domain": "other",
+   "bin": "none",
+   "ratio": 0.111704964060164,
+   "chance_beyond": 0.04787249930007964,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "prototype:salary_history_ban",
+   "domain": "labor",
+   "bin": "none",
+   "ratio": 0.1607995788367362,
+   "chance_beyond": 0.020218632813236326,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "b1011cfl_ui_alternative_base_period",
+   "domain": "labor",
+   "bin": "none",
+   "ratio": 0.5832901223019353,
+   "chance_beyond": 0.05413707066727813,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "b1010_primary_seatbelt",
+   "domain": "other",
+   "bin": "none",
+   "ratio": 0.27174491649222876,
+   "chance_beyond": 0.051954186460802854,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "b1011cfl_state_constitutional_tax_expenditure_limit",
+   "domain": "public_finance",
+   "bin": "sold",
+   "ratio": 2.309160144527539,
+   "chance_beyond": 0.06817138544412638,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "did-716ad30a75283116836f",
+   "domain": "public_finance",
+   "bin": "none",
+   "ratio": 0.9702666751377845,
+   "chance_beyond": 0.020760671543539555,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "run7_refundable_eitc",
+   "domain": "public_finance",
+   "bin": "none",
+   "ratio": 0.6186298713297512,
+   "chance_beyond": 0.053006372820217695,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "b1010_interlock_all_offender",
+   "domain": "other",
+   "bin": "none",
+   "ratio": 0.9301901795953064,
+   "chance_beyond": 0.045708721164543054,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "c35_cspp_earlvot",
+   "domain": "other",
+   "bin": "none",
+   "ratio": 0.6461266166021497,
+   "chance_beyond": 0.05110328734832392,
+   "epoch": "retrospective"
+  },
+  {
+   "design_id": "run8_extreme_risk_protection_order",
+   "domain": "crime",
+   "bin": "none",
+   "ratio": 0.265275918219921,
+   "chance_beyond": 0.04925958964137456,
+   "epoch": "retrospective"
+  }
+ ],
+ "note": "amended anchor gate, exploratory (HUB_RULING_20261022_PROMISE_ANCHORS.md)"
+}

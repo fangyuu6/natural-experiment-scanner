@@ -1,0 +1,16 @@
+{
+  "story.aria": "Research paths",
+  "preview.title": "Natural Experiment Scanner",
+  "preview.stub": "Research paths",
+  "story.thesis_html": "From <span class=\"home-nb\">Policy Text</span> to <span class=\"home-key\">Insights</span>",
+  "story.intro_html": "Screening US policy text for natural experiments, re-estimating published state-policy studies, and reading patterns across policies.",
+  "story.route": "Reading route",
+  "story.map.sources": "Dates and sources by state",
+  "story.levels.h": "Research levels",
+  "story.screen.word": "Screen",
+  "story.screen.line_html": "<span class=\"nx-seg\">{texts} unique policy texts</span> <span class=\"nx-screen-arrow\" aria-hidden=\"true\">→</span> <span class=\"nx-candidates\">{candidates} candidates</span>",
+  "story.estimate.word": "Estimate",
+  "story.estimate.line_html": "<span class=\"nx-seg\">{papers} papers re-estimated</span>, <span class=\"nx-seg\">{matched} within 10%</span>",
+  "story.explore.word": "Explore",
+  "story.explore.line_html": "<span class=\"nx-seg\">{questions} questions ·</span> <span class=\"nx-seg\">{finished} finished</span>"
+}

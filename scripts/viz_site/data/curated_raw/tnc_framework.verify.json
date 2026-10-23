@@ -1,0 +1,131 @@
+{
+  "policy_id": "tnc_framework",
+  "verified_by": "agent-V3",
+  "as_of": "2025-12-31",
+  "n_states_blind": 48,
+  "n_agree": 40,
+  "n_year_diff": 7,
+  "n_only_them": 0,
+  "n_only_us": 1,
+  "details": {
+    "DE": {
+      "status": "AGREE",
+      "research_year": 2016,
+      "verifier_year": 2016,
+      "final_year": 2016,
+      "why": "Blind memory said 2015; SB 262 (ch. 374) approved 2016-08-10: DelDOT permit, background checks, insurance. Research correct.",
+      "sources": [
+        "https://legis.delaware.gov/SessionLaws/Chapter?id=15856"
+      ],
+      "blind_year": 2015
+    },
+    "KY": {
+      "status": "AGREE",
+      "research_year": 2015,
+      "verifier_year": 2015,
+      "final_year": 2015,
+      "why": "Blind memory said 2016; SB 153 (2015 RS, Acts ch. 19) signed 2015-03-19: TNC certificate, insurance, checks. Research correct.",
+      "sources": [
+        "https://apps.legislature.ky.gov/record/15rs/sb153.html"
+      ],
+      "blind_year": 2016
+    },
+    "ME": {
+      "status": "AGREE",
+      "research_year": 2015,
+      "verifier_year": 2015,
+      "final_year": 2015,
+      "why": "Blind memory said 2016; PL 2015 ch. 279 (LD 1379) has \"insurance\" title but adds SoS permit, driver checks: framework. Research correct.",
+      "sources": [
+        "https://legislature.maine.gov/legis/bills/bills_127th/chapters/PUBLIC279.asp"
+      ],
+      "blind_year": 2016
+    },
+    "MD": {
+      "status": "AGREE",
+      "research_year": 2015,
+      "verifier_year": 2015,
+      "final_year": 2015,
+      "why": "Blind memory said 2016; Ch. 204 of 2015 (SB 868) approved 2015-05-12: PSC registration, background checks, insurance. Research correct.",
+      "sources": [
+        "https://mgaleg.maryland.gov/2015RS/chapters_noln/Ch_204_sb0868T.pdf"
+      ],
+      "blind_year": 2016
+    },
+    "MT": {
+      "status": "AGREE",
+      "research_year": 2015,
+      "verifier_year": 2015,
+      "final_year": 2015,
+      "why": "Blind memory said 2017; Flathead Beacon 2015-05-13: law signed prior week creating PSC TNC licence class. One news source only.",
+      "sources": [
+        "https://flatheadbeacon.com/2015/05/13/new-law-will-allow-rideshare-companies-to-operate-in-montana/"
+      ],
+      "blind_year": 2017
+    },
+    "OK": {
+      "status": "AGREE",
+      "research_year": 2015,
+      "verifier_year": 2015,
+      "final_year": 2015,
+      "why": "Blind memory said 2016; OCC: TNC Services Act 47 O.S. 1010-1030 effective 2015-07-01, so enacted 2015. Signing date not seen.",
+      "sources": [
+        "https://oklahoma.gov/occ/divisions/transportation/transportation-network-companies.html"
+      ],
+      "blind_year": 2016
+    },
+    "VT": {
+      "status": "AGREE",
+      "research_year": 2018,
+      "verifier_year": 2018,
+      "final_year": 2018,
+      "why": "Blind memory said 2017; H.10 (2018 Special Session) approved 2018-06-19 as Act 3; H.143 (2017) never became law. Research correct.",
+      "sources": [
+        "https://legislature.vermont.gov/bill/status/2018.1/H.10"
+      ],
+      "blind_year": 2017
+    },
+    "HI": {
+      "status": "ADDED",
+      "research_year": null,
+      "verifier_year": 2022,
+      "final_year": 2022,
+      "why": "Act 57 (HB1681 HD2 SD1, 2022; eff 2023-01-01): DOT permit, driver checks, preemption, permanent insurance. Act 236 (2016) was insurance-only.",
+      "sources": [
+        "https://lrb.hawaii.gov/wp-content/uploads/2022_Acts.pdf",
+        "https://data.capitol.hawaii.gov/sessions/session2022/bills/HB1681_SD1_.HTM",
+        "https://data.capitol.hawaii.gov/sessions/session2022/bills/HB1681_HD2_.HTM"
+      ],
+      "blind_year": 2022
+    },
+    "CA": {
+      "status": "DISPUTED",
+      "research_year": null,
+      "verifier_year": null,
+      "final_year": null,
+      "why": "Both exclude. Candidates: 2013 CPUC decision (regulator), 2014 AB 2293 (insurance-only), 2019 statutory driver checks; permit regime is CPUC. Excluded.",
+      "sources": [
+        "https://leginfo.ca.gov/pub/13-14/bill/asm/ab_2251-2300/ab_2293_bill_20140917_chaptered.pdf",
+        "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PUC&division=2.&title=&part=&chapter=8.&article=7."
+      ]
+    }
+  },
+  "notes": {
+    "blind_phase": "Blind list built from WA Joint Transportation Committee guide (Jan 2019: 49 states+DC with TNC laws, OR none, insurance-only HI/LA/MN/WA) plus own checks; WebSearch budget exhausted midway, so 34 states were blind from memory (unverified) and 14 sourced (AL AK GA IL LA ND SC WI MA CO NJ TX WA HI). Memory years were wrong for 7 states (see details); all 7 resolved in favour of the research year.",
+    "counts": "n_agree/n_year_diff/n_only_them/n_only_us are counted over the 48 states in my blind list (adopters); states null in both lists (CA, MN, OR) are not in these counts (CA flagged DISPUTED in details). n_year_diff = blind-vs-research differences before checking; all 7 resolved in favour of research.",
+    "verification_levels": "final.json: 41 verified, 6 single_source (AK CT MT NH OH OK), 1 fixed (HI), 1 disputed (CA), MN/OR null verified.",
+    "known_doubts_settled": {
+      "IL": "2015 confirmed: SB 2774 = PA 98-1173 signed 2015-01-12 (Quinn), eff 2015-06-01; HB 4075 vetoed Aug 2014.",
+      "AK": "2017 (HB 132, signed 2017-06-15) per search snippets; pages blocked.",
+      "GA": "2015: HB 225 (2015-05-06), OCGA 40-1-190 registration; HB 190 insurance same week.",
+      "ND": "2015: HB 1144, 64th Assembly, filed with SoS April 22 (2015 session; ND biennial).",
+      "HI": "ADDED 2022: Act 57 is a full framework; researcher saw only the insurance-only Act 236 (2016).",
+      "MN": "Null: 2015 insurance; 2024 ch. 181C is driver pay/deactivation, local units still license TNCs.",
+      "OR": "Null: HB 2393 (2021) insurance only; no framework found (check strongest through 2021).",
+      "AL": "2018 correct: HB 190 signed 2018-03-01 (\"45th state\"); 2016 Act was insurance-only.",
+      "LA": "2019 correct: Act 286 (HB 575) signed 2019-06-11; Act 266 of 2015 = insurance only.",
+      "WA": "2022 correct: ESHB 2076 (approved 2022-03-31) contains DOL permit, background checks, insurance, preemption; 2015 ESSB 5550 insurance-only.",
+      "CA": "Excluded/DISPUTED: AB 2293 (2014) insurance-only; permit regime is CPUC (2013 decision); statutory driver checks only in 2019."
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "entries": [
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "voter turnout",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "voter_turnout",
+      "primary_series": "turnout_vep_highest_office_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "general election turnout",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "voter_turnout",
+      "primary_series": "turnout_vep_highest_office_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "young-adult turnout",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "voter_turnout",
+      "primary_series": "turnout_vep_highest_office_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "voter_turnout_in_elections",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "voter_turnout",
+      "primary_series": "turnout_vep_highest_office_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "general_election_voter_turnout",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "voter_turnout",
+      "primary_series": "turnout_vep_highest_office_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "young_adult_voter_turnout_rate",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "voter_turnout",
+      "primary_series": "turnout_vep_highest_office_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "motor-vehicle crash deaths",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "traffic_fatalities_all_road_users",
+      "primary_series": "fars_all_road_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "traffic fatalities (all road users)",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "traffic_fatalities_all_road_users",
+      "primary_series": "fars_all_road_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "motor_vehicle_crash_deaths",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "traffic_fatalities_all_road_users",
+      "primary_series": "fars_all_road_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "alcohol-related fatal crashes",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "drinking_driver_crash_deaths",
+      "primary_series": "fars_drinking_driver_crash_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "alcohol-involved fatal crashes",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "drinking_driver_crash_deaths",
+      "primary_series": "fars_drinking_driver_crash_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "drinking-driver crashes",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "drinking_driver_crash_deaths",
+      "primary_series": "fars_drinking_driver_crash_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "alcohol_related_fatal_motor_vehicle_crash_involvement",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "drinking_driver_crash_deaths",
+      "primary_series": "fars_drinking_driver_crash_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "alcohol_related_fatal_crashes_involving_drinking_drivers_younger_than_21",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "construct": "drinking_driver_crash_deaths",
+      "primary_series": "fars_drinking_driver_crash_fatality_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "reported crime incidence",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "construct": "reported_violent_crime",
+      "primary_series": "fbi_ucr_violent_crime_rate",
+      "secondary_series": [
+        "fbi_ucr_property_crime_rate"
+      ]
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "UCR violent crime rates",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "construct": "reported_violent_crime",
+      "primary_series": "fbi_ucr_violent_crime_rate",
+      "secondary_series": []
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "reported_crime_incidence_measured_as_ucr_violent_and_property_offense_rates",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "construct": "reported_violent_crime",
+      "primary_series": "fbi_ucr_violent_crime_rate",
+      "secondary_series": [
+        "fbi_ucr_property_crime_rate"
+      ]
+    },
+    {
+      "authority_sha256": "835dc8d0c34eba8c96f1cab6c7fdbd2435cd47cdc4edeb751cb18eedfe2cfda2",
+      "card_construct": "UCR property crime rates",
+      "citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "construct": "reported_property_crime",
+      "primary_series": "fbi_ucr_property_crime_rate",
+      "secondary_series": []
+    }
+  ],
+  "schema": "l2_construct_equivalences_c49_v1"
+}

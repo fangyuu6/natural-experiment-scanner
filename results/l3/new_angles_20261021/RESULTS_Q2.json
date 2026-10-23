@@ -1,0 +1,448 @@
+{
+ "stamp": {
+  "rule_id": "EX-1",
+  "plan": "docs/plans/l3-meta/PREPLAN_T232_20261021.md",
+  "plan_sha256": "1cbb13afe20025691b2ed3fb3311581751874e9fb587470d3d0d5989f6efa68a",
+  "code_sha256": {
+   "na_core.py": "8ac04998c1fe3115ec25dde3b74e616954c5bf07697d507105bbde3699ba5405",
+   "run_new_angles.py": "945b08da6dcb9c30a40aa533b4bebc846d8a6558ef0a17ee1473ebfdeb76358b"
+  },
+  "run_utc": "2026-10-21T23:04:17Z"
+ },
+ "result": {
+  "question": "Q2 fade/hold/grow",
+  "n_perm": 5000,
+  "seed": 20261023,
+  "n_designs": 77,
+  "n_eligible": 64,
+  "overall_counts": {
+   "fade": 0,
+   "hold": 12,
+   "grow": 6,
+   "unclear": 46
+  },
+  "by_domain_counts": {
+   "crime": {
+    "fade": 0,
+    "hold": 3,
+    "grow": 0,
+    "unclear": 9,
+    "n": 12
+   },
+   "education": {
+    "fade": 0,
+    "hold": 0,
+    "grow": 0,
+    "unclear": 2,
+    "n": 2
+   },
+   "environment": {
+    "fade": 0,
+    "hold": 1,
+    "grow": 0,
+    "unclear": 3,
+    "n": 4
+   },
+   "health": {
+    "fade": 0,
+    "hold": 3,
+    "grow": 5,
+    "unclear": 10,
+    "n": 18
+   },
+   "labor": {
+    "fade": 0,
+    "hold": 2,
+    "grow": 0,
+    "unclear": 12,
+    "n": 14
+   },
+   "other": {
+    "fade": 0,
+    "hold": 1,
+    "grow": 0,
+    "unclear": 7,
+    "n": 8
+   },
+   "public_finance": {
+    "fade": 0,
+    "hold": 2,
+    "grow": 1,
+    "unclear": 3,
+    "n": 6
+   }
+  },
+  "domains_reported": [
+   "crime",
+   "health",
+   "labor",
+   "other",
+   "public_finance"
+  ],
+  "domains_too_few": {
+   "education": 2,
+   "environment": 4
+  },
+  "by_domain": {
+   "crime": {
+    "n": 12,
+    "shares": {
+     "fade": 0.0,
+     "grow": 0.0,
+     "hold": 0.25,
+     "unclear": 0.75
+    },
+    "fade_shuffle_p_upper": 1.0,
+    "fade_shuffle_p_lower": 1.0,
+    "grow_shuffle_p_upper": 1.0,
+    "grow_shuffle_p_lower": 0.26034793041391724
+   },
+   "health": {
+    "n": 18,
+    "shares": {
+     "fade": 0.0,
+     "grow": 0.2777777777777778,
+     "hold": 0.16666666666666666,
+     "unclear": 0.5555555555555556
+    },
+    "fade_shuffle_p_upper": 1.0,
+    "fade_shuffle_p_lower": 1.0,
+    "grow_shuffle_p_upper": 0.005598880223955209,
+    "grow_shuffle_p_lower": 0.9996000799840032
+   },
+   "labor": {
+    "n": 14,
+    "shares": {
+     "fade": 0.0,
+     "grow": 0.0,
+     "hold": 0.14285714285714285,
+     "unclear": 0.8571428571428571
+    },
+    "fade_shuffle_p_upper": 1.0,
+    "fade_shuffle_p_lower": 1.0,
+    "grow_shuffle_p_upper": 1.0,
+    "grow_shuffle_p_lower": 0.21015796840631873
+   },
+   "other": {
+    "n": 8,
+    "shares": {
+     "fade": 0.0,
+     "grow": 0.0,
+     "hold": 0.125,
+     "unclear": 0.875
+    },
+    "fade_shuffle_p_upper": 1.0,
+    "fade_shuffle_p_lower": 1.0,
+    "grow_shuffle_p_upper": 1.0,
+    "grow_shuffle_p_lower": 0.4351129774045191
+   },
+   "public_finance": {
+    "n": 6,
+    "shares": {
+     "fade": 0.0,
+     "grow": 0.16666666666666666,
+     "hold": 0.3333333333333333,
+     "unclear": 0.5
+    },
+    "fade_shuffle_p_upper": 1.0,
+    "fade_shuffle_p_lower": 1.0,
+    "grow_shuffle_p_upper": 0.4507098580283943,
+    "grow_shuffle_p_lower": 0.9134173165366927
+   }
+  },
+  "n_designs_with_placebo_draws": 29,
+  "placebo": {
+   "all_with_draws": {
+    "n": 26,
+    "n_draws": 998,
+    "draws_per_design": {
+     "b1010_handheld_ban_all": 999,
+     "b1010_interlock_all_offender": 998,
+     "b1010_permitless_carry": 999,
+     "b1010_primary_seatbelt": 999,
+     "b1010b_bicycle_passing_3ft": 999,
+     "b1010b_child_restraint_booster_age5": 999,
+     "b1010b_pdmp_mandatory_query": 999,
+     "b1010b_zero_tolerance_under21": 999,
+     "b1011c_electricity_retail_choice": 999,
+     "b1011c_rps_binding_standard": 999,
+     "b1011cfl_click_through_affiliate_nexus_sales_tax": 999,
+     "b1011cfl_state_constitutional_tax_expenditure_limit": 999,
+     "b1011cfl_ui_alternative_base_period": 999,
+     "b1011tl_noncompete_lowwage_ban": 999,
+     "b1012cr_medical_cannabis_law": 999,
+     "b1015q3_adult_use_cannabis_legalization_adult_binge_drinking": 999,
+     "b1015q3_adult_use_cannabis_legalization_traffic_deaths": 999,
+     "b1015q3_medical_cannabis_law_adult_binge_drinking": 999,
+     "b1015q3_pdmp_mandatory_query_opioid_overdose_deaths": 999,
+     "b1016q4_adult_use_cannabis_legalization_property_crime": 999,
+     "b1016q4_handheld_ban_all_motor_vehicle_occupant_fatalities": 999,
+     "b1016q4_medical_cannabis_law_drinking_driver_crash_deaths": 999,
+     "b1016q4_medical_cannabis_law_property_crime": 999,
+     "b1016q4_pdmp_mandatory_query_drug_overdose_deaths": 999,
+     "b1016q4_shall_issue_carry_ucr_robbery": 999,
+     "b1016q4_ui_alternative_base_period_ui_weeks_compensated": 999
+    },
+    "fade": {
+     "real": 0.0,
+     "placebo_mean": 0.015716097747334134,
+     "placebo_band_5_95": [
+      0.0,
+      0.07692307692307693
+     ],
+     "p_two_sided": 1.0
+    },
+    "hold": {
+     "real": 0.15384615384615385,
+     "placebo_mean": 0.11143604935623756,
+     "placebo_band_5_95": [
+      0.038461538461538464,
+      0.23076923076923078
+     ],
+     "p_two_sided": 0.48848848848848847
+    },
+    "grow": {
+     "real": 0.11538461538461539,
+     "placebo_mean": 0.04225435262945065,
+     "placebo_band_5_95": [
+      0.0,
+      0.12
+     ],
+     "p_two_sided": 0.08008008008008008
+    },
+    "unclear": {
+     "real": 0.7307692307692307,
+     "placebo_mean": 0.8305935002669778,
+     "placebo_band_5_95": [
+      0.72,
+      0.9565217391304348
+     ],
+     "p_two_sided": 0.15815815815815815
+    }
+   },
+   "crime": "too few (2)",
+   "environment": "too few (2)",
+   "health": {
+    "n": 10,
+    "n_draws": 999,
+    "draws_per_design": null,
+    "fade": {
+     "real": 0.0,
+     "placebo_mean": 0.014789789789789788,
+     "placebo_band_5_95": [
+      0.0,
+      0.1
+     ],
+     "p_two_sided": 1.0
+    },
+    "hold": {
+     "real": 0.1,
+     "placebo_mean": 0.12138249360471585,
+     "placebo_band_5_95": [
+      0.0,
+      0.3
+     ],
+     "p_two_sided": 0.947
+    },
+    "grow": {
+     "real": 0.3,
+     "placebo_mean": 0.06770381492603715,
+     "placebo_band_5_95": [
+      0.0,
+      0.2
+     ],
+     "p_two_sided": 0.018
+    },
+    "unclear": {
+     "real": 0.6,
+     "placebo_mean": 0.7961239016794572,
+     "placebo_band_5_95": [
+      0.6,
+      1.0
+     ],
+     "p_two_sided": 0.194
+    }
+   },
+   "labor": "too few (3)",
+   "other": {
+    "n": 7,
+    "n_draws": 998,
+    "draws_per_design": null,
+    "fade": {
+     "real": 0.0,
+     "placebo_mean": 0.018274644527149535,
+     "placebo_band_5_95": [
+      0.0,
+      0.16666666666666666
+     ],
+     "p_two_sided": 1.0
+    },
+    "hold": {
+     "real": 0.14285714285714285,
+     "placebo_mean": 0.12121862773165377,
+     "placebo_band_5_95": [
+      0.0,
+      0.3333333333333333
+     ],
+     "p_two_sided": 1.0
+    },
+    "grow": {
+     "real": 0.0,
+     "placebo_mean": 0.015721920030537264,
+     "placebo_band_5_95": [
+      0.0,
+      0.14285714285714285
+     ],
+     "p_two_sided": 1.0
+    },
+    "unclear": {
+     "real": 0.8571428571428571,
+     "placebo_mean": 0.8447848077106594,
+     "placebo_band_5_95": [
+      0.5714285714285714,
+      1.0
+     ],
+     "p_two_sided": 0.7207207207207207
+    }
+   },
+   "public_finance": "too few (2)"
+  },
+  "one_vote_per_law_counts": {
+   "n_laws": 49,
+   "hold": 10.333333333333334,
+   "unclear": 34.333333333333336,
+   "grow": 4.333333333333333
+  },
+  "pattern_by_domain": {
+   "crime:fade": {
+    "n": 12,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "not testable (too few (2))",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.0,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "health:fade": {
+    "n": 18,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "real 0.000 vs band (0.0, 0.1)",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.0,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "labor:fade": {
+    "n": 14,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "not testable (too few (3))",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.0,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "other:fade": {
+    "n": 8,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "real 0.000 vs band (0.0, 0.16666666666666666)",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.0,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "public_finance:fade": {
+    "n": 6,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "not testable (too few (2))",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.0,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "crime:grow": {
+    "n": 12,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "not testable (too few (2))",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.4,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "health:grow": {
+    "n": 18,
+    "share": 0.2777777777777778,
+    "shuffle_p_upper": 0.005598880223955209,
+    "placebo": "real 0.300 vs band (0.0, 0.2)",
+    "beyond_placebo": true,
+    "law_level_share": 0.3,
+    "law_level_shuffle_p": 0.010994502748625687,
+    "directional_share_of_domains": 0.4,
+    "leave_one_law_out_keeps_above_rest": true,
+    "PATTERN": false
+   },
+   "labor:grow": {
+    "n": 14,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "not testable (too few (3))",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.4,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "other:grow": {
+    "n": 8,
+    "share": 0.0,
+    "shuffle_p_upper": 1.0,
+    "placebo": "real 0.000 vs band (0.0, 0.14285714285714285)",
+    "beyond_placebo": false,
+    "law_level_share": 0.0,
+    "law_level_shuffle_p": 1.0,
+    "directional_share_of_domains": 0.4,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   },
+   "public_finance:grow": {
+    "n": 6,
+    "share": 0.16666666666666666,
+    "shuffle_p_upper": 0.4507098580283943,
+    "placebo": "not testable (too few (2))",
+    "beyond_placebo": false,
+    "law_level_share": 0.2,
+    "law_level_shuffle_p": 0.2978510744627686,
+    "directional_share_of_domains": 0.4,
+    "leave_one_law_out_keeps_above_rest": false,
+    "PATTERN": false
+   }
+  },
+  "median_late_over_early_ratio_among_effect_designs": 1.803249276946395,
+  "n_effect_designs": 18,
+  "overall_fade_share": 0.0,
+  "overall_grow_share": 0.09375,
+  "overall_hold_share": 0.1875,
+  "leave_one_law_out_fade_share_range": [
+   0.0,
+   0.0
+  ]
+ }
+}

@@ -1,0 +1,105 @@
+{
+  "about": "Public descriptions of the confirmed papers' cards on Estimates (V5.1; the two earlier cards are kept word for word). Keyed by paper_id. year, venue and doi must equal the snapshot and the catalogue (data/replication/paper_catalog_v1.jsonl); frozen_target must equal the target of the paper's frozen primary run; journal_target, where present, must equal the journal cell the snapshot verified. restructure_estimates.validate_descriptions re-checks every entry on each load, and a confirmed paper without an entry stops the build. Version line = venue + year; the card's Target, Outcome / units, Sample and Estimator rows print the text of each language. published_interval_note is appended to the published interval and exists exactly when the published interval is calculated from a reported SE. note is kept for the record and is not printed. sources are paths under data/replication/.",
+  "papers": {
+    "shover2019-e698786e": {
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences 116(26):12624-12626",
+      "doi": "10.1073/pnas.1903434116",
+      "frozen_target": {
+        "table": "1",
+        "row": "Medical cannabis law"
+      },
+      "en": {
+        "target": "Table 1, third column, medical cannabis law",
+        "outcome": "Age-adjusted opioid overdose mortality; percent difference from a log-outcome model",
+        "sample": "State panel, 1999–2017",
+        "estimator": "Two-way fixed effects; state-clustered SE",
+        "published_interval_note": null,
+        "note": "The paper prints a 95% interval but no SE; the interval method is not verified."
+      },
+      "zh": {
+        "target": "表 1，第 3 列，医用大麻法",
+        "outcome": "年龄调整后的阿片类药物过量死亡率；对数模型换算的百分比差异",
+        "sample": "1999–2017 年州级面板",
+        "estimator": "双向固定效应；标准误按州聚类",
+        "published_interval_note": null,
+        "note": "论文给出 95% 区间，但未报告标准误；区间计算方法尚未核实。"
+      },
+      "sources": [
+        "r1/shover_2019_cannabis_policy/TARGET_PINNED.json",
+        "r1/shover_2019_cannabis_policy/FREEZE.json",
+        "r1/shover_2019_cannabis_policy/RESULT.json"
+      ]
+    },
+    "jacobsen2013-8f3fae1c": {
+      "year": 2013,
+      "venue": "The Review of Economics and Statistics 95(1):34-49 (NBER Working Paper 16194)",
+      "doi": "10.1162/rest_a_00243",
+      "frozen_target": {
+        "table": "3",
+        "row": "Code Change"
+      },
+      "en": {
+        "target": "Table 3, column (1), Code Change; REStat p. 40",
+        "outcome": "Electricity use, kWh per residence-month",
+        "sample": "Gainesville, Florida, 2004–2006; 64,471 bills from 2,239 residences",
+        "estimator": "Unweighted OLS; residence-clustered SE; month-year effects and housing controls",
+        "published_interval_note": "calculated from reported SE; no CI printed in the paper",
+        "note": "The printed table reports SEs; the comparison interval uses the normal approximation."
+      },
+      "zh": {
+        "target": "表 3，第 (1) 列，建筑规范变更；期刊第 40 页",
+        "outcome": "住宅月用电量，千瓦时／户／月",
+        "sample": "佛罗里达州盖恩斯维尔，2004–2006 年；2,239 户住宅的 64,471 条月度账单",
+        "estimator": "非加权普通最小二乘；标准误按住宅聚类；控制月份—年份效应及住房特征",
+        "published_interval_note": "根据报告的标准误计算；原文未列置信区间",
+        "note": "原表报告标准误；比较区间采用正态近似。"
+      },
+      "sources": [
+        "r1/jacobsen_2013_energy_efficiency_building/TARGET_PINNED.json",
+        "r1/jacobsen_2013_energy_efficiency_building/indep/FREEZE.json",
+        "r1/jacobsen_2013_energy_efficiency_building/indep/RESULT_INDEP.json"
+      ]
+    },
+    "goodman2016-c6f7ffbe": {
+      "year": 2016,
+      "venue": "Review of Economics and Statistics 98(4):671-684",
+      "doi": "10.1162/rest_a_00600",
+      "frozen_target": {
+        "table": "6a",
+        "row": "mandate_st"
+      },
+      "journal_target": {
+        "table": "3",
+        "panel": "B. Selective",
+        "column": "(5)",
+        "row": "mandate_st",
+        "page": 679
+      },
+      "en": {
+        "target": "Table 3, panel B (Selective), column (5), college entrance exam mandate; REStat p. 679",
+        "outcome": "First-time freshmen enrollment at selective colleges, by state of residence; log points",
+        "sample": "ACT states except Michigan, even years 1994–2008; 24 states, 192 state-years; mandate in force from 2002 in Colorado and Illinois",
+        "estimator": "Unweighted OLS; state-clustered SE; state and year effects; control for log overall enrollment",
+        "published_interval_note": "calculated from reported SE",
+        "note": "The journal table prints the SE (0.017); the published interval is the point estimate plus or minus 1.96 SE. The second AI agent's interval uses the t distribution with 23 degrees of freedom. The frozen target is the working-paper cell, Table 6a panel B column (5) (SE 0.018), which the journal prints as Table 3 panel B column (5)."
+      },
+      "zh": {
+        "target": "表 3，B 栏（选拔性院校），第 (5) 列，大学入学考试强制要求；期刊第 679 页",
+        "outcome": "选拔性院校新生入学人数（按学生居住州）；对数点",
+        "sample": "除密歇根州外的 ACT 州，1994–2008 年的偶数年；24 个州、192 个州年观测；科罗拉多州和伊利诺伊州自 2002 年起实施该要求",
+        "estimator": "非加权普通最小二乘；标准误按州聚类；控制州效应、年份效应及总入学人数的对数",
+        "published_interval_note": "根据报告的标准误计算",
+        "note": "期刊表格印有标准误 (0.017)；发表值区间为点估计加减 1.96 倍标准误。第二个 AI 智能体的区间使用自由度为 23 的 t 分布。冻结目标是工作论文表 6a B 栏第 (5) 列（标准误 0.018），期刊中对应表 3 B 栏第 (5) 列。"
+      },
+      "sources": [
+        "r1/goodman_2016_higher_ed_access/journal_tables/JOURNAL_TABLE.json",
+        "r1/goodman_2016_higher_ed_access/journal_tables/JOURNAL_TABLE.md",
+        "r1/goodman_2016_higher_ed_access/TARGET_PINNED.json",
+        "r1/goodman_2016_higher_ed_access/FREEZE.json",
+        "r1/goodman_2016_higher_ed_access/README.md",
+        "r1/goodman_2016_higher_ed_access/audit2/README.md"
+      ]
+    }
+  }
+}

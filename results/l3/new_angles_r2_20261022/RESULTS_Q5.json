@@ -1,0 +1,733 @@
+{
+ "question": "Q5 sister laws: do versions of one kind of law point the same way?",
+ "n_perm": 5000,
+ "seed": 20261027,
+ "stamp": {
+  "rule_id": "EX-1",
+  "plan": "docs/plans/l3-meta/PREPLAN_T256_R2_20261022.md",
+  "plan_sha256": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+  "seed": 20261022,
+  "code_sha256": "39c02561f6032c792f93725616b528dbcf3633f0cf3d066a7332b64a406fbaa1",
+  "input_sha256": {
+   "docs/plans/l3-meta/PREPLAN_T256_R2_20261022.md": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+   "data/l3_meta/new_angles_20261021/inputs/design_roster.csv": "75471faa2ee0eddd98c780dce56bccb378558d8b144397d77554786975a2f6d6",
+   "data/l3_meta/new_angles_20261021/inputs/policy_keys.csv": "6fdd596d1f2f728497e59213f80571b32018c66dddca0d66f2ae64615a80d15e",
+   "data/l3_meta/new_angles_20261021/states_decide/mapping/FINAL_codes.csv": "2aea38113924c440941c83b2675a2fceef5673d3fd72fb95daeee16904f8ba73",
+   "data/l3_meta/new_angles_20261021/inputs/group_time_export.csv": "b55a5e0da09ccf79e4bf9c55ccd5bf8c99d77bcb6ad0cd16d87fe6e45f580f1c",
+   "data/l3_meta/new_angles_20261021/inputs/cohort_states.csv": "639d152d8d6cedd637750a61f4db49e910a99f800beb5ef81cf49a1cb3c82467",
+   "data/l3_meta/covariates/state_year_v2.csv": "548b6563a0c10a54aa0d6cdc6cc863d68d04073e7a56275c789e6777a028626e",
+   "data/l3_meta/refresh/20261022_r2/live/l2_set_live.json": "f5941f590049d1484c81ce43332a33f2436a8d36e191ff08c5f6d408e95586e8"
+  },
+  "run_utc": "2026-10-22T21:22:39Z",
+  "python": "numpy 1.26.4"
+ },
+ "counts": {
+  "n_designs": 77,
+  "n_direction_zero_excluded": 11,
+  "n_overall_zero": 0,
+  "n_nonzero_designs": 66,
+  "families_with_2plus_designs_before_direction_filter": 8,
+  "designs_in_those_families_before_direction_filter": 25,
+  "n_families_with_2plus_nonzero": 7,
+  "n_pairs": 30,
+  "n_designs_in_those_families": 23
+ },
+ "family_table": [
+  {
+   "family": "adult_use_cannabis_legalization",
+   "domain_groups": "health",
+   "n_designs": 3,
+   "n_favourable": 1,
+   "n_unfavourable": 2,
+   "pairs": 3,
+   "agreeing_pairs": 1,
+   "family_score": 0.3333333333333333,
+   "n_laws": 1,
+   "members": "b1015q3_adult_use_cannabis_legalization_adult_binge_drinking|b1015q3_adult_use_cannabis_legalization_traffic_deaths|b1016q4_adult_use_cannabis_legalization_property_crime"
+  },
+  {
+   "family": "family-83544f70acd00abc8b4b",
+   "domain_groups": "labor",
+   "n_designs": 2,
+   "n_favourable": 1,
+   "n_unfavourable": 1,
+   "pairs": 1,
+   "agreeing_pairs": 0,
+   "family_score": 0.0,
+   "n_laws": 1,
+   "members": "did-58827a36a4167bcf0ad1|did-a0c08d8d5a891ede06b1"
+  },
+  {
+   "family": "firearms",
+   "domain_groups": "crime",
+   "n_designs": 5,
+   "n_favourable": 2,
+   "n_unfavourable": 3,
+   "pairs": 10,
+   "agreeing_pairs": 4,
+   "family_score": 0.4,
+   "n_laws": 5,
+   "members": "c18_cspp_guncontrol_stand_your_ground|c18_siegel_mcdv|c18_siegel_mcdvsurrender|b1010_permitless_carry|b1016q4_shall_issue_carry_ucr_robbery"
+  },
+  {
+   "family": "medical_cannabis_law",
+   "domain_groups": "health",
+   "n_designs": 4,
+   "n_favourable": 3,
+   "n_unfavourable": 1,
+   "pairs": 6,
+   "agreeing_pairs": 3,
+   "family_score": 0.5,
+   "n_laws": 1,
+   "members": "b1012cr_medical_cannabis_law|b1015q3_medical_cannabis_law_adult_binge_drinking|b1016q4_medical_cannabis_law_drinking_driver_crash_deaths|b1016q4_medical_cannabis_law_property_crime"
+  },
+  {
+   "family": "pdmp_mandatory_use",
+   "domain_groups": "health",
+   "n_designs": 3,
+   "n_favourable": 1,
+   "n_unfavourable": 2,
+   "pairs": 3,
+   "agreeing_pairs": 1,
+   "family_score": 0.3333333333333333,
+   "n_laws": 1,
+   "members": "b1010b_pdmp_mandatory_query|b1015q3_pdmp_mandatory_query_opioid_overdose_deaths|b1016q4_pdmp_mandatory_query_drug_overdose_deaths"
+  },
+  {
+   "family": "road_safety",
+   "domain_groups": "other",
+   "n_designs": 4,
+   "n_favourable": 1,
+   "n_unfavourable": 3,
+   "pairs": 6,
+   "agreeing_pairs": 3,
+   "family_score": 0.5,
+   "n_laws": 3,
+   "members": "b1010_handheld_ban_all|b1010_interlock_all_offender|b1010_primary_seatbelt|b1016q4_handheld_ban_all_motor_vehicle_occupant_fatalities"
+  },
+  {
+   "family": "speed_limit_increase_65mph",
+   "domain_groups": "other",
+   "n_designs": 2,
+   "n_favourable": 1,
+   "n_unfavourable": 1,
+   "pairs": 1,
+   "agreeing_pairs": 0,
+   "family_score": 0.0,
+   "n_laws": 1,
+   "members": "b1016q4_speed_limit_65_rural_interstate_1987_motor_vehicle_occupant_fatalities|r1011_speed_limit_65_rural_interstate_1987"
+  }
+ ],
+ "minimum": {
+  "required": "6 families with 2+ non-zero designs and 30 pairs",
+  "families": 7,
+  "pairs": 30,
+  "met": true,
+  "gap_families": 0,
+  "gap_pairs": 0
+ },
+ "primary": {
+  "S": 0.4,
+  "pairs": 30,
+  "n_families": 7,
+  "null_mean": 0.48254666666666673,
+  "null_p95": 0.6333333333333333,
+  "null_p5": 0.36666666666666664,
+  "null_p975": 0.6666666666666666,
+  "excess": -0.08254666666666671,
+  "above_p95": false,
+  "excess_ge_015": false,
+  "pattern": false,
+  "p_upper": 0.9060187962407519,
+  "null_domain_group_preserved": true
+ },
+ "sensitivity_unrestricted_shuffle": {
+  "S": 0.4,
+  "pairs": 30,
+  "n_families": 7,
+  "null_mean": 0.4969800000000001,
+  "null_p95": 0.6666666666666666,
+  "null_p5": 0.36666666666666664,
+  "null_p975": 0.7,
+  "excess": -0.09698000000000007,
+  "above_p95": false,
+  "excess_ge_015": false,
+  "pattern": false,
+  "p_upper": 0.9278144371125775
+ },
+ "sensitivity_equal_weight_family_mean": {
+  "S_equal_weight": 0.2952380952380952,
+  "note": "descriptive; primary weights families by number of pairs"
+ },
+ "sensitivity_merge_adult_use_cannabis_into_legalization": {
+  "S": 0.3939393939393939,
+  "pairs": 33,
+  "n_families": 7,
+  "null_mean": 0.4843939393939394,
+  "null_p95": 0.6363636363636364,
+  "null_p5": 0.36363636363636365,
+  "null_p975": 0.6666666666666666,
+  "excess": -0.09045454545454545,
+  "above_p95": false,
+  "excess_ge_015": false,
+  "pattern": false,
+  "p_upper": 0.9455272363818091
+ },
+ "guard_one_vote_per_law": {
+  "n_votes": 54,
+  "S": 0.38461538461538464,
+  "pairs": 13,
+  "n_families": 2,
+  "null_mean": 0.4795384615384615,
+  "null_p95": 0.6923076923076923,
+  "null_p5": 0.38461538461538464,
+  "null_p975": 0.8461538461538461,
+  "excess": -0.09492307692307689,
+  "above_p95": false,
+  "excess_ge_015": false,
+  "pattern": false,
+  "p_upper": 1.0
+ },
+ "guard_leave_one_family_out": {
+  "runs": [
+   {
+    "left_out": "adult_use_cannabis_legalization",
+    "S": 0.4074074074074074,
+    "null_mean": 0.4787037037037037,
+    "null_p95": 0.6296296296296297,
+    "excess": -0.0712962962962963,
+    "above_p95": false,
+    "pairs_left": 27,
+    "pattern": false
+   },
+   {
+    "left_out": "family-83544f70acd00abc8b4b",
+    "S": 0.41379310344827586,
+    "null_mean": 0.48527586206896545,
+    "null_p95": 0.6551724137931034,
+    "excess": -0.07148275862068959,
+    "above_p95": false,
+    "pairs_left": 29,
+    "pattern": false
+   },
+   {
+    "left_out": "firearms",
+    "S": 0.4,
+    "null_mean": 0.48269999999999996,
+    "null_p95": 0.6524999999999977,
+    "excess": -0.08269999999999994,
+    "above_p95": false,
+    "pairs_left": 20,
+    "pattern": false
+   },
+   {
+    "left_out": "medical_cannabis_law",
+    "S": 0.375,
+    "null_mean": 0.482625,
+    "null_p95": 0.6666666666666666,
+    "excess": -0.10762500000000003,
+    "above_p95": false,
+    "pairs_left": 24,
+    "pattern": false
+   },
+   {
+    "left_out": "pdmp_mandatory_use",
+    "S": 0.4074074074074074,
+    "null_mean": 0.4887777777777778,
+    "null_p95": 0.6666666666666666,
+    "excess": -0.08137037037037043,
+    "above_p95": false,
+    "pairs_left": 27,
+    "pattern": false
+   },
+   {
+    "left_out": "road_safety",
+    "S": 0.375,
+    "null_mean": 0.48016666666666663,
+    "null_p95": 0.6666666666666666,
+    "excess": -0.10516666666666663,
+    "above_p95": false,
+    "pairs_left": 24,
+    "pattern": false
+   },
+   {
+    "left_out": "speed_limit_increase_65mph",
+    "S": 0.41379310344827586,
+    "null_mean": 0.48317241379310344,
+    "null_p95": 0.6551724137931034,
+    "excess": -0.06937931034482758,
+    "above_p95": false,
+    "pairs_left": 29,
+    "pattern": false
+   }
+  ],
+  "n_pattern_kept": 0,
+  "n_runs": 7
+ },
+ "guard_leave_one_law_out": {
+  "runs": [
+   {
+    "left_out": "abortion_informed-consent_laws",
+    "S": 0.4,
+    "excess": -0.07649999999999996,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "adult_use_cannabis",
+    "S": 0.4074074074074074,
+    "excess": -0.07733333333333337,
+    "above_p95": false,
+    "pairs": 27,
+    "pattern": false
+   },
+   {
+    "left_out": "automatic_voter_registration",
+    "S": 0.4,
+    "excess": -0.09139999999999998,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "ban_the_box",
+    "S": 0.41379310344827586,
+    "excess": -0.06924137931034485,
+    "above_p95": false,
+    "pairs": 29,
+    "pattern": false
+   },
+   {
+    "left_out": "bicycle_passing_distance_law",
+    "S": 0.4,
+    "excess": -0.08803333333333335,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "breast-density_notification",
+    "S": 0.4,
+    "excess": -0.08100000000000002,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "child_restraint_booster_law",
+    "S": 0.4,
+    "excess": -0.07826666666666665,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "colorectal-screening_coverage",
+    "S": 0.4,
+    "excess": -0.08329999999999993,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "community-college_bachelor_degrees",
+    "S": 0.4,
+    "excess": -0.07706666666666667,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "comprehensive_smoke_free_air_law",
+    "S": 0.4,
+    "excess": -0.08503333333333335,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "contraceptive_insurance_coverage",
+    "S": 0.4,
+    "excess": -0.07993333333333336,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "death_penalty_abolition",
+    "S": 0.4,
+    "excess": -0.07226666666666665,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "decentralized_tuition_setting",
+    "S": 0.4,
+    "excess": -0.07786666666666664,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "dv_restraining-order_firearm_prohibition",
+    "S": 0.4,
+    "excess": -0.0771,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "e-waste_recycling_laws",
+    "S": 0.4,
+    "excess": -0.08453333333333335,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "electricity_retail_restructuring",
+    "S": 0.4,
+    "excess": -0.08666666666666667,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "ems_licensure_recognition",
+    "S": 0.4,
+    "excess": -0.07999999999999996,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "extreme_risk_protection_orders",
+    "S": 0.4,
+    "excess": -0.07923333333333332,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "family-planning_income_waivers",
+    "S": 0.4,
+    "excess": -0.08033333333333337,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "film_tax_credit",
+    "S": 0.4,
+    "excess": -0.07839999999999997,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "gender-identity_employment_protection",
+    "S": 0.4,
+    "excess": -0.08220000000000005,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "gun-show_background_checks",
+    "S": 0.4,
+    "excess": -0.07936666666666664,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "handheld_phone_ban",
+    "S": 0.36,
+    "excess": -0.11956000000000006,
+    "above_p95": false,
+    "pairs": 25,
+    "pattern": false
+   },
+   {
+    "left_out": "ignition_interlock_all_offender",
+    "S": 0.4444444444444444,
+    "excess": -0.04218518518518527,
+    "above_p95": false,
+    "pairs": 27,
+    "pattern": false
+   },
+   {
+    "left_out": "large-capacity_magazine_bans",
+    "S": 0.4,
+    "excess": -0.08289999999999997,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "medical_cannabis",
+    "S": 0.375,
+    "excess": -0.10525000000000001,
+    "above_p95": false,
+    "pairs": 24,
+    "pattern": false
+   },
+   {
+    "left_out": "methamphetamine-precursor_restrictions",
+    "S": 0.4,
+    "excess": -0.07846666666666668,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "minimum_wage",
+    "S": 0.4,
+    "excess": -0.07896666666666668,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "minimum_wage_indexing",
+    "S": 0.4,
+    "excess": -0.08296666666666669,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "misdemeanor-dv_firearm_prohibition",
+    "S": 0.4230769230769231,
+    "excess": -0.05473076923076925,
+    "above_p95": false,
+    "pairs": 26,
+    "pattern": false
+   },
+   {
+    "left_out": "misdemeanor-dv_firearm_surrender",
+    "S": 0.4230769230769231,
+    "excess": -0.05492307692307691,
+    "above_p95": false,
+    "pairs": 26,
+    "pattern": false
+   },
+   {
+    "left_out": "noncompete_lowwage_ban",
+    "S": 0.4,
+    "excess": -0.07983333333333337,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "paid_family_medical_leave",
+    "S": 0.4,
+    "excess": -0.08283333333333337,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "paid_sick_leave",
+    "S": 0.4,
+    "excess": -0.07813333333333328,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "pay-secrecy_bans",
+    "S": 0.4,
+    "excess": -0.08086666666666664,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "pdmp_mandatory_use",
+    "S": 0.4074074074074074,
+    "excess": -0.07625925925925925,
+    "above_p95": false,
+    "pairs": 27,
+    "pattern": false
+   },
+   {
+    "left_out": "permitless_carry",
+    "S": 0.38461538461538464,
+    "excess": -0.10096153846153844,
+    "above_p95": false,
+    "pairs": 26,
+    "pattern": false
+   },
+   {
+    "left_out": "physical-therapy_licensure_recognition",
+    "S": 0.4,
+    "excess": -0.08413333333333334,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "pregnancy_workplace_accommodation",
+    "S": 0.4,
+    "excess": -0.08596666666666669,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "primary_seat_belt",
+    "S": 0.37037037037037035,
+    "excess": -0.10485185185185181,
+    "above_p95": false,
+    "pairs": 27,
+    "pattern": false
+   },
+   {
+    "left_out": "refundable_eitc",
+    "S": 0.4,
+    "excess": -0.08176666666666665,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "renewable_portfolio_standard",
+    "S": 0.4,
+    "excess": -0.08233333333333337,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "salary_history_ban",
+    "S": 0.4,
+    "excess": -0.08390000000000003,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "shall_issue_carry",
+    "S": 0.38461538461538464,
+    "excess": -0.10896153846153844,
+    "above_p95": false,
+    "pairs": 26,
+    "pattern": false
+   },
+   {
+    "left_out": "speed_limit_65",
+    "S": 0.41379310344827586,
+    "excess": -0.07248275862068965,
+    "above_p95": false,
+    "pairs": 29,
+    "pattern": false
+   },
+   {
+    "left_out": "stand_your_ground",
+    "S": 0.38461538461538464,
+    "excess": -0.10873076923076924,
+    "above_p95": false,
+    "pairs": 26,
+    "pattern": false
+   },
+   {
+    "left_out": "universal_background_checks",
+    "S": 0.4,
+    "excess": -0.07833333333333337,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "young-adult_dependent_coverage",
+    "S": 0.4,
+    "excess": -0.08223333333333332,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "zero_tolerance_under21",
+    "S": 0.4,
+    "excess": -0.09413333333333329,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   }
+  ],
+  "n_pattern_kept": 0,
+  "n_runs": 49
+ },
+ "guard_leave_one_domain_out": {
+  "runs": [
+   {
+    "left_out": "crime",
+    "S": 0.4,
+    "excess": -0.08810000000000001,
+    "above_p95": false,
+    "pairs": 20,
+    "pattern": false
+   },
+   {
+    "left_out": "environment",
+    "S": 0.4,
+    "excess": -0.08486666666666665,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   },
+   {
+    "left_out": "health",
+    "S": 0.3888888888888889,
+    "excess": -0.1031111111111111,
+    "above_p95": false,
+    "pairs": 18,
+    "pattern": false
+   },
+   {
+    "left_out": "labor",
+    "S": 0.41379310344827586,
+    "excess": -0.0694137931034483,
+    "above_p95": false,
+    "pairs": 29,
+    "pattern": false
+   },
+   {
+    "left_out": "other",
+    "S": 0.391304347826087,
+    "excess": -0.08786956521739125,
+    "above_p95": false,
+    "pairs": 23,
+    "pattern": false
+   },
+   {
+    "left_out": "public_finance",
+    "S": 0.4,
+    "excess": -0.08213333333333328,
+    "above_p95": false,
+    "pairs": 30,
+    "pattern": false
+   }
+  ],
+  "n_pattern_kept": 0,
+  "n_runs": 6
+ },
+ "pattern_rule": {
+  "S_above_p95_of_shuffle": false,
+  "S_minus_mean_shuffle_ge_0_15": false,
+  "minimum_met": true
+ },
+ "pattern": false,
+ "result": "no difference",
+ "reference_level_mean_shuffled_S": 0.48254666666666673,
+ "note_mechanical_codrift": "designs of one family often share states, years and outcomes, so agreement can be mechanical co-drift",
+ "plain": [
+  "Result: no difference.",
+  "Sign agreement among sister-law designs was S = 0.400 against a shuffled reference of 0.483 (95th percentile 0.633, excess -0.083, needs above the 95th percentile and +0.15).",
+  "n = 23 designs in 7 families, 30 pairs; per family agreeing/total pairs: adult_use_cannabis_legalization 1/3; family-83544f70acd00abc8b4b 0/1; firearms 4/10; medical_cannabis_law 3/6; pdmp_mandatory_use 1/3; road_safety 3/6; speed_limit_increase_65mph 0/1."
+ ]
+}

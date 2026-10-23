@@ -1,0 +1,427 @@
+{
+ "question": "Q1",
+ "plan_sha256": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+ "inputs_sha256": {
+  "plan": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+  "design_roster": "75471faa2ee0eddd98c780dce56bccb378558d8b144397d77554786975a2f6d6",
+  "policy_keys": "6fdd596d1f2f728497e59213f80571b32018c66dddca0d66f2ae64615a80d15e",
+  "cohort_states": "639d152d8d6cedd637750a61f4db49e910a99f800beb5ef81cf49a1cb3c82467",
+  "FINAL_codes": "2aea38113924c440941c83b2675a2fceef5673d3fd72fb95daeee16904f8ba73",
+  "l2_set_live_r2": "f5941f590049d1484c81ce43332a33f2436a8d36e191ff08c5f6d408e95586e8"
+ },
+ "seed": 20261022,
+ "n_perm": 10000,
+ "n_designs_roster": 77,
+ "n_designs_with_noise_sd": 74,
+ "excluded_no_noise_sd": [
+  "prototype:castle_doctrine",
+  "prototype:medicaid_expansion",
+  "prototype:paid_sick_leave"
+ ],
+ "pooled_share": 0.20270270270270271,
+ "domain_table": {
+  "health": {
+   "n": 20,
+   "n_beyond": 7,
+   "share": 0.35,
+   "median_noise_sd": 0.7472393911643611,
+   "median_abs_att_over_noise": 1.3389425920812972,
+   "median_n_treated": 18.5,
+   "ranked": true
+  },
+  "labor": {
+   "n": 17,
+   "n_beyond": 0,
+   "share": 0.0,
+   "median_noise_sd": 0.5181982301646844,
+   "median_abs_att_over_noise": 0.4293403846825632,
+   "median_n_treated": 12.0,
+   "ranked": true
+  },
+  "crime": {
+   "n": 12,
+   "n_beyond": 3,
+   "share": 0.25,
+   "median_noise_sd": 0.6275781528163992,
+   "median_abs_att_over_noise": 1.4467824652015548,
+   "median_n_treated": 12.0,
+   "ranked": true
+  },
+  "other": {
+   "n": 13,
+   "n_beyond": 3,
+   "share": 0.23076923076923078,
+   "median_noise_sd": 0.5636075393387614,
+   "median_abs_att_over_noise": 0.8407655763458494,
+   "median_n_treated": 24.0,
+   "ranked": true
+  },
+  "public_finance": {
+   "n": 7,
+   "n_beyond": 2,
+   "share": 0.2857142857142857,
+   "median_noise_sd": 29.938752822338028,
+   "median_abs_att_over_noise": 1.3092549944768495,
+   "median_n_treated": 12.0,
+   "ranked": true
+  },
+  "environment": {
+   "n": 5,
+   "n_beyond": 0,
+   "share": 0.0,
+   "median_noise_sd": 2.493565540906131,
+   "median_abs_att_over_noise": 0.19195593775973185,
+   "median_n_treated": 18.0,
+   "ranked": true
+  }
+ },
+ "ranked": [
+  "health",
+  "labor",
+  "crime",
+  "other",
+  "public_finance",
+  "environment"
+ ],
+ "unranked_below_5": {},
+ "minimum_check": {
+  "min_designs_per_domain": 5,
+  "min_ranked_domains": 4,
+  "ranked_domains": 6,
+  "result": "met"
+ },
+ "power": {
+  "terciles_over_ranked_domains": {
+   "labor": "low",
+   "other": "low",
+   "crime": "mid",
+   "health": "mid",
+   "environment": "high",
+   "public_finance": "high"
+  },
+  "labels": {
+   "health": "",
+   "labor": "easy to detect",
+   "crime": "",
+   "other": "easy to detect",
+   "public_finance": "low power, not no effect",
+   "environment": "low power, not no effect"
+  },
+  "spearman_share_vs_median_noise": 0.43482827673933633,
+  "rule_literal_rho_ge_0_8": false,
+  "rule_abs_rho_ge_0_8_primary": false,
+  "note": "median noise_sd is in each outcome's own unit; stricter reading (|rho|>=0.8 blocks) is primary, literal (rho>=0.8) reported"
+ },
+ "sensitivity_non_strict_boundary": {
+  "health": "visible",
+  "labor": "hard to see",
+  "crime": "no difference",
+  "other": "no difference",
+  "public_finance": "no difference",
+  "environment": "hard to see"
+ },
+ "stratified": {
+  "health": {
+   "G": 0.20185185185185184,
+   "p975": 0.20185185185185184,
+   "p025": -0.14074074074074072,
+   "null_mean": 0.031788888888888894
+  },
+  "labor": {
+   "G": -0.2631578947368421,
+   "p975": 0.11867905056759548,
+   "p025": -0.2631578947368421,
+   "null_mean": -0.07460681114551082
+  },
+  "crime": {
+   "G": 0.05645161290322581,
+   "p975": 0.15591397849462363,
+   "p025": -0.24193548387096775,
+   "null_mean": -0.0645741935483871
+  },
+  "other": {
+   "G": 0.03404791929382095,
+   "p975": 0.3139974779319042,
+   "p025": -0.15258511979823455,
+   "null_mean": 0.0893659520807062
+  },
+  "public_finance": {
+   "G": 0.09168443496801704,
+   "p975": 0.24946695095948826,
+   "p025": -0.22388059701492538,
+   "null_mean": 0.009448187633262248
+  },
+  "environment": {
+   "G": -0.21739130434782608,
+   "p975": 0.4260869565217391,
+   "p025": -0.21739130434782608,
+   "null_mean": 0.031034202898550724
+  }
+ },
+ "unstratified": {
+  "health": {
+   "G": 0.20185185185185184,
+   "p975": 0.20185185185185184,
+   "p025": -0.20925925925925926,
+   "null_mean": -0.0006820370370370245
+  },
+  "labor": {
+   "G": -0.2631578947368421,
+   "p975": 0.195046439628483,
+   "p025": -0.18679050567595457,
+   "null_mean": 0.0016842105263158065
+  },
+  "crime": {
+   "G": 0.05645161290322581,
+   "p975": 0.2553763440860215,
+   "p025": -0.24193548387096775,
+   "null_mean": 0.0006930107526881671
+  },
+  "other": {
+   "G": 0.03404791929382095,
+   "p975": 0.22068095838587645,
+   "p025": -0.2459016393442623,
+   "null_mean": -0.0017482976040352942
+  },
+  "public_finance": {
+   "G": 0.09168443496801704,
+   "p975": 0.4072494669509594,
+   "p025": -0.22388059701492538,
+   "null_mean": -3.454157782516964e-05
+  },
+  "environment": {
+   "G": -0.21739130434782608,
+   "p975": 0.4260869565217391,
+   "p025": -0.21739130434782608,
+   "null_mean": -2.4347826086957804e-05
+  }
+ },
+ "law_level_guard": {
+  "health": {
+   "G": 0.18017127799736496,
+   "p975": 0.21772068511198944,
+   "p025": -0.20471014492753623,
+   "still_visible": false,
+   "still_hard": false
+  },
+  "labor": {
+   "G": -0.2242063492063492,
+   "p975": 0.1376984126984127,
+   "p025": -0.2242063492063492,
+   "still_visible": false,
+   "still_hard": false
+  },
+  "crime": {
+   "G": 0.020586297760210814,
+   "p975": 0.13323451910408432,
+   "p025": -0.20471014492753623,
+   "still_visible": false,
+   "still_hard": false
+  },
+  "other": {
+   "G": 0.04219858156028369,
+   "p975": 0.36560283687943257,
+   "p025": -0.11950354609929077,
+   "still_visible": false,
+   "still_hard": false
+  },
+  "public_finance": {
+   "G": 0.18790849673202614,
+   "p975": 0.3741830065359477,
+   "p025": -0.184640522875817,
+   "still_visible": false,
+   "still_hard": false
+  },
+  "environment": {
+   "G": -0.17767295597484276,
+   "p975": 0.360062893081761,
+   "p025": -0.17767295597484276,
+   "still_visible": false,
+   "still_hard": false
+  }
+ },
+ "leave_one_law_out_label_sets": {
+  "health": [
+   "no difference",
+   "visible"
+  ],
+  "labor": [
+   "hard to see",
+   "no difference"
+  ],
+  "crime": [
+   "no difference"
+  ],
+  "other": [
+   "no difference"
+  ],
+  "public_finance": [
+   "no difference"
+  ],
+  "environment": [
+   "no difference",
+   "unranked"
+  ]
+ },
+ "leave_one_domain_out": {
+  "health": {
+   "labor": "no difference",
+   "crime": "no difference",
+   "other": "no difference",
+   "public_finance": "no difference",
+   "environment": "no difference"
+  },
+  "labor": {
+   "health": "no difference",
+   "crime": "no difference",
+   "other": "no difference",
+   "public_finance": "no difference",
+   "environment": "no difference"
+  },
+  "crime": {
+   "health": "no difference",
+   "labor": "no difference",
+   "other": "no difference",
+   "public_finance": "no difference",
+   "environment": "no difference"
+  },
+  "other": {
+   "health": "no difference",
+   "labor": "hard to see",
+   "crime": "no difference",
+   "public_finance": "no difference",
+   "environment": "no difference"
+  },
+  "public_finance": {
+   "health": "no difference",
+   "labor": "no difference",
+   "crime": "no difference",
+   "other": "no difference",
+   "environment": "no difference"
+  },
+  "environment": {
+   "health": "no difference",
+   "labor": "hard to see",
+   "crime": "no difference",
+   "other": "no difference",
+   "public_finance": "no difference"
+  }
+ },
+ "rule_items": {
+  "health": {
+   "G_ge_plus20": true,
+   "G_above_p975": false,
+   "G_le_minus20": false,
+   "G_below_p025": false,
+   "label_stratified": "no difference",
+   "label_unstratified_sensitivity": "no difference",
+   "final_label": "no difference",
+   "survives_one_vote_per_law": null,
+   "labels_across_leave_one_law_out": [
+    "no difference",
+    "visible"
+   ],
+   "labels_across_leave_one_domain_out": [
+    "no difference"
+   ]
+  },
+  "labor": {
+   "G_ge_plus20": false,
+   "G_above_p975": false,
+   "G_le_minus20": true,
+   "G_below_p025": false,
+   "label_stratified": "no difference",
+   "label_unstratified_sensitivity": "hard to see",
+   "final_label": "no difference",
+   "survives_one_vote_per_law": null,
+   "labels_across_leave_one_law_out": [
+    "hard to see",
+    "no difference"
+   ],
+   "labels_across_leave_one_domain_out": [
+    "hard to see",
+    "no difference"
+   ]
+  },
+  "crime": {
+   "G_ge_plus20": false,
+   "G_above_p975": false,
+   "G_le_minus20": false,
+   "G_below_p025": false,
+   "label_stratified": "no difference",
+   "label_unstratified_sensitivity": "no difference",
+   "final_label": "no difference",
+   "survives_one_vote_per_law": null,
+   "labels_across_leave_one_law_out": [
+    "no difference"
+   ],
+   "labels_across_leave_one_domain_out": [
+    "no difference"
+   ]
+  },
+  "other": {
+   "G_ge_plus20": false,
+   "G_above_p975": false,
+   "G_le_minus20": false,
+   "G_below_p025": false,
+   "label_stratified": "no difference",
+   "label_unstratified_sensitivity": "no difference",
+   "final_label": "no difference",
+   "survives_one_vote_per_law": null,
+   "labels_across_leave_one_law_out": [
+    "no difference"
+   ],
+   "labels_across_leave_one_domain_out": [
+    "no difference"
+   ]
+  },
+  "public_finance": {
+   "G_ge_plus20": false,
+   "G_above_p975": false,
+   "G_le_minus20": false,
+   "G_below_p025": false,
+   "label_stratified": "no difference",
+   "label_unstratified_sensitivity": "no difference",
+   "final_label": "no difference",
+   "survives_one_vote_per_law": null,
+   "labels_across_leave_one_law_out": [
+    "no difference"
+   ],
+   "labels_across_leave_one_domain_out": [
+    "no difference"
+   ]
+  },
+  "environment": {
+   "G_ge_plus20": false,
+   "G_above_p975": false,
+   "G_le_minus20": true,
+   "G_below_p025": false,
+   "label_stratified": "no difference",
+   "label_unstratified_sensitivity": "no difference",
+   "final_label": "no difference",
+   "survives_one_vote_per_law": null,
+   "labels_across_leave_one_law_out": [
+    "no difference",
+    "unranked"
+   ],
+   "labels_across_leave_one_domain_out": [
+    "no difference"
+   ]
+  }
+ },
+ "labels_primary": {
+  "health": "no difference",
+  "labor": "no difference",
+  "crime": "no difference",
+  "other": "no difference",
+  "public_finance": "no difference",
+  "environment": "no difference"
+ },
+ "pattern_domains_before_guards_note": "guards are reported; a domain is named in plain only if the rule is met and the one-vote-per-law check does not reverse it",
+ "verdict": "no difference",
+ "plain": [
+  "no difference",
+  "No domain meets the full rule (gap of 20 points and beyond the shuffle band).",
+  "Share beyond noise by domain: health 35% (n=20, gap +20 pts), labor 0% (n=17, gap -26 pts), crime 25% (n=12, gap +6 pts), other 23% (n=13, gap +3 pts), public_finance 29% (n=7, gap +9 pts), environment 0% (n=5, gap -22 pts); pooled 20%; n=74 designs (3 without noise_sd)."
+ ]
+}

@@ -1,0 +1,626 @@
+{
+  "policy_id": "paid_family_leave",
+  "name_en": "State paid family and medical leave insurance",
+  "name_zh": "带薪家庭与医疗假",
+  "definition_en": "Year in which a state-run paid family (and medical) leave insurance program first began paying benefits (not when contributions began); states with no program, or whose benefits were not yet payable by 2025-12-31, are null.",
+  "definition_zh": "各州设立的带薪家庭与医疗假保险项目首次开始支付待遇的年份（以待遇可领取而非开始缴费为准），截至2025年底尚无项目或待遇尚未发放的州为空。",
+  "year_basis": "benefits_first_payable",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+    "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/",
+    "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s-in-2024/"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "AK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "AZ": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "AR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "CA": {
+      "year": 2004,
+      "date": "2004-07-01",
+      "sources": [
+        "https://www.dol.gov/agencies/oasp/evaluation/WorkerLeaveStudy/WL-California-Paid-Family-Leave-Law",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://edd.ca.gov/en/about_edd/news_releases_and_announcements/california-celebrates-20-years-of-paid-family-leave-with-families-and-community-partners",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Family-leave (PFL) benefits; the older medical-only disability program is not counted. [V1: EDD: first PFL payments 2004-07-01; SDI/TDI (medical only) predates and is excluded per definition.]",
+      "verification": "verified"
+    },
+    "CO": {
+      "year": 2024,
+      "date": "2024-01-01",
+      "sources": [
+        "https://www.checkwriters.com/colorado-family-and-medical-leave-insurance-program-famli-employees-may-begin-applications-benefits-available-january-1-2024/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.9news.com/article/news/politics/colorados-paid-family-leave/73-258633b9-f0f5-4c9c-bfd6-ec1d8a0ed7d7",
+        "https://vensure.com/employment-law-updates/colorado/colorado-paid-family-and-medical-leave-insurance-act-famli-in-effect-for-2024/",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Premiums began 2023-01-01; benefits payable from 2024-01-01.",
+      "verification": "verified"
+    },
+    "CT": {
+      "year": 2022,
+      "date": "2022-01-01",
+      "sources": [
+        "https://ogletree.com/insights-resources/blog-posts/connecticut-employees-entitled-to-12-weeks-of-state-fmla-leave-as-of-january-1-2022-even-if-leave-starts-in-2021/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.cbia.com/news/hr-safety/paid-leave-benefits-249m",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Contributions began 2021-01-01; benefits payable from 2022-01-01. [V1: applications opened 2021-12-01, payments from 2022-01-01.]",
+      "verification": "verified"
+    },
+    "DE": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.sequoia.com/2025/11/changes-to-delaware-paid-family-leave-starting-january-1-2026/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://news.delaware.gov/2026/01/01/delaware-employees-can-now-begin-to-file-claims-for-paid-family-leave/",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Benefits payable 2026-01-01, after as-of 2025-12-31; contributions began 2025-01-01. [V1: claims opened 2026-01-01 (state release), none payable in 2025; null agrees.]",
+      "verification": "verified"
+    },
+    "DC": {
+      "year": 2020,
+      "date": "2020-07-01",
+      "sources": [
+        "https://www.lawandtheworkplace.com/2020/06/dcs-paid-family-leave-benefits-available-july-1-2020-what-employers-need-to-know/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Employer tax began 2019-07-01; benefits payable from 2020-07-01.",
+      "verification": "verified"
+    },
+    "FL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "GA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "HI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/",
+        "https://data.capitol.hawaii.gov/sessions/session2025/bills/SB1054_.HTM"
+      ],
+      "confidence": "medium",
+      "note": "Temporary disability insurance (own medical need) only; no paid family leave insurance, so excluded. [V1: TDI only (own illness); PFL bills (SB1054/HB755) propose 2028-29; null agrees.]",
+      "verification": "verified"
+    },
+    "ID": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "IL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "IN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "IA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "KS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "KY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "LA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "ME": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.jacksonlewis.com/insights/maine-enacts-new-paid-family-and-medical-leave-act",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.maine.gov/labor/news_events/article.shtml?id=13340124",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Premiums began 2025-01-01; benefits payable from 2026-05-01, after as-of. [V1: benefits from 2026-05-01; null agrees.]",
+      "verification": "verified"
+    },
+    "MD": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.littler.com/news-analysis/asap/maryland-again-delays-paid-family-and-medical-leave-program",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Repeatedly delayed: contributions 2027-01-01, benefits expected 2028; none payable by as-of. [V1: HB 102 (2025) delays benefits to 2027-2028; null agrees.]",
+      "verification": "verified"
+    },
+    "MA": {
+      "year": 2021,
+      "date": "2021-01-01",
+      "sources": [
+        "https://www.klgates.com/Benefits-Now-Available-under-the-Massachusetts-Paid-Family-and-Medical-Leave-Law-1-15-2021",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.mass.gov/info-details/timeline-of-paid-family-and-medical-leave-contributions-and-benefits",
+        "https://natlawreview.com/article/paid-family-and-medical-leave-benefits-become-available-massachusetts-january-1st",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Parental/medical benefits from 2021-01-01; family-caregiving leave from 2021-07-01. [V1: bonding and own-medical from 2021-01-01, family care from 2021-07-01 (mass.gov timeline via search snippet).]",
+      "verification": "verified"
+    },
+    "MI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "MN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.revenue.state.mn.us/minnesota-paid-leave",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.fox9.com/news/paid-leave-law-applications-jan-2-2026",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Premiums and benefits start January 2026 (NPWF: 2026-01-01), after as-of 2025-12-31. [V1: benefits and applications from 2026-01-01; null agrees.]",
+      "verification": "verified"
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "MO": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "MT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "NE": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "NV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "NH": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "medium",
+      "note": "Only a state-sponsored voluntary opt-in plan (from 2023); not a mandatory insurance program, excluded.",
+      "verification": "verified"
+    },
+    "NJ": {
+      "year": 2009,
+      "date": "2009-07-01",
+      "sources": [
+        "https://www.fisherphillips.com/en/insights/insights/new-jersey-s-family-leave-insurance-law-going-into-effect",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://nj.gov/labor/assets/PDFs/ORI/Annual%20FLI%20TDI%20Report%20for%202020.pdf",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Contributions began 2009-01-01; FLI benefits payable 2009-07-01. Older medical-only TDI not counted. [V1: FLI benefits payable 2009-07-01 (NJ DOL); TDI (1948) excluded.]",
+      "verification": "verified"
+    },
+    "NM": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "NY": {
+      "year": 2018,
+      "date": "2018-01-01",
+      "sources": [
+        "https://www.suffolklaw.com/new-york-paid-family-leave-benefits-law/",
+        "https://paidfamilyleave.ny.gov/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.ny.gov/sites/default/files/atoms/files/PaidFamilyLeave_EmployeeFactSheet.pdf",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Premiums began 2017; PFL benefits claimable from 2018-01-01. Older medical-only DBL not counted. [V1: PFL benefits from 2018-01-01; DBL (1949) excluded.]",
+      "verification": "verified"
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "ND": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "OH": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "OK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "OR": {
+      "year": 2023,
+      "date": "2023-09-03",
+      "sources": [
+        "https://www.disabilityleavelaw.com/2023/08/articles/leave-policies/paid-leave-oregon-benefits-available-starting-september-3-2023/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.opb.org/article/2023/09/07/first-payments-oregon-paid-leave-program-going-out-soon/",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Contributions began 2023-01-01; benefits payable from 2023-09-03.",
+      "verification": "verified"
+    },
+    "PA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "RI": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.littler.com/news-analysis/asap/rhode-island-enacts-paid-temporary-caregiver-leave-law",
+        "https://complianceposter.com/2013/08/21/rhode-island-temporary-caregiver-insurance-effective-january-1-2014/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.ri.gov/press/view/21049",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Temporary Caregiver Insurance (TCI); older medical-only TDI not counted. [V1: DLT press release says TCI took effect 2014-01-05; same year.]",
+      "verification": "verified"
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "SD": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "UT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "VT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "medium",
+      "note": "Only a voluntary opt-in plan (phased from 2023-24); not a mandatory insurance program, excluded.",
+      "verification": "verified"
+    },
+    "VA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "Enacted; NPWF lists premiums April 2028 and benefits December 2028, after as-of.",
+      "verification": "verified"
+    },
+    "WA": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://paidleave.wa.gov/",
+        "https://www.mercer.com/insights/law-and-policy/washington-states-paid-family-and-medical-leave-premiums-start-in-2019/",
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.seyfarth.com/news-insights/washington-paid-family-and-medical-leave-benefits-become-available-for-employee-use.html",
+        "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+        "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave"
+      ],
+      "confidence": "high",
+      "note": "Premiums began 2019-01-01; benefits payable from 2020-01-01.",
+      "verification": "verified"
+    },
+    "WV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/report/state-paid-family-medical-leave-insurance-laws/",
+        "https://www.americanprogress.org/article/the-state-of-paid-family-and-medical-leave-in-the-u-s/"
+      ],
+      "confidence": "high",
+      "note": "No state paid family/medical leave insurance program as of 2025-12-31.",
+      "verification": "verified"
+    }
+  },
+  "n_with_law": 10,
+  "year_min": 2004,
+  "year_max": 2024,
+  "researched_by": "agent",
+  "method_notes": "Benefit-payable dates from National Partnership (NPWF) state table, cross-checked with law-firm/agency pages. Voluntary opt-in plans (NH, VT) and medical-only TDI (HI) excluded. Null+high = no program. | V1 verification: independent blind list from NCSL and state agency pages matched all 10 research programs (9 states + DC) on year; DE, MN, ME, MD benefits start 2026 or later, so null; no changes.",
+  "verified_by": "agent-V1"
+}

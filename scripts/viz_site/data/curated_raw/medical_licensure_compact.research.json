@@ -1,0 +1,567 @@
+{
+  "policy_id": "medical_licensure_compact",
+  "name_en": "Interstate Medical Licensure Compact (IMLC)",
+  "name_zh": "州际医师执照协定",
+  "definition_en": "Year the state (or DC) enacted, by governor or mayor signature, legislation joining the Interstate Medical Licensure Compact for expedited multistate physician licensure; implementation dates ignored.",
+  "definition_zh": "州（或华盛顿特区）签署加入州际医师执照协定（IMLC，医师多州快速执照）的立法年份，不计实际启用时间。",
+  "year_basis": "Year the IMLC-enabling bill was signed (enacted); enacted-but-not-yet-implemented states count; as of 2025-12-31; Guam, VI, PR ignored.",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://imlcc.com/news/press-releases-and-publications/",
+    "https://imlcc.com/participating-states/",
+    "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact",
+    "https://www.newswise.com/articles/iowa-becomes-10th-state-to-enact-interstate-medical-licensure-compact",
+    "https://www.newswise.com/articles/kansas-and-mississippi-enact-interstate-medical-licensure-compact-legislation",
+    "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/"
+  ],
+  "states": {
+    "AL": {
+      "year": 2015,
+      "date": "2015-05-19",
+      "sources": [
+        "https://www.albme.gov/uploads/pdfs/2015V30No2.pdf",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/",
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact"
+      ],
+      "confidence": "high",
+      "note": "SB 125 (Act 2015-197); 7th state, which triggered formation of the Compact."
+    },
+    "AK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://www.ak-pa.org/alaska-joins-psypact-through-hb-110/"
+      ],
+      "confidence": "high",
+      "note": "HB 110 became law without signature 2026-06-23 (after as-of date); IMLCC lists AK as 44th state."
+    },
+    "AZ": {
+      "year": 2016,
+      "date": "2016-05-11",
+      "sources": [
+        "https://www.azleg.gov/legtext/52leg/2R/summary/S.2502HHS.DOC.htm",
+        "https://telemedicine.arizona.edu/blog/arizona-joins-interstate-medical-licensure-compact",
+        "https://www.newswise.com/articles/kansas-and-mississippi-enact-interstate-medical-licensure-compact-legislation"
+      ],
+      "confidence": "high",
+      "note": "HB 2502."
+    },
+    "AR": {
+      "year": 2025,
+      "date": "2025-03-12",
+      "sources": [
+        "https://imlcc.com/wp-content/uploads/2025/03/Information-Release-Arkansas-becomes-43rd-member-3-12-2025.pdf",
+        "https://governor.arkansas.gov/news_post/bills-signed-hb1400-hb1556-sb236-hb1466-hb1184-sb292-hcr1007-hb1182-hb1213-hb1217-hb1309-sb119-hb1369-hb1452-sb188-sb209-sb210-sb244-sb251-sb260/",
+        "https://katv.com/news/local/gov-sanders-signs-series-of-laws-ranging-from-lottery-to-education-and-healthcare"
+      ],
+      "confidence": "high",
+      "note": "SB 119 (Act 269); 43rd member jurisdiction; implementation in process."
+    },
+    "CA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://imlcc.com/participating-states/"
+      ],
+      "confidence": "medium",
+      "note": "No IMLC enactment found; IMLCC member count reconciles without CA."
+    },
+    "CO": {
+      "year": 2016,
+      "date": "2016-06-08",
+      "sources": [
+        "https://leg.colorado.gov/bills/HB16-1047",
+        "https://www.newswise.com/articles/kansas-and-mississippi-enact-interstate-medical-licensure-compact-legislation",
+        "https://imlcc.com/wp-content/uploads/2020/03/IMLC-Draft-Minutes-June-24-2016.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB16-1047; still awaiting governor's signature on 2016-05-17."
+    },
+    "CT": {
+      "year": 2022,
+      "date": null,
+      "sources": [
+        "https://www.pullcom.com/connecticut-health-law-blog/interstate-medical-licensure-compact-psypact-debut-connecticut",
+        "https://www.mintz.com/insights-center/viewpoints/2146/2022-11-03-connecticut-joins-interstate-medical-licensure-compact",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "Public Act 22-81 (IMLCC release May 2022); effective 2022-10-01; exact signing date not confirmed."
+    },
+    "DE": {
+      "year": 2021,
+      "date": "2021-06-23",
+      "sources": [
+        "https://www.delawarepublic.org/politics-government/2021-06-23/bill-expanding-access-to-telehealth-in-delaware-becomes-law",
+        "https://legis.delaware.gov/BillDetail?legislationId=58579",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "HB 160 (telehealth act that also adopts the IMLC)."
+    },
+    "DC": {
+      "year": 2018,
+      "date": "2018-04-06",
+      "sources": [
+        "https://code.dccouncil.gov/us/dc/council/laws/22-109",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "D.C. Law 22-109 (Act 22-313): Mayor signed 2018-04-06, effective 2018-06-05."
+    },
+    "FL": {
+      "year": 2024,
+      "date": "2024-03-21",
+      "sources": [
+        "https://www.flsenate.gov/Session/Bill/2024/7016",
+        "https://flboardofmedicine.gov/interstate-medical-licensure-compact/"
+      ],
+      "confidence": "high",
+      "note": "CS/SB 7016 (Ch. 2024-15), a health-care workforce bill."
+    },
+    "GA": {
+      "year": 2019,
+      "date": "2019-04-25",
+      "sources": [
+        "https://gov.georgia.gov/document/signed-legislation/sb-16pdf/download",
+        "https://imlcc.com/wp-content/uploads/2020/02/IMLCC-Georgia-joins-the-ILMCC-4-25-2019.pdf",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "SB 16."
+    },
+    "HI": {
+      "year": 2023,
+      "date": null,
+      "sources": [
+        "https://governor.hawaii.gov/newsroom/office-of-the-governor-news-release-gov-green-signs-bills-to-increase-access-to-health-care-and-wellness/",
+        "https://www.bartonassociates.com/blog/imlc-states-update-july-2023/",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "SB 674 (Act 112, SLH 2023); governor's signing release 2023-06-22; exact signing date not confirmed."
+    },
+    "ID": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://legislature.idaho.gov/statutesrules/idstat/Title54/T54CH18/",
+        "https://www.newswise.com/articles/iowa-becomes-10th-state-to-enact-interstate-medical-licensure-compact",
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact"
+      ],
+      "confidence": "high",
+      "note": "2015 Session Laws ch. 105; among first 7 states; signing date not confirmed."
+    },
+    "IL": {
+      "year": 2015,
+      "date": "2015-07-20",
+      "sources": [
+        "https://ilga.gov/Legislation/publicacts/view/099-0076",
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact",
+        "https://www.hinshawlaw.com/en/insights/healthcare-alert/illinois-eases-telehealth-use-by-becoming-10th-member-of-interstate-medical-licensure-compact"
+      ],
+      "confidence": "high",
+      "note": "HB 3680 (Public Act 99-0076)."
+    },
+    "IN": {
+      "year": 2022,
+      "date": "2022-03-10",
+      "sources": [
+        "https://fastdemocracy.com/bill-search/in/2022/bills/INB00010296/",
+        "https://www.ismanet.org/ISMA/Resources/e-Reports/8-10-23/Interstate_Medical_Licensure_Compact.aspx",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "SEA 251 (Public Law 60)."
+    },
+    "IA": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://www.newswise.com/articles/iowa-becomes-10th-state-to-enact-interstate-medical-licensure-compact",
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact",
+        "https://www.fsmb.org/siteassets/advocacy/news-releases/2015/iowa-compact-press-release_final.pdf"
+      ],
+      "confidence": "high",
+      "note": "10th state; governor signed shortly before the 2015-07-06 release; exact date not confirmed."
+    },
+    "KS": {
+      "year": 2016,
+      "date": "2016-05-13",
+      "sources": [
+        "https://www.kslegislature.gov/li_2016/b2015_16/measures/hb2615/",
+        "https://www.newswise.com/articles/kansas-and-mississippi-enact-interstate-medical-licensure-compact-legislation"
+      ],
+      "confidence": "high",
+      "note": "HB 2615 (omnibus health-care licensing bill; KSA 65-28,133)."
+    },
+    "KY": {
+      "year": 2019,
+      "date": "2019-03-25",
+      "sources": [
+        "https://imlcc.com/wp-content/uploads/2020/02/IMLCC-Kentucky-joins-the-ILMCC-3-2019.pdf",
+        "https://www.billtrack50.com/BillDetail/1006268",
+        "https://www.fsmb.org/advocacy/news-releases/kentucky-north-dakota-join-interstate-medical-licensure-compact/"
+      ],
+      "confidence": "high",
+      "note": "SB 22 (Acts ch. 77); 28th member jurisdiction."
+    },
+    "LA": {
+      "year": 2020,
+      "date": "2020-10-28",
+      "sources": [
+        "https://legis.la.gov/legis/BillInfo.aspx?s=202ES&b=SB27&sbi=y",
+        "https://imlcc.com/wp-content/uploads/2020/10/Information-Release-Louisiana-becomes-32nd-member.pdf",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "SB 27 (2020 2nd Extraordinary Session), Act 35; IMLCC: 32nd member."
+    },
+    "ME": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://legislature.maine.gov/legis/bills/bills_128th/chapters/PUBLIC253.asp",
+        "https://legislature.maine.gov/statutes/32/title32ch145sec0.html"
+      ],
+      "confidence": "medium",
+      "note": "PL 2017 c.253 (LD 1359); signing date not confirmed."
+    },
+    "MD": {
+      "year": 2018,
+      "date": "2018-05-08",
+      "sources": [
+        "https://imlcc.com/wp-content/uploads/2020/02/IMLCC-Maryland-joins-the-ILMCC-5-2018.pdf",
+        "https://mdpsych.org/resources/licensure-information/interstate-medical-licensure/",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "SB 234 (Ch. 470); implementation delayed to 2019-07-01."
+    },
+    "MA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://imlcc.com/wp-content/uploads/2025/03/Information-Release-Arkansas-becomes-43rd-member-3-12-2025.pdf"
+      ],
+      "confidence": "high",
+      "note": "Legislation pending as of IMLCC release 2025-03-12; no enactment through 2025-12-31."
+    },
+    "MI": {
+      "year": 2018,
+      "date": "2018-12-28",
+      "sources": [
+        "https://legislature.mi.gov/Bills/Bill?ObjectName=2017-HB-4066",
+        "https://thedo.osteopathic.org/2019/01/michigan-enacts-interstate-medical-licensure-compact/",
+        "https://www.fsmb.org/advocacy/news-releases/michigan-joins-interstate-medical-licensure-compact/",
+        "https://www.mha.org/newsroom/governor-whitmer-signs-interstate-medical-licensure-compact-bill/"
+      ],
+      "confidence": "high",
+      "note": "HB 4066 (PA 563 of 2018); sunset later extended by PA 6 of 2026 (signed 2026-03-26)."
+    },
+    "MN": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://mn.gov/boards/medical-practice/consumers/imlc/index.jsp",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/",
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact"
+      ],
+      "confidence": "high",
+      "note": "Signed May 2015 per MN Board of Medical Practice; exact date not confirmed."
+    },
+    "MS": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://www.newswise.com/articles/kansas-and-mississippi-enact-interstate-medical-licensure-compact-legislation",
+        "https://www.msbml.ms.gov/licensure/interstate-medical-licensure-compact",
+        "https://cdispatch.com/news/2016-05-11/bill-aims-to-bring-out-of-state-physicians-to-miss/"
+      ],
+      "confidence": "high",
+      "note": "Laws 2016 ch. 508; signed 16-17 May 2016 (sources differ)."
+    },
+    "MO": {
+      "year": 2023,
+      "date": null,
+      "sources": [
+        "https://revisor.mo.gov/main/OneSection.aspx?bid=54190&hl=&section=334.1605",
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://www.clearhq.org/news/missouri-adopts-physician-counselor-and-social-workers-compacts"
+      ],
+      "confidence": "high",
+      "note": "SB 70 merged with SB 157 (RSMo 334.1605), effective 2023-08-28; signing date not confirmed."
+    },
+    "MT": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://archive.legmt.gov/bills/2015/billhtml/HB0429.htm",
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/"
+      ],
+      "confidence": "high",
+      "note": "HB 429 (MCA 37-3-356); among first 7 states."
+    },
+    "NE": {
+      "year": 2017,
+      "date": "2017-04-26",
+      "sources": [
+        "https://www.fsmb.org/siteassets/advocacy/news-releases/2017/nebraska_enacts_compact4272017.pdf",
+        "https://www.nebraskalegislature.gov/FloorDocs/105/PDF/Final/LB88.pdf"
+      ],
+      "confidence": "high",
+      "note": "LB 88; earlier LB 258 (2015) was indefinitely postponed in 2016."
+    },
+    "NV": {
+      "year": 2015,
+      "date": "2015-05-27",
+      "sources": [
+        "https://legiscan.com/NV/bill/SB251/2015",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/",
+        "https://www.leg.state.nv.us/NRS/NRS-629A.html"
+      ],
+      "confidence": "high",
+      "note": "SB 251 (Ch. 244)."
+    },
+    "NH": {
+      "year": 2016,
+      "date": "2016-05-05",
+      "sources": [
+        "https://legiscan.com/NH/bill/HB1665/2016",
+        "https://www.newswise.com/articles/kansas-and-mississippi-enact-interstate-medical-licensure-compact-legislation"
+      ],
+      "confidence": "high",
+      "note": "HB 1665 (Ch. 70)."
+    },
+    "NJ": {
+      "year": 2022,
+      "date": "2022-01-10",
+      "sources": [
+        "https://pub.njleg.state.nj.us/Bills/2020/AL21/332_.HTM",
+        "https://www.billtrack50.com/billdetail/1171166",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "S523 (P.L. 2021 c.332)."
+    },
+    "NM": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://citydesk.org/2026/02/05/governor-lujan-grisham-signs-medical-licensure-compact-for-docs-into-law/",
+        "https://sourcenm.com/2026/02/05/new-mexico-governor-signs-medical-compacts-immigrant-safety-act-road-bonds-into-law/",
+        "https://imlcc.com/wp-content/uploads/2025/03/Information-Release-Arkansas-becomes-43rd-member-3-12-2025.pdf"
+      ],
+      "confidence": "high",
+      "note": "Signed Feb 2026 (after as-of date); IMLCC listed NM legislation as pending on 2025-03-12."
+    },
+    "NY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://imlcc.com/wp-content/uploads/2025/03/Information-Release-Arkansas-becomes-43rd-member-3-12-2025.pdf"
+      ],
+      "confidence": "high",
+      "note": "Legislation pending as of IMLCC release 2025-03-12; no enactment through 2025-12-31."
+    },
+    "NC": {
+      "year": 2025,
+      "date": "2025-07-01",
+      "sources": [
+        "https://www.ncleg.gov/EnactedLegislation/SessionLaws/PDF/2025-2026/SL2025-37.pdf",
+        "https://www.ncmedboard.org/landing-page/healthcare-workforce-reforms",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "HB 67 / S.L. 2025-37 (healthcare workforce reforms); IMLC pathway live 2026-01-01."
+    },
+    "ND": {
+      "year": 2019,
+      "date": "2019-04-08",
+      "sources": [
+        "https://imlcc.com/wp-content/uploads/2020/02/IMLCC-North-Dakota-joins-the-ILMCC-4-2019.pdf",
+        "https://www.fsmb.org/advocacy/news-releases/kentucky-north-dakota-join-interstate-medical-licensure-compact/",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "SB 2173; 29th member jurisdiction."
+    },
+    "OH": {
+      "year": 2021,
+      "date": "2021-06-29",
+      "sources": [
+        "https://med.ohio.gov/apply-and-renew/interstate-medical-licensure-compact/interstate-medical-licensure-compact",
+        "https://www.legislature.ohio.gov/legislation/134/sb6",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "SB 6; effective 2021-09-30; 35th member."
+    },
+    "OK": {
+      "year": 2019,
+      "date": "2019-04-18",
+      "sources": [
+        "https://www.oklegislature.gov/BillInfo.aspx?Bill=hb2351&Session=1900",
+        "https://law.justia.com/codes/oklahoma/2020/title-59/section-59-493-6/",
+        "https://imlcc.com/wp-content/uploads/2020/02/IMLCC-Oklahoma-joins-the-ILMCC-4-19-2019.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 2351 (Laws 2019 c.85)."
+    },
+    "OR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://imlcc.com/participating-states/"
+      ],
+      "confidence": "medium",
+      "note": "No IMLC enactment found; IMLCC member count reconciles without OR."
+    },
+    "PA": {
+      "year": 2016,
+      "date": "2016-10-26",
+      "sources": [
+        "https://www.legis.state.pa.us/cfdocs/legis/li/uconsCheck.cfm?yr=2016&sessInd=0&act=112",
+        "https://www.stevenslee.com/health-law-observer-blog/pennsylvania-to-join-three-interstate-health-care-licensure-compacts/"
+      ],
+      "confidence": "high",
+      "note": "Act 112 of 2016 (HB 1619); full participation began 2025-07-07."
+    },
+    "RI": {
+      "year": 2022,
+      "date": "2022-06-29",
+      "sources": [
+        "https://trackbill.com/bill/rhode-island-senate-bill-2606-an-act-relating-to-businesses-and-professions-interstate-medical-licensure-compact-creates-the-interstate-medical-licensure-compact-allowing-physicians-to-become-licensed-in-multiple-states-and-practice-under-the-jurisdiction-of-the-state-in-which-the-patient-is-located/2241980/",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "S 2606; IMLCC: 39th member (Jul 2022)."
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://imlcc.com/participating-states/"
+      ],
+      "confidence": "medium",
+      "note": "No IMLC enactment found; IMLCC member count reconciles without SC."
+    },
+    "SD": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://legiscan.com/SD/bill/SB63/2015",
+        "https://www.ama-assn.org/practice-management/digital-health/first-states-join-compact-streamline-medical-licensure",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/"
+      ],
+      "confidence": "high",
+      "note": "SB 63; signed 11 or 12 Mar 2015 (sources differ)."
+    },
+    "TN": {
+      "year": 2017,
+      "date": "2017-05-11",
+      "sources": [
+        "https://www.tn.gov/content/dam/tn/health/healthprofboards/medicalexaminers/2017%20Annual%20Newsletter.pdf",
+        "https://thedo.osteopathic.org/2017/05/win-tennessee-enacts-the-interstate-medical-licensure-compact/",
+        "https://legiscan.com/TN/research/HB0664/2017"
+      ],
+      "confidence": "high",
+      "note": "HB 664 (Public Chapter 365); effective 2019-01-01."
+    },
+    "TX": {
+      "year": 2021,
+      "date": "2021-06-07",
+      "sources": [
+        "https://www.tmb.texas.gov/apply-renew/physician/physician-apply/interstate-medical-licensure-compact-application",
+        "https://imlcc.com/wp-content/uploads/2021/06/Information-Release-Texas-becomes-33rd-member.pdf",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "HB 1616; 33rd member."
+    },
+    "UT": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://le.utah.gov/~2015/bills/hbillamd/HB0121.htm",
+        "https://le.utah.gov/xcode/Title58/Chapter67b/C58-67b_2015051220150512.pdf",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/"
+      ],
+      "confidence": "high",
+      "note": "HB 121 (Ch. 24, 2015 GS), effective 2015-05-12; among first 7 states."
+    },
+    "VT": {
+      "year": 2018,
+      "date": "2018-05-01",
+      "sources": [
+        "https://legislature.vermont.gov/bill/status/2018/S.253",
+        "https://imlcc.com/news/press-releases-and-publications/"
+      ],
+      "confidence": "high",
+      "note": "S.253 (Act 115)."
+    },
+    "VA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://imlcc.com/news/press-releases-and-publications/",
+        "https://imlcc.com/participating-states/"
+      ],
+      "confidence": "medium",
+      "note": "No IMLC enactment found; IMLCC member count reconciles without VA."
+    },
+    "WA": {
+      "year": 2017,
+      "date": "2017-05-05",
+      "sources": [
+        "https://app.leg.wa.gov/billsummary?BillNumber=1337&Year=2017",
+        "https://lawfilesext.leg.wa.gov/biennium/2017-18/Htm/Bill%20Reports/House/1337%20HBR%20FBR%2017.htm"
+      ],
+      "confidence": "high",
+      "note": "HB 1337 (Ch. 195, Laws of 2017), effective 2017-07-23."
+    },
+    "WV": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://www.register-herald.com/news/w-va-joins-4-more-states-in-medical-licensing-compact/article_9c882440-fafa-5a98-9fa6-4f291ec70806.html",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/",
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact"
+      ],
+      "confidence": "high",
+      "note": "HB 2496 (Art. 3F), effective 2015-06-10; among first 7 states; signing date not confirmed."
+    },
+    "WI": {
+      "year": 2015,
+      "date": "2015-12-14",
+      "sources": [
+        "https://natlawreview.com/article/wisconsin-becomes-12th-state-to-enact-interstate-medical-licensure-compact",
+        "https://docs.legis.wisconsin.gov/2015/related/acts/116/21"
+      ],
+      "confidence": "high",
+      "note": "AB 253 (2015 Act 116); 12th state."
+    },
+    "WY": {
+      "year": 2015,
+      "date": "2015-02-27",
+      "sources": [
+        "https://wyomedboard.wyo.gov/physicians/interstate-medical-licensure-compact",
+        "https://thedo.osteopathic.org/2015/06/interstate-medical-licensure-compact-established-9th-state-signs-on/"
+      ],
+      "confidence": "high",
+      "note": "HB 0107; first state to enact."
+    }
+  },
+  "researched_by": "agent",
+  "method_notes": "From legislature bill pages, IMLCC release PDFs (state signing dates), FSMB/Newswise releases, state boards; cross-checked vs IMLCC ordinals (KY 28th ... NC 44th). imlcc.org now serves casino spam; the real site is imlcc.com. Fetch only; no logins.",
+  "n_with_law": 43,
+  "year_min": 2015,
+  "year_max": 2025
+}

@@ -1,0 +1,206 @@
+{
+ "stamp": {
+  "rule_id": "EX-1",
+  "plan": "docs/plans/l3-meta/PREPLAN_T232_20261021.md",
+  "plan_sha256": "1cbb13afe20025691b2ed3fb3311581751874e9fb587470d3d0d5989f6efa68a",
+  "code_sha256": {
+   "na_core.py": "8ac04998c1fe3115ec25dde3b74e616954c5bf07697d507105bbde3699ba5405",
+   "run_new_angles.py": "945b08da6dcb9c30a40aa533b4bebc846d8a6558ef0a17ee1473ebfdeb76358b"
+  },
+  "run_utc": "2026-10-21T23:04:17Z"
+ },
+ "result": {
+  "question": "Q1 pioneers vs copycats",
+  "n_perm": 5000,
+  "seed": 20261022,
+  "n_designs_with_eligible_cohorts": 69,
+  "n_designs_valid": 60,
+  "primary": {
+   "n": 60,
+   "share_late_better": 0.5166666666666667,
+   "median_D": 0.033809374288559,
+   "null_share_band": [
+    0.36666666666666664,
+    0.6271186440677966
+   ],
+   "null_median_band": [
+    -0.530420243692928,
+    0.5381351634974567
+   ],
+   "null_share_mean": 0.4993945848449028,
+   "null_median_mean": -0.0011201511097310363,
+   "p_share": 0.7956408718256349,
+   "p_median": 0.9158168366326734,
+   "outside_both_bands": false
+  },
+  "same_sign_share_of_designs_in_majority_direction": 0.5166666666666667,
+  "direction": "late_better",
+  "share_both_groups_same_sign": 0.75,
+  "median_n_early_states": 5.0,
+  "median_n_late_states": 5.0,
+  "ge3_cohorts": {
+   "n": 59,
+   "share_late_better": 0.5254237288135594,
+   "median_D": 0.05124674635991591,
+   "null_share_band": [
+    0.3620689655172414,
+    0.631578947368421
+   ],
+   "null_median_band": [
+    -0.540811018497078,
+    0.5507832995533885
+   ],
+   "null_share_mean": 0.4993347059101301,
+   "null_median_mean": -0.0011665950672352207,
+   "p_share": 0.6994601079784043,
+   "p_median": 0.8650269946010798
+  },
+  "one_vote_per_law": {
+   "n": 45,
+   "share_late_better": 0.4888888888888889,
+   "median_D": -0.08361703569409895,
+   "null_share_band": [
+    0.35555555555555557,
+    0.6590909090909091
+   ],
+   "null_median_band": [
+    -0.5662921764068637,
+    0.5507845398762831
+   ],
+   "p_share": 0.8946210757848431,
+   "p_median": 0.8230353929214157
+  },
+  "leave_one_law_out": {
+   "n_replicates": 45,
+   "share_min": 0.5,
+   "share_max": 0.5344827586206896,
+   "median_min": -0.018478436687250327,
+   "median_max": 0.053203747714465746,
+   "max_p_share": 1.0,
+   "max_p_median": 0.9590081983603279,
+   "direction_kept_all": false
+  },
+  "leave_one_domain_out": [
+   {
+    "left_out": "crime",
+    "n": 50,
+    "share": 0.46,
+    "median": -0.1370320638165588,
+    "p_share": 0.618876224755049,
+    "p_median": 0.6818636272745451
+   },
+   {
+    "left_out": "education",
+    "n": 58,
+    "share": 0.5172413793103449,
+    "median": 0.033809374288559,
+    "p_share": 0.7960407918416317,
+    "p_median": 0.9160167966406718
+   },
+   {
+    "left_out": "environment",
+    "n": 56,
+    "share": 0.5357142857142857,
+    "median": 0.08006673152296209,
+    "p_share": 0.6014797040591882,
+    "p_median": 0.8224355128974206
+   },
+   {
+    "left_out": "health",
+    "n": 42,
+    "share": 0.5714285714285714,
+    "median": 0.08006673152296209,
+    "p_share": 0.365126974605079,
+    "p_median": 0.8166366726654669
+   },
+   {
+    "left_out": "labor",
+    "n": 48,
+    "share": 0.5416666666666666,
+    "median": 0.053203747714465746,
+    "p_share": 0.5720855828834233,
+    "p_median": 0.8538292341531694
+   },
+   {
+    "left_out": "other",
+    "n": 52,
+    "share": 0.5384615384615384,
+    "median": 0.053203747714465746,
+    "p_share": 0.6028794241151769,
+    "p_median": 0.875624875024995
+   },
+   {
+    "left_out": "public_finance",
+    "n": 54,
+    "share": 0.46296296296296297,
+    "median": -0.1370320638165588,
+    "p_share": 0.6370725854829035,
+    "p_median": 0.6792641471705659
+   }
+  ],
+  "by_domain": {
+   "crime": {
+    "n": 10,
+    "share_late_better": 0.8,
+    "median_D": 0.3284339157187337
+   },
+   "education": "too few (2)",
+   "environment": "too few (4)",
+   "health": {
+    "n": 18,
+    "share_late_better": 0.3888888888888889,
+    "median_D": -0.39270409772284115
+   },
+   "labor": {
+    "n": 12,
+    "share_late_better": 0.4166666666666667,
+    "median_D": -0.22055511030124647
+   },
+   "other": {
+    "n": 8,
+    "share_late_better": 0.375,
+    "median_D": -0.4531107357793346
+   },
+   "public_finance": {
+    "n": 6,
+    "share_late_better": 1.0,
+    "median_D": 0.5711501920989943
+   }
+  },
+  "extra_domain_spread": {
+   "domains": [
+    "crime",
+    "health",
+    "labor",
+    "other",
+    "public_finance"
+   ],
+   "observed_sd_of_domain_medians": 0.4090692557107573,
+   "shuffle_p_upper": 0.3863227354529094,
+   "note": "not in PREPLAN; post hoc check"
+  },
+  "era_before_2005": {
+   "n": 19,
+   "share_late_better": 0.47368421052631576,
+   "median_D": -0.2786712862125753
+  },
+  "era_2005_or_later": {
+   "n": 35,
+   "share_late_better": 0.5142857142857142,
+   "median_D": 0.016372002217202086
+  },
+  "scale_S2": {
+   "n": 60,
+   "share_late_better": 0.5166666666666667,
+   "median_D": 0.03265883431376751
+  },
+  "designs_with_perm_p_le_05": 2,
+  "pattern_rule": {
+   "outside_both_bands": false,
+   "majority_share_ge_60": false,
+   "lofo_direction_kept": false,
+   "lofo_max_p_below_10": false
+  },
+  "pattern": false
+ }
+}

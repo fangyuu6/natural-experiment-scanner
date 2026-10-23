@@ -1,0 +1,15 @@
+{
+ "schema": "public_replication_summary_v1",
+ "source": "data/replication/snapshot_v5/snapshot_20261023T132058333306Z.json",
+ "source_sha256": "0191150d0b341782da06ac81bcf94a8d30527d18553e60054841739b6b5c4019",
+ "as_of_utc": "2026-10-23T13:20:58.333306Z",
+ "papers_in_catalogue": 503,
+ "re_estimated": 53,
+ "category_counts": {
+  "within_10pct": 36,
+  "same_direction": 8,
+  "not_comparable": 8,
+  "opposite_sign": 1
+ },
+ "note": "category compares our first independent estimate with the published estimate (within 10% of the larger of its absolute value and SE). Published numbers are not reproduced here."
+}

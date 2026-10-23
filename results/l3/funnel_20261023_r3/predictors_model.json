@@ -1,0 +1,353 @@
+{
+ "note": "EXPLORATORY. Outcome = not_evaluable (1) vs estimated (0); positive coefficient = more likely not evaluable. Ridge-penalised logistic, fixed lambda (intercept unpenalised), dummies unstandardised. EFFECTIVE SAMPLE SIZE ~ number of policy families (113 families for 163 designs; 96 singletons; 17 designs in 4 families of size 5, 2 of size 11 hold 32). Designs within a family are not independent: CV is leave-one-FAMILY-out; \"familyblock\" permutation shuffles whole family status vectors among same-size families (only 6 multi-design families of size>=5, so it differs little from the plain permutation). Missing n_treated / era are separate \"missing\" levels; missingness itself is informative (n_treated roster missing for 51 designs).",
+ "models": {
+  "A_all163_with_hand_run_lam1.0": {
+   "label": "A_all163_with_hand_run",
+   "n": 155,
+   "n_families": 106,
+   "n_not_eval": 74,
+   "ridge_lambda": 1.0,
+   "predictors": [
+    "nbin_m",
+    "era_m",
+    "osrc_m",
+    "domain_g",
+    "hand_run"
+   ],
+   "reference_levels": {
+    "nbin_m": "21+",
+    "era_m": ">=2005",
+    "osrc_m": "other_or_missing",
+    "domain_g": "health",
+    "hand_run": "0"
+   },
+   "intercept": 0.193,
+   "coefficients": {
+    "nbin_m=11-20": {
+     "coef": 0.527,
+     "boot90": [
+      -0.187,
+      1.249
+     ],
+     "share_same_sign": 0.9
+    },
+    "nbin_m=<=10": {
+     "coef": 0.939,
+     "boot90": [
+      0.178,
+      1.545
+     ],
+     "share_same_sign": 0.982
+    },
+    "nbin_m=missing": {
+     "coef": 0.214,
+     "boot90": [
+      -0.362,
+      0.686
+     ],
+     "share_same_sign": 0.708
+    },
+    "era_m=1990-2004": {
+     "coef": 0.066,
+     "boot90": [
+      -0.586,
+      0.714
+     ],
+     "share_same_sign": 0.576
+    },
+    "era_m=<1990": {
+     "coef": 0.344,
+     "boot90": [
+      -0.675,
+      1.325
+     ],
+     "share_same_sign": 0.702
+    },
+    "era_m=missing": {
+     "coef": 0.958,
+     "boot90": [
+      0.508,
+      1.459
+     ],
+     "share_same_sign": 1.0
+    },
+    "osrc_m=CDC_WONDER": {
+     "coef": 0.4,
+     "boot90": [
+      -0.225,
+      1.252
+     ],
+     "share_same_sign": 0.882
+    },
+    "osrc_m=CPS": {
+     "coef": 0.301,
+     "boot90": [
+      -0.274,
+      0.707
+     ],
+     "share_same_sign": 0.788
+    },
+    "osrc_m=FARS": {
+     "coef": -0.657,
+     "boot90": [
+      -1.144,
+      -0.074
+     ],
+     "share_same_sign": 0.974
+    },
+    "osrc_m=FBI_UCR": {
+     "coef": -0.46,
+     "boot90": [
+      -1.097,
+      0.488
+     ],
+     "share_same_sign": 0.68
+    },
+    "domain_g=crime": {
+     "coef": 0.653,
+     "boot90": [
+      -0.148,
+      1.233
+     ],
+     "share_same_sign": 0.884
+    },
+    "domain_g=education": {
+     "coef": 0.688,
+     "boot90": [
+      0.218,
+      1.11
+     ],
+     "share_same_sign": 0.988
+    },
+    "domain_g=environment": {
+     "coef": -0.095,
+     "boot90": [
+      -1.146,
+      0.765
+     ],
+     "share_same_sign": 0.578
+    },
+    "domain_g=labor": {
+     "coef": -0.674,
+     "boot90": [
+      -1.258,
+      -0.029
+     ],
+     "share_same_sign": 0.954
+    },
+    "domain_g=other": {
+     "coef": 0.443,
+     "boot90": [
+      -0.256,
+      1.049
+     ],
+     "share_same_sign": 0.866
+    },
+    "domain_g=public_finance": {
+     "coef": -0.682,
+     "boot90": [
+      -1.266,
+      -0.042
+     ],
+     "share_same_sign": 0.962
+    },
+    "hand_run=1": {
+     "coef": -3.388,
+     "boot90": [
+      -3.697,
+      -3.029
+     ],
+     "share_same_sign": 1.0
+    }
+   },
+   "in_sample_LR_chi2": 96.31,
+   "perm_p_LR_plain_5000": 0.0002,
+   "perm_p_LR_familyblock_5000": 0.0002,
+   "loo_family_cv_auc": 0.828,
+   "perm_p_cvauc_plain_500": 0.002,
+   "perm_p_cvauc_familyblock_500": 0.002,
+   "in_sample_auc": 0.923
+  },
+  "B_autopilot105_no_hand_run_lam1.0": {
+   "label": "B_autopilot105_no_hand_run",
+   "n": 97,
+   "n_families": 54,
+   "n_not_eval": 64,
+   "ridge_lambda": 1.0,
+   "predictors": [
+    "nbin_m",
+    "era_m",
+    "osrc_m",
+    "domain_g"
+   ],
+   "reference_levels": {
+    "nbin_m": "21+",
+    "era_m": ">=2005",
+    "osrc_m": "other_or_missing",
+    "domain_g": "health"
+   },
+   "intercept": 0.215,
+   "coefficients": {
+    "nbin_m=11-20": {
+     "coef": 0.475,
+     "boot90": [
+      -0.39,
+      1.205
+     ],
+     "share_same_sign": 0.84
+    },
+    "nbin_m=<=10": {
+     "coef": 0.957,
+     "boot90": [
+      0.138,
+      1.645
+     ],
+     "share_same_sign": 0.976
+    },
+    "nbin_m=missing": {
+     "coef": 0.637,
+     "boot90": [
+      0.113,
+      1.131
+     ],
+     "share_same_sign": 0.972
+    },
+    "era_m=1990-2004": {
+     "coef": 0.025,
+     "boot90": [
+      -0.664,
+      0.732
+     ],
+     "share_same_sign": 0.538
+    },
+    "era_m=<1990": {
+     "coef": 0.339,
+     "boot90": [
+      -0.756,
+      1.327
+     ],
+     "share_same_sign": 0.646
+    },
+    "era_m=missing": {
+     "coef": 0.637,
+     "boot90": [
+      0.113,
+      1.131
+     ],
+     "share_same_sign": 0.972
+    },
+    "osrc_m=CDC_WONDER": {
+     "coef": 0.513,
+     "boot90": [
+      -0.179,
+      1.343
+     ],
+     "share_same_sign": 0.906
+    },
+    "osrc_m=CPS": {
+     "coef": 0.645,
+     "boot90": [
+      0.117,
+      1.005
+     ],
+     "share_same_sign": 0.958
+    },
+    "osrc_m=FARS": {
+     "coef": -0.68,
+     "boot90": [
+      -1.199,
+      -0.114
+     ],
+     "share_same_sign": 0.976
+    },
+    "osrc_m=FBI_UCR": {
+     "coef": -0.528,
+     "boot90": [
+      -1.069,
+      0.436
+     ],
+     "share_same_sign": 0.656
+    },
+    "domain_g=crime": {
+     "coef": 0.927,
+     "boot90": [
+      -0.037,
+      1.58
+     ],
+     "share_same_sign": 0.938
+    },
+    "domain_g=education": {
+     "coef": 0.72,
+     "boot90": [
+      0.221,
+      1.135
+     ],
+     "share_same_sign": 0.98
+    },
+    "domain_g=environment": {
+     "coef": -0.227,
+     "boot90": [
+      -1.231,
+      0.751
+     ],
+     "share_same_sign": 0.65
+    },
+    "domain_g=labor": {
+     "coef": -0.493,
+     "boot90": [
+      -1.25,
+      0.501
+     ],
+     "share_same_sign": 0.822
+    },
+    "domain_g=other": {
+     "coef": 0.357,
+     "boot90": [
+      -0.537,
+      0.889
+     ],
+     "share_same_sign": 0.724
+    },
+    "domain_g=public_finance": {
+     "coef": -0.593,
+     "boot90": [
+      -1.217,
+      0.171
+     ],
+     "share_same_sign": 0.916
+    }
+   },
+   "in_sample_LR_chi2": 21.11,
+   "perm_p_LR_plain_5000": 0.0486,
+   "perm_p_LR_familyblock_5000": 0.3695,
+   "loo_family_cv_auc": 0.549,
+   "perm_p_cvauc_plain_500": 0.1717,
+   "perm_p_cvauc_familyblock_500": 0.3154,
+   "in_sample_auc": 0.796
+  },
+  "A_all163_with_hand_run_lam3.0": {
+   "n": 155,
+   "ridge_lambda": 3.0,
+   "loo_family_cv_auc": 0.808,
+   "note": "sensitivity only"
+  },
+  "B_autopilot105_no_hand_run_lam3.0": {
+   "n": 97,
+   "ridge_lambda": 3.0,
+   "loo_family_cv_auc": 0.522,
+   "note": "sensitivity only"
+  },
+  "A_all163_with_hand_run_lam0.3": {
+   "n": 155,
+   "ridge_lambda": 0.3,
+   "loo_family_cv_auc": 0.837,
+   "note": "sensitivity only"
+  },
+  "B_autopilot105_no_hand_run_lam0.3": {
+   "n": 97,
+   "ridge_lambda": 0.3,
+   "loo_family_cv_auc": 0.577,
+   "note": "sensitivity only"
+  }
+ }
+}

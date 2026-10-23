@@ -1,0 +1,38 @@
+{
+  "policy_id": "paid_family_leave",
+  "verified_by": "agent-V1",
+  "as_of": "2025-12-31",
+  "n_states_blind": 10,
+  "n_agree": 10,
+  "n_year_diff": 0,
+  "n_only_them": 0,
+  "n_only_us": 0,
+  "details": {},
+  "notes": {
+    "blind_list": "CA 2004, NJ 2009, RI 2014, NY 2018, WA 2020, MA 2021, CT 2022, OR 2023, CO 2024 (+ DC 2020-07-01 as a jurisdiction, counted by research). All 10 match on year.",
+    "null_checks": "DE (claims 2026-01-01), MN (2026-01-01), ME (2026-05-01), MD (2027-2028 earliest), HI (TDI only), NH/VT (voluntary private opt-in) all null; NCSL lists the same 9 operational states plus DC and DE/ME/MD/MN starting 2026.",
+    "excluded_alternatives": "Pre-2004 medical-only TDI/DBL/SDI (RI 1942, CA 1946, NJ 1948, NY 1949, HI 1969) do not count under the family-leave definition.",
+    "sources_opened_or_seen": [
+      "https://data.capitol.hawaii.gov/sessions/session2025/bills/SB1054_.HTM",
+      "https://edd.ca.gov/en/about_edd/news_releases_and_announcements/california-celebrates-20-years-of-paid-family-leave-with-families-and-community-partners",
+      "https://natlawreview.com/article/paid-family-and-medical-leave-benefits-become-available-massachusetts-january-1st",
+      "https://news.delaware.gov/2026/01/01/delaware-employees-can-now-begin-to-file-claims-for-paid-family-leave/",
+      "https://nj.gov/labor/assets/PDFs/ORI/Annual%20FLI%20TDI%20Report%20for%202020.pdf",
+      "https://vensure.com/employment-law-updates/colorado/colorado-paid-family-and-medical-leave-insurance-act-famli-in-effect-for-2024/",
+      "https://www.9news.com/article/news/politics/colorados-paid-family-leave/73-258633b9-f0f5-4c9c-bfd6-ec1d8a0ed7d7",
+      "https://www.cbia.com/news/hr-safety/paid-leave-benefits-249m",
+      "https://www.fox9.com/news/paid-leave-law-applications-jan-2-2026",
+      "https://www.lawandtheworkplace.com/2020/06/dcs-paid-family-leave-benefits-available-july-1-2020-what-employers-need-to-know/",
+      "https://www.littler.com/news-analysis/asap/maryland-again-delays-paid-family-and-medical-leave-program",
+      "https://www.maine.gov/labor/news_events/article.shtml?id=13340124",
+      "https://www.mass.gov/info-details/timeline-of-paid-family-and-medical-leave-contributions-and-benefits",
+      "https://www.ncsl.org/human-services/children-and-families-state-policies-on-paid-family-leave",
+      "https://www.ncsl.org/labor-and-employment/paid-family-leave-resources",
+      "https://www.ny.gov/sites/default/files/atoms/files/PaidFamilyLeave_EmployeeFactSheet.pdf",
+      "https://www.opb.org/article/2023/09/07/first-payments-oregon-paid-leave-program-going-out-soon/",
+      "https://www.ri.gov/press/view/21049",
+      "https://www.seyfarth.com/news-insights/washington-paid-family-and-medical-leave-benefits-become-available-for-employee-use.html"
+    ],
+    "search_budget_note": "WebSearch budget (200) exhausted after the blind and compare steps; mass.gov timeline returned 403 on fetch (search snippet only)."
+  }
+}

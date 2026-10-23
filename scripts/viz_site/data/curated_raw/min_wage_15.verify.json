@@ -1,0 +1,11 @@
+{
+  "policy_id": "min_wage_15",
+  "verified_by": "agent-V4",
+  "as_of": "2025-12-31",
+  "n_states_blind": 16,
+  "n_agree": 16,
+  "n_year_diff": 0,
+  "n_only_them": 0,
+  "n_only_us": 0,
+  "details": {}
+}

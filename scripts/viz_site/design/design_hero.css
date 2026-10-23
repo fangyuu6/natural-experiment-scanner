@@ -1,0 +1,86 @@
+/* design_spec.md s14: hero grid; row 1 = text (centred on the frame) | frame, row 2+ = caption (right column only). Load after design_tokens.css. */
+.nx-herocard{margin-top:calc(var(--nx-gap)/2)}
+.nx-herocard .sm>.nx-cap{display:none}
+.story .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.nx-herogrid+.nx-sec{margin-top:var(--nx-gap)}
+@media(min-width:1100px){
+.nx-herogrid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);column-gap:var(--nx-hero-gap);align-items:start}
+.nx-herotext{grid-area:1/1;align-self:center}
+.nx-herocard,.nx-herocard .sm{display:contents}
+.nx-herocard .sm-cap{grid-column:2}
+.nx-herocard .sm-cap{margin-top:12px}
+.nx-herotext{--nx-fs-hero:var(--nx-type-hero);--nx-lh-hero:1.15;--nx-fs-lead:var(--nx-type-body)}
+.nx-herocard{margin-top:0}
+.nx-herocard .sm .nx-mapcard{grid-area:1/2;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:none;gap:0;padding:16px}
+.nx-herocard .sm .nx-mapcol{grid-area:1/1;display:grid;grid-template-columns:minmax(0,1fr) auto;max-width:none}
+.nx-herocard .sm .nx-fsum{display:block;grid-area:1/1;margin:0 0 6px;white-space:nowrap}
+.nx-herocard .sm .nx-readout{grid-area:1/2;margin:0 0 6px;text-align:right;white-space:nowrap}
+.nx-herocard .sm .sm-svg{grid-area:2/1/3/3;width:100%;height:auto;max-height:360px;margin:0}
+.nx-herocard .sm .nx-legend{grid-area:2/1;margin:8px 0 0;padding:0}
+.nx-herocard .sm .nx-tabs{grid-area:3/1;display:grid;grid-template-columns:repeat(var(--nx-cols),minmax(0,1fr));grid-auto-rows:minmax(44px,auto);gap:3px;overflow:visible;margin:16px 0 0;padding:0;border:0}
+.nx-herocard .sm .nx-tab{display:flex;align-items:center;justify-content:center;min-height:44px;padding:4px 10px;border:1px solid var(--nx-line-2);border-radius:8px;background:#fff;color:var(--nx-text);text-align:center;white-space:normal;overflow-wrap:anywhere}
+.nx-herocard .sm .nx-tab:hover{background:var(--nx-land)}
+.nx-herocard .sm .nx-tab[aria-selected="true"]{background:var(--nx-dark);border-color:var(--nx-dark);color:#fff}
+.nx-herocard .sm .nx-tab .nx-x{display:none}}
+@media(min-width:1100px) and (max-width:1279px){.nx-herocard .sm .nx-tab{padding:6px}}
+@media (min-width:601px) and (max-width:630px){.nx-herocard .sm .nx-legend{min-height:74px}}
+@media (min-width:1100px) and (max-width:1116px){.nx-herocard .sm .nx-legend{min-height:74px}}
+
+/* ---- research levels: reviewed staircase ---- */
+.story .nx-ladder{--lv-word:var(--nx-type-feature,28px)}
+@media(max-width:759px){.story .nx-ladder{--lv-word:22px}}
+.nx-lv-word{margin:0;font:600 var(--lv-word)/1.1 var(--nx-sans);letter-spacing:0;color:var(--nx-ink)}
+.story:lang(zh) .nx-lv-word{font-size:var(--lv-word);line-height:1.2}
+.story .nx-lv-word a{display:inline-flex;align-items:center;min-height:44px;padding-block:6px;color:inherit;text-decoration:underline;text-decoration-color:var(--nx-slate);text-decoration-thickness:1px;text-underline-offset:.16em}
+.story .nx-lv-word a:hover,.story .nx-lv-word a:focus-visible{color:var(--nx-accent);text-decoration-color:currentColor}
+.nx-lv-no{display:block;font:500 var(--nx-fs-cap)/1 var(--nx-sans);letter-spacing:.02em;color:var(--nx-muted);font-variant-numeric:tabular-nums}
+.story .nx-lv{list-style:none;margin:0;padding-inline:0}
+.nx-nd{margin:0;font:400 13px/1.35 var(--nx-sans);color:var(--nx-text-2);font-variant-numeric:tabular-nums}
+.story:lang(zh) .nx-nd{line-height:1.5}
+.nx-nd b{margin-right:.2em;font:700 var(--nx-type-count,22px)/1 var(--nx-sans);color:var(--nx-ink)}
+.nx-nd--end{color:var(--nx-text-2);font-size:15px;font-weight:400}
+/* L1 carries its own screening chain; the higher levels stand separately. */
+.nx-stair{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px;align-items:start;padding:0}
+.nx-st{position:relative;min-width:0;display:flex;flex-direction:column;gap:12px}
+.nx-st:nth-child(1){margin-top:80px}.nx-st:nth-child(2){margin-top:40px}.nx-st:nth-child(3){margin-top:0}
+.nx-tally{display:inline-block;font-variant-numeric:tabular-nums}
+.nx-lv-row{display:flex;flex-direction:column;gap:2px}
+.nx-st .nx-nd{position:static;white-space:normal;line-height:1.6}
+.nx-candidates{display:inline-block;white-space:nowrap}
+.nx-screen-arrow{display:inline-block;margin-inline:4px;color:var(--nx-accent)}
+@media(max-width:759px){
+.nx-stair{display:flex;flex-direction:column;gap:24px}
+.nx-st:nth-child(1),.nx-st:nth-child(2),.nx-st:nth-child(3){margin-top:0}
+.nx-st:nth-child(2){margin-left:24px}.nx-st:nth-child(3){margin-left:48px}
+.nx-lv-row{flex-direction:row;align-items:baseline;gap:10px}
+.nx-lv-no{min-width:20px}
+.nx-st{gap:4px}
+.nx-st .nx-nd b{font-size:20px}
+}
+
+@media (max-width: 360px) {
+  .sm .sm-head { min-height: 68px; }
+}
+
+@media(max-width:360px){.story:not(:lang(zh)) .nx-herotext{--nx-fs-hero:28px}}
+/* Local arming is supplied by NXMotion only after cleanup registration. */
+@media(min-width:1100px) and (max-width:1279px){.story .nx-herotext .nx-accent{white-space:normal}}
+
+/* Prepare each complete handoff before paint; the shared utility clears these flags. */
+@media (prefers-reduced-motion:no-preference){
+html.nx-motion.nx-motion-boot .nx-stair:not(.nx-motion-complete) :is(.nx-lv-row,.nx-nd--in,.nx-nd--end),
+html.nx-motion .nx-stair.nx-motion-pending :is(.nx-lv-row,.nx-nd--in,.nx-nd--end),
+html.nx-motion .nx-stair.nx-motion-armed .nx-st:not(.lv-reached) :is(.nx-lv-row,.nx-nd--in,.nx-nd--end){opacity:0}
+}
+@media(min-width:601px) and (max-width:1099px){
+.nx-herocard .sm .nx-mapcard{padding:16px}
+.nx-herocard .sm .sm-svg{max-height:400px}
+.nx-herocard .sm .sm-head{margin-bottom:4px}
+.nx-herocard .sm .nx-tabs{margin-bottom:4px}
+}
+@media print{.nx-stair :is(.nx-lv-row,.nx-nd--in,.nx-nd--end){opacity:1!important}}
+
+@media(max-width:600px){
+.story .nx-sub{text-wrap:balance}
+.story:lang(zh) .nx-sub{word-break:keep-all;overflow-wrap:normal}
+}

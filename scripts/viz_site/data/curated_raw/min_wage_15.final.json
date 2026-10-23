@@ -1,0 +1,706 @@
+{
+  "policy_id": "min_wage_15",
+  "name_en": "$15 minimum-wage laws",
+  "name_zh": "15 美元最低工资立法",
+  "definition_en": "Statewide statute or voter-approved ballot measure setting a scheduled path to a $15 (or higher) hourly state minimum wage for most employers (phase-in, employer-size and regional tiers allowed). CPI-indexing-only states and city/county-only $15 laws are excluded.",
+  "definition_zh": "全州范围内通过法律或选民公投设定的、对多数雇主分步提高至 15 美元（或更高）州最低时薪的时间表（允许分阶段，以及按雇主规模或地区分档）；仅靠通胀指数化的州以及仅市县层面的 15 美元法律不计入。",
+  "year_basis": "year the law setting a path to a $15 state minimum wage was enacted",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+    "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+    "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+    "https://www.govdocs.com/how-many-states-have-a-15-minimum-wage/",
+    "https://www.dol.gov/agencies/whd/state/minimum-wage/history",
+    "https://www.nelp.org/14-cities-states-approved-15-minimum-wage-in-2015/"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "AK": {
+      "year": 2024,
+      "date": "2024-11-05",
+      "phase_in_end": 2027,
+      "sources": [
+        "https://www.dwt.com/blogs/employment-labor-and-benefits/2024/11/alaska-measure-one-new-wage-and-labor-protections",
+        "https://vensure.com/employment-law-updates/alaska/alaska-measure-no-1-passes-minimum-wage-changes-coming/",
+        "https://www.adn.com/politics/2024/11/05/ballot-measure-1-aimed-at-boosting-alaska-minimum-wage-passing-by-wide-margin-in-early-returns/",
+        "https://www.hrdive.com/news/minimum-wage-paid-leave-ballot-initiatives-election-day-2024/732456/",
+        "https://ballotpedia.org/Alaska_Measure_1,_Minimum_Wage_and_Paid_Sick_Leave_Initiative_(2024)"
+      ],
+      "confidence": "high",
+      "note": "Ballot Measure 1 (about 58% yes): $13 (2025-07-01), $14 (2026), $15 on 2027-07-01; CPI after. V4: Ballot Measure 1 approved Nov 2024; $15 by 2027-07-01 (HR Dive).",
+      "verification": "verified"
+    },
+    "AZ": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+        "https://ogletree.com/insights-resources/blog-posts/arizonas-proposition-206-much-more-than-a-minimum-wage-increase/"
+      ],
+      "confidence": "high",
+      "note": "Reaches $15+ only via CPI indexing; no scheduled $15 law (EPI/NELP). V4: Prop 206 (2016): $12 by 2020 then CPI (Ogletree); no $15 target.",
+      "verification": "verified"
+    },
+    "AR": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "CA": {
+      "year": 2016,
+      "date": "2016-04-04",
+      "phase_in_end": 2022,
+      "sources": [
+        "https://archive.gov.ca.gov/archive/gov39/2016/04/04/news19367/index.html",
+        "https://www.dir.ca.gov/dlse/sb3_faq.htm",
+        "https://www.npr.org/2016/04/04/473005029/california-gov-jerry-brown-signs-states-15-minimum-wage-law",
+        "https://ogletree.com/insights-resources/blog-posts/governor-brown-signs-californias-15-minimum-wage-bill/"
+      ],
+      "confidence": "high",
+      "note": "SB 3: $15 in 2022 for 26+ employees, 2023 for 25 or fewer; CPI-indexed after. V4: SB 3 signed 2016-04-04 (Ogletree).",
+      "verification": "verified"
+    },
+    "CO": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+        "https://mosey.com/blog/colorado-minimum-wage/"
+      ],
+      "confidence": "high",
+      "note": "Reaches $15+ only via CPI indexing; no scheduled $15 law (EPI/NELP). V4: Amendment 70 (2016): $12 by 2020 then CPI (Mosey); no $15 target.",
+      "verification": "verified"
+    },
+    "CT": {
+      "year": 2019,
+      "date": "2019-05-28",
+      "phase_in_end": 2023,
+      "sources": [
+        "https://portal.ct.gov/governor/news/press-releases/2019/05-2019/governor-lamont-signs-minimum-wage-increase",
+        "https://www.ctpublic.org/news/2019-05-29/lamont-supporters-of-the-fight-for-15-movement-celebrate-new-state-minimum-wage-law"
+      ],
+      "confidence": "high",
+      "note": "Public Act 19-4: $15 on 2023-06-01; indexed to ECI from 2024. V4: PA 19-4 signed 2019-05-28; $15 on 2023-06-01 (CT governor release).",
+      "verification": "verified"
+    },
+    "DE": {
+      "year": 2021,
+      "date": "2021-07-19",
+      "phase_in_end": 2025,
+      "sources": [
+        "https://news.delaware.gov/2021/07/19/governor-carney-signs-legislation-to-raise-the-minimum-wage-to-15",
+        "https://www.wdel.com/news/carney-signs-into-law-delawares-15-minimum-wage-hike/article_f27218d0-e89a-11eb-ac7a-4b7763124fb6.html"
+      ],
+      "confidence": "high",
+      "note": "SB 15: $10.50 (2022), $11.75, $13.25, $15 on 2025-01-01. V4: SB 15 signed 2021-07-19 (Delaware news).",
+      "verification": "verified"
+    },
+    "DC": {
+      "year": 2016,
+      "date": "2016-06-27",
+      "phase_in_end": 2020,
+      "sources": [
+        "https://mayor.dc.gov/release/mayor-bowser-celebrate-fightfor15-minimum-wage-bill-signing",
+        "https://code.dccouncil.gov/us/dc/council/laws/21-144",
+        "https://natlawreview.com/article/washington-dc-increases-minimum-wage-to-15-and-tipped-minimum-wage-to-500-july-2"
+      ],
+      "confidence": "high",
+      "note": "Fair Shot Minimum Wage Amendment Act of 2016 (D.C. Law 21-144): $15 on 2020-07-01; CPI after. V4: jurisdiction, not a state (kept per dataset convention). B21-712 passed 2016-06-21, signed 2016-06-27; $15 by 2020 (mayor.dc.gov).",
+      "verification": "verified"
+    },
+    "FL": {
+      "year": 2020,
+      "date": "2020-11-03",
+      "phase_in_end": 2026,
+      "sources": [
+        "https://www.jacksonlewis.com/insights/florida-voters-approve-15-minimum-wage",
+        "https://www.littler.com/publication-press/publication/florida-passes-amendment-2-gradually-increasing-floridas-minimum-wage"
+      ],
+      "confidence": "high",
+      "note": "Constitutional Amendment 2 (60.8% yes): +$1 each Sept 30 from 2021, $15 on 2026-09-30; CPI after. V4: Amendment 2 approved 2020-11-03 (>60%); $15 by 2026-09-30 (Jackson Lewis).",
+      "verification": "verified"
+    },
+    "GA": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "HI": {
+      "year": 2022,
+      "date": "2022-06-22",
+      "phase_in_end": 2026,
+      "sources": [
+        "https://news.bloomberglaw.com/daily-labor-report/hawaii-governor-signs-18-minimum-wage-law-first-of-its-kind",
+        "https://natlawreview.com/article/hawaii-becomes-first-state-to-enact-18-minimum-wage",
+        "https://labor.hawaii.gov/wsd/minimum-wage/"
+      ],
+      "confidence": "high",
+      "note": "HB 2510: $14 (2024), $16 (2026), $18 (2028); first step above $15 is 2026. Signing date 06-22 or 06-23 by source. V4: Act 114 (HB 2510) signed 2022-06-22 (Bloomberg Law); schedule $12 (2022-10-01), $14 (2024), $16 (2026), $18 (2028) per NatLawReview; qualifies as '$15 or higher'. NELP counts HI among the 15.",
+      "verification": "verified"
+    },
+    "ID": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "IL": {
+      "year": 2019,
+      "date": "2019-02-19",
+      "phase_in_end": 2025,
+      "sources": [
+        "https://www.littler.com/publication-press/publication/illinois-governor-signs-bill-raising-statewide-minimum-wage-15-hour",
+        "https://capitolnewsillinois.com/news/illinois-minimum-wage-to-increase-to-15-on-jan-1-completing-6-year-transition/",
+        "https://www.cbsnews.com/chicago/news/jb-pritzker-illinois-minimum-wage-15-dollars-an-hour/",
+        "https://www.illinoispolicy.org/pritzker-signs-statewide-15-minimum-wage-into-law/"
+      ],
+      "confidence": "high",
+      "note": "SB 1: $15 on 2025-01-01; youth tier (under 18, <650 hrs/yr) reaches only $13. V4: SB 1 signed 2019-02-19 (Illinois Policy).",
+      "verification": "verified"
+    },
+    "IN": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "IA": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "KS": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "KY": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "LA": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "ME": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+        "https://en.wikipedia.org/wiki/2016_Maine_Question_4"
+      ],
+      "confidence": "high",
+      "note": "Reaches $15+ only via CPI indexing; no scheduled $15 law (EPI/NELP). V4: Question 4 (2016): $12 by 2020 then CPI (Wikipedia); no $15 target.",
+      "verification": "verified"
+    },
+    "MD": {
+      "year": 2019,
+      "date": "2019-03-28",
+      "phase_in_end": 2024,
+      "sources": [
+        "https://www.nelp.org/overcoming-gubernatorial-veto-preemption-threat-maryland-becomes-sixth-state-adopt-15-minimum-wage-rate/",
+        "https://www.governing.com/archive/tns-maryland-minimum-wage-15-an-hour.html",
+        "https://www.hrdive.com/news/maryland-lawmakers-override-governors-15-minimum-wage-veto/551683/",
+        "https://conduitstreet.mdcounties.org/2024/01/02/maryland-starts-the-new-year-as-sixth-state-wtih-a-15-minimum-wage/",
+        "https://www.cbsnews.com/amp/baltimore/news/house-overrides-hogan-veto-15-minimum-wage"
+      ],
+      "confidence": "high",
+      "note": "Enacted by veto override 2019-03-28 ($15 by 2025/2026); 2023 Fair Wage Act (SB 555) moved $15 to 2024-01-01. V4: HB 166 veto override 2019-03-28 (House 96-43, Senate 32-15); $15 by 2025 for 15+ employees, 2026 for smaller (Governing/CBS).",
+      "verification": "verified"
+    },
+    "MA": {
+      "year": 2018,
+      "date": "2018-06-28",
+      "phase_in_end": 2023,
+      "sources": [
+        "https://malegislature.gov/Laws/SessionLaws/Acts/2018/Chapter121",
+        "https://www.wbur.org/news/2018/06/28/baker-to-sign-bill-hiking-minimum-wage-requiring-paid-leave"
+      ],
+      "confidence": "high",
+      "note": "Ch. 121 of Acts of 2018 ('grand bargain'): $12 (2019) rising to $15 on 2023-01-01. V4: grand bargain signed 2018-06-28; $15 by 2023 (WBUR).",
+      "verification": "verified"
+    },
+    "MI": {
+      "year": 2025,
+      "date": "2025-02-21",
+      "phase_in_end": 2027,
+      "sources": [
+        "https://news.bloombergtax.com/payroll/michigan-enacts-law-raising-minimum-wage-to-15-by-2027",
+        "https://legislature.mi.gov/documents/2025-2026/billanalysis/Senate/htm/2025-SFA-0008-F.htm",
+        "https://ogletree.com/insights-resources/blog-posts/michigans-supreme-court-clarifies-its-mothering-justice-opinion-and-sets-states-minimum-wage-increases-and-tip-credit-phaseout/",
+        "https://www.legislature.mi.gov/documents/2025-2026/billanalysis/Senate/pdf/2025-SFA-0008-N.pdf"
+      ],
+      "confidence": "high",
+      "note": "2018 initiative only reached $12; first $15 path is SB 8 (signed 2025-02-21): $12.48, $13.73 (2026), $15 (2027). V4: SB 8 signed 2025-02-21 (Bloomberg Tax): $12.48, $13.73 (2026), $15 (2027). The 2018 initiative/Mothering Justice schedule never set $15.",
+      "verification": "verified"
+    },
+    "MN": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+        "https://dli.mn.gov/news/minimum-wage-rates-adjusted-inflation-jan-1-2024"
+      ],
+      "confidence": "high",
+      "note": "State wage CPI-indexed (about $11.41 in 2026); $15 only in some cities (e.g., Minneapolis). V4: CPI-indexed only ($10.85 large employers in 2024, MN DLI); no $15 target statute.",
+      "verification": "verified"
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "MO": {
+      "year": 2024,
+      "date": "2024-11-05",
+      "phase_in_end": 2026,
+      "sources": [
+        "https://labor.mo.gov/news/press-releases/minimum-wage-increases-1375-hour-2025",
+        "https://news.ballotpedia.org/2025/07/11/missouri-governor-signs-law-repealing-provisions-of-2024-paid-sick-leave-and-minimum-wage-ballot-initiative/",
+        "https://www.hrdive.com/news/minimum-wage-paid-leave-ballot-initiatives-election-day-2024/732456/"
+      ],
+      "confidence": "high",
+      "note": "Prop A (57.6% yes): $13.75 (2025), $15 on 2026-01-01; HB 567 (2025-07-10) repealed CPI indexing, kept $15. V4: Prop A schedule ($13.75 in 2025, $15 in 2026) confirmed (HR Dive); HB 567 (2025) detail not independently re-checked.",
+      "verification": "verified"
+    },
+    "MT": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "NE": {
+      "year": 2022,
+      "date": "2022-11-08",
+      "phase_in_end": 2026,
+      "sources": [
+        "https://www.hivedesk.com/compliance/united-states/minimum-wage-nebraska",
+        "https://nebraska.tv/news/local/the-new-year-puts-into-effect-initiative-433-nebraskas-minimum-wage-increase",
+        "https://news.ballotpedia.org/2026/02/12/nebraska-state-legislature-alters-second-ballot-initiative-in-two-years-lowering-the-rate-of-increase-for-the-state-minimum-wage-enacted-in-2022/",
+        "https://news.bloombergtax.com/payroll/nebraska-approves-ballot-measure-making-minimum-wage-15-by-2026"
+      ],
+      "confidence": "high",
+      "note": "Initiative 433 (58.7% yes): $15 on 2026-01-01; LB 258 (Feb 2026, after as-of) changed post-2026 indexing. V4: Initiative 433 approved Nov 2022 (58.19%); $15 in 2026 (Bloomberg Tax).",
+      "verification": "verified"
+    },
+    "NV": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+        "https://natlawreview.com/article/nevada-employer-alert-two-tiered-minimum-wage-retiring-final-increase-12-hour"
+      ],
+      "confidence": "high",
+      "note": "V4: AB 456 (2019) and Question 2 (2022): $12 by 2024-07-01; no $15 target (NatLawReview).",
+      "verification": "verified"
+    },
+    "NH": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "NJ": {
+      "year": 2019,
+      "date": "2019-02-04",
+      "phase_in_end": 2024,
+      "sources": [
+        "https://pub.njleg.gov/bills/2018/AL19/32_.HTM",
+        "https://www.saiber.com/insights/publications/2019-01-28-nj-employment-alert-governor-murphy-signs-new-jerseys-15-minimum-wage-increase-into-law",
+        "https://www.cnbc.com/2019/02/01/new-jersey-gov-phil-murphy-signs-15-per-hour-minimum-wage-into-law.html",
+        "https://www.ebglaw.com/insights/publications/its-official-new-jerseys-minimum-wage-will-gradually-increase-to-15-hour"
+      ],
+      "confidence": "high",
+      "note": "P.L.2019 c.32: $15 in 2024; small (<6 staff)/seasonal employers 2026; farm workers 2030. V4: A15 signed 2019-02-04; $15 in 2024 for 6+ employees, 2026 for small/seasonal (EBG).",
+      "verification": "verified"
+    },
+    "NM": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "NY": {
+      "year": 2016,
+      "date": "2016-04-04",
+      "phase_in_end": 2018,
+      "sources": [
+        "https://www.duanemorris.com/alerts/new_york_15_dollar_minimum_wage_plan_0416.html",
+        "https://www.nbcnewyork.com/news/local/new-york-budget-deal-minimum-wage-cuomo-nyc-15-dollars/2026660/",
+        "https://www.morganlewis.com/pubs/2023/05/new-york-enacts-increases-to-state-minimum-wage",
+        "https://www.nelp.org/14-cities-states-approved-15-minimum-wage-in-2015/"
+      ],
+      "confidence": "high",
+      "note": "2016 budget law: NYC $15 in 2018, LI/Westchester 2021; upstate $15 only via 2023 budget (from 2024). V4: 2016 law covers NYC (large $15 by 2018) and Nassau/Suffolk/Westchester ($15 by 2021); rest of state only $12.50 by 2020 (Duane Morris) -> accepted as regional tiers per definition. 2015 fast-food wage-board order is sector-specific (NELP), excluded.",
+      "verification": "verified"
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "ND": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "OH": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "OK": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "OR": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+        "https://www.schwabe.com/publication/oregon-governor-signs-off-on-historic-minimum-wage-increase/"
+      ],
+      "confidence": "high",
+      "note": "Reaches $15+ only via CPI indexing; no scheduled $15 law (EPI/NELP). V4: SB 1532 (2016): Portland metro $14.75, standard $13.50, rural $12.50 by 2022, then CPI (Schwabe); no $15 target.",
+      "verification": "verified"
+    },
+    "PA": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.govdocs.com/how-many-states-have-a-15-minimum-wage/",
+        "https://whyy.org/articles/pennsylvania-minimum-wage-increase-bill/",
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/"
+      ],
+      "confidence": "high",
+      "note": "House passed a $15 bill in 2025; not enacted, state follows federal $7.25.",
+      "verification": "verified"
+    },
+    "RI": {
+      "year": 2021,
+      "date": "2021-05-20",
+      "phase_in_end": 2025,
+      "sources": [
+        "https://natlawreview.com/article/rhode-island-joins-list-states-enacting-15-minimum-wage-law",
+        "https://upriseri.com/15-min-wage-signed/",
+        "https://www.newsweek.com/rhode-island-gov-dan-mckee-signs-legislation-increasing-minimum-wage-15-hour-2025-1593769",
+        "https://www.ri.gov/press/view/41170"
+      ],
+      "confidence": "high",
+      "note": "H5130A/S0001A signed 2021-05-20 ($15 on 2025-01-01); a later 2025 law adds $16 (2026) and $17 (2027). V4: signed 2021-05-20; $15 on 2025-01-01 (RI.gov).",
+      "verification": "verified"
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "SD": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "UT": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "VT": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.govdocs.com/how-many-states-have-a-15-minimum-wage/",
+        "https://labor.vermont.gov/news/minimum-wage-increase-effective-january-1-2025",
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.vtdigger.org/2020/02/25/minimum-wage-boost-will-become-law-as-house-overrides-scott-veto-%EF%BB%BF/"
+      ],
+      "confidence": "high",
+      "note": "CPI-indexed ($14.42 in 2026); no scheduled $15 target. V4: 2018 $15 bill vetoed, override failed; 2020 override set only $12.55 by 2022 (VTDigger).",
+      "verification": "verified"
+    },
+    "VA": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.washingtonexaminer.com/policy/economy/4522529/spanberger-raises-virginia-minimum-wage-to-15/",
+        "https://virginiamercury.com/2025/03/24/youngkin-vetoes-minimum-wage-hike-prescription-affordability-board-bills/",
+        "https://www.vaco.org/capitol-contact/minimum-wage-legislation-update/",
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.vaco.org/capitol-contact/minimum-wage-legislation-conference-report/",
+        "https://www.hr-brew.com/stories/2026/04/15/minimum-wage-virginia-increase"
+      ],
+      "confidence": "medium",
+      "note": "2020 law's $15 step lapsed unless reenacted by 2024 (not); $15 law signed 2026-04-09, after as-of. V4: 2020 HB 395/SB 7 set $9.50/$11/$12 only; $13.50 (2025) and $15 (2026) were contingent on reenactment by 2024 (VACo), which did not occur; $15-by-2028 law signed 2026-04-09 (HR Brew) is after as-of.",
+      "verification": "verified"
+    },
+    "WA": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages",
+        "https://www.hivedesk.com/compliance/united-states/minimum-wage-washington"
+      ],
+      "confidence": "high",
+      "note": "Above $15 only via CPI indexing; no $15 schedule. City laws (e.g., Seattle) excluded. V4: I-1433 (2016): fixed steps to $13.50 in 2020 then CPI (HiveDesk); no $15 target.",
+      "verification": "verified"
+    },
+    "WV": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "phase_in_end": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/raises-from-coast-to-coast-in-2026/",
+        "https://www.epi.org/blog/nearly-half-of-u-s-workers-will-live-in-states-with-at-least-a-15-minimum-wage-by-2027-alaska-and-missouri-became-the-latest-states-to-enact-a-15-minimum-wage/",
+        "https://www.ncsl.org/labor-and-employment/state-minimum-wages"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    }
+  },
+  "n_with_law": 16,
+  "year_min": 2016,
+  "year_max": 2025,
+  "researched_by": "agent",
+  "method_notes": "Adopter list: EPI blog (15 states with a $15+ path) and NELP 'Raises from Coast to Coast 2026' (same 15) plus DC; AZ/CO/ME/OR/WA excluded (CPI-indexed only). Years checked vs statute/governor/agency/law-firm pages. phase_in_end = $15 first reached for main tier. Some URLs seen only in search hits. | V4 verification (blind list first, then compared): all 15 states + DC agree on year (0 diffs). Hawaii (Act 114, 2022, $18 by 2028) qualifies; VA excluded by as-of and by the lapsed 2020 contingency; WA/OR/CO/ME/AZ/NV/MN/VT have no $15 target statute; NY 2016 kept as regional tiers.",
+  "verified_by": "agent-V4"
+}

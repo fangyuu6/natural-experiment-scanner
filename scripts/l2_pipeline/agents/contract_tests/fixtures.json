@@ -1,0 +1,1486 @@
+{
+  "s0_purpose": {
+    "golden": {
+      "design_id": "$design_id",
+      "role": "$role",
+      "card_sha256": "$card_sha256",
+      "internal_persona_lens": "$internal_persona_lens",
+      "status": "VERIFIED",
+      "target_outcome": "employment_share",
+      "target_population": "Invented eligible adults",
+      "confirmation": "Purpose and population [1] [2]",
+      "citations": [
+        {
+          "source_type": "statute",
+          "source_ref": "https://example.invalid/statute",
+          "title": "Invented statute",
+          "locator": "Section 1",
+          "supports": [
+            "target_outcome",
+            "target_population"
+          ]
+        },
+        {
+          "source_type": "paper",
+          "source_ref": "https://example.invalid/paper",
+          "title": "Invented paper",
+          "locator": "Page 2",
+          "supports": [
+            "target_outcome"
+          ]
+        }
+      ]
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "missing_population",
+        "path": [
+          "target_population"
+        ],
+        "delete": true
+      },
+      {
+        "name": "single_paper_only",
+        "path": [
+          "citations"
+        ],
+        "value": [
+          {
+            "source_type": "paper",
+            "source_ref": "https://example.invalid/paper",
+            "title": "Invented single study",
+            "locator": "Section 1",
+            "supports": [
+              "target_outcome",
+              "target_population"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "unlocated_purpose",
+        "path": [
+          "confirmation"
+        ],
+        "value": "No citation markers"
+      }
+    ]
+  },
+  "s0l_literature": {
+    "golden": {
+      "design_id": "$design_id",
+      "role": "$role",
+      "study_id": "$design_id",
+      "candidate_sha256": "$candidate_sha256",
+      "status": "VERIFIED",
+      "source_type": "published_did_study",
+      "title": "Invented primary paper",
+      "authors": [
+        "Invented author"
+      ],
+      "year": 2020,
+      "venue": "Invented venue",
+      "doi": null,
+      "doi_status": "not_assigned",
+      "citation_evidence": [
+        {
+          "source_url": "https://example.invalid/paper",
+          "locator": "Page 1",
+          "supports": [
+            "title",
+            "authors",
+            "year",
+            "venue",
+            "doi"
+          ]
+        }
+      ],
+      "source_version": {
+        "source_url": "https://example.invalid/paper",
+        "locator": "Page 1",
+        "version": "Invented open manuscript",
+        "doi": null
+      },
+      "policy_id": "invented_policy",
+      "policy_definition": "Invented employment intervention",
+      "target_outcome": "employment_share",
+      "target_population": "Invented adults",
+      "policy_evidence": {
+        "source_url": "https://example.invalid/paper",
+        "locator": "Page 1"
+      },
+      "primary_outcome": "employment_share",
+      "data_source": "Invented public series",
+      "population": "Invented adults",
+      "outcome_evidence": {
+        "source_url": "https://example.invalid/paper",
+        "locator": "Page 1"
+      },
+      "study_window": {
+        "source_url": "https://example.invalid/paper",
+        "locator": "Page 1",
+        "start": 2000,
+        "end": 2007
+      },
+      "adoption": {
+        "source_url": "https://example.invalid/paper",
+        "locator": "Page 1",
+        "reported_scope_complete": true,
+        "complete_list": true,
+        "coverage_start": 2000,
+        "coverage_end": 2007,
+        "universe": [
+          "CA",
+          "NY"
+        ],
+        "states": [
+          {
+            "source_url": "https://example.invalid/paper",
+            "locator": "Page 1",
+            "state": "CA",
+            "year": 2002
+          }
+        ]
+      },
+      "published_results": [
+        {
+          "source_url": "https://example.invalid/paper",
+          "locator": "Page 1",
+          "primary": true,
+          "estimate_as_reported": "0.0",
+          "se_as_reported": "1.0",
+          "units": "percentage points"
+        }
+      ],
+      "access": {
+        "open_fulltext": true,
+        "open_version_url": "https://example.invalid/paper",
+        "paywalled_sources": []
+      },
+      "search_log": [
+        {
+          "query": "Invented paper verification",
+          "source_url": null
+        }
+      ],
+      "downloads": [],
+      "scans": [
+        {
+          "source_url": "browser tool result",
+          "separate_local_scan": false,
+          "method": "Browser-only invented fixture",
+          "flags": [],
+          "limitations": "No separate local scan occurred"
+        }
+      ],
+      "gaps": [],
+      "outcome_associations_fit": false,
+      "paid_calls": 0
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "legacy_string_search_log",
+        "path": [
+          "search_log"
+        ],
+        "value": [
+          "Invented paper verification"
+        ]
+      },
+      {
+        "name": "paid_call",
+        "path": [
+          "paid_calls"
+        ],
+        "value": 1
+      },
+      {
+        "name": "missing_uncertainty",
+        "path": [
+          "published_results",
+          0,
+          "se_as_reported"
+        ],
+        "delete": true
+      },
+      {
+        "name": "unlocated_result",
+        "path": [
+          "published_results",
+          0,
+          "locator"
+        ],
+        "value": "full text"
+      }
+    ]
+  },
+  "s1_coder": {
+    "golden": {
+      "design_id": "$design_id",
+      "role": "$role",
+      "source_sha256": "$source_sha256",
+      "blindness_attestation": "$blindness",
+      "records": "$records",
+      "source_pack_sha256": "$source_sha256",
+      "research_log": [],
+      "time_spent_seconds": 0
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "missing_blindness",
+        "path": [
+          "blindness_attestation"
+        ],
+        "delete": true
+      },
+      {
+        "name": "incomplete_roster",
+        "path": [
+          "records"
+        ],
+        "value": []
+      },
+      {
+        "name": "invalid_adoption_period",
+        "path": [
+          "records",
+          0,
+          "start_period"
+        ],
+        "value": true
+      }
+    ]
+  },
+  "s1_auditor": {
+    "golden": {
+      "design_id": "$design_id",
+      "role": "$role",
+      "source_sha256": "$source_sha256",
+      "selection_sha256": "$selection_sha256",
+      "blindness_attestation": "$blindness",
+      "checks": "$audit_checks"
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "changed_selection",
+        "path": [
+          "selection_sha256"
+        ],
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "missing_check",
+        "path": [
+          "checks"
+        ],
+        "value": []
+      },
+      {
+        "name": "no_official_evidence",
+        "path": [
+          "checks",
+          0,
+          "official_locator"
+        ],
+        "value": " "
+      }
+    ]
+  },
+  "s1_third_read": {
+    "golden": {
+      "design_id": "$design_id",
+      "role": "$role",
+      "source_sha256": "$source_sha256",
+      "reconciliation_sha256": "$reconciliation_sha256",
+      "blindness_attestation": "$blindness",
+      "checks": "$third_checks"
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "changed_reconciliation",
+        "path": [
+          "reconciliation_sha256"
+        ],
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "name": "missing_rationale",
+        "path": [
+          "checks",
+          0,
+          "rationale"
+        ],
+        "value": " "
+      },
+      {
+        "name": "wrong_chosen_tuple",
+        "path": [
+          "checks",
+          0,
+          "start_period"
+        ],
+        "value": 2003
+      }
+    ]
+  },
+  "s5_forecast": {
+    "golden": {
+      "persona": "$role",
+      "design_id": "$design_id",
+      "spec_sha256": "$spec_sha256",
+      "point": 0,
+      "interval": [
+        -1,
+        1
+      ],
+      "interval_level": 0.8,
+      "rationale": "Invented original-unit ATT",
+      "disclosures": [],
+      "blindness_attestation": "$blindness"
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "invalid_disclosures",
+        "path": [
+          "disclosures"
+        ],
+        "value": {}
+      },
+      {
+        "name": "boolean_point",
+        "path": [
+          "point"
+        ],
+        "value": true
+      },
+      {
+        "name": "reversed_bounds",
+        "path": [
+          "interval"
+        ],
+        "value": [
+          1,
+          -1
+        ]
+      }
+    ]
+  },
+  "s5_template_forecast": {
+    "golden": {
+      "$merge": "$forecast_template",
+      "status": "FILLED_PRE_ESTIMATION",
+      "entered_at": "2026-01-01T00:00:00Z",
+      "central_ATT": 0,
+      "interval_80": [
+        -1,
+        1
+      ],
+      "prob_positive": 0.25,
+      "prob_negative": 0.25,
+      "prob_near_zero": 0.5,
+      "prob_diagnostics_pass": 0.5,
+      "near_zero_threshold": 0.1,
+      "direction": "near_zero",
+      "mechanism": "Invented registered mechanism",
+      "assumptions": [
+        "Invented scope"
+      ],
+      "signature": "Internal fixture persona",
+      "outcome_associations_seen_attestation": false,
+      "freeze_manifest_sha256": null,
+      "disclosures": [],
+      "blindness_attestation": "$blindness"
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "invalid_disclosures",
+        "path": [
+          "disclosures"
+        ],
+        "value": {}
+      },
+      {
+        "name": "direction_probability_sum",
+        "path": [
+          "prob_positive"
+        ],
+        "value": 0.8
+      },
+      {
+        "name": "association_exposure",
+        "path": [
+          "outcome_associations_seen_attestation"
+        ],
+        "value": true
+      }
+    ]
+  },
+  "s6_review": {
+    "golden": {
+      "design_id": "$design_id",
+      "candidate_sha256": "$candidate_sha256",
+      "review_scope": "$review_scope",
+      "complete_sweeps": 1,
+      "fix_cycles": 0,
+      "must": [],
+      "should": [],
+      "verdict": "PASS",
+      "independence_attestation": {
+        "wrote_implementation": false,
+        "wrote_fixes": false,
+        "real_outcome_associations_read": false
+      }
+    },
+    "invalid": [
+      {
+        "name": "wrong_design",
+        "path": [
+          "design_id"
+        ],
+        "value": "different-design"
+      },
+      {
+        "name": "two_sweeps",
+        "path": [
+          "complete_sweeps"
+        ],
+        "value": 2
+      },
+      {
+        "name": "false_pass",
+        "path": [
+          "must"
+        ],
+        "value": [
+          {
+            "id": "M1",
+            "description": "Invented missing result",
+            "evidence": "Synthetic fixture",
+            "impact": "missing_registered_result"
+          }
+        ]
+      },
+      {
+        "name": "finding_without_evidence",
+        "path": [
+          "should"
+        ],
+        "value": [
+          {
+            "id": "S1",
+            "description": "Invented finding",
+            "impact": "Synthetic impact"
+          }
+        ]
+      },
+      {
+        "name": "author_review",
+        "path": [
+          "independence_attestation",
+          "wrote_implementation"
+        ],
+        "value": true
+      }
+    ]
+  },
+  "s1_official_history_v9": {
+    "golden": {
+      "design_id": "$design_id",
+      "role": "$role",
+      "source_sha256": "$source_sha256",
+      "source_pack_sha256": "$source_sha256",
+      "records": "$records",
+      "sources": [
+        {
+          "source_id": "fixture-official",
+          "url": "https://fixture.gov/session-law",
+          "locator": "Invented section 1",
+          "source_type": "official"
+        }
+      ],
+      "research_log": "$history_research_log",
+      "time_spent_seconds": 1,
+      "blindness_attestation": "$blindness",
+      "history_output_schema": "official_history_v9_1",
+      "s1_ready": false,
+      "execution_authorized": false
+    },
+    "invalid": [
+      {
+        "name": "missing_source_id",
+        "path": [
+          "records",
+          0,
+          "source_id"
+        ],
+        "delete": true
+      },
+      {
+        "name": "low_confidence",
+        "path": [
+          "records",
+          0,
+          "confidence"
+        ],
+        "value": "low"
+      },
+      {
+        "name": "unknown_without_named_conflict",
+        "path": [
+          "records",
+          0
+        ],
+        "value": {
+          "unit": "U0",
+          "status": "unknown",
+          "start_period": null,
+          "mechanism": "one",
+          "locator": "Invented official code",
+          "source_id": "fixture-official",
+          "confidence": "medium",
+          "reason": "Cannot prove lifetime absence"
+        }
+      },
+      {
+        "name": "unauthorized_readiness",
+        "path": [
+          "s1_ready"
+        ],
+        "value": true
+      },
+      {
+        "name": "all_50_unknown_lacking_named_conflicts",
+        "path": [
+          "records"
+        ],
+        "value": [
+          {
+            "unit": "U0",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U0",
+              "detail": "U0 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U0 history"
+            }
+          },
+          {
+            "unit": "U1",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U1",
+              "detail": "U1 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U1 history"
+            }
+          },
+          {
+            "unit": "U2",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U2",
+              "detail": "U2 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U2 history"
+            }
+          },
+          {
+            "unit": "U3",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U3",
+              "detail": "U3 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U3 history"
+            }
+          },
+          {
+            "unit": "U4",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U4",
+              "detail": "U4 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U4 history"
+            }
+          },
+          {
+            "unit": "U5",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U5",
+              "detail": "U5 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U5 history"
+            }
+          },
+          {
+            "unit": "U6",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U6",
+              "detail": "U6 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U6 history"
+            }
+          },
+          {
+            "unit": "U7",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U7",
+              "detail": "U7 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U7 history"
+            }
+          },
+          {
+            "unit": "U8",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U8",
+              "detail": "U8 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U8 history"
+            }
+          },
+          {
+            "unit": "U9",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U9",
+              "detail": "U9 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U9 history"
+            }
+          },
+          {
+            "unit": "U10",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U10",
+              "detail": "U10 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U10 history"
+            }
+          },
+          {
+            "unit": "U11",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U11",
+              "detail": "U11 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U11 history"
+            }
+          },
+          {
+            "unit": "U12",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U12",
+              "detail": "U12 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U12 history"
+            }
+          },
+          {
+            "unit": "U13",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U13",
+              "detail": "U13 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U13 history"
+            }
+          },
+          {
+            "unit": "U14",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U14",
+              "detail": "U14 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U14 history"
+            }
+          },
+          {
+            "unit": "U15",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U15",
+              "detail": "U15 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U15 history"
+            }
+          },
+          {
+            "unit": "U16",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U16",
+              "detail": "U16 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U16 history"
+            }
+          },
+          {
+            "unit": "U17",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U17",
+              "detail": "U17 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U17 history"
+            }
+          },
+          {
+            "unit": "U18",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U18",
+              "detail": "U18 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U18 history"
+            }
+          },
+          {
+            "unit": "U19",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U19",
+              "detail": "U19 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U19 history"
+            }
+          },
+          {
+            "unit": "U20",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U20",
+              "detail": "U20 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U20 history"
+            }
+          },
+          {
+            "unit": "U21",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U21",
+              "detail": "U21 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U21 history"
+            }
+          },
+          {
+            "unit": "U22",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U22",
+              "detail": "U22 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U22 history"
+            }
+          },
+          {
+            "unit": "U23",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U23",
+              "detail": "U23 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U23 history"
+            }
+          },
+          {
+            "unit": "U24",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U24",
+              "detail": "U24 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U24 history"
+            }
+          },
+          {
+            "unit": "U25",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U25",
+              "detail": "U25 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U25 history"
+            }
+          },
+          {
+            "unit": "U26",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U26",
+              "detail": "U26 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U26 history"
+            }
+          },
+          {
+            "unit": "U27",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U27",
+              "detail": "U27 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U27 history"
+            }
+          },
+          {
+            "unit": "U28",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U28",
+              "detail": "U28 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U28 history"
+            }
+          },
+          {
+            "unit": "U29",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U29",
+              "detail": "U29 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U29 history"
+            }
+          },
+          {
+            "unit": "U30",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U30",
+              "detail": "U30 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U30 history"
+            }
+          },
+          {
+            "unit": "U31",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U31",
+              "detail": "U31 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U31 history"
+            }
+          },
+          {
+            "unit": "U32",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U32",
+              "detail": "U32 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U32 history"
+            }
+          },
+          {
+            "unit": "U33",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U33",
+              "detail": "U33 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U33 history"
+            }
+          },
+          {
+            "unit": "U34",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U34",
+              "detail": "U34 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U34 history"
+            }
+          },
+          {
+            "unit": "U35",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U35",
+              "detail": "U35 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U35 history"
+            }
+          },
+          {
+            "unit": "U36",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U36",
+              "detail": "U36 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U36 history"
+            }
+          },
+          {
+            "unit": "U37",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U37",
+              "detail": "U37 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U37 history"
+            }
+          },
+          {
+            "unit": "U38",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U38",
+              "detail": "U38 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U38 history"
+            }
+          },
+          {
+            "unit": "U39",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U39",
+              "detail": "U39 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U39 history"
+            }
+          },
+          {
+            "unit": "U40",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U40",
+              "detail": "U40 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U40 history"
+            }
+          },
+          {
+            "unit": "U41",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U41",
+              "detail": "U41 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U41 history"
+            }
+          },
+          {
+            "unit": "U42",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U42",
+              "detail": "U42 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U42 history"
+            }
+          },
+          {
+            "unit": "U43",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U43",
+              "detail": "U43 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U43 history"
+            }
+          },
+          {
+            "unit": "U44",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U44",
+              "detail": "U44 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U44 history"
+            }
+          },
+          {
+            "unit": "U45",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U45",
+              "detail": "U45 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U45 history"
+            }
+          },
+          {
+            "unit": "U46",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U46",
+              "detail": "U46 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U46 history"
+            }
+          },
+          {
+            "unit": "U47",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U47",
+              "detail": "U47 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U47 history"
+            }
+          },
+          {
+            "unit": "U48",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U48",
+              "detail": "U48 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U48 history"
+            }
+          },
+          {
+            "unit": "U49",
+            "status": "unknown",
+            "start_period": null,
+            "mechanism": "one",
+            "locator": "Invented official history",
+            "source_id": "fixture-official",
+            "confidence": "medium",
+            "reason": "Cannot prove lifetime absence or no interruptions",
+            "blocker": {
+              "unit": "U49",
+              "detail": "U49 requires lifetime proof",
+              "official_locator": "https://fixture.gov/code",
+              "search_query": "U49 history"
+            }
+          }
+        ]
+      },
+      {
+        "name": "secondary_without_official_confirmation",
+        "path": [
+          "sources",
+          0,
+          "source_type"
+        ],
+        "value": "secondary"
+      },
+      {
+        "name": "official_confirmation_wrong_year",
+        "path": [
+          "records",
+          0,
+          "evidence_refs",
+          0,
+          "year"
+        ],
+        "value": 2005
+      },
+      {
+        "name": "missing_per_state_search_log",
+        "path": [
+          "research_log"
+        ],
+        "value": [
+          {
+            "unit": "U0",
+            "query": "Invented query",
+            "finding": "Invented finding"
+          }
+        ]
+      }
+    ]
+  },
+  "s0_direction": {
+    "invalid": [
+      {
+        "name": "invalid_sign",
+        "path": [
+          "purpose_direction"
+        ],
+        "value": 2
+      },
+      {
+        "name": "boolean_sign",
+        "path": [
+          "purpose_direction"
+        ],
+        "value": true
+      },
+      {
+        "name": "forecast_exposure",
+        "path": [
+          "blindness_attestation",
+          "forecasts_read"
+        ],
+        "value": true
+      },
+      {
+        "name": "wrong_locator",
+        "path": [
+          "citations",
+          0,
+          "locator"
+        ],
+        "value": "effect table"
+      },
+      {
+        "name": "peer_exposure",
+        "path": [
+          "blindness_attestation",
+          "other_codings_read"
+        ],
+        "value": true
+      }
+    ]
+  }
+}

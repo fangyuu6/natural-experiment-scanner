@@ -1,0 +1,237 @@
+{
+  "purpose": "Read metadata/public reports; hashes do not authorize outcome access",
+  "inputs": {
+    "SITE_PLAYBOOK.md": {
+      "sha256": "901d515bf1a33f6176c198a847ae3eeac2e09d284d5f7f8fe204b6111cecf590",
+      "bytes": 26536
+    },
+    "docs/plans/2026-10-04-three-level-roadmap.md": {
+      "sha256": "a183ac0bc89cc6f5c0b20c778beefd827286757e651a2e83e231f8bccd061bc6",
+      "bytes": 17483
+    },
+    "docs/plans/l3-pooled/RESULTS.md": {
+      "sha256": "9d4e8e84a6170fc6bab9d936df43687aeb0556691b407bdcd9914d45e9692aca",
+      "bytes": 1106548
+    },
+    "docs/plans/l3-pooled/LITERATURE_POOLED.md": {
+      "sha256": "0de7bce553e162c10e07cb4dbf6f5fc1840c1e7a8f254d7669ff236e8b276079",
+      "bytes": 18774
+    },
+    "docs/plans/l3-pooled/CITATION_CHECK.md": {
+      "sha256": "aaa2115f97491e81020ded487b63fdbd6dc71c84a9e31344fac4e62daefe3024",
+      "bytes": 6662
+    },
+    "docs/plans/l2-scale/BATCH1_RESULTS.md": {
+      "sha256": "906400635817e2417eb73dab322c92adb283fde07d13b8aebf993e3ab8bc04da",
+      "bytes": 68969
+    },
+    "docs/plans/l2-scale/BATCH2_RESULTS.md": {
+      "sha256": "3f4d64d416262ea4660d91242d4869be9ea515257ef1798bf2c3e3da11f6133f",
+      "bytes": 6460
+    },
+    "docs/plans/l2-scale/BATCH3_RESULTS.md": {
+      "sha256": "63c56203d2c91213e8e1ce8b32cb3c8c902180e9f9295477498ab4a7dba0e2c0",
+      "bytes": 4246
+    },
+    "docs/plans/l3-results/NOISE_FIGURE_DATA.json": {
+      "sha256": "e5ecd6999325fef0a9f78055979c2cdf2cad3e684031b80fd355c9c653bd90fc",
+      "bytes": 40124
+    },
+    "data/pipeline/coding/reconciled/registry.json": {
+      "sha256": "5e0c32087ab65adafe604fad50c635f72e7a40ed01933dae2398350b38d81c6d",
+      "bytes": 991870
+    },
+    "scripts/pipeline/registry/schema.json": {
+      "sha256": "5e29869c03d92c3896689c7b9e94cfb7e1cfa6c169c8eb084206d06db28b2a01",
+      "bytes": 15487
+    },
+    "scripts/l2_batch1/PREDICTIONS_LOCK.json": {
+      "sha256": "2a8e0271b94f86508f3d7e7dad2b22382501773a278aace22fb78720f0be67a1",
+      "bytes": 746
+    },
+    "scripts/l2_batch2/PREDICTIONS_LOCK.json": {
+      "sha256": "26825ed13a1aaba79c500e86f30ca80c7d504ce03e611fa018895cdff8fe9f2c",
+      "bytes": 3017
+    },
+    "scripts/l2_batch3/PREDICTIONS_LOCK.json": {
+      "sha256": "332d5b01187c83345b56a649d0fd0523362c59629c48287fb70fc3be01ad1a92",
+      "bytes": 4483
+    },
+    "scripts/l2_batch1/predictions/card.json": {
+      "sha256": "adf41a2499e350a1ed8639d6e01d79e9f4cbde681145749cef91f23ca5072cd9",
+      "bytes": 23009,
+      "locked_by": "scripts/l2_batch1/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch1/predictions/finkelstein.json": {
+      "sha256": "4adb0c0cd59d0df6e61e38327453a56666512f75f6068cc8ecbbcbcc9c2a144c",
+      "bytes": 22788,
+      "locked_by": "scripts/l2_batch1/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch1/predictions/roth.json": {
+      "sha256": "e8c74077f05f46c1bf4cee149eee1f8341374c071e5d785e9ba31577530b6ead",
+      "bytes": 20805,
+      "locked_by": "scripts/l2_batch1/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch1/predictions/liebman.json": {
+      "sha256": "c37ddc5b57b7aa671537d6a0a392105dd2ed0d5de73987ae6b6771ab935779e3",
+      "bytes": 12907,
+      "locked_by": "scripts/l2_batch1/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch1/predictions/boehmke.json": {
+      "sha256": "f6a4941877a2e3c37d4400da342dfc9f40b25a1dba5d5636a288a6888e119aa0",
+      "bytes": 11196,
+      "locked_by": "scripts/l2_batch1/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/automatic_voter/Card.template.json": {
+      "sha256": "3bf3b01171f77fb55759e2edc66b30bb25b8449e481fabecf59f4f3a00e7bfde",
+      "bytes": 3760,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/automatic_voter/Finkelstein.template.json": {
+      "sha256": "a7d46f9bde5a4a04856b364acb2e67f82ce2156d817feb0c7dfff306f9764e71",
+      "bytes": 4314,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/automatic_voter/Roth.template.json": {
+      "sha256": "57159122effd20b82923b90ab5fe3ab232a33b4e7004f1ad67105ccd37f37579",
+      "bytes": 3257,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/automatic_voter/Liebman.template.json": {
+      "sha256": "9d4abd18db4514ce45cad9f60faa909d25a302a6e368ddf8a6e5035b9c7c18aa",
+      "bytes": 3868,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/automatic_voter/Boehmke.template.json": {
+      "sha256": "82ed9affc99029f546ea1fdc9fec3130c95b950cdd628e50dbc7dc1f46a03c8c",
+      "bytes": 3152,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/btb_private/Card.template.json": {
+      "sha256": "fd23e1a2e0a57d24253d9670cdb539837268048f23d0b2f30e72473563122b4e",
+      "bytes": 3883,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/btb_private/Finkelstein.template.json": {
+      "sha256": "71d8f1c87e431fd97c49714319d160097c2a67a983a400f794ee38811214b425",
+      "bytes": 4359,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/btb_private/Roth.template.json": {
+      "sha256": "25f7402586b1bfee33d38de030cdc6d3f5d252a62d171be5c23538dd93938d6e",
+      "bytes": 3239,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/btb_private/Liebman.template.json": {
+      "sha256": "f16ee6e2f2cfe4815c6351f55541c36e8714acac70a49d0ece71d7461fe9969f",
+      "bytes": 3776,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/btb_private/Boehmke.template.json": {
+      "sha256": "da9c15f6302d3bbc7f9956933922b116c10e0d50c668bdff2febde751ff547f4",
+      "bytes": 3171,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/medical_cannabis/Card.template.json": {
+      "sha256": "6deb33750520e87ac00305b8c434ae7cfa64892651d546811efd926a50cb8a3a",
+      "bytes": 3852,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/medical_cannabis/Finkelstein.template.json": {
+      "sha256": "6746750e22f06f60d24f6142f9da0a253a87199544ead9b7f45097fb73cbd6a1",
+      "bytes": 4297,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/medical_cannabis/Roth.template.json": {
+      "sha256": "d4f9a408d24791605bb9e975b1073e52951d1e6bffe746816c7d24d11b189177",
+      "bytes": 3199,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/medical_cannabis/Liebman.template.json": {
+      "sha256": "35e26259cc04999a6ac409d1df1d27b376d1e07d7fe4430217eed1166d851c69",
+      "bytes": 3785,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/medical_cannabis/Boehmke.template.json": {
+      "sha256": "26e651acaf54b4813ce944ad9e9ec5d2580bd43f19deb2df4bf1018e3096ced7",
+      "bytes": 3273,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/film_refundable/Card.template.json": {
+      "sha256": "0b79993b21c0493f236845f15fe16c277f358a5f42a71ef3317a2a7bf80e821d",
+      "bytes": 3921,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/film_refundable/Finkelstein.template.json": {
+      "sha256": "d8640519019854eb95f826a53944fa4d3f42da29e4c4485258131d14550fc0de",
+      "bytes": 4355,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/film_refundable/Roth.template.json": {
+      "sha256": "efae52c5397d4ad3b20fcae94d971d80d46b173fde9b4ff01394310a71811801",
+      "bytes": 3244,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/film_refundable/Liebman.template.json": {
+      "sha256": "3bfb299946959239a54823d27153d98054d5a3558b868ccf79500afc83b4d15d",
+      "bytes": 3884,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch2/predictions/film_refundable/Boehmke.template.json": {
+      "sha256": "2220371ed50eb7419bf650c37d3bf15b65293e611f7ca1e1586e1f44ecbd8e4c",
+      "bytes": 3409,
+      "locked_by": "scripts/l2_batch2/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/mw_indexing/Boehmke.filled.json": {
+      "sha256": "0a7aa3c92d6ffb61e452bbf5a0db8c33b0c99105ef597bfad547ac418f5a08f2",
+      "bytes": 3146,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/mw_indexing/Card.filled.json": {
+      "sha256": "f5b8049a2724de29db843de5c7baa83984f9d6c2f8d4e6afe42983d6a155d587",
+      "bytes": 5131,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/mw_indexing/Finkelstein.filled.json": {
+      "sha256": "f34f4c0f242581dc2c34b37db023cc14f3b983205e23a5752aff02909b0a4ce3",
+      "bytes": 4424,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/mw_indexing/Liebman.filled.json": {
+      "sha256": "d1a8072991a1252f4f02cf8a881c11ff93a47901e1912ff60172e9a44eb5d30b",
+      "bytes": 2972,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/mw_indexing/Roth.filled.json": {
+      "sha256": "885f602323b7f01d349f39933c900fe882011d227ac9008e8c37d87eb24a08e0",
+      "bytes": 5115,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/public_btb/Boehmke.filled.json": {
+      "sha256": "09f7773910b1df15f56fd99c54c5a9619c2a45e186c0cb64d876356f1eb72d10",
+      "bytes": 3235,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/public_btb/Card.filled.json": {
+      "sha256": "cf5e83d706679d26953337b013f7bd6ebb3955d25712345d8f03c956f17acf7f",
+      "bytes": 4942,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/public_btb/Finkelstein.filled.json": {
+      "sha256": "bc0a70d35b9b6aaa5aa9611b98aeac418349c764121aed5fbe8caca2605ca1b2",
+      "bytes": 4143,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/public_btb/Liebman.filled.json": {
+      "sha256": "af151faff6e6c8022ef292fddf9cb3698f4b93c01f168ed3a29dddffba5687c5",
+      "bytes": 2945,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    },
+    "scripts/l2_batch3/specs/predictions/public_btb/Roth.filled.json": {
+      "sha256": "f30508796c0123aae2842a01658c4efa3c7333cbfe9842e874d23b2aad845a60",
+      "bytes": 4542,
+      "locked_by": "scripts/l2_batch3/PREDICTIONS_LOCK.json"
+    }
+  },
+  "new_downloads": []
+}

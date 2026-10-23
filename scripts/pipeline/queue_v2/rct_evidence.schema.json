@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://natural-experiment-scanner.local/contracts/rct-evidence-v1.json",
+  "title": "RCT / lottery verification evidence v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_text_id", "chapter_id", "quote", "evidence_status", "assignment_mechanism", "assignment_unit", "eligible_population", "assignment_probability", "assignment_records", "outcome_linkage", "compliance", "attrition", "gambling_lottery"],
+  "properties": {
+    "source_text_id": {"type": "string", "minLength": 1},
+    "chapter_id": {"type": "string"},
+    "quote": {"type": "string", "minLength": 1},
+    "evidence_status": {"enum": ["lexical_mention", "mechanism_verified", "allocation_records_verified", "data_ready"]},
+    "assignment_mechanism": {"type": ["string", "null"]},
+    "assignment_unit": {"type": ["string", "null"]},
+    "eligible_population": {"type": ["string", "null"]},
+    "assignment_probability": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "assignment_records": {"$ref": "#/$defs/link"},
+    "outcome_linkage": {"$ref": "#/$defs/link"},
+    "strata_or_blocks": {"type": ["string", "null"]},
+    "compliance": {"type": ["string", "null"]},
+    "attrition": {"type": ["string", "null"]},
+    "gambling_lottery": {"type": "boolean"},
+    "verification_notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "link": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["url", "public_access", "geography", "frequency", "years", "join_key", "sha256"],
+      "properties": {
+        "url": {"type": "string", "format": "uri"},
+        "public_access": {"enum": ["verified_free", "unverified", "restricted"]},
+        "geography": {"type": "string"},
+        "frequency": {"type": "string"},
+        "years": {"type": "string"},
+        "join_key": {"type": ["string", "null"]},
+        "sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}
+      }
+    }
+  }
+}

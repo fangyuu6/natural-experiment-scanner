@@ -1,0 +1,372 @@
+{
+ "generated": "2026-10-01",
+ "checked_by": "manual read of title, DB url and pitch/treatment text, 2026-10-01",
+ "rule": "State Legislation row, valid state, ENACTING law (or substantive enacting amendment) of the policy as defined, DB year within +-1 of the state final adoption year, state has a non-null final year",
+ "source_csv": "data/output/policy_db_20260415_483k.csv (streamed, dedup on policy_id; 41,383 State Legislation rows with a valid state)",
+ "policies": {
+  "license_recognition": {
+   "accepted": [
+    {
+     "state": "ND",
+     "year": 2025,
+     "policy_id": "ND-SB2395-69th Legislative Assembly",
+     "title": "AN ACT ... relating to universal licensure and board operations",
+     "match": "enacting",
+     "title_db": "AN ACT to create and enact a new chapter to title 43 of the North Dakota Century Code, relating to universal licensure and board operations.",
+     "db_date": "2025-04-04",
+     "db_status": "enacted",
+     "db_url": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo2395.html",
+     "why": "SB 2395 creates the universal licensure chapter; matches final ND 2025 (SB 2395)"
+    },
+    {
+     "state": "NH",
+     "year": 2023,
+     "policy_id": "1653914",
+     "title": "Relative to the licensure of out-of-state applicants to boards or commissions organized...",
+     "match": "enacting",
+     "title_db": "Relative to the licensure of out-of-state applicants to boards or commissions organized under the office of professional licensure and certification.",
+     "db_date": "2023-06-29",
+     "db_status": "enacted",
+     "db_url": "https://gencourt.state.nh.us/bill_status/legacy/bs2016/bill_status.aspx?lsr=417&sy=2023&sortoption=&txtsessionyear=2023&txtbillnumber=HB594",
+     "why": "HB 594 (2023); matches final NH 2023 (HB 594, signed 2023-06-28)"
+    }
+   ],
+   "rejected_counts": {
+    "n_candidates": 674,
+    "no_final_year": 433,
+    "year_gap": 87,
+    "in_window_other_law": 26,
+    "accepted": 2,
+    "blank_year_or_title": 126
+   },
+   "rejected_notable": [
+    "MO 2020 HB 1511 (reciprocity, treatment = military spouses; the any-state law is HB 2046)",
+    "LA 2023 court reporters / ID 2021 board consolidation / MS 2020 HB 1104 supervision / WV 2019,2022 / AR 2019 HB 1301: narrow or not the universal law",
+    "NV 2017 AB 196, AZ 2018 SB 1246 and SB 1443, UT HB 159, VA HB 1022, WY HB 110: single-occupation or unrelated",
+    "blank-year/title rows (e.g. CO SB18-027) cannot be tested against +-1"
+   ]
+  },
+  "nurse_licensure_compact": {
+   "accepted": [
+    {
+     "state": "AL",
+     "year": 2019,
+     "policy_id": "1223724",
+     "title": "Nursing, Board of, authority to enter, ... Enhanced Nurse Licensure Compact",
+     "match": "enacting",
+     "title_db": "Nursing, Board of, authority to enter, coordinated license information, multistate practice, Enhanced Nurse Licensure Compact, Secs. 34-21-20.01, 34-21-120 to 34-21-130, inclusive, added; Secs. 34-21-1, 34-21-2, 34-21-21, 34-21-22, 34-21-25 am'd.",
+     "db_date": "2019-04-30",
+     "db_status": "unknown",
+     "db_url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB38&WIN_TYPE=SELECTED_STATUS",
+     "why": "AL eNLC enabling bill (SB 38, 2019); DB treatment text is mismatched, title and URL are right"
+    },
+    {
+     "state": "FL",
+     "year": 2016,
+     "policy_id": "FL-H1061-Regular Session",
+     "title": "Creates Nurse Licensure Compact; provides for recognition of licenses in party states",
+     "match": "enacting",
+     "title_db": "Creates Nurse Licensure Compact; provides for recognition of licenses in party states; provides requirements for obtaining & retaining multistate license; provides effect on current licensees; requires all party states to participate in coordinated l...",
+     "db_date": "2016-03-28",
+     "db_status": "enacted",
+     "db_url": "http://www.flsenate.gov/Session/Bill/2016/1061",
+     "why": "HB 1061 (2016) creates the NLC (eNLC text) in FL"
+    },
+    {
+     "state": "RI",
+     "year": 2023,
+     "policy_id": "RI-S0275-Regular Session",
+     "title": "Amends the interstate nurse licensure compact and adopts an enhanced and more...",
+     "match": "enacting",
+     "title_db": "Amends the interstate nurse licensure compact and adopts an enhanced and more comprehensive version of the compact, to allow nurses to hold a multi-state license allowing them to practice across state lines without having to obtain multiple licenses.",
+     "db_date": "2023-06-24",
+     "db_status": "enacted",
+     "db_url": "https://status.rilegislature.gov/",
+     "why": "S 0275 (2023) adopts the enhanced compact; dated 2023-06-24"
+    },
+    {
+     "state": "TN",
+     "year": 2016,
+     "policy_id": "TN-SB1725-109th General Assembly",
+     "title": "As enacted, creates the \"Nurse Licensure Compact.\"",
+     "match": "enacting",
+     "title_db": "As enacted, creates the \"Nurse Licensure Compact.\" - Amends and repeals portions of TCA Title 4 and Title 63, Chapter 7.",
+     "db_date": "2016-03-22",
+     "db_status": "enacted",
+     "db_url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=SB1725&ga=109",
+     "why": "SB 1725 (2016) enacts the compact in TN"
+    },
+    {
+     "state": "UT",
+     "year": 2017,
+     "policy_id": "UT-SB0048-Regular Session",
+     "title": "Nurse Licensure Compact",
+     "match": "enacting",
+     "title_db": "Nurse Licensure Compact",
+     "db_date": "2017-03-15",
+     "db_status": "enacted",
+     "db_url": "https://le.utah.gov/~2017/bills/static/SB0048.html",
+     "why": "SB 48 (2017) enacts the compact in UT"
+    }
+   ],
+   "rejected_counts": {
+    "n_candidates": 12,
+    "accepted": 5,
+    "year_gap": 4,
+    "no_final_year": 1,
+    "in_window_other_law": 1,
+    "blank_year_or_title": 1
+   },
+   "rejected_notable": [
+    "AL 2019 id 1261037 (title = sheriff permit; eNLC text copied from another bill)",
+    "CO SB18-027 (eNLC per treatment text) rejected: DB year and title blank",
+    "other-profession compacts (PT, social work, EMS, audiology, counseling, dental, PA, IMLC) are not nurse compacts",
+    "DE 2022 APRN compact text on an unrelated residency bill; IL 2024 automatic nurse licensure (not a compact)"
+   ]
+  },
+  "medical_licensure_compact": {
+   "accepted": [
+    {
+     "state": "AR",
+     "year": 2025,
+     "policy_id": "AR-SB119-95th General Assembly",
+     "title": "To Establish The Interstate Medical Licensure Compact.",
+     "match": "enacting",
+     "title_db": "To Establish The Interstate Medical Licensure Compact.",
+     "db_date": "2025-03-12",
+     "db_status": "enacted",
+     "db_url": "https://legiscan.com/AR/bill/SB119/2025",
+     "why": "SB 119 (2025) establishes the IMLC in AR"
+    },
+    {
+     "state": "CO",
+     "year": 2016,
+     "policy_id": "CO-HB1047-Regular Session",
+     "title": "Interstate Medical Licensure Compact",
+     "match": "enacting",
+     "title_db": "Interstate Medical Licensure Compact",
+     "db_date": "2016-06-08",
+     "db_status": "enacted",
+     "db_url": "https://legiscan.com/CO/bill/HB1047/2016",
+     "why": "HB 1047 (2016) enacts the IMLC in CO"
+    },
+    {
+     "state": "DE",
+     "year": 2021,
+     "policy_id": "1500724",
+     "title": "... Preserving Telehealth And Adopting The Interstate Medical Licensure Compact",
+     "match": "enacting",
+     "title_db": "An Act To Amend Titles 18 And 24 Of The Delaware Code Relating To Preserving Telehealth And Adopting The Interstate Medical Licensure Compact.",
+     "db_date": "2021-06-23",
+     "db_status": "unknown",
+     "db_url": "https://legis.delaware.gov/BillDetail?LegislationId=58579",
+     "why": "DE 2021 act adopts the IMLC (together with telehealth provisions)"
+    },
+    {
+     "state": "MD",
+     "year": 2018,
+     "policy_id": "MD-SB234-Regular Session",
+     "title": "Entering into the Interstate Medical Licensure Compact; ...",
+     "match": "enacting",
+     "title_db": "Entering into the Interstate Medical Licensure Compact; providing the purpose of the Compact is to strengthen access to health care by developing a process to complement existing licensing and provide a streamlined method to allow physicians to becom...",
+     "db_date": "2018-05-08",
+     "db_status": "enacted",
+     "db_url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/SB0234?ys=2018rs",
+     "why": "SB 234 (2018) enters MD into the IMLC"
+    }
+   ],
+   "rejected_counts": {
+    "n_candidates": 20,
+    "year_gap": 12,
+    "in_window_other_law": 1,
+    "accepted": 4,
+    "blank_year_or_title": 3
+   },
+   "rejected_notable": [
+    "DE 2023 / IA 2025 / ME 2024 / NJ 2026 PA compact; AR 2025 social work compact: other compacts or out of window",
+    "CT HR 33-2023 (reporting rules), RI 2021 pelvic-exam bill, AR and ME licensure-pathway bills: not the IMLC enabling law"
+   ]
+  },
+  "tnc_framework": {
+   "accepted": [
+    {
+     "state": "AL",
+     "year": 2018,
+     "policy_id": "1057601",
+     "title": "Transportation network companies, providing ride sharing for compensation, ...",
+     "match": "enacting",
+     "title_db": "Transportation network companies, providing ride sharing for compensation, Public Service Commission permit required to operate, minimum requirements imposed",
+     "db_date": "2018-02-15",
+     "db_status": "unknown",
+     "db_url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB190&WIN_TYPE=SELECTED_STATUS",
+     "why": "HB 190 (Act 2018-127) PSC permit framework; DB treatment text is mismatched, title and URL are right"
+    },
+    {
+     "state": "DE",
+     "year": 2016,
+     "policy_id": "877696",
+     "title": "An Act To Amend Title 2 Of The Delaware Code Relating To Transportation Network Companies.",
+     "match": "enacting",
+     "title_db": "An Act To Amend Title 2 Of The Delaware Code Relating To Transportation Network Companies.",
+     "db_date": "2016-08-10",
+     "db_status": "enacted",
+     "db_url": "http://legis.delaware.gov/LIS/lis148.nsf/2bede841c6272c888025698400433a04/21822810f4b66f1685257f47006d57bd?OpenDocument",
+     "why": "DE 2016-08-10 matches SB 262 (Title 2 ch. 19) in final; db_matches labelled it A, treated as the enacting act"
+    },
+    {
+     "state": "NM",
+     "year": 2016,
+     "policy_id": "NM-HB168-Regular Session",
+     "title": "Transportation Network Company Services Act",
+     "match": "enacting",
+     "title_db": "Transportation Network Company Services Act",
+     "db_date": "2016-02-10",
+     "db_status": "enacted",
+     "db_url": "https://www.nmlegis.gov/lcs/legislation.aspx?chamber=H&legtype=B&legno=168&year=16",
+     "why": "HB 168 (2016) is the TNC Services Act in final"
+    }
+   ],
+   "rejected_counts": {
+    "n_candidates": 23,
+    "year_gap": 8,
+    "accepted": 3,
+    "in_window_other_law": 6,
+    "no_final_year": 3,
+    "blank_year_or_title": 3
+   },
+   "rejected_notable": [
+    "AK 2018 id 905685 \"Transportation Network Companies/drivers\" (URL SB 14, last action 2018-06-27) vs final HB 132 / 2017 (single_source): cannot confirm the same law; flag AK year for re-check",
+    "NM 2017 HB 77 (definition carve-out, minor amendment)",
+    "MD 2016 SB 54 (insurance clarification of the 2015 law)",
+    "VT 2017 id 934426 (H.143, insurance-only; the framework is Act 3 of the 2018 special session, H.10)",
+    "NY 2018 S 8929 (workers comp for TNC drivers; framework was 2017 budget)",
+    "DE 2017 id 1003031 (title = military-spouse licensing; ride-hail text mismatched)"
+   ]
+  },
+  "paid_sick_leave": {
+   "accepted": [
+    {
+     "state": "NJ",
+     "year": 2018,
+     "policy_id": "NJ-A1827-Regular Session",
+     "title": "Concerns earned sick leave to employees",
+     "match": "enacting",
+     "title_db": "Concerns earned sick leave to employees.*",
+     "db_date": "2018-05-02",
+     "db_status": "enacted",
+     "db_url": "https://www.njleg.state.nj.us/bill-search/2018/A1827",
+     "why": "A 1827 (2018) is the NJ Earned Sick Leave Law; final 2018"
+    }
+   ],
+   "rejected_counts": {
+    "n_candidates": 71,
+    "year_gap": 43,
+    "no_final_year": 17,
+    "in_window_other_law": 7,
+    "accepted": 1,
+    "blank_year_or_title": 3
+   },
+   "rejected_notable": [
+    "NY 2020 A 10153 (temporary COVID quarantine leave, not the statewide mandate)",
+    "MA 2016 individual sick-leave banks, NY 2019 WTC leave, NJ 2017 S 879: public-employee or one-person bills",
+    "NV 2021 AB 190 not counted: NV has no final year (its PTO law is excluded)"
+   ]
+  },
+  "paid_family_leave": {
+   "accepted": [],
+   "rejected_counts": {
+    "n_candidates": 58,
+    "no_final_year": 32,
+    "in_window_other_law": 1,
+    "year_gap": 4,
+    "blank_year_or_title": 21
+   },
+   "rejected_notable": [
+    "enacting laws precede the benefits-first-payable year by 2-4 years, so none sits within +-1",
+    "OR 2023 SB 912 (overpayment recoupment, administrative); WA 2023 SB 5586 (data); RI 2024 S 2121 (benefit expansion, 10 years after 2014); CA 2025 SB 590 (eligibility expansion)",
+    "DC rows have blank year/title in DB"
+   ]
+  },
+  "salary_history_ban": {
+   "accepted": [],
+   "rejected_counts": {
+    "n_candidates": 21,
+    "in_window_other_law": 2,
+    "year_gap": 8,
+    "no_final_year": 4,
+    "blank_year_or_title": 7
+   },
+   "rejected_notable": [
+    "CA 2017 AB 46 \"Employers: wage discrimination\": title/treatment do not show salary history (enacting law is AB 168, not in DB)",
+    "DE 2016 id 874883 (city charter bill with mismatched text); CA equal-pay-day resolutions",
+    "DC pay-transparency rows have blank year/title in DB"
+   ]
+  },
+  "min_wage_15": {
+   "accepted": [
+    {
+     "state": "CT",
+     "year": 2019,
+     "policy_id": "CT-HB05004-General Assembly",
+     "title": "To provide more economic security to Connecticut families by increasing the minimum...",
+     "match": "enacting",
+     "title_db": "To provide more economic security to Connecticut families by increasing the minimum fair wage.",
+     "db_date": "2019-05-28",
+     "db_status": "enacted",
+     "db_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=HB05004&which_year=2019",
+     "why": "HB 5004 = PA 19-4 ($15 by 2023), signed 2019-05-28 as in final"
+    },
+    {
+     "state": "HI",
+     "year": 2022,
+     "policy_id": "1574254",
+     "title": "Relating To Income. (HB 2510: minimum wage path to $18)",
+     "match": "enacting",
+     "title_db": "Relating To Income.",
+     "db_date": "2022-06-23",
+     "db_status": "enacted",
+     "db_url": "https://www.capitol.hawaii.gov/measure_indiv.aspx?billtype=HB&billnumber=2510&year=2022",
+     "why": "URL is HB 2510 (Act 114), the final-year law; title is generic, bill number added"
+    },
+    {
+     "state": "IL",
+     "year": 2019,
+     "policy_id": "IL-SB 1-101st",
+     "title": "Minimum Wage/Income Tax Credit (SB 1)",
+     "match": "enacting",
+     "title_db": "MINIMUM WAGE/INCOME TAX CREDIT",
+     "db_date": "2019-02-19",
+     "db_status": "enacted",
+     "db_url": "http://ilga.gov/legislation/BillStatus.asp?DocNum=1&GAID=15&DocTypeID=SB&LegId=113573&SessionID=108&GA=101",
+     "why": "SB 1 signed 2019-02-19 as in final; DB pitch text is mismatched, title and date are right"
+    },
+    {
+     "state": "RI",
+     "year": 2021,
+     "policy_id": "RI-S0001-Regular Session",
+     "title": "Gradually increase the minimum wage from $11.50 to $15.00 per hour, over 4 years",
+     "match": "enacting",
+     "title_db": "Gradually increase the minimum wage from eleven dollars and fifty cents ($11.50) per hour to fifteen dollars ($15.00) per hour, over 4 years.",
+     "db_date": "2021-05-20",
+     "db_status": "enacted",
+     "db_url": "https://status.rilegislature.gov/",
+     "why": "S 0001 signed 2021-05-20 as in final"
+    }
+   ],
+   "rejected_counts": {
+    "n_candidates": 97,
+    "no_final_year": 46,
+    "accepted": 4,
+    "in_window_other_law": 7,
+    "year_gap": 26,
+    "blank_year_or_title": 14
+   },
+   "rejected_notable": [
+    "CT 2020 HB 7501 (gratuities/training, not the $15 law)",
+    "DC 2017 B22-0385 (contract approval, mismatched text)",
+    "NJ 2018 A 3088 EITC, MD 2018 SB 996 and RI 2021 S 0103: $15 amounts in tax bills",
+    "AK 2022 min-wage exemptions, CA 2023 SB 525 health-care wage, DE 2016/2018 amendments: not within +-1 of the $15 law year"
+   ]
+  }
+ }
+}

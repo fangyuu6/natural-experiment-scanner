@@ -1,0 +1,20 @@
+{
+  "pipe.aria": "五步研究流程",
+  "pipe.core": "核心",
+  "pipe.step1.name": "采集",
+  "pipe.step1.desc": "联邦法案与规章（GovInfo、联邦公报）及 50 个州议会（本数据库中为 {from}–{to} 年）；含全文",
+  "pipe.step2.name": "分类",
+  "pipe.step2.desc": "跳过礼仪性、纪念性和命名类法案；长篇联邦法案按章节拆分",
+  "pipe.step3.name": "抽取",
+  "pipe.step3.desc": "LLM 逐份阅读法案或章节，标注 RD 断点回归、DiD 双重差分、兼有或无；按 Schema 校验",
+  "pipe.step4.name": "评分",
+  "pipe.step4.desc": "由识别、重要性、强度、数据可行性合成综合得分；设硬性上限",
+  "pipe.step5.name": "筛选",
+  "pipe.step5.desc": "严格认定为已颁布、无多州采纳潮、避开新冠窗口、公开数据可得、最低子分 ≥ 3",
+  "pipe.step5.cta": "查看筛选漏斗 →",
+  "pipe.step5.link": "/zh/documentation.html#screening",
+  "pipe.branches.aria": "主流程的分支",
+  "pipe.branch.skip": "礼仪性法案 → 跳过（占位行）",
+  "pipe.more": "完整流程图 →",
+  "pipe.doc.link": "/zh/documentation.html#overview-pipeline"
+}

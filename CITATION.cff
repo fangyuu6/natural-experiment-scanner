@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or the result tables, please cite them as below."
+title: "Natural Experiment Scanner: screening policy text, re-estimating published state-policy studies, and cross-policy patterns"
+type: software
+authors:
+  - family-names: "Liu"
+    given-names: "Fangyu"
+license: MIT
+repository-code: "https://github.com/fangyuu6/natural-experiment-scanner"
+url: "https://natural-experiment-scanner.com"
+abstract: "Code and derived result tables for a three-level project on US state policy: screen policy text for natural-experiment structure (L1), re-estimate published state-policy studies with an automated pipeline (L2), and look for patterns across the estimates (L3)."
+keywords:
+  - natural experiments
+  - difference-in-differences
+  - state policy
+  - replication
+  - large language models

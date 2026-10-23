@@ -1,0 +1,546 @@
+{
+  "policy_id": "paid_sick_leave",
+  "name_en": "Statewide paid sick leave mandate",
+  "name_zh": "全州带薪病假",
+  "definition_en": "Statewide mandate requiring private employers to provide paid sick leave; year the mandate first took effect for covered employers (city/county-only, temporary COVID-only and any-purpose PTO laws excluded).",
+  "definition_zh": "全州范围内要求私营雇主提供带薪病假的法律，年份为其对适用雇主首次生效的年份（不含市县级、临时新冠专项及不限用途的带薪休假法）。",
+  "year_basis": "First operative date of the statewide mandate for covered employers; states with no mandate in force at as-of date (incl. repealed or not yet effective) = null.",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+    "https://abetterbalance.org/paid-sick-time-laws/?export=",
+    "https://nationalpartnership.org/2026-state-legislative-highlights/",
+    "https://www.kutakrock.com/newspublications/publications/2025/july/missouri-earned-paid-sick-leave-law-repealed"
+  ],
+  "states": {
+    "AK": {
+      "year": 2025,
+      "date": "2025-07-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://natlawreview.com/article/alaska-paid-sick-leave-law-requirements-employers-need-know",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "AL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "AR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "AZ": {
+      "year": 2017,
+      "date": "2017-07-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.keytlaw.com/azllclaw/2017/06/sick-pay/",
+        "https://www.azica.gov/sites/default/files/AZ%20Earned%20Paid%20Sick%20Time%20Poster%202017.pdf"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "CA": {
+      "year": 2015,
+      "date": "2015-07-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.dir.ca.gov/dlse/ab1522.html",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": "AB 1522 operative 2015-01-01; accrual and entitlement began 2015-07-01 (date shown)."
+    },
+    "CO": {
+      "year": 2021,
+      "date": "2021-01-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.jacksonlewis.com/insights/colorado-enacts-legislation-requiring-employers-provide-employees-paid-sick-leave",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": "Employers with 16+ employees from 2021-01-01; all employers from 2022-01-01."
+    },
+    "CT": {
+      "year": 2012,
+      "date": "2012-01-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://natlawreview.com/article/connecticut-becomes-first-state-to-mandate-paid-sick-leave",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": "PA 11-52 covered only service workers at 50+ employers; expanded 2025 to most employers."
+    },
+    "DC": {
+      "year": 2008,
+      "date": "2008-11-13",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.wilmerhale.com/en/insights/publications/dc-paid-sick-leave-law-effective-november-13-2008-july-16-2008",
+        "https://www.littler.com/news-analysis/asap/dc-passes-accrued-sick-and-safe-leave-act-2008"
+      ],
+      "confidence": "high",
+      "note": "DC (not a state) is the earliest jurisdiction: Accrued Sick and Safe Leave Act 2008; expanded coverage eff. 2014. First STATE is CT 2012."
+    },
+    "DE": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "medium",
+      "note": "No statewide paid sick leave law; paid family/medical leave (benefits from 2026-01-01) is a different program."
+    },
+    "FL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "GA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "HI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "IA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "ID": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "IL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf"
+      ],
+      "confidence": "medium",
+      "note": "Any-purpose paid leave (PTO) law 820 ILCS 192, eff. 2024-01-01; NPWF/ABB list it apart from sick leave, so excluded."
+    },
+    "IN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "KS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "KY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "LA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MA": {
+      "year": 2015,
+      "date": "2015-07-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.natlawreview.com/article/massachusetts-earned-sick-time-law-becomes-effective-july-1-2015"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MD": {
+      "year": 2018,
+      "date": "2018-02-11",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://labor.maryland.gov/paidleave/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "ME": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf"
+      ],
+      "confidence": "medium",
+      "note": "Any-purpose paid leave (PTO) law LD 369, eff. 2021-01-01; NPWF/ABB list it apart from paid sick leave, so excluded."
+    },
+    "MI": {
+      "year": 2019,
+      "date": "2019-03-29",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://legislature.mi.gov/Laws/MCL?objectName=MCL-ACT-338-OF-2018",
+        "https://www.risk-strategies.com/blog/michigan-paid-sick-leave-changes-coming-in-2025",
+        "https://www.burr.com/newsroom/articles/michigans-earned-sick-time-act-with-amendments-has-gone-into-effect"
+      ],
+      "confidence": "medium",
+      "note": "PMLA (50+ employees) in force 2019-03-29; voided by court. ESTA eff. 2025-02-21 (NPWF/ABB list 2025). 2019 per first-operative rule."
+    },
+    "MN": {
+      "year": 2024,
+      "date": "2024-01-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.dli.mn.gov/sick-leave-FAQs",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MO": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kutakrock.com/newspublications/publications/2025/july/missouri-earned-paid-sick-leave-law-repealed",
+        "https://abetterbalance.org/paid-sick-time-laws/?export=",
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf"
+      ],
+      "confidence": "high",
+      "note": "Prop A in force 2025-05-01 to 08-27; repealed by HB 567 eff. 2025-08-28, so no mandate at as-of date."
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "ND": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NE": {
+      "year": 2025,
+      "date": "2025-10-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.kutakrock.com/newspublications/publications/2025/july/paid-sick-leave-updates-mo-ne",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": "Initiative 436 amended by LB 415 (2025); in effect 2025-10-01 for employers with 11+ employees."
+    },
+    "NH": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NJ": {
+      "year": 2018,
+      "date": "2018-10-29",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export=",
+        "https://www.seyfarth.com/news-insights/if-pain-yes-gain-part-56-new-jersey-publishes-paid-sick-leave-faqs-days-before-law-takes-effect-on-oct-29.html"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NM": {
+      "year": 2022,
+      "date": "2022-07-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.governor.nm.gov/newsroom/gov-lujan-grisham-signs-healthy-workplaces-act-authorizing-paid-sick-l-100003843",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf"
+      ],
+      "confidence": "medium",
+      "note": "Any-purpose paid leave (PTO) law SB 312, eff. 2020-01-01 (employers 50+); NPWF/ABB list it apart from sick leave, so excluded."
+    },
+    "NY": {
+      "year": 2020,
+      "date": "2020-09-30",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.ny.gov/programs/new-york-paid-sick-leave",
+        "https://www.jacksonlewis.com/insights/new-york-states-new-paid-sick-leave-law-goes-effect-september-30-2020"
+      ],
+      "confidence": "high",
+      "note": "Accrual began 2020-09-30; leave first usable 2021-01-01 (NPWF lists benefits eff. 1/2021)."
+    },
+    "OH": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "OK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "OR": {
+      "year": 2016,
+      "date": "2016-01-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://ogletree.com/insights-resources/blog-posts/new-2015-2016-employment-laws-for-oregon-businesses/",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "PA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "RI": {
+      "year": 2018,
+      "date": "2018-07-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://dlt.ri.gov/regulation-and-safety/labor-standards/paid-sick-and-safe-leave",
+        "https://www.paychex.com/articles/compliance/rhode-island-paid-sick-and-safe-leave-law"
+      ],
+      "confidence": "high",
+      "note": "Paid leave mandatory for employers with 18+ employees; smaller employers unpaid."
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "SD": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "UT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "VA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": "HB 5/SB 199 signed 2026-05-20; first phase 2027-07-01 (after as-of date). Earlier VA law covers home health workers only."
+    },
+    "VT": {
+      "year": 2017,
+      "date": "2017-01-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.drm.com/resources/labor-employment-law-new-paid-sick-time-law-in-vermont/",
+        "https://labor.vermont.gov/sites/labor/files/doc_library/Earned%20sick%20time%20text%20new.pdf"
+      ],
+      "confidence": "high",
+      "note": "Small employers (5 or fewer FTE) covered from 2018-01-01."
+    },
+    "WA": {
+      "year": 2018,
+      "date": "2018-01-01",
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://www.dwt.com/insights/2017/10/update-on-washington-state-paid-sick-leave-effecti"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "WV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://nationalpartnership.org/wp-content/uploads/2023/02/paid-sick-days-statutes.pdf",
+        "https://abetterbalance.org/paid-sick-time-laws/?export="
+      ],
+      "confidence": "high",
+      "note": ""
+    }
+  },
+  "n_with_law": 18,
+  "year_min": 2008,
+  "year_max": 2025,
+  "researched_by": "agent",
+  "method_notes": "NPWF Paid Sick Days Statutes (2026 ed.) and ABB overview as baselines, each date cross-checked with a law-firm or official page. DC (2008) is earliest; first state is CT (2012). Some URLs seen only in search results."
+}

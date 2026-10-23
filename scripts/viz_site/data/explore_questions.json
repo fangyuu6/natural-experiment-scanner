@@ -1,0 +1,210 @@
+{
+ "source": "docs/plans/site-restructure/EXPLORE_PLAIN_COPY_V51.md, section 5 (Page copy), rows 1-17 in that order; V5.1 release: statuses of rows 2, 6, 11 and 17 and the data lines of rows 9, 15 and 16 follow scripts/viz_site/data/l3_findings.json (questions)",
+ "basis": "Row 1 takes its numbers from the adoption study itself. Rows 9, 15 and 16 count the L2 designs of the refresh of 2026-10-18 (data/l3_meta/refresh/20261018_r1/ex1/RESULTS_EX1_V3.json); the other data lines are those of the development tabulations of 2026-10-09 and 2026-10-10.",
+ "rows": [
+  {
+   "n": 1,
+   "question": {
+    "en": "Do party control or local need predict which states adopt a policy?",
+    "zh": "党派控制或当地需要，能预测哪些州采纳政策吗？"
+   },
+   "status": "finished",
+   "data": {
+    "en": "{fitted} policies, {events} adoptions",
+    "zh": "{fitted} 项政策，{events} 次采纳"
+   }
+  },
+  {
+   "n": 2,
+   "question": {
+    "en": "Do published effects shrink when we re-estimate them?",
+    "zh": "已发表的效应，经我们重新估计后会缩小吗？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "",
+    "zh": ""
+   }
+  },
+  {
+   "n": 3,
+   "question": {
+    "en": "Are states more likely to adopt after earlier states’ policies worked?",
+    "zh": "先行州的政策见效后，后续的州更可能采纳吗？"
+   },
+   "status": "waiting",
+   "data": {
+    "en": "12 checked adoption histories",
+    "zh": "12 份核对过的采纳史"
+   }
+  },
+  {
+   "n": 4,
+   "question": {
+    "en": "Does a failure slow later adoption more than a success speeds it?",
+    "zh": "失败对后续采纳的拖累，比成功的推动更大吗？"
+   },
+   "status": "waiting",
+   "data": {
+    "en": "12 checked adoption histories",
+    "zh": "12 份核对过的采纳史"
+   }
+  },
+  {
+   "n": 5,
+   "question": {
+    "en": "How often do estimates point the way the law intended?",
+    "zh": "估计结果多常与立法本意的方向一致？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "16 laws",
+    "zh": "16 项法律"
+   }
+  },
+  {
+   "n": 6,
+   "question": {
+    "en": "How many policy estimates rise above their own noise?",
+    "zh": "多少政策估计超出了自身的噪声？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "",
+    "zh": ""
+   }
+  },
+  {
+   "n": 7,
+   "question": {
+    "en": "Do policy effects grow or fade after the first two years?",
+    "zh": "政策效应在头两年之后是增强还是消退？"
+   },
+   "status": "finished",
+   "data": {
+    "en": "",
+    "zh": ""
+   }
+  },
+  {
+   "n": 8,
+   "question": {
+    "en": "Do conditions worsen in the years before a state adopts?",
+    "zh": "一个州采纳之前的几年，情况是否在恶化？"
+   },
+   "status": "waiting",
+   "data": {
+    "en": "",
+    "zh": ""
+   }
+  },
+  {
+   "n": 9,
+   "question": {
+    "en": "Can AI forecasts made in advance predict the estimates?",
+    "zh": "AI 事先作出的预测，能预测估计结果吗？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "210 forecasts for 42 estimates",
+    "zh": "42 项估计的 210 条预测"
+   }
+  },
+  {
+   "n": 10,
+   "question": {
+    "en": "Do later adopters repeat early adopters’ results, or do better?",
+    "zh": "后来采纳州是重复早期采纳州的结果，还是更好？"
+   },
+   "status": "finished",
+   "data": {
+    "en": "",
+    "zh": ""
+   }
+  },
+  {
+   "n": 11,
+   "question": {
+    "en": "Do adopting states differ from states without the policy?",
+    "zh": "采纳州与没有该政策的州有差别吗？"
+   },
+   "status": "finished",
+   "data": {
+    "en": "",
+    "zh": ""
+   }
+  },
+  {
+   "n": 12,
+   "question": {
+    "en": "How often do laws depend on past history, not just current facts?",
+    "zh": "法律多常取决于过去的情况，而不只是当前的事实？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "600 sampled law texts",
+    "zh": "600 篇抽样法律文本"
+   }
+  },
+  {
+   "n": 13,
+   "question": {
+    "en": "Do business rules look further back at resources than household rules?",
+    "zh": "企业规则审查资源的回溯期，比家庭规则更长吗？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "600 sampled law texts",
+    "zh": "600 篇抽样法律文本"
+   }
+  },
+  {
+   "n": 14,
+   "question": {
+    "en": "Do policies adopted along party lines have larger effects?",
+    "zh": "沿党派路线采纳的政策，效应更大吗？"
+   },
+   "status": "waiting",
+   "data": {
+    "en": "12 checked adoption histories",
+    "zh": "12 份核对过的采纳史"
+   }
+  },
+  {
+   "n": 15,
+   "question": {
+    "en": "In which policy fields does estimation most often stop?",
+    "zh": "哪些政策领域的估计最常中途停止？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "155 attempted designs",
+    "zh": "155 个已尝试的设计"
+   }
+  },
+  {
+   "n": 16,
+   "question": {
+    "en": "Does disagreement among AI forecasts show where they miss?",
+    "zh": "AI 预测之间的分歧，能标出预测出错的地方吗？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "35 forecasts for 7 estimates",
+    "zh": "7 项估计的 35 条预测"
+   }
+  },
+  {
+   "n": 17,
+   "question": {
+    "en": "When rules tighten, are existing assets protected longer than existing beneficiaries?",
+    "zh": "规则收紧时，既有资产比既有受益人受保护更久吗？"
+   },
+   "status": "in_progress",
+   "data": {
+    "en": "317 sampled law texts",
+    "zh": "317 篇抽样法律文本"
+   }
+  }
+ ]
+}

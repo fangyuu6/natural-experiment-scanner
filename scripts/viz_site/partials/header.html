@@ -1,0 +1,20 @@
+<header class="site-head" data-nx-chrome="header">
+  <h1 class="site-brand"><a class="site-brand-link" href="{{t:url.policy_db}}">Natural Experiment Scanner<span class="site-sub">{{t:site.subtitle}}</span></a></h1>
+  <div class="site-links">
+    {{if:github}}<a href="https://github.com/fangyuu6/natural-experiment-scanner" target="_blank" rel="noopener">GitHub</a>{{endif}}
+    <a href="https://www.linkedin.com/in/fangyu6" target="_blank" rel="noopener">Fangyu Liu</a>
+  </div>
+  {{lang_switch}}
+</header>
+<script>
+  document.querySelectorAll('a.lang-switch').forEach(a => a.addEventListener('click', function () {
+    this.href = this.getAttribute('href').split('#')[0] + location.hash;
+  }));
+</script>
+<!-- NX:NAV -->
+<nav class="view-toggle" data-nx-chrome="nav" aria-label="{{t:nav.aria}}">
+  <a href="/viz/{{lang_code}}/screening.html" {{nav:screening}}>{{t:nav.screening}}</a>
+  <a href="/viz/{{lang_code}}/worked_examples.html" {{nav:worked_examples}}>{{t:nav.worked_examples}}</a>
+  <a href="/viz/{{lang_code}}/synthesize.html" {{nav:synthesize}}>{{t:nav.synthesize}}</a>
+  <a href="{{t:url.documentation}}" {{nav:documentation}}>{{t:nav.documentation}}</a>
+</nav>

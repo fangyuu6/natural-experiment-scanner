@@ -1,0 +1,77 @@
+/* Only included when batch-2 display sidecars are present. */
+.we-cases{min-width:0}
+.we-cases :is(p,td,th,figcaption,caption,a){overflow-wrap:break-word}
+.we-page:lang(zh) .we-cases :is(p,td,th,figcaption,caption,h2,a){overflow-wrap:break-word;line-break:strict;word-break:normal}
+/* Normal wrapping and strict punctuation remain the fallback in older engines. */
+.we-page:lang(zh) .we-cases :is(p,figcaption,caption){text-wrap:wrap;text-wrap:pretty}
+.we-page:lang(zh) .we-cases td{text-wrap:wrap;text-wrap:pretty}
+.we-cases .we-nowrap,.we-cases .we-num{white-space:nowrap;overflow-wrap:normal}
+.we-cases .we-selection{font-size:15px}
+.we-cases .we-case-summary{font-size:13px}
+.we-cases .we-case-summary thead th:nth-child(1){width:29%}
+.we-cases .we-case-summary thead th:nth-child(2){width:31%}
+.we-cases .we-case-summary thead th:nth-child(3){width:40%}
+.we-cases .we-case-summary .we-stopped-row :is(th,td,a){color:var(--site-body);font-weight:400}
+.we-cases .we-case-summary th a{position:relative;display:inline-block;min-width:44px;box-sizing:border-box;line-height:inherit}
+.we-cases .we-case-summary th a:after{content:"";position:absolute;inset:50% 0 auto;height:max(100%,44px);transform:translateY(-50%)}
+.we-cases .we-case-summary tbody :is(th,td){padding-block:0}
+.we-cases .we-case-summary tbody{border-bottom:1px solid var(--site-border)}
+.we-cases .we-case-summary tbody tr:first-child{height:44px}
+.we-cases .we-case-summary tbody tr:first-child :is(th,td){padding-top:12px}
+.we-cases .we-case-summary tbody td{border-bottom:0}
+.we-cases .we-case-summary tbody tr:last-child td{border-bottom:1px solid var(--site-border)}
+.we-cases .we-case-headline{margin-top:8px;font-variant-numeric:tabular-nums}
+.we-cases .we-case-headline .we-interval-label{display:block}
+.we-cases [id$="-heading"]{scroll-margin-top:var(--nx-anchor-offset,16px)}
+.we-cases .we-case-variants th:nth-child(1){width:58%}
+.we-cases .we-case-variants th:nth-child(2){width:42%}
+.we-event-study{max-width:100%;font-family:system-ui,sans-serif;font-size:13px;fill:#111827;overflow:hidden;position:relative}
+.we-event-study text{font-size:13px}
+.we-chart{position:relative;height:222px}
+svg.we-chart-geometry{position:absolute;left:48px;right:12px;top:0;width:calc(100% - 60px);height:222px;overflow:visible;pointer-events:none}
+/* Single-class rules reach the symbol instances in Chrome. */
+.we-pre{color:#8793a6}
+.we-post{color:#1d4ed8}
+.we-grid{stroke:#e5e7eb;stroke-width:1}
+.we-zero,.we-adopt{stroke:#6b7280;stroke-width:1}
+.we-adopt{stroke-dasharray:3 3}
+.we-band{fill:currentColor;fill-opacity:.12;stroke:none}
+.we-estimate-line{fill:none;stroke:currentColor;stroke-width:1.5}
+.we-errorbars{fill:none;stroke:currentColor;stroke-width:1.25}
+.we-partial-year{fill:currentColor;stroke:currentColor;stroke-width:1.25}
+.we-hollow{fill:#fff}
+.we-event-study circle{fill:currentColor;stroke:currentColor;stroke-width:1.25}
+.we-event-study circle.we-hollow{fill:#fff}
+.we-muted{fill:#4b5563}
+.we-x-tick{display:none}
+.we-x-wide{display:block}
+.we-cases .we-plot-panels{grid-template-columns:minmax(0,1fr)}
+@media(max-width:390px){
+ .we-x-wide{display:none}
+ .we-x-narrow{display:block}
+}
+@media(max-width:720px){
+ .we-cases .we-case-summary{line-height:1.4}
+ .we-page:lang(zh) .we-cases .we-case-summary :is(td,th){line-height:1.4}
+ .we-cases .we-case-summary tbody{padding:12px 0;border-bottom:1px solid var(--site-border)}
+ .we-cases .we-case-summary tr{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;padding:0;border:0}
+ .we-cases .we-case-summary tbody tr:last-child td{border:0}
+ .we-cases .we-case-summary :is(tbody th,tbody td){width:100%;min-width:0;padding:1px 0;font-weight:400}
+ .we-cases .we-case-summary tbody th{font-weight:600}
+ .we-cases .we-case-summary tbody td::before{content:none}
+ .we-cases .we-case-summary tbody td:nth-child(2){color:var(--site-body)}
+ .we-cases .we-case-summary tbody td:last-child{color:var(--site-text);font-weight:600;font-variant-numeric:tabular-nums}
+ .we-cases .we-case-summary th a{display:inline-block;white-space:normal;min-width:44px;min-height:0}
+ .we-cases .we-case-summary tbody tr:first-child{height:auto}
+ .we-cases .we-case-summary tbody tr:first-child :is(th,td){padding-top:1px}
+ .we-cases .we-case-summary a{min-width:44px}
+ .we-cases .we-case-variants tbody td:nth-child(2){flex-basis:100%}
+}
+
+@media(min-width:721px){
+ .we-cases .we-case-summary :is(th,td):last-child,
+ .we-cases .we-case-variants :is(th,td):last-child{text-align:right}
+}
+
+/* Stopped calculations retain their values without the emphasis of results. */
+.we-cases .we-case-summary tbody .we-stopped-row :is(th,td,a,span){color:var(--site-body);font-weight:400}

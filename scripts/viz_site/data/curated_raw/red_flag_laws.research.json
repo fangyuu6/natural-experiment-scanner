@@ -1,0 +1,535 @@
+{
+  "policy_id": "red_flag_laws",
+  "name_en": "Extreme risk protection order (red flag) laws",
+  "name_zh": "红旗法（极端风险保护令）",
+  "definition_en": "Year in which the state's first extreme risk protection order (ERPO / red flag / gun violence restraining order) law took effect, allowing a court to temporarily remove firearms via a civil or court-supervised process.",
+  "definition_zh": "各州首部极端风险保护令（红旗法）生效的年份，该法允许法院通过民事或法院监督程序暂时收缴枪支。",
+  "year_basis": "law_effective_date",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://erpo.org/",
+    "https://giffords.org/lawcenter/gun-laws/policy-areas/who-can-have-a-gun/extreme-risk-protection-orders/",
+    "https://www.everytown.org/solutions/extreme-risk-laws/"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "AK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "AZ": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "AR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "CA": {
+      "year": 2016,
+      "date": "2016-01-01",
+      "sources": [
+        "https://erpo.org/state/california/",
+        "https://giffords.org/lawcenter/state-laws/extreme-risk-protection-orders-in-california/"
+      ],
+      "confidence": "high",
+      "note": "AB 1014 (gun violence restraining order), enacted 2014, effective 2016-01-01."
+    },
+    "CO": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://leg.colorado.gov/bills/hb19-1177",
+        "https://erpo.org/state/colorado/"
+      ],
+      "confidence": "high",
+      "note": "HB19-1177 signed 2019-04-12; petitions from 2020-01-01 (JHU index page shows 2019-04-12)."
+    },
+    "CT": {
+      "year": 1999,
+      "date": "1999-10-01",
+      "sources": [
+        "https://erpo.org/state/connecticut/",
+        "https://everytownresearch.org/report/extreme-risk-laws-save-lives/"
+      ],
+      "confidence": "high",
+      "note": "PA 99-212 risk warrant (court-issued); first such law; modernized to risk protection order 2022-23."
+    },
+    "DE": {
+      "year": 2018,
+      "date": "2018-12-27",
+      "sources": [
+        "https://erpo.org/state/delaware/",
+        "https://www.legis.delaware.gov/SessionLaws/Chapter/GetPdfDocument?fileAttachmentId=354121"
+      ],
+      "confidence": "high",
+      "note": "Lethal Violence Protective Order; signed 2018-06-27, effective 6 months after enactment."
+    },
+    "DC": {
+      "year": 2019,
+      "date": "2019-05-10",
+      "sources": [
+        "https://code.dccouncil.gov/us/dc/council/code/sections/7-2510.03",
+        "https://erpo.org/state/district-of-columbia/"
+      ],
+      "confidence": "high",
+      "note": "D.C. Law 22-314: DC Code says 2019-05-10; JHU lists 2019-01-30. Both 2019."
+    },
+    "FL": {
+      "year": 2018,
+      "date": "2018-03-09",
+      "sources": [
+        "https://erpo.org/state/florida/",
+        "https://capitalsoup.com/2018/03/09/marjory-stoneman-douglas-high-school-public-safety-act-signed-law/",
+        "https://giffords.org/lawcenter/state-laws/extreme-risk-protection-orders-in-florida/"
+      ],
+      "confidence": "high",
+      "note": "SB 7026 signed 2018-03-09; effective on signing."
+    },
+    "GA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "HI": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://erpo.org/state/hawaii/",
+        "https://data.capitol.hawaii.gov/sessions/sessionlaws/Years/SLH2019/SLH2019_Act150.pdf"
+      ],
+      "confidence": "high",
+      "note": "Act 150 (SB 1466) approved 2019-06-26; takes effect 2020-01-01."
+    },
+    "ID": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "IL": {
+      "year": 2019,
+      "date": "2019-01-01",
+      "sources": [
+        "https://erpo.org/state/illinois/",
+        "https://giffords.org/lawcenter/state-laws/extreme-risk-protection-orders-in-illinois/"
+      ],
+      "confidence": "high",
+      "note": "Firearms Restraining Order Act (HB 2354), signed 2018-07, effective 2019-01-01."
+    },
+    "IN": {
+      "year": 2005,
+      "date": "2005-07-01",
+      "sources": [
+        "https://erpo.org/state/indiana/",
+        "https://banksbrower.com/2021/02/14/indiana-red-flag-laws-jake-laird-law/",
+        "https://everytownresearch.org/report/extreme-risk-laws-save-lives/"
+      ],
+      "confidence": "high",
+      "note": "Jake Laird law (IC 35-47-14, HEA 1776), police-initiated court seizure/retention; one court blog says 2006."
+    },
+    "IA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "KS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "KY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "LA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "ME": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/state/maine/",
+        "https://wgme.com/news/local/maines-red-flag-law-set-to-take-effect-gun-violence-crime-lewiston-mass-shooting-extreme-risk-protection-order-yellow-flag-law",
+        "https://giffords.org/lawcenter/state-laws/extreme-risk-protection-orders-in-maine/"
+      ],
+      "confidence": "medium",
+      "note": "ERPO Act (Question 2) effective 2026-02-21, after as-of; 2019 police-only yellow-flag law not counted."
+    },
+    "MD": {
+      "year": 2018,
+      "date": "2018-10-01",
+      "sources": [
+        "https://erpo.org/state/maryland/",
+        "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1302?ys=2018RS"
+      ],
+      "confidence": "high",
+      "note": "HB 1302 approved 2018-04-24, effective 2018-10-01."
+    },
+    "MA": {
+      "year": 2018,
+      "date": "2018-08-17",
+      "sources": [
+        "https://erpo.org/state/massachusetts/",
+        "https://malegislature.gov/Laws/SessionLaws/Acts/2018/Chapter123"
+      ],
+      "confidence": "high",
+      "note": "Ch. 123 of Acts of 2018 approved 2018-07-03; ERPO sections effective 45 days later."
+    },
+    "MI": {
+      "year": 2024,
+      "date": "2024-02-13",
+      "sources": [
+        "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-Act-38-of-2023.pdf",
+        "https://erpo.org/state/michigan/"
+      ],
+      "confidence": "high",
+      "note": "2023 PA 38 signed 2023-05; effective 2024-02-13."
+    },
+    "MN": {
+      "year": 2024,
+      "date": "2024-01-01",
+      "sources": [
+        "https://erpo.org/state/minnesota/",
+        "https://www.mnmed.org/news-and-publications/news/red-flag-law-now-effect-minnesota"
+      ],
+      "confidence": "high",
+      "note": "Signed 2023-05-19; effective 2024-01-01 (some summaries wrongly show 2023)."
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "MO": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "MT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "NE": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "NV": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://ag.nv.gov/Hot_Topics/High_Risk_Protection_Order",
+        "https://erpo.org/state/nevada/"
+      ],
+      "confidence": "high",
+      "note": "AB 291 (order for protection against high-risk behavior), signed 2019-06; effective 2020-01-01."
+    },
+    "NH": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "NJ": {
+      "year": 2019,
+      "date": "2019-09-01",
+      "sources": [
+        "https://www.njoag.gov/acting-ag-bruck-more-than-300-extreme-risk-protective-orders-issued-in-new-jersey-since-landmark-gun-safety-law-went-into-effect-two-years-ago/",
+        "https://erpo.org/state/new-jersey/",
+        "https://www.dover.nj.us/FCpdf/ERPO%20Act%20(NJSA%202C%2058-20).PDF"
+      ],
+      "confidence": "high",
+      "note": "P.L.2018 c.35 signed 2018-06-13; effective first day of 15th month after enactment (2019-09-01)."
+    },
+    "NM": {
+      "year": 2020,
+      "date": "2020-05-20",
+      "sources": [
+        "https://erpo.org/state/new-mexico/",
+        "https://www.dps.nm.gov/wp-content/uploads/2022/07/OPR_69_Extreme_Risk_Firearm_Protection_Order_Act_101221.pdf"
+      ],
+      "confidence": "high",
+      "note": "SB 5 signed 2020-02-25, effective 2020-05-20."
+    },
+    "NY": {
+      "year": 2019,
+      "date": "2019-08-24",
+      "sources": [
+        "https://www.nysenate.gov/legislation/bills/2019/S2451",
+        "https://erpo.org/state/new-york/"
+      ],
+      "confidence": "high",
+      "note": "S2451 signed 2019-02-25; effective 180th day after becoming law (2019-08-24)."
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "ND": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "OH": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "OK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "OR": {
+      "year": 2018,
+      "date": "2018-01-01",
+      "sources": [
+        "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2017orlaw0737.pdf",
+        "https://erpo.org/state/oregon/"
+      ],
+      "confidence": "high",
+      "note": "SB 719 approved 2017-08-15 (Oregon Laws 2017 ch. 737); effective 2018-01-01."
+    },
+    "PA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "RI": {
+      "year": 2018,
+      "date": "2018-06-01",
+      "sources": [
+        "https://erpo.org/state/rhode-island/",
+        "https://webserver.rilegislature.gov/BillText/BillText18/SenateText18/S2492A.pdf"
+      ],
+      "confidence": "high",
+      "note": "S 2492A takes effect upon passage; signed 2018-06-01."
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "SD": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "UT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "VT": {
+      "year": 2018,
+      "date": "2018-04-11",
+      "sources": [
+        "https://erpo.org/state/vermont/",
+        "http://legislature.vermont.gov/Documents/2018/Docs/BILLS/S-0221/S-0221%20As%20Passed%20by%20Both%20House%20and%20Senate%20Official.pdf"
+      ],
+      "confidence": "high",
+      "note": "S.221 signed 2018-04-11, effective on passage."
+    },
+    "VA": {
+      "year": 2020,
+      "date": "2020-07-01",
+      "sources": [
+        "https://erpo.org/state/virginia/",
+        "https://www.alexandriava.gov/public-safety/virginia-red-flag-law"
+      ],
+      "confidence": "high",
+      "note": "Substantial risk order law signed 2020-04-10, effective 2020-07-01."
+    },
+    "WA": {
+      "year": 2016,
+      "date": "2016-12-08",
+      "sources": [
+        "https://erpo.org/state/washington/",
+        "https://leg.wa.gov/media/23kdwebd/2016-summary-of-initiative-1491.pdf"
+      ],
+      "confidence": "high",
+      "note": "I-1491 approved 2016-11-08; effective 30 days after election (2016-12-08)."
+    },
+    "WV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://erpo.org/",
+        "https://www.everytown.org/solutions/extreme-risk-laws/"
+      ],
+      "confidence": "high",
+      "note": "No ERPO law as of 2025-12-31 per JHU, Giffords and Everytown lists."
+    }
+  },
+  "n_with_law": 22,
+  "year_min": 1999,
+  "year_max": 2024,
+  "researched_by": "agent",
+  "method_notes": "Effective dates from JHU National ERPO Resource Center, checked against bill/statute text or official pages. Wikipedia/Everytown tables had year errors (NJ, DC, DE, CO, MN): not used for dates except CT, IN. Null+high = no law."
+}

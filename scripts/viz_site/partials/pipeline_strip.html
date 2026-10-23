@@ -1,0 +1,215 @@
+<!-- Pipeline strip: compact 5-step research overview; the full engineering diagram lives in documentation.html (#overview-pipeline).
+     Placeholders use the t-colon-key syntax handled by the build script; values are HTML-escaped on insertion.
+     Link targets come from dictionary keys (pipe.step5.link, pipe.doc.link) so one partial serves both languages.
+     All CSS is scoped under .pipeline-strip. Colours come from --site-* tokens with light-site fallbacks. -->
+<style>
+.pipeline-strip {
+  --ps-text: var(--site-text, #111827);
+  --ps-body: var(--site-body, #4b5563);
+  --ps-muted: var(--site-muted, #6b7280);
+  --ps-panel: var(--site-panel, #f9fafb);
+  --ps-card: var(--site-card, #ffffff);
+  --ps-border: var(--site-border, #e5e7eb);
+  --ps-accent: var(--site-accent, #1d4ed8);
+  --ps-accent-soft: #eff6ff;
+  --ps-deep: #1e3a8a;
+  --ps-skip: #b91c1c;
+  --ps-skip-bg: #fef2f2;
+  --ps-skip-edge: #fca5a5;
+  --ps-g: 26px;                                  /* gap between cards (horizontal) */
+  --ps-gv: 24px;                                 /* gap between rows (stacked layouts) */
+  --ps-c: calc((100% - 4 * var(--ps-g)) / 5);    /* one card's width, resolved against the flow container */
+  --ps-arr-r: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 14'%3E%3Cpath d='M2 7h13M11 3l4 4-4 4' fill='none' stroke='%239ca3af' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --ps-arr-l: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 14'%3E%3Cpath d='M16 7H3M7 3L3 7l4 4' fill='none' stroke='%239ca3af' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --ps-arr-d: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 18'%3E%3Cpath d='M7 2v13M3 11l4 4 4-4' fill='none' stroke='%239ca3af' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+  box-sizing: border-box;
+  margin: 0 0 0.9rem 0;
+  padding: 10px 12px 8px;
+  background: var(--ps-panel);
+  border: 1px solid var(--ps-border);
+  border-radius: 10px;
+  color: var(--ps-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  line-height: 1.4;
+}
+.pipeline-strip *, .pipeline-strip *::before, .pipeline-strip *::after { box-sizing: border-box; }
+
+/* ---- cards ---- */
+.pipeline-strip .ps-steps {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); column-gap: var(--ps-g);
+}
+.pipeline-strip .ps-step {
+  position: relative; min-width: 0; display: flex; flex-direction: column;
+  background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: 10px;
+  padding: 9px 12px 10px;
+}
+.pipeline-strip .ps-top { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; }
+.pipeline-strip .ps-num {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; border-radius: 50%; border: 1px solid #d1d5db;
+  font-size: 11px; font-weight: 700; line-height: 1; color: var(--ps-muted);
+}
+.pipeline-strip .ps-name {
+  flex: 1 1 auto; min-width: 0;
+  font-size: 13px; font-weight: 700; line-height: 1.25; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--ps-text); overflow-wrap: anywhere;
+}
+.pipeline-strip:lang(zh) .ps-name { letter-spacing: 0.12em; text-transform: none; }
+.pipeline-strip .ps-tag {
+  flex: none; padding: 1px 7px; border-radius: 999px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ps-accent); background: var(--ps-accent-soft);
+}
+.pipeline-strip .ps-desc {
+  flex: 1 0 auto; margin: 0; font-size: 11.5px; line-height: 1.45; color: var(--ps-body); overflow-wrap: anywhere; text-wrap: pretty;
+}
+
+/* highlighted core step (blue outline) and closing step (filled deep blue) */
+.pipeline-strip .ps-step--core { border-color: var(--ps-accent); box-shadow: 0 0 0 1px var(--ps-accent); }
+.pipeline-strip .ps-step--core .ps-num { background: var(--ps-accent); border-color: var(--ps-accent); color: #ffffff; }
+.pipeline-strip .ps-step--end { background: var(--ps-deep); border-color: var(--ps-deep); }
+.pipeline-strip .ps-step--end .ps-name { color: #ffffff; }
+.pipeline-strip .ps-step--end .ps-desc { color: #dbeafe; }
+.pipeline-strip .ps-step--end .ps-num { border-color: rgba(255, 255, 255, 0.55); color: #ffffff; }
+
+/* small inline link inside the closing card */
+.pipeline-strip .ps-link {
+  align-self: flex-start; margin-top: 7px;
+  font-size: 11.5px; font-weight: 600; line-height: 1.3; white-space: nowrap;
+  color: #bfdbfe; text-decoration: underline; text-decoration-color: rgba(191, 219, 254, 0.45); text-underline-offset: 2px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.pipeline-strip .ps-link:hover { color: #ffffff; text-decoration-color: #ffffff; }
+.pipeline-strip .ps-link:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; border-radius: 3px; }
+
+/* grey arrows between cards (decorative) */
+.pipeline-strip .ps-arrow {
+  position: absolute; left: 100%; top: 50%; width: var(--ps-g); height: 16px; margin-top: -8px;
+  background: var(--ps-arr-r) center / 18px 14px no-repeat; pointer-events: none;
+}
+.pipeline-strip .ps-step:last-child .ps-arrow { display: none; }
+
+/* ---- branch (desktop: dashed red drop from step 2 to a dead-end stub-row chip) ---- */
+.pipeline-strip .ps-flow { position: relative; height: 40px; }
+.pipeline-strip .ps-branches { list-style: none; margin: 0; padding: 0; }
+.pipeline-strip .ps-branch { position: absolute; margin: 0; font-size: 10.5px; line-height: 1.3; }
+.pipeline-strip .ps-line { position: absolute; top: 0; pointer-events: none; }
+
+.pipeline-strip .ps-line--skip {
+  left: calc(var(--ps-c) + var(--ps-g) + var(--ps-c) * 0.85);
+  height: 12px; border-left: 1.5px dashed var(--ps-skip);
+}
+.pipeline-strip .ps-line--skip::after {
+  content: ""; position: absolute; left: -5.25px; bottom: -1px;
+  border: 4.5px solid transparent; border-top: 6px solid var(--ps-skip); border-bottom: 0;
+}
+.pipeline-strip .ps-branch--skip {
+  top: 12px;
+  left: calc(var(--ps-c) + var(--ps-g) + var(--ps-c) * 0.85);
+  transform: translateX(-50%);
+  width: max-content; max-width: calc(2 * var(--ps-c) + var(--ps-g));
+  padding: 2px 9px; border: 1px dashed var(--ps-skip-edge); border-radius: 6px;
+  background: var(--ps-skip-bg); color: var(--ps-skip); font-weight: 600;
+  text-align: center; text-wrap: balance; hyphens: none;
+}
+
+.pipeline-strip .ps-more {
+  position: absolute; right: 0; top: 4px;
+  font-size: 12px; font-weight: 600; color: var(--ps-accent); text-decoration: none; white-space: nowrap;
+  transition: color 0.15s;
+}
+.pipeline-strip .ps-more:hover { text-decoration: underline; }
+.pipeline-strip .ps-more:focus-visible { outline: 2px solid var(--ps-accent); outline-offset: 2px; border-radius: 3px; }
+
+/* ---- narrow desktop: keep one row within ~190px by tightening gaps and type ---- */
+@media (min-width: 960px) and (max-width: 1279px) {
+  .pipeline-strip { --ps-g: 18px; }
+  .pipeline-strip .ps-step { padding: 8px 9px 9px; }
+  .pipeline-strip .ps-top { gap: 6px; }
+  .pipeline-strip .ps-name { font-size: 12px; letter-spacing: 0.05em; }
+  .pipeline-strip .ps-desc { font-size: 11px; line-height: 1.4; }
+  .pipeline-strip .ps-link { font-size: 11px; }
+  .pipeline-strip .ps-arrow { background-size: 14px 12px; }
+}
+
+/* ---- tablet: 3 + 2 snake (1 2 3 / _ 5 4), branch becomes a plain chip ---- */
+@media (max-width: 959px) {
+  .pipeline-strip { --ps-g: 22px; }
+  .pipeline-strip .ps-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: var(--ps-gv); }
+  .pipeline-strip .ps-step:nth-child(4) { grid-column: 3; grid-row: 2; }
+  .pipeline-strip .ps-step:nth-child(5) { grid-column: 2; grid-row: 2; }
+  .pipeline-strip .ps-step:nth-child(3) .ps-arrow {
+    display: block; left: 50%; top: 100%; width: 16px; height: var(--ps-gv); margin: 0 0 0 -8px;
+    background: var(--ps-arr-d) center / 14px 18px no-repeat;
+  }
+  .pipeline-strip .ps-step:nth-child(4) .ps-arrow { left: auto; right: 100%; background-image: var(--ps-arr-l); }
+
+  .pipeline-strip .ps-flow { height: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 10px; }
+  .pipeline-strip .ps-line { display: none; }
+  .pipeline-strip .ps-branches { display: flex; flex-wrap: wrap; gap: 6px 8px; }
+  .pipeline-strip .ps-branch--skip {
+    position: static; transform: none; width: auto; max-width: none; text-align: left;
+    padding: 2px 9px; font-size: 11.5px;
+  }
+  .pipeline-strip .ps-more { position: static; margin-left: auto; }
+}
+
+/* ---- phone: single column with down arrows ---- */
+@media (max-width: 599px) {
+  .pipeline-strip { padding: 10px; }
+  .pipeline-strip .ps-steps { grid-template-columns: minmax(0, 1fr); row-gap: 20px; }
+  .pipeline-strip .ps-step:nth-child(n) { grid-column: auto; grid-row: auto; }
+  .pipeline-strip .ps-step .ps-arrow,
+  .pipeline-strip .ps-step:nth-child(n) .ps-arrow {
+    display: block; left: 50%; right: auto; top: 100%; width: 16px; height: 20px; margin: 0 0 0 -8px;
+    background: var(--ps-arr-d) center / 14px 18px no-repeat;
+  }
+  .pipeline-strip .ps-step:last-child .ps-arrow { display: none; }
+  .pipeline-strip .ps-flow { flex-direction: column; align-items: flex-start; margin-top: 10px; }
+  .pipeline-strip .ps-more { margin-left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pipeline-strip .ps-more, .pipeline-strip .ps-link { transition: none; }
+}
+</style>
+
+<div class="pipeline-strip" data-component="pipeline-strip">
+  <ol class="ps-steps" role="list" aria-label="{{t:pipe.aria}}">
+    <li class="ps-step">
+      <div class="ps-top"><span class="ps-num" aria-hidden="true">1</span><span class="ps-name">{{t:pipe.step1.name}}</span></div>
+      <p class="ps-desc">{{tf:pipe.step1.desc|from=raw(coverage_data.years.0)|to=raw(coverage_data.years.1)}}</p>
+      <span class="ps-arrow" aria-hidden="true"></span>
+    </li>
+    <li class="ps-step">
+      <div class="ps-top"><span class="ps-num" aria-hidden="true">2</span><span class="ps-name">{{t:pipe.step2.name}}</span></div>
+      <p class="ps-desc">{{t:pipe.step2.desc}}</p>
+      <span class="ps-arrow" aria-hidden="true"></span>
+    </li>
+    <li class="ps-step ps-step--core">
+      <div class="ps-top"><span class="ps-num" aria-hidden="true">3</span><span class="ps-name">{{t:pipe.step3.name}}</span><span class="ps-tag">{{t:pipe.core}}</span></div>
+      <p class="ps-desc">{{t:pipe.step3.desc}}</p>
+      <span class="ps-arrow" aria-hidden="true"></span>
+    </li>
+    <li class="ps-step">
+      <div class="ps-top"><span class="ps-num" aria-hidden="true">4</span><span class="ps-name">{{t:pipe.step4.name}}</span></div>
+      <p class="ps-desc">{{t:pipe.step4.desc}}</p>
+      <span class="ps-arrow" aria-hidden="true"></span>
+    </li>
+    <li class="ps-step ps-step--end">
+      <div class="ps-top"><span class="ps-num" aria-hidden="true">5</span><span class="ps-name">{{t:pipe.step5.name}}</span></div>
+      <p class="ps-desc">{{t:pipe.step5.desc}}</p>
+      <a class="ps-link" href="{{t:pipe.step5.link}}">{{t:pipe.step5.cta}}</a>
+      <span class="ps-arrow" aria-hidden="true"></span>
+    </li>
+  </ol>
+  <div class="ps-flow">
+    <span class="ps-line ps-line--skip" aria-hidden="true"></span>
+    <ul class="ps-branches" role="list" aria-label="{{t:pipe.branches.aria}}">
+      <li class="ps-branch ps-branch--skip">{{t:pipe.branch.skip}}</li>
+    </ul>
+    <a class="ps-more" href="{{t:pipe.doc.link}}">{{t:pipe.more}}</a>
+  </div>
+</div>

@@ -1,0 +1,149 @@
+{
+ "about": "Page of each named paper on Estimates (V5.7, owner request 2026-10-23). SSRN abstract page when one was verified by title and authors; otherwise the DOI of data/replication/paper_catalog_v1.jsonl, or its NBER / RePEc page when the catalogue has no DOI. A paper without an entry is not linked. restructure_estimates.validate_links re-checks scheme and host on each load.",
+ "papers": {
+  "agan2018-b9e22f99": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2795795",
+   "kind": "ssrn"
+  },
+  "akcigit2022-8205e57e": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3250767",
+   "kind": "ssrn"
+  },
+  "anderson2014-a95c7723": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1544003",
+   "kind": "ssrn"
+  },
+  "anderson2024-5af8b040": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4325043",
+   "kind": "ssrn"
+  },
+  "backes2012-301f80a1": {
+   "url": "https://doi.org/10.3368/jhr.47.2.435",
+   "kind": "doi"
+  },
+  "braslavskiy2025-6b0f2f4e": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5232936",
+   "kind": "ssrn"
+  },
+  "brummund2020-657584ac": {
+   "url": "https://doi.org/10.3368/jhr.55.2.1216.8404r2",
+   "kind": "doi"
+  },
+  "caceresdelpiano2012-72596a1d": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1689805",
+   "kind": "ssrn"
+  },
+  "card1994-b78be114": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=226778",
+   "kind": "ssrn"
+  },
+  "carpenter2019-1eba3d8e": {
+   "url": "https://doi.org/10.1257/pol.20170067",
+   "kind": "doi"
+  },
+  "cengiz2019-a72ccb47": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3315238",
+   "kind": "ssrn"
+  },
+  "dee2009-a886f10f": {
+   "url": "https://doi.org/10.1016/j.jhealeco.2008.12.002",
+   "kind": "doi"
+  },
+  "dube2010-0ceefc2f": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1005523",
+   "kind": "ssrn"
+  },
+  "friedberg1998-8358211c": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2207",
+   "kind": "ssrn"
+  },
+  "goodman2016-c6f7ffbe": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2350463",
+   "kind": "ssrn"
+  },
+  "gruber1994-d375ee8c": {
+   "url": "https://ideas.repec.org/a/aea/aecrev/v84y1994i3p622-41.html",
+   "kind": "repec"
+  },
+  "grumbach2022-cb806dc0": {
+   "url": "https://doi.org/10.1086/714776",
+   "kind": "doi"
+  },
+  "hinrichs2012-05c49ad9": {
+   "url": "https://doi.org/10.1162/rest_a_00170",
+   "kind": "doi"
+  },
+  "holbein2016-5dd89e09": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2483860",
+   "kind": "ssrn"
+  },
+  "huseynov2018-c6cd04af": {
+   "url": "https://doi.org/10.1371/journal.pone.0203167",
+   "kind": "doi"
+  },
+  "jacobsen2013-8f3fae1c": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1645722",
+   "kind": "ssrn"
+  },
+  "jayaratne1996-9d8d9ce9": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7447",
+   "kind": "ssrn"
+  },
+  "keele2013-98e8b3d7": {
+   "url": "https://doi.org/10.1111/lsq.12016",
+   "kind": "doi"
+  },
+  "lindo2020-6adc1000": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2961090",
+   "kind": "ssrn"
+  },
+  "mcghee2014-2aabc0ff": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1674091",
+   "kind": "ssrn"
+  },
+  "morris2021-6c12d1f8": {
+   "url": "https://doi.org/10.1017/s0003055421000253",
+   "kind": "doi"
+  },
+  "myers2017-99c9b319": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2089710",
+   "kind": "ssrn"
+  },
+  "rees2019-234de41c": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2920389",
+   "kind": "ssrn"
+  },
+  "shover2019-e698786e": {
+   "url": "https://doi.org/10.1073/pnas.1903434116",
+   "kind": "doi"
+  },
+  "son2022-96bf154a": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3891703",
+   "kind": "ssrn"
+  },
+  "stevenson2006-8fd23e41": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=478162",
+   "kind": "ssrn"
+  },
+  "wang2026-c8afd007": {
+   "url": "https://doi.org/10.1002/pam.70063",
+   "kind": "doi"
+  },
+  "wolfers2006-86410d4d": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=453808",
+   "kind": "ssrn"
+  },
+  "yan2021-b3c3cb05": {
+   "url": "https://doi.org/10.1016/j.eneco.2021.105333",
+   "kind": "doi"
+  },
+  "yoder2021-58cf8799": {
+   "url": "https://doi.org/10.1126/sciadv.abk1755",
+   "kind": "doi"
+  },
+  "zhou2024-65593078": {
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3964067",
+   "kind": "ssrn"
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+  "policy_id": "salary_history_ban",
+  "verified_by": "agent-V4",
+  "as_of": "2025-12-31",
+  "n_states_blind": 18,
+  "n_agree": 18,
+  "n_year_diff": 0,
+  "n_only_them": 1,
+  "n_only_us": 0,
+  "details": {
+    "AL": {
+      "status": "REMOVED",
+      "research_year": 2019,
+      "verifier_year": null,
+      "final_year": null,
+      "why": "Ala. Code 25-1-30 bars only refusing to hire/retaliating over non-disclosure; asking is not banned (Littler). Fails 'ban on asking' definition.",
+      "sources": [
+        "https://www.littler.com/news-analysis/asap/alabama-enacts-pay-equity-law",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/state-state-salary-history-bans-pay-transparency-laws"
+      ]
+    }
+  }
+}

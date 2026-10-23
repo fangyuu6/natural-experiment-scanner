@@ -1,0 +1,105 @@
+[
+ {
+  "en": "<title>Policy Groups · Natural Experiment Scanner</title>",
+  "zh": "<title>政策族 · 自然实验扫描器</title>"
+ },
+ {
+  "en": "<h1 class=\"page-title\">Policy Groups</h1>",
+  "zh": "<h1 class=\"page-title\">政策族</h1>"
+ },
+ {
+  "en": "Related policy texts across jurisdictions",
+  "zh": "跨辖区的同类政策文本"
+ },
+ {
+  "en": "<span>Groups</span>",
+  "zh": "<span>政策族</span>"
+ },
+ {
+  "en": "<span>Policy texts</span>",
+  "zh": "<span>政策文本</span>"
+ },
+ {
+  "en": "title=\"Distinct jurisdictions in the database (50 states, DC and US Federal)\"",
+  "zh": "title=\"数据库中不重复的辖区数（50 个州、哥伦比亚特区与美国联邦）\""
+ },
+ {
+  "en": "<span>Jurisdictions</span>",
+  "zh": "<span>辖区</span>"
+ },
+ {
+  "en": "placeholder=\"Search groups...\"",
+  "zh": "placeholder=\"搜索政策族……\""
+ },
+ {
+  "en": "<script>\n  const arrivedCounts",
+  "zh": "<script>\n    /* zh display vocabulary for API-provided values. Display only: filter values and API query params stay English.\n       zhLabel(value, kind) falls back to the original text when a value is unknown. */\n    const ZH_VOCAB = {\n      \"agriculture_food\": \"农业与食品\", \"appropriations_budget\": \"拨款与预算\", \"criminal_justice\": \"刑事司法\", \"education\": \"教育\",\n      \"energy_environment\": \"能源与环境\", \"finance_monetary\": \"金融与货币\", \"government_administration\": \"政府行政\", \"housing_land_use\": \"住房与土地利用\",\n      \"immigration\": \"移民\", \"labor_market\": \"劳动力市场\", \"other\": \"其他\", \"political_institutions\": \"政治制度\",\n      \"product_market\": \"产品市场\", \"public_health\": \"公共卫生\", \"social_insurance\": \"社会保险\", \"taxation_fiscal\": \"税收与财政\",\n      \"technology_data\": \"科技与数据\", \"trade_commerce\": \"贸易与商务\", \"transportation_infrastructure\": \"交通与基础设施\", \"veterans_military\": \"退伍军人与军事\",\n      \"ceremonial\": \"礼仪性\", \"enacted\": \"已颁布\", \"passed\": \"已通过\", \"signed\": \"已签署\",\n      \"vetoed\": \"被否决\", \"proposed\": \"拟议\", \"introduced\": \"已提出\", \"failed\": \"未通过\",\n      \"unknown\": \"未知\", \"RD\": \"RD\", \"DID\": \"DiD\", \"did\": \"DiD\",\n      \"rd\": \"RD\", \"zero\": \"无\", \"both\": \"RD + DiD\", \"rd+did\": \"RD + DiD\",\n      \"excellent\": \"极佳\", \"good\": \"良好\", \"moderate\": \"中等\", \"challenging\": \"较难\",\n      \"difficult\": \"困难\", \"blue_ocean\": \"未开拓\", \"emerging\": \"新兴\", \"competitive\": \"已有研究\",\n      \"crowded\": \"已饱和\", \"high\": \"高\", \"medium\": \"中\", \"low\": \"低\",\n      \"none\": \"无\", \"severe\": \"严重\", \"fatal\": \"致命\", \"manageable\": \"可控\",\n      \"insufficient\": \"不足\", \"marginal\": \"勉强\", \"adequate\": \"充足\", \"sharp\": \"精确\",\n      \"fuzzy\": \"模糊\", \"standard\": \"标准\", \"notch\": \"缺口（notch）\", \"kink\": \"拐点（kink）\",\n      \"public\": \"公开\", \"restricted_application\": \"需申请\", \"rdc_only\": \"仅限 RDC\", \"state_agency_only\": \"仅限州机构\",\n      \"yes\": \"是\", \"no\": \"否\", \"interstate\": \"跨州\", \"within_state\": \"州内\",\n      \"border_county_possible\": \"可用边界县\", \"verdict:pursue\": \"值得推进\", \"verdict:drop\": \"建议放弃\", \"conf:high\": \"高置信\",\n      \"conf:medium\": \"中置信\", \"conf:low\": \"低置信\", \"Federal Legislation\": \"联邦立法\", \"Federal Regulations\": \"联邦法规\",\n      \"State Legislation\": \"州立法\", \"State/Local Executive\": \"州/地方行政\", \"Legal Reference\": \"法律参考\", \"Archive\": \"档案\",\n      \"International\": \"国际\", \"State Legislature\": \"州议会\", \"Federal Register\": \"联邦公报\", \"State Executive Orders\": \"州行政令\",\n      \"US Federal\": \"美国联邦\", \"DC State\": \"DC 特区\", \"Georgia State\": \"佐治亚州\", \"Idaho State\": \"爱达荷州\",\n      \"Illinois State\": \"伊利诺伊州\", \"New Hampshire State\": \"新罕布什尔州\", \"New Jersey State\": \"新泽西州\", \"New Mexico State\": \"新墨西哥州\",\n      \"New York State\": \"纽约州\", \"Oregon State\": \"俄勒冈州\", \"Wisconsin State\": \"威斯康星州\"\n    };\n    function zhLabel(v, kind) {\n      if (v === null || v === undefined || v === \"\") return v;\n      const s = String(v), own = (k) => Object.prototype.hasOwnProperty.call(ZH_VOCAB, k) ? ZH_VOCAB[k] : undefined;\n      let r;\n      for (const c of [s, s.toLowerCase(), s.toLowerCase().replace(/[.。\\s]+$/, \"\")]) {\n        if (kind) r = own(kind + \":\" + c);\n        if (r === undefined) r = own(c);\n        if (r !== undefined) break;\n      }\n      if (r === undefined) { const x = /^Other (\\d+) states?$/.exec(s); if (x) r = \"其他 \" + x[1] + \" 个州\"; }\n      if (r === undefined) { const x = /^([A-Z]{2}) State$/.exec(s); if (x) r = x[1] + \" 州\"; }\n      return r === undefined ? v : r;\n    }\n  const arrivedCounts"
+ },
+ {
+  "en": "opt.textContent = t.replace(/_/g, \" \").replace(/\\b\\w/g, c => c.toUpperCase());",
+  "zh": "opt.textContent = zhLabel(t) !== t ? zhLabel(t) : t.replace(/_/g, \" \").replace(/\\b\\w/g, c => c.toUpperCase());"
+ },
+ {
+  "en": "No groups match your filter.",
+  "zh": "没有符合筛查条件的政策族。"
+ },
+ {
+  "en": "g.has_did ? \"DiD\" : \"\"",
+  "zh": "g.has_did ? \"DiD\" : \"\""
+ },
+ {
+  "en": "g.count.toLocaleString() + pl(g.count, ' text', ' texts') + '</span>'",
+  "zh": "g.count.toLocaleString() + ' 项文本' + '</span>'"
+ },
+ {
+  "en": "g.jurisdictions.toLocaleString() + pl(g.jurisdictions, ' jurisdiction', ' jurisdictions') + '</span>'",
+  "zh": "g.jurisdictions.toLocaleString() + ' 个辖区' + '</span>'"
+ },
+ {
+  "en": "<p class=\"loading\">Loading...</p>",
+  "zh": "<p class=\"loading\">加载中……</p>",
+  "all": true
+ },
+ {
+  "en": ">Prev</button>",
+  "zh": ">上一页</button>",
+  "all": true
+ },
+ {
+  "en": ">Next</button>",
+  "zh": ">下一页</button>",
+  "all": true
+ },
+ {
+  "en": "Failed to load group detail.",
+  "zh": "加载政策族详情失败。"
+ },
+ {
+  "en": "Failed to load page.",
+  "zh": "加载该页失败。"
+ },
+ {
+  "en": "Failed to load groups</p>",
+  "zh": "加载政策族失败</p>"
+ },
+ {
+  "en": "<th>Jurisdiction</th><th>Date</th><th>Title</th><th class=\"score\">Score</th><th style=\"width:50px;\">Design</th>",
+  "zh": "<th>辖区</th><th>日期</th><th>标题</th><th class=\"score\">得分</th><th style=\"width:50px;\">设计</th>"
+ },
+ {
+  "en": "m.did ? \"DiD\" : \"\"",
+  "zh": "m.did ? \"DiD\" : \"\""
+ },
+ {
+  "en": "title=\"Split into '+m.chapter_count+' chapters; showing the strongest chapter\">'+m.chapter_count+' chapters</span>'",
+  "zh": "title=\"已拆分为 '+m.chapter_count+' 个章节；此处显示得分最高的章节\">'+m.chapter_count+' 个章节</span>'"
+ },
+ {
+  "en": "escape(m.jurisdiction || \"—\")",
+  "zh": "escape(zhLabel(m.jurisdiction) || \"—\")"
+ },
+ {
+  "en": "escape(m.date || \"N/A\")",
+  "zh": "escape(m.date || \"无\")"
+ }
+]

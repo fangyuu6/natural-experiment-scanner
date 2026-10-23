@@ -1,0 +1,6 @@
+{
+  "snapshot_path": "data/replication/snapshot_v5/snapshot_20261023T132058333306Z.json",
+  "snapshot_sha256": "0191150d0b341782da06ac81bcf94a8d30527d18553e60054841739b6b5c4019",
+  "pinned_utc": "2026-10-23T19:48:38Z",
+  "note": "V5.7 c2 release pin (T281, hub decision 2026-10-23): the immutable replication snapshot behind Estimates, the Home staircase and every count that comes from the snapshot loaders (as_of 2026-10-23T13:20:58Z; 503 papers, 53 re-estimated). Replaces the V5.1-V5.6 pin snapshot_20261018T085028678040Z (sha 736ed162...). A later replication wave does not change a build; move the pin only by editing this file after the new snapshot has been reviewed. A receipt pin (build_v5.py --check, check_v5.py) wins over this file."
+}

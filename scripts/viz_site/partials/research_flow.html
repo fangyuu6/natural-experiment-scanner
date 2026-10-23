@@ -1,0 +1,235 @@
+<section id="nx-research-flow" aria-labelledby="nx-rf-heading">
+  <div class="rf-heading"><h2 id="nx-rf-heading">{{t:researchFlow.heading}}</h2><button type="button" class="rf-control" data-play aria-pressed="false">{{t:researchFlow.pause}}</button></div>
+  <div class="rf-canvas"></div>
+  <div hidden>
+    <span data-copy="aria">{{t:researchFlow.aria}}</span><span data-copy="description">{{t:researchFlow.description}}</span>
+    <span data-copy="sources">{{t:researchFlow.sources}}</span><span data-copy="l1">{{t:researchFlow.l1}}</span>
+    <span data-copy="candidates">{{t:researchFlow.candidates}}</span><span data-copy="l2">{{t:researchFlow.l2}}</span>
+    <span data-copy="effects">{{t:researchFlow.effects}}</span><span data-copy="l3">{{t:researchFlow.l3}}</span>
+    <span data-copy="patterns">{{t:researchFlow.patterns}}</span><span data-copy="across">{{t:researchFlow.across}}</span>
+    <span data-copy="policy">{{t:researchFlow.policy}}</span><span data-copy="data">{{t:researchFlow.data}}</span>
+    <span data-copy="freeze">{{t:researchFlow.freeze}}</span><span data-copy="estimate">{{t:researchFlow.estimate}}</span>
+    <span data-copy="pause">{{t:researchFlow.pause}}</span><span data-copy="resume">{{t:researchFlow.resume}}</span>
+  </div>
+</section>
+<style>
+#nx-research-flow{width:100%;max-width:1100px;margin:42px auto 0;color:#111827;font:400 14px/1.5 var(--nx-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)}
+#nx-research-flow *{box-sizing:border-box}
+#nx-research-flow .rf-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+#nx-research-flow h2{margin:0;font:500 28px/1.3 var(--nx-display,Georgia,serif);color:#111827}
+#nx-research-flow .rf-control{flex:none;min-height:44px;padding:8px 0 8px 12px;border:0;background:none;font:400 12px/1.4 var(--nx-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif);color:#64748b;cursor:pointer}
+#nx-research-flow .rf-control:hover{color:#1d4ed8}
+#nx-research-flow .rf-control:focus-visible{outline:2px solid #1d4ed8;outline-offset:4px}
+#nx-research-flow .rf-canvas{width:100%;isolation:isolate}
+#nx-research-flow svg{display:block;width:100%;overflow:visible;font-family:var(--nx-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)}
+#nx-research-flow svg text{fill:#17233a;font-size:12px}
+#nx-research-flow .rf-title{font-size:18px;font-weight:550;letter-spacing:-.025em}
+#nx-research-flow .rf-kicker{fill:#1d4ed8;font-size:12px;font-weight:600;letter-spacing:.08em}
+#nx-research-flow .rf-note{fill:#61718a;font-size:12px}
+#nx-research-flow .rf-step{fill:#425570;font-size:12px}
+@media(max-width:600px){#nx-research-flow{margin-top:28px}#nx-research-flow h2{font-size:23px}#nx-research-flow .rf-heading{align-items:flex-start;gap:8px}#nx-research-flow .rf-control{max-width:84px;text-align:right}}
+</style>
+<script>
+(() => {
+ const root=document.getElementById('nx-research-flow'),host=root.querySelector('.rf-canvas'),button=root.querySelector('[data-play]');
+ const copy=Object.fromEntries([...root.querySelectorAll('[data-copy]')].map(e=>[e.dataset.copy,e.textContent]));
+ const NS='http://www.w3.org/2000/svg',reduce=matchMedia('(prefers-reduced-motion: reduce)');
+ let svg,width=0,routes=[],particles=[],raf=0,elapsed=12300,last=null,visible=false,userPaused=false,motionOverride=false;
+ let flowKind='source',features={estimates:[],patterns:[],links:[],gates:[],steps:[],traces:[]};
+ function add(tag,attrs={},parent=svg){const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);parent.appendChild(e);return e;}
+ function label(x,y,value,cls='',anchor='start'){const e=add('text',{x,y,class:cls,'text-anchor':anchor});e.textContent=value;return e;}
+ function path(d,color,stroke=1,opacity=1,parent=svg){return add('path',{d,fill:'none',stroke:color,'stroke-width':stroke,'stroke-linecap':'round',opacity},parent);}
+ function route(d,{color='#2c67cf',stroke=1,opacity=.13,count=3,speed=24,size=2,phase=0}={}){const p=path(d,color,stroke,opacity);const lane=routes.filter(r=>r.kind===flowKind).length;routes.push({p,color,count,speed,size,phase,kind:flowKind,lane});return p;}
+ function stage(x,y,n,title){label(x,y,n,'rf-kicker');label(x,y+25,title,'rf-title');}
+ function estimates(x,y,w=100){
+   const g=add('g',{'aria-hidden':'true'});
+   path(`M${x+w*.5} ${y-6} V${y+83}`,'#d2dbe8',1,1,g);
+   const rows=[[.23,.66,.43],[.38,.84,.62],[.16,.6,.35],[.32,.74,.54]];
+   rows.forEach(([a,b,m],i)=>{
+     const yy=y+i*23,d=`M${x+a*w} ${yy} H${x+b*w}`,caps=`M${x+a*w} ${yy-4} V${yy+4} M${x+b*w} ${yy-4} V${yy+4}`;
+     path(d,'#285bbb',1.5,.23,g);path(caps,'#285bbb',1,.23,g);
+     add('circle',{cx:x+m*w,cy:yy,r:3.6,fill:'#2459bd',opacity:.2},g);
+     const ink=path(d,'#285bbb',2,1,g),ends=path(caps,'#285bbb',1,1,g),point=add('circle',{cx:x+m*w,cy:yy,r:3.6,fill:'#2459bd'},g);
+     features.estimates.push({ink,ends,point,length:(b-a)*w,index:i});
+   });
+ }
+ function matrix(x,y,cell=10){
+   const g=add('g',{'aria-hidden':'true'}),v=[[.18,.22,.67,.74,.26,.25],[.2,.27,.76,.86,.24,.2],[.62,.73,.24,.2,.64,.72],[.78,.82,.2,.26,.76,.83]];
+   for(let i=0;i<4;i++){
+     const yy=y+i*(cell+4)+cell/2,cols=i<2?[2,3]:[0,1,4,5];
+     for(let j=0;j<cols.length;j+=2){const a=x+cols[j]*(cell+4)+cell/2,b=x+cols[j+1]*(cell+4)+cell/2;features.links.push({node:path(`M${a} ${yy} H${b}`,'#2c67cf',1.2,0,g),row:i});}
+   }
+   v.forEach((row,i)=>row.forEach((o,j)=>{
+     const cx=x+j*(cell+4)+cell/2,cy=y+i*(cell+4)+cell/2;
+     add('circle',{cx,cy,r:cell*.25,fill:'#2c67cf',opacity:.1},g);
+     const node=add('circle',{cx,cy,r:cell*.34,fill:'#2c67cf',opacity:o},g);
+     features.patterns.push({node,x:cx,y:cy,weight:o,row:i,col:j,size:cell*.34});
+   }));
+ }
+ function desktop(w){
+   flowKind='source';
+   const y=182,l1=w*.235,l2=w*.43,end=w*.80,result=Math.min(w*.845,w-136),center=w*.63;
+   label(18,64,copy.sources,'rf-note');stage(l1-26,63,'L1',copy.l1);stage(l2,63,'L2',copy.l2);
+   label(result,89,copy.effects,'rf-title');label(result,111,'DiD','rf-note');
+   // A broad, asymmetrical field is pulled into a narrow screening throat.
+   for(let i=0;i<31;i++){
+     const sy=95+i*5.9,sx=8+(i%5)*6,ty=y+(i-15)*.54;
+     const d=`M${sx} ${sy} C${l1*.60} ${sy-13} ${l1*.62} ${ty} ${l1} ${ty} C${l1+27} ${ty} ${l2-43} ${y+(i-15)*.27} ${l2-23} ${y+(i-15)*.27}`;
+     route(d,{opacity:.07+(i%4)*.012,stroke:1.2,count:5,speed:21+i%6,size:i%4===0?2.2:1.5,phase:i*.137});
+   }
+   // Candidate marks emerge from the screening throat as a compact, legible stream.
+   features.gates.push(path(`M${l1} ${y-25} Q${l1+10} ${y} ${l1} ${y+25}`,'#1d4ed8',2,.75));
+   label((l1+l2)/2-8,228,copy.candidates,'rf-note','middle');
+   for(let i=0;i<5;i++)add('rect',{x:l1+25+i*19,y:y-4+(i%2?5:-3),width:9,height:3,rx:1.5,fill:'#255dc4',opacity:.5+i*.09});
+   flowKind='research';
+   // The research process expands and contracts, retaining one continuous current.
+   for(let i=0;i<19;i++){
+     const q=i-9,dy=q*2.1;
+     const d=`M${l2-23} ${y+q*.45} C${l2+14} ${y+dy*2.1} ${l2+47} ${y+dy*2.1} ${l2+73} ${y+dy*.48} S${end-82} ${y+dy*1.9} ${end-52} ${y+dy*.8} S${end-15} ${y+dy*.7} ${end+15} ${y+dy*.18}`;
+     route(d,{opacity:.12,stroke:1.7,count:4,speed:31+i%5,size:i%4===0?2.2:1.55,phase:i*.087});
+   }
+   const steps=[copy.policy,copy.data,copy.freeze,copy.estimate];
+   steps.forEach((s,i)=>{const xx=l2+i*(end-l2)/3;path(`M${xx} 145 V157`,'#8aa4cc',1,.7);features.steps.push(label(xx,133,s,'rf-step','middle'));});
+   flowKind='estimate';
+   // The same current unfolds directly into the four estimate intervals.
+   const ew=Math.min(112,w-result-4),starts=[.23,.38,.16,.32],mids=[.43,.62,.35,.54];
+   for(let row=0;row<4;row++)for(let j=0;j<3;j++){
+     const yy=y-34+row*23,dy=j-1;
+     route(`M${end-10} ${y+dy*2} C${end+25} ${y+dy*2} ${result-10} ${yy+dy} ${result+starts[row]*ew-2} ${yy+dy} L${result+mids[row]*ew-2} ${yy+dy}`,{stroke:1.1,opacity:.17,count:2,speed:31,size:1.6,phase:row*.17+j*.19});
+   }
+   estimates(result-2,y-34,ew);
+   flowKind='evidence';
+   // Evaluation is a second current within the field, with every branch flowing inward.
+   const sinkX=center+27,sinkY=334;
+   for(let j=0;j<5;j++){
+     const q=j-2;
+     route(`M${l1+5} ${y+q*2} C${l1+16} ${y+119+q*3} ${center-115} ${sinkY+q*3} ${sinkX+5} ${sinkY+q*3}`,{opacity:.14,stroke:1.1,count:3,speed:29,size:1.6,phase:j*.173});
+   }
+   for(let i=0;i<3;i++)for(let j=0;j<5;j++){
+     const sx=l2+40+i*(end-l2-60)/2,q=j-2,ey=sinkY+8+i*9;
+     route(`M${sx+q} ${y+q*2} C${sx+7+q} ${y+40} ${center-145+q*3} ${ey} ${sinkX+5} ${ey+q*2}`,{stroke:1.15,opacity:.14,count:2,speed:29,size:1.65,phase:i*.21+j*.13});
+   }
+   flowKind='resultEvidence';
+   for(let j=0;j<5;j++){
+     const q=j-2;
+     route(`M${result+ew*.54+q} ${y+35} C${result+ew*.6+q*2} ${y+137} ${sinkX+112} ${sinkY+23+q*2} ${sinkX+75} ${sinkY+23+q*2}`,{opacity:.14,stroke:1.1,count:3,speed:29,size:1.6,phase:j*.173});
+   }
+   // Ordered marks condense out of the incoming particles; there is no separate panel.
+   matrix(sinkX,sinkY-7,10);
+   label(sinkX-1,299,'L3','rf-kicker');label(sinkX+26,299,copy.l3,'rf-title');
+   label(sinkX+39,403,copy.patterns,'rf-title','middle');label(sinkX+39,424,copy.across,'rf-note','middle');
+ }
+ function mobile(w){
+   flowKind='source';
+   const x=58,rx=w-121,y0=190;
+   label(8,42,copy.sources,'rf-note');
+   for(let i=0;i<25;i++){
+     const sx=9+i*(w-36)/24,sy=64+(i%5)*7;
+     route(`M${sx} ${sy} C${sx} 123 ${x+(i-12)*.2} 134 ${x+(i-12)*.36} ${y0} S${x+(i-12)*.25} 229 ${x+(i-12)*.35} 270`,{opacity:.1,count:3,speed:18+i%4,size:i%4?1.5:2,phase:i*.1});
+   }
+   stage(113,170,'L1',copy.l1);features.gates.push(path(`M${x-22} 192 Q${x} 202 ${x+22} 192`,'#1d4ed8',2,.75));label(108,244,copy.candidates,'rf-note');
+   stage(113,283,'L2',copy.l2);flowKind='research';
+   for(let i=0;i<17;i++){
+     const q=i-8;route(`M${x+q*.36} 270 C${x+q*4} 300 ${x+q*3.4} 334 ${x+q*.65} 355 S${x+q*4} 421 ${x+q*.8} 454 S${x+q} 481 ${x+q*.2} 503`,{stroke:1.6,opacity:.12,count:4,speed:24+i%4,size:i%4?1.5:2.1,phase:i*.12});
+   }
+   [copy.policy,copy.data,copy.freeze,copy.estimate].forEach((s,i)=>{const yy=344+i*39;path(`M${x+31} ${yy-4} H${x+41}`,'#8aa4cc',1,.7);features.steps.push(label(113,yy,s,'rf-step'));});
+   flowKind='estimate';
+   // Research opens into the estimates, with labels beside the current.
+   label(106,529,copy.effects,'rf-title');label(106,550,'DiD','rf-note');
+   const starts=[.23,.38,.16,.32],mids=[.43,.62,.35,.54];
+   for(let row=0;row<4;row++)for(let j=0;j<3;j++){
+     const yy=547+row*23,q=j-1;
+     route(`M${x+q*2} 490 C${x+q*2} 523 ${3+starts[row]*106-12} ${yy+q} ${3+starts[row]*106} ${yy+q} L${3+mids[row]*106} ${yy+q}`,{stroke:1.1,opacity:.17,count:2,speed:25,size:1.5,phase:row*.17+j*.19});
+   }
+   estimates(3,547,106);
+   flowKind='evidence';
+   // Shared curvature and particle spacing join each evaluation branch to one lower current.
+   for(let j=0;j<3;j++){
+     const q=j-1;
+     route(`M${x+q*2} 196 C${x+q*2} 209 ${w-18+q*3} 201 ${w-18+q*3} 259 L${w-18+q*3} 548 Q${w-18+q*3} 639 ${rx+56+q*2} 674`,{opacity:.14,stroke:1.1,count:5,speed:26,size:1.5,phase:j*.19});
+   }
+   for(let i=0;i<3;i++)for(let j=0;j<3;j++){
+     const q=j-1,yy=357+i*40,edge=w-36-i*8+q*2;
+     route(`M${x+q*2} ${yy-8} C${x+q*2} ${yy} ${edge} ${yy} ${edge} ${yy+32} L${edge} 565 Q${edge} 635 ${rx+28+i*10+q*2} 674`,{stroke:1.1,opacity:.14,count:3,speed:26,size:1.55,phase:i*.21+j*.17});
+   }
+   flowKind='resultEvidence';
+   for(let j=0;j<3;j++){
+     const q=j-1;
+     route(`M${60+q*2} 616 C${62+q*2} 677 ${rx-28} ${694+q*2} ${rx+5} ${694+q*2}`,{stroke:1.1,opacity:.14,count:3,speed:26,size:1.5,phase:j*.19});
+   }
+   matrix(rx,670,10);
+   label(rx-55,643,'L3','rf-kicker');label(rx-29,643,copy.l3,'rf-title');
+   label(rx+39,744,copy.patterns,'rf-title','middle');label(rx+39,765,copy.across,'rf-note','middle');
+ }
+ function draw(){
+   const w=Math.round(host.getBoundingClientRect().width);if(w<1||w===width)return;width=w;host.replaceChildren();routes=[];particles=[];features={estimates:[],patterns:[],links:[],gates:[],steps:[],traces:[]};
+   const compact=w<800,chartWidth=compact?Math.min(w,440):w,h=compact?791:450;svg=add('svg',{viewBox:`0 0 ${chartWidth} ${h}`,height:h,role:'img','aria-labelledby':'nx-rf-title nx-rf-desc'},host);
+   add('title',{id:'nx-rf-title'}).textContent=copy.aria;add('desc',{id:'nx-rf-desc'}).textContent=copy.description;
+   compact?mobile(chartWidth):desktop(chartWidth);
+   const layer=add('g',{'aria-hidden':'true','pointer-events':'none'});
+   for(const r of routes){
+     const length=r.p.getTotalLength(),samples=[];
+     for(let i=0;i<=220;i++)samples.push(r.p.getPointAtLength(length*i/220));
+     const count=r.kind==='research'?3:r.count;
+     for(let i=0;i<count;i++)particles.push({node:add('ellipse',{rx:r.size,ry:r.size,fill:r.color},layer),samples,length,speed:r.speed,size:r.size,kind:r.kind,lane:r.lane,index:i,offset:r.kind==='research'?(i<2?i/2+r.lane*.0015:r.phase%1):(i/count+r.phase)%1});
+     if(r.kind==='research')for(let i=0;i<2;i++)features.traces.push({node:path(r.p.getAttribute('d'),'#2b60ca',2,0),length,offset:i/2+r.lane*.0015});
+   }
+   paint();
+ }
+ const mod=(n,d=1)=>((n%d)+d)%d,clamp=n=>Math.max(0,Math.min(1,n)),smooth=n=>{const x=clamp(n);return x*x*(3-2*x);};
+ // Each quarter of the research current assembles a batch, holds it, then releases it.
+ function process(u){const stage=Math.floor(u*4),v=u*4-stage;return (stage+smooth(v/.90))/4;}
+ // A lead batch uses these same times throughout the field; a second batch follows four seconds later.
+ const batch={period:4,sourceStart:-3,researchStart:1,researchDuration:8,estimateAt:9,resultDeparture:10.2,patternAt:11.5};
+ function position(p,u){const v=clamp(u)*220,i=Math.min(219,Math.floor(v)),f=v-i,a=p.samples[i],b=p.samples[i+1];return {x:a.x+(b.x-a.x)*f,y:a.y+(b.y-a.y)*f,angle:Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI};}
+ function paint(){
+   const t=elapsed*.001,still=reduce.matches&&!motionOverride;
+   for(const p of particles){
+     let u,stretch=1,alpha=.72;
+     if(p.kind==='source'){
+       const v=p.index===0?mod((t-batch.sourceStart)/batch.period+p.lane*.001):mod(t/10+p.offset);u=Math.pow(v,1.8);stretch=1+1.25*smooth((u-.61)/.25);alpha=p.index===0?.95:.3;alpha*=1-smooth((u-.48)/.24)*(p.lane%4===0?.12:.84);
+     }else if(p.kind==='research'){
+       const v=mod((t-batch.researchStart)/batch.researchDuration+p.offset);u=process(v);const local=mod(v*4);stretch=1+2.1*Math.sin(Math.PI*clamp(local/.90));alpha=p.index===0?.95:.4;if(p.index===2){u=mod(t*p.speed/p.length+p.offset);stretch=1;alpha=.18;}
+     }else if(p.kind==='estimate'){
+       const age=mod(t-(batch.estimateAt-.35),batch.period);u=p.index===0?clamp(age/.5):mod(t/3+p.offset);stretch=1.6;alpha=p.index===0?.85:.2;
+     }else if(p.kind==='resultEvidence'){
+       const age=mod(t-batch.resultDeparture,batch.period);u=p.index===0?clamp(age/1.3):mod(t*p.speed/p.length+p.offset);stretch=1.4;alpha=p.index===0?.9:.18;
+     }else{
+       const v=mod(t*p.speed/p.length+p.offset);u=smooth(v);stretch=1.2;alpha=.46+.32*Math.exp(-Math.pow((mod(t-9,4)-1.3)/1.1,2));
+     }
+     if(still){u=mod(p.offset+.13);stretch=1;alpha=.65;}
+     const q=position(p,u),edge=Math.min(1,u*12,(1-u)*14);
+     p.node.setAttribute('transform',`translate(${q.x.toFixed(2)} ${q.y.toFixed(2)}) rotate(${q.angle.toFixed(1)})`);
+     p.node.setAttribute('rx',(p.size*stretch).toFixed(2));p.node.setAttribute('ry',p.size.toFixed(2));p.node.setAttribute('opacity',(alpha*edge).toFixed(3));
+   }
+   for(const r of features.traces){
+     const u=process(mod((t-batch.researchStart)/batch.researchDuration+r.offset)),tail=18,tone=r.offset<.25?1:.28;
+     r.node.setAttribute('stroke-dasharray',`${tail} ${r.length+tail}`);r.node.setAttribute('stroke-dashoffset',String(-Math.max(0,u*r.length-tail)));
+     r.node.setAttribute('opacity',still?0:(.42*tone*Math.min(1,u*8,(1-u)*8)).toFixed(3));
+   }
+   const arrival=Math.exp(-Math.pow((mod(t-.25,batch.period)-.15)/.34,2));
+   for(const g of features.gates){g.setAttribute('stroke-width',still?2:1.8+arrival*1.2);g.setAttribute('opacity',still?.75:.5+arrival*.45);}
+   features.steps.forEach((e,i)=>{const a=mod((t-batch.researchStart)/2,4),active=Math.floor(a)===i||Math.floor(mod(a+2,4))===i;e.style.fill=still?'':active?'#2459bd':'#61718a';});
+   for(const r of features.estimates){
+     const age=mod(t-batch.estimateAt,batch.period)-r.index*.16,tone=mod(t-batch.estimateAt,8)<4?1:.55,draw=still?1:smooth(age/.72),ink=still?.9:(.3+.7*tone*(1-smooth((age-2.65)/.9)));
+     r.ink.setAttribute('stroke-dasharray',`${r.length} ${r.length}`);r.ink.setAttribute('stroke-dashoffset',String(r.length*(1-draw)));r.ink.setAttribute('opacity',ink);
+     r.ends.setAttribute('opacity',still?.8:smooth((age-.45)/.3)*ink);r.point.setAttribute('opacity',still?.95:smooth((age-.32)/.3)*ink);
+   }
+   for(const p of features.patterns){
+     const age=mod(t-batch.patternAt,batch.period),rowDelay=p.row*.11,settle=still?1:smooth((age-rowDelay)/1.05),fade=still?1:1-smooth((age-2.7)/1.1);
+     const fromX=p.x-19-p.row*2,fromY=p.y+Math.sin((p.col+1)*1.7+p.row)*8;
+     p.node.setAttribute('cx',fromX+(p.x-fromX)*settle);p.node.setAttribute('cy',fromY+(p.y-fromY)*settle);
+     p.node.setAttribute('r',p.size*(.55+.45*settle));p.node.setAttribute('opacity',still?p.weight:(.16+(p.weight+.12)*settle)*smooth(age/.25)*fade);
+   }
+   for(const l of features.links){const age=mod(t-batch.patternAt,batch.period);l.node.setAttribute('opacity',still?.2:.36*smooth((age-1.05-l.row*.1)/.55)*(1-smooth((age-2.7)/1.1)));}
+ }
+
+ function tick(t){if(last!==null)elapsed+=Math.min(64,t-last);last=t;paint();raf=requestAnimationFrame(tick);}
+ function sync(){cancelAnimationFrame(raf);last=null;const stopped=userPaused||(reduce.matches&&!motionOverride);button.textContent=stopped?copy.resume:copy.pause;button.setAttribute('aria-pressed',String(stopped));if(visible&&!document.hidden&&!stopped)raf=requestAnimationFrame(tick);}
+ button.addEventListener('click',()=>{if(reduce.matches&&!motionOverride){motionOverride=true;userPaused=false;}else userPaused=!userPaused;sync();});
+ // Reduced motion starts with a still diagram; explicit playback remains available.
+ reduce.addEventListener('change',()=>{motionOverride=false;sync();});document.addEventListener('visibilitychange',sync);
+ new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync();},{threshold:.05}).observe(root);
+ new ResizeObserver(draw).observe(host);draw();sync();
+})();
+</script>

@@ -1,0 +1,441 @@
+{
+ "policy_id": "workers_comp_ptsd_presumption",
+ "name_en": "Workers' compensation PTSD coverage for first responders",
+ "name_zh": "工伤赔偿的创伤后应激推定",
+ "definition_en": "State workers' compensation law covering post-traumatic stress disorder in first responders (police, firefighters, EMS/paramedics, sometimes dispatchers) without an accompanying physical injury, via a presumption or explicit mental-mental coverage; year the law was signed.",
+ "definition_zh": "州工伤赔偿法规定警察、消防员、急救人员（部分含调度员）所患创伤后应激障碍无需伴随身体伤害即可获赔，方式为法律推定或明确的精神性损伤覆盖；年份为法案签署年。",
+ "year_basis": "Year the first law explicitly covering PTSD/mental injury of first responders without physical injury was SIGNED. Peer-support/training-only laws and general all-worker mental-mental coverage excluded.",
+ "as_of": "2025-12-31",
+ "summary_sources": [
+  "https://healthesystems.com/rxi-articles/burden-of-proof-unpacking-presumptions-in-workers-comp/",
+  "https://dir.ca.gov/chswc/Meetings/2021/RAND_mentalhealth_brief.pdf"
+ ],
+ "states": {
+  "AL": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "AK": {
+   "year": 2024,
+   "date": "2024-07-11",
+   "sources": [
+    "https://www.akleg.gov/basis/Bill/Detail/33?Root=SB%20147",
+    "https://www.akleg.gov/basis/Bill/Text/33?Hsid=SB0147Z",
+    "https://healthesystems.com/rxi-articles/burden-of-proof-unpacking-presumptions-in-workers-comp/"
+   ],
+   "confidence": "high",
+   "note": "SB 147 (ch. 12 SLA 24) added AS 23.30.118 PTSD presumption: peace officers, firefighters, EMS, dispatchers, corrections."
+  },
+  "AZ": {
+   "year": null,
+   "date": null,
+   "sources": [
+    "https://www.azleg.gov/ars/23/01043-01.htm",
+    "https://www.azleg.gov/legtext/56leg/2R/bills/SB1677S.htm"
+   ],
+   "confidence": "medium",
+   "note": "None found: HB 2501 (2018) not found in ARS; SB 1677 (2024) covers only MDMA therapy for accepted PTSD claims."
+  },
+  "AR": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "CA": {
+   "year": 2019,
+   "date": "2019-10-01",
+   "sources": [
+    "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200SB542",
+    "https://dir.ca.gov/chswc/Meetings/2021/RAND_mentalhealth_brief.pdf",
+    "https://royyanglaw.com/workers-comp/mental-health-claims/"
+   ],
+   "confidence": "high",
+   "note": "SB 542 (ch. 390): rebuttable PTSD presumption for firefighters and peace officers (Labor Code 3212.15); original sunset 2025."
+  },
+  "CO": {
+   "year": null,
+   "date": null,
+   "sources": [
+    "https://content.leg.colorado.gov/sites/default/files/digest2017.pdf"
+   ],
+   "confidence": "medium",
+   "note": "None found: HB17-1229 (2017) clarified mental impairment for all workers; no first-responder-specific PTSD law found (2016-19 digests)."
+  },
+  "CT": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://www.cga.ct.gov/current/pub/chap_568.htm"
+   ],
+   "confidence": "medium",
+   "note": "Firefighter PTSD PA 12-126 (2012). Earlier police deadly-force clause PA 05-208; all first responders PA 19-17 (2019)."
+  },
+  "DE": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "DC": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "FL": {
+   "year": 2018,
+   "date": "2018-03-27",
+   "sources": [
+    "https://www.flsenate.gov/Session/Bill/2018/376",
+    "https://www.flsenate.gov/Laws/Statutes/2024/112.1815"
+   ],
+   "confidence": "high",
+   "note": "SB 376, ch. 2018-124 (s. 112.1815): first-responder PTSD compensable with no physical injury."
+  },
+  "GA": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "HI": {
+   "year": null,
+   "date": null,
+   "sources": [
+    "https://www.capitol.hawaii.gov/hrscurrent/Vol07_Ch0346-0398/HRS0386/HRS_0386-0003.htm"
+   ],
+   "confidence": "medium",
+   "note": "None found: HRS 386-3 covers mental stress for all workers; no first-responder-specific law found."
+  },
+  "ID": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "IL": {
+   "year": null,
+   "date": null,
+   "sources": [
+    "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2430&ChapterID=68"
+   ],
+   "confidence": "medium",
+   "note": "None found: Workers' Compensation Act text has no PTSD or first-responder provision."
+  },
+  "IN": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "IA": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Iowa Code 85.61 has no PTSD text; other sections not checked. Unverified."
+  },
+  "KS": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "KY": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "LA": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "ME": {
+   "year": 2017,
+   "date": "2017-07-24",
+   "sources": [
+    "http://legislature.maine.gov/legis/bills/display_ps.asp?LD=848&snum=128",
+    "https://legislature.maine.gov/statutes/39-A/title39-Asec201.html"
+   ],
+   "confidence": "high",
+   "note": "LD 848, PL 2017 c. 294: 39-A MRSA 201(3-A) PTSD for law enforcement, corrections, 911, fire, EMS."
+  },
+  "MD": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "LE 9-503 has no mental-injury provision; other sections not checked. Unverified."
+  },
+  "MA": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "c.152 s.1(7A) is general only; other sections not checked. Unverified."
+  },
+  "MI": {
+   "year": null,
+   "date": null,
+   "sources": [
+    "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-418-301"
+   ],
+   "confidence": "medium",
+   "note": "None found: MCL 418.301 mental-disability rule applies to all workers; no first-responder provision."
+  },
+  "MN": {
+   "year": 2018,
+   "date": "2018-05-20",
+   "sources": [
+    "https://www.revisor.mn.gov/laws/2018/0/185/",
+    "https://www.revisor.mn.gov/statutes/cite/176.011"
+   ],
+   "confidence": "high",
+   "note": "2018 c.185 art.5 added PTSD presumption for first responders. 2013 c.70 had defined PTSD 'mental impairment' generally."
+  },
+  "MS": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "MO": {
+   "year": 2023,
+   "date": null,
+   "sources": [
+    "https://revisor.mo.gov/main/OneSection.aspx?section=287.067",
+    "https://web.archive.org/web/20221202085622/https://www.revisor.mo.gov/main/OneSection.aspx?section=287.067",
+    "https://www.senate.mo.gov/23info/pdf-bill/tat/SB24.pdf"
+   ],
+   "confidence": "high",
+   "note": "SB 24/SB 186 (2023) added 287.067.9 PTSD for first responders, no physical injury; absent in Dec 2022 text. Signing date not found."
+  },
+  "MT": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "NE": {
+   "year": 2021,
+   "date": null,
+   "sources": [
+    "https://nebraskalegislature.gov/laws/statutes.php?statute=48-101.01"
+   ],
+   "confidence": "medium",
+   "note": "LB 407 (2021), Neb. Rev. Stat. 48-101.01: mental injury without physical injury for first responders, frontline state staff."
+  },
+  "NV": {
+   "year": 2019,
+   "date": "2019-06-03",
+   "sources": [
+    "https://www.leg.state.nv.us/nrs/nrs-616c.html",
+    "https://www.leg.state.nv.us/Statutes/80th2019/Stats201911.html"
+   ],
+   "confidence": "high",
+   "note": "AB 492 (ch. 312, 2019): NRS 616C.180(4) first-responder mental injury from witnessing violent events, no physical injury."
+  },
+  "NH": {
+   "year": 2018,
+   "date": null,
+   "sources": [
+    "https://gc.nh.gov/rsa/html/XXIII/281-A/281-A-2.htm"
+   ],
+   "confidence": "medium",
+   "note": "Laws 2018 ch.166 (eff. 1/1/2019), RSA 281-A:2: PTSD/acute stress for firefighters, police, EMS. Signing date not found."
+  },
+  "NJ": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "NM": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "NY": {
+   "year": 2025,
+   "date": "2025-02-14",
+   "sources": [
+    "https://www.nysenate.gov/legislation/bills/2025/S755",
+    "https://healthesystems.com/rxi-articles/burden-of-proof-unpacking-presumptions-in-workers-comp/"
+   ],
+   "confidence": "medium",
+   "note": "S755 (ch. 79, 2025) limits to first responders; Dec 2024 law (S6635/A5745) covered all workers, so excluded."
+  },
+  "NC": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "ND": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "OH": {
+   "year": null,
+   "date": null,
+   "sources": [
+    "https://codes.ohio.gov/ohio-revised-code/section-4123.01"
+   ],
+   "confidence": "medium",
+   "note": "None found: ORC 4123.01 excludes psychiatric conditions without physical injury; no first-responder exception."
+  },
+  "OK": {
+   "year": 2024,
+   "date": "2024-05-08",
+   "sources": [
+    "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb1457&Session=2400",
+    "https://healthesystems.com/rxi-articles/burden-of-proof-unpacking-presumptions-in-workers-comp/"
+   ],
+   "confidence": "high",
+   "note": "SB 1457: exempts first responders from physical-injury requirement for mental claims; presumption-style coverage."
+  },
+  "OR": {
+   "year": 2022,
+   "date": null,
+   "sources": [
+    "https://oregon.public.law/statutes/ors_656.802"
+   ],
+   "confidence": "medium",
+   "note": "ORS 656.802(7) PTSD presumption added by 2022 c.8: firefighters, EMS, police, corrections, dispatchers. Signing date not found."
+  },
+  "PA": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "RI": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "28-34-2(36) general mental-injury rule only; other sections not checked. Unverified."
+  },
+  "SC": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "H 3261 (2024) only introduced per Healthesystems; not verified. Unverified."
+  },
+  "SD": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "TN": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "TX": {
+   "year": 2017,
+   "date": "2017-06-01",
+   "sources": [
+    "https://statutes.capitol.texas.gov/Docs/LA/htm/LA.504.htm",
+    "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=85R&Bill=HB1983",
+    "https://codes.findlaw.com/tx/labor-code/lab-sect-504-019/"
+   ],
+   "confidence": "high",
+   "note": "HB 1983 (ch. 353): Labor Code 504.019 PTSD compensable for first responders of political subdivisions; amended 2019 (HB 2143)."
+  },
+  "UT": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "VT": {
+   "year": 2017,
+   "date": "2017-06-15",
+   "sources": [
+    "https://legislature.vermont.gov/Documents/2018/Docs/ACTS/ACT080/ACT080%20As%20Enacted.pdf",
+    "https://legislature.vermont.gov/statutes/section/21/009/00601"
+   ],
+   "confidence": "medium",
+   "note": "Act 80 (S.56) 21 V.S.A. 601(11)(I): PTSD presumption for police, rescue/ambulance, firefighters. Earlier law not checked."
+  },
+  "VA": {
+   "year": 2020,
+   "date": null,
+   "sources": [
+    "https://law.lis.virginia.gov/vacode/title65.2/chapter1/section65.2-107/"
+   ],
+   "confidence": "medium",
+   "note": "Va. Code 65.2-107 (2020 Acts chs. 1206, 1262): PTSD for law-enforcement officers and firefighters; later amended. Signing date not found."
+  },
+  "WA": {
+   "year": 2018,
+   "date": "2018-03-23",
+   "sources": [
+    "https://app.leg.wa.gov/billsummary?BillNumber=6214&Year=2017",
+    "https://app.leg.wa.gov/RCW/default.aspx?cite=51.08.142",
+    "https://www.workcompcentral.com/news/article/id/850f78207bb1c8ba2a379062de5cedbf763208fe"
+   ],
+   "confidence": "high",
+   "note": "SB 6214 (ch. 264, 2018): PTSD for law enforcement and firefighters, RCW 51.08.142."
+  },
+  "WV": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "WI": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  },
+  "WY": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "Not verified; no tracker access and search budget exhausted."
+  }
+ },
+ "n_with_law": 17,
+ "year_min": 2012,
+ "year_max": 2025,
+ "researched_by": "agent",
+ "method_notes": "NCSL/RAND/CT OLR trackers unreachable and search budget ran out; built from state statutes, session laws, bill pages. Null+medium = statute checked, none found; null+unknown = NOT verified (28 states). Partial coverage."
+}

@@ -1,0 +1,770 @@
+# documentation.html: user-visible English strings (TSV: kind<TAB>location<TAB>string<TAB>count)
+# auto-scan: 765 unique strings, 852 occurrences, ~732 block units (<p>/<td>/<li>/... count once).
+# Excluded: <code>/<pre> text, identifiers, numbers, API data values. Text nodes are split at inline tags
+# (<strong>, <code>, <a>): translate whole <p>/<td> raw substrings, not the fragments. L### = source line.
+# js:<function> = string literal inside inline JS (concatenated fragments; keep quotes/escapes valid).
+meta	L6 description	Documentation for Natural Experiment Scanner — a database of 480,000+ policies scored for causal research potential using regression discontinuity and difference-in-differences designs.	1
+meta	L7 keywords	natural experiment, policy database, regression discontinuity, difference-in-differences, causal inference, policy evaluation	1
+meta	L8 og:title	Documentation · Natural Experiment Scanner	2
+meta	L9 og:description	A database of 480,000+ policies scored for causal research potential using RD and DID designs.	1
+attr	L145 @aria-label <button.mobile-menu-btn>	Toggle navigation	1
+text	L146 <a>	Natural Experiment Scanner	1
+text	L149 <a>	Visualizations	1
+text	L161 <div.sidebar-title>	Documentation	3
+text	L163 <a>	Overview	2
+text	L164 <a.sub-link>	Goal	1
+text	L165 <a.sub-link>	Design Scope	1
+text	L166 <a.sub-link>	6-Phase Evaluation	1
+text	L167 <a.sub-link>	Family Normalization	1
+text	L168 <a.sub-link>	Pipeline	1
+text	L172 <a>	Scoring System	2
+text	L173 <a.sub-link>	Composite Score	1
+text	L174 <a.sub-link>	Critical-Domain Gates	1
+text	L175 <a.sub-link>	Feasibility Adjustments	1
+text	L176 <a.sub-link>	Validity Checklists	1
+text	L177 <a.sub-link>	Confound Detection	1
+text	L178 <a.sub-link>	Feasibility Labels	1
+text	L179 <a.sub-link>	Literature Assessment	1
+text	L183 <a>	Research Angles	3
+text	L187 <a>	Cross-Match Audit	3
+text	L188 <a.sub-link>	Threshold Confounds	1
+text	L189 <a.sub-link>	Policy Families	1
+text	L190 <a.sub-link>	Three-Layer Detection	2
+text	L194 <a>	Policy Topics	2
+text	L198 <a>	Data Sources	3
+text	L202 <a>	Validation	2
+text	L203 <a.sub-link>	Score Distribution	1
+text	L204 <a.sub-link>	Cross-Model Agreement	2
+text	L205 <a.sub-link>	Stability	1
+text	L206 <a.sub-link>	Accuracy	1
+text	L210 <a>	References	3
+text	L234 <span.subtitle>	Methodology, scoring architecture, and data reference	1
+text	L236 <p>	The Natural Experiment Scanner fetches U.S. Congress bills, federal regulations, and state legislature texts; uses LLM + rule-based evaluation to identify policies suitable for	1
+text	L236 <strong>	Regression Discontinuity (RD)	1
+text	L236 <strong>	Difference-in-Differences (DID)	1
+text	L236 <p>	natural experiments; and outputs interactive CSV/HTML reports for research topic discovery.	1
+text	L238 <h3#overview-goal>	Goal: Discover Promising Designs, Not Gatekeep Feasibility	1
+text	L239 <p>	The tool’s purpose is to	1
+text	L239 <strong>	surface policy changes that create good natural experiment opportunities	1
+text	L239 <p>	— numeric thresholds, sharp eligibility cutoffs, staggered adoption across states — that researchers might otherwise never find in ~2 million bills. It is a	1
+text	L239 <strong>	discovery engine	1
+text	L239 <p>	, not a feasibility verdict.	1
+text	L240 <p>	A high score means “this design structure looks promising and is worth investigating”; a low score means the design structure itself is weak (e.g. no clear cutoff, no variation), not that the project is impossible. Data availability, institutional access, and researcher-specific constraints are outside the scope of an automated scan and should be evaluated by the researcher after discovery.	1
+text	L242 <h3#overview-scope>	Design Scope: RD and DID Only	1
+text	L243 <p>	The tool evaluates legislation for RD and DID designs only. Other causal inference strategies — IV, RCT/lottery, synthetic control, shift-share — are outside scope.	1
+text	L245 <strong>	Why not IV / RCT / lottery?	1
+text	L245 <p>	Government-mandated lotteries (charter school admission, H-1B visas, housing vouchers) do appear in legislation, but (a) they are rare — a fraction of a percent of all bills, (b) they are already well-known to researchers, so discovery is not the bottleneck, and (c) the binding constraint is access to lottery microdata, which cannot be assessed from bill text.	1
+text	L246 <strong>	Why not shift-share / Bartik IV?	1
+text	L246 <p>	The instrument is constructed by the researcher from external data (pre-existing industry shares × national shocks), not from the bill text itself.	1
+text	L247 <strong>	What the tool is good at:	1
+text	L247 <p>	Discovering	1
+text	L247 <p>	numeric thresholds (employee counts, income cutoffs, age limits, population caps) and	1
+text	L247 <p>	policy variation across jurisdictions — which map directly to RD and DID.	1
+text	L250 <h3#overview-evaluation>	6-Phase LLM Evaluation	1
+text	L251 <p>	Each policy is evaluated by LLM across 6 phases:	1
+text	L253 <th>	Phase	1
+text	L253 <th>	Name	2
+text	L253 <th>	Description	3
+text	L255 <td>	First-stage gatekeeper	1
+text	L255 <td>	Rejects purely aspirational bills (no enforcement AND no alteration of eligibility/allocation/access). Administrative rules that alter eligibility or access qualify even without penalties.	1
+text	L256 <td>	Design classification	1
+text	L256 <td>	Identifies all applicable designs (	1
+text	L256 <td>	array; RD and DID are not mutually exclusive). For RD: threshold structure, manipulation channels, dynamic selection risk, confounding policies. For DID: parallel trends, staggered adoption bias, anticipation, spillover, policy endogeneity, recommended estimator.	1
+text	L257 <td>	Weighted scoring	1
+text	L257 <td>	= weighted average of identification, policy_significance, treatment_intensity, data_feasibility. Rule-based penalties flow through identification score.	1
+text	L258 <td>	Literature landscape	1
+text	L258 <td>	Structured	1
+text	L258 <td>	(JSON arrays of {citation, venue, title}),	1
+text	L258 <td>	, and	1
+text	L259 <td>	Research angles	1
+text	L259 <td>	2–3 distinct causal questions each with method, outcome, and benchmark paper.	1
+text	L260 <td>	Policy classification	1
+text	L260 <td>	(20 categories) and	1
+text	L260 <td>	(normalized cross-state grouping label).	1
+text	L264 <h3#overview-family>	Policy Group Normalization	1
+text	L265 <p>	Prevents	1
+text	L265 <p>	label fragmentation without extra LLM cost. Three deterministic rules, applied at two layers:	1
+text	L267 <th>	Rule	1
+text	L267 <th>	Example	4
+text	L269 <strong>	Spelling normalization	1
+text	L270 <strong>	Explicit alias table	1
+text	L270 <td>	(89 entries)	1
+text	L271 <strong>	Suffix merge	1
+text	L271 <td>	(15 mergeable suffixes)	1
+text	L271 <td>	→ both become	1
+text	L274 <p>	Non-mergeable suffixes (substantively different):	1
+text	L275 <p>	Layer 1 runs after each LLM call (before CSV write); Layer 2 runs at HTML export as a safety net for legacy labels.	1
+text	L277 <h3#overview-pipeline>	Pipeline (core chapter-split path)	1
+text	L278 <p>	From upstream source fetch all the way to rendered frontend rows. Happy path runs left-to-right within each phase; rejection branches are dashed red (pre-LLM skip, produces a stub row) and dashed grey (fallback to the legacy single-chunk path).	1
+attr	L280 @aria-label <div.pipeline-svg-wrap>	End-to-end pipeline from source ingestion to frontend render	1
+text	L312 <text.phaseTitle>	Ingest	2
+text	L313 <text.phaseSub>	upstream sources harvested into the fulltext cache	1
+text	L318 <text.boxTitle>	GovInfo API	1
+text	L319 <text.boxSub>	federal bills · committee reports	1
+text	L320 <text.kvmono>	source_family = Federal Legislation	1
+text	L323 <text.boxTitle>	Federal Register	2
+text	L324 <text.boxSub>	rules · proposed rules	1
+text	L325 <text.kvmono>	source_family = Federal Regulations	1
+text	L328 <text.boxTitle>	State Legislature APIs	1
+text	L329 <text.boxSub>	50 states · 1965 — present	1
+text	L330 <text.kvmono>	source = State Legislation	1
+text	L336 <text.boxTitle>	Fulltext Enrichment	1
+text	L337 <text.boxSub>	PDF → text, HTML → text, retry with stop-loss	1
+text	L338 <text.kvmono>	state-specific URL converters	1
+text	L347 <text.boxSub>	+ also ingested: Congress.gov · Regulations.gov · eCFR · Federal Agencies · Open States · Executive Orders	1
+text	L354 <text.kvmono>	large on-disk store · WAL mode	1
+text	L366 <text.phaseTitle>	Classify & Split Decision	1
+text	L367 <text.phaseSub>	two gates + regex pick which LLM lane a bill takes	1
+text	L372 <text.boxTitle>	Bill prefilter	1
+text	L373 <text.boxSub>	should_skip_bill( title, text )	1
+text	L374 <text.kvmono>	ceremonial · memorial · naming	1
+text	L381 <text.flag>	skip stub row · label="Skip"	1
+text	L388 <text.boxTitle>	Split trigger	1
+text	L389 <text.kvmono>	markers ≥ 3 ∧ char_len ≥ 10 000	1
+text	L390 <text.boxSub>	federal govinfo-bills · govinfo-crpt only	1
+text	L395 <text.flag>	false · majority	1
+text	L403 <text.boxTitle>	Structural regex · split	1
+text	L404 <text.kvmono>	TITLE · DIVISION · CHAPTER · SUBTITLE · PART	1
+text	L405 <text.boxSub>	TOC cluster stripped · cap 8 · tail merged	1
+text	L412 <text.boxTitle>	chapters manifest · commit	1
+text	L413 <text.kvmono>	persisted BEFORE any LLM call · crash-safe	1
+text	L414 <text.kvmono>	→ feeds D1 chapters table (Phase 5)	1
+text	L421 <text.phaseTitle>	LLM Extraction	1
+text	L422 <text.phaseSub>	two lanes · schema-validated retrieval · two-stage call per bill	1
+text	L425 <text.lane>	Split lane · N chapters	1
+text	L426 <text.lane>	Whole-bill lane · legacy path	1
+text	L431 <text.boxTitle>	Chapter 1	1
+text	L432 <text.kvmono>	title · division · part	1
+text	L435 <text.boxTitle>	Chapter 2	1
+text	L439 <text.boxTitle>	Chapter k	1
+text	L440 <text.kvmono>	up to 8 parallel	1
+text	L446 <text.boxTitle>	Single chunk	1
+text	L447 <text.kvmono>	chapter_id = '' · non-split or short bill	1
+text	L458 <text.boxTitle>	Boilerplate gate · split lane only	1
+text	L459 <text.kvmono>	chapter < 2 000 chars AND no numeric body → skip LLM call	1
+text	L461 <text.flag>	→ skipped	1
+text	L477 <text.boxTitle>	LLM provider call	1
+text	L478 <text.boxSub>	structured extraction · deterministic decoding	1
+text	L479 <text.kvmono>	SYSTEM + USER · JSON-only chat completion	1
+text	L482 <text.boxTitle>	Pydantic validate · retry once	1
+text	L483 <text.boxSub>	AERExtraction schema · repaired re-prompt on error	1
+text	L484 <text.kvmono>	lists: RD thresholds · DID evidences	1
+text	L488 <text.boxSub>	flatten list, pick strongest per chapter	1
+text	L489 <text.kvmono>	identification_did = max(per-DID)	1
+text	L500 <text.boxTitle>	Literature LLM · second call per candidate chapter	1
+text	L501 <text.kvmono>	literature_landscape { saturation, reasoning } merged onto AER output	1
+text	L510 <text.phaseTitle>	Inside the LLM prompt	1
+text	L511 <text.phaseSub>	6 conceptual phases · phase 4 is a separate second call per candidate chapter	1
+text	L515 <text.boxTitle>	1. Gatekeeper	1
+text	L516 <text.kvmono>	drops aspirational	1
+text	L519 <text.boxTitle>	2. Design classify	1
+text	L520 <text.kvmono>	RD · DID · NONE	1
+text	L523 <text.boxTitle>	3. Weighted score	1
+text	L527 <text.boxTitle>	4. Literature	1
+text	L528 <text.kvmono>	saturation · cites	1
+text	L531 <text.boxTitle>	5. Research angles	1
+text	L532 <text.kvmono>	2-3 causal Qs	1
+text	L535 <text.boxTitle>	6. Policy classify	1
+text	L536 <text.kvmono>	topic · family	1
+text	L543 <text.phaseTitle>	Scoring Post-Process	1
+text	L544 <text.phaseSub>	Python-side rules on top of LLM output · deterministic	1
+text	L548 <text.boxTitle>	Composite score	1
+text	L549 <text.kvmono>	0.35·id + 0.25·sig + 0.20·int	1
+text	L550 <text.kvmono>	+ 0.20·data_feasibility	1
+text	L553 <text.boxTitle>	Rule corrections	1
+text	L554 <text.boxSub>	design injection · family normalizer	1
+text	L555 <text.kvmono>	id_did ≥ 2 → force DID · confound info-only	1
+text	L558 <text.boxTitle>	Design adjustments	1
+text	L559 <text.boxSub>	literature ±0.4 · border-county +0.25	1
+text	L560 <text.kvmono>	RD data-access · measurement mismatch	1
+text	L563 <text.boxTitle>	Hard caps	1
+text	L564 <text.boxSub>	identification cap · power cap	1
+text	L565 <text.kvmono>	id≤2 → 2.5 · power → 2.0	1
+text	L575 <text.boxTitle>	feasibility_score · feasibility_label · is_feasible · evidence_tier	1
+text	L586 <text.phaseTitle>	Persist & Deploy	1
+text	L587 <text.phaseSub>	composite PK (policy_id, chapter_id) · three-step deploy: D1 → Worker → R2	1
+text	L592 <text.boxSub>	SQLite · WAL · upsert	1
+text	L593 <text.kvmono>	PK (policy_id, chapter_id)	1
+text	L597 <text.boxSub>	chapters → bill view	1
+text	L598 <text.kvmono>	policy_db.json · chapters.json	1
+text	L602 <text.boxSub>	→ Cloudflare D1 remote	1
+text	L603 <text.kvmono>	policies · chapters · FTS5	1
+text	L606 <text.boxTitle>	wrangler deploy	1
+text	L607 <text.boxSub>	Worker code → edge	1
+text	L608 <text.kvmono>	worker runtime refresh	1
+text	L611 <text.boxTitle>	R2 upload	1
+text	L612 <text.boxSub>	HTML only	1
+text	L613 <text.kvmono>	data served via D1 / Worker	1
+text	L624 <text.boxTitle>	D1 schema · chapter-aware layout	1
+text	L625 <text.kvmono>	policies(id, policy_id, chapter_id, …) · chapters(chapter_id, policy_id, marker, ord, char_start, char_end, char_len)	1
+text	L626 <text.kvmono>	policies_fts(title, intuition_pitch, treatment, outcomes, research_angles, …) — contentless FTS5	1
+text	L633 <text.phaseTitle>	Query & Serve	1
+text	L634 <text.phaseSub>	Cloudflare Worker · top-chapter aggregation at query time	1
+text	L638 <text.boxTitle>	Worker · top-chapter CTE	1
+text	L639 <text.boxSub>	ROW_NUMBER() OVER (PARTITION BY policy_id …)	1
+text	L640 <text.kvmono>	rn=1 + COUNT(*) OVER → chapter_count	1
+text	L643 <text.boxTitle>	REST endpoints	1
+text	L648 <text.boxTitle>	Static HTML	1
+text	L649 <text.boxSub>	policy_db · policy_groups	1
+text	L650 <text.boxSub>	documentation (this page)	1
+text	L660 <text.kvmono>	siblings[] + chapter_manifest[] · used to render chapter strip	1
+text	L671 <span.lg>	Classify & split	1
+text	L672 <span.lg>	LLM extraction	1
+text	L673 <span.lg>	Scoring post-process	1
+text	L674 <span.lg>	Persist & deploy	1
+text	L675 <span.lg>	Query & serve	1
+text	L676 <span.lg>	dashed red = pre-LLM skip (stub row) · dashed grey = fallback	1
+text	L679 <h4#overview-pipeline-scoring>	Scoring post-process — detailed steps	1
+text	L680 <p>	Expansion of phase 4 in the diagram above. Each sub-step runs deterministically on the LLM output; none of them call the model again.	1
+text	L683 <h4>	1. LLM Evaluation	1
+text	L684 <p>	Prompt produces identification, policy_significance, treatment_intensity, data_feasibility scores → composite_score (weighted average). Full bill text is sent; if the bill triggers chapter split, each chapter is scored independently.	1
+text	L688 <h4>	2. Rule-Based Corrections	1
+text	L689 <p>	Score-consistency injection (	1
+text	L689 <p>	→ DID must be in designs), family normalizer, confound detector (info-only — surfaces concerns but does not penalize the composite score).	1
+text	L693 <h4>	3. Design Adjustments	1
+text	L694 <p>	Literature-saturation bonus (	1
+text	L694 <p>	−0.4); RD data-access penalty (	1
+text	L694 <p>	−0.3); measurement-mismatch penalty (	1
+text	L694 <p>	−0.2); border-county DID bonus (+0.25).	1
+text	L698 <h4>	4. Hard Caps	1
+text	L699 <p>	Identification-weak cap (	1
+text	L699 <p>	→ score capped at 2.5); power-insufficient cap (	1
+text	L699 <p>	→ score capped at 2.0); final score clamped to [1.0, 5.0].	1
+text	L703 <h4>	5. Final Output	1
+text	L704 <p>	feasibility_score (1.0–5.0), feasibility_label (excellent/good/moderate/challenging/difficult), is_feasible (bool)	1
+text	L713 <h2>	Scoring System Design	1
+text	L714 <p>	The scoring system evaluates whether a piece of legislation constitutes a credible natural experiment suitable for academic research. It produces two scores:	1
+text	L717 <th>	Score	7
+text	L717 <th>	Range	1
+text	L717 <th>	Source	3
+text	L719 <strong>	Python-computed	1
+text	L719 <td>	weighted average of four LLM sub-scores	1
+text	L720 <td>	composite + rule-based adjustments	1
+text	L723 <p>	Final output:	1
+text	L723 <p>	(excellent / good / moderate / challenging / difficult),	1
+text	L726 <h3#scoring-composite>	1. Composite Score (Python-Computed)	1
+text	L727 <p>	The LLM evaluates four dimensions (each 1–5 integer). Python then calculates:	1
+text	L734 <th>	Dimension	1
+text	L734 <th>	Weight	1
+text	L734 <th>	Rationale	3
+text	L736 <td>	Credibility of causal design is the single most important criterion for publication (Angrist & Pischke 2010). A policy with no identification strategy is unpublishable regardless of significance.	1
+text	L737 <td>	Important for motivation but does not determine feasibility. Small, technical threshold changes often yield the cleanest RD designs.	1
+text	L738 <td>	Matters for statistical power and economic significance but is secondary to identification.	1
+text	L739 <td>	Without data, no research is possible.	1
+text	L743 <h4>	Dimension Scoring Guidelines	1
+text	L745 <strong>	identification (1–5)	1
+text	L745 <p>	— How credible is the causal identification strategy?	1
+text	L746 <h5>	RD track — score the FIRST match:	1
+text	L748 <th>	Meaning	6
+text	L750 <td>	Sharp RD at clean numeric threshold, no manipulation, no confounding policy at same cutoff	1
+text	L750 <td>	Medicare age-65 RD; drinking age 21	1
+text	L751 <td>	Sharp or strong fuzzy RD (F>50), minor manipulation risk, no fatal confound. OR clean notch/kink design	1
+text	L751 <td>	WARN Act 100-employee; state licensing age threshold	1
+text	L752 <td>	Fuzzy RD with moderate manipulation risk, OR RD with manageable confound (addressable via Diff-in-Disc)	1
+text	L752 <td>	RD with manipulation risk; employer-size with one confound	1
+text	L753 <td>	RD with fatal confound at same threshold, OR severe manipulation (McCrary likely to fail)	1
+text	L753 <td>	50-employee RD (ACA+FMLA confound)	1
+text	L754 <td>	No credible threshold. Cutoff is vague, subjective, or not stated numerically	1
+text	L754 <td>	Universal policy with no variation	1
+text	L757 <h5>	DID track — score the FIRST match:	1
+text	L761 <td>	As-good-as-random variation: randomized rollout, lottery, court-ordered mandate	1
+text	L761 <td>	Court-ordered desegregation; randomized Medicaid expansion	1
+text	L762 <td>	Interstate DID with clean event study: exogenous timing (political shock), no pre-trend concern, border-county feasible	1
+text	L762 <td>	Border-county minimum wage DID	1
+text	L763 <td>	Interstate DID with addressable parallel-trends concerns. Event study with ≥3 pre-periods recommended. OR federal/uniform policy with sub-unit variation (voluntary adoption, intensity differences, staggered implementation)	1
+text	L763 <td>	Staggered state adoption with pre-trends; federal policy with state-level opt-in variation	1
+text	L764 <td>	Federal policy with differential impact across sub-units but no voluntary adoption or staggered timing. OR single-jurisdiction DID with pre/post and control group. OR interstate DID with strong endogeneity (Ashenfelter’s dip)	1
+text	L764 <td>	Federal mandate affecting states differently; one city’s policy with neighboring city as control	1
+text	L765 <td>	No control group at any level. Truly universal policy with zero variation across all units	1
+text	L765 <td>	Constitutional amendment with no opt-out and no differential impact	1
+text	L768 <strong>	DID ceiling rule:	1
+text	L768 <p>	Interstate DID where a state voluntarily adopted via normal legislative process CANNOT score 5. Default ceiling is 4.	1
+text	L769 <strong>	Consistency rule:	1
+text	L769 <p>	≥ 2, the policy MUST include DID in	1
+text	L771 <strong>	policy_significance (1–5)	1
+text	L771 <p>	— Research question value (not policy size or treatment strength)	1
+text	L775 <td>	First-order question with broad theoretical reach (labor supply, moral hazard, human capital). Target: AER/QJE/JPE	1
+text	L776 <td>	Important question within one subfield, clear policy relevance. Target: JLE/JHE/JEEM/JUE	1
+text	L777 <td>	Valid but niche. Interest limited to specialized audience	1
+text	L778 <td>	Minor: incremental policy variation with limited theoretical insight	1
+text	L779 <td>	No meaningful research question: ceremonial, procedural, no behavioral implications	1
+text	L783 <strong>	treatment_intensity (1–5)	1
+text	L783 <p>	— First stage strength: can a researcher find a clear break in outcomes?	1
+text	L787 <td>	Binary regime change. Complete prohibition, legalization, or universal new entitlement. Near-total compliance	1
+text	L788 <td>	Large mandatory change with clear compliance mechanism. Significant fiscal transfer or strong admin penalties	1
+text	L789 <td>	Moderate mandate with enforcement. Phase-in ≤2 years. Some exemptions but majority covered	1
+text	L790 <td>	Weak: broad exemptions (>50%), phase-in >3 years, opt-out, minimal penalties	1
+text	L791 <td>	No first stage: “encourages,” task force, “shall study,” no penalty	1
+text	L795 <strong>	data_feasibility (1–5)	1
+text	L795 <p>	— Can the required data realistically be obtained?	1
+text	L799 <td>	Primary outcome DIRECTLY in free public microdata at right unit and frequency (CPS, ACS, QCEW, IPEDS)	1
+text	L800 <td>	Public data exists but PROXY needed (wrong unit, coarser frequency). OR restricted data with routine access	1
+text	L801 <td>	Restricted data requiring formal application (state MOU, Census RDC, IRS SOI). OR must merge 2 datasets	1
+text	L802 <td>	Severe barriers: proprietary, must merge 3+ datasets, or outcome only via constructed proxy	1
+text	L803 <td>	No known dataset at needed granularity. Would require original data collection	1
+text	L808 <h3#scoring-gates>	2. Critical-Domain Gates (ROBINS-I Inspired)	1
+text	L810 <strong>	Reference:	2
+text	L810 <p>	Sterne et al. (2016) “ROBINS-I: a tool for assessing risk of bias in non-randomised studies of interventions.”	1
+text	L810 <em>	BMJ	2
+text	L812 <p>	ROBINS-I evaluates 7 bias domains independently, and the overall rating is determined by the	1
+text	L812 <strong>	worst domain	1
+text	L812 <p>	(weakest-link principle). We adapt this into a single	1
+text	L812 <p>	gate with 5 conditions:	1
+text	L820 <strong>	Identification hard cap:	1
+text	L820 <p>	When	3
+text	L820 <p>	is capped at 2.5 regardless of other sub-scores. This ensures that weak identification cannot produce a “good” feasibility rating.	1
+text	L823 <th>	ROBINS-I Domain	1
+text	L823 <th>	Our Field(s)	1
+text	L825 <td>	Confounding	1
+text	L825 <td>	Info-only; LLM reflects in identification	1
+text	L826 <td>	Selection of participants	1
+text	L826 <td>	No (reflected in identification)	1
+text	L827 <td>	Classification of interventions	1
+text	L827 <td>	Yes: proposed → not feasible	1
+text	L828 <td>	Deviations from intended	1
+text	L828 <td>	No (reflected in identification; fuzzy RD is valid with IV)	1
+text	L829 <td>	Missing data	1
+text	L829 <td>	Penalty only (rdc_only −0.5, state_agency_only −0.3)	1
+text	L830 <td>	Measurement of outcomes	1
+text	L830 <td>	No (penalty only)	1
+text	L831 <td>	Selection of reported results	1
+text	L831 <td>	Not applicable (ex-ante screening)	1
+text	L836 <h3#scoring-adjustments>	3. Feasibility Adjustments (GRADE Inspired)	1
+text	L838 <p>	GRADE Working Group.	2
+text	L838 <em>	GRADE Handbook.	2
+text	L840 <p>	GRADE starts from a certainty level and applies upgrade/downgrade factors. We adapt this as additive adjustments:	1
+text	L843 <h4>	Downgrade Factors	1
+text	L845 <th>	Factor	2
+text	L845 <th>	Condition	3
+text	L845 <th>	Penalty	1
+text	L847 <strong>	Data access	1
+text	L847 <em>	(RD only)	1
+text	L847 <td>	RDC access adds 1–2 year delay. Applied only to RD candidates (individual-level data near cutoff).	1
+text	L848 <td>	Uncertain access, long negotiation	1
+text	L849 <strong>	Measurement mismatch	1
+text	L849 <td>	Available data doesn’t measure the relevant outcome near threshold	1
+text	L850 <td>	Proxy variables available but imperfect	1
+text	L851 <strong>	Power risk	1
+text	L851 <td>	cap at 2.0	1
+text	L851 <td>	Sample size near threshold is too small; hard ceiling on score	1
+text	L852 <td>	Detectable only for large effects	1
+text	L853 <strong>	Literature saturation	1
+text	L853 <td>	Many existing papers; marginal contribution is low	1
+text	L854 <td>	Some papers exist but room for contribution	1
+text	L858 <h4>	Upgrade Factors	1
+text	L860 <th>	Bonus	1
+text	L862 <strong>	Literature novelty	1
+text	L862 <td>	No existing studies; high publication potential	1
+text	L863 <td>	Few studies; early-mover advantage	1
+text	L864 <strong>	Border-county DID	1
+text	L864 <td>	DID with border-county design	1
+text	L864 <td>	Strong within-region comparison reduces confounding	1
+text	L869 <strong>	No double-penalization:	1
+text	L869 <p>	Risk factors that already reduce the	1
+text	L869 <p>	sub-score within composite_score (parallel_trends_risk, manipulation_risk, etc.) are	1
+text	L869 <p>	penalized again in the feasibility adjustment layer.	1
+text	L873 <h4>	Phase 1.5: RD+DID Identification Split	1
+text	L874 <p>	When a policy is both	1
+text	L874 <p>	, the LLM outputs separate	1
+text	L874 <p>	scores. Python takes the	1
+text	L874 <p>	of the two as the final	1
+text	L874 <p>	score used in composite_score. This ensures RD+DID policies are not double-penalized—each design is evaluated on its own merits, and the stronger identification strategy determines the score.	1
+text	L877 <h4>	Evidence Tier	1
+text	L878 <p>	After computing the feasibility_score and label, each policy is assigned an	1
+text	L878 <p>	(1, 2, or 3) for quick filtering:	1
+text	L880 <th>	Feasibility Score	1
+text	L880 <th>	Label	3
+text	L880 <th>	Tier	1
+text	L891 <h3#scoring-checklists>	4. Design-Specific Validity Checklists	1
+text	L892 <strong>	Scope note.	1
+text	L892 <p>	The tool screens legislative text	1
+text	L892 <p>	data collection. Standard post-data methodology decisions — functional form, bandwidth/bin selection, placebo tests, clustering, graphical presentation — are the researcher’s responsibility and are not assessed here. See Lee & Lemieux (2010) for the full RD checklist and Roth et al. (2023) for DID.	1
+text	L894 <h4>	RD Checklist (Lee & Lemieux 2010)	1
+text	L896 <th>	Check	2
+text	L896 <th>	Our Field	2
+text	L896 <th>	Action	2
+text	L898 <td>	Clear threshold?	1
+text	L898 <td>	No cutoff → rd_candidate = False	1
+text	L899 <td>	Running variable manipulable?	1
+text	L899 <td>	High → red_flag; suggest McCrary test	1
+text	L900 <td>	Notch or kink?	1
+text	L900 <td>	Kink → lower treatment_intensity; notch → higher	1
+text	L901 <td>	Fuzzy or sharp?	1
+text	L901 <td>	Fuzzy → report first-stage F > 10 (Staiger-Stock)	1
+text	L902 <td>	McCrary density test	1
+text	L902 <td>	Non-empty → critical; otherwise recommended	1
+text	L903 <td>	Covariate balance at threshold	1
+text	L903 <td>	Always recommend; covariates depend on datasets	1
+text	L904 <td>	Bandwidth sensitivity	1
+text	L904 <td>	Discrete RV → bandwidth constrained	1
+text	L905 <td>	Discrete running variable	1
+text	L905 <td>	red_flag; few mass points → limited bandwidth	1
+text	L909 <h4>	DID Checklist (Roth et al. 2023)	1
+text	L913 <td>	Parallel trends plausible?	1
+text	L913 <td>	High → reflected in identification; recommend event study	1
+text	L914 <td>	Staggered adoption?	1
+text	L914 <td>	High → Callaway-Sant’Anna / Sun-Abraham; Goodman-Bacon decomposition	1
+text	L915 <td>	Anticipation effects?	1
+text	L915 <td>	High → use announcement date, not effective date	1
+text	L916 <td>	Spillover / SUTVA?	1
+text	L916 <td>	High → GE spillover warning in red_flags	1
+text	L917 <td>	Policy endogeneity?	1
+text	L917 <td>	High → Ashenfelter’s dip warning	1
+text	L918 <td>	Pre-period data available?	1
+text	L918 <td>	No → event study not feasible	1
+text	L919 <td>	Correct estimator?	1
+text	L919 <td>	Always populated for DID candidates	1
+text	L924 <h3#scoring-confounds>	5. Confound Detection (Rule Engine)	1
+text	L925 <p>	The rule engine detects	1
+text	L925 <strong>	known federal/state policy thresholds	1
+text	L925 <p>	that compete with RD designs at the same cutoff. This catches confounds the LLM may miss. Rule-engine results are	1
+text	L925 <strong>	informational only	1
+text	L925 <p>	— they do	1
+text	L925 <p>	penalize the feasibility score. Only confounds identified by the LLM during extraction are reflected in the	1
+text	L927 <h4>	Known Confound Database	1
+text	L929 <strong>	WIP:	1
+text	L929 <p>	The knowledge base currently covers employer-size thresholds only (federal + 9 states). Income, age, population thresholds are not yet implemented.	1
+text	L932 <h4>	Three-Layer Detection Strategy	1
+text	L934 <th>	Layer	2
+text	L934 <th>	Scope	3
+text	L934 <th>	Affects Score?	1
+text	L936 <td>	During extraction	2
+text	L936 <td>	All jurisdictions, all threshold types (from model knowledge)	1
+text	L936 <td>	Yes — reflected in	1
+text	L937 <strong>	Rule engine	2
+text	L937 <td>	After LLM, per-bill	2
+text	L937 <td>	Employer-size only, 9 states + federal (hardcoded KB)	1
+text	L937 <td>	No — info only	2
+text	L938 <strong>	Cross-match audit	1
+text	L938 <td>	Post-hoc, batch	2
+text	L938 <td>	All threshold types in DB, all jurisdictions (pairwise comparison)	1
+text	L943 <h3#scoring-literature>	6. Literature Assessment	1
+text	L944 <p>	Each policy gets a literature landscape assessment answering:	1
+text	L944 <strong>	how much has this policy (or similar ones) already been studied?	1
+text	L944 <p>	Produced in Phase 4 of the LLM prompt. The resulting	1
+text	L944 <p>	label feeds into the feasibility adjustments in	1
+text	L944 <a>	Section 3	1
+text	L946 <h4>	Schema	2
+text	L958 <th>	Value	1
+text	L958 <th>	Feasibility Adjustment	1
+text	L960 <td>	Virtually no empirical work on this policy type	1
+text	L961 <td>	A few papers exist, significant gaps remain	1
+text	L962 <td>	Active research area, but specific angles are still open	1
+text	L963 <td>	Heavily studied, hard to find a novel contribution	1
+text	L967 <h4>	Assessment Dimensions	1
+text	L969 <strong>	Same Policy Topic (any jurisdiction)	1
+text	L969 <li>	— drives the	1
+text	L970 <strong>	Same Jurisdiction / Same Law	1
+text	L970 <li>	— drives	2
+text	L971 <strong>	Cross-Jurisdiction Contribution	1
+text	L975 <strong>	Limitation:	1
+text	L975 <p>	The LLM recalls papers from training data (Qwen 3.6 Plus knowledge cutoff), not from a live database search. Papers published after the cutoff are not reflected.	1
+text	L978 <h3#scoring-labels>	7. Feasibility Labels	1
+text	L980 <th>	Interpretation	2
+text	L982 <td>	Strong natural experiment; ready for research	1
+text	L984 <td>	Viable with caveats; address red_flags	1
+text	L985 <td>	Fundamental concerns; unlikely to yield credible results	1
+text	L996 <p>	Each policy with a credible design gets 2–3	1
+text	L996 <strong>	research angles	1
+text	L996 <p>	: structured causal questions that could be investigated using this policy as a natural experiment.	1
+text	L1007 <th>	Field	3
+text	L1007 <th>	Type	2
+text	L1009 <td>	Specific causal question (X → Y)	1
+text	L1010 <td>	Estimation strategy (Sharp RD, DID, Bunching, etc.)	1
+text	L1011 <td>	Key dependent variable(s)	1
+text	L1012 <td>	Closest methodological precedent, not “the paper this angle would produce”	1
+text	L1016 <h4>	What benchmark_paper Means	1
+text	L1020 <td>	Bunching at a tax kink has been done before. The method is validated; this threshold is new variation.	1
+text	L1021 <td>	Border-county DID for minimum wage exists. This applies the same design to a different state.	1
+text	L1022 <td>	No close methodological precedent found in training data. Does not guarantee novelty.	1
+text	L1027 <p>	Research angles are	1
+text	L1027 <strong>	not scored	1
+text	L1027 <p>	— they do not affect feasibility_score or composite_score. They are purely descriptive hints for researchers.	1
+text	L1036 <p>	Post-hoc scan of the policy database for two types of cross-policy relationships that the per-bill LLM pipeline cannot detect:	1
+text	L1038 <strong>	Threshold confounds	1
+text	L1038 <li>	— two policies in the same jurisdiction using a similar running variable and cutoff	1
+text	L1039 <strong>	Cross-jurisdiction family groups	1
+text	L1039 <li>	— the same	1
+text	L1039 <li>	enacted in multiple states, revealing staggered DID opportunities	1
+text	L1042 <h3#cm-threshold>	Threshold Confound Matching	1
+text	L1043 <h4>	Stage 1: Running Variable Normalization	1
+text	L1044 <p>	LLM-generated	1
+text	L1044 <p>	values (230+ distinct strings) are classified into ~10 canonical categories:	1
+text	L1046 <th>	Category	1
+text	L1046 <th>	Keywords	1
+text	L1048 <td>	employee, firm_size, headcount, fte, workers	1
+text	L1049 <td>	income, earnings, wage, salary, poverty, fpl, agi	1
+text	L1050 <td>	age, years old (excludes: acreage, stage, mileage)	1
+text	L1051 <td>	population, enrollment, students, residents	1
+text	L1052 <td>	property value, revenue, assets, receipts	1
+text	L1053 <td>	percent, rate, share, proportion	1
+text	L1057 <h4>	Stage 2: Cutoff Similarity (Fuzzy, 0–1 scale)	1
+text	L1059 <th>	Relative Difference	1
+text	L1059 <th>	Similarity	1
+text	L1061 <td>	Exact match	3
+text	L1065 <td>	No match	1
+text	L1068 <p>	Employee counts snap to “gravity” thresholds (15, 20, 25, 50, 100, 250, 500) within ±3.	1
+text	L1070 <h3#cm-families>	Cross-Jurisdiction Policy Families	1
+text	L1071 <p>	For each	1
+text	L1071 <p>	appearing in ≥ 2 jurisdictions:	1
+text	L1073 <li>	Collects all jurisdictions and date ranges	1
+text	L1074 <li>	Detects	1
+text	L1074 <strong>	staggered adoption	1
+text	L1074 <li>	(dates span > 1 year) → marks DID potential	1
+text	L1075 <li>	Sorted by number of jurisdictions (descending)	1
+text	L1082 <td>	All jurisdictions, all thresholds (model knowledge)	1
+text	L1083 <td>	Employer-size only, 9 states + federal	1
+text	L1084 <strong>	Cross-match	1
+text	L1084 <td>	All thresholds in DB, all jurisdictions	1
+text	L1087 <p>	The three layers are complementary: LLM catches confounds from model knowledge, the rule engine adds hardcoded federal/state thresholds, and cross-match discovers confounds	1
+text	L1087 <p>	policies already in the database.	1
+text	L1094 <h2>	Policy Topic Classification	1
+text	L1095 <p>	Every policy is classified into exactly	1
+text	L1095 <p>	of 19 substantive categories (plus a residual	1
+text	L1095 <p>	). Classification is by the bill’s	1
+text	L1095 <strong>	primary mechanism	1
+text	L1095 <p>	, not its downstream effects.	1
+text	L1098 <th>	Code	1
+text	L1100 <td>	Labor Market	1
+text	L1100 <td>	Employment rules, wages, worker protections, occupational licensing	1
+text	L1101 <td>	Taxation & Fiscal	1
+text	L1101 <td>	Tax rates, credits, deductions, enterprise zones, TIF	1
+text	L1102 <td>	Social Insurance	1
+text	L1102 <td>	UI, workers’ comp, disability, SNAP/TANF, state PFML funds	1
+text	L1103 <td>	Energy & Environment	1
+text	L1103 <td>	Emissions, renewables, cap-and-trade, pollution, climate	1
+text	L1104 <td>	Finance & Monetary	1
+text	L1104 <td>	Banking, lending caps, securities, fintech, crypto	1
+text	L1105 <td>	Product Market	1
+text	L1105 <td>	Business licensing, zoning, platform regulation, franchise	1
+text	L1106 <td>	Education	1
+text	L1106 <td>	K-12 funding, vouchers, higher ed, student loans, pre-K	1
+text	L1107 <td>	Public Health	1
+text	L1107 <td>	Health insurance, Medicaid, drug pricing, opioids, vaccines	1
+text	L1108 <td>	Criminal Justice	1
+text	L1108 <td>	Sentencing, policing, bail reform, guns, expungement	1
+text	L1109 <td>	Political Institutions	1
+text	L1109 <td>	Elections, redistricting, campaign finance, FOIA, term limits	1
+text	L1110 <td>	Technology & Data	1
+text	L1110 <td>	Privacy (CCPA), AI governance, broadband, biometrics	1
+text	L1111 <td>	Agriculture & Food	1
+text	L1111 <td>	Farm subsidies, food safety, pesticides, animal welfare	1
+text	L1112 <td>	Immigration	1
+text	L1112 <td>	Visas, enforcement, sanctuary, E-Verify, in-state tuition	1
+text	L1113 <td>	Transportation & Infrastructure	1
+text	L1113 <td>	Roads, transit, ports, vehicle registration	1
+text	L1114 <td>	Government Administration	1
+text	L1114 <td>	Agency operations, procedure, routine administrative bills	1
+text	L1115 <td>	Housing & Land Use	1
+text	L1115 <td>	Zoning, tenant protections, land use permitting	1
+text	L1116 <td>	Veterans & Military	1
+text	L1116 <td>	Veterans’ benefits, National Guard, military family policy	1
+text	L1117 <td>	Appropriations & Budget	1
+text	L1117 <td>	State budget bills, supplemental appropriations	1
+text	L1118 <td>	Trade & Commerce	1
+text	L1118 <td>	Tariffs, exports/imports, interstate commerce	1
+text	L1119 <td>	Other	1
+text	L1119 <td>	Policies that do not fit any category above	1
+text	L1123 <h3>	Key Boundary Rules	1
+text	L1125 <strong>	labor_market vs social_insurance:	1
+text	L1125 <li>	Employer-mandated paid leave → labor_market. State-run insurance fund (payroll tax → benefits) → social_insurance.	1
+text	L1126 <strong>	taxation_fiscal vs social_insurance:	1
+text	L1126 <li>	EITC expansions → taxation_fiscal (tax code). UI payroll tax changes → social_insurance.	1
+text	L1127 <strong>	public_health vs criminal_justice:	1
+text	L1127 <li>	Drug decriminalization/sentencing → criminal_justice. Opioid prescribing limits → public_health.	1
+text	L1128 <strong>	labor_market vs product_market:	1
+text	L1128 <li>	Occupational licensing of individuals (barbers, nurses) → labor_market. Business licensing for firms (dispensary permits) → product_market.	1
+text	L1129 <strong>	immigration vs labor_market:	1
+text	L1129 <li>	E-Verify mandates → immigration. General labor standards covering immigrant workers → labor_market.	1
+text	L1132 <h3>	Examples	1
+text	L1134 <th>	Bill	1
+text	L1134 <th>	Topic	1
+text	L1136 <td>	Worker classification (ABC test)	1
+text	L1137 <td>	Millionaire’s tax rate increase	1
+text	L1138 <td>	State PFML insurance fund	1
+text	L1139 <td>	Cap-and-trade program	1
+text	L1140 <td>	36% APR cap on consumer loans	1
+text	L1141 <td>	School voucher program	1
+text	L1142 <td>	Medicaid expansion	1
+text	L1143 <td>	Eliminating cash bail	1
+text	L1144 <td>	California Consumer Privacy Act	1
+text	L1145 <td>	Rideshare statewide preemption	1
+text	L1146 <td>	ME 2016 Question 5	1
+text	L1146 <td>	Ranked choice voting	1
+text	L1147 <td>	CA Proposition 12 (2018)	1
+text	L1147 <td>	Farm animal confinement standards	1
+text	L1148 <td>	Immigration enforcement	1
+text	L1159 <h3>	Current Database Coverage	1
+text	L1161 <strong>	Work in Progress.	1
+text	L1161 <p>	The database is under active development. Record counts, classifications, and scoring may change as we expand coverage, improve fulltext extraction, and refine LLM analysis. Expect periodic updates.	1
+text	L1164 <p>	The database currently contains	1
+text	L1164 <p>	LLM-analyzed policy records across 4 source families. Coverage will expand as additional sources and jurisdictions are processed.	1
+text	L1167 <th>	Includes	1
+text	L1167 <th>	LLM Analyzed	1
+text	L1167 <th>	Total Records	1
+text	L1167 <th>	Post-2016 Enacted	1
+text	L1167 <th>	Coverage	1
+text	L1169 <td>	State Legislation	1
+text	L1169 <td>	Open States (50 states + DC)	1
+text	L1170 <td>	Federal Regulations	1
+text	L1170 <td>	Federal Register, Regulations.gov, eCFR	1
+text	L1171 <td>	Federal Legislation	2
+text	L1171 <td>	GovInfo (bills, committee reports, public laws)	1
+text	L1172 <td>	State/Local Executive	1
+text	L1172 <td>	State Executive Orders	1
+text	L1173 <td>	Total	2
+text	L1176 <p>	Total Records and Post-2016 Enacted are source-corpus counts that have not been refreshed for the current analyzed set. The former Coverage ratio (LLM Analyzed / Post-2016 Enacted) is not shown: the analyzed set now also includes pre-2016 and non-enacted records. State Legislation covers all 50 states + DC.	1
+text	L1178 <h3>	US Policy / Bill Sources	1
+text	L1179 <p>	All 50 states + DC + federal. ~2 million bills in Open States bulk DB.	1
+text	L1181 <th>	Notes	2
+text	L1183 <td>	Federal API	5
+text	L1183 <td>	Congress.gov API	1
+text	L1183 <td>	Bills, CRS summaries. Requires	1
+text	L1184 <td>	Federal regulations. Optional (DEMO_KEY).	1
+text	L1185 <td>	US federal rules, proposed rules, executive orders.	1
+text	L1186 <td>	GovTrack	1
+text	L1186 <td>	Congress bills with votes, cosponsors, subject terms. 114th–119th Congress.	1
+text	L1187 <td>	ProPublica Congress	1
+text	L1187 <td>	Congress bills, votes, members. Free key required.	1
+text	L1188 <td>	Federal	1
+text	L1188 <td>	Cornell Law (LII)	1
+text	L1188 <td>	US Code legal references for federal policy context.	1
+text	L1189 <td>	State bulk	2
+text	L1189 <td>	Open States bulk DB	1
+text	L1189 <td>	PostgreSQL dump (~2M bills). 97.5% have version URLs; ~90% full-text fetch rate.	1
+text	L1190 <td>	State API	2
+text	L1190 <td>	Open States API	1
+text	L1190 <td>	Multi-state bills. Requires	1
+text	L1191 <td>	State Legislation DB	1
+text	L1191 <td>	Comprehensive US state legislation. All 50 states + DC.	1
+text	L1192 <td>	NY Open Legislation	1
+text	L1192 <td>	NY bills via	1
+text	L1192 <td>	API.	1
+text	L1193 <td>	State	1
+text	L1193 <td>	Executive Orders	1
+text	L1193 <td>	CA, NY, TX, FL, IL, PA, OH, MI, GA, WA, etc.	1
+text	L1197 <h4>	Full-Text Enrichment	1
+text	L1198 <p>	The pipeline fetches actual bill text (HTML or PDF) before LLM analysis. Without full text, the LLM only sees title + abstract. Coverage: ~90% of bills get full text (median 3,788 chars). Sources in priority order: DB version URL (81–87%), direct HTML scrape (3–5%), metadata URL construction (1–4%), URL pattern conversion (0–1%). ~9–11% fall back to title only.	1
+text	L1200 <h3>	International Sources	1
+text	L1200 <span>	— WIP	1
+text	L1202 <th>	Country	1
+text	L1204 <td>	UK Legislation + Parliament Bills	1
+text	L1204 <td>	Acts, Statutory Instruments, Commons/Lords bills	1
+text	L1205 <td>	EUR-Lex	1
+text	L1205 <td>	Regulations, directives, decisions	1
+text	L1206 <td>	Ireland	1
+text	L1206 <td>	Oireachtas API	1
+text	L1206 <td>	Irish Parliament bills	1
+text	L1207 <td>	France	1
+text	L1207 <td>	Assemblée nationale	1
+text	L1207 <td>	National Assembly legislative texts	1
+text	L1208 <td>	Germany	1
+text	L1208 <td>	Bundestag DIP	1
+text	L1208 <td>	Key required	2
+text	L1209 <td>	Canada	1
+text	L1209 <td>	Open Parliament	1
+text	L1209 <td>	Federal bills	1
+text	L1210 <td>	Australia	1
+text	L1210 <td>	Acts, Regulations	1
+text	L1211 <td>	New Zealand	1
+text	L1211 <td>	NZ Legislation	1
+text	L1211 <td>	Acts, Bills, Regulations	1
+text	L1212 <td>	Brazil	1
+text	L1212 <td>	Câmara dos Deputados	1
+text	L1212 <td>	Open data API	1
+text	L1213 <td>	Mexico	1
+text	L1213 <td>	Cámara de Diputados	1
+text	L1213 <td>	SIL legislative initiatives	1
+text	L1214 <td>	India	1
+text	L1214 <td>	PRS / Sansad	1
+text	L1214 <td>	Legislative Research	1
+text	L1215 <td>	Japan	1
+text	L1215 <td>	e-Gov Laws	1
+text	L1215 <td>	Laws and cabinet orders (XML)	1
+text	L1216 <td>	South Korea	1
+text	L1216 <td>	National Assembly	1
+text	L1217 <td>	South Africa	1
+text	L1217 <td>	PMG	1
+text	L1217 <td>	Parliamentary Monitoring Group	1
+text	L1218 <td>	International	1
+text	L1218 <td>	UN Treaties	1
+text	L1218 <td>	29 chapters	1
+text	L1222 <h3>	Research Datasets	1
+text	L1223 <p>	Common datasets include CPS, ACS, QCEW, BLS, IRS SOI, MEPS, IPEDS, and others. The LLM may recommend any relevant dataset based on the policy context — the list above is not exhaustive.	1
+text	L1230 <h2>	Validation: Cross-Model Evaluation	1
+text	L1232 <p>	The pipeline is validated on a 125-paper benchmark (113 DID + 17 RD; 5 papers use both designs, so 108 + 12 + 5 = 125 unique papers; sourced from 18 leading journals 2016–2025). Seven frontier models are compared, each run 3 times per bill with majority voting. The production model (Qwen 3.6 Plus) is selected for its highest accuracy and cost-effectiveness. Two independent LLM judges (GPT-5.4 and Gemini 3.1 Pro) rate accuracy.	1
+text	L1234 <h4>	DID Recall (125-paper benchmark, majority vote k=3)	1
+text	L1236 <th>	Track	1
+text	L1236 <th>	Detected	1
+text	L1236 <th>	Recall	1
+text	L1238 <strong>	Overall	1
+text	L1239 <td>	Economics	1
+text	L1240 <td>	Cross-disciplinary	1
+text	L1243 <strong>	RD detection recall:	1
+text	L1243 <p>	Of the 17 papers coded as using RD (12 RD + 5 Both), the pipeline correctly identifies an RD component in 15 cases, yielding an RD recall of	1
+text	L1245 <h4>	Ablation Study (125-paper benchmark)	1
+text	L1247 <th>	Input	1
+text	L1247 <th>	DID Recall	1
+text	L1249 <td>	Title-only	1
+text	L1249 <td>	Title + structured prompt	1
+text	L1250 <td>	Naive	1
+text	L1250 <td>	Full text + minimal prompt	1
+text	L1251 <strong>	Full	1
+text	L1251 <td>	Full text + structured prompt	1
+text	L1254 <p>	The structured prompt adds +28.3 pp over the naive baseline; full-text input adds +18.5 pp over titles alone.	1
+text	L1256 <h3#val-score-dist>	Score Distribution by Model	1
+text	L1257 <p>	Composite score distributions across seven models on 100 stratified bills. All models show a bimodal pattern (~1.0 for low-feasibility and ~3.0–3.5 for viable candidates).	1
+attr	L1259 @alt <img>	Composite Score Distribution by Model (violin plot)	1
+text	L1263 <p>	Pairwise agreement rates between models on key classification decisions.	1
+attr	L1265 @alt <img>	Cross-model agreement matrix	1
+text	L1268 <h3#val-stability>	Stability (Qwen 3.6 Plus, prompt	1
+text	L1268 <h3#val-stability>	, 100 bills × 5 runs)	1
+text	L1270 <h4>	Numeric Fields (threshold: mean SD ≤ 0.45)	1
+text	L1272 <strong>	Why SD?	1
+text	L1272 <p>	We measure numeric field stability using mean within-bill standard deviation across 5 repeated runs. SD is on the same scale as the scores (1–5): a threshold of SD ≤ 0.45 means that approximately 90% of the time, the model’s score for a given bill stays within ±1 tier of its mean. We prefer SD over ICC or Krippendorff’s α because our interest is in	1
+text	L1272 <p>	reproducibility (does the same bill receive the same score?) rather than	1
+text	L1272 <p>	reliability (can the model discriminate between bills?). For categorical fields, we use Fleiss’ κ, which adjusts for chance agreement.	1
+text	L1275 <th>	Mean SD	1
+text	L1275 <th>	±1.0 agree	1
+text	L1275 <th>	Pass	2
+text	L1286 <h4>	Categorical Fields (threshold: Fleiss’ κ ≥ 0.4)	1
+text	L1288 <th>	Majority agree	1
+text	L1288 <th>	Fleiss’ κ	1
+text	L1301 <p>	All 6 numeric fields pass the SD ≤ 0.45 threshold; all 9 categorical fields now clear κ ≥ 0.4. The	1
+text	L1301 <p>	prompt (Pydantic retry wrapper + few-shot + DID schema list-ification) roughly halved numeric SDs and lifted RD-nested κ from 0.12–0.20 to 0.61–0.80 vs. the prior prompt revision.	1
+text	L1301 <p>	remains the weakest field due to free-text synonym variation (e.g., “civil_service_probation” vs. “federal_probationary_period”); a post-processing alias table normalizes the most common variants.	1
+text	L1304 <h3#val-accuracy>	Cross-Model Accuracy (Claude Opus 4 Judge)	1
+text	L1305 <p>	Each model’s output is independently rated by Claude Opus 4 on a 1–5 scale across 7 key fields per bill (45 stratified bills, 315 ratings per model).	1
+text	L1307 <th>	Model	1
+text	L1307 <th>	Claude Opus 4 Judge (Avg Rating)	1
+text	L1309 <strong>	Qwen 3.6 Plus	1
+text	L1310 <td>	Grok 4.1 Fast	1
+text	L1311 <td>	DeepSeek V3.2	1
+text	L1312 <td>	Xiaomi MiMo V2 Flash	1
+text	L1314 <td>	MiniMax 2.5	1
+text	L1315 <td>	MiniMax 2.7	1
+text	L1319 <p>	Claude Opus 4 serves as an independent judge (not one of the evaluated models), eliminating self-evaluation bias. Qwen 3.6 Plus achieves the highest accuracy (4.32) and is the current production model.	1
+text	L1330 <li>	Sterne, J.A.C. et al. (2016). “ROBINS-I: a tool for assessing risk of bias in non-randomised studies of interventions.”	1
+text	L1330 <a>	Link	4
+text	L1331 <li>	Lee, D.S. & Lemieux, T. (2010). “Regression Discontinuity Designs in Economics.”	1
+text	L1331 <em>	Journal of Economic Literature	1
+text	L1332 <li>	Roth, J. et al. (2023). “What’s Trending in Difference-in-Differences?”	1
+text	L1332 <em>	Journal of Econometrics	4
+text	L1334 <li>	Cattaneo, M.D., Idrobo, N. & Titiunik, R. (2020).	1
+text	L1334 <em>	A Practical Introduction to Regression Discontinuity Designs.	1
+text	L1334 <li>	Cambridge University Press.	1
+text	L1335 <li>	Angrist, J.D. & Pischke, J.-S. (2010). “The Credibility Revolution in Empirical Economics.”	1
+text	L1335 <em>	Journal of Economic Perspectives	1
+text	L1336 <li>	Roth, J. (2022). “Pretest with Caution: Event-Study Estimates after Testing for Parallel Trends.”	1
+text	L1336 <em>	American Economic Review: Insights	1
+text	L1337 <li>	Rambachan, A. & Roth, J. (2023). “A More Credible Approach to Parallel Trends.”	1
+text	L1337 <em>	Review of Economic Studies	1
+text	L1338 <li>	Gelman, A. & Imbens, G. (2019). “Why High-Order Polynomials Should Not Be Used in Regression Discontinuity Designs.”	1
+text	L1338 <em>	Journal of Business & Economic Statistics	1
+text	L1339 <li>	Goodman-Bacon, A. (2021). “Difference-in-Differences with Variation in Treatment Timing.”	1
+text	L1340 <li>	Callaway, B. & Sant’Anna, P.H.C. (2021). “Difference-in-Differences with Multiple Time Periods.”	1
+text	L1341 <li>	Sun, L. & Abraham, S. (2021). “Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects.”	1
+text	L1347 <footer>	Open to any collaborations and PhD opportunities!	1
+text	L1347 <a>	Get in touch: fangyu@usc.edu	1
+text	L1347 <footer>	Author:	1
+text	L1347 <footer>	· MIT License	1

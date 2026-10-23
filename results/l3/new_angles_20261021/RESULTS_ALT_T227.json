@@ -1,0 +1,114 @@
+{
+ "stamp": {
+  "rule_id": "EX-1",
+  "plan": "docs/plans/l3-meta/PREPLAN_T232_20261021.md",
+  "plan_sha256": "1cbb13afe20025691b2ed3fb3311581751874e9fb587470d3d0d5989f6efa68a",
+  "code_sha256": {
+   "na_core.py": "8ac04998c1fe3115ec25dde3b74e616954c5bf07697d507105bbde3699ba5405",
+   "run_new_angles.py": "945b08da6dcb9c30a40aa533b4bebc846d8a6558ef0a17ee1473ebfdeb76358b"
+  },
+  "run_utc": "2026-10-21T23:04:17Z"
+ },
+ "result": {
+  "n_designs_with_alt_cells": 53,
+  "note": "T227 Callaway-Sant'Anna-style cells with the opposite comparison pool, same scale, same classifier, no placebo reference",
+  "q1": {
+   "n_designs_valid": 45,
+   "primary": {
+    "n": 45,
+    "share_late_better": 0.5555555555555556,
+    "median_D": 0.17503094555807652,
+    "null_share_band": [
+     0.35555555555555557,
+     0.6444444444444445
+    ],
+    "null_median_band": [
+     -0.5452259934365161,
+     0.5887528671717746
+    ],
+    "null_share_mean": 0.5021016775730729,
+    "null_median_mean": 0.006953164693589868,
+    "p_share": 0.5202959408118376,
+    "p_median": 0.5700859828034394,
+    "outside_both_bands": false
+   },
+   "same_sign_share_of_designs_in_majority_direction": 0.5555555555555556,
+   "direction": "late_better",
+   "pattern": false
+  },
+  "q2": {
+   "n_eligible": 48,
+   "overall_counts": {
+    "fade": 1,
+    "hold": 9,
+    "grow": 5,
+    "unclear": 33
+   },
+   "by_domain_counts": {
+    "crime": {
+     "fade": 0,
+     "hold": 4,
+     "grow": 0,
+     "unclear": 6,
+     "n": 10
+    },
+    "education": {
+     "fade": 0,
+     "hold": 0,
+     "grow": 0,
+     "unclear": 2,
+     "n": 2
+    },
+    "environment": {
+     "fade": 0,
+     "hold": 0,
+     "grow": 0,
+     "unclear": 3,
+     "n": 3
+    },
+    "health": {
+     "fade": 1,
+     "hold": 3,
+     "grow": 5,
+     "unclear": 7,
+     "n": 16
+    },
+    "labor": {
+     "fade": 0,
+     "hold": 1,
+     "grow": 0,
+     "unclear": 8,
+     "n": 9
+    },
+    "other": {
+     "fade": 0,
+     "hold": 0,
+     "grow": 0,
+     "unclear": 5,
+     "n": 5
+    },
+    "public_finance": {
+     "fade": 0,
+     "hold": 1,
+     "grow": 0,
+     "unclear": 2,
+     "n": 3
+    }
+   },
+   "overall_fade_share": 0.020833333333333332,
+   "overall_grow_share": 0.10416666666666667,
+   "median_late_over_early_ratio_among_effect_designs": 1.5244931338110626,
+   "label_agreement": {
+    "n_both": 48,
+    "same_label": 45,
+    "crosstab": {
+     "hold->hold": 7,
+     "unclear->unclear": 33,
+     "grow->grow": 5,
+     "unclear->hold": 2,
+     "unclear->fade": 1
+    }
+   }
+  }
+ }
+}

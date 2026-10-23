@@ -1,0 +1,3808 @@
+{
+ "generated": "2026-09-30T20:10:54+00:00",
+ "total": 483414,
+ "stages": [
+  {
+   "key": "all",
+   "label_en": "All policies",
+   "label_zh": "全部政策",
+   "definition": "Every unique policy_id in the 483k policy DB (duplicate ids collapsed, first row kept).",
+   "n_in": 483414,
+   "n_out": 483414,
+   "standalone_pass": 483414,
+   "n_dropped_missing": 0,
+   "n_dropped_judged": 0,
+   "n_dropped_unattributed": 0
+  },
+  {
+   "key": "strict_enacted",
+   "label_en": "Strictly enacted",
+   "label_zh": "严格已颁布",
+   "definition": "G1: status is 'enacted' and, for federal legislation, the id must be a public law (PLAW/publ), not a BILLS-* bill version.",
+   "n_in": 483414,
+   "n_out": 100311,
+   "standalone_pass": 100311,
+   "n_dropped_missing": 354107,
+   "n_dropped_judged": 28996,
+   "n_dropped_unattributed": 0
+  },
+  {
+   "key": "no_wave",
+   "label_en": "No adoption wave",
+   "label_zh": "无多州采纳潮",
+   "definition": "wave_flag = 0: fewer than 3 distinct states enacted a policy in the same family within one year either side (contaminated-controls risk for single-state DID).",
+   "n_in": 100311,
+   "n_out": 94505,
+   "standalone_pass": 476494,
+   "n_dropped_missing": 0,
+   "n_dropped_judged": 5806,
+   "n_dropped_unattributed": 0
+  },
+  {
+   "key": "no_covid",
+   "label_en": "Outside COVID window",
+   "label_zh": "避开新冠窗口",
+   "definition": "No covid_window confound flag (policy date 2020-01-01 to 2021-12-31); the only confound flag that blocks viable_strict.",
+   "n_in": 94505,
+   "n_out": 87545,
+   "standalone_pass": 453333,
+   "n_dropped_missing": 0,
+   "n_dropped_judged": 6960,
+   "n_dropped_unattributed": 0
+  },
+  {
+   "key": "data_ok",
+   "label_en": "Public data linkable",
+   "label_zh": "公开数据可得",
+   "definition": "G2: data_verdict is public_ok or mixed, i.e. the free-text datasets field matches the curated public-microdata registry (empty, unmatched_only and restricted_only fail).",
+   "n_in": 87545,
+   "n_out": 27808,
+   "standalone_pass": 94098,
+   "n_dropped_missing": 59737,
+   "n_dropped_judged": 0,
+   "n_dropped_unattributed": 0
+  },
+  {
+   "key": "min_gate",
+   "label_en": "Min-gate ≥ 3",
+   "label_zh": "最小门槛 ≥ 3",
+   "definition": "min_gate >= 3: the lowest of the four LLM sub-scores (significance, identification, treatment intensity, data feasibility) is at least 3; the binding constraint, not the mean.",
+   "n_in": 27808,
+   "n_out": 7781,
+   "standalone_pass": 34069,
+   "n_dropped_missing": 0,
+   "n_dropped_judged": 20027,
+   "n_dropped_unattributed": 0
+  }
+ ],
+ "by_source_family": {
+  "Federal Regulations": {
+   "n": [
+    315727,
+    73203,
+    73203,
+    69237,
+    22855,
+    5994
+   ],
+   "n_dropped_missing": [
+    0,
+    237199,
+    0,
+    0,
+    46382,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    5325,
+    0,
+    3966,
+    0,
+    16861
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation": {
+   "n": [
+    125919,
+    902,
+    902,
+    833,
+    228,
+    69
+   ],
+   "n_dropped_missing": [
+    0,
+    101388,
+    0,
+    0,
+    605,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    23629,
+    0,
+    69,
+    0,
+    159
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation": {
+   "n": [
+    41496,
+    26194,
+    20388,
+    17464,
+    4722,
+    1717
+   ],
+   "n_dropped_missing": [
+    0,
+    15260,
+    0,
+    0,
+    12742,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    42,
+    5806,
+    2924,
+    0,
+    3005
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive": {
+   "n": [
+    272,
+    12,
+    12,
+    11,
+    3,
+    1
+   ],
+   "n_dropped_missing": [
+    0,
+    260,
+    0,
+    0,
+    8,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    2
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "by_topic_top8": {
+  "government_administration": {
+   "n": [
+    124179,
+    13719,
+    12045,
+    11277,
+    791,
+    89
+   ],
+   "n_dropped_missing": [
+    0,
+    108846,
+    0,
+    0,
+    10486,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1614,
+    1674,
+    768,
+    0,
+    702
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "other": {
+   "n": [
+    83265,
+    19386,
+    17012,
+    15196,
+    1940,
+    389
+   ],
+   "n_dropped_missing": [
+    0,
+    62320,
+    0,
+    0,
+    13256,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1559,
+    2374,
+    1816,
+    0,
+    1551
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "energy_environment": {
+   "n": [
+    52059,
+    12105,
+    12082,
+    11358,
+    5335,
+    2021
+   ],
+   "n_dropped_missing": [
+    0,
+    36486,
+    0,
+    0,
+    6023,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    3468,
+    23,
+    724,
+    0,
+    3314
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "transportation_infrastructure": {
+   "n": [
+    39727,
+    15714,
+    15700,
+    15036,
+    5478,
+    976
+   ],
+   "n_dropped_missing": [
+    0,
+    23599,
+    0,
+    0,
+    9558,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    414,
+    14,
+    664,
+    0,
+    4502
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "trade_commerce": {
+   "n": [
+    26496,
+    4582,
+    4582,
+    4452,
+    286,
+    134
+   ],
+   "n_dropped_missing": [
+    0,
+    15532,
+    0,
+    0,
+    4166,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    6382,
+    0,
+    130,
+    0,
+    152
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "public_health": {
+   "n": [
+    21155,
+    4187,
+    3999,
+    3571,
+    1457,
+    548
+   ],
+   "n_dropped_missing": [
+    0,
+    14509,
+    0,
+    0,
+    2114,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    2459,
+    188,
+    428,
+    0,
+    909
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "finance_monetary": {
+   "n": [
+    20543,
+    3202,
+    3149,
+    2856,
+    1342,
+    402
+   ],
+   "n_dropped_missing": [
+    0,
+    16602,
+    0,
+    0,
+    1514,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    739,
+    53,
+    293,
+    0,
+    940
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "agriculture_food": {
+   "n": [
+    18742,
+    8138,
+    8129,
+    7668,
+    3740,
+    684
+   ],
+   "n_dropped_missing": [
+    0,
+    10336,
+    0,
+    0,
+    3928,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    268,
+    9,
+    461,
+    0,
+    3056
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "drop_reasons": [
+  {
+   "stage_key": "strict_enacted",
+   "reason": "status_unknown",
+   "kind": "missing",
+   "n": 354035
+  },
+  {
+   "stage_key": "strict_enacted",
+   "reason": "bill_version_not_law",
+   "kind": "judged",
+   "n": 22552
+  },
+  {
+   "stage_key": "strict_enacted",
+   "reason": "status_not_enacted",
+   "kind": "judged",
+   "n": 6444
+  },
+  {
+   "stage_key": "strict_enacted",
+   "reason": "dup_id_layer_conflict",
+   "kind": "missing",
+   "n": 72
+  },
+  {
+   "stage_key": "no_wave",
+   "reason": "wave_flagged",
+   "kind": "judged",
+   "n": 5806
+  },
+  {
+   "stage_key": "no_covid",
+   "reason": "covid_window",
+   "kind": "judged",
+   "n": 6960
+  },
+  {
+   "stage_key": "data_ok",
+   "reason": "data_empty",
+   "kind": "missing",
+   "n": 49473
+  },
+  {
+   "stage_key": "data_ok",
+   "reason": "data_unmatched_only",
+   "kind": "missing",
+   "n": 10264
+  },
+  {
+   "stage_key": "min_gate",
+   "reason": "mg_1",
+   "kind": "judged",
+   "n": 10613
+  },
+  {
+   "stage_key": "min_gate",
+   "reason": "mg_2",
+   "kind": "judged",
+   "n": 9413
+  },
+  {
+   "stage_key": "min_gate",
+   "reason": "mg_0",
+   "kind": "judged",
+   "n": 1
+  }
+ ],
+ "reason_labels": {
+  "status_not_enacted": {
+   "en": "Status not 'enacted' (proposed/other)",
+   "zh": "状态非“已颁布”(提案等)",
+   "kind": "judged",
+   "kind_why": "Status is present (e.g. proposed) and is not 'enacted'."
+  },
+  "status_unknown": {
+   "en": "Status unknown or blank",
+   "zh": "状态未知或为空",
+   "kind": "missing",
+   "kind_why": "Status field is blank or 'unknown': enactment was never determined."
+  },
+  "bill_version_not_law": {
+   "en": "Federal BILLS-* text, not a public law",
+   "zh": "联邦 BILLS-* 法案文本,非公法",
+   "kind": "judged",
+   "kind_why": "The id pattern was evaluated: BILLS-* is bill text, not a public law."
+  },
+  "no_strict_record": {
+   "en": "No G1 record",
+   "zh": "无 G1 记录",
+   "kind": "missing",
+   "kind_why": "No G1 record exists for this id, so enactment was never evaluated."
+  },
+  "dup_id_layer_conflict": {
+   "en": "Duplicate id: layers disagree",
+   "zh": "重复 ID:各层结论不一致",
+   "kind": "missing",
+   "kind_why": "Duplicate id: the G1 layer says enacted, the merged view says not; unresolved, not guessed."
+  },
+  "wave_flagged": {
+   "en": "Part of a ≥3-state adoption wave",
+   "zh": "属于 ≥3 州采纳潮",
+   "kind": "judged",
+   "kind_why": "Rule evaluated: >=3 states enacted in the same family within a year either side."
+  },
+  "covid_window": {
+   "en": "Dated inside the COVID window",
+   "zh": "日期落在新冠窗口内",
+   "kind": "judged",
+   "kind_why": "Rule evaluated on a parsed date that lies in 2020-2021."
+  },
+  "data_empty": {
+   "en": "No datasets named",
+   "zh": "未列出数据集",
+   "kind": "missing",
+   "kind_why": "No datasets named in the datasets field."
+  },
+  "data_unmatched_only": {
+   "en": "Datasets not in public registry",
+   "zh": "数据集不在公开登记表中",
+   "kind": "missing",
+   "kind_why": "Datasets are named but none links to the curated registry; accessibility is unresolved, not judged."
+  },
+  "data_restricted_only": {
+   "en": "Restricted-access data only",
+   "zh": "仅限受限数据",
+   "kind": "judged",
+   "kind_why": "Datasets resolved, and all are restricted-access."
+  },
+  "mg_missing": {
+   "en": "Sub-scores missing, min-gate undefined",
+   "zh": "子分缺失,无法计算",
+   "kind": "missing",
+   "kind_why": "At least one of the four sub-scores is absent or non-numeric; min-gate undefined."
+  },
+  "mg_0": {
+   "en": "Weakest sub-score = 0",
+   "zh": "最弱子分 = 0",
+   "kind": "judged",
+   "kind_why": "All four sub-scores present; the weakest is below the threshold of 3."
+  },
+  "mg_1": {
+   "en": "Weakest sub-score = 1",
+   "zh": "最弱子分 = 1",
+   "kind": "judged",
+   "kind_why": "All four sub-scores present; the weakest is below the threshold of 3."
+  },
+  "mg_2": {
+   "en": "Weakest sub-score = 2",
+   "zh": "最弱子分 = 2",
+   "kind": "judged",
+   "kind_why": "All four sub-scores present; the weakest is below the threshold of 3."
+  }
+ },
+ "cross": {
+  "*||*": {
+   "n": [
+    483414,
+    100311,
+    94505,
+    87545,
+    27808,
+    7781
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      10613
+     ],
+     [
+      "mg_2",
+      9413
+     ],
+     [
+      "mg_0",
+      1
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      49473
+     ],
+     [
+      "data_unmatched_only",
+      10264
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      6960
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      5806
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      354035
+     ],
+     [
+      "bill_version_not_law",
+      22552
+     ],
+     [
+      "status_not_enacted",
+      6444
+     ],
+     [
+      "dup_id_layer_conflict",
+      72
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    354107,
+    0,
+    0,
+    59737,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    28996,
+    5806,
+    6960,
+    0,
+    20027
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||finance_monetary": {
+   "n": [
+    20543,
+    3202,
+    3149,
+    2856,
+    1342,
+    402
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      1014
+     ],
+     [
+      "data_unmatched_only",
+      500
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      523
+     ],
+     [
+      "mg_2",
+      417
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      293
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      53
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      16599
+     ],
+     [
+      "bill_version_not_law",
+      496
+     ],
+     [
+      "status_not_enacted",
+      243
+     ],
+     [
+      "dup_id_layer_conflict",
+      3
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    16602,
+    0,
+    0,
+    1514,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    739,
+    53,
+    293,
+    0,
+    940
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||*": {
+   "n": [
+    125919,
+    902,
+    902,
+    833,
+    228,
+    69
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      83
+     ],
+     [
+      "mg_2",
+      76
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      527
+     ],
+     [
+      "data_unmatched_only",
+      78
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      69
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      101388
+     ],
+     [
+      "bill_version_not_law",
+      22552
+     ],
+     [
+      "status_not_enacted",
+      1077
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    101388,
+    0,
+    0,
+    605,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    23629,
+    0,
+    69,
+    0,
+    159
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||finance_monetary": {
+   "n": [
+    3655,
+    38,
+    38,
+    36,
+    20,
+    11
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      11
+     ],
+     [
+      "data_unmatched_only",
+      5
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      7
+     ],
+     [
+      "mg_2",
+      2
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      2
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      3101
+     ],
+     [
+      "bill_version_not_law",
+      496
+     ],
+     [
+      "status_not_enacted",
+      20
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    3101,
+    0,
+    0,
+    16,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    516,
+    0,
+    2,
+    0,
+    9
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||energy_environment": {
+   "n": [
+    52059,
+    12105,
+    12082,
+    11358,
+    5335,
+    2021
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      1880
+     ],
+     [
+      "mg_2",
+      1434
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      4685
+     ],
+     [
+      "data_unmatched_only",
+      1338
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      724
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      36483
+     ],
+     [
+      "status_not_enacted",
+      2713
+     ],
+     [
+      "bill_version_not_law",
+      755
+     ],
+     [
+      "dup_id_layer_conflict",
+      3
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      23
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    36486,
+    0,
+    0,
+    6023,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    3468,
+    23,
+    724,
+    0,
+    3314
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||energy_environment": {
+   "n": [
+    7179,
+    54,
+    54,
+    54,
+    20,
+    6
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      8
+     ],
+     [
+      "mg_2",
+      6
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      30
+     ],
+     [
+      "data_unmatched_only",
+      4
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      6234
+     ],
+     [
+      "bill_version_not_law",
+      755
+     ],
+     [
+      "status_not_enacted",
+      136
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    6234,
+    0,
+    0,
+    34,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    891,
+    0,
+    0,
+    0,
+    14
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||other": {
+   "n": [
+    83265,
+    19386,
+    17012,
+    15196,
+    1940,
+    389
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_2",
+      794
+     ],
+     [
+      "mg_1",
+      757
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      11994
+     ],
+     [
+      "data_unmatched_only",
+      1262
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      1816
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      2374
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      62294
+     ],
+     [
+      "status_not_enacted",
+      977
+     ],
+     [
+      "bill_version_not_law",
+      582
+     ],
+     [
+      "dup_id_layer_conflict",
+      26
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    62320,
+    0,
+    0,
+    13256,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1559,
+    2374,
+    1816,
+    0,
+    1551
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||other": {
+   "n": [
+    23997,
+    267,
+    267,
+    245,
+    16,
+    1
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      9
+     ],
+     [
+      "mg_2",
+      6
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      218
+     ],
+     [
+      "data_unmatched_only",
+      11
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      22
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      22810
+     ],
+     [
+      "bill_version_not_law",
+      582
+     ],
+     [
+      "status_not_enacted",
+      338
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    22810,
+    0,
+    0,
+    229,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    920,
+    0,
+    22,
+    0,
+    15
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||agriculture_food": {
+   "n": [
+    18742,
+    8138,
+    8129,
+    7668,
+    3740,
+    684
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      1913
+     ],
+     [
+      "mg_2",
+      1143
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      2184
+     ],
+     [
+      "data_unmatched_only",
+      1744
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      461
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      9
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      10336
+     ],
+     [
+      "bill_version_not_law",
+      199
+     ],
+     [
+      "status_not_enacted",
+      69
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    10336,
+    0,
+    0,
+    3928,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    268,
+    9,
+    461,
+    0,
+    3056
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||agriculture_food": {
+   "n": [
+    2342,
+    18,
+    18,
+    17,
+    5,
+    2
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_2",
+      2
+     ],
+     [
+      "mg_1",
+      1
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      11
+     ],
+     [
+      "data_unmatched_only",
+      1
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      1
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      2115
+     ],
+     [
+      "bill_version_not_law",
+      199
+     ],
+     [
+      "status_not_enacted",
+      10
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    2115,
+    0,
+    0,
+    12,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    209,
+    0,
+    1,
+    0,
+    3
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||*": {
+   "n": [
+    315727,
+    73203,
+    73203,
+    69237,
+    22855,
+    5994
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      9616
+     ],
+     [
+      "mg_2",
+      7245
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      37539
+     ],
+     [
+      "data_unmatched_only",
+      8843
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      3966
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      237199
+     ],
+     [
+      "status_not_enacted",
+      5325
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    237199,
+    0,
+    0,
+    46382,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    5325,
+    0,
+    3966,
+    0,
+    16861
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||other": {
+   "n": [
+    44900,
+    10161,
+    10161,
+    9467,
+    1551,
+    313
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      655
+     ],
+     [
+      "mg_2",
+      583
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      6910
+     ],
+     [
+      "data_unmatched_only",
+      1006
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      694
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      34113
+     ],
+     [
+      "status_not_enacted",
+      626
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    34113,
+    0,
+    0,
+    7916,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    626,
+    0,
+    694,
+    0,
+    1238
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||public_health": {
+   "n": [
+    21155,
+    4187,
+    3999,
+    3571,
+    1457,
+    548
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_2",
+      510
+     ],
+     [
+      "mg_1",
+      399
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      1532
+     ],
+     [
+      "data_unmatched_only",
+      582
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      428
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      188
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      14498
+     ],
+     [
+      "bill_version_not_law",
+      2129
+     ],
+     [
+      "status_not_enacted",
+      330
+     ],
+     [
+      "dup_id_layer_conflict",
+      11
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    14509,
+    0,
+    0,
+    2114,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    2459,
+    188,
+    428,
+    0,
+    909
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||public_health": {
+   "n": [
+    9618,
+    40,
+    40,
+    37,
+    22,
+    10
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_2",
+      7
+     ],
+     [
+      "mg_1",
+      5
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_unmatched_only",
+      11
+     ],
+     [
+      "data_empty",
+      4
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      3
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      7409
+     ],
+     [
+      "bill_version_not_law",
+      2129
+     ],
+     [
+      "status_not_enacted",
+      40
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    7409,
+    0,
+    0,
+    15,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    2169,
+    0,
+    3,
+    0,
+    12
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||energy_environment": {
+   "n": [
+    43771,
+    11220,
+    11220,
+    10613,
+    5033,
+    1900
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      4341
+     ],
+     [
+      "data_unmatched_only",
+      1239
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      1823
+     ],
+     [
+      "mg_2",
+      1310
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      607
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      29975
+     ],
+     [
+      "status_not_enacted",
+      2576
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    29975,
+    0,
+    0,
+    5580,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    2576,
+    0,
+    607,
+    0,
+    3133
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||public_health": {
+   "n": [
+    8526,
+    2300,
+    2300,
+    2141,
+    754,
+    255
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      284
+     ],
+     [
+      "mg_2",
+      215
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      913
+     ],
+     [
+      "data_unmatched_only",
+      474
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      159
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      5937
+     ],
+     [
+      "status_not_enacted",
+      289
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    5937,
+    0,
+    0,
+    1387,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    289,
+    0,
+    159,
+    0,
+    499
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||agriculture_food": {
+   "n": [
+    16053,
+    7874,
+    7874,
+    7449,
+    3658,
+    662
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      1892
+     ],
+     [
+      "mg_2",
+      1104
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      2055
+     ],
+     [
+      "data_unmatched_only",
+      1736
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      425
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      8120
+     ],
+     [
+      "status_not_enacted",
+      59
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    8120,
+    0,
+    0,
+    3791,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    59,
+    0,
+    425,
+    0,
+    2996
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||finance_monetary": {
+   "n": [
+    16034,
+    2614,
+    2614,
+    2393,
+    1168,
+    343
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      825
+     ],
+     [
+      "data_unmatched_only",
+      400
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      488
+     ],
+     [
+      "mg_2",
+      337
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      221
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      13198
+     ],
+     [
+      "status_not_enacted",
+      222
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    13198,
+    0,
+    0,
+    1225,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    222,
+    0,
+    221,
+    0,
+    825
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||government_administration": {
+   "n": [
+    124179,
+    13719,
+    12045,
+    11277,
+    791,
+    89
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      9592
+     ],
+     [
+      "data_unmatched_only",
+      894
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      475
+     ],
+     [
+      "mg_2",
+      227
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      768
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      1674
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      108843
+     ],
+     [
+      "bill_version_not_law",
+      1152
+     ],
+     [
+      "status_not_enacted",
+      462
+     ],
+     [
+      "dup_id_layer_conflict",
+      3
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    108846,
+    0,
+    0,
+    10486,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1614,
+    1674,
+    768,
+    0,
+    702
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||government_administration": {
+   "n": [
+    99442,
+    10187,
+    10187,
+    9684,
+    658,
+    79
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      8229
+     ],
+     [
+      "data_unmatched_only",
+      797
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      409
+     ],
+     [
+      "mg_2",
+      170
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      503
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      88881
+     ],
+     [
+      "status_not_enacted",
+      374
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    88881,
+    0,
+    0,
+    9026,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    374,
+    0,
+    503,
+    0,
+    579
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||transportation_infrastructure": {
+   "n": [
+    39727,
+    15714,
+    15700,
+    15036,
+    5478,
+    976
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      8908
+     ],
+     [
+      "data_unmatched_only",
+      650
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      2358
+     ],
+     [
+      "mg_2",
+      2144
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      664
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      14
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      23599
+     ],
+     [
+      "status_not_enacted",
+      251
+     ],
+     [
+      "bill_version_not_law",
+      163
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    23599,
+    0,
+    0,
+    9558,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    414,
+    14,
+    664,
+    0,
+    4502
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||transportation_infrastructure": {
+   "n": [
+    36008,
+    15505,
+    15505,
+    14853,
+    5392,
+    957
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      8828
+     ],
+     [
+      "data_unmatched_only",
+      633
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      2331
+     ],
+     [
+      "mg_2",
+      2104
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      652
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      20267
+     ],
+     [
+      "status_not_enacted",
+      236
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    20267,
+    0,
+    0,
+    9461,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    236,
+    0,
+    652,
+    0,
+    4435
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "*||trade_commerce": {
+   "n": [
+    26496,
+    4582,
+    4582,
+    4452,
+    286,
+    134
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      2694
+     ],
+     [
+      "data_unmatched_only",
+      1472
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      81
+     ],
+     [
+      "mg_1",
+      71
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      130
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      15532
+     ],
+     [
+      "bill_version_not_law",
+      5583
+     ],
+     [
+      "status_not_enacted",
+      799
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    15532,
+    0,
+    0,
+    4166,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    6382,
+    0,
+    130,
+    0,
+    152
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Regulations||trade_commerce": {
+   "n": [
+    18635,
+    4566,
+    4566,
+    4436,
+    280,
+    132
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      2691
+     ],
+     [
+      "data_unmatched_only",
+      1465
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      79
+     ],
+     [
+      "mg_1",
+      69
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      130
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      13448
+     ],
+     [
+      "status_not_enacted",
+      621
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    13448,
+    0,
+    0,
+    4156,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    621,
+    0,
+    130,
+    0,
+    148
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||government_administration": {
+   "n": [
+    18679,
+    170,
+    170,
+    157,
+    4,
+    0
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      145
+     ],
+     [
+      "data_unmatched_only",
+      8
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      13
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      3
+     ],
+     [
+      "mg_2",
+      1
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      17274
+     ],
+     [
+      "bill_version_not_law",
+      1152
+     ],
+     [
+      "status_not_enacted",
+      83
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    17274,
+    0,
+    0,
+    153,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1235,
+    0,
+    13,
+    0,
+    4
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||trade_commerce": {
+   "n": [
+    7844,
+    13,
+    13,
+    13,
+    5,
+    1
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_unmatched_only",
+      6
+     ],
+     [
+      "data_empty",
+      2
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      2
+     ],
+     [
+      "mg_1",
+      2
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "bill_version_not_law",
+      5583
+     ],
+     [
+      "status_unknown",
+      2070
+     ],
+     [
+      "status_not_enacted",
+      178
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    2070,
+    0,
+    0,
+    8,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    5761,
+    0,
+    0,
+    0,
+    4
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "Federal Legislation||transportation_infrastructure": {
+   "n": [
+    3180,
+    14,
+    14,
+    14,
+    3,
+    1
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_1",
+      2
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      2988
+     ],
+     [
+      "bill_version_not_law",
+      163
+     ],
+     [
+      "status_not_enacted",
+      15
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      10
+     ],
+     [
+      "data_unmatched_only",
+      1
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    2988,
+    0,
+    0,
+    11,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    178,
+    0,
+    0,
+    0,
+    2
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||*": {
+   "n": [
+    41496,
+    26194,
+    20388,
+    17464,
+    4722,
+    1717
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      11400
+     ],
+     [
+      "data_unmatched_only",
+      1342
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      5806
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      2091
+     ],
+     [
+      "mg_1",
+      913
+     ],
+     [
+      "mg_0",
+      1
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      2924
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      15188
+     ],
+     [
+      "dup_id_layer_conflict",
+      72
+     ],
+     [
+      "status_not_enacted",
+      42
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    15260,
+    0,
+    0,
+    12742,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    42,
+    5806,
+    2924,
+    0,
+    3005
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||other": {
+   "n": [
+    14354,
+    8958,
+    6584,
+    5484,
+    373,
+    75
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      4866
+     ],
+     [
+      "data_unmatched_only",
+      245
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      2374
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      1100
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      205
+     ],
+     [
+      "mg_1",
+      93
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      5357
+     ],
+     [
+      "dup_id_layer_conflict",
+      26
+     ],
+     [
+      "status_not_enacted",
+      13
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    5383,
+    0,
+    0,
+    5111,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    13,
+    2374,
+    1100,
+    0,
+    298
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||public_health": {
+   "n": [
+    2954,
+    1845,
+    1657,
+    1391,
+    681,
+    283
+   ],
+   "drops": {
+    "min_gate": [
+     [
+      "mg_2",
+      288
+     ],
+     [
+      "mg_1",
+      110
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      613
+     ],
+     [
+      "data_unmatched_only",
+      97
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      188
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      266
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      1097
+     ],
+     [
+      "dup_id_layer_conflict",
+      11
+     ],
+     [
+      "status_not_enacted",
+      1
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    1108,
+    0,
+    0,
+    710,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1,
+    188,
+    266,
+    0,
+    398
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||finance_monetary": {
+   "n": [
+    850,
+    550,
+    497,
+    427,
+    154,
+    48
+   ],
+   "drops": {
+    "no_wave": [
+     [
+      "wave_flagged",
+      53
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      178
+     ],
+     [
+      "data_unmatched_only",
+      95
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      70
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      78
+     ],
+     [
+      "mg_1",
+      28
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      296
+     ],
+     [
+      "dup_id_layer_conflict",
+      3
+     ],
+     [
+      "status_not_enacted",
+      1
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    299,
+    0,
+    0,
+    273,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1,
+    53,
+    70,
+    0,
+    106
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||energy_environment": {
+   "n": [
+    1108,
+    830,
+    807,
+    690,
+    282,
+    115
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      314
+     ],
+     [
+      "data_unmatched_only",
+      94
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      117
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      118
+     ],
+     [
+      "mg_1",
+      49
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      274
+     ],
+     [
+      "dup_id_layer_conflict",
+      3
+     ],
+     [
+      "status_not_enacted",
+      1
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      23
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    277,
+    0,
+    0,
+    408,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    1,
+    23,
+    117,
+    0,
+    167
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||agriculture_food": {
+   "n": [
+    347,
+    246,
+    237,
+    202,
+    77,
+    20
+   ],
+   "drops": {
+    "no_wave": [
+     [
+      "wave_flagged",
+      9
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      118
+     ],
+     [
+      "data_unmatched_only",
+      7
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      35
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      37
+     ],
+     [
+      "mg_1",
+      20
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      101
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    101,
+    0,
+    0,
+    125,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    9,
+    35,
+    0,
+    57
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||transportation_infrastructure": {
+   "n": [
+    537,
+    195,
+    181,
+    169,
+    83,
+    18
+   ],
+   "drops": {
+    "no_covid": [
+     [
+      "covid_window",
+      12
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      70
+     ],
+     [
+      "data_unmatched_only",
+      16
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_2",
+      40
+     ],
+     [
+      "mg_1",
+      25
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      14
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      342
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    342,
+    0,
+    0,
+    86,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    14,
+    12,
+    0,
+    65
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||government_administration": {
+   "n": [
+    5960,
+    3359,
+    1685,
+    1433,
+    129,
+    10
+   ],
+   "drops": {
+    "no_covid": [
+     [
+      "covid_window",
+      252
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      1215
+     ],
+     [
+      "data_unmatched_only",
+      89
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      63
+     ],
+     [
+      "mg_2",
+      56
+     ]
+    ],
+    "no_wave": [
+     [
+      "wave_flagged",
+      1674
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      2593
+     ],
+     [
+      "status_not_enacted",
+      5
+     ],
+     [
+      "dup_id_layer_conflict",
+      3
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    2596,
+    0,
+    0,
+    1304,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    5,
+    1674,
+    252,
+    0,
+    119
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State Legislation||trade_commerce": {
+   "n": [
+    15,
+    3,
+    3,
+    3,
+    1,
+    1
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_empty",
+      1
+     ],
+     [
+      "data_unmatched_only",
+      1
+     ]
+    ],
+    "strict_enacted": [
+     [
+      "status_unknown",
+      12
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    12,
+    0,
+    0,
+    2,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||*": {
+   "n": [
+    272,
+    12,
+    12,
+    11,
+    3,
+    1
+   ],
+   "drops": {
+    "strict_enacted": [
+     [
+      "status_unknown",
+      260
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      7
+     ],
+     [
+      "data_unmatched_only",
+      1
+     ]
+    ],
+    "min_gate": [
+     [
+      "mg_1",
+      1
+     ],
+     [
+      "mg_2",
+      1
+     ]
+    ],
+    "no_covid": [
+     [
+      "covid_window",
+      1
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    260,
+    0,
+    0,
+    8,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    2
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||government_administration": {
+   "n": [
+    98,
+    3,
+    3,
+    3,
+    0,
+    0
+   ],
+   "drops": {
+    "strict_enacted": [
+     [
+      "status_unknown",
+      95
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      3
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    95,
+    0,
+    0,
+    3,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||other": {
+   "n": [
+    14,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "drops": {
+    "strict_enacted": [
+     [
+      "status_unknown",
+      14
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    14,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||public_health": {
+   "n": [
+    57,
+    2,
+    2,
+    2,
+    0,
+    0
+   ],
+   "drops": {
+    "strict_enacted": [
+     [
+      "status_unknown",
+      55
+     ]
+    ],
+    "data_ok": [
+     [
+      "data_empty",
+      2
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    55,
+    0,
+    0,
+    2,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||trade_commerce": {
+   "n": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "drops": {
+    "strict_enacted": [
+     [
+      "status_unknown",
+      2
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||finance_monetary": {
+   "n": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "drops": {
+    "strict_enacted": [
+     [
+      "status_unknown",
+      4
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    4,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||transportation_infrastructure": {
+   "n": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "drops": {
+    "strict_enacted": [
+     [
+      "status_unknown",
+      2
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "State/Local Executive||energy_environment": {
+   "n": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "drops": {
+    "data_ok": [
+     [
+      "data_unmatched_only",
+      1
+     ]
+    ]
+   },
+   "n_dropped_missing": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "n_dropped_judged": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "n_dropped_unattributed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "notes": {
+  "verify_level_among_strict_enacted": {
+   "id_verified": 885,
+   "label_only": 99426
+  },
+  "final_stage_with_zero_public_dataset_matches": 250,
+  "viable_strict_column_count": 7781,
+  "order_source": "scripts/build_derived_views.py (viable_strict expression)",
+  "data_feasibility_at_min_gate_input": {
+   "n": 27808,
+   "n_ge2": 27449,
+   "n_ge3": 20429,
+   "n_missing": 0
+  },
+  "removed_total": 475633,
+  "removed_by_kind": {
+   "missing": 413844,
+   "judged": 61789,
+   "unattributed": 0
+  },
+  "kind_rule": "missing = the field a gate needs is absent/unresolved; judged = a rule or score was evaluated and failed; unattributed = reason not in KIND (should be 0)"
+ }
+}

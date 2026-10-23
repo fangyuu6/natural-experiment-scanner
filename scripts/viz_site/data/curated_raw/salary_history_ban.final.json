@@ -1,0 +1,727 @@
+{
+  "policy_id": "salary_history_ban",
+  "name_en": "Salary-history bans",
+  "name_zh": "禁止询问薪资历史",
+  "definition_en": "State statute prohibiting private employers from asking job applicants about their salary history (typically also from relying on it to set pay); year the law took effect. Public-employer-only orders and city ordinances are excluded.",
+  "definition_zh": "州法律禁止（私营）雇主询问求职者的薪资历史（通常也禁止据此定薪）；年份为该法对私营雇主生效的年份，仅适用于政府部门的行政令及城市条例不计入。",
+  "year_basis": "year the private-employer ban took effect",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+    "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+    "https://www.revealbackground.com/salary-history-ban-states-list/",
+    "https://www.paycor.com/resource-center/articles/states-with-salary-history-bans/",
+    "https://en.wikipedia.org/wiki/Salary_history_bans",
+    "https://www.findlaw.com/employment/hiring-process/salary-history-bans-by-state-know-your-rights-and-protections.html",
+    "https://nakaselawfirm.com/salary-history-ban-states-full-breakdown-of-state-and-local-rules/",
+    "https://employsome.com/hire/united-states/salary-history-ban/"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.littler.com/news-analysis/asap/alabama-enacts-pay-equity-law",
+        "https://www.burr.com/newsroom/articles/burr-alert-alabama-equal-pay-act",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/state-state-salary-history-bans-pay-transparency-laws"
+      ],
+      "confidence": "medium",
+      "note": "V4 REMOVED: Ala. Code 25-1-30 (Clarke-Figures Equal Pay Act, Act 2019-519, eff. 2019-09-01) only bars refusing to interview/hire/promote or retaliating because the applicant does not provide wage history; it does NOT ban asking (Littler). Fails the 'ban on asking' definition. HR Dive/SHRM/Paycor/Employsome nevertheless list AL as 2019; if counted under a looser non-retaliation rule the candidate year would be 2019.",
+      "verification": "fixed"
+    },
+    "AK": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "AZ": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "AR": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "CA": {
+      "year": 2018,
+      "date": "2018-01-01",
+      "enacted_year": 2017,
+      "sources": [
+        "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB168",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201720180AB168"
+      ],
+      "confidence": "high",
+      "note": "AB 168 chaptered 2017-10-12 (ch. 688); Labor Code 432.3; all employers.",
+      "verification": "verified"
+    },
+    "CO": {
+      "year": 2021,
+      "date": "2021-01-01",
+      "enacted_year": 2019,
+      "sources": [
+        "https://www.mercer.com/en-us/insights/law-and-policy/colorado-new-pay-equity-law-takes-effect/",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://leg.colorado.gov/bills/sb19-085"
+      ],
+      "confidence": "high",
+      "note": "Equal Pay for Equal Work Act (SB19-085) signed 2019-05-22; operative 2021-01-01.",
+      "verification": "verified"
+    },
+    "CT": {
+      "year": 2019,
+      "date": "2019-01-01",
+      "enacted_year": 2018,
+      "sources": [
+        "https://www.jacksonlewis.com/insights/connecticut-bans-inquiries-applicants-wage-and-salary-history",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx"
+      ],
+      "confidence": "high",
+      "note": "Public Act 18-8 (signed 2018) amends CGS 31-40z.",
+      "verification": "verified"
+    },
+    "DE": {
+      "year": 2017,
+      "date": "2017-12-14",
+      "enacted_year": 2017,
+      "sources": [
+        "https://legis.delaware.gov/BillDetail?legislationId=25664",
+        "https://delcode.delaware.gov/title19/c007/sc01/index.html",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.afslaw.com/perspectives/alerts/delaware-becomes-the-first-state-enforce-ban-employer-requests-salary-history"
+      ],
+      "confidence": "high",
+      "note": "HB 1 signed 2017-06-14; 19 Del. C. 709B (81 Del. Laws c. 41).",
+      "verification": "verified"
+    },
+    "DC": {
+      "year": 2024,
+      "date": "2024-06-30",
+      "enacted_year": 2024,
+      "sources": [
+        "https://code.dccouncil.gov/us/dc/council/laws/25-138",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.revealbackground.com/salary-history-ban-states-list/",
+        "https://www.mintz.com/insights-center/viewpoints/2226/2024-02-27-washington-dc-joins-growing-number-jurisdictions-pay"
+      ],
+      "confidence": "high",
+      "note": "Law 25-138 eff. 2024-03-05, applicable 2024-06-30. Earlier 2017 rule covered DC agencies only. V4: jurisdiction, not a state (kept per dataset convention). Signed 2024-01-12 (Act 25-367); Law 25-138 effective 2024-03-05, applicable 2024-06-30. 2017 DC personnel instruction covers agencies only (excluded).",
+      "verification": "verified"
+    },
+    "FL": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "GA": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "Atlanta city agencies only (2019); no statewide law.",
+      "verification": "verified"
+    },
+    "HI": {
+      "year": 2019,
+      "date": "2019-01-01",
+      "enacted_year": 2018,
+      "sources": [
+        "https://www.cades.com/2018/07/11/hawaii-gov-signs-bills-to-ban-salary-history-questions-tweak-health-care-study-paid-leave/",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.littler.com/publication-press/publication/hawaii-joins-salary-history-ban-trend"
+      ],
+      "confidence": "high",
+      "note": "SB 2351 (Act 108) signed 2018-07-05; HRS 378-2.4.",
+      "verification": "verified"
+    },
+    "ID": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "IL": {
+      "year": 2019,
+      "date": "2019-09-29",
+      "enacted_year": 2019,
+      "sources": [
+        "https://www.fisherphillips.com/en/insights/insights/illinois-employers-barred-from-salary-history-inquiries",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.mcguirewoods.com/client-resources/alerts/2019/10/illinois-ban-employers-inquiry-consideration-salary-history-takes-effect/"
+      ],
+      "confidence": "high",
+      "note": "HB 834 (P.A. 101-0177) signed 2019-07-31. Jan 2019 order covered state agencies only.",
+      "verification": "verified"
+    },
+    "IN": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "IA": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "KS": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "KY": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "Louisville Metro only (2018); no statewide law.",
+      "verification": "verified"
+    },
+    "LA": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "New Orleans city departments only; no statewide law.",
+      "verification": "verified"
+    },
+    "ME": {
+      "year": 2019,
+      "date": "2019-09-17",
+      "enacted_year": 2019,
+      "sources": [
+        "https://www.littler.com/news-analysis/asap/step-national-trend-maine-passes-salary-history-ban",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://legislature.maine.gov/statutes/26/title26sec628-A.html"
+      ],
+      "confidence": "high",
+      "note": "LD 278 signed 2019-04-12.",
+      "verification": "verified"
+    },
+    "MD": {
+      "year": 2020,
+      "date": "2020-10-01",
+      "enacted_year": 2020,
+      "sources": [
+        "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb0123?ys=2020RS",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/maryland-salary-history-ban-takes-effect-oct-1",
+        "https://www.gfrlaw.com/what-we-do/insights/maryland-enacts-ban-salary-history-inquiries-and-closes-loophole-equal-pay"
+      ],
+      "confidence": "high",
+      "note": "HB 123 (ch. 67) became law 2020-05-08 without signature.",
+      "verification": "verified"
+    },
+    "MA": {
+      "year": 2018,
+      "date": "2018-07-01",
+      "enacted_year": 2016,
+      "sources": [
+        "https://www.eckertseamans.com/legal-updates/amended-massachusetts-equal-pay-act-goes-into-effect-july-1-2018",
+        "https://www.mintz.com/insights-center/viewpoints/2018-04-11-massachusetts-attorney-general-issues-guidance-pay-equity-law",
+        "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section105A",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx"
+      ],
+      "confidence": "high",
+      "note": "First state: enacted Aug 2016 (St. 2016 c.177), effective 2018-07-01.",
+      "verification": "verified"
+    },
+    "MI": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.michigan.gov/whitmer/news/state-orders-and-directives/2019/01/07/executive-directive-2019-10",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/state-state-salary-history-bans-pay-transparency-laws",
+        "https://employsome.com/hire/united-states/salary-history-ban/"
+      ],
+      "confidence": "high",
+      "note": "Exec. Directive 2019-10 (2019-01-08) covers state departments only; state law preempts local bans. V4: public-employer-only confirmed (SHRM, Employsome).",
+      "verification": "verified"
+    },
+    "MN": {
+      "year": 2024,
+      "date": "2024-01-01",
+      "enacted_year": 2023,
+      "sources": [
+        "https://www.revisor.mn.gov/statutes/cite/363A.08",
+        "https://taxnews.ey.com/news/2023-1774-minnesota-law-prohibits-inquiries-into-applicants-pay-history-starting-in-2024",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.vorys.com/publication-minnesota-law-prohibits-employers-from-inquiring-into-applicants-pay-history"
+      ],
+      "confidence": "high",
+      "note": "Minn. Stat. 363A.08 subd. 8 (2023 c.52 art.19). Reveal's list omits MN; statute/HR Dive/EY include it. V4: confirmed effective 2024-01-01, all employers (Vorys).",
+      "verification": "verified"
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "Jackson city offices only; no statewide law.",
+      "verification": "verified"
+    },
+    "MO": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.huschblackwell.com/newsandinsights/kansas-city-missouri-employers-banned-from-salary-history-inquiries-effective-october-31-2019",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.revealbackground.com/salary-history-ban-states-list/",
+        "https://jjkellercompliancenetwork.com/regsense/pay-transparency-and-salary-history-bans-missouri"
+      ],
+      "confidence": "high",
+      "note": "Only Kansas City/St. Louis city ordinances; no statewide law. V4: HR Dive table lists 2019-10-31 only for the Kansas City ordinance; no statewide law (J.J. Keller).",
+      "verification": "verified"
+    },
+    "MT": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "NE": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "NV": {
+      "year": 2021,
+      "date": "2021-10-01",
+      "enacted_year": 2021,
+      "sources": [
+        "https://www.sterlingcheck.com/resources/compliance-articles/nevada-senate-bill-no-293/",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://kzalaw.com/knowledge-center/employer-reports/new-nevada-laws-effective-october-1-2021/"
+      ],
+      "confidence": "high",
+      "note": "SB 293 signed 2021-06-02; NRS 613.133.",
+      "verification": "verified"
+    },
+    "NH": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/",
+        "https://www.mclane.com/insights/new-hampshire-employment-law-in-2026/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "NJ": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "enacted_year": 2019,
+      "sources": [
+        "https://www.lawandtheworkplace.com/2019/07/new-jersey-becomes-the-latest-jurisdiction-to-enact-ban-on-salary-history-inquiries/",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.ebglaw.com/insights/publications/new-jersey-becomes-the-latest-state-to-enact-a-ban-on-salary-history-inquiries"
+      ],
+      "confidence": "high",
+      "note": "A1094 signed 2019-07-25. A 2018 order covered state agencies only.",
+      "verification": "verified"
+    },
+    "NM": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "NY": {
+      "year": 2020,
+      "date": "2020-01-06",
+      "enacted_year": 2019,
+      "sources": [
+        "https://dol.ny.gov/salary-historypay-equity",
+        "https://ogletree.com/insights-resources/blog-posts/new-york-enacts-tougher-laws-on-pay-equity-and-salary-history-inquiries/",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx"
+      ],
+      "confidence": "high",
+      "note": "Labor Law 194-a, signed 2019-07-10. A Jan 2017 order covered state agencies only.",
+      "verification": "verified"
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.doa.nc.gov/news/press-releases/2019/04/02/equal-pay-day-gov-cooper-issues-executive-order-address-gender-pay",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/state-state-salary-history-bans-pay-transparency-laws",
+        "https://nakaselawfirm.com/salary-history-ban-states-full-breakdown-of-state-and-local-rules/"
+      ],
+      "confidence": "high",
+      "note": "Exec. Order 93 (2019-04-02) covers state agencies only; public employers excluded by definition. V4: public-employer-only confirmed (SHRM, Nakase).",
+      "verification": "verified"
+    },
+    "ND": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "OH": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "City ordinances only (Cincinnati, Columbus, Toledo, Cleveland); no statewide law.",
+      "verification": "verified"
+    },
+    "OK": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "OR": {
+      "year": 2017,
+      "date": "2017-10-06",
+      "enacted_year": 2017,
+      "sources": [
+        "https://www.vigilant.org/employment-law-blog/oregon-boli-wont-enforce-salary-history-bill-until-2019",
+        "https://oregon.public.law/statutes/ors_659A.357",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://oregon.public.law/statutes/ors_659a.357",
+        "https://www.jacksonlewis.com/insights/oregon-publishes-final-rule-implementing-its-expansive-equal-pay-act-effective-january-1-2019",
+        "https://www.lawandtheworkplace.com/2017/07/oregon-expands-pay-equity-protections/"
+      ],
+      "confidence": "high",
+      "note": "HB 2005 signed 2017-06-01; eff. 2017-10-06, BOLI enforcement 2019, private suits 2024; Littler cites 2019. V4: ORS 659A.357 (2017 c.197 s4) operative 2017-10-06 (Jackson Lewis, Vigilant); BOLI enforcement of other Equal Pay Act parts 2019-01-01, private suits 2024-01-01. Year kept 2017 = date ban took effect.",
+      "verification": "verified"
+    },
+    "PA": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.mcneeslaw.com/blog-labor-and-employment/2018/06/articles/employee-benefits/governor-wolf-issues-executive-order-attempting-address-pay-inequality/",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/state-state-salary-history-bans-pay-transparency-laws",
+        "https://employsome.com/hire/united-states/salary-history-ban/"
+      ],
+      "confidence": "high",
+      "note": "Exec. Order 2018-03 covers state agencies only; Philadelphia/Pittsburgh ordinances are city-only. V4: public-employer-only confirmed (SHRM, Employsome).",
+      "verification": "verified"
+    },
+    "RI": {
+      "year": 2023,
+      "date": "2023-01-01",
+      "enacted_year": 2021,
+      "sources": [
+        "https://webserver.rilegislature.gov/Statutes/TITLE28/28-6/28-6-22.htm",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://natlawreview.com/article/rhode-island-amends-pay-equity-law-bans-salary-history-inquiries-and-requires-pay"
+      ],
+      "confidence": "high",
+      "note": "R.I. Gen. Laws 28-6-22 added by P.L. 2021 ch.168/169, effective 2023-01-01.",
+      "verification": "verified"
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "Columbia/Richland County only; no statewide law.",
+      "verification": "verified"
+    },
+    "SD": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "UT": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "Salt Lake City only; no statewide law.",
+      "verification": "verified"
+    },
+    "VT": {
+      "year": 2018,
+      "date": "2018-07-01",
+      "enacted_year": 2018,
+      "sources": [
+        "https://www.littler.com/publication-press/publication/vermont-enacts-salary-history-inquiry-law",
+        "https://women.vermont.gov/w-vermont-law-about-salary-history",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.jacksonlewis.com/insights/vermont-bans-inquiries-job-applicants-salary-and-benefit-history"
+      ],
+      "confidence": "high",
+      "note": "H.294 signed 2018-05-11; 21 V.S.A. 495m.",
+      "verification": "verified"
+    },
+    "VA": {
+      "year": null,
+      "date": null,
+      "enacted_year": 2026,
+      "sources": [
+        "https://doli.virginia.gov/2026/07/01/employment-law-updates-new-legislation-protecting-virginia-workers-applies-beginning-july-1-2026/",
+        "https://www.morganlewis.com/pubs/2026/05/virginia-law-will-require-pay-transparency-restrict-employers-from-seeking-wage-history",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "SB215/HB636 signed 2026, effective 2026-07-01 (after as-of date). Earlier 2019 rule covered state agencies only. V4: signed Apr 2026, effective 2026-07-01 (HR Dive, Reveal) -> after as-of 2025-12-31, excluded.",
+      "verification": "verified"
+    },
+    "WA": {
+      "year": 2019,
+      "date": "2019-07-28",
+      "enacted_year": 2019,
+      "sources": [
+        "https://app.leg.wa.gov/rcw/default.aspx?cite=49.58.100",
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://app.leg.wa.gov/RCW/default.aspx?cite=49.58.100",
+        "https://www.dorsey.com/newsresources/publications/client-alerts/2019/05/wa-salary-history-ban-noncompete"
+      ],
+      "confidence": "high",
+      "note": "RCW 49.58.100 added by 2019 c 345; Equal Pay Act itself dated from 2018.",
+      "verification": "verified"
+    },
+    "WV": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "No statewide ban; trackers say state law bars local salary-history bans.",
+      "verification": "verified"
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "enacted_year": null,
+      "sources": [
+        "https://www.hrdive.com/news/salary-history-ban-states-list/516662/",
+        "https://www.shrm.org/resourcesandtools/hr-topics/talent-acquisition/pages/state-pay-equity-laws.aspx",
+        "https://www.revealbackground.com/salary-history-ban-states-list/"
+      ],
+      "confidence": "high",
+      "note": "",
+      "verification": "verified"
+    }
+  },
+  "n_with_law": 18,
+  "year_min": 2017,
+  "year_max": 2024,
+  "researched_by": "agent",
+  "method_notes": "Completeness: HR Dive running list + SHRM state table + Reveal/NWLC-style list (18 states+DC), cross-checked with Paycor/Wikipedia. Years from statutes/agencies/law-firm alerts. AL is a weaker non-retaliation rule. VA effective 2026 -> null. Some URLs seen only in searches. | V4 verification (blind list first, then compared): 17 states + DC agree on year; AL removed because the statute does not ban asking; OR 2017 kept (statute operative 2017, enforcement 2019); VA excluded by as-of; MI/NC/PA public-only; MO city ordinances only.",
+  "verified_by": "agent-V4"
+}

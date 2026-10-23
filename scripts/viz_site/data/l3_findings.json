@@ -1,0 +1,1020 @@
+{
+ "schema": "l3_findings/1",
+ "as_of": "2026-10-18",
+ "source": "docs/plans/l3-meta/L3_SYNTHESIS_20261018.md",
+ "label": {
+  "en": "All findings here are exploratory.",
+  "zh": "此处所有发现均为探索性。"
+ },
+ "notes": "Data and copy only. numbers[] are audit data, not page copy (n is a display string). Odds ratios are exp() of the log-odds point and both interval ends. Rule id EX-1; 'holds' in the synthesis means the registered null was passed, never that a result is confirmed. C1 (2026-10-20): finding lines tightened; reconcile_35 moved under the study heading; questions block updated to the applied state (see BUILDER_C1_EXPLORE.md). F1 (2026-10-20, panel round on candidate c1; see FIX_ROUND_F1.md): X8 deleted (seven findings); the REPGAP line is a template filled at build time from the pinned snapshot (restructure_estimates.reestimate_summary); P5, D4, X6, N1-V2, T64, N11-M7 and the not-seen line made exact; the label states the interval level; row 17 of the board moved to in progress. F1b (2026-10-20, panel round 2 on candidate c2): `label` is the Explore label (the intervals of the findings are 95% and unadjusted; the 35-policy study prints its own registered 97.5% intervals), `label_home` the Home label (the Home list prints no ranges); finding 7 carries the Estimates rule in words; the p-value of finding 6 is gone (it is read off the all-states random-timing ruler that finding 3 calls too narrow); finding 4 gives the unit; finding 3 names its unit (results for outcome types) and the noise line's definition; the first 'not seen' clause is re-worded; row 12 of the board is the R30 question again. F1d (2026-10-20, panel round 3 on candidate c3): the Explore label names what is unadjusted (the 95% intervals and the p-values of the findings); finding 3's head names its reference (all states); finding 6's head says the supported comparison (estimates exceed random timing) and its line names the axis of the slope; the first 'not seen' clause puts its reference first and says 'such designs'; the third clause says what the 374 are (results beyond one noise SD that have a good-or-bad direction, RESULTS_X2_V1.md section 1); finding 7 states the rule as the larger of the two bases. F1e (2026-10-20, panel round 4 on c4): finding 3 head says 'too many' again (EN) and its Home label 'excess'; finding 6 head compares with the random-timing average; the direction in the third 'not seen' clause belongs to the outcomes (X2 codes each series higher-is-better or higher-is-worse). T211 (2026-10-21, owner: the Explore findings read as over-defended jargon): the page prints the plain version in \"explore\" (head, one sentence on why it matters, a muted numbers line, all from the pinned numbers above); findings P5, D4 and X6 and the not-seen parts D1-P5 and M3 are no longer printed on Explore (method notes or benchmark-dependent); `findings` (short labels) is unchanged because Home reads it; `label` is now the short label.",
+ "findings": [
+  {
+   "id": "N1-V2",
+   "order": 1,
+   "status": "exploratory",
+   "en": {
+    "head": "Adopters differ from states without the policy",
+    "line": "The gap in party, ideology, income and urbanization is on average 2.84 reshuffle standard deviations above what a random reshuffle of the same adoptions gives (1.50 to 4.18); 63 designs, 45 policy families."
+   },
+   "zh": {
+    "head": "采纳州有别于没有该政策的州",
+    "line": "党派、意识形态、收入和城市化上的差距，平均比把同一批采纳随机重排所得高出 2.84 个重排标准差（1.50 到 4.18）；63 个设计，45 个政策族。"
+   },
+   "short": {
+    "en": "Adopters differ",
+    "zh": "采纳州有差异"
+   },
+   "numbers": [
+    {
+     "label": "Mean standardized gap between adopting and still-free states (mean of per-design Z)",
+     "value": 2.84,
+     "low": 1.5,
+     "high": 4.18,
+     "n": "63 designs, 45 policy families",
+     "unit": "standard deviations beyond random reassignment of the same adoption cohorts"
+    },
+    {
+     "label": "Designs with permutation p <= .05 (3.15 expected by chance)",
+     "value": 34,
+     "low": null,
+     "high": null,
+     "n": "63 designs",
+     "unit": "designs"
+    }
+   ],
+   "sources": [
+    "docs/plans/l3-meta/REFRESH_20261018.md, Numbers table row 'N1 adopters vs free states' and Changes table",
+    "data/l3_meta/refresh/20261018_r1/n1/RESULTS_N1_V2.json: question.N1.primary_literal_null (theta, interval95, permutation_p), question.N1.D/n/F",
+    "docs/plans/l3-meta/PREREG_L3_META_ADDENDUM_V2.md, section N1 (definition of Z_i and the four covariates)"
+   ],
+   "verified": "yes: RESULTS_N1_V2.json theta 2.8396, interval95 [1.5017, 4.1775], n 63, F 45, p_le_05 34 (expected 3.15); same values in REFRESH_20261018.md"
+  },
+  {
+   "id": "T64",
+   "order": 2,
+   "status": "exploratory",
+   "en": {
+    "head": "Faster adoption when the policy’s party governs",
+    "line": "Each step toward unified control by the party a policy favors comes with 19% higher yearly adoption odds on average (10% to 28%), concentrated since 1990; 166 policies, 4,309 adoptions."
+   },
+   "zh": {
+    "head": "政策所偏向的党派执政时，采纳更快",
+    "line": "政策所偏向的党派每向统一执政靠近一步，该州某年采纳此政策的发生比平均高 19%（10% 到 28%），集中在 1990 年以后；166 项政策，4,309 次采纳。"
+   },
+   "short": {
+    "en": "Party control and adoption",
+    "zh": "党派控制与采纳"
+   },
+   "numbers": [
+    {
+     "label": "Signed party effect m: yearly odds of first adoption per step toward unified control by the policy's own party (exp of +0.1737; policy-bootstrap 95% interval)",
+     "value": 1.19,
+     "low": 1.1,
+     "high": 1.28,
+     "n": "166 policies, 4,309 adoptions (98 Democratic-side, 68 Republican-side)",
+     "unit": "odds ratio"
+    },
+    {
+     "label": "Same effect in log-odds (source unit)",
+     "value": 0.174,
+     "low": 0.094,
+     "high": 0.245,
+     "n": "166 policies, 4,309 adoptions",
+     "unit": "log-odds"
+    },
+    {
+     "label": "Unsigned pooled coefficient, same 166 policies (exp of +0.0458; bootstrap 95% interval)",
+     "value": 1.05,
+     "low": 0.96,
+     "high": 1.14,
+     "n": "166 policies, 4,309 adoptions",
+     "unit": "odds ratio"
+    },
+    {
+     "label": "Unsigned pooled coefficient in log-odds (source unit)",
+     "value": 0.046,
+     "low": -0.042,
+     "high": 0.134,
+     "n": "166 policies, 4,309 adoptions",
+     "unit": "log-odds"
+    },
+    {
+     "label": "Signed effect 1990 to 2016 (exp of +0.329; SE 0.070 in log-odds, no interval printed)",
+     "value": 1.39,
+     "low": null,
+     "high": null,
+     "n": "149 policies, 2,762 adoptions",
+     "unit": "odds ratio"
+    },
+    {
+     "label": "Signed effect 1961 to 1989 (exp of -0.062; SE 0.066 in log-odds, no interval printed)",
+     "value": 0.94,
+     "low": null,
+     "high": null,
+     "n": "104 policies, 1,547 adoptions",
+     "unit": "odds ratio"
+    }
+   ],
+   "sources": [
+    "docs/plans/l3-meta/RESULTS_T64_SIGNED_PARTY_V1.md, sections 1, 2, 3 (era split)",
+    "data/l3_meta/t64_signed_v1/RESULTS_T64_SIGNED_PARTY_V1.json: M1.b1, M1.b1_policy_bootstrap_ci95, M0.b0, M0.b0_policy_bootstrap_ci95, counts, check_era",
+    "docs/plans/l3-meta/PREREG_T64_SIGNED_PARTY_V1.md, sections 1.1 and 1.2 (Dem_st = +1, 0, -1; s_p = +1 or -1)"
+   ],
+   "verified": "yes: JSON M1.b1 0.17366, CI [0.09373, 0.24458], M0.b0 0.04584, CI [-0.04181, 0.13361], 166 policies, 4,309 events, era b1 -0.0616 / +0.3290; md sections 2 and 3 agree. Odds ratios are exp() of the point and both ends."
+  },
+  {
+   "id": "P5",
+   "order": 3,
+   "status": "exploratory",
+   "en": {
+    "head": "All-states random timing gives too many false alarms",
+    "line": "Among results for outcome types with no plausible channel from the policy, 12.4% (21 of 170) exceed their noise line (the level that 95% of random-timing draws stay under) when adoption is timed at random among all states, and 5.4% (9 of 166) when it is timed at random among similar states; 5% is expected."
+   },
+   "zh": {
+    "head": "采纳时点在所有州间随机，误报偏多",
+    "line": "在政策没有合理作用渠道的结果变量类型上，若采纳时点在所有州之间随机分配，12.4%（170 项结果中的 21 项）超过各自的噪声线（95% 的随机时点抽样都不会超过的水平）；在相似的州之间随机分配时为 5.4%（166 项中的 9 项）；预期为 5%。"
+   },
+   "short": {
+    "en": "Random timing: excess false alarms",
+    "zh": "随机时点误报多"
+   },
+   "numbers": [
+    {
+     "label": "Negative-control results beyond their noise line, adoption reshuffled across all states (20 of 153)",
+     "value": 13.1,
+     "low": 8.2,
+     "high": 19.5,
+     "n": "153 results, 28 designs, 24 policy families",
+     "unit": "% (exact 95% interval)"
+    },
+    {
+     "label": "Same, adoption reshuffled among similar states, P5 (8 of 148)",
+     "value": 5.4,
+     "low": 2.4,
+     "high": 10.4,
+     "n": "148 results, 27 designs, 23 policy families",
+     "unit": "% (exact 95% interval)"
+    },
+    {
+     "label": "Union with extension series, all states (21 of 170)",
+     "value": 12.4,
+     "low": 7.8,
+     "high": 18.3,
+     "n": "170 results, 28 designs",
+     "unit": "% (exact 95% interval)"
+    },
+    {
+     "label": "Union with extension series, P5 (9 of 166), the synthesis figure and the line of record",
+     "value": 5.4,
+     "low": 2.5,
+     "high": 10.0,
+     "n": "166 results, 27 designs",
+     "unit": "% (exact 95% interval)"
+    },
+    {
+     "label": "Nominal share expected by chance",
+     "value": 5,
+     "low": null,
+     "high": null,
+     "n": "-",
+     "unit": "%"
+    },
+    {
+     "label": "Share of random-timing draws that stay under the noise line (the line is the ceil(.95 n)-th smallest absolute placebo statistic of the cell, i.e. the 95th percentile of the draws)",
+     "value": 95,
+     "low": null,
+     "high": null,
+     "n": "each (design, outcome family) cell",
+     "unit": "%"
+    }
+   ],
+   "sources": [
+    "docs/plans/l3-meta/RESULTS_R0_V1.md, section 5 table (all four rows above)",
+    "docs/plans/l3-meta/RESULTS_SELREF_V1.md, section 4 table, rows U and P5 (20 of 153; 8 of 148)",
+    "data/l3_meta/r0_v1/RESULTS_R0_V1.json: results.U_v1 / P5_v1 / U_union / P5_union .nc_cell_exceedance"
+   ],
+   "verified": "yes: R0 JSON n_beyond/n_cells 20/153, 8/148, 21/170, 9/166 with cp95 [0.0817,0.1946], [0.0236,0.1037], [0.0781,0.1826], [0.0251,0.1004]; SELREF md section 4 gives 20/153 and 8/148. The synthesis pairs 20/153 with 9/166 (different cell sets); F6 (2026-10-20, Roth SF1): the line now quotes the line of record, the union rows 21/170 and 9/166 (RESULTS_R0_V1 section 5), so that findings 3, 4 and 6 stand on one outcome set; before, it used the V1 rows 20/153 and 8/148 (the matched pair on the same 28 designs). F1b: the 153 and 148 are cells = (design, outcome family) coded no_channel (PREREG_AMEND_20261015_D2_V1.md 1.3 and 5.1: B_if = 1 if M_if > q_if), so the line says results for outcome types, not outcomes; q_if is the ceil(.95 n)-th smallest |draw| (D2 6.2, D1 amendment), the level 95% of the random-timing draws stay under."
+  },
+  {
+   "id": "D4",
+   "order": 4,
+   "status": "exploratory",
+   "en": {
+    "head": "Estimate size varies across policies beyond chance",
+    "line": "Estimate sizes, in noise standard deviations, vary across policies by more than random timing among similar states gives (excess variance 0.103, one-sided p = 0.006); the excess across outcomes is 0.022 (p = 0.12) and across policy-outcome pairs 0.083 (p = 0.097); 27 designs, 74 outcomes."
+   },
+   "zh": {
+    "head": "估计值大小的政策间差异超出随机",
+    "line": "以噪声标准差计的估计值大小，在政策之间的差异超过相似州之间随机采纳时点所得（方差超出 0.103，单侧 p = 0.006）；结果变量之间超出 0.022（p = 0.12），政策—结果变量组合之间超出 0.083（p = 0.097）；27 个设计，74 个结果变量。"
+   },
+   "short": {
+    "en": "Estimates vary by policy",
+    "zh": "估计因政策而异"
+   },
+   "numbers": [
+    {
+     "label": "Policy part of the variance of the size |z| of standardized estimates, excess over the P5 replicate mean (the page says estimate size, not effect size) (one-sided p .006; .0002 at 3 blocks, .0037 at 8 blocks)",
+     "value": 0.103,
+     "low": null,
+     "high": null,
+     "n": "27 designs, 23 policy families, 74 outcomes, 1,324 design-outcome results",
+     "unit": "variance of |z|, excess over similar-state replicates"
+    },
+    {
+     "label": "Outcome part, excess (one-sided p .12)",
+     "value": 0.022,
+     "low": null,
+     "high": null,
+     "n": "27 designs, 74 outcomes, 1,324 results",
+     "unit": "variance of |z|, excess"
+    },
+    {
+     "label": "Policy-outcome pair part, excess (one-sided p .097)",
+     "value": 0.083,
+     "low": null,
+     "high": null,
+     "n": "27 designs, 74 outcomes, 1,324 results",
+     "unit": "variance of |z|, excess"
+    }
+   ],
+   "sources": [
+    "docs/plans/l3-meta/RESULTS_R0_V1.md, section 2 table rows 'P5, union' and 'P3, union' / 'P8, union' and the family and leave-one-out lines",
+    "data/l3_meta/r0_v1/RESULTS_R0_V1.json: results.P5_union.d4_series (levels.raw.excess, levels.raw.p_one_sided, cells, designs, columns)"
+   ],
+   "verified": "yes: JSON P5_union excess A_row 0.1031 (p .006), A_col 0.0224 (p .1201), A_res 0.0833 (p .0965), 27 designs, 23 families, 74 columns, 1,324 cells; md agrees (P3 .0002, P8 .0037) F1b: the three numbers are the excess (observed minus the replicate mean) of the policy, outcome and pair parts of the variance of |z| (RESULTS_R0_V1.md section 2 header: \"excess = observed minus the replicate mean\"); only the policy part has a small p (0.006); the head says so, the line gives the other two parts with their p-values."
+  },
+  {
+   "id": "N11-M7",
+   "order": 5,
+   "status": "exploratory",
+   "en": {
+    "head": "Estimates move together across shared states",
+    "line": "Estimates for designs that share more treated states move together more (slope +2.31 on the share of treated states in common, 0.43 to 4.19); sharing years adds nothing detectable (slope −0.48, −0.97 to +0.08); 226 design pairs, 28 designs."
+   },
+   "zh": {
+    "head": "共享处理州的设计，估计同向变动",
+    "line": "处理州重叠越多的设计对，估计越是同向变动（以共有处理州占比为自变量，斜率 +2.31，0.43 到 4.19）；处理年份重叠没有可检出的作用（斜率 −0.48，−0.97 到 +0.08）；226 个设计对，28 个设计。"
+   },
+   "short": {
+    "en": "Shared states, estimates move together",
+    "zh": "共享州估计同向"
+   },
+   "numbers": [
+    {
+     "label": "Shared-treated-states coefficient beta_S on the co-movement of design pairs (family-block bootstrap 95%)",
+     "value": 2.31,
+     "low": 0.43,
+     "high": 4.19,
+     "n": "226 design pairs, 28 designs, 24 policy families",
+     "unit": "slope of standardized-estimate product on share of treated states in common"
+    },
+    {
+     "label": "Shared-years coefficient beta_Y (family-block bootstrap 95%)",
+     "value": -0.48,
+     "low": -0.97,
+     "high": 0.08,
+     "n": "226 design pairs, 28 designs, 24 policy families",
+     "unit": "slope of standardized-estimate product on share of treated years in common"
+    },
+    {
+     "label": "N11 slope on overlap of treated state-years (95% interval), the first detection",
+     "value": 2.98,
+     "low": 0.21,
+     "high": 5.75,
+     "n": "226 design pairs, 28 designs, 22 policy families",
+     "unit": "slope of standardized-estimate product on overlap"
+    }
+   ],
+   "sources": [
+    "docs/plans/l3-meta/RESULTS_N11_V1.md, section 'Result: DETECTED'",
+    "docs/plans/l3-meta/RESULTS_M7_V1.md, section 1 table row 'Pooled (family fixed effects)'",
+    "data/l3_meta/n11_v1/RESULTS_N11_V1.json (beta, beta_lo, beta_hi, n_pairs_headline, n_designs, n_families_headline); data/l3_meta/m7_v1/RESULTS_M7_V1.json results.pooled"
+   ],
+   "verified": "yes: N11 JSON beta 2.9833 [0.2098, 5.7506], 226 pairs, 28 designs, 22 families; M7 JSON pooled beta_S 2.3111 [0.4260, 4.1941], beta_Y -0.4755 [-0.9705, 0.0826], 24 families"
+  },
+  {
+   "id": "X6",
+   "order": 6,
+   "status": "exploratory",
+   "en": {
+    "head": "Estimates exceed the random-timing average where adopters start higher",
+    "line": "Where adopting states started above other states, estimates run higher than when adoption is timed at random among all states: slope on the baseline gap +0.26 against an average of −0.22, an excess of +0.48; 28 designs, 74 outcomes."
+   },
+   "zh": {
+    "head": "采纳州基期更高，估计高于随机时点所得",
+    "line": "在采纳州基期水平高于其他州的结果变量上，估计值高于采纳时点在所有州之间随机分配时的水平：对基期差距的斜率 +0.26，随机分配时平均为 −0.22，超出 +0.48；28 个设计，74 个结果变量。"
+   },
+   "short": {
+    "en": "Higher start, estimates beyond chance",
+    "zh": "基期高，估计超出随机"
+   },
+   "numbers": [
+    {
+     "label": "Observed pooled within-outcome slope of standardized estimate on the base-year gap (family-block bootstrap 95%)",
+     "value": 0.26,
+     "low": -0.07,
+     "high": 0.51,
+     "n": "28 designs, 74 outcomes, 1,348 results, 24 policy families",
+     "unit": "slope"
+    },
+    {
+     "label": "Slope under random timing (null mean; null SD 0.18)",
+     "value": -0.22,
+     "low": null,
+     "high": null,
+     "n": "9,999 replicates",
+     "unit": "slope"
+    },
+    {
+     "label": "Excess over the random-timing slope (2.70 null SDs; two-sided rank p 0.007)",
+     "value": 0.48,
+     "low": null,
+     "high": null,
+     "n": "28 designs, 74 outcomes",
+     "unit": "slope"
+    }
+   ],
+   "sources": [
+    "docs/plans/l3-meta/RESULTS_X6_V1.md, section 1 table row 'Base-year gap (g-1), all cells'",
+    "data/l3_meta/x6_v1/RESULTS_X6_V1.json: results.primary_G1"
+   ],
+   "verified": "yes: JSON beta_observed 0.2617, null_mean -0.2170, null_sd 0.1770, excess 0.4786 (2.7037 SD), rank_p 0.0074, family-block CI [-0.0669, 0.5146], 1,348 cells, 74 series, 28 designs F1b: the two-sided rank p (0.0074) is no longer printed: it is read off the all-states random-timing placebo draws that finding 3 shows to be too narrow; the file's calibrated line (kappa_scaled_G1) gives slope 0.199, excess 0.416, rank p 0.0197."
+  },
+  {
+   "id": "REPGAP",
+   "order": 7,
+   "status": "exploratory",
+   "en": {
+    "head": "Most re-estimates land within 10%",
+    "line": "Of the {papers} papers re-estimated (easiest-to-access data first), {within} are within 10% of the larger of the published estimate’s absolute value and its standard error; of the other {other}, our estimate is closer to zero in {closer}."
+   },
+   "zh": {
+    "head": "多数重估差距不超过 10%",
+    "line": "在已重新估计的 {papers} 篇论文（优先处理数据最易取得者）中，{within} 篇与发表值之差不超过发表值绝对值的 10%（若发表标准误更大，则以标准误为基数）；其余 {other} 篇中有 {closer} 篇的重估值更接近零。"
+   },
+   "short": {
+    "en": "Most within 10%",
+    "zh": "多数在10%内"
+   },
+   "numbers": [
+    {
+     "label": "Papers re-estimated (the Estimates page count; computed at build time)",
+     "value": 53,
+     "low": null,
+     "high": null,
+     "n": "53 papers",
+     "unit": "papers"
+    },
+    {
+     "label": "Papers within the site's 10% allowance (Number matches on Estimates)",
+     "value": 36,
+     "low": null,
+     "high": null,
+     "n": "53 papers",
+     "unit": "papers"
+    },
+    {
+     "label": "Papers beyond the allowance (3 with a larger absolute value than the published estimate, 1 with the opposite sign, 13 closer to zero)",
+     "value": 17,
+     "low": null,
+     "high": null,
+     "n": "53 papers",
+     "unit": "papers"
+    },
+    {
+     "label": "Of those, papers with the published sign and a smaller absolute value than the published estimate",
+     "value": 13,
+     "low": null,
+     "high": null,
+     "n": "17 papers",
+     "unit": "papers"
+    }
+   ],
+   "sources": [
+    "data/replication/snapshot_v5/snapshot_20261018T085028678040Z.json (the Estimates snapshot, pinned in scripts/viz_site/data/snapshot_pin.json): papers[].primary.ours.point, published.point, published.se, grade_numeric",
+    "scripts/viz_site/restructure_estimates.py reestimate_summary(), tested in scripts/viz_site/tests/test_restructure_explore.py (test_finding_7_is_computed_from_the_pinned_snapshot)"
+   ],
+   "verified": "yes, F1 2026-10-20: recomputed from the pinned snapshot with the Estimates rule (|o - p| <= 0.10 x max(|p|, se)): 53 compared papers, 36 inside, 17 outside; of the 17: 13 with the published sign and |ours| < |published| (8 of them without a published standard error), 3 with a larger absolute value (cullen2023, doleac2020, orrenius2015), 1 with the opposite sign (zoorob2024). Replaces the earlier line on the first 49 papers (REPGAP files of 2026-10-17), which the Estimates page could not reproduce.",
+   "computed": {
+    "loader": "scripts/viz_site/restructure_estimates.py reestimate_summary()",
+    "fields": [
+     "papers",
+     "within",
+     "other",
+     "closer"
+    ],
+    "rule": "papers = re-estimated papers of the pinned snapshot; within = Number matches (|ours - published| <= 10% of max(|published|, published SE)); other = papers - within; closer = of the others, same sign as the published estimate and a smaller absolute value",
+    "note": "The placeholders are filled when the page is built, so the line cannot disagree with Estimates. As of the pinned snapshot 20261018T085028678040Z: 53, 36, 17, 13."
+   }
+  }
+ ],
+ "not_seen": {
+  "en": "Not seen: one policy moving many types of outcome (under random timing among similar states, none of 27 designs has an unusually high number of outcome types outside their noise lines, at p ≤ 0.05; 1.4 such designs are expected by chance); effects growing where a causal channel is more plausible (12 policy groups; slope −0.03 per step up in plausibility, smallest detectable 0.12); laws pushing outcomes toward improvement (of the 374 results beyond one noise standard deviation, on outcomes with a clear good or bad direction, 48% point toward improvement, about 50% expected).",
+  "zh": "未见：一项政策推动多类结果变量（以相似州之间的随机采纳时点为参照，27 个设计中没有一个在 p ≤ 0.05 的水平上显示出异常多的结果变量类型落在噪声线之外；仅凭偶然预期有 1.4 个这样的设计）；因果渠道越合理，效应越大（12 个政策组；合理性每高一级，斜率 −0.03，可检出的最小斜率为 0.12）；法律把结果变量推向改善（在超出一个噪声标准差、且有明确好坏方向的 374 个结果中，48% 朝改善方向，预期约 50%）。",
+  "parts": [
+   {
+    "id": "D1-P5",
+    "en": "one policy moving many types of outcome",
+    "zh": "一项政策推动多类结果",
+    "numbers": [
+     {
+      "label": "Designs whose number of outcome types beyond the line has p <= .05 under the similar-state reference P5 (none; 1.35 expected by chance, printed 1.4)",
+      "value": 0,
+      "low": null,
+      "high": null,
+      "n": "27 designs, 23 policy families",
+      "unit": "designs"
+     },
+     {
+      "label": "Expected number of such designs by chance (printed 1.4)",
+      "value": 1.35,
+      "low": null,
+      "high": null,
+      "n": "27 designs",
+      "unit": "designs"
+     },
+     {
+      "label": "Mean breadth statistic theta under P5 (unadjusted interval); random timing gave +1.39 (0.58 to 2.19) with 40 beyond, 12.9 expected; not on the page",
+      "value": 0.04,
+      "low": -0.31,
+      "high": 0.4,
+      "n": "27 designs, 23 policy families",
+      "unit": "mean Z"
+     },
+     {
+      "label": "Outcome-family results (design x family) beyond their noise line under P5; expected from the draws 12.6; a calibration count, not the breadth test; not on the page",
+      "value": 13,
+      "low": null,
+      "high": null,
+      "n": "255 results, 27 designs, 23 policy families",
+      "unit": "results"
+     }
+    ],
+    "sources": [
+     "docs/plans/l3-meta/RESULTS_SELREF_V1.md, section 6 table row P5 (designs with p <= .05: 0 (1.4); theta +0.04, interval -0.31 to +0.40)",
+     "data/l3_meta/selref_v1/RESULTS_SELREF_V1.json: question.SELREF.references.P5.D1.pattern_counts (designs_p_le_05 0, designs_p_le_05_expected 1.35), theta, interval95, n_designs_eval 27"
+    ],
+    "verified": "yes, F1 2026-10-20: JSON P5.D1 pattern_counts designs_p_le_05 0, designs_p_le_05_expected 1.35, n_designs_eval 27, theta 0.0420 [-0.3128, 0.3967]; the earlier \"13 of 255 results beyond the line, 12.6 expected\" is the calibration count (series_calibration.families_beyond_line 13, expected 12.579), not the breadth test, and is no longer printed"
+   },
+   {
+    "id": "M3",
+    "en": "effects growing where a causal channel is more plausible",
+    "zh": "因果渠道越合理效应越大",
+    "numbers": [
+     {
+      "label": "Within-design gradient of |z| per rank of channel plausibility (0 none, 1 unsure, 2 channel); group-bootstrap 95%; minimum detectable 0.117 (printed 0.12); one-sided permutation p 0.69",
+      "value": -0.03,
+      "low": -0.12,
+      "high": 0.05,
+      "n": "12 policy groups, 27 designs, 1,290 results",
+      "unit": "|z| per rank"
+     }
+    ],
+    "sources": [
+     "docs/plans/l3-meta/RESULTS_M3_V1.md, section 1 table row 'P5, primary'",
+     "data/l3_meta/m3_v1/RESULTS_M3_V1.json: results.P5_primary.gradient"
+    ],
+    "verified": "yes: JSON slope -0.02906, boot_ci [-0.12348, 0.05198], mde 0.11745, perm_p_one_sided 0.688, 27 designs, 12 groups, 1,290 gradient cells"
+   },
+   {
+    "id": "X2",
+    "en": "laws pushing outcomes toward improvement",
+    "zh": "法律把结果推向改善",
+    "numbers": [
+     {
+      "label": "Results (cells) with |z| above 1 (beyond one noise standard deviation) that carry a good-or-bad direction (the outcome series is coded higher-is-better or higher-is-worse; 18 of 74 series are ambiguous and uncoded) and point toward improvement (null mean 49.7%, null range 40.2% to 59.5%)",
+      "value": 48.1,
+      "low": null,
+      "high": null,
+      "n": "374 results, 28 designs",
+      "unit": "%"
+     },
+     {
+      "label": "Halo H, mean welfare-signed z (null range -0.13 to +0.13; family-block interval -0.11 to +0.23)",
+      "value": 0.05,
+      "low": -0.11,
+      "high": 0.23,
+      "n": "28 designs, 74 coded series",
+      "unit": "z units"
+     }
+    ],
+    "sources": [
+     "docs/plans/l3-meta/RESULTS_X2_V1.md, section 1 table",
+     "data/l3_meta/x2_v1/RESULTS_X2_V1.json: results.halo_raw"
+    ],
+    "verified": "yes: JSON H_observed 0.0517, null_q025_q975 [-0.1295, 0.1260], family_block_ci95 [-0.1108, 0.2307], concordance_share 0.4813 over 374 cells (null 0.4973, range [0.4020, 0.5952]), 28 designs F1d: RESULTS_X2_V1.md section 1 \"Concordance among |z| > 1 coded cells 48.1% (374 cells)\"; the 374 are the cells with |z| > 1 whose series has a valence code (14 higher-is-better, 42 higher-is-worse, 18 ambiguous)."
+   }
+  ]
+ },
+ "questions": {
+  "source": "scripts/viz_site/data/explore_questions.json (same 17 rows, same n; builder C1 applied the hub's changes to both files, a test keeps them equal)",
+  "rule": "finished = a result file answers the question as worded (exploratory, any size, positive or null) and the page shows the answer (F6, Liebman M2: rows 6, 12 and 13 have a result file but no result on the page, so they are in progress); in_progress = something computed that cannot answer it yet (too few designs, partial, count of another set); waiting = nothing computed because an input is missing",
+  "counts": {
+   "finished": 4,
+   "in_progress": 9,
+   "waiting": 4,
+   "total": 17,
+   "finished_without_ambiguous_rows": 4
+  },
+  "order_within_groups": "copy order (row number)",
+  "rows": [
+   {
+    "n": 1,
+    "registry_id": "adoption study",
+    "question": {
+     "en": "Do party control or local need predict which states adopt a policy?",
+     "zh": "党派控制或当地需要，能预测哪些州采纳政策吗？"
+    },
+    "status_before": "finished",
+    "status": "finished",
+    "status_changed": false,
+    "data_before": {
+     "en": "{fitted} policies, {events} adoptions",
+     "zh": "{fitted} 项政策，{events} 次采纳"
+    },
+    "data": {
+     "en": "{fitted} policies, {events} adoptions",
+     "zh": "{fitted} 项政策，{events} 次采纳"
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: docs/plans/l3-pooled/RESULTS.md (35 policies, 597 adoptions)"
+   },
+   {
+    "n": 2,
+    "registry_id": "Q2 / Q2-R",
+    "question": {
+     "en": "Do published effects shrink when we re-estimate them?",
+     "zh": "已发表的效应，经我们重新估计后会缩小吗？"
+    },
+    "status_before": "waiting",
+    "status": "in_progress",
+    "status_changed": true,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "",
+     "zh": ""
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "finding REPGAP; RESULTS_REPGAP_V1.md; data/l3_meta/q2r_v2/RESULTS_Q2R_V2.json",
+    "note": "The wording of the row is answered in part by Q2-R/REPGAP (finding 8); the registered strict-match Q2 (2 of 8 designs computable, wrong sign for shrinkage) stays blocked in the synthesis, section 4. Hub kept the row in progress.",
+    "applied": "Hub decision 2026-10-20: in progress (the registered strict-match Q2 is still blocked). No data line: 49 (REPGAP, first 49 papers) and 53 (Estimates) would sit on one page next to each other, and the registered version does not use either set."
+   },
+   {
+    "n": 3,
+    "registry_id": "N7",
+    "question": {
+     "en": "Are states more likely to adopt after earlier states’ policies worked?",
+     "zh": "先行州的政策见效后，后续的州更可能采纳吗？"
+    },
+    "status_before": "waiting",
+    "status": "waiting",
+    "status_changed": false,
+    "data_before": {
+     "en": "12 checked adoption histories",
+     "zh": "12 份核对过的采纳史"
+    },
+    "data": {
+     "en": "12 checked adoption histories",
+     "zh": "12 份核对过的采纳史"
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: synthesis section 4 (purpose direction F1 needed); RESULTS_F1_RETRO_20261019.md N7 unavailable_min_N",
+    "applied": "F1 (2026-10-20): question wording made exact (McCloskey S9/S14, ZH editor M5/A8/A9)."
+   },
+   {
+    "n": 4,
+    "registry_id": "N13",
+    "question": {
+     "en": "Does a failure slow later adoption more than a success speeds it?",
+     "zh": "失败对后续采纳的拖累，比成功的推动更大吗？"
+    },
+    "status_before": "waiting",
+    "status": "waiting",
+    "status_changed": false,
+    "data_before": {
+     "en": "12 checked adoption histories",
+     "zh": "12 份核对过的采纳史"
+    },
+    "data": {
+     "en": "12 checked adoption histories",
+     "zh": "12 份核对过的采纳史"
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: synthesis section 4 (F1); RESULTS_F1_RETRO_20261019.md N13 unavailable_min_N",
+    "applied": "F1 (2026-10-20): question wording made exact (McCloskey S9/S14, ZH editor M5/A8/A9)."
+   },
+   {
+    "n": 5,
+    "registry_id": "N4",
+    "question": {
+     "en": "How often do estimates point the way the law intended?",
+     "zh": "估计结果多常与立法本意的方向一致？"
+    },
+    "status_before": "waiting",
+    "status": "in_progress",
+    "status_changed": true,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "16 laws",
+     "zh": "16 项法律"
+    },
+    "data_changed": true,
+    "ambiguous": true,
+    "applied_v56": "V5.6 (T255): panel must-fix (Card, Finkelstein, Liebman): the page now prints the promise-versus-delivery count (T249 method re-run on the r3 pin by T265: 16 laws: 2 / 12 / 2), so the row is in progress with its data line; the registered purpose-direction version stays blocked.",
+    "evidence": "unchanged: synthesis section 4 (F1: 0 of 139 designs carry a purpose direction)",
+    "note": "Ambiguous. A later file, RESULTS_F1_RETRO_20261019.md (dated 2026-10-19, after the synthesis), gives a descriptive N4 on 11 retrospectively coded designs and says it carries no conclusion.",
+    "alternative": {
+     "status": "in_progress",
+     "data": {
+      "en": "11 designs with a coded purpose",
+      "zh": "11 个已标注立法目的的设计"
+     },
+     "when": "if the page may use results dated after 2026-10-18"
+    }
+   },
+   {
+    "n": 6,
+    "registry_id": "Q1",
+    "question": {
+     "en": "How many policy estimates rise above their own noise?",
+     "zh": "多少政策估计超出了自身的噪声？"
+    },
+    "status_before": "in_progress",
+    "status": "in_progress",
+    "status_changed": true,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "",
+     "zh": ""
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "RESULTS_EX1_V3.md section 3; REFRESH_20261018.md row Q1; RESULTS_CAL_V1.md (3 of 52); RESULTS_SELREF_V1.md section 5 (4 of 33)",
+    "note": "A count exists (9 of 52) but it moves with the noise line (3 of 52 widened, 4 of 33 similar states); the page prints no count here. Hub decided finished.",
+    "applied": "Hub decision 2026-10-20: finished. No data line, as since R29 (EX3). F6 (2026-10-20, Liebman M2): in progress, because the page shows no answer to it."
+   },
+   {
+    "n": 7,
+    "registry_id": "N2",
+    "question": {
+     "en": "Do policy effects grow or fade after the first two years?",
+     "zh": "政策效应在头两年之后是增强还是消退？"
+    },
+    "status_before": "waiting",
+    "status": "finished",
+    "status_changed": false,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "",
+     "zh": ""
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: synthesis section 4 (F1); N2 not computed in RESULTS_F1_RETRO_20261019.md"
+   },
+   {
+    "n": 8,
+    "registry_id": "N3",
+    "question": {
+     "en": "Do conditions worsen in the years before a state adopts?",
+     "zh": "一个州采纳之前的几年，情况是否在恶化？"
+    },
+    "status_before": "waiting",
+    "status": "waiting",
+    "status_changed": false,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "",
+     "zh": ""
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: synthesis section 4 (F1); RESULTS_F1_RETRO_20261019.md N3 unavailable"
+   },
+   {
+    "n": 9,
+    "registry_id": "Q3",
+    "question": {
+     "en": "Can AI forecasts made in advance predict the estimates?",
+     "zh": "AI 事先作出的预测，能预测估计结果吗？"
+    },
+    "status_before": "in_progress",
+    "status": "in_progress",
+    "status_changed": false,
+    "data_before": {
+     "en": "175 forecasts for 35 estimates",
+     "zh": "35 项估计的 175 条预测"
+    },
+    "data": {
+     "en": "210 forecasts for 42 estimates",
+     "zh": "42 项估计的 210 条预测"
+    },
+    "data_changed": true,
+    "ambiguous": false,
+    "evidence": "RESULTS_EX1_V3.md section 4 (n = 42, 210 slots); REFRESH_20261018.md row Q3",
+    "note": "Status stays: the registered skill score rests on 2 designs; the median forecast has the right sign in 29 of 42. Data line updated from 175 forecasts for 35 estimates (V2) to the 42-design set.",
+    "applied": "Re-verified by C1: RESULTS_EX1_V3.json (refresh 20261018_r1) questions.Q3.scores.all design_n 42, slots 210."
+   },
+   {
+    "n": 10,
+    "registry_id": "N14",
+    "question": {
+     "en": "Do later adopters repeat early adopters’ results, or do better?",
+     "zh": "后来采纳州是重复早期采纳州的结果，还是更好？"
+    },
+    "status_before": "waiting",
+    "status": "finished",
+    "status_changed": false,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "",
+     "zh": ""
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: synthesis section 4 (F1); RESULTS_F1_RETRO_20261019.md N14 unavailable_min_N",
+    "applied": "F1 (2026-10-20): question wording made exact (McCloskey S9/S14, ZH editor M5/A8/A9)."
+   },
+   {
+    "n": 11,
+    "registry_id": "N1",
+    "question": {
+     "en": "Do adopting states differ from states without the policy?",
+     "zh": "采纳州与没有该政策的州有差别吗？"
+    },
+    "status_before": "waiting",
+    "status": "finished",
+    "status_changed": true,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "",
+     "zh": ""
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "finding N1-V2; REFRESH_20261018.md; RESULTS_N1_V2.json",
+    "applied": "Hub decision 2026-10-20: finished. No data line, as since R29 (EX3); finding 1 carries the 63 designs and 45 policy families. F1 (2026-10-20): question wording made exact (McCloskey S9/S14, ZH editor M5/A8/A9)."
+   },
+   {
+    "n": 12,
+    "registry_id": "Card2",
+    "question": {
+     "en": "How often do laws depend on past history, not just current facts?",
+     "zh": "法律多常取决于过去的情况，而不只是当前的事实？"
+    },
+    "status_before": "finished",
+    "status": "in_progress",
+    "status_changed": false,
+    "data_before": {
+     "en": "600 sampled law texts",
+     "zh": "600 篇抽样法律文本"
+    },
+    "data": {
+     "en": "600 sampled law texts",
+     "zh": "600 篇抽样法律文本"
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: docs/plans/l3-ideas/Card2/RESULT.md",
+    "applied": "F6 (2026-10-20, Liebman M2): in progress, because the page shows no answer to it. F1 (2026-10-20): question wording made exact (McCloskey S9/S14, ZH editor M5/A8/A9). F1b (2026-10-20): the R30 English question restored (panel round 2: \"and\" asked how often a law depends on both, not the share whose treatment depends on a past trajectory, which is what Card2 measures); the Chinese gets its missing noun."
+   },
+   {
+    "n": 13,
+    "registry_id": "Stan1",
+    "question": {
+     "en": "Do business rules look further back at resources than household rules?",
+     "zh": "企业规则审查资源的回溯期，比家庭规则更长吗？"
+    },
+    "status_before": "finished",
+    "status": "in_progress",
+    "status_changed": false,
+    "data_before": {
+     "en": "600 sampled law texts",
+     "zh": "600 篇抽样法律文本"
+    },
+    "data": {
+     "en": "600 sampled law texts",
+     "zh": "600 篇抽样法律文本"
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: docs/plans/l3-ideas/Stan1/RESULT.md",
+    "applied": "F6 (2026-10-20, Liebman M2): in progress, because the page shows no answer to it. F1 (2026-10-20): question wording made exact (McCloskey S9/S14, ZH editor M5/A8/A9)."
+   },
+   {
+    "n": 14,
+    "registry_id": "Q4",
+    "question": {
+     "en": "Do policies adopted along party lines have larger effects?",
+     "zh": "沿党派路线采纳的政策，效应更大吗？"
+    },
+    "status_before": "waiting",
+    "status": "waiting",
+    "status_changed": false,
+    "data_before": {
+     "en": "12 checked adoption histories",
+     "zh": "12 份核对过的采纳史"
+    },
+    "data": {
+     "en": "12 checked adoption histories",
+     "zh": "12 份核对过的采纳史"
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "unchanged: synthesis section 4 (s_pre, H, v_i not exported for 9 older designs; 11 of 20 families certified)"
+   },
+   {
+    "n": 15,
+    "registry_id": "Q5",
+    "question": {
+     "en": "In which policy fields does estimation most often stop?",
+     "zh": "哪些政策领域的估计最常中途停止？"
+    },
+    "status_before": "in_progress",
+    "status": "in_progress",
+    "status_changed": false,
+    "data_before": {
+     "en": "",
+     "zh": ""
+    },
+    "data": {
+     "en": "155 attempted designs",
+     "zh": "155 个已尝试的设计"
+    },
+    "data_changed": true,
+    "ambiguous": true,
+    "evidence": "RESULTS_EX1_V3.md section 6; REFRESH_20261018.md row Q5",
+    "note": "Ambiguous. A by-field table exists, but the file reads 'counts too small to separate domains'; kept in progress. Data line added: the data the row uses, not a result (the check allows no result on an unfinished row).",
+    "alternative": {
+     "status": "finished",
+     "data": {
+      "en": "155 attempted designs",
+      "zh": "155 个已尝试的设计"
+     },
+     "when": "if the by-field funnel counts as the answer"
+    },
+    "applied": "V5.6 (T265): D 155 (81 estimated, 74 not evaluable) from refresh 20261022_r3 (T255 had D 153: 77 / 76, refresh r2) (was D 139: 55 estimated, 84 not evaluable at the 2026-10-18 stamp). R25 M5 / R29 EX3 had removed '137 attempted analyses'; restored at the hub's decision."
+   },
+   {
+    "n": 16,
+    "registry_id": "N10",
+    "question": {
+     "en": "Does disagreement among AI forecasts show where they miss?",
+     "zh": "AI 预测之间的分歧，能标出预测出错的地方吗？"
+    },
+    "status_before": "in_progress",
+    "status": "in_progress",
+    "status_changed": false,
+    "data_before": {
+     "en": "175 forecasts for 35 estimates",
+     "zh": "35 项估计的 175 条预测"
+    },
+    "data": {
+     "en": "35 forecasts for 7 estimates",
+     "zh": "7 项估计的 35 条预测"
+    },
+    "data_changed": true,
+    "ambiguous": false,
+    "evidence": "RESULTS_EX1_V3.md section 5 (n = 7 of 141, five slots each); REFRESH_20261018.md row N10",
+    "note": "Status stays: 7 designs against 40 wanted, interval spans the whole range. Data line corrected: only the 7 designs with a preperiod SD can enter N10.",
+    "applied": "Re-verified by C1: same JSON questions.N10.n 7, five-slot ledgers (RESULTS_EX1_V3.md section 5), 7 x 5 = 35."
+   },
+   {
+    "n": 17,
+    "registry_id": "Stan2",
+    "question": {
+     "en": "When rules tighten, are existing assets protected longer than existing beneficiaries?",
+     "zh": "规则收紧时，既有资产比既有受益人受保护更久吗？"
+    },
+    "status_before": "finished",
+    "status": "in_progress",
+    "status_changed": true,
+    "data_before": {
+     "en": "317 sampled law texts",
+     "zh": "317 篇抽样法律文本"
+    },
+    "data": {
+     "en": "317 sampled law texts",
+     "zh": "317 篇抽样法律文本"
+    },
+    "data_changed": false,
+    "ambiguous": false,
+    "evidence": "docs/plans/l3-ideas/Stan2/RESULT.md (support fails: known asset 0, beneficiary 0, overlap cells 0)",
+    "note": "Stan2 produced no estimate: no known comparison or overlapping cell exists in the 317 sampled law texts (docs/plans/l3-ideas/Stan2/RESULT.md: estimate and 95% CI unavailable).",
+    "applied": "Hub decision 2026-10-20 (panel round F1): in progress. By the rule of this board a question that no result answers yet is in progress."
+   }
+  ]
+ },
+ "reconcile_35": {
+  "placement": "under_study_heading",
+  "placement_alternative": "lead_in_of_T64",
+  "en": "The faster-adoption finding above counts control by the party each policy favors and covers 166 policies; this model counts Democratic control, whatever party the policy favors, and covers 35.",
+  "zh": "上文关于采纳加快的发现，按各政策所偏向的党派记党派控制，涵盖 166 项政策；本模型一律记民主党执政，不论政策偏向哪个党派，涵盖 35 项。",
+  "why": "F1 (2026-10-20): the earlier sentence offered the common coding (liberal and conservative policies offsetting) as the reason the two results differ; no file shows that (Boehmke S3, Abadie S9). The sentence now states the two differences the files do show, the coding and the number of policies, and no cause. C1's placement reasons stand: under the study heading, after its lead."
+ },
+ "label_home": {
+  "en": "All findings here are exploratory.",
+  "zh": "此处所有发现均为探索性。"
+ },
+ "explore": {
+  "lead": {
+   "en": "Patterns across many policies, and the checks behind them.",
+   "zh": "跨多项政策的规律，以及背后的核对。"
+  },
+  "removed": [
+   "P5",
+   "D4",
+   "X6",
+   "D1-P5",
+   "M3",
+   "X2"
+  ],
+  "items": [
+   {
+    "id": "REPGAP",
+    "kind": "finding",
+    "en": {
+     "head": "With each paper’s own method, most published results reproduce within 10%",
+     "why": "Where we differ, our estimate is closer to zero in {closer} of {other}.",
+     "numbers": "{within} of {papers} papers, starting with the easiest data to get, differ from the published figure by no more than 10% of its size, or of its standard error if that is larger."
+    },
+    "zh": {
+     "head": "按每篇论文自己的方法重新估计，多数已发表结果能在 10% 内复现",
+     "why": "有差距的 {other} 篇里，{closer} 篇我们的估计更接近零。",
+     "numbers": "先从数据最容易拿到的论文做起，已重新估计 {papers} 篇，其中 {within} 篇与原文数值相差不超过 10%（以原文估计值的大小为基数；若其标准误更大，则以标准误为基数）。"
+    }
+   },
+   {
+    "id": "N1-V2",
+    "kind": "finding",
+    "en": {
+     "head": "Adopting states differ from the rest in party, ideology, income and urbanization",
+     "why": "So comparing adopters with non-adopters picks up those differences too.",
+     "numbers": "The gap is on average 2.84 standard deviations larger than when the same adoptions are handed to states at random (95% interval 1.50 to 4.18); 63 studies, 45 policy groups; in 34 of the 63 the gap alone is beyond chance, against 3.15 expected by chance."
+    },
+    "zh": {
+     "head": "采纳政策的州，在党派、意识形态、收入和城市化程度上都与其他州不同",
+     "why": "所以直接拿采纳的州和没采纳的州比，比出来的也包含这些差异。",
+     "numbers": "这一差距平均比把同一批采纳随机分给各州时大 2.84 个标准差（95% 区间 1.50 到 4.18）；63 项研究，45 个政策类别；63 项中有 34 项的差距单独看就超出随机范围，随机情形下预期约 3.15 项。"
+    }
+   },
+   {
+    "id": "T64",
+    "kind": "finding",
+    "en": {
+     "head": "States adopt a policy faster when the party that favors it is in charge",
+     "why": "The link shows up from 1990 and is not seen before.",
+     "numbers": "Each step (from the other party in control, to split control, to this party in control) goes with 19% higher yearly odds that a state adopts for the first time (95% interval 10% to 28%); per step the odds ratio is 1.39 in 1990–2016 and 0.94 in 1961–1989; 166 policies, 4,309 adoptions."
+    },
+    "zh": {
+     "head": "政策偏向的那个党在州里执政时，采纳得更快",
+     "why": "这种关系从 1990 年起才出现，之前未见。",
+     "numbers": "控制权每向这个党靠近一步（从对方党执政，到两党分治，再到这个党执政），州在某一年首次采纳的几率高 19%（95% 区间 10% 到 28%）；每一步使几率在 1990–2016 年变为原来的 1.39 倍，在 1961–1989 年为 0.94 倍；166 项政策，4,309 次采纳。"
+    }
+   },
+   {
+    "id": "N11-M7",
+    "kind": "finding",
+    "en": {
+     "head": "Estimates for policies that reach many of the same states tend to move together",
+     "why": "Results that share states count for less than the same number of independent ones.",
+     "numbers": "Pairs of studies that share more of their adopting states move together more (slope +2.31 on the share of states in common, 95% interval 0.43 to 4.19); 226 study pairs, 28 studies."
+    },
+    "zh": {
+     "head": "影响许多相同州的政策，估计结果往往同升同降",
+     "why": "共用州的结果，作为证据比同样数量的独立结果更弱。",
+     "numbers": "两项研究共有的采纳州占比越高，估计越是同向变动（以共有州占比为自变量，斜率 +2.31，95% 区间 0.43 到 4.19）；226 个研究对，28 项研究。"
+    }
+   }
+  ],
+  "how": {
+   "en": "How we checked: all numbers are computed from adoption records and our re-run estimates; a study is one policy’s rollout across US states.",
+   "zh": "核对方式：所有数字都由采纳记录和我们重新估计的结果计算而来；一项研究指一项政策在美国各州的推行。"
+  }
+ }
+}

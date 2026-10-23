@@ -1,0 +1,78 @@
+design_id,domain_group,source_group,law,direction_final,overall_att,noise_sd,beyond_noise,hit,class_
+prototype:adult_use_cannabis,health,prototype,adult_use_cannabis,1,0.031700114945312705,0.012868823977553347,1.0,1,right and beyond noise
+prototype:castle_doctrine,crime,prototype,stand_your_ground,-1,0.11411981599259549,,,0,no flag
+prototype:cigarette_tax,public_finance,prototype,cigarette_excise_tax_large_increase,0,-0.2329252497993482,0.054661233528318136,1.0,,zero-coded (excluded)
+prototype:death_penalty_abolition,crime,prototype,death_penalty_abolition,-1,-0.11836206315023129,0.0736626688602754,0.0,1,not distinguishable from noise
+prototype:medicaid_expansion,health,prototype,aca_medicaid_expansion_adults,0,-0.04437198493206429,,,,zero-coded (excluded)
+prototype:minimum_wage_step,labor,prototype,minimum_wage,1,-0.004644909491974908,0.011887869873039034,0.0,0,not distinguishable from noise
+prototype:paid_sick_leave,labor,prototype,paid_sick_leave,1,0.020348772972972398,,,1,no flag
+prototype:primary_seat_belt,other,prototype,primary_seat_belt,-1,0.006693150635817014,0.030284639203205545,0.0,0,not distinguishable from noise
+prototype:renewable_portfolio,environment,prototype,renewable_portfolio_standard,-1,0.02860404147221293,0.028496626621699637,0.0,0,not distinguishable from noise
+prototype:right_to_work,labor,prototype,right_to_work,0,-0.0006248001098347622,0.007326192880352575,0.0,,zero-coded (excluded)
+prototype:salary_history_ban,labor,prototype,salary_history_ban,1,0.005375937033903049,0.01439651444269244,0.0,1,not distinguishable from noise
+prototype:shall_issue,crime,prototype,shall_issue_carry,-1,0.17965649281555152,0.09228127207092134,1.0,0,wrong and beyond noise
+prototype:smoke_free_air,health,prototype,comprehensive_smoke_free_air_law,-1,-0.8247457627118648,0.4024171105424394,1.0,1,right and beyond noise
+did-0facf57d0164de6ca875,labor,manual_batch,minimum_wage_indexing,1,-1.84339587492038,1.0448402248672497,0.0,0,not distinguishable from noise
+did-24bf487e6f8061965acc,other,manual_batch,automatic_voter_registration,1,1.774216524216523,1.1019320569813937,0.0,1,not distinguishable from noise
+did-3ee1dcd04a7f41715f72,labor,manual_batch,paid_family_medical_leave,1,0.4419283235334871,0.7046281066180451,0.0,1,not distinguishable from noise
+did-58827a36a4167bcf0ad1,labor,manual_batch,ban_the_box,1,0.5991455395340296,0.4605741900276757,0.0,1,not distinguishable from noise
+did-716ad30a75283116836f,public_finance,manual_batch,film_tax_credit,1,992.5380682370925,442.39501409130366,0.0,1,not distinguishable from noise
+did-82cc3e884d0ca4f8ce01,health,manual_batch,medical_cannabis,1,-0.13487180035132926,0.33174092713892156,0.0,0,not distinguishable from noise
+did-a0c08d8d5a891ede06b1,labor,manual_batch,ban_the_box,1,-0.15686632846596796,0.6504108299380897,0.0,0,not distinguishable from noise
+did-c2e2f141c074e2a2eab4,public_finance,manual_batch,refundable_eitc,1,0.7952960214986607,0.6074416556390103,0.0,1,not distinguishable from noise
+c18_cspp_guncontrol_stand_your_ground,crime,registry_terminal,stand_your_ground,-1,0.35717257003998004,0.2426046394131542,0.0,0,not distinguishable from noise
+c18_siegel_mcdv,crime,registry_terminal,misdemeanor-dv_firearm_prohibition,-1,-0.5853462213543632,0.5076888136246362,0.0,1,not distinguishable from noise
+c18_siegel_mcdvsurrender,crime,registry_terminal,misdemeanor-dv_firearm_surrender,-1,-0.41360739602700203,0.49990314254728796,0.0,1,not distinguishable from noise
+pay_secrecy,labor,registry_terminal,pay-secrecy_bans,1,-0.011300657575757505,0.017821591354394015,0.0,0,not distinguishable from noise
+pregnancy_accommodation,labor,registry_terminal,pregnancy_workplace_accommodation,1,0.07594624729336595,0.4882041422151955,0.0,1,not distinguishable from noise
+run1_ems_compact,labor,registry_terminal,ems_licensure_recognition,1,57.32258064516129,133.5131347766022,0.0,1,not distinguishable from noise
+run1_nurse_overtime,labor,registry_terminal,nurse_mandatory-overtime_limits,0,-0.06591881325287655,0.5181982301646844,0.0,,zero-coded (excluded)
+run1_pt_compact,labor,registry_terminal,physical-therapy_licensure_recognition,1,-336.2634615384615,617.9012029956675,0.0,0,not distinguishable from noise
+run2_breast_density_notification,health,registry_terminal,breast-density_notification,1,122.10755813953489,99.92638962077243,0.0,1,not distinguishable from noise
+run2_colorectal_screening_coverage,health,registry_terminal,colorectal-screening_coverage,1,-1089.1732804232804,1457.159660269418,0.0,0,not distinguishable from noise
+run2_community_college_bachelor,other,registry_terminal,community-college_bachelor_degrees,1,-0.02528575877501494,0.6339171498248425,0.0,0,not distinguishable from noise
+run2_contraception_insurance,health,registry_terminal,contraceptive_insurance_coverage,1,-0.42603380769138627,0.3964285063497357,0.0,0,not distinguishable from noise
+run2_decentralized_tuition,other,registry_terminal,decentralized_tuition_setting,1,-0.4956875027567028,0.5895668384891171,0.0,0,not distinguishable from noise
+run2_electronic_waste_recycling,environment,registry_terminal,e-waste_recycling_laws,1,137.86858974358978,146.09849964758507,0.0,1,not distinguishable from noise
+run2_energy_public_benefit_fund,environment,registry_terminal,energy_public-benefit_funds,0,-124.21239598557183,647.0880632046219,0.0,,zero-coded (excluded)
+run2_gender_identity_employment,labor,registry_terminal,gender-identity_employment_protection,1,-0.009913008850815126,0.3759467078032406,0.0,0,not distinguishable from noise
+run2_meth_precursor_restrictions,health,registry_terminal,methamphetamine-precursor_restrictions,-1,-0.3888514583333331,0.5919687830861131,0.0,1,not distinguishable from noise
+run2_young_adult_dependent_coverage,health,registry_terminal,young-adult_dependent_coverage,1,-0.8577745581698555,0.5891672547839754,0.0,0,not distinguishable from noise
+run4_lit_family_planning_income_waiver,health,registry_terminal,family-planning_income_waivers,-1,-2.5984615384615397,0.8519807455847395,1.0,1,right and beyond noise
+run4_lit_nurse_licensure_compact,labor,registry_terminal,nurse_licensure_compact,0,-0.0774815000398784,0.47439537802140735,0.0,,zero-coded (excluded)
+run7_abortion_informed_consent,health,registry_terminal,abortion_informed-consent_laws,-1,-0.27704517704517884,1.901789073632345,0.0,1,not distinguishable from noise
+run7_refundable_eitc,public_finance,registry_terminal,refundable_eitc,1,1.2806423110206484,1.069905432180001,0.0,1,not distinguishable from noise
+run8_domestic_violence_restraining_order_firearm_restriction,crime,registry_terminal,dv_restraining-order_firearm_prohibition,-1,-1.001507428157601,0.7046301121550652,0.0,1,not distinguishable from noise
+run8_extreme_risk_protection_order,crime,registry_terminal,extreme_risk_protection_orders,-1,-29.3925831202046,56.34842411285733,0.0,1,not distinguishable from noise
+run8_gunshow_background_check,crime,registry_terminal,gun-show_background_checks,-1,-13.499567474048433,82.48778482692046,0.0,1,not distinguishable from noise
+run8_large_capacity_magazine_ban,crime,registry_terminal,large-capacity_magazine_bans,-1,-73.81637519872817,103.57346001366568,0.0,1,not distinguishable from noise
+run8_universal_background_check,crime,registry_terminal,universal_background_checks,-1,-111.0844583987441,66.2506074141583,0.0,1,not distinguishable from noise
+b1010_handheld_ban_all,other,autopilot_estimate,handheld_phone_ban,-1,1.0053983321260451,0.4995470956234385,1.0,0,wrong and beyond noise
+b1010_interlock_all_offender,other,autopilot_estimate,ignition_interlock_all_offender,-1,-1.0678852182393286,0.5745679844089474,0.0,1,not distinguishable from noise
+b1010_permitless_carry,crime,autopilot_estimate,permitless_carry,-1,1.4724581187362684,0.5505261934777331,1.0,0,wrong and beyond noise
+b1010_primary_seatbelt,other,autopilot_estimate,primary_seat_belt,-1,0.22965164511805428,0.4348311477386101,0.0,0,not distinguishable from noise
+b1010b_bicycle_passing_3ft,other,autopilot_estimate,bicycle_passing_distance_law,-1,-0.015218474537382325,0.024914816062028923,0.0,1,not distinguishable from noise
+b1010b_child_restraint_booster_age5,other,autopilot_estimate,child_restraint_booster_law,-1,0.7403412816406097,0.40139482112762337,0.0,0,not distinguishable from noise
+b1010b_pdmp_mandatory_query,health,autopilot_estimate,pdmp_mandatory_use,-1,-6.494252398886891,2.719684470294139,1.0,1,right and beyond noise
+b1010b_zero_tolerance_under21,other,autopilot_estimate,zero_tolerance_under21,-1,-1.118168821063274,0.5636075393387614,1.0,1,right and beyond noise
+b1011c_electricity_retail_choice,environment,autopilot_estimate,electricity_retail_restructuring,-1,-0.07297723714320138,0.7143361841710711,0.0,1,not distinguishable from noise
+b1011c_rps_binding_standard,environment,autopilot_estimate,renewable_portfolio_standard,1,-0.2612451190786782,2.493565540906131,0.0,0,not distinguishable from noise
+b1011cfl_click_through_affiliate_nexus_sales_tax,public_finance,autopilot_estimate,click_through_nexus,0,20.833542783378075,42.189159853919065,0.0,,zero-coded (excluded)
+b1011cfl_state_constitutional_tax_expenditure_limit,public_finance,autopilot_estimate,tax_expenditure_limit,0,-511.33993460236394,121.41189540066604,1.0,,zero-coded (excluded)
+b1011cfl_state_motor_fuel_tax_package_capital_outlay,public_finance,autopilot_estimate,motor_fuel_tax_package,0,6.92957586276535,29.938752822338028,0.0,,zero-coded (excluded)
+b1011cfl_ui_alternative_base_period,labor,autopilot_estimate,ui_alt_base_period,0,14728.200479369969,13111.966116088273,0.0,,zero-coded (excluded)
+b1011tl_noncompete_lowwage_ban,labor,autopilot_estimate,noncompete_lowwage_ban,1,9.69768632830356,10.928076823166936,0.0,1,not distinguishable from noise
+b1012cr_medical_cannabis_law,health,autopilot_estimate,medical_cannabis,-1,-10.432599637567568,37.287621355542385,0.0,1,not distinguishable from noise
+b1015q3_adult_use_cannabis_legalization_adult_binge_drinking,health,autopilot_estimate,adult_use_cannabis,-1,-0.9405797101449279,0.467796397818639,1.0,1,right and beyond noise
+b1015q3_adult_use_cannabis_legalization_traffic_deaths,health,autopilot_estimate,adult_use_cannabis,-1,0.9209999998459192,0.4759937968610525,0.0,0,not distinguishable from noise
+b1015q3_medical_cannabis_law_adult_binge_drinking,health,autopilot_estimate,medical_cannabis,-1,-1.1900793650793646,0.6424980367439829,0.0,1,not distinguishable from noise
+b1015q3_pdmp_mandatory_query_opioid_overdose_deaths,health,autopilot_estimate,pdmp_mandatory_use,-1,3.8549327201319556,1.7171389115886855,1.0,0,wrong and beyond noise
+b1016q4_adult_use_cannabis_legalization_property_crime,health,autopilot_estimate,adult_use_cannabis,-1,338.1273681178492,86.97070550439642,1.0,0,wrong and beyond noise
+b1016q4_handheld_ban_all_motor_vehicle_occupant_fatalities,other,autopilot_estimate,handheld_phone_ban,-1,1.2059341242063,0.4905400647947929,1.0,0,wrong and beyond noise
+b1016q4_medical_cannabis_law_drinking_driver_crash_deaths,health,autopilot_estimate,medical_cannabis,-1,0.35521257042355686,0.352692094491719,0.0,0,not distinguishable from noise
+b1016q4_medical_cannabis_law_property_crime,health,autopilot_estimate,medical_cannabis,-1,-73.50457821578749,147.96437681928555,0.0,1,not distinguishable from noise
+b1016q4_pdmp_mandatory_query_drug_overdose_deaths,health,autopilot_estimate,pdmp_mandatory_use,-1,2.018836772786944,1.7049565597613119,0.0,0,not distinguishable from noise
+b1016q4_shall_issue_carry_ucr_robbery,crime,autopilot_estimate,shall_issue_carry,-1,41.14965108653118,19.395587685955757,1.0,0,wrong and beyond noise
+b1016q4_speed_limit_65_rural_interstate_1987_motor_vehicle_occupant_fatalities,other,autopilot_estimate,speed_limit_65,-1,-0.10228882912514838,0.6339275305526131,0.0,1,not distinguishable from noise
+b1016q4_ui_alternative_base_period_ui_weeks_compensated,labor,autopilot_estimate,ui_alt_base_period,0,226897.1982537236,236894.6463508143,0.0,,zero-coded (excluded)
+r1011_speed_limit_65_rural_interstate_1987,other,autopilot_estimate,speed_limit_65,-1,0.07169868345628796,0.7337880726314785,0.0,0,not distinguishable from noise

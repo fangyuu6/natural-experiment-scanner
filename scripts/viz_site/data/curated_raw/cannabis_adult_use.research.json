@@ -1,0 +1,573 @@
+{
+  "policy_id": "cannabis_adult_use",
+  "name_en": "Adult-use cannabis legalization",
+  "name_zh": "成人大麻合法化",
+  "definition_en": "Calendar year in which a state law legalizing adult-use (recreational) cannabis possession took effect (not the later start of retail sales); null if none by 2025-12-31.",
+  "definition_zh": "该州允许成年人持有（娱乐用）大麻的法律实际生效的日历年（不含其后零售开始的年份）；截至2025年底无此类法律则为空。",
+  "year_basis": "Effective year of the law legalizing adult possession (not retail launch)",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+    "https://www.mpp.org/issues/legalization/",
+    "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction",
+    "https://en.wikipedia.org/wiki/Timeline_of_cannabis_laws_in_the_United_States"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "AK": {
+      "year": 2015,
+      "date": "2015-02-24",
+      "sources": [
+        "https://health.alaska.gov/en/education/drugs-and-alcohol/marijuana/marijuana-know-alaskas-laws/",
+        "https://en.wikipedia.org/wiki/Cannabis_in_Alaska",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "AZ": {
+      "year": 2020,
+      "date": "2020-11-30",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cannabis_in_Arizona",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction",
+        "https://azdor.gov/business/transaction-privilege-tax/adult-use-marijuana"
+      ],
+      "confidence": "high",
+      "note": "Prop 207 passed 2020-11-03; possession legal on canvass certification 2020-11-30."
+    },
+    "AR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "CA": {
+      "year": 2016,
+      "date": "2016-11-09",
+      "sources": [
+        "https://courts.ca.gov/programs-initiatives/criminal-justice-services/proposition-64-adult-use-marijuana-act",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "CO": {
+      "year": 2012,
+      "date": "2012-12-10",
+      "sources": [
+        "https://www.kunc.org/politics/2012-12-10/governor-signs-recreational-marijuana-into-colorado-law-read-it-here",
+        "https://en.wikipedia.org/wiki/2012_Colorado_Amendment_64",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Amendment 64 passed 2012-11-06; took effect on governor's proclamation 2012-12-10."
+    },
+    "CT": {
+      "year": 2021,
+      "date": "2021-07-01",
+      "sources": [
+        "https://portal.ct.gov/cannabis/knowledge-base/articles/when-cannabis-becomes-legal",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "DE": {
+      "year": 2023,
+      "date": "2023-04-23",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cannabis_in_Delaware",
+        "https://www.goodwinlaw.com/en/insights/publications/2023/05/alerts-otherindustries-cannabis-a-mini-green-wave",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "HB 1 became law without governor's signature 2023-04-23."
+    },
+    "DC": {
+      "year": 2015,
+      "date": "2015-02-26",
+      "sources": [
+        "https://oag.dc.gov/about-oag/laws-legal-opinions/information-districts-marijuana-laws",
+        "https://mpdc.dc.gov/marijuana",
+        "https://www.mpp.org/states/district-of-columbia/summary-of-d-c-s-initiative-71/"
+      ],
+      "confidence": "high",
+      "note": "Initiative 71 passed Nov 2014; effective after congressional review 2015-02-26."
+    },
+    "FL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "GA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "HI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "ID": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "IL": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://idfpr.illinois.gov/profs/adultusecan.html",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Enacted 2019 by legislature; adult possession took effect 2020-01-01."
+    },
+    "IN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "IA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "KS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "KY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "LA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "ME": {
+      "year": 2017,
+      "date": "2017-01-30",
+      "sources": [
+        "https://www.mpp.org/news/press/marijuana-officially-becomes-legal-adults-maine/",
+        "https://legislature.maine.gov/9419",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Possession/home grow effective 2017-01-30; retail provisions delayed to later."
+    },
+    "MD": {
+      "year": 2023,
+      "date": "2023-07-01",
+      "sources": [
+        "https://www.mpp.org/states/maryland/maryland-hb-837-cannabis-reform/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Voters approved Question 4 in Nov 2022; possession legal 2023-07-01 (HB 837)."
+    },
+    "MA": {
+      "year": 2016,
+      "date": "2016-12-15",
+      "sources": [
+        "https://www.mpp.org/states/massachusetts/massachusetts-adult-use-marijuana-regulation-law/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MI": {
+      "year": 2018,
+      "date": "2018-12-06",
+      "sources": [
+        "https://norml.org/blog/2018/12/05/michigan-marijuana-possession-becomes-legal-this-thursday/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MN": {
+      "year": 2023,
+      "date": "2023-08-01",
+      "sources": [
+        "https://www.mpp.org/states/minnesota/minnesota-adult-use-cannabis-bill-summary/",
+        "https://www.goodwinlaw.com/en/insights/publications/2023/05/alerts-otherindustries-cannabis-a-mini-green-wave",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "HF 100 signed 2023-05-30; possession provisions effective 2023-08-01."
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "MO": {
+      "year": 2022,
+      "date": "2022-12-08",
+      "sources": [
+        "https://norml.org/laws/missouri-legalization/",
+        "https://en.wikipedia.org/wiki/Cannabis_in_Missouri",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Amendment 3 passed 2022-11-08; possession legal 2022-12-08."
+    },
+    "MT": {
+      "year": 2021,
+      "date": "2021-01-01",
+      "sources": [
+        "https://montanafreepress.org/2021/05/07/legal-cannabis-whats-next-and-what-can-you-do-now/",
+        "https://en.wikipedia.org/wiki/Cannabis_in_Montana",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "I-190 passed Nov 2020; effective 2021-01-01."
+    },
+    "NE": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "NV": {
+      "year": 2017,
+      "date": "2017-01-01",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cannabis_in_Nevada",
+        "https://ccb.nv.gov/nevada-cannabis-program/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NH": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "NJ": {
+      "year": 2021,
+      "date": "2021-02-22",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cannabis_in_New_Jersey",
+        "https://www.nj.gov/cannabis/resources/cannabis-laws/CREAMM-Act.shtml",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Constitutional amendment effective 2021-01-01; enabling law legalizing possession signed 2021-02-22."
+    },
+    "NM": {
+      "year": 2021,
+      "date": "2021-06-29",
+      "sources": [
+        "https://www.governor.state.nm.us/2021/06/29/gov-lujan-grisham-hails-legalization-of-adult-use-cannabis/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NY": {
+      "year": 2021,
+      "date": "2021-03-31",
+      "sources": [
+        "https://www.mpp.org/states/new-york/new-yorks-marijuana-regulation-and-taxation-act-(2021)/",
+        "https://cannabis.ny.gov/marihuana-regulation-and-taxation-act-mrta",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "ND": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "OH": {
+      "year": 2023,
+      "date": "2023-12-07",
+      "sources": [
+        "https://norml.org/blog/2023/12/07/ohio-voter-approved-legalization-measure-takes-effect/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Issue 2 passed 2023-11-07; possession effective 30 days later."
+    },
+    "OK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "OR": {
+      "year": 2015,
+      "date": "2015-07-01",
+      "sources": [
+        "https://www.mpp.org/states/oregon/summary-of-oregons-measure-91/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Measure 91 passed Nov 2014; possession/home grow legal 2015-07-01."
+    },
+    "PA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "RI": {
+      "year": 2022,
+      "date": "2022-05-25",
+      "sources": [
+        "https://www.riaclu.org/know-your-rights/know-your-rights-recreational-marijuana-ri/",
+        "https://norml.org/laws/rhode-island-penalties-2/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "SD": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction",
+        "https://en.wikipedia.org/wiki/Timeline_of_cannabis_laws_in_the_United_States",
+        "https://en.wikipedia.org/wiki/Cannabis_in_South_Dakota"
+      ],
+      "confidence": "high",
+      "note": "Amendment A (2020) voided by SD Supreme Court 2021-11-24; never took effect."
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "UT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "VT": {
+      "year": 2018,
+      "date": "2018-07-01",
+      "sources": [
+        "https://www.mpp.org/states/vermont/vermont-legalization-law/",
+        "https://norml.org/blog/2018/01/22/vermont-becomes-the-ninth-state-to-legalize-adult-marijuana-possession-and-personal-cultivation/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Signed 2018-01-22 (first by legislature); possession/home grow effective 2018-07-01."
+    },
+    "VA": {
+      "year": 2021,
+      "date": "2021-07-01",
+      "sources": [
+        "https://www.vanorml.org/2021-04-07-legalization-of-adult-use-marijuana-in-virginia-to-take-effect-july-1-2021",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Possession and home grow only; no retail market as of 2025."
+    },
+    "WA": {
+      "year": 2012,
+      "date": "2012-12-06",
+      "sources": [
+        "https://www.mpp.org/states/washington/washingtons-i-502/",
+        "https://en.wikipedia.org/wiki/Cannabis_in_Washington_(state)",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "Some sources give 2012-12-09 for legal possession; all agree on 2012."
+    },
+    "WV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.ncsl.org/civil-and-criminal-justice/cannabis-overview",
+        "https://www.mpp.org/issues/legalization/",
+        "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+      ],
+      "confidence": "high",
+      "note": "No adult-use possession law in effect as of 2025-12-31."
+    }
+  },
+  "n_with_law": 25,
+  "year_min": 2012,
+  "year_max": 2023,
+  "researched_by": "agent",
+  "method_notes": "Effective dates from state/official pages, MPP, NORML, Wikipedia legality table (opened). NCSL/MPP list 24 states + DC; no new state in 2025. Null states: confirmed absent from NCSL/MPP lists."
+}

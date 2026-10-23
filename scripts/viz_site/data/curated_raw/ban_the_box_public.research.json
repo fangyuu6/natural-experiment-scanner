@@ -1,0 +1,558 @@
+{
+  "policy_id": "ban_the_box_public",
+  "name_en": "Statewide ban-the-box (public employers)",
+  "name_zh": "公共部门禁止询问犯罪记录",
+  "definition_en": "Statewide statute or executive order barring public employers from asking about criminal history on the initial job application; year the statewide public-employer rule took effect. City/county-only rules and private-employer extensions excluded.",
+  "definition_zh": "州范围内的法律或行政令禁止公共部门雇主在初始求职申请表上询问犯罪记录；年份为该州公共部门规定的生效年，市县规则和私营雇主扩展不计。",
+  "year_basis": "Year the statewide public-employer rule TOOK EFFECT (statute effective date or EO date); NELP lists enactment years, corrected where official pages showed later effect.",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+    "https://iprospectcheck.com/ban-the-box-laws/",
+    "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral",
+    "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncomparison-of-criminal-records-in-licensing-and-employment/"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "AK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "AZ": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncomparison-of-criminal-records-in-licensing-and-employment/"
+      ],
+      "confidence": "high",
+      "note": "Executive Order 2017-07 (Ducey); date not confirmed."
+    },
+    "AR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "CA": {
+      "year": 2014,
+      "date": "2014-07-01",
+      "sources": [
+        "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201320140AB218",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/"
+      ],
+      "confidence": "medium",
+      "note": "AB 218 signed 2013-10-10, operative 2014-07-01 (NELP files 2013); NELP also lists unverified 2010 item."
+    },
+    "CO": {
+      "year": 2012,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral"
+      ],
+      "confidence": "high",
+      "note": "HB 12-1263 (state employers); private extension came 2019."
+    },
+    "CT": {
+      "year": 2010,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral",
+        "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncomparison-of-criminal-records-in-licensing-and-employment/"
+      ],
+      "confidence": "medium",
+      "note": "Public-employer rule 2010; 2016 act added private. Effective date unverified."
+    },
+    "DE": {
+      "year": 2014,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral",
+        "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncomparison-of-criminal-records-in-licensing-and-employment/"
+      ],
+      "confidence": "high",
+      "note": "HB 167 (Job Applicant Fairness Act); effective date not confirmed."
+    },
+    "DC": {
+      "year": 2014,
+      "date": "2014-12-17",
+      "sources": [
+        "https://code.dccouncil.gov/us/dc/council/laws/20-152",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncomparison-of-criminal-records-in-licensing-and-employment/"
+      ],
+      "confidence": "medium",
+      "note": "Fair Criminal Record Screening Act (D.C. Law 20-152) covers public+private; not in NELP's 37-state list."
+    },
+    "FL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "GA": {
+      "year": 2015,
+      "date": "2015-02-23",
+      "sources": [
+        "https://ccresourcecenter.org/state-restoration-profiles/georgia-restoration-of-rights-pardon-expungement-sealing/",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive order signed 2015-02-23 (state employment)."
+    },
+    "HI": {
+      "year": 1998,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral",
+        "https://en.wikipedia.org/wiki/Ban_the_box"
+      ],
+      "confidence": "high",
+      "note": "HRS 378-2.5 (public and private); first state."
+    },
+    "ID": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "IL": {
+      "year": 2014,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral"
+      ],
+      "confidence": "low",
+      "note": "NELP lists 2013 and 2014; assumed public Act signed 2013, effective 2014 (not verified)."
+    },
+    "IN": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive Order 17-15 (state employment)."
+    },
+    "IA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "KS": {
+      "year": 2018,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive order covering state employment."
+    },
+    "KY": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive order covering executive branch."
+    },
+    "LA": {
+      "year": 2016,
+      "date": "2016-08-01",
+      "sources": [
+        "https://legis.la.gov/Legis/BillInfo.aspx?s=16RS&b=HB266",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "HB 266, Act 398, signed 2016-06-08, effective 2016-08-01 (civil service)."
+    },
+    "ME": {
+      "year": 2019,
+      "date": null,
+      "sources": [
+        "https://legislature.maine.gov/statutes/5/title5sec792.html",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "5 MRSA 792 (PL 2019 c.22) state employment; NELP lists 2021 (private extension)."
+    },
+    "MD": {
+      "year": 2013,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral"
+      ],
+      "confidence": "high",
+      "note": "Public/state rule 2013; private 2020. Effective date not confirmed."
+    },
+    "MA": {
+      "year": 2010,
+      "date": null,
+      "sources": [
+        "https://malegislature.gov/Laws/SessionLaws/Acts/2010/Chapter256",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral"
+      ],
+      "confidence": "high",
+      "note": "Ch. 256 Acts of 2010 (CORI reform) sec.101; covers all employers; effective date not shown on page."
+    },
+    "MI": {
+      "year": 2018,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive Directive 2018-4 (state employment)."
+    },
+    "MN": {
+      "year": 2009,
+      "date": null,
+      "sources": [
+        "https://www.revisor.mn.gov/statutes/cite/364.021",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral"
+      ],
+      "confidence": "medium",
+      "note": "2009 c 59 art 5 s 11 (public); SHRM text says 2008; effective date unverified."
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "MO": {
+      "year": 2016,
+      "date": "2016-04-11",
+      "sources": [
+        "https://www.sos.mo.gov/library/reference/orders/2016/eo4",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "EO 16-04 signed 2016-04-11 (executive branch); 90-day implementation."
+    },
+    "MT": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "NE": {
+      "year": 2014,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://www.shrm.org/topics-tools/news/risk-management/ban-box-movement-goes-viral"
+      ],
+      "confidence": "high",
+      "note": "LB 907 (all public employers); effective date not confirmed."
+    },
+    "NV": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "AB 384 (public employers)."
+    },
+    "NH": {
+      "year": 2020,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "HB 253 (public employers); effective date not confirmed."
+    },
+    "NJ": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://pub.njleg.gov/bills/2014/PL14/32_.HTM",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/"
+      ],
+      "confidence": "medium",
+      "note": "Opportunity to Compete Act approved 2014-08-11, effective 2015 (NELP files 2014); covers public+private."
+    },
+    "NM": {
+      "year": 2010,
+      "date": null,
+      "sources": [
+        "https://www.nmlegis.gov/Sessions/10%20Regular/bills/senate/SB0254.HTML",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "SB 254 (2010) public employers; private extension 2019."
+    },
+    "NY": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncomparison-of-criminal-records-in-licensing-and-employment/"
+      ],
+      "confidence": "high",
+      "note": "Executive order for state employment."
+    },
+    "NC": {
+      "year": 2020,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive Order 158 (state agencies); exact date not confirmed."
+    },
+    "ND": {
+      "year": 2019,
+      "date": null,
+      "sources": [
+        "https://ndlegis.gov/assembly/66-2019/regular/bill-actions/ba1282.html",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "HB 1282 signed 2019-03-12; effective date not shown (assumed standard 1 Aug)."
+    },
+    "OH": {
+      "year": 2016,
+      "date": "2016-03-23",
+      "sources": [
+        "https://codes.ohio.gov/ohio-revised-code/section-9.73",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "ORC 9.73 (HB 56) effective 2016-03-23; NELP/IPC file under 2015 (enactment)."
+    },
+    "OK": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive Order 2016-03 (state agencies)."
+    },
+    "OR": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://olis.oregonlegislature.gov/liz/2015R1/Measures/Overview/HB3025",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "low",
+      "note": "HB 3025 (ch. 559) enacted 2015, public+private; took effect 2016-01-01 (not verified here)."
+    },
+    "PA": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/",
+        "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisoncomparison-of-criminal-records-in-licensing-and-employment/"
+      ],
+      "confidence": "high",
+      "note": "2017 executive/administrative policy for state hiring."
+    },
+    "RI": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "http://webserver.rilegislature.gov/PublicLaws/law13/law13413.htm",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/"
+      ],
+      "confidence": "medium",
+      "note": "P.L. 2013 ch. 413 signed 2013-07-15, sec.2 effective 2014-01-01 (NELP files 2013)."
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "SD": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "TN": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=SB2440&GA=109",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "SB 2440, Public Chapter 813 (state employers)."
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://legalclarity.org/which-states-have-ban-the-box-laws/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "unknown",
+      "note": "A statewide fair-chance law reportedly took effect 2025-09-01; coverage of public employers not verified."
+    },
+    "UT": {
+      "year": 2017,
+      "date": "2017-05-09",
+      "sources": [
+        "https://le.utah.gov/~2017/bills/static/HB0156.html",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "HB 156 signed 2017-03-22 (state job applications)."
+    },
+    "VT": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://legislature.vermont.gov/bill/status/2016/H.261",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "H.261/Act 81 signed 2016-05-03 (21 VSA 495j); NELP also lists an earlier 2015 item (unverified)."
+    },
+    "VA": {
+      "year": 2015,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Executive Order 41 (2015); statute HB 757 in 2020."
+    },
+    "WA": {
+      "year": 2018,
+      "date": "2018-06-07",
+      "sources": [
+        "https://app.leg.wa.gov/billsummary?BillNumber=1298&Year=2017",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "Fair Chance Act, ch. 38 Laws 2018."
+    },
+    "WV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    },
+    "WI": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://docs.legis.wisconsin.gov/2015/proposals/ab373",
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "high",
+      "note": "2015 Act 150 (AB 373, state civil service) signed 2016-02-12."
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nelp.org/insights-research/ban-the-box-fair-chance-hiring-state-and-local-guide/",
+        "https://iprospectcheck.com/ban-the-box-laws/"
+      ],
+      "confidence": "medium",
+      "note": "No statewide public-employer rule listed by NELP (Oct 2021) or iprospectcheck (2026)."
+    }
+  },
+  "n_with_law": 38,
+  "year_min": 1998,
+  "year_max": 2020,
+  "researched_by": "agent",
+  "method_notes": "Base list: NELP Oct-2021 guide (37 states) cross-checked with iprospectcheck 2026; effective dates verified on legislature/governor pages where reachable. Search budget ran out mid-task; many dates unverified (see notes)."
+}

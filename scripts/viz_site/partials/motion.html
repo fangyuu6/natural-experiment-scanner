@@ -1,0 +1,546 @@
+<script>
+/* Final HTML/CSS is authoritative. Consumers supply finish before any local state is armed.
+   once/transition(element, run, {finish, maxDuration, threshold}) call run(context).
+   revealOnce(element, targets) prepares and restores each target's inline reveal state.
+   context owns timer/RAF/WAAPI/SMIL work; finish always cancels it and commits final content.
+   pause/resume suspends tracked work and watchdog time; the map owns its clock/visibility events.
+   Pending introductions are prepared before paint; releaseIntro lets finite decorative work
+   continue after the illustrative sequence. maxDuration is capped at 60000 active ms. */
+(function () {
+  'use strict';
+  if (window.NXMotion) return;
+  var root = document.documentElement;
+  var query = undefined;
+  var printing = false;
+  var ready = false;
+  var finishing = false;
+  var activeIntro = undefined;
+  var queue = [];
+  var queueFrame;
+  var introOrder = 0;
+  var records = new Set();
+  var preferenceTimer;
+  var scrollEndTimer;
+  var introductions = new WeakMap();
+  var interactions = new WeakMap();
+  try { query = window.matchMedia('(prefers-reduced-motion: no-preference)'); } catch (_) {}
+  function listen(media, callback) {
+    if (media && typeof media.addEventListener === 'function') media.addEventListener('change', callback);
+    else if (media && typeof media.addListener === 'function') media.addListener(callback);
+    else return false;
+    return true;
+  }
+  function allowed() {
+    var allow = !!(ready && query && query.matches && !printing && !finishing);
+    // Media change events can be missed. A frame/timer check must still commit every final value.
+    if (!allow && !finishing && records.size) finishAll(printing ? 'print' : 'static');
+    if (!allow && root && root.classList) root.classList.remove('nx-motion', 'nx-motion-boot');
+    return allow;
+  }
+  function syncRoot() { root.classList.toggle('nx-motion', allowed()); }
+  function checkPreference() {
+    if (preferenceTimer !== undefined || !records.size || !ready) return;
+    try {
+      // This single safety probe is not animation time: pause must not suspend it.
+      preferenceTimer = window.setTimeout(function () {
+        preferenceTimer = undefined;
+        if (allowed() && records.size) checkPreference();
+      }, 120);
+    } catch (_) { unsupported(); }
+  }
+  function duration(value, fallback) {
+    return Number.isFinite(value) && value > 0 ? Math.min(value, 60000) : fallback;
+  }
+  function invoke(fn, reason) { try { fn(reason); } catch (_) {} }
+  function cancelAnimation(animation) {
+    try {
+      if (typeof animation.cancel === 'function') animation.cancel();
+      else if (typeof animation.endElement === 'function') {
+        animation.endElement();
+        if (animation.ownerSVGElement && typeof animation.ownerSVGElement.unpauseAnimations === 'function') {
+          animation.ownerSVGElement.unpauseAnimations();
+        }
+      }
+    } catch (_) {}
+  }
+  function finishAll(reason) {
+    finishing = true;
+    Array.from(records).forEach(function (record) { record.finish(reason || 'finish-all'); });
+    queue.length = 0;
+    if (queueFrame !== undefined) { window.cancelAnimationFrame(queueFrame); queueFrame = undefined; }
+    finishing = false;
+    syncRoot();
+  }
+  function preferenceChanged() {
+    if (!allowed()) finishAll(printing ? 'print' : 'reduced-motion');
+    syncRoot();
+  }
+  function unsupported() {
+    ready = false;
+    finishAll('unsupported');
+    syncRoot();
+  }
+  try {
+    ready = !!(query && typeof window.IntersectionObserver === 'function' &&
+      typeof window.requestAnimationFrame === 'function' && typeof window.cancelAnimationFrame === 'function' &&
+      typeof window.setTimeout === 'function' && typeof window.clearTimeout === 'function' &&
+      root && root.classList && typeof window.addEventListener === 'function' && listen(query, preferenceChanged));
+  } catch (_) { ready = false; }
+  if (ready) {
+    try {
+      window.addEventListener('beforeprint', function () { printing = true; preferenceChanged(); });
+      window.addEventListener('afterprint', function () { printing = false; preferenceChanged(); });
+      var printQuery = window.matchMedia('print');
+      printing = !!printQuery.matches;
+      listen(printQuery, function () { printing = !!printQuery.matches; preferenceChanged(); });
+    } catch (_) { ready = false; }
+  }
+  syncRoot();
+  if (allowed() && document.readyState === 'loading') {
+    try {
+      root.classList.add('nx-motion-boot');
+      var bootTimer = window.setTimeout(function () {
+        finishAll('startup-watchdog');
+        root.classList.remove('nx-motion-boot');
+      }, 5000);
+      document.addEventListener('DOMContentLoaded', function () {
+        root.classList.remove('nx-motion-boot');
+        window.clearTimeout(bootTimer);
+      }, {once: true});
+    } catch (_) { unsupported(); }
+  }
+
+  function makeRecord(element, run, options, kind) {
+    options = options || {};
+    var timers = new Map();
+    var frames = new Map();
+    var animations = new Set();
+    var pausedAnimations = new Set();
+    var paused = false;
+    var cleanups = [];
+    var finalizer = typeof options.finish === 'function' ? options.finish : undefined;
+    var record = {
+      element: element, run: run, kind: kind, order: ++introOrder, state: 'pending', visible: false,
+      threshold: Number.isFinite(options.threshold) ? Math.max(0, Math.min(1, options.threshold)) : .35,
+      maxDuration: duration(options.maxDuration, 5000), observer: undefined, context: undefined
+    };
+    record.finish = function (reason) {
+      if (record.state === 'finished') return;
+      record.state = 'finished';
+      record.reason = reason || 'complete';
+      if (record.observer) { try { record.observer.disconnect(); } catch (_) {} }
+      timers.forEach(function (ticket) { try { window.clearTimeout(ticket.id); } catch (_) {} });
+      frames.forEach(function (ticket) { try { window.cancelAnimationFrame(ticket.id); } catch (_) {} });
+      animations.forEach(cancelAnimation);
+      timers.clear(); frames.clear(); animations.clear(); pausedAnimations.clear();
+      cleanups.reverse().forEach(function (fn) { invoke(fn, record.reason); });
+      cleanups.length = 0;
+      if (finalizer) invoke(finalizer, record.reason);
+      if (element && element.classList) {
+        element.classList.remove('nx-motion-prepared', 'nx-motion-pending', 'nx-motion-frame', 'nx-motion-armed', 'nx-motion-running', 'nx-motion-interaction');
+        if (kind === 'intro') element.classList.add('nx-motion-complete');
+      }
+      records.delete(record);
+      if (!records.size && preferenceTimer !== undefined) {
+        window.clearTimeout(preferenceTimer); preferenceTimer = undefined;
+      }
+      if (!records.size && scrollEndTimer !== undefined) {
+        window.clearTimeout(scrollEndTimer); scrollEndTimer = undefined;
+      }
+      if (interactions.get(element) === record) interactions.delete(element);
+      if (activeIntro === record) activeIntro = undefined;
+      if (!finishing) drain();
+    };
+    function scheduleTimer(ticket, key) {
+      ticket.started = Date.now();
+      ticket.id = window.setTimeout(function () {
+        timers.delete(key === undefined ? ticket.id : key);
+        if (!context.active()) return;
+        try { ticket.fn(context); } catch (_) { record.finish('error'); }
+      }, ticket.remaining);
+      return ticket.id;
+    }
+    function scheduleFrame(ticket, key) {
+      ticket.id = window.requestAnimationFrame(function (time) {
+        frames.delete(key === undefined ? ticket.id : key);
+        if (!context.active()) return;
+        try {
+          ticket.fn(time, context);
+          if (record.state === 'running') element.classList.add('nx-motion-frame');
+        } catch (_) { record.finish('error'); }
+      });
+      return ticket.id;
+    }
+    function pauseAnimation(animation) {
+      if (typeof animation.pause === 'function' && animation.playState !== 'finished' && animation.playState !== 'paused') {
+        animation.pause(); pausedAnimations.add(animation);
+      } else if (animation.ownerSVGElement && typeof animation.ownerSVGElement.pauseAnimations === 'function') {
+        animation.ownerSVGElement.pauseAnimations(); pausedAnimations.add(animation);
+      }
+    }
+    var context = {
+      motion: true,
+      active: function () { return record.state === 'running' && allowed() && !paused; },
+      paused: function () { return paused; },
+      finish: record.finish,
+      pause: function () {
+        if (!context.active()) return;
+        paused = true;
+        try {
+          timers.forEach(function (ticket) {
+            window.clearTimeout(ticket.id);
+            ticket.remaining = Math.max(0, ticket.remaining - (Date.now() - ticket.started));
+          });
+          frames.forEach(function (ticket) { window.cancelAnimationFrame(ticket.id); });
+          animations.forEach(pauseAnimation);
+        } catch (_) { record.finish('pause-error'); }
+      },
+      resume: function () {
+        if (!paused || record.state !== 'running') return;
+        if (!allowed()) { record.finish('static'); return; }
+        paused = false;
+        try {
+          timers.forEach(function (ticket, key) { scheduleTimer(ticket, key); });
+          frames.forEach(function (ticket, key) { scheduleFrame(ticket, key); });
+          pausedAnimations.forEach(function (animation) {
+            if (typeof animation.play === 'function') animation.play();
+            else if (animation.ownerSVGElement && typeof animation.ownerSVGElement.unpauseAnimations === 'function') {
+              animation.ownerSVGElement.unpauseAnimations();
+            }
+          });
+          pausedAnimations.clear();
+        } catch (_) { record.finish('resume-error'); }
+      },
+      onFinish: function (fn) {
+        if (typeof fn !== 'function') return;
+        if (record.state === 'finished') invoke(fn, record.reason);
+        else cleanups.push(fn);
+      },
+      releaseIntro: function () {
+        if (activeIntro === record) { activeIntro = undefined; drain(); }
+      },
+      timer: function (fn, delay) {
+        if (!context.active()) return undefined;
+        var id;
+        try {
+          var ticket = {fn: fn, remaining: Math.max(0, Number(delay) || 0)};
+          id = scheduleTimer(ticket);
+          timers.set(id, ticket);
+        } catch (_) { record.finish('timer-error'); }
+        return id;
+      },
+      clearTimer: function (id) {
+        var ticket = timers.get(id);
+        if (ticket) { window.clearTimeout(ticket.id); timers.delete(id); }
+      },
+      raf: function (fn) {
+        if (!context.active()) return undefined;
+        var id;
+        try {
+          var ticket = {fn: fn};
+          id = scheduleFrame(ticket);
+          frames.set(id, ticket);
+        } catch (_) { record.finish('raf-error'); }
+        return id;
+      },
+      cancelRaf: function (id) {
+        var ticket = frames.get(id);
+        if (ticket) { window.cancelAnimationFrame(ticket.id); frames.delete(id); }
+      },
+      track: function (animation) {
+        if (!animation) return undefined;
+        if (!context.active()) { cancelAnimation(animation); return undefined; }
+        animations.add(animation);
+        if (animation.finished && typeof animation.finished.then === 'function') {
+          animation.finished.then(undefined, function () { record.finish('animation-error'); });
+        }
+        return animation;
+      },
+      animate: function (target, keyframes, settings) {
+        if (!context.active()) return undefined;
+        if (!target || typeof target.animate !== 'function') { record.finish('unsupported-animation'); return undefined; }
+        try {
+          settings = Object.assign({}, settings || {});
+          if (!settings.easing && typeof window.getComputedStyle === 'function') {
+            var token = settings.duration <= 120 ? 'feedback' : settings.duration <= 180 ? 'panel' :
+              settings.duration <= 320 ? 'reveal' : 'value';
+            settings.easing = window.getComputedStyle(root).getPropertyValue('--nx-ease-' + token).trim() ||
+              (token === 'feedback' ? 'ease-out' : 'cubic-bezier(.2,.7,.2,1)');
+          }
+          return context.track(target.animate(keyframes, settings));
+        }
+        catch (_) { record.finish('animation-error'); return undefined; }
+      },
+      smil: function (target) {
+        if (!context.active()) return undefined;
+        if (!target || typeof target.beginElement !== 'function' || typeof target.endElement !== 'function') {
+          record.finish('unsupported-animation'); return undefined;
+        }
+        context.track(target);
+        try { target.beginElement(); } catch (_) { record.finish('animation-error'); }
+        return target;
+      }
+    };
+    record.context = context;
+    record.canRun = !!(element && element.classList && typeof run === 'function' && finalizer);
+    record.handle = {
+      finish: record.finish, cancel: record.finish,
+      active: function () { return record.state !== 'finished'; },
+      get state() { return record.state; }
+    };
+    records.add(record);
+    return record;
+  }
+  function start(record) {
+    if (record.state === 'finished') return;
+    if (!allowed() || !record.canRun) { record.finish('static'); return; }
+    checkPreference();
+    if (record.state === 'finished') return;
+    record.state = 'running';
+    if (record.cancelPending) record.cancelPending();
+    if (record.observer) { try { record.observer.disconnect(); } catch (_) {} }
+    record.element.classList.remove('nx-motion-pending');
+    record.element.classList.add('nx-motion-armed', record.kind === 'intro' ? 'nx-motion-running' : 'nx-motion-interaction');
+    // The watchdog is registered before running consumer code.
+    record.context.timer(function () { record.finish('watchdog'); }, record.maxDuration);
+    if (record.state === 'finished') return;
+    try { record.run(record.context); } catch (_) { record.finish('error'); }
+  }
+  function stillVisible(record) {
+    if (!record.visible || record.element.isConnected === false) return false;
+    if (typeof record.element.getBoundingClientRect !== 'function') return true;
+    var rect = record.element.getBoundingClientRect();
+    var height = window.innerHeight || root.clientHeight;
+    var width = window.innerWidth || root.clientWidth;
+    return rect.bottom > 0 && rect.top < height && rect.right > 0 && rect.left < width;
+  }
+  function drain() {
+    if (finishing || !allowed()) return;
+    // A fast scroll must not keep the next visible figure waiting behind an old
+    // illustration whose trigger has already left the viewport.
+    if (activeIntro && !stillVisible(activeIntro)) activeIntro.finish('offscreen');
+    if (activeIntro) return;
+    queue.sort(function (a, b) {
+      if (a.element !== b.element && typeof a.element.compareDocumentPosition === 'function') {
+        var position = a.element.compareDocumentPosition(b.element);
+        if (!(position & 1)) {
+          if (position & 4) return -1;
+          if (position & 2) return 1;
+        }
+      }
+      return a.order - b.order;
+    });
+    while (queue.length && !activeIntro) {
+      var next = queue.shift();
+      if (next.state === 'finished') continue;
+      if (!stillVisible(next)) { next.finish('offscreen'); continue; }
+      activeIntro = next;
+      start(next);
+    }
+  }
+  function scheduleDrain() {
+    if (queueFrame !== undefined) return;
+    try {
+      // Batch all observer deliveries from this rendering turn before choosing
+      // the first illustration. Observer delivery order is not document order.
+      queueFrame = window.requestAnimationFrame(function () { queueFrame = undefined; drain(); });
+    } catch (_) { unsupported(); }
+  }
+  function intersects(element) {
+    if (!element || element.isConnected === false || typeof element.getBoundingClientRect !== 'function') return false;
+    var rect = element.getBoundingClientRect();
+    return rect.bottom > 0 && rect.top < (window.innerHeight || root.clientHeight) &&
+      rect.right > 0 && rect.left < (window.innerWidth || root.clientWidth);
+  }
+  function reachableThreshold(record) {
+    if (typeof record.element.getBoundingClientRect !== 'function') return record.threshold;
+    var rect = record.element.getBoundingClientRect();
+    var height = rect.height || rect.bottom - rect.top;
+    var viewport = window.innerHeight || root.clientHeight;
+    return height > 0 && viewport > 0 ? Math.min(record.threshold, viewport * .5 / height) : 0;
+  }
+  function finishVisiblePending() {
+    scrollEndTimer = undefined;
+    Array.from(records).forEach(function (record) {
+      if (record.kind === 'intro' && (record.state === 'pending' || record.state === 'queued') && intersects(record.element)) {
+        record.finish('scroll-end');
+      }
+    });
+  }
+  if (ready) {
+    window.addEventListener('scrollend', function () {
+      window.clearTimeout(scrollEndTimer);
+      finishVisiblePending();
+    });
+    window.addEventListener('scroll', function () {
+      window.clearTimeout(scrollEndTimer);
+      if (records.size) scrollEndTimer = window.setTimeout(finishVisiblePending, 200);
+    }, {passive: true});
+  }
+  function once(element, run, options) {
+    if (element && introductions.has(element)) return introductions.get(element).handle;
+    var record = makeRecord(element, run, options, 'intro');
+    if (element) introductions.set(element, record);
+    if (!allowed() || !record.canRun) { record.finish('static'); return record.handle; }
+    try {
+      if (options && typeof options.prepare === 'function') {
+        // Preparation can change local geometry only after cleanup is registered.
+        try { options.prepare(); element.classList.add('nx-motion-prepared'); }
+        catch (_) { record.finish('prepare-error'); return record.handle; }
+      }
+      record.threshold = reachableThreshold(record);
+      var intersectionTimer, initialTimer, startup;
+      function clearPending() {
+        window.clearTimeout(intersectionTimer); intersectionTimer = undefined;
+        window.clearTimeout(initialTimer); initialTimer = undefined;
+        window.clearTimeout(startup); startup = undefined;
+      }
+      record.cancelPending = clearPending;
+      record.context.onFinish(clearPending);
+      function enqueue() {
+        if (record.state !== 'pending') return;
+        record.visible = true;
+        record.state = 'queued';
+        queue.push(record);
+        scheduleDrain();
+      }
+      record.observer = new window.IntersectionObserver(function (entries) {
+        if (startup !== undefined) { window.clearTimeout(startup); startup = undefined; }
+        entries.forEach(function (entry) {
+          if (entry.target !== element || record.state === 'finished') return;
+          record.visible = !!entry.isIntersecting;
+          if (!record.visible) {
+            window.clearTimeout(intersectionTimer); intersectionTimer = undefined;
+          } else if (intersectionTimer === undefined && (record.state === 'pending' || record.state === 'queued')) {
+            // An observer may deliver only the initial sliver of a tall figure.
+            // Never leave its prepared content hidden indefinitely below the gate.
+            intersectionTimer = window.setTimeout(function () {
+              intersectionTimer = undefined;
+              if ((record.state === 'pending' || record.state === 'queued') && intersects(element)) record.finish('intersection-watchdog');
+            }, 600);
+          }
+          if (record.state === 'queued' && !record.visible) record.finish('offscreen');
+          else if (record.visible && entry.intersectionRatio >= reachableThreshold(record)) enqueue();
+        });
+      }, {threshold: [0, record.threshold]});
+      record.observer.observe(element);
+      if (record.state === 'pending' || record.state === 'queued') element.classList.add('nx-motion-pending');
+      function initialView() {
+        if (record.state === 'pending' && intersects(element)) enqueue();
+      }
+      // First-viewport content should start on load, even when only a small
+      // part of a long figure is visible. Offscreen figures retain scroll gating.
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialView, {once: true});
+      else initialTimer = window.setTimeout(initialView, 0);
+      // A bounded wait also covers an observer that never delivers its first entry.
+      startup = window.setTimeout(function () {
+        if (!allowed()) return;
+        if (record.state === 'pending' || record.state === 'queued') record.finish('startup-watchdog');
+      }, 5000);
+      checkPreference();
+    } catch (_) { unsupported(); }
+    return record.handle;
+  }
+  function transition(element, run, options) {
+    var previous = element && interactions.get(element);
+    if (previous) previous.finish('superseded');
+    var intro = element && introductions.get(element);
+    if (intro && intro.state !== 'finished') intro.finish('interaction');
+    var record = makeRecord(element, run, options, 'interaction');
+    if (element) interactions.set(element, record);
+    start(record);
+    return record.handle;
+  }
+  function revealOnce(element, targets) {
+    if (element && introductions.has(element)) return introductions.get(element).handle;
+    targets = Array.prototype.slice.call(targets || []);
+    var originals = targets.map(function (target) {
+      return ['opacity', 'transform'].map(function (property) {
+        return {property: property, value: target.style.getPropertyValue(property),
+          priority: target.style.getPropertyPriority(property)};
+      });
+    });
+    var handle;
+    function focus() { if (handle) handle.finish('focus'); }
+    function finish() {
+      targets.forEach(function (target, index) {
+        originals[index].forEach(function (original) {
+          if (original.value) target.style.setProperty(original.property, original.value, original.priority);
+          else target.style.removeProperty(original.property);
+        });
+      });
+      if (element && typeof element.removeEventListener === 'function') element.removeEventListener('focusin', focus);
+    }
+    handle = once(element, function (ctx) {
+      // Register every animation in this turn. fill:'both' holds zero opacity
+      // during each delay; no later timer can hide already painted content.
+      targets.forEach(function (target, index) {
+        ctx.animate(target, [{opacity: 0, transform: 'translateY(6px)'},
+          {opacity: 1, transform: 'translateY(0)'}],
+        {duration: 420, delay: Math.min(index * 65, 700), fill: 'both'});
+      });
+      ctx.timer(function () { ctx.finish('complete'); }, 1200);
+    }, {
+      prepare: function () {
+        if (targets.some(function (target) { return typeof target.animate !== 'function'; })) throw new Error('unsupported-animation');
+        if (element && typeof element.addEventListener === 'function') element.addEventListener('focusin', focus);
+        targets.forEach(function (target) { target.style.setProperty('opacity', '0'); });
+      },
+      finish: finish, maxDuration: 1500
+    });
+    // A figure already containing focus must commit its visible final content.
+    if (element && typeof element.contains === 'function' && element.contains(document.activeElement)) handle.finish('focus');
+    return handle;
+  }
+  function landing(element) {
+    if (element && typeof element.querySelector === 'function') {
+      var tag = (element.tagName || '').toLowerCase();
+      if (tag === 'section' || tag === 'table') element = element.querySelector(tag === 'table' ? 'caption' : 'h1,h2,h3,h4,h5,h6') || element;
+    }
+    return transition(element, function (context) {
+      element.classList.add('nx-landing');
+      context.timer(function () { context.finish(); }, 1200);
+    }, {maxDuration: 1300, finish: function () { if (element && element.classList) element.classList.remove('nx-landing'); }});
+  }
+  window.NXMotion = {
+    query: query, allowed: allowed, allow: allowed, once: once, revealOnce: revealOnce,
+    transition: transition, finishAll: finishAll, landing: landing
+  };
+}());
+
+// Immediate navigation/anchor layout does not depend on the motion enhancement.
+(function () {
+  'use strict';
+  function install() {
+    if (typeof document.querySelectorAll !== 'function' || typeof document.querySelector !== 'function') return;
+    var navs = document.querySelectorAll('[data-nx-chrome="nav"]');
+    var toolbar = document.querySelector('[data-nx-anchor-toolbar]');
+    function position() {
+      Array.prototype.forEach.call(navs, function (nav) {
+        var current = nav.querySelector('[aria-current]');
+        if (!current) return;
+        var outer = nav.getBoundingClientRect();
+        var item = current.getBoundingClientRect();
+        if (item.left < outer.left) nav.scrollLeft += item.left - outer.left;
+        else if (item.right > outer.right) nav.scrollLeft += item.right - outer.right;
+      });
+      if (toolbar) {
+        var box = toolbar.getBoundingClientRect();
+        var style = window.getComputedStyle(toolbar);
+        if (style.position === 'sticky' || style.position === 'fixed') {
+          var top = parseFloat(style.top) || 0;
+          var bottom = box.top <= top + 1 ? box.bottom : top + box.height;
+          document.documentElement.style.setProperty('--nx-anchor-offset', Math.max(16, bottom + 16) + 'px');
+        }
+      }
+    }
+    position();
+    window.addEventListener('resize', position);
+    if (toolbar && typeof window.ResizeObserver === 'function') {
+      try { new window.ResizeObserver(position).observe(toolbar); } catch (_) {}
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, {once: true});
+  else install();
+}());
+</script>

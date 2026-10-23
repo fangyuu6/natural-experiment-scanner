@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Natural Experiment Scanner</title>
+  <link rel="icon" href="data:,">
+<!-- NX:STYLE:START -->
+<style>
+  :root{
+--nx-ink:#111827;--nx-text:#4b5563;--nx-text-2:var(--nx-text);--nx-muted:#6b7280;--nx-line:#e5e7eb;--nx-line-2:#d1d5db;--nx-plate:#f9fafb;--nx-land:#eceef2;--nx-dark:#1f2937;
+--nx-accent:#1d4ed8;--nx-accent-soft:#eff6ff;
+--nx-slate:#8793a6;--nx-b1:#a8c5f9;--nx-b2:#7ba4f0;--nx-b3:#5283e0;--nx-b4:#3263c3;--nx-b5:#1e4798;
+--nx-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+--nx-serif:"Iowan Old Style",Charter,Georgia,"Noto Serif","Times New Roman",serif;--nx-display:var(--nx-serif);
+--nx-type-tick:12px;--nx-type-caption:13px;--nx-type-body:15px;--nx-type-input:16px;--nx-type-section:18px;--nx-type-title:20px;--nx-type-count:22px;--nx-type-feature:28px;--nx-type-hero:44px;
+--nx-weight-body:400;--nx-weight-control:500;--nx-weight-section:650;--nx-weight-title:700;--nx-weight-count:600;--nx-weight-feature:600;
+--nx-lh-body:1.6;--nx-lh-cap:1.5;--nx-lh-title:1.3;--nx-lh-hero:1.12;--nx-lh-h2:1.2;--nx-lh-lead:var(--nx-lh-body);
+--nx-fs-tick:var(--nx-type-tick);--nx-fs-cap:var(--nx-type-caption);--nx-fs-body:var(--nx-type-body);--nx-fs-lead:var(--nx-type-body);--nx-fs-section:var(--nx-type-section);--nx-fs-title:var(--nx-type-title);--nx-fs-num:var(--nx-type-count);--nx-fs-h2:var(--nx-type-feature);--nx-fs-feature:var(--nx-type-feature);--nx-fs-hero:var(--nx-type-hero);
+--fs-xs:var(--nx-type-tick);--fs-sm:var(--nx-type-caption);--fs-md:var(--nx-type-body);--fs-lg:var(--nx-type-section);--fs-xl:var(--nx-type-title);--fs-num:var(--nx-type-count);--fs-feature:var(--nx-type-feature);--fs-hero:var(--nx-type-hero);
+--site-fs-xs:var(--nx-type-tick);--site-fs-sm:var(--nx-type-caption);--site-fs-md:var(--nx-type-body);--site-fs-lg:var(--nx-type-section);--site-fs-xl:var(--nx-type-title);--site-fs-num:var(--nx-type-count);--site-fs-feature:var(--nx-type-feature);--site-fs-hero:var(--nx-type-hero);
+--site-fs-caption:var(--nx-type-caption);--site-fs-body:var(--nx-type-body);--site-fs-section:var(--nx-type-section);--site-fs-title:var(--nx-type-title);--site-fs-count:var(--nx-type-count);
+--lh-body:var(--nx-lh-body);--lh-small:var(--nx-lh-cap);--lh-title:var(--nx-lh-title);
+--site-bg:#fff;--site-card:#fff;--site-text:var(--nx-ink);--site-body:var(--nx-text);--site-muted:var(--nx-muted);--site-panel:var(--nx-plate);--site-border:var(--nx-line);--site-border-strong:var(--nx-line-2);--site-accent:var(--nx-accent);--site-accent-soft:var(--nx-accent-soft);--site-accent-edge:#bfdbfe;--site-deep:#1e3a8a;--site-ink:var(--nx-dark);
+--site-warn-bg:#fffbeb;--site-warn-edge:#fcd34d;--site-warn-text:#92400e;--site-ok:#166534;--site-bad:#b91c1c;
+--viz-flow:#3b82f6;--viz-final:var(--nx-accent);--viz-missing:#64748b;--viz-judged:#d97706;--viz-judged-deep:#b45309;
+--nx-ls-hero:-.02em;--nx-ls-h2:-.012em;
+--nx-motion-feedback:120ms;--nx-motion-panel:180ms;--nx-motion-reveal:320ms;--nx-motion-value:600ms;--nx-motion-landing:1200ms;
+--nx-ease-feedback:ease-out;--nx-ease-panel:cubic-bezier(.2,.7,.2,1);--nx-ease-reveal:var(--nx-ease-panel);--nx-ease-value:var(--nx-ease-panel);--nx-ease-draw:cubic-bezier(.65,0,.35,1);--nx-ease-landing:ease-out;--nx-tr:var(--nx-motion-feedback) var(--nx-ease-feedback);
+--tap:44px;--nx-shell:1500px;--nx-anchor-offset:16px;--nx-chrome-nav-gap:12px;--nx-chrome-content-gap:16px;
+--nx-top:48px;--nx-gap:96px;--nx-head:24px;--nx-pad:24px;--nx-gutter:24px;--nx-host:16px;--nx-hero-gap:48px;--nx-cols:4;--nx-col-text:680px;--nx-col-fig:1100px}
+@media(max-width:1099px){:root{--nx-type-hero:38px;--nx-lh-hero:1.15;--nx-top:40px;--nx-gap:72px;--nx-pad:16px}}
+@media(max-width:900px){:root{--nx-host:11px}}
+@media(max-width:600px){:root{--nx-type-hero:32px;--nx-lh-hero:1.18;--nx-top:32px;--nx-gap:56px;--nx-head:16px;--nx-gutter:16px}}
+@media(max-width:360px){:root:not(:lang(zh)){--nx-type-hero:28px}}
+:root:lang(zh){--nx-type-tick:13px;--nx-display:var(--nx-sans);--nx-lh-hero:1.3;--nx-lh-h2:1.4;--nx-lh-body:1.75;--nx-lh-cap:1.7;--nx-lh-title:1.4;--nx-ls-hero:0;--nx-ls-h2:0}
+.story:lang(zh) .nx-h1{font-size:calc(var(--nx-fs-hero) - 4px)}
+.story:lang(zh){font-synthesis:none;line-break:strict}
+.story{max-width:var(--nx-col-fig);margin-inline:auto;padding:var(--nx-top) max(0px,calc(var(--nx-gutter) - var(--nx-host))) 0;font:400 var(--nx-fs-body)/var(--nx-lh-body) var(--nx-sans);color:var(--nx-text)}
+.story *{box-sizing:border-box}
+.story :where(h1,h2,h3,p,figure,ul){margin:0;padding:0}
+.nx-sec{margin-top:var(--nx-gap)}
+.nx-sec.nx-end{margin-top:calc(var(--nx-gap)/2)}
+.nx-seam{margin-top:var(--nx-gap);border-top:1px solid var(--nx-line)}
+.nx-h1{max-width:15em;font:var(--nx-weight-feature) var(--nx-fs-hero)/var(--nx-lh-hero) var(--nx-display);letter-spacing:var(--nx-ls-hero);color:var(--nx-ink);text-wrap:balance}
+.nx-accent{color:var(--nx-accent);white-space:nowrap}
+.nx-h2{margin-bottom:var(--nx-head);font:var(--nx-weight-feature) var(--nx-fs-h2)/var(--nx-lh-h2) var(--nx-sans);letter-spacing:var(--nx-ls-h2);color:var(--nx-ink);text-wrap:balance}
+.nx-lead{max-width:var(--nx-col-text);margin-top:16px;font-size:var(--nx-fs-lead);line-height:var(--nx-lh-lead);color:var(--nx-text-2)}
+.nx-cap{max-width:var(--nx-col-text);margin-top:12px;font-size:var(--nx-fs-cap);line-height:var(--nx-lh-cap);color:var(--nx-text-2)}
+.nx-hero .nx-cap{margin-top:16px;color:var(--nx-muted)}
+.nx-seg{white-space:nowrap}
+.nx-strip b{display:block;font:var(--nx-weight-count) var(--nx-fs-num)/1.1 var(--nx-sans);letter-spacing:-.01em;color:var(--nx-ink);font-variant-numeric:tabular-nums}
+.nx-strip{display:flex;margin-top:32px}
+.nx-strip>div{padding:0 24px;border-left:1px solid var(--nx-line)}
+.nx-strip>div:first-child{padding-left:0;border:0}
+.nx-strip span{display:block;margin-top:4px;font-size:var(--nx-fs-cap);line-height:1.3;color:var(--nx-text-2)}
+.nx-frame{padding:var(--nx-pad);background:var(--nx-plate);border:1px solid var(--nx-line);border-radius:12px}
+.nx-tabs{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;margin:0 calc(var(--nx-pad)*-1) 12px;padding-inline:var(--nx-pad);scroll-padding-inline:var(--nx-pad)}
+.nx-tab{min-height:var(--tap);padding:0 16px;border:1px solid var(--nx-line-2);border-radius:99px;background:#fff;color:var(--nx-text);font:var(--nx-weight-control) var(--nx-type-body)/1.2 var(--nx-sans);text-align:left;flex:none;scroll-snap-align:start;white-space:nowrap;cursor:pointer}
+html.nx-motion .nx-tab{transition:background-color var(--nx-tr),border-color var(--nx-tr),color var(--nx-tr)}
+.nx-tab:hover{background:var(--nx-land)}
+.nx-tab[aria-selected="true"]{background:var(--nx-dark);border-color:var(--nx-dark);color:#fff}
+.nx-tab .nx-x{display:none}
+@media(min-width:1100px){
+.nx-mapcard{display:grid;grid-template:auto auto/minmax(0,2fr) minmax(0,1fr);gap:0 32px}
+.nx-mapcol{grid-area:1/1}
+.nx-legend{grid-area:2/1}
+.nx-mapcard .nx-tabs{grid-area:1/2/3;flex-direction:column;gap:0;overflow:visible;margin:0;padding:0;border-top:1px solid var(--nx-line)}
+.nx-mapcard .nx-tab{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;min-height:62px;padding:8px 12px;border:0;border-bottom:1px solid var(--nx-line);border-left:3px solid transparent;border-radius:0}
+.nx-mapcard .nx-tab[aria-selected="true"]{background:var(--nx-accent-soft);border-left-color:var(--nx-accent);color:var(--nx-ink)}
+.nx-mapcard .nx-x{display:block;font-size:var(--nx-fs-cap);line-height:1.3;color:var(--nx-muted);font-variant-numeric:tabular-nums}
+.nx-mapcard .nx-x:nth-child(2n){justify-self:end}}
+@media(max-width:600px){
+.nx-frame{margin-inline:calc(var(--nx-gutter)*-1);padding-inline:0;border-inline:0;border-radius:0}
+.nx-in{padding-inline:var(--nx-gutter)}
+.nx-tabs{margin-inline:0;padding-inline:var(--nx-gutter);scroll-padding-inline:var(--nx-gutter)}
+.nx-strip{margin-top:24px}.nx-strip>div{flex:1;padding:0 12px}}
+@media(prefers-reduced-motion:reduce){.story *{animation:none!important;transition:none!important}}
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: auto; }
+  body { font-family: var(--nx-sans); font-size: var(--fs-md); margin: 0; padding: 1rem; background: var(--site-bg); color: var(--site-body); line-height: var(--lh-body); }
+  :lang(zh) { font-synthesis: weight; }                         /* no synthesized (fake) italic on CJK */
+  :lang(zh) em, :lang(zh) i { font-style: normal; }
+  .page { max-width: var(--nx-shell); min-width: 0; margin: 0 auto; }
+  h1 { font-size: var(--fs-lg); margin: 0 0 0.5rem 0; font-weight: 700; line-height: var(--lh-title); color: #111827; }
+  h2 { font-size: var(--fs-lg); margin: 0 0 0.4rem 0; font-weight: 650; line-height: var(--lh-title); color: #111827; }
+  h3 { font-size: var(--fs-md); margin: 0 0 0.3rem 0; font-weight: 650; line-height: var(--lh-title); color: #111827; }
+  .page .page-title, .nx-page-title { font-size: var(--nx-type-title); font-weight: var(--nx-weight-title); line-height: var(--nx-lh-title); margin: 0 0 0.3rem; }
+  p { margin: 0 0 0.6rem 0; }
+  a { color: #1d4ed8; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  button, select, input { font: inherit; }
+  :focus-visible { outline: 2px solid #1d4ed8; outline-offset: 2px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .muted { color: #6b7280; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* Shared chrome: scoped selectors override the old consumers until their slots are installed. */
+  header.site-head[data-nx-chrome="header"] { display: flex; align-items: center; justify-content: flex-start; flex-wrap: nowrap; gap: 16px; margin: 0 0 var(--nx-chrome-nav-gap); padding: 0; min-width: 0; }
+  header.site-head[data-nx-chrome="header"] .site-brand { flex: 1 1 auto; min-width: 0; margin: 0; font: var(--nx-weight-title) var(--nx-type-section)/1.3 var(--nx-sans); color: var(--nx-ink); }
+  header.site-head[data-nx-chrome="header"] .site-brand-link { display: block; color: var(--nx-ink); text-decoration: none; }
+  header.site-head[data-nx-chrome="header"] .site-brand-link:hover { text-decoration: underline; }
+  header.site-head[data-nx-chrome="header"] .site-sub { display: inline-block; margin-left: .6rem; font-size: var(--nx-type-caption); font-weight: 500; color: var(--nx-muted); white-space: nowrap; }
+  header.site-head[data-nx-chrome="header"] .site-sub:empty { display: none; }
+  header.site-head[data-nx-chrome="header"] .site-links { display: flex; flex: 0 0 auto; flex-wrap: nowrap; align-items: center; gap: 16px; font-size: var(--nx-type-body); }
+  header.site-head[data-nx-chrome="header"] .site-links a { display: inline-flex; align-items: center; min-height: var(--tap); min-width: var(--tap); color: var(--nx-accent); font-weight: 500; white-space: nowrap; text-decoration: none; }
+  header.site-head[data-nx-chrome="header"] .site-links a:hover { text-decoration: underline; }
+  header.site-head[data-nx-chrome="header"]:lang(zh) .site-links a[href$="/documentation.html"] { justify-content: center; margin-inline: calc((2em - var(--tap)) / 2); }
+  header.site-head[data-nx-chrome="header"] > .lang-switch { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; align-self: center; min-width: var(--tap); min-height: var(--tap); margin: 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: var(--nx-muted); text-decoration: none; font: 600 var(--nx-type-caption)/1.3 var(--nx-sans); }
+  header.site-head[data-nx-chrome="header"] .lang-pill { display: inline-flex; align-items: center; justify-content: center; gap: 5px; height: 28px; padding: 0 8px; border: 1px solid var(--nx-line-2); border-radius: 999px; background: #fff; }
+  header.site-head[data-nx-chrome="header"] .lang-pill > span { padding: 0; border-radius: 0; background: transparent; }
+  header.site-head[data-nx-chrome="header"] .lang-pill > svg { flex: none; width: 13px; height: 13px; }
+  header.site-head[data-nx-chrome="header"] .lang-pill .on { color: var(--nx-ink); background: transparent; }
+  header.site-head[data-nx-chrome="header"] .lang-pill .lang-sep { color: var(--nx-line-2); }
+  header.site-head[data-nx-chrome="header"] > .lang-switch:hover .lang-pill { border-color: var(--nx-muted); }
+  .subtitle { color: var(--site-body); font-size: var(--nx-type-body); line-height: var(--lh-small); margin: 0 0 .8rem; }
+  .view-toggle[data-nx-chrome="nav"] { display: flex; align-items: center; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; gap: 8px; min-width: 0; max-width: 100%; margin: 0 0 var(--nx-chrome-content-gap); padding: 2px; scroll-padding-inline: 2px; overscroll-behavior-inline: contain; scroll-behavior: auto; }
+  .view-toggle[data-nx-chrome="nav"] .vt-btn { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; min-height: var(--tap); min-width: var(--tap); padding: 8px 16px; border: 1px solid var(--nx-line-2); border-radius: 6px; font: var(--nx-weight-control) var(--nx-type-body)/1.3 var(--nx-sans); white-space: nowrap; text-decoration: none; cursor: pointer; }
+  .view-toggle[data-nx-chrome="nav"] .vt-link { background: #fff; color: var(--nx-text); }
+  .view-toggle[data-nx-chrome="nav"] .vt-link:hover { background: var(--nx-plate); }
+  .view-toggle[data-nx-chrome="nav"] .vt-active { background: var(--nx-dark); color: #fff; border-color: var(--nx-dark); }
+  .view-toggle[data-nx-chrome="nav"] .vt-sep { display: block; flex: 0 0 1px; width: 1px; height: 22px; margin: 0 2px; border: 0; border-left: 1px solid var(--nx-line-2); }
+
+  /* callouts */
+  .warning-callout { background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; padding: 0.7rem 0.9rem; border-radius: 8px; margin: 0 0 0.9rem 0; font-size: var(--fs-md); line-height: var(--lh-small); }
+  .warning-callout strong { font-weight: 700; }
+  .warning-callout ul { margin: 0.3rem 0 0 0; padding-left: 1.2rem; }
+  .warning-callout li { margin: 0 0 0.25rem 0; }
+  .info-callout { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; padding: 0.7rem 0.9rem; border-radius: 8px; margin: 0 0 0.9rem 0; font-size: var(--fs-md); line-height: var(--lh-small); }
+
+  /* cards */
+  .card { background: #fff; padding: 0.8rem 1rem; border: 1px solid #e5e7eb; border-radius: 8px; min-width: 0; }
+  .card-panel { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0.9rem 1.2rem; }
+  .stat { display: block; }
+  .stat b { display: block; font-size: var(--fs-num); font-weight: var(--nx-weight-count); line-height: 1.2; color: #111827; font-variant-numeric: tabular-nums; }
+  .stat span { display: block; font-size: var(--fs-sm); line-height: var(--lh-small); color: #6b7280; }
+  .stat.accent b { color: #1d4ed8; }
+  .eyebrow { font-size: var(--fs-sm); color: var(--nx-muted); text-transform: none; letter-spacing: 0; font-weight: 500; }
+  .eyebrow:lang(zh) { text-transform: none; letter-spacing: 0; }
+
+  /* pills and selects: same look as the .filters controls on policy_db.html */
+  .pills { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+  .pills button, .pills a.pill { margin: 0; padding: 0.38rem 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; color: #374151; cursor: pointer; font-size: var(--fs-md); text-decoration: none; }
+  .pills button:hover, .pills a.pill:hover { background: #f3f4f6; }
+  .pills button.active, .pills button[aria-pressed="true"] { background: #1f2937; color: #fff; border-color: #1f2937; }
+  .pills button.active:hover, .pills button[aria-pressed="true"]:hover { background: #111827; }
+  .pills button small { margin-left: 0.3rem; font-size: var(--fs-xs); opacity: 0.8; }
+  .filter-label { font-size: var(--fs-sm); color: #6b7280; margin-left: 0.3rem; }
+  .filter-select { font-size: var(--fs-md); padding: 0.35rem 0.5rem; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; color: #374151; max-width: 100%; }
+  .filter-sep { border-left: 1px solid #d1d5db; margin: 0 0.35rem; height: 1.4rem; }
+
+  /* tooltip: white card with soft shadow (light theme) */
+  .tip { position: fixed; z-index: 60; pointer-events: none; max-width: 300px; padding: 0.5rem 0.7rem; background: #fff; color: #111827; border: 1px solid #d1d5db; border-radius: 8px; box-shadow: 0 6px 20px rgba(15, 23, 42, 0.14); font-size: var(--fs-sm); line-height: var(--lh-small); }
+  .tip[hidden] { display: none; }
+  .tip .tip-h { font-weight: 700; margin-bottom: 0.15rem; }
+  .tip .muted { font-size: var(--fs-xs); }
+
+  /* legend */
+  .legend { display: flex; flex-wrap: wrap; gap: 0.25rem 0.9rem; font-size: var(--fs-xs); color: #6b7280; line-height: var(--lh-small); }
+  .legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
+  .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+
+  /* Role hooks for page owners; estimates retain their final values. */
+  .nx-section-title { font: var(--nx-weight-section) var(--nx-type-section)/var(--nx-lh-title) var(--nx-sans); color: var(--nx-ink); }
+  .nx-count { font: var(--nx-weight-count) var(--nx-type-count)/1.2 var(--nx-sans); font-variant-numeric: tabular-nums; }
+  .nx-featured { font: var(--nx-weight-feature) var(--nx-type-feature)/1.2 var(--nx-sans); font-variant-numeric: tabular-nums; }
+  .nx-interval { font-size: var(--nx-type-body); font-weight: 400; }
+  .nx-caption { font-size: var(--nx-type-caption); line-height: var(--nx-lh-cap); }
+  .nx-tick { font-size: var(--nx-type-tick); font-weight: 400; }
+  .nx-content { width: 100%; max-width: var(--nx-col-fig); margin-inline: auto; }
+  .nx-plot .mark { fill: none; stroke: currentColor; stroke-width: 9; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+  .nx-plot .mark-hole { fill: none; stroke: var(--site-bg); stroke-width: 5; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+  html:lang(zh) .page [data-nx-wrap=phrase] { word-break: keep-all; overflow-wrap: normal; text-wrap: balance; }
+  :where([id]) { scroll-margin-top: var(--nx-anchor-offset); }
+
+  footer.site-footer[data-nx-chrome="footer"] { margin: 32px auto 0; padding: 8px 16px; font: 400 var(--nx-type-caption)/var(--nx-lh-cap) var(--nx-sans); color: var(--nx-muted); text-align: center; }
+  footer.site-footer[data-nx-chrome="footer"] .ft-l { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; column-gap: .35em; margin: 0; }
+  footer.site-footer[data-nx-chrome="footer"] .ft-l + .ft-l { column-gap: 0; }
+  footer.site-footer[data-nx-chrome="footer"]:lang(zh) .ft-l { column-gap: 0; }
+  footer.site-footer[data-nx-chrome="footer"] .ft-sep { margin-inline: .35em; }
+  footer.site-footer[data-nx-chrome="footer"] a { color: var(--nx-accent); font-weight: 500; text-decoration: none; }
+  footer.site-footer[data-nx-chrome="footer"] a.ft-lic { color: var(--nx-muted); font-weight: 400; text-decoration: underline; }
+
+  html.nx-motion header[data-nx-chrome="header"] .lang-pill,
+  html.nx-motion .view-toggle[data-nx-chrome="nav"] .vt-btn,
+  html.nx-motion .pills button, html.nx-motion .pills a.pill {
+    transition: color var(--nx-tr), background-color var(--nx-tr), border-color var(--nx-tr);
+  }
+  html.nx-motion .nx-landing.nx-motion-armed { animation: nx-landing var(--nx-motion-landing) var(--nx-ease-landing); }
+  @keyframes nx-landing { from { background-color: var(--nx-accent-soft); } to { background-color: transparent; } }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html.nx-motion.nx-motion-boot #grid[data-nx-intro="funnel"]:not(.nx-motion-prepared):not(.nx-motion-complete) { visibility: hidden; }
+    html.nx-motion.nx-motion-boot #design-timing-grid:not(.nx-motion-complete) .do-cell[data-count]:not([data-count="0"]) rect,
+    html.nx-motion #design-timing-grid.nx-motion-pending .do-cell[data-count]:not([data-count="0"]) rect { transform: scale(.85); transform-box: fill-box; transform-origin: center; }
+  }
+  /* Only the head runtime can opt in before paint. Registered pending states take
+     over before DOMContentLoaded clears boot; complete/error/static paths reveal finals. */
+  html.nx-motion.nx-motion-boot [data-nx-intro]:not(.nx-motion-complete) [data-nx-reveal],
+  html.nx-motion [data-nx-intro].nx-motion-pending [data-nx-reveal] { opacity: 0; }
+  html.nx-motion.nx-motion-boot .lm-frame:not(:has(.lm-hd.nx-motion-complete)) .lm-fill,
+  html.nx-motion .lm-hd.nx-motion-pending + .lm-rows .lm-fill { transform: scaleX(0); }
+  html.nx-motion.nx-motion-boot .lm-gaps:not(:has(h3.nx-motion-complete)) .lm-span,
+  html.nx-motion .lm-gaps:has(h3.nx-motion-pending) .lm-span { clip-path: inset(0 100% 0 0); }
+  html.nx-motion.nx-motion-boot .nx-stair:not(.nx-motion-complete) .nx-line,
+  html.nx-motion .nx-stair.nx-motion-pending .nx-line { transform: scaleX(0); }
+  html.nx-motion.nx-motion-boot .nx-stair:not(.nx-motion-complete) .nx-rise,
+  html.nx-motion .nx-stair.nx-motion-pending .nx-rise { transform: scaleY(0); }
+  html.nx-motion.nx-motion-boot .nx-stair:not(.nx-motion-complete) .nx-tally,
+  html.nx-motion .nx-stair.nx-motion-pending .nx-tally,
+  html.nx-motion .nx-stair.nx-motion-armed .nx-st:not(.lv-reached) .nx-tally,
+  html.nx-motion :is(#countGroups,#countPolicies,#countJurs).nx-motion-pending,
+  html.nx-motion :is(#countGroups,#countPolicies,#countJurs).nx-motion-armed:not(.nx-motion-frame),
+  html.nx-motion .summary-row.nx-motion-pending :is(#countGroups,#countPolicies,#countJurs),
+  html.nx-motion .summary-row.nx-motion-armed:not(.nx-motion-frame) :is(#countGroups,#countPolicies,#countJurs) { visibility: hidden; }
+  html.nx-motion.nx-motion-boot .nx-stair:not(.nx-motion-complete) .nx-nd--end,
+  html.nx-motion .nx-stair:is(.nx-motion-pending,.nx-motion-armed) .nx-nd--end { opacity: 0; }
+  html.nx-motion.nx-motion-boot .story-flow:not(.nx-motion-complete) :is(.sf-ribbons,.sf-trunk-wrap,.sf-vm),
+  html.nx-motion .story-flow.nx-motion-pending :is(.sf-ribbons,.sf-trunk-wrap,.sf-vm) { clip-path: inset(0 100% 0 0); }
+  html.nx-motion.nx-motion-boot .story-flow:not(.nx-motion-complete) :is(.sf-notch,.sf-dot,.sf-vn),
+  html.nx-motion .story-flow.nx-motion-pending :is(.sf-notch,.sf-dot,.sf-vn) { opacity: 0; }
+  html.nx-motion.nx-motion-boot .story-flow:not(.nx-motion-complete) .sf-vs--a::before,
+  html.nx-motion .story-flow.nx-motion-pending .sf-vs--a::before { transform: scale(0); }
+
+  @media (max-width: 900px) {
+    body { padding: .7rem; }
+    header.site-head[data-nx-chrome="header"] .site-brand-link { display: flex; align-items: center; min-height: var(--tap); }
+    .pills button, .pills a.pill { min-height: var(--tap); }
+    select, input:not([type="range"]), .filter-select { font-size: var(--nx-type-input); min-height: var(--tap); }
+    footer.site-footer[data-nx-chrome="footer"] a { display: inline-flex; align-items: center; min-height: var(--tap); min-width: var(--tap); }
+  }
+  @media (max-width: 600px) {
+    header.site-head[data-nx-chrome="header"] { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 0 12px; }
+    header.site-head[data-nx-chrome="header"] .site-brand { grid-area: 1/1; }
+    header.site-head[data-nx-chrome="header"] .site-brand-link { overflow-wrap: normal; }
+    header.site-head[data-nx-chrome="header"]:lang(zh) .site-brand-link { flex-direction: column; align-items: flex-start; justify-content: center; }
+    header.site-head[data-nx-chrome="header"] .site-sub { display: block; margin-left: 0; }
+    header.site-head[data-nx-chrome="header"] > .lang-switch { grid-area: 1/2; justify-self: end; }
+    header.site-head[data-nx-chrome="header"] .site-links { grid-area: 2/1/3/3; justify-self: start; gap: 16px; }
+    .view-toggle[data-nx-chrome="nav"] { flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; padding-block: 2px; padding-inline: 2px; scroll-padding-inline: 2px; overscroll-behavior-inline: contain; }
+  }
+  @media (max-width: 480px) {
+    .view-toggle[data-nx-chrome=nav] { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 6px; overflow: visible; }
+    .view-toggle[data-nx-chrome=nav] .vt-btn { min-width: 0; min-height: 44px; padding: 8px 4px; font-size: 14px; }
+    .view-toggle[data-nx-chrome=nav] .vt-sep { display: none; }
+  }
+  @media (max-width: 359px) {
+    .view-toggle[data-nx-chrome=nav] { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html, html * { scroll-behavior: auto !important; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .lm-fill, .nx-stair .nx-line, .nx-stair .nx-rise { transform: none !important; }
+    .lm-span { clip-path: none !important; }
+    .nx-tally, #countGroups, #countPolicies, #countJurs { visibility: visible !important; }
+    .nx-stair .nx-nd--end { opacity: 1 !important; }
+    .story-flow .sf-dot { opacity: 1 !important; }
+    [data-nx-reveal] { opacity: 1 !important; transform: none !important; }
+  }
+  @media print {
+    html, html * { scroll-behavior: auto !important; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .nx-landing { background-color: transparent !important; }
+    .lm-fill, .nx-stair .nx-line, .nx-stair .nx-rise { transform: none !important; }
+    .lm-span { clip-path: none !important; }
+    .nx-tally, #countGroups, #countPolicies, #countJurs { visibility: visible !important; }
+    .nx-stair .nx-nd--end { opacity: 1 !important; }
+    .story-flow .sf-dot { opacity: 1 !important; }
+    [data-nx-reveal] { opacity: 1 !important; transform: none !important; }
+    .view-toggle[data-nx-chrome="nav"] { flex-wrap: wrap; overflow: visible; }
+  }
+</style>
+<!-- NX:STYLE:END -->
+  <style>
+    * { box-sizing: border-box; }
+    /* type scale: 12 / 13 / 14 / 15 / 18 / 20 px (16 px on form controls on phones); line-height 1.6 (zh 1.75) */
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", sans-serif; margin: 0; padding: 1rem; background: #ffffff; color: #111827; font-size: 15px; line-height: 1.6; }
+    :lang(zh) body { line-height: 1.75; }
+    :lang(zh) { font-synthesis-style: none; }
+    :lang(zh) em, :lang(zh) i, :lang(zh) .lit-note, :lang(zh) .loading { font-style: normal; }
+    .page { max-width: 1500px; margin: 0 auto; }
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: #1f2937; color: #fff; padding: 0.65rem 1rem; min-height: 44px; border-radius: 0 0 8px 0; font-size: 14px; font-weight: 600; text-decoration: none; }
+    .skip-link:focus { left: 0; outline: 2px solid #93c5fd; outline-offset: 2px; text-decoration: none; }
+    .db-intro { scroll-margin-top: 1rem; }
+    .db-title { font-size: var(--nx-type-section); font-weight: 650; line-height: 1.35; margin: 1.2rem 0 0.2rem 0; color: #111827; }
+    .db-lede { font-size: 14px; color: #4b5563; margin: 0 0 0.9rem 0; }
+    .db-note { font-size: 13px; color: #4b5563; margin: -0.4rem 0 0.9rem 0; max-width: 70ch; }
+    .summary-panel { background: #fff; border: 0; border-bottom: 1px solid #e5e7eb; border-radius: 0; padding: 0.9rem 0; margin-bottom: 0.9rem; display: flex; align-items: center; gap: 1.5rem; }
+    .summary-stats { display: flex; gap: 0; flex-shrink: 0; min-width: 0; }
+    .summary-stat { text-align: left; padding: 0 1rem; border-left: 1px solid #e5e7eb; min-width: 0; }
+    .summary-stat:first-child { padding-left: 0; border: 0; }
+    .summary-stat .sv { font-size: var(--nx-type-count); font-variant-numeric: tabular-nums; font-weight: 700; color: #111827; line-height: 1.2; }
+    .summary-stat .sl { font-size: var(--nx-type-caption); color: #4b5563; text-transform: none; letter-spacing: 0; }
+    .source-bars { flex: 1; display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+    .source-row { display: flex; align-items: center; gap: 0.5rem; font-size: 13px; margin-bottom: 0; }
+    .source-row .sr-label { width: 150px; text-align: right; flex-shrink: 0; white-space: nowrap; font-weight: 600; }
+    .source-row .sr-track { flex: 1; height: 22px; background: #f3f4f6; border-radius: 5px; overflow: hidden; min-width: 60px; }
+    .source-row .sr-num { width: 110px; font-size: 13px; color: #4b5563; flex-shrink: 0; }
+    .mini-legend { display: flex; flex-wrap: wrap; gap: 0.25rem 0.7rem; padding-left: 160px; margin-bottom: 0.55rem; font-size: var(--nx-type-tick); color: #4b5563; line-height: 1.5; }
+    .mini-legend span { display: flex; align-items: center; gap: 3px; }
+    .ldot { display: inline-block; width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+    .filters { margin-bottom: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem; align-items: center; }
+    .filters button { margin: 0; padding: 0.38rem 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; color: #374151; cursor: pointer; font-size: 14px; }
+    .filters button.active { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .filters button:hover { background: #f3f4f6; }
+    .filters button.active:hover { background: #111827; }
+    .fg { display: inline-flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
+    .fg-btns, .fg-actions { display: inline-flex; align-items: center; gap: 0.45rem; }
+    .filter-select { font-size: 14px; padding: 0.35rem 0.5rem; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; color: #374151; max-width: 100%; }
+    .filter-label { font-size: 13px; color: #4b5563; }
+    .filter-sep { display: none; }   /* groups are separated by the row gap; a divider could be stranded at a line end */
+    .pagination { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.5rem; margin-top: 0.8rem; margin-bottom: 0.5rem; font-size: 14px; }
+    .pagination select { padding: 0.3rem 0.5rem; border: 1px solid #d1d5db; border-radius: 4px; background: #fff; font-size: 14px; }
+    .pagination .page-info { color: #4b5563; text-align: center; min-width: 0; }
+    .pagination .page-size, .pagination .page-buttons { display: flex; align-items: center; gap: 0.5rem; }
+    .pagination button { padding: 0.35rem 0.65rem; border: 1px solid #d1d5db; border-radius: 4px; background: #fff; cursor: pointer; font-size: 14px; }
+    .pagination button:hover:not(:disabled) { background: #f3f4f6; }
+    .pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
+    /* Table: fixed layout with explicit column widths; the title takes the rest, wraps (never nowrap) and is clamped to 3 lines.
+       The container scrolls sideways only as a last resort (see max-width: 1000px). */
+    .table-scroll { width: 100%; min-height: 320px; }
+    #tableView[aria-busy="true"] { opacity: .65; }
+    #tableView table { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; overflow: clip; }
+    #tableView col.k-tog { width: 32px; } #tableView col.k-id { width: 132px; } #tableView col.k-jur { width: 100px; } #tableView col.k-date { width: 104px; } #tableView col.k-status { width: 96px; }
+    #tableView col.k-score { width: 124px; } #tableView col.k-design { width: 220px; } #tableView col.k-src { width: 116px; } #tableView col.k-link { width: 60px; }
+    #tableView :lang(zh) col.k-score { width: 150px; }
+    #tableView th, #tableView td { padding: 0.56rem 0.65rem; text-align: left; border-bottom: 1px solid #f1f5f9; overflow-wrap: anywhere; }
+    #tableView th { background: #f9fafb; font-size: var(--nx-type-caption); text-transform: none; letter-spacing: 0; color: #6b7280; font-weight: 600; position: sticky; top: 0; z-index: 2; cursor: pointer; user-select: none; white-space: nowrap; }
+    #tableView th[data-sort="none"] { cursor: default; }
+    #tableView th:hover { background: #f3f4f6; }
+    #tableView th[data-sort="none"]:hover { background: #f9fafb; }
+    #tableView button { min-height:44px; font-size:var(--nx-type-input); }
+    #tableView th .sort-arrow { font-size: var(--nx-type-tick); margin-left: 0.2rem; color: #6b7280; }
+    #tableView button { min-height:44px; font-size:var(--nx-type-input); }
+    #tableView th .sort-arrow.active { color: #111827; }
+    #tableView th .th-llm { font-size: var(--nx-type-tick); font-weight: 500; letter-spacing: 0; text-transform: none; color: #4b5563; }
+    #tableView tr { cursor: pointer; }
+    #tableView thead tr { cursor: default; }
+    #tableView tr:hover { background: #f9fafb; }
+    #tableView tr.expanded { background: #f8fafc; }
+    #tableView tr.main-row:focus-visible { outline: 2px solid #1d4ed8; outline-offset: -2px; }
+    /* The header row sticks above 700 px (42 px high in Chinese, 44 px up to 900 px): moving focus with the keyboard keeps a row, a link or a button 8 px below it. */
+    @media (min-width: 701px) {
+      #tableView { --thead-h: 42px; }
+      #tableView tr.main-row, #tableView td a, #tableView td button, #tableView td summary { scroll-margin-top: calc(var(--thead-h) + 8px); }
+    }
+    @media (min-width: 701px) and (max-width: 900px) { #tableView { --thead-h: 44px; } }
+    #tableView td { font-size: 14px; vertical-align: top; }
+    #tableView td.c-date { white-space: nowrap; font-variant-numeric: tabular-nums; }
+    #tableView td.c-id { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: var(--nx-type-tick); }
+    .badge { display: inline-block; padding: 0.12rem 0.42rem; border: 1px solid transparent; border-radius: 4px; font-size: var(--nx-type-tick); font-weight: 600; margin: 0.08rem 0.14rem 0.08rem 0; white-space: nowrap; }
+    .badge-rd { background: #ecfdf5; color: #166534; border-color: #bbf7d0; }
+    .badge-did { background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe; }
+    .badge-conf { background: #f8fafc; border: 1px solid #d1d5db; color: #475569; font-size: var(--nx-type-tick); padding: 0.1rem 0.3rem; margin-left: 0.2rem; white-space: nowrap; }
+    .status-badge { display: inline-block; padding: 0.1rem 0.4rem; border-radius: 4px; font-size: var(--nx-type-tick); font-weight: 500; white-space: nowrap; }
+    .src-badge { display: inline-block; padding: 0.12rem 0.42rem; border-radius: 4px; font-size: var(--nx-type-tick); font-weight: 600; }
+    .src-congress { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+    .src-regulations { background: #f5f3ff; color: #7c3aed; border: 1px solid #ddd6fe; }
+    .src-openstates { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+    .src-legal { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+    .src-other { background: #f3f4f6; color: #4b5563; border: 1px solid #e5e7eb; }
+    .col-title { font-weight: 500; min-width: 0; }
+    .col-title .t { display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; line-height: 1.4; }
+    .col-title .pitch { display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; font-size: 13px; line-height: 1.4; color: #4b5563; font-weight: 400; font-style: italic; margin-top: 0.15rem; }
+    .t-extra { margin-top: 0.15rem; }
+    .meta-line { display: none; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.5rem; margin-top: 0.3rem; font-size: 13px; font-weight: 400; color: #4b5563; }
+    .meta-line .ml { display: none; align-items: center; gap: 0.2rem; }
+    .meta-line .ml-id { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: var(--nx-type-tick); }
+    .col-design { min-width: 0; }
+    .lbl { display: none; }
+    a { color: #1d4ed8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color: #4b5563; font-size: 13px; }
+    .score-cell { font-weight: 600; font-size: 14px; text-align: center; }
+    .detail-row { display: none; }
+    .detail-row.show { display: table-row; }
+    #tableView .detail-row td { background: #fafafa; padding: 0.8rem; border-bottom: 1px solid #e5e7eb; cursor: default; }
+    .detail-content { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0.75rem; align-items: start; }
+    .detail-content > .detail-col-sticky { position: sticky; top: 20px; }
+    .detail-col { min-width: 0; }
+    .detail-title { grid-column: 1 / -1; font-size: 15px; font-weight: 600; line-height: 1.4; max-width: 90ch; overflow-wrap: anywhere; color: #111827; }
+    .detail-section { background: #fff; padding: 0.8rem; border-radius: 6px; border: 1px solid #e5e7eb; }
+    .detail-section h4 { margin: 0 0 0.45rem 0; font-size: 15px; font-weight: 650; line-height: 1.35; color: #374151; }
+    .detail-section p { margin: 0.3rem 0; font-size: 14px; line-height: 1.5; max-width: 70ch; overflow-wrap: anywhere; }
+    :lang(zh) .detail-section p { line-height: 1.7; }
+    .detail-section .label { display: inline-block; font-weight: 600; color: #4b5563; min-width: 60px; }
+    .treatment-box { background: #fff; border: 1px solid #e5e7eb; padding: 0.8rem; border-left: 3px solid #9ca3af; margin-bottom: 0.8rem; border-radius: 4px; }
+    .outcomes-box { background: #fff; border: 1px solid #e5e7eb; padding: 0.8rem; border-left: 3px solid #9ca3af; border-radius: 4px; }
+    .expand-icon { font-size: 18px; line-height: 1; color: #6b7280; display: inline-block; }
+    #tableView tr.expanded .expand-icon { transform: rotate(90deg); }
+    .ww-grid { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.2rem 0.7rem; font-size: 14px; line-height: 1.5; }
+    :lang(zh) .ww-grid { line-height: 1.7; }
+    .ww-grid .ww-label { font-weight: 600; color: #4b5563; white-space: nowrap; }
+    .ww-grid .ww-val { color: #1f2937; max-width: 70ch; overflow-wrap: anywhere; min-width: 0; }
+    .lit-note { font-size: 13px; color: #4b5563; margin: 0.4rem 0 0 0; font-style: italic; }
+    .studies div { max-width: 70ch; overflow-wrap: anywhere; }
+    .dataset-link { display: inline-block; color: #1d4ed8; text-decoration: underline; text-decoration-style: dotted; cursor: help; margin-right: 0.5rem; position: relative; }
+    .dataset-link:hover { background: #eff6ff; padding: 0 0.2rem; border-radius: 2px; }
+    .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(17, 24, 39, 0.45); }
+    .modal.show { display: block; }
+    .modal-content { background: white; margin: 5% auto; padding: 2rem; border-radius: 8px; width: 80%; max-width: 700px; max-height: 80vh; overflow-y: auto; box-shadow: 0 8px 30px rgba(15, 23, 42, 0.25); }
+    .modal-close { float: right; font-size: 20px; font-weight: bold; cursor: pointer; color: #6b7280; }
+    .modal-close:hover { color: #333; }
+    .modal h3 { margin: 0 0 1rem 0; color: #1f2937; }
+    .modal .info-grid { display: grid; grid-template-columns: 140px 1fr; gap: 0.5rem 1rem; margin: 1rem 0; }
+    .modal .info-label { font-weight: 600; color: #4b5563; }
+    .modal .info-value { color: #333; }
+    .modal ul { margin: 0.3rem 0; padding-left: 1.2rem; }
+    .search-bar { display: flex; gap: 0.5rem; margin-bottom: 0.8rem; align-items: center; }
+    .search-bar input { flex: 1; max-width: 400px; padding: 0.42rem 0.7rem; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }
+    .search-bar input:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 2px; border-color: #1d4ed8; }
+    .search-bar .search-count { font-size: 13px; color: #4b5563; }
+    .jur-badge { display: inline-block; padding: 0.1rem 0.38rem; border-radius: 3px; font-size: var(--nx-type-tick); font-weight: 600; background: #f3f4f6; color: #374151; border: 1px solid #e5e7eb; white-space: nowrap; }
+    .pitch-callout { background: #eff6ff; border: 1px solid #bfdbfe; border-left: 4px solid #3b82f6; padding: 0.7rem 1rem; border-radius: 6px; margin-bottom: 0.8rem; }
+    .pitch-callout p { margin: 0; font-size: 14px; line-height: 1.5; color: #1e40af; font-style: italic; }
+    .chapter-badge { display: inline-block; margin-left: 0.4rem; padding: 0.08rem 0.38rem; background: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe; border-radius: 3px; font-size: var(--nx-type-tick); font-weight: 600; letter-spacing: 0.02em; }
+    .t-extra .chapter-badge { margin-left: 0; }
+    .chapter-strip { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.55rem 0.7rem; margin-bottom: 0.8rem; background: #faf5ff; border: 1px solid #e9d5ff; border-left: 3px solid #8b5cf6; border-radius: 6px; align-items: center; }
+    .chapter-strip .cs-label { font-size: 13px; color: #5b21b6; font-weight: 600; margin-right: 0.3rem; letter-spacing: 0.03em; }
+    .chapter-pill { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.25rem 0.55rem; background: #fff; border: 1px solid #d8b4fe; border-radius: 9999px; font-size: 13px; color: #4c1d95; cursor: pointer; }
+    .chapter-pill:hover { background: #f5f3ff; border-color: #8b5cf6; }
+    .chapter-pill.active { background: #7c3aed; color: #fff; border-color: #7c3aed; font-weight: 600; }
+    .chapter-pill.boilerplate { opacity: 0.55; cursor: default; background: #f9fafb; color: #4b5563; border-color: #e5e7eb; }
+    .chapter-pill.boilerplate:hover { background: #f9fafb; border-color: #e5e7eb; }
+    .chapter-pill .cp-marker { font-size: var(--nx-type-tick); letter-spacing: 0.01em; }
+    .chapter-pill .cp-score { font-weight: 600; }
+    .chapter-pill .cp-flags { font-size: var(--nx-type-tick); padding: 0 0.28rem; background: rgba(255,255,255,0.2); border-radius: 3px; }
+    .chapter-pill.active .cp-flags { background: rgba(255,255,255,0.22); }
+    .chapter-pill:not(.active) .cp-flags { background: #e0e7ff; color: #3730a3; }
+
+    /* Narrower desktops: Bill ID and Source move under the title (columns collapse to zero width) */
+    @media (min-width: 701px) and (max-width: 1360px) {
+      #tableView col.k-id, #tableView col.k-src { width: 0; }
+      #tableView th.c-id, #tableView td.c-id, #tableView th.c-src, #tableView td.c-src { padding: 0; border: 0; overflow: hidden; visibility: hidden; font-size: 0; }
+      #tableView td.c-id > *, #tableView td.c-src > * { display: none; }
+      .meta-line { display: flex; }
+      .meta-line .ml-id, .meta-line .ml-src { display: inline-flex; }
+    }
+    /* Tablets: Status and Design join them; the #tableView table is down to title, jurisdiction, date, score and link */
+    @media (min-width: 701px) and (max-width: 1000px) {
+      #tableView col.k-status, #tableView col.k-design { width: 0; }
+      #tableView col.k-tog { width: 28px; } #tableView col.k-jur { width: 84px; } #tableView col.k-date { width: 100px; } #tableView col.k-score { width: 112px; } #tableView col.k-link { width: 60px; }
+      #tableView :lang(zh) col.k-score { width: 148px; }
+      #tableView th.c-status, #tableView td.c-status, #tableView th.col-design, #tableView td.col-design { padding: 0; border: 0; overflow: hidden; visibility: hidden; font-size: 0; }
+      #tableView td.c-status > *, #tableView td.col-design > * { display: none; }
+      .meta-line .ml-status, .meta-line .ml-design { display: inline-flex; }
+      .table-scroll { overflow-x: auto; }
+    }
+    @media (max-width: 1100px) { .detail-content { grid-template-columns: minmax(0, 1fr); } .detail-content > .detail-col-sticky { position: static; } }
+    @media (max-width: 900px) {
+      body { padding: 0.7rem; }
+      .search-bar { flex-wrap: wrap; }
+      .search-bar input { max-width: none; min-height: 44px; font-size: 16px; }
+      .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.6rem; }
+      .filters .filter-sep { display: none; }
+      .filters .fg { display: flex; flex-direction: column; align-items: stretch; gap: 0.2rem; min-width: 0; white-space: normal; }
+      .filters .fg-btns, .filters .fg-actions { grid-column: 1 / -1; display: flex; }
+      .filters .fg-btns button { flex: 1; }
+      .filters button { min-height: 44px; }
+      .filter-select { min-height: 44px; font-size: 16px; width: 100%; }
+      #tableView th { padding-top: 0; padding-bottom: 0; height: 44px; }
+      #tableView td.c-link a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.5rem; margin: -0.56rem -0.5rem; }
+      .pagination button { min-height: 44px; min-width: 44px; padding: 0.35rem 0.9rem; }
+      .pagination select { min-height: 44px; font-size: 16px; }
+      .pagination .page-info { grid-column: 1 / -1; grid-row: 1; }
+      .pagination .page-size { grid-column: 1 / -1; justify-content: center; }
+      .pagination .page-buttons { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .pagination button { padding-inline: .25rem; }
+    }
+    @media (max-width: 700px) {
+      .table-scroll { overflow: visible; }
+      #tableView table, #tableView thead, #tableView tbody { display: block; border: 0; background: transparent; border-radius: 0; overflow: visible; }
+      #tableView colgroup { display: none; }
+      #tableView thead tr { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.6rem; cursor: default; }
+      #tableView thead tr::before { content: "Sort by"; flex: 1 1 100%; font-size: 13px; color: #4b5563; }
+      #tableView thead th { position: static; display: inline-flex; align-items: center; gap: 0.25rem; min-height: 44px; padding: 0 0.7rem; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; font-size: 13px; text-transform: none; letter-spacing: 0; border-bottom: 1px solid #d1d5db; }
+      #tableView thead th[data-sort="none"] { display: none; }
+      #tableView tr.main-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.6rem; position: relative; padding: 0.7rem 0.8rem; margin-bottom: 0.6rem; border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; }
+      #tableView tr.main-row.expanded { margin-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+      #tableView tr.main-row td { display: block; padding: 0; border: 0; min-width: 0; }
+      #tableView tr.main-row td.c-tog { position: absolute; right: 0.6rem; top: 0.7rem; }
+      #tableView tr.main-row td.col-title { order: 1; flex: 1 1 100%; padding-right: 1.6rem; }
+      #tableView tr.main-row td.c-jur { order: 2; }
+      #tableView tr.main-row td.c-date { order: 3; }
+      #tableView tr.main-row td.c-status { order: 4; }
+      #tableView tr.main-row td.c-src { order: 5; }
+      #tableView tr.main-row td.c-id { order: 6; flex: 1 1 100%; }
+      #tableView tr.main-row td.col-design { order: 7; flex: 1 1 100%; }
+      #tableView tr.main-row td.score-cell { order: 8; text-align: left; }
+      #tableView tr.main-row td.c-link { order: 9; margin-left: auto; }
+      #tableView td.c-link a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.9rem; }
+      .lbl { display: inline; color: #4b5563; font-weight: 400; font-size: 13px; margin-right: 0.25rem; }
+      .detail-row.show { display: block; margin-bottom: 0.6rem; border: 1px solid #e5e7eb; border-top: 0; border-radius: 0 0 8px 8px; background: #fafafa; }
+      #tableView .detail-row td { display: block; padding: 0.6rem; border: 0; }
+      #tableView .detail-row td[colspan] { width: auto; }
+      #tableView tbody tr.main-row td.c-tog { z-index: 1; }
+      .ww-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+      .ww-grid .ww-label { margin-top: 0.4rem; }
+      .detail-section { padding: 0.65rem; }
+    }
+    @media (max-width: 860px) {
+      .summary-panel { flex-direction: column; align-items: stretch; }
+    }
+    @media (max-width: 600px) {
+      .source-row .sr-label { width: auto; flex: 0 1 7rem; white-space: normal; }
+      .source-row .sr-num { width: auto; flex: 0 0 5rem; }
+      .mini-legend { padding-left: 0; }
+    }
+    html.nx-motion .expand-icon { transition: transform var(--nx-motion-panel) var(--nx-ease-panel); }
+    html.nx-motion .filters button, html.nx-motion .filter-select, html.nx-motion .search-bar input, html.nx-motion .chapter-pill, html.nx-motion .pagination button, html.nx-motion #tableView tr.main-row { transition: color var(--nx-tr), background-color var(--nx-tr), border-color var(--nx-tr); }
+    @media (max-width: 380px) { .summary-stat { padding-inline: .75rem; } }
+    /* Open record, phone widths: stand-alone links are 44 px high. The group link's display is written inline by the detail template, so only !important can change it. */
+    @media (max-width: 600px) {
+      .ww-val a { display: inline-flex; align-items: center; min-height: 44px; }
+      .detail-section a[href*="#grp-"] { display: inline-flex !important; align-items: center; min-height: 44px; }
+    }
+    /* Chinese: no italics, and the caption line height on the group-size span. The detail template writes italic and 12 px inline, so those two rules need !important. */
+    :lang(zh) .col-title .pitch, :lang(zh) .pitch-callout p { font-style: normal; }
+    :lang(zh) #tableView [style*="font-style:italic"] { font-style: normal !important; }
+    :lang(zh) #tableView [style*="font-size:12px"] { font-size: var(--nx-type-tick) !important; }
+    :lang(zh) .detail-section h4 > span { line-height: var(--nx-lh-cap); }
+  </style>
+<!-- NX:MOTION:START -->
+<script>
+/* Final HTML/CSS is authoritative. Consumers supply finish before any local state is armed.
+   once/transition(element, run, {finish, maxDuration, threshold}) call run(context).
+   revealOnce(element, targets) prepares and restores each target's inline reveal state.
+   context owns timer/RAF/WAAPI/SMIL work; finish always cancels it and commits final content.
+   pause/resume suspends tracked work and watchdog time; the map owns its clock/visibility events.
+   Pending introductions are prepared before paint; releaseIntro lets finite decorative work
+   continue after the illustrative sequence. maxDuration is capped at 60000 active ms. */
+(function () {
+  'use strict';
+  if (window.NXMotion) return;
+  var root = document.documentElement;
+  var query = undefined;
+  var printing = false;
+  var ready = false;
+  var finishing = false;
+  var activeIntro = undefined;
+  var queue = [];
+  var queueFrame;
+  var introOrder = 0;
+  var records = new Set();
+  var preferenceTimer;
+  var scrollEndTimer;
+  var introductions = new WeakMap();
+  var interactions = new WeakMap();
+  try { query = window.matchMedia('(prefers-reduced-motion: no-preference)'); } catch (_) {}
+  function listen(media, callback) {
+    if (media && typeof media.addEventListener === 'function') media.addEventListener('change', callback);
+    else if (media && typeof media.addListener === 'function') media.addListener(callback);
+    else return false;
+    return true;
+  }
+  function allowed() {
+    var allow = !!(ready && query && query.matches && !printing && !finishing);
+    // Media change events can be missed. A frame/timer check must still commit every final value.
+    if (!allow && !finishing && records.size) finishAll(printing ? 'print' : 'static');
+    if (!allow && root && root.classList) root.classList.remove('nx-motion', 'nx-motion-boot');
+    return allow;
+  }
+  function syncRoot() { root.classList.toggle('nx-motion', allowed()); }
+  function checkPreference() {
+    if (preferenceTimer !== undefined || !records.size || !ready) return;
+    try {
+      // This single safety probe is not animation time: pause must not suspend it.
+      preferenceTimer = window.setTimeout(function () {
+        preferenceTimer = undefined;
+        if (allowed() && records.size) checkPreference();
+      }, 120);
+    } catch (_) { unsupported(); }
+  }
+  function duration(value, fallback) {
+    return Number.isFinite(value) && value > 0 ? Math.min(value, 60000) : fallback;
+  }
+  function invoke(fn, reason) { try { fn(reason); } catch (_) {} }
+  function cancelAnimation(animation) {
+    try {
+      if (typeof animation.cancel === 'function') animation.cancel();
+      else if (typeof animation.endElement === 'function') {
+        animation.endElement();
+        if (animation.ownerSVGElement && typeof animation.ownerSVGElement.unpauseAnimations === 'function') {
+          animation.ownerSVGElement.unpauseAnimations();
+        }
+      }
+    } catch (_) {}
+  }
+  function finishAll(reason) {
+    finishing = true;
+    Array.from(records).forEach(function (record) { record.finish(reason || 'finish-all'); });
+    queue.length = 0;
+    if (queueFrame !== undefined) { window.cancelAnimationFrame(queueFrame); queueFrame = undefined; }
+    finishing = false;
+    syncRoot();
+  }
+  function preferenceChanged() {
+    if (!allowed()) finishAll(printing ? 'print' : 'reduced-motion');
+    syncRoot();
+  }
+  function unsupported() {
+    ready = false;
+    finishAll('unsupported');
+    syncRoot();
+  }
+  try {
+    ready = !!(query && typeof window.IntersectionObserver === 'function' &&
+      typeof window.requestAnimationFrame === 'function' && typeof window.cancelAnimationFrame === 'function' &&
+      typeof window.setTimeout === 'function' && typeof window.clearTimeout === 'function' &&
+      root && root.classList && typeof window.addEventListener === 'function' && listen(query, preferenceChanged));
+  } catch (_) { ready = false; }
+  if (ready) {
+    try {
+      window.addEventListener('beforeprint', function () { printing = true; preferenceChanged(); });
+      window.addEventListener('afterprint', function () { printing = false; preferenceChanged(); });
+      var printQuery = window.matchMedia('print');
+      printing = !!printQuery.matches;
+      listen(printQuery, function () { printing = !!printQuery.matches; preferenceChanged(); });
+    } catch (_) { ready = false; }
+  }
+  syncRoot();
+  if (allowed() && document.readyState === 'loading') {
+    try {
+      root.classList.add('nx-motion-boot');
+      var bootTimer = window.setTimeout(function () {
+        finishAll('startup-watchdog');
+        root.classList.remove('nx-motion-boot');
+      }, 5000);
+      document.addEventListener('DOMContentLoaded', function () {
+        root.classList.remove('nx-motion-boot');
+        window.clearTimeout(bootTimer);
+      }, {once: true});
+    } catch (_) { unsupported(); }
+  }
+
+  function makeRecord(element, run, options, kind) {
+    options = options || {};
+    var timers = new Map();
+    var frames = new Map();
+    var animations = new Set();
+    var pausedAnimations = new Set();
+    var paused = false;
+    var cleanups = [];
+    var finalizer = typeof options.finish === 'function' ? options.finish : undefined;
+    var record = {
+      element: element, run: run, kind: kind, order: ++introOrder, state: 'pending', visible: false,
+      threshold: Number.isFinite(options.threshold) ? Math.max(0, Math.min(1, options.threshold)) : .35,
+      maxDuration: duration(options.maxDuration, 5000), observer: undefined, context: undefined
+    };
+    record.finish = function (reason) {
+      if (record.state === 'finished') return;
+      record.state = 'finished';
+      record.reason = reason || 'complete';
+      if (record.observer) { try { record.observer.disconnect(); } catch (_) {} }
+      timers.forEach(function (ticket) { try { window.clearTimeout(ticket.id); } catch (_) {} });
+      frames.forEach(function (ticket) { try { window.cancelAnimationFrame(ticket.id); } catch (_) {} });
+      animations.forEach(cancelAnimation);
+      timers.clear(); frames.clear(); animations.clear(); pausedAnimations.clear();
+      cleanups.reverse().forEach(function (fn) { invoke(fn, record.reason); });
+      cleanups.length = 0;
+      if (finalizer) invoke(finalizer, record.reason);
+      if (element && element.classList) {
+        element.classList.remove('nx-motion-prepared', 'nx-motion-pending', 'nx-motion-frame', 'nx-motion-armed', 'nx-motion-running', 'nx-motion-interaction');
+        if (kind === 'intro') element.classList.add('nx-motion-complete');
+      }
+      records.delete(record);
+      if (!records.size && preferenceTimer !== undefined) {
+        window.clearTimeout(preferenceTimer); preferenceTimer = undefined;
+      }
+      if (!records.size && scrollEndTimer !== undefined) {
+        window.clearTimeout(scrollEndTimer); scrollEndTimer = undefined;
+      }
+      if (interactions.get(element) === record) interactions.delete(element);
+      if (activeIntro === record) activeIntro = undefined;
+      if (!finishing) drain();
+    };
+    function scheduleTimer(ticket, key) {
+      ticket.started = Date.now();
+      ticket.id = window.setTimeout(function () {
+        timers.delete(key === undefined ? ticket.id : key);
+        if (!context.active()) return;
+        try { ticket.fn(context); } catch (_) { record.finish('error'); }
+      }, ticket.remaining);
+      return ticket.id;
+    }
+    function scheduleFrame(ticket, key) {
+      ticket.id = window.requestAnimationFrame(function (time) {
+        frames.delete(key === undefined ? ticket.id : key);
+        if (!context.active()) return;
+        try {
+          ticket.fn(time, context);
+          if (record.state === 'running') element.classList.add('nx-motion-frame');
+        } catch (_) { record.finish('error'); }
+      });
+      return ticket.id;
+    }
+    function pauseAnimation(animation) {
+      if (typeof animation.pause === 'function' && animation.playState !== 'finished' && animation.playState !== 'paused') {
+        animation.pause(); pausedAnimations.add(animation);
+      } else if (animation.ownerSVGElement && typeof animation.ownerSVGElement.pauseAnimations === 'function') {
+        animation.ownerSVGElement.pauseAnimations(); pausedAnimations.add(animation);
+      }
+    }
+    var context = {
+      motion: true,
+      active: function () { return record.state === 'running' && allowed() && !paused; },
+      paused: function () { return paused; },
+      finish: record.finish,
+      pause: function () {
+        if (!context.active()) return;
+        paused = true;
+        try {
+          timers.forEach(function (ticket) {
+            window.clearTimeout(ticket.id);
+            ticket.remaining = Math.max(0, ticket.remaining - (Date.now() - ticket.started));
+          });
+          frames.forEach(function (ticket) { window.cancelAnimationFrame(ticket.id); });
+          animations.forEach(pauseAnimation);
+        } catch (_) { record.finish('pause-error'); }
+      },
+      resume: function () {
+        if (!paused || record.state !== 'running') return;
+        if (!allowed()) { record.finish('static'); return; }
+        paused = false;
+        try {
+          timers.forEach(function (ticket, key) { scheduleTimer(ticket, key); });
+          frames.forEach(function (ticket, key) { scheduleFrame(ticket, key); });
+          pausedAnimations.forEach(function (animation) {
+            if (typeof animation.play === 'function') animation.play();
+            else if (animation.ownerSVGElement && typeof animation.ownerSVGElement.unpauseAnimations === 'function') {
+              animation.ownerSVGElement.unpauseAnimations();
+            }
+          });
+          pausedAnimations.clear();
+        } catch (_) { record.finish('resume-error'); }
+      },
+      onFinish: function (fn) {
+        if (typeof fn !== 'function') return;
+        if (record.state === 'finished') invoke(fn, record.reason);
+        else cleanups.push(fn);
+      },
+      releaseIntro: function () {
+        if (activeIntro === record) { activeIntro = undefined; drain(); }
+      },
+      timer: function (fn, delay) {
+        if (!context.active()) return undefined;
+        var id;
+        try {
+          var ticket = {fn: fn, remaining: Math.max(0, Number(delay) || 0)};
+          id = scheduleTimer(ticket);
+          timers.set(id, ticket);
+        } catch (_) { record.finish('timer-error'); }
+        return id;
+      },
+      clearTimer: function (id) {
+        var ticket = timers.get(id);
+        if (ticket) { window.clearTimeout(ticket.id); timers.delete(id); }
+      },
+      raf: function (fn) {
+        if (!context.active()) return undefined;
+        var id;
+        try {
+          var ticket = {fn: fn};
+          id = scheduleFrame(ticket);
+          frames.set(id, ticket);
+        } catch (_) { record.finish('raf-error'); }
+        return id;
+      },
+      cancelRaf: function (id) {
+        var ticket = frames.get(id);
+        if (ticket) { window.cancelAnimationFrame(ticket.id); frames.delete(id); }
+      },
+      track: function (animation) {
+        if (!animation) return undefined;
+        if (!context.active()) { cancelAnimation(animation); return undefined; }
+        animations.add(animation);
+        if (animation.finished && typeof animation.finished.then === 'function') {
+          animation.finished.then(undefined, function () { record.finish('animation-error'); });
+        }
+        return animation;
+      },
+      animate: function (target, keyframes, settings) {
+        if (!context.active()) return undefined;
+        if (!target || typeof target.animate !== 'function') { record.finish('unsupported-animation'); return undefined; }
+        try {
+          settings = Object.assign({}, settings || {});
+          if (!settings.easing && typeof window.getComputedStyle === 'function') {
+            var token = settings.duration <= 120 ? 'feedback' : settings.duration <= 180 ? 'panel' :
+              settings.duration <= 320 ? 'reveal' : 'value';
+            settings.easing = window.getComputedStyle(root).getPropertyValue('--nx-ease-' + token).trim() ||
+              (token === 'feedback' ? 'ease-out' : 'cubic-bezier(.2,.7,.2,1)');
+          }
+          return context.track(target.animate(keyframes, settings));
+        }
+        catch (_) { record.finish('animation-error'); return undefined; }
+      },
+      smil: function (target) {
+        if (!context.active()) return undefined;
+        if (!target || typeof target.beginElement !== 'function' || typeof target.endElement !== 'function') {
+          record.finish('unsupported-animation'); return undefined;
+        }
+        context.track(target);
+        try { target.beginElement(); } catch (_) { record.finish('animation-error'); }
+        return target;
+      }
+    };
+    record.context = context;
+    record.canRun = !!(element && element.classList && typeof run === 'function' && finalizer);
+    record.handle = {
+      finish: record.finish, cancel: record.finish,
+      active: function () { return record.state !== 'finished'; },
+      get state() { return record.state; }
+    };
+    records.add(record);
+    return record;
+  }
+  function start(record) {
+    if (record.state === 'finished') return;
+    if (!allowed() || !record.canRun) { record.finish('static'); return; }
+    checkPreference();
+    if (record.state === 'finished') return;
+    record.state = 'running';
+    if (record.cancelPending) record.cancelPending();
+    if (record.observer) { try { record.observer.disconnect(); } catch (_) {} }
+    record.element.classList.remove('nx-motion-pending');
+    record.element.classList.add('nx-motion-armed', record.kind === 'intro' ? 'nx-motion-running' : 'nx-motion-interaction');
+    // The watchdog is registered before running consumer code.
+    record.context.timer(function () { record.finish('watchdog'); }, record.maxDuration);
+    if (record.state === 'finished') return;
+    try { record.run(record.context); } catch (_) { record.finish('error'); }
+  }
+  function stillVisible(record) {
+    if (!record.visible || record.element.isConnected === false) return false;
+    if (typeof record.element.getBoundingClientRect !== 'function') return true;
+    var rect = record.element.getBoundingClientRect();
+    var height = window.innerHeight || root.clientHeight;
+    var width = window.innerWidth || root.clientWidth;
+    return rect.bottom > 0 && rect.top < height && rect.right > 0 && rect.left < width;
+  }
+  function drain() {
+    if (finishing || !allowed()) return;
+    // A fast scroll must not keep the next visible figure waiting behind an old
+    // illustration whose trigger has already left the viewport.
+    if (activeIntro && !stillVisible(activeIntro)) activeIntro.finish('offscreen');
+    if (activeIntro) return;
+    queue.sort(function (a, b) {
+      if (a.element !== b.element && typeof a.element.compareDocumentPosition === 'function') {
+        var position = a.element.compareDocumentPosition(b.element);
+        if (!(position & 1)) {
+          if (position & 4) return -1;
+          if (position & 2) return 1;
+        }
+      }
+      return a.order - b.order;
+    });
+    while (queue.length && !activeIntro) {
+      var next = queue.shift();
+      if (next.state === 'finished') continue;
+      if (!stillVisible(next)) { next.finish('offscreen'); continue; }
+      activeIntro = next;
+      start(next);
+    }
+  }
+  function scheduleDrain() {
+    if (queueFrame !== undefined) return;
+    try {
+      // Batch all observer deliveries from this rendering turn before choosing
+      // the first illustration. Observer delivery order is not document order.
+      queueFrame = window.requestAnimationFrame(function () { queueFrame = undefined; drain(); });
+    } catch (_) { unsupported(); }
+  }
+  function intersects(element) {
+    if (!element || element.isConnected === false || typeof element.getBoundingClientRect !== 'function') return false;
+    var rect = element.getBoundingClientRect();
+    return rect.bottom > 0 && rect.top < (window.innerHeight || root.clientHeight) &&
+      rect.right > 0 && rect.left < (window.innerWidth || root.clientWidth);
+  }
+  function reachableThreshold(record) {
+    if (typeof record.element.getBoundingClientRect !== 'function') return record.threshold;
+    var rect = record.element.getBoundingClientRect();
+    var height = rect.height || rect.bottom - rect.top;
+    var viewport = window.innerHeight || root.clientHeight;
+    return height > 0 && viewport > 0 ? Math.min(record.threshold, viewport * .5 / height) : 0;
+  }
+  function finishVisiblePending() {
+    scrollEndTimer = undefined;
+    Array.from(records).forEach(function (record) {
+      if (record.kind === 'intro' && (record.state === 'pending' || record.state === 'queued') && intersects(record.element)) {
+        record.finish('scroll-end');
+      }
+    });
+  }
+  if (ready) {
+    window.addEventListener('scrollend', function () {
+      window.clearTimeout(scrollEndTimer);
+      finishVisiblePending();
+    });
+    window.addEventListener('scroll', function () {
+      window.clearTimeout(scrollEndTimer);
+      if (records.size) scrollEndTimer = window.setTimeout(finishVisiblePending, 200);
+    }, {passive: true});
+  }
+  function once(element, run, options) {
+    if (element && introductions.has(element)) return introductions.get(element).handle;
+    var record = makeRecord(element, run, options, 'intro');
+    if (element) introductions.set(element, record);
+    if (!allowed() || !record.canRun) { record.finish('static'); return record.handle; }
+    try {
+      if (options && typeof options.prepare === 'function') {
+        // Preparation can change local geometry only after cleanup is registered.
+        try { options.prepare(); element.classList.add('nx-motion-prepared'); }
+        catch (_) { record.finish('prepare-error'); return record.handle; }
+      }
+      record.threshold = reachableThreshold(record);
+      var intersectionTimer, initialTimer, startup;
+      function clearPending() {
+        window.clearTimeout(intersectionTimer); intersectionTimer = undefined;
+        window.clearTimeout(initialTimer); initialTimer = undefined;
+        window.clearTimeout(startup); startup = undefined;
+      }
+      record.cancelPending = clearPending;
+      record.context.onFinish(clearPending);
+      function enqueue() {
+        if (record.state !== 'pending') return;
+        record.visible = true;
+        record.state = 'queued';
+        queue.push(record);
+        scheduleDrain();
+      }
+      record.observer = new window.IntersectionObserver(function (entries) {
+        if (startup !== undefined) { window.clearTimeout(startup); startup = undefined; }
+        entries.forEach(function (entry) {
+          if (entry.target !== element || record.state === 'finished') return;
+          record.visible = !!entry.isIntersecting;
+          if (!record.visible) {
+            window.clearTimeout(intersectionTimer); intersectionTimer = undefined;
+          } else if (intersectionTimer === undefined && (record.state === 'pending' || record.state === 'queued')) {
+            // An observer may deliver only the initial sliver of a tall figure.
+            // Never leave its prepared content hidden indefinitely below the gate.
+            intersectionTimer = window.setTimeout(function () {
+              intersectionTimer = undefined;
+              if ((record.state === 'pending' || record.state === 'queued') && intersects(element)) record.finish('intersection-watchdog');
+            }, 600);
+          }
+          if (record.state === 'queued' && !record.visible) record.finish('offscreen');
+          else if (record.visible && entry.intersectionRatio >= reachableThreshold(record)) enqueue();
+        });
+      }, {threshold: [0, record.threshold]});
+      record.observer.observe(element);
+      if (record.state === 'pending' || record.state === 'queued') element.classList.add('nx-motion-pending');
+      function initialView() {
+        if (record.state === 'pending' && intersects(element)) enqueue();
+      }
+      // First-viewport content should start on load, even when only a small
+      // part of a long figure is visible. Offscreen figures retain scroll gating.
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialView, {once: true});
+      else initialTimer = window.setTimeout(initialView, 0);
+      // A bounded wait also covers an observer that never delivers its first entry.
+      startup = window.setTimeout(function () {
+        if (!allowed()) return;
+        if (record.state === 'pending' || record.state === 'queued') record.finish('startup-watchdog');
+      }, 5000);
+      checkPreference();
+    } catch (_) { unsupported(); }
+    return record.handle;
+  }
+  function transition(element, run, options) {
+    var previous = element && interactions.get(element);
+    if (previous) previous.finish('superseded');
+    var intro = element && introductions.get(element);
+    if (intro && intro.state !== 'finished') intro.finish('interaction');
+    var record = makeRecord(element, run, options, 'interaction');
+    if (element) interactions.set(element, record);
+    start(record);
+    return record.handle;
+  }
+  function revealOnce(element, targets) {
+    if (element && introductions.has(element)) return introductions.get(element).handle;
+    targets = Array.prototype.slice.call(targets || []);
+    var originals = targets.map(function (target) {
+      return ['opacity', 'transform'].map(function (property) {
+        return {property: property, value: target.style.getPropertyValue(property),
+          priority: target.style.getPropertyPriority(property)};
+      });
+    });
+    var handle;
+    function focus() { if (handle) handle.finish('focus'); }
+    function finish() {
+      targets.forEach(function (target, index) {
+        originals[index].forEach(function (original) {
+          if (original.value) target.style.setProperty(original.property, original.value, original.priority);
+          else target.style.removeProperty(original.property);
+        });
+      });
+      if (element && typeof element.removeEventListener === 'function') element.removeEventListener('focusin', focus);
+    }
+    handle = once(element, function (ctx) {
+      // Register every animation in this turn. fill:'both' holds zero opacity
+      // during each delay; no later timer can hide already painted content.
+      targets.forEach(function (target, index) {
+        ctx.animate(target, [{opacity: 0, transform: 'translateY(6px)'},
+          {opacity: 1, transform: 'translateY(0)'}],
+        {duration: 420, delay: Math.min(index * 65, 700), fill: 'both'});
+      });
+      ctx.timer(function () { ctx.finish('complete'); }, 1200);
+    }, {
+      prepare: function () {
+        if (targets.some(function (target) { return typeof target.animate !== 'function'; })) throw new Error('unsupported-animation');
+        if (element && typeof element.addEventListener === 'function') element.addEventListener('focusin', focus);
+        targets.forEach(function (target) { target.style.setProperty('opacity', '0'); });
+      },
+      finish: finish, maxDuration: 1500
+    });
+    // A figure already containing focus must commit its visible final content.
+    if (element && typeof element.contains === 'function' && element.contains(document.activeElement)) handle.finish('focus');
+    return handle;
+  }
+  function landing(element) {
+    if (element && typeof element.querySelector === 'function') {
+      var tag = (element.tagName || '').toLowerCase();
+      if (tag === 'section' || tag === 'table') element = element.querySelector(tag === 'table' ? 'caption' : 'h1,h2,h3,h4,h5,h6') || element;
+    }
+    return transition(element, function (context) {
+      element.classList.add('nx-landing');
+      context.timer(function () { context.finish(); }, 1200);
+    }, {maxDuration: 1300, finish: function () { if (element && element.classList) element.classList.remove('nx-landing'); }});
+  }
+  window.NXMotion = {
+    query: query, allowed: allowed, allow: allowed, once: once, revealOnce: revealOnce,
+    transition: transition, finishAll: finishAll, landing: landing
+  };
+}());
+
+// Immediate navigation/anchor layout does not depend on the motion enhancement.
+(function () {
+  'use strict';
+  function install() {
+    if (typeof document.querySelectorAll !== 'function' || typeof document.querySelector !== 'function') return;
+    var navs = document.querySelectorAll('[data-nx-chrome="nav"]');
+    var toolbar = document.querySelector('[data-nx-anchor-toolbar]');
+    function position() {
+      Array.prototype.forEach.call(navs, function (nav) {
+        var current = nav.querySelector('[aria-current]');
+        if (!current) return;
+        var outer = nav.getBoundingClientRect();
+        var item = current.getBoundingClientRect();
+        if (item.left < outer.left) nav.scrollLeft += item.left - outer.left;
+        else if (item.right > outer.right) nav.scrollLeft += item.right - outer.right;
+      });
+      if (toolbar) {
+        var box = toolbar.getBoundingClientRect();
+        var style = window.getComputedStyle(toolbar);
+        if (style.position === 'sticky' || style.position === 'fixed') {
+          var top = parseFloat(style.top) || 0;
+          var bottom = box.top <= top + 1 ? box.bottom : top + box.height;
+          document.documentElement.style.setProperty('--nx-anchor-offset', Math.max(16, bottom + 16) + 'px');
+        }
+      }
+    }
+    position();
+    window.addEventListener('resize', position);
+    if (toolbar && typeof window.ResizeObserver === 'function') {
+      try { new window.ResizeObserver(position).observe(toolbar); } catch (_) {}
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, {once: true});
+  else install();
+}());
+</script>
+<!-- NX:MOTION:END -->
+</head>
+<body><!-- STORY:START --><!-- STORY:END -->
+  <a class="skip-link" href="#tableView">Skip to the table</a>
+  <main class="page">
+<!-- NX:HEADER:START -->
+<header class="site-head" data-nx-chrome="header">
+  <h1 class="site-brand"><a class="site-brand-link" href="/policy_db.html">Natural Experiment Scanner<span class="site-sub"></span></a></h1>
+  <div class="site-links">
+    
+    <a href="https://www.linkedin.com/in/fangyu6" target="_blank" rel="noopener">Fangyu Liu</a>
+  </div>
+  <a class="lang-switch" href="/viz/zh/all_records.html" hreflang="zh-CN" lang="en" title="Switch language · 切换语言" aria-label="Switch language · 切换语言"><span class="lang-pill"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg><span class="on">EN</span><span class="lang-sep" aria-hidden="true">|</span><span>中</span></span></a>
+</header>
+<script>
+  document.querySelectorAll('a.lang-switch').forEach(a => a.addEventListener('click', function () {
+    this.href = this.getAttribute('href').split('#')[0] + location.hash;
+  }));
+</script>
+<!-- NX:HEADER:END -->
+<!-- NX:NAV:START -->
+<nav class="view-toggle" data-nx-chrome="nav" aria-label="Views">
+  <a href="/viz/en/screening.html" class="vt-btn vt-active" aria-current="true">Screening</a>
+  <a href="/viz/en/worked_examples.html" class="vt-btn vt-link">Estimates</a>
+  <a href="/viz/en/synthesize.html" class="vt-btn vt-link">Explore</a>
+  <a href="/documentation.html" class="vt-btn vt-link">Method</a>
+</nav>
+<!-- NX:NAV:END -->
+
+
+  <section class="db-intro" id="policy-database" aria-labelledby="dbTitle">
+    <h2 id="dbTitle" class="db-title">Policy database</h2>
+  </section>
+  <div class="summary-panel">
+    <div class="summary-stats">
+      <div class="summary-stat"><div class="sv" id="statRd">—</div><div class="sl">RD</div></div>
+      <div class="summary-stat"><div class="sv" id="statDid">—</div><div class="sl">DiD</div></div>
+    </div>
+    <div class="source-bars" id="sourceBars"></div>
+  </div>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search ID, title, treatment, outcomes, datasets...">
+    <span class="search-count" id="searchCount"></span>
+  </div>
+  <div class="filters">
+    <div class="fg-btns">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="rd">RD</button>
+      <button type="button" class="filter-btn" data-filter="did">DiD</button>
+    </div>
+    <span class="filter-sep"></span>
+    <span class="fg"><span class="filter-label">Year</span>
+    <select id="yearSelect" class="filter-select"><option value="all">All Years</option></select></span>
+    <span class="fg"><span class="filter-label">Jurisdiction</span>
+    <select id="jurSelect" class="filter-select"><option value="all">All</option></select></span>
+    <span class="fg"><span class="filter-label">Source</span>
+    <select id="sourceSelect" class="filter-select"><option value="all">All</option></select></span>
+    <span class="filter-sep"></span>
+    <span class="fg"><span class="filter-label">Literature (AI)</span>
+    <select id="litSelect" class="filter-select">
+      <option value="all">All</option>
+      <option value="blue_ocean">Untapped</option>
+      <option value="emerging">Emerging</option>
+      <option value="competitive">Studied</option>
+      <option value="crowded">Saturated</option>
+    </select></span>
+    <span class="fg"><span class="filter-label">Best Design</span>
+    <select id="biteSelect" class="filter-select">
+      <option value="all">All</option>
+      <option value="RD">RD</option>
+      <option value="DID">DiD</option>
+      <option value="Zero">Zero</option>
+    </select></span>
+    <span class="fg"><span class="filter-label">Feasibility</span>
+    <select id="feasSelect" class="filter-select">
+      <option value="all">All</option>
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="moderate">Moderate</option>
+      <option value="challenging">Challenging</option>
+      <option value="difficult">Difficult</option>
+    </select></span>
+    <span class="fg"><span class="filter-label">Status</span>
+    <select id="statusSelect" class="filter-select">
+      <option value="all">All</option>
+      <option value="enacted">Enacted</option>
+      <option value="proposed">Proposed</option>
+      <option value="unknown">Unknown</option>
+    </select></span>
+    <span class="filter-sep"></span>
+    <span class="fg"><span class="filter-label">Topic</span>
+    <select id="topicSelect" class="filter-select"><option value="all">All Topics</option></select></span>
+    <span class="filter-sep"></span>
+    <div class="fg-actions">
+      <button type="button" id="ignoreDataBtn" class="filter-btn" title="Rank by identification strategy quality only, ignoring data availability constraints">Design quality only</button>
+      <button type="button" id="resetBtn" class="filter-btn" style="margin-left:auto;background:#fee2e2;color:#991b1b;border-color:#fca5a5;" title="Reset all filters">Reset</button>
+    </div>
+  </div>
+  <div id="tableView" tabindex="-1">
+  <div class="table-scroll">
+  <table>
+    <colgroup>
+      <col class="k-tog"><col class="k-title"><col class="k-id"><col class="k-jur"><col class="k-date"><col class="k-status"><col class="k-score"><col class="k-design"><col class="k-src"><col class="k-link">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="c-tog" data-sort="none"></th>
+        <th class="c-title" data-sort="title">Title <span class="sort-arrow" id="arrow-title"></span></th>
+        <th class="c-id" data-sort="policy_id">ID <span class="sort-arrow" id="arrow-policy_id"></span></th>
+        <th class="c-jur" data-sort="jurisdiction">Jur. <span class="sort-arrow" id="arrow-jurisdiction"></span></th>
+        <th class="c-date" data-sort="date">Date <span class="sort-arrow" id="arrow-date"></span></th>
+        <th class="c-status" data-sort="status">Status <span class="sort-arrow" id="arrow-status"></span></th>
+        <th class="c-score" data-sort="composite_score">Score <span class="th-llm">(AI)</span> <span class="sort-arrow active" id="arrow-composite_score">▼</span></th>
+        <th class="col-design" data-sort="none">Design <span class="th-llm">(AI)</span></th>
+        <th class="c-src" data-sort="source">Source <span class="sort-arrow" id="arrow-source"></span></th>
+        <th class="c-link" data-sort="none">Link</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"><tr><td colspan="10" style="padding:1rem;color:#4b5563;"></td></tr></tbody>
+  </table>
+  </div>
+  <div class="pagination" id="paginationBar">
+    <div class="page-size">
+    <select id="pageSizeSelect" aria-label="Per page">
+      <option value="10">10</option>
+      <option value="20" selected>20</option>
+      <option value="50">50</option>
+    </select>
+    </div>
+    <span class="page-info" id="pageInfo"></span>
+    <div class="page-buttons">
+    <button type="button" id="btnPrev">Previous</button>
+    <button type="button" id="btnNext">Next</button>
+    </div>
+  </div>
+  </div>
+  <div id="datasetModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeDatasetModal()">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script>
+    /* ============================================================
+       State
+       ============================================================ */
+    const MAX_OFFSET = 10000;
+    const state = {
+      page: 1, size: 20, sort: "composite_score", dir: "desc", q: "",
+      design: "all", jur: "all", source_family: "all", year: "all",
+      topic: "all", feas: "all", lit: "all", status: "all",
+      best_design: "all", ignore_data: false,
+    };
+    const detailCache = new Map();
+    const groupCache = new Map();
+    let currentController = null;
+    let debounceTimer = null;
+    let lastData = null;
+    let statsArrived = false;
+    let statsMotion = null;
+    let tableMotion = null;
+
+    const topicDisplayMap = {
+      labor_market:"Labor Market",taxation_fiscal:"Taxation & Fiscal",
+      social_insurance:"Social Insurance",energy_environment:"Energy & Environment",
+      finance_monetary:"Finance & Monetary",product_market:"Product Market",
+      education:"Education",public_health:"Public Health",
+      criminal_justice:"Criminal Justice",political_institutions:"Political Institutions",
+      technology_data:"Technology & Data",agriculture_food:"Agriculture & Food",
+      immigration:"Immigration",transportation_infrastructure:"Transportation & Infrastructure",
+      government_administration:"Government Administration",
+      housing_land_use:"Housing & Land Use",veterans_military:"Veterans & Military",
+      appropriations_budget:"Appropriations & Budget",ceremonial:"Ceremonial",other:"Other",
+    };
+    const familyColors = {
+      "State Legislation":"#16a34a","Federal Regulations":"#7c3aed",
+      "Federal Legislation":"#2563eb","Legal Reference":"#d97706",
+      "State/Local Executive":"#0d9488","Archive":"#6b7280",
+      "International":"#6b7280","Other":"#6b7280",
+    };
+    const familyOrder = ["State Legislation","Federal Regulations","Federal Legislation",
+      "Legal Reference","State/Local Executive","Archive","International","Other"];
+
+    /* ============================================================
+       Helpers
+       ============================================================ */
+    function escape(s) {
+      if (!s) return "";
+      return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+    }
+    function pl(n, one, many) { return Number(n) === 1 ? one : many; }   // "1 policy" / "2 policies"
+    /* A link built from an API field is left out when its address carries a credential query parameter (api_key, token, ...).
+       buildDetailHtml holds the same function: Screening reads that function on its own. */
+    function hasCredentialParam(url) {
+      const s = String(url == null ? "" : url).replace(/&amp;/gi, "&");
+      return s.split(/[?#]/).slice(1).some(part => part.split(/[&;]/).some(pair => {
+        let name = pair.split("=")[0];
+        try { name = decodeURIComponent(name.replace(/\+/g, " ")); } catch (e) { /* keep the raw name */ }
+        return /^(?:api[_-]?key|key|token|access_token|auth|authorization|password|secret|signature)$/i.test(name.trim());
+      }));
+    }
+    /* Strip pipeline text that leaked into AI prose, e.g. "[score-consistency injection: id_did >= 2]" */
+    function cleanLLM(v) {
+      if (v === null || v === undefined) return "";
+      return String(v).replace(/\s*\[[^\]\[]*\binjection\b[^\]\[]*\]/gi, "").replace(/\s{2,}/g, " ").trim();
+    }
+    /* known_studies: a JSON array (or a JSON string that may be cut off mid-way). Returns a list of {title, citation, venue}
+       objects, [] when the text is JSON-like but unreadable, or null when it is plain prose. */
+    function parseStudies(raw) {
+      if (Array.isArray(raw)) return raw;
+      if (raw && typeof raw === "object") return [raw];
+      if (typeof raw !== "string") return null;
+      const t = raw.trim();
+      if (!t) return null;
+      try { const v = JSON.parse(t); return Array.isArray(v) ? v : (v && typeof v === "object" ? [v] : null); } catch (e) {}
+      if (!/^[\[{]/.test(t)) return null;
+      const out = [], rx = /\{[^{}]*\}/g; let m;
+      while ((m = rx.exec(t))) { try { out.push(JSON.parse(m[0])); } catch (e) {} }
+      return out;
+    }
+    function displayDesign(value) { return String(value || "").replace(/\bDID\b/g, "DiD"); }
+
+    function setLoading(on) {
+      const table = document.getElementById("tableView");
+      const frame = table.querySelector(".table-scroll");
+      if (tableMotion) { tableMotion.finish("latest-query"); tableMotion = null; }
+      if (on) frame.style.minHeight = Math.max(320, frame.getBoundingClientRect().height) + "px";
+      table.setAttribute("aria-busy", String(on));
+      if (on) return;
+      frame.style.minHeight = "";
+      const finish = () => { table.style.opacity = ""; };
+      const motion = window.NXMotion;
+      if (!motion || !motion.allowed()) { finish(); return; }
+      tableMotion = motion.transition(table, ctx => {
+        ctx.animate(table, [{opacity: .65}, {opacity: 1}], {duration: 120, easing: "ease-out"});
+        ctx.timer(() => ctx.finish(), 120);
+      }, {finish, maxDuration: 300});
+    }
+    function showError(msg) {
+      document.getElementById("tbody").innerHTML =
+        '<tr><td colspan="10" style="padding:1rem;color:#b91c1c;">'+escape(msg)+' <button onclick="fetchPolicies()">Retry</button></td></tr>';
+    }
+
+    /* ============================================================
+       API
+       ============================================================ */
+    function buildPoliciesUrl() {
+      const p = new URLSearchParams();
+      p.set("page", state.page); p.set("size", state.size);
+      if (state.sort) p.set("sort", state.sort);
+      if (state.dir) p.set("dir", state.dir);
+      if (state.q) p.set("q", state.q);
+      if (state.design !== "all") p.set("design", state.design);
+      if (state.jur !== "all") p.set("jur", state.jur);
+      if (state.source_family !== "all") p.set("source_family", state.source_family);
+      if (state.year !== "all") p.set("year", state.year);
+      if (state.topic !== "all") p.set("topic", state.topic);
+      if (state.feas !== "all") p.set("feas", state.feas);
+      if (state.lit !== "all") p.set("lit", state.lit);
+      if (state.status !== "all") p.set("status", state.status);
+      if (state.best_design !== "all") p.set("best_design", state.best_design);
+      if (state.ignore_data) p.set("ignore_data", "1");
+      return "/api/policies?" + p;
+    }
+
+    async function fetchPolicies() {
+      if (currentController) currentController.abort();
+      currentController = new AbortController();
+      const signal = currentController.signal;
+      setLoading(true);
+      try {
+        const resp = await fetch(buildPoliciesUrl(), { signal });
+        if (signal.aborted) return;
+        const data = await resp.json();
+        if (data.error && resp.status >= 400) { showError("Records are temporarily unavailable. Please try again."); return; }
+        renderTable(data);
+      } catch (e) {
+        if (e.name === "AbortError") return;
+        showError("Records are temporarily unavailable. Please try again.");
+      } finally {
+        if (!signal.aborted) setLoading(false);
+      }
+    }
+
+    async function fetchStats() {
+      try {
+        const resp = await fetch("/api/stats");
+        const data = await resp.json();
+        renderStats(data);
+      } catch (e) { console.error("Failed to load stats:", e); }
+    }
+
+    async function fetchFilters() {
+      try {
+        const resp = await fetch("/api/filters");
+        const data = await resp.json();
+        populateFilters(data);
+      } catch (e) { console.error("Failed to load filters:", e); }
+    }
+
+    async function fetchDetail(id) {
+      if (detailCache.has(id)) return detailCache.get(id);
+      const resp = await fetch("/api/policies/" + id + "/detail");
+      if (!resp.ok) throw new Error("detail " + resp.status);
+      const data = await resp.json();
+      detailCache.set(id, data);
+      return data;
+    }
+
+    async function fetchGroup(family) {
+      if (groupCache.has(family)) return groupCache.get(family);
+      const resp = await fetch("/api/policy-groups/" + encodeURIComponent(family) + "?page=1&size=100");
+      const data = await resp.json();
+      // Normalize: API returns {rows:[...], total, ...}; consumers expect array-like with .length
+      const rows = data.rows || data;
+      rows.totalCount = data.total || rows.length;
+      groupCache.set(family, rows);
+      return rows;
+    }
+
+    /* ============================================================
+       Render: Stats
+       ============================================================ */
+    function renderStats(data) {
+      if (statsMotion) statsMotion.finish("latest-stats");
+      const stats = [["statRd", data.rd], ["statDid", data.did]];
+      const nodes = stats.map(([id, value]) => ({node: document.getElementById(id), value}));
+      const finish = () => nodes.forEach(({node, value}) => { node.textContent = value.toLocaleString(); });
+      finish();
+      const motion = window.NXMotion;
+      if (!statsArrived && motion && motion.allowed()) {
+        nodes.forEach(({node}) => { node.style.minWidth = node.getBoundingClientRect().width + "px"; node.style.display = "inline-block"; });
+        statsMotion = motion.once(document.querySelector(".summary-stats"), ctx => {
+          let started;
+          function frame(time) {
+            if (started === undefined) started = time;
+            const progress = Math.min(1, (time - started) / 600);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            nodes.forEach(({node, value}) => { node.textContent = Math.round(value * eased).toLocaleString(); });
+            if (progress < 1) ctx.raf(frame); else ctx.finish();
+          }
+          ctx.raf(frame);
+        }, {finish, threshold: .35, maxDuration: 900});
+      }
+      statsArrived = true;
+      const container = document.getElementById("sourceBars");
+      container.innerHTML = "";
+      const ordered = familyOrder.filter(f => data.sources[f]);
+      Object.keys(data.sources).forEach(f => { if (!ordered.includes(f)) ordered.push(f); });
+      for (const family of ordered) {
+        const info = data.sources[family];
+        if (!info || info.total === 0) continue;
+        const pct = (100 * info.total / data.total).toFixed(0);
+        const color = familyColors[family] || "#6b7280";
+        const barHtml = info.subs.map((s, i) => {
+          const segPct = (100 * s.count / info.total).toFixed(1);
+          const opacity = 1 - i * 0.15;
+          const radius = info.subs.length === 1 ? "5px" : i === 0 ? "5px 0 0 5px" : i === info.subs.length - 1 ? "0 5px 5px 0" : "0";
+          return '<div style="width:'+segPct+'%;background:'+color+';opacity:'+opacity+';height:100%;border-radius:'+radius+';" title="'+escape(s.name)+': '+s.count.toLocaleString()+'"></div>';
+        }).join("");
+        const legendHtml = info.subs.map((s, i) => {
+          const opacity = 1 - i * 0.15;
+          return '<span><span class="ldot" style="background:'+color+';opacity:'+opacity+';"></span>'+escape(s.name)+' '+s.count.toLocaleString()+'</span>';
+        }).join("");
+        container.innerHTML +=
+          '<div class="source-row"><span class="sr-label" style="color:'+color+';">'+escape(family)+'</span><div class="sr-track"><div style="display:flex;height:100%;">'+barHtml+'</div></div><span class="sr-num"><b>'+info.total.toLocaleString()+'</b> ('+pct+'%)</span></div><div class="mini-legend">'+legendHtml+'</div>';
+      }
+    }
+
+    /* ============================================================
+       Render: Filters
+       ============================================================ */
+    function populateSelect(id, values, labelFn) {
+      const sel = document.getElementById(id);
+      if (!sel) return;
+      const first = sel.options[0];
+      sel.innerHTML = "";
+      sel.appendChild(first);
+      for (const v of values) {
+        const opt = document.createElement("option");
+        opt.value = v;
+        opt.textContent = labelFn(v);
+        sel.appendChild(opt);
+      }
+    }
+    function populateFilters(data) {
+      populateSelect("jurSelect", data.jurisdictions, v => v);
+      populateSelect("sourceSelect", data.source_families, v => v);
+      populateSelect("yearSelect", data.years, v => v);
+      populateSelect("topicSelect", data.topics, v => topicDisplayMap[v] || v);
+      populateSelect("statusSelect", data.statuses, v => v.charAt(0).toUpperCase() + v.slice(1));
+    }
+
+    /* ============================================================
+       Render: Table
+       ============================================================ */
+    function statusBadge(status) {
+      const s = (status || "").toLowerCase();
+      const map = {
+        enacted:{bg:"#dcfce7",color:"#166534",label:"Enacted"},
+        passed:{bg:"#dcfce7",color:"#166534",label:"Passed"},
+        signed:{bg:"#dcfce7",color:"#166534",label:"Signed"},
+        vetoed:{bg:"#fef2f2",color:"#b91c1c",label:"Vetoed"},
+        proposed:{bg:"#fef9c3",color:"#92400e",label:"Proposed"},
+        introduced:{bg:"#fef9c3",color:"#92400e",label:"Introduced"},
+        failed:{bg:"#fef2f2",color:"#b91c1c",label:"Failed"},
+      };
+      const m = map[s] || {bg:"#f3f4f6",color:"#4b5563",label:status||"—"};
+      return '<span class="status-badge" style="background:'+m.bg+';color:'+m.color+';">'+m.label+'</span>';
+    }
+    function srcBadgeClass(source, sourceFamily) {
+      if (sourceFamily === "Federal Legislation") return "src-congress";
+      if (sourceFamily === "Federal Regulations") return "src-regulations";
+      if (sourceFamily === "State Legislature" || sourceFamily === "State/Local Executive" || sourceFamily === "State Legislation") return "src-openstates";
+      if (sourceFamily === "Legal Reference") return "src-legal";
+      return "src-other";
+    }
+
+    function renderTable(data) {
+      lastData = data;
+      const tbody = document.getElementById("tbody");
+      document.getElementById("searchCount").textContent = data.total.toLocaleString() + " results";
+      if (!data.rows || data.rows.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="10" style="padding:1rem;color:#4b5563;">No results found</td></tr>';
+        updatePagination(data);
+        return;
+      }
+      tbody.innerHTML = data.rows.map(r => {
+        const badges = [];
+        if (r.rd) badges.push('<span class="badge badge-rd">RD</span>');
+        if (r.did) badges.push('<span class="badge badge-did">DiD</span>');
+        if (r.status==="signed"||r.status==="enacted") badges.push('<span class="badge" style="background:#ecfdf5;color:#166534;border-color:#bbf7d0;">Signed</span>');
+        else if (r.status==="passed") badges.push('<span class="badge" style="background:#dbeafe;color:#1e40af;border-color:#93c5fd;">Passed</span>');
+        else if (r.status==="proposed") badges.push('<span class="badge" style="background:#fffbeb;color:#92400e;border-color:#fde68a;">Proposed</span>');
+        if (r.error==="FETCH_FAILED"||r.title==="FETCH_FAILED") badges.push('<span class="badge" style="background:#fef2f2;color:#b91c1c;border-color:#fecaca;">FETCH_FAILED</span>');
+        if (r.skipped_prefilter) badges.push('<span class="badge" style="background:#f3f4f6;color:#4b5563;border-color:#d1d5db;">Pre-filtered</span>');
+        if (r.confound_severity==="fatal") badges.push('<span class="badge" style="background:#fef2f2;color:#b91c1c;border-color:#fecaca;font-weight:700;">CONFOUND FATAL</span>');
+        else if (r.manipulation_risk==="high") badges.push('<span class="badge" style="background:#fef2f2;color:#b91c1c;border-color:#fecaca;">High Risk</span>');
+        else if (r.measurement_mismatch_risk==="severe") badges.push('<span class="badge" style="background:#fff7ed;color:#c2410c;border-color:#fed7aa;">Meas. Mismatch</span>');
+        else if (r.did&&r.parallel_trends_risk==="high") badges.push('<span class="badge" style="background:#fef2f2;color:#b91c1c;border-color:#fecaca;font-weight:700;">High parallel-trends risk</span>');
+        if (r.llm_lit_saturation) {
+          const litMap = {blue_ocean:{bg:"#ecfdf5",color:"#166534",border:"#bbf7d0",label:"Untapped"},emerging:{bg:"#eff6ff",color:"#1d4ed8",border:"#bfdbfe",label:"Emerging"},competitive:{bg:"#fff7ed",color:"#c2410c",border:"#fed7aa",label:"Studied"},crowded:{bg:"#fef2f2",color:"#b91c1c",border:"#fecaca",label:"Saturated"}};
+          const ls = litMap[r.llm_lit_saturation];
+          if (ls) badges.push('<span class="badge" style="background:'+ls.bg+';color:'+ls.color+';border-color:'+ls.border+';">'+ls.label+'</span>');
+        }
+        if (r.confidence) badges.push('<span class="badge-conf">'+escape(r.confidence)+'</span>');
+        const score = parseFloat(r.composite_score);
+        let scoreHtml = '<span class="muted">—</span>';
+        if (!isNaN(score)) {
+          let sc = "#b91c1c";
+          if (score>=3.5) sc="#166534"; else if (score>=2.5) sc="#92400e"; else if (score>=1.5) sc="#c2410c";
+          scoreHtml = '<span style="color:'+sc+';font-weight:600;">'+score.toFixed(1)+'</span>';
+        }
+        const pitchText = r.intuition_pitch ? escape(r.intuition_pitch).substring(0,120)+(r.intuition_pitch.length>120?'...':'') : '';
+        const pitch = pitchText ? '<div class="pitch">'+pitchText+'</div>' : '';
+        const chapterBadge = (r.chapter_count && r.chapter_count > 1)
+          ? '<div class="t-extra"><span class="chapter-badge" title="This bill was split into '+r.chapter_count+' chapters; showing the strongest chapter">'+r.chapter_count+' chapters</span></div>'
+          : '';
+        const titleText = escape(r.title||r.policy_id||"—");
+        const idHtml = escape(r.policy_id)||"—";
+        const statusHtml = statusBadge(r.status);
+        const designHtml = badges.join(" ");
+        const srcHtml = '<span class="src-badge '+srcBadgeClass(r.source,r.source_family)+'">'+escape(r.source)+'</span>';
+        const viewUrl = r.url||r.document_url||r.fulltext_url;
+        const metaLine = '<div class="meta-line"><span class="ml ml-id" title="Bill ID">'+idHtml+'</span><span class="ml ml-src">'+srcHtml+'</span><span class="ml ml-status">'+statusHtml+'</span><span class="ml ml-design">'+designHtml+'</span></div>';
+        return '<tr class="main-row" tabindex="0" aria-expanded="false" data-id="'+r.id+'" data-family="'+escape(r.policy_family||'')+'">'
+          +'<td class="c-tog"><span class="expand-icon">▶</span></td>'
+          +'<td class="col-title"><div class="t" title="'+titleText+'">'+titleText+'</div>'+chapterBadge+pitch+metaLine+'</td>'
+          +'<td class="muted c-id" title="'+idHtml+'">'+idHtml+'</td>'
+          +'<td class="c-jur"><span class="jur-badge">'+(escape(r.jurisdiction)||"—")+'</span></td>'
+          +'<td class="muted c-date">'+(r.date||"N/A")+'</td>'
+          +'<td class="c-status">'+statusHtml+'</td>'
+          +'<td class="score-cell c-score"><span class="lbl">Score</span>'+scoreHtml+'</td>'
+          +'<td class="col-design">'+designHtml+'</td>'
+          +'<td class="c-src">'+srcHtml+'</td>'
+          +'<td class="c-link">'+((viewUrl&&!hasCredentialParam(viewUrl))?'<a href="'+escape(viewUrl)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">View</a>':'')+'</td>'
+          +'</tr>'
+          +'<tr class="detail-row" id="detail-'+r.id+'"><td colspan="10"><div class="detail-content" id="dc-'+r.id+'">Loading detail...</div></td></tr>';
+      }).join("");
+      updatePagination(data);
+      document.querySelectorAll(".main-row").forEach(tr => {
+        tr.addEventListener("click", () => toggleDetail(tr));
+        tr.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target === tr) { e.preventDefault(); toggleDetail(tr); } });
+      });
+    }
+
+    /* ============================================================
+       Render: Pagination
+       ============================================================ */
+    function updatePagination(data) {
+      const total = data.total;
+      const totalPages = Math.max(1, Math.ceil(total / state.size));
+      const start = total === 0 ? 0 : (state.page - 1) * state.size + 1;
+      const end = Math.min(state.page * state.size, total);
+      document.getElementById("pageInfo").textContent = total === 0 ? "0 results" : start+"–"+end+" of "+total.toLocaleString();
+      const maxPage = Math.min(totalPages, Math.floor(MAX_OFFSET / state.size) + 1);
+      document.getElementById("btnPrev").disabled = state.page <= 1;
+      document.getElementById("btnNext").disabled = state.page >= maxPage;
+    }
+
+    /* ============================================================
+       Detail expansion
+       ============================================================ */
+    async function toggleDetail(tr) {
+      const id = tr.dataset.id;
+      const detailRow = document.getElementById("detail-" + id);
+      const isOpen = tr.classList.contains("expanded");
+      document.querySelectorAll("tr.expanded").forEach(r => { r.classList.remove("expanded"); r.setAttribute("aria-expanded", "false"); });
+      document.querySelectorAll(".detail-row.show").forEach(r => r.classList.remove("show"));
+      if (isOpen) return;
+      tr.classList.add("expanded");
+      tr.setAttribute("aria-expanded", "true");
+      detailRow.classList.add("show");
+      const containerId = "dc-" + id;
+      const container = document.getElementById(containerId);
+      if (container.dataset.loaded) return;
+      try {
+        const r = await fetchDetail(id);
+        container.dataset.loaded = "1";
+        container.innerHTML = await buildDetailHtml(r, containerId);
+      } catch (e) {
+        container.innerHTML = '<p style="color:#b91c1c;">Failed to load detail: '+"Records are temporarily unavailable. Please try again."+'</p>';
+      }
+    }
+
+    /* ============================================================
+       Chapter-split navigation strip
+       Rendered above the normal detail body when the bill has >1
+       chapter. Clicking a pill re-fetches /api/policies/:id/detail
+       for that sibling and swaps the container's content in place.
+       ============================================================ */
+    function buildChapterStripHtml(r, containerId) {
+      const sibs = Array.isArray(r.siblings) ? r.siblings : [];
+      if (sibs.length < 2) return "";
+      const manifestByChapter = new Map();
+      (r.chapter_manifest || []).forEach(m => manifestByChapter.set(m.chapter_id, m));
+      // Sort by structural order so pills reflect reading order, not score
+      const ordered = sibs.slice().sort((a, b) => {
+        const ma = manifestByChapter.get(a.chapter_id);
+        const mb = manifestByChapter.get(b.chapter_id);
+        if (ma && mb) return ma.ord - mb.ord;
+        if (ma) return -1;
+        if (mb) return 1;
+        return (b.composite_score || 0) - (a.composite_score || 0);
+      });
+      const activeId = r.id;
+      const pills = ordered.map(s => {
+        const m = manifestByChapter.get(s.chapter_id);
+        const label = m && m.marker ? m.marker : (s.chapter_id || "chapter");
+        const sc = parseFloat(s.composite_score);
+        const scStr = !isNaN(sc) ? sc.toFixed(1) : "—";
+        const flags = [s.rd ? "RD" : "", s.did ? "DiD" : ""].filter(Boolean).join("/");
+        const flagsHtml = flags ? '<span class="cp-flags">'+flags+'</span>' : '';
+        const isActive = s.id === activeId;
+        const isBoilerplate = !!s.error;
+        const cls = ["chapter-pill"];
+        if (isActive) cls.push("active");
+        if (isBoilerplate) cls.push("boilerplate");
+        const handler = isBoilerplate
+          ? ""
+          : ' onclick="event.stopPropagation();renderSiblingDetail(\''+containerId+'\','+s.id+');"';
+        return '<button type="button" class="'+cls.join(" ")+'"'+handler+'>'
+          +'<span class="cp-marker">'+escape(label)+'</span>'
+          +'<span class="cp-score">'+scStr+'</span>'
+          +flagsHtml
+          +'</button>';
+      }).join("");
+      // Extra pills for manifest chapters with no AI result (boilerplate / skipped)
+      const resultChapterIds = new Set(sibs.map(s => s.chapter_id));
+      const skippedPills = (r.chapter_manifest || [])
+        .filter(m => !resultChapterIds.has(m.chapter_id))
+        .map(m => '<span class="chapter-pill boilerplate" title="Boilerplate / skipped by AI (char_len='+m.char_len+')">'
+          +'<span class="cp-marker">'+escape(m.marker||"")+'</span>'
+          +'<span class="cp-score">skip</span></span>')
+        .join("");
+      return '<div class="chapter-strip">'
+        +'<span class="cs-label">§ CHAPTERS ('+sibs.length+')</span>'
+        +pills+skippedPills
+        +'</div>';
+    }
+
+    async function renderSiblingDetail(containerId, siblingId) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      try {
+        const r = await fetchDetail(siblingId);
+        container.innerHTML = await buildDetailHtml(r, containerId);
+      } catch (e) {
+        container.innerHTML = '<p style="color:#b91c1c;">Failed to load chapter: '+"Records are temporarily unavailable. Please try again."+'</p>';
+      }
+    }
+    window.renderSiblingDetail = renderSiblingDetail;
+
+    async function buildDetailHtml(r, containerId) {
+      /* A link whose address carries a credential query parameter is left out with its label (same function as the one above). */
+      function hasCredentialParam(url) {
+        const s = String(url == null ? "" : url).replace(/&amp;/gi, "&");
+        return s.split(/[?#]/).slice(1).some(part => part.split(/[&;]/).some(pair => {
+          let name = pair.split("=")[0];
+          try { name = decodeURIComponent(name.replace(/\+/g, " ")); } catch (e) { /* keep the raw name */ }
+          return /^(?:api[_-]?key|key|token|access_token|auth|authorization|password|secret|signature)$/i.test(name.trim());
+        }));
+      }
+      const score = parseFloat(r.composite_score);
+      const scoreNoData = parseFloat(r.score_no_data);
+      const scoreDisplay = state.ignore_data
+        ? (!isNaN(scoreNoData) ? scoreNoData.toFixed(1)+" (excl. data)" : "—")
+        : (!isNaN(score) ? score.toFixed(1)+(r.is_feasible==="true"?" (feasible)":"") : "—");
+      const scoreColor = state.ignore_data ? "#3730a3" : "#166534";
+      const scoreBg = state.ignore_data ? "#e0e7ff" : "#dcfce7";
+      const litDisplayMap = {blue_ocean:"Untapped",emerging:"Emerging",competitive:"Studied",crowded:"Saturated"};
+
+      // ── A. Overview ──
+      let overviewHtml = "";
+      if (r.primary_design || r.composite_score !== undefined) {
+        overviewHtml = '<div class="detail-section" style="background:#f0fdf4;margin-bottom:0.8rem;border-left:3px solid #22c55e;"><h4>Overview</h4>'
+          +(r.intuition_pitch?'<p style="font-size:14px;color:#1e40af;font-style:italic;margin:0 0 0.5rem 0;">'+escape(r.intuition_pitch)+'</p>':'')
+          +'<div style="display:flex;flex-wrap:wrap;gap:0.3rem;margin-bottom:0.4rem;">'
+          +(!isNaN(score)?'<span style="display:inline-block;padding:0.15rem 0.5rem;border-radius:4px;font-size:13px;font-weight:600;background:'+scoreBg+';color:'+scoreColor+';">Score: '+scoreDisplay+'</span>':'')
+          +(r.primary_design?'<span class="jur-badge">'+escape(displayDesign(r.primary_design))+'</span>':'')
+          +(r.best_design?'<span class="jur-badge">Best: '+escape(displayDesign(r.best_design))+'</span>':'')
+          +(r.policy_topic?'<span class="jur-badge">'+escape((r.policy_topic||"").replace(/_/g," "))+'</span>':'')
+          +(r.policy_family?'<span class="jur-badge">'+escape((r.policy_family||"").replace(/_/g," "))+'</span>':'')
+          +(r.status&&r.status!=="unknown"?'<span class="jur-badge">'+escape(r.status)+'</span>':'')
+          +'</div>'
+          +((r.policy_significance!==undefined&&r.policy_significance!=="")
+            ?'<p style="font-size:13px;color:#4b5563;margin:0.3rem 0;">Policy significance: '+r.policy_significance+' · Identification: '+r.identification+' · Treatment intensity: '+r.treatment_intensity+' · Data: '+(state.ignore_data?'<s>'+r.data_feasibility+'</s> (excluded)':r.data_feasibility)+'</p>':'')
+          +(cleanLLM(r.verdict)?'<p style="margin:0.3rem 0;font-size:14px;"><strong>Verdict:</strong> '+escape(cleanLLM(r.verdict))+'</p>':'')
+          +'</div>';
+      }
+
+      // ── Bill Info ──
+      let billInfoHtml = "";
+      if (r.identifier||r.subject||r.signing_date||r.latest_action_description||r.primary_sponsor||r.session_name) {
+        let grid = '';
+        if (r.identifier) grid += '<span class="ww-label">Identifier:</span><span class="ww-val">'+escape(r.identifier)+'</span>';
+        if (r.bill_classification) grid += '<span class="ww-label">Type:</span><span class="ww-val">'+escape(r.bill_classification)+'</span>';
+        if (r.subject) grid += '<span class="ww-label">Subject:</span><span class="ww-val">'+escape(r.subject)+'</span>';
+        if (r.primary_sponsor) grid += '<span class="ww-label">Sponsor:</span><span class="ww-val">'+escape(r.primary_sponsor)+'</span>';
+        if (r.session_name) grid += '<span class="ww-label">Session:</span><span class="ww-val">'+escape(r.session_name)+'</span>';
+        if (r.signing_date) grid += '<span class="ww-label">Signed:</span><span class="ww-val">'+escape(r.signing_date)+'</span>';
+        if (r.latest_passage_date) grid += '<span class="ww-label">Passage:</span><span class="ww-val">'+escape(r.latest_passage_date)+'</span>';
+        if (r.latest_action_date) grid += '<span class="ww-label">Last Action:</span><span class="ww-val">'+escape(r.latest_action_date)+(r.latest_action_description?' — '+escape(r.latest_action_description):'')+'</span>';
+        billInfoHtml = '<div class="detail-section" style="background:#f8fafc;margin-bottom:0.8rem;border-left:3px solid #64748b;"><h4>Bill Info</h4><div class="ww-grid">'+grid+'</div></div>';
+      }
+
+      // ── Text Provenance ──
+      let provenanceHtml = "";
+      const docUrl = hasCredentialParam(r.document_url) ? "" : r.document_url;
+      const textUrl = hasCredentialParam(r.fulltext_url) ? "" : r.fulltext_url;
+      if (r.fulltext_source||textUrl||r.fulltext_chars||docUrl) {
+        let grid = '';
+        if (r.fulltext_source) grid += '<span class="ww-label">Fetch:</span><span class="ww-val">'+escape(r.fulltext_source)+'</span>';
+        if (r.fulltext_chars!==undefined&&r.fulltext_chars!=='') grid += '<span class="ww-label">Chars:</span><span class="ww-val">'+escape(String(r.fulltext_chars))+'</span>';
+        if (docUrl && textUrl && docUrl === textUrl) {
+          grid += '<span class="ww-label">Source:</span><span class="ww-val"><a href="'+escape(docUrl)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">Open source document</a></span>';
+        } else {
+          if (docUrl) grid += '<span class="ww-label">Landing page:</span><span class="ww-val"><a href="'+escape(docUrl)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">Open source page</a></span>';
+          if (textUrl) grid += '<span class="ww-label">Full text / PDF:</span><span class="ww-val"><a href="'+escape(textUrl)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">Open fetched text</a></span>';
+        }
+        if (r.fulltext_source==='title_only') grid += '<span class="ww-label">Warning:</span><span class="ww-val" style="color:#b91c1c;">Only title/summary fallback was available.</span>';
+        provenanceHtml = '<div class="detail-section" style="background:#fff7ed;margin-bottom:0.8rem;border-left:3px solid #ea580c;"><h4>Text Provenance</h4><div class="ww-grid">'+grid+'</div></div>';
+      }
+
+      // ── What & Who ──
+      let wwHtml = '';
+      {
+        let grid = '';
+        const treatment = r.treatment||r.treatment_description||'';
+        const outcomes = r.outcomes||r.potential_outcomes||'';
+        const datasets = r.datasets||r.recommended_datasets||'';
+        const controlGroup = r.control_group||r.group_description||'';
+        if (treatment) grid += '<span class="ww-label">Treatment:</span><span class="ww-val">'+escape(treatment)+'</span>';
+        if (controlGroup) grid += '<span class="ww-label">Control:</span><span class="ww-val">'+escape(controlGroup)+'</span>';
+        if (r.treatment_timing) grid += '<span class="ww-label">Timing:</span><span class="ww-val">'+escape(r.treatment_timing)+'</span>';
+        if (outcomes) grid += '<span class="ww-label">Outcomes:</span><span class="ww-val">'+escape(outcomes)+'</span>';
+        if (datasets) grid += '<span class="ww-label">Datasets:</span><span class="ww-val">'+escape(datasets)+'</span>';
+        if (r.enforcement_check) grid += '<span class="ww-label">Enforcement:</span><span class="ww-val">'+escape(r.enforcement_check)+'</span>';
+        if (r.best_design) grid += '<span class="ww-label">Best Design:</span><span class="ww-val">'+escape(displayDesign(r.best_design))+'</span>';
+        if (r.did_control_quality) grid += '<span class="ww-label">DiD Control:</span><span class="ww-val">'+escape(r.did_control_quality)+'</span>';
+        if (r.identification_rd&&r.identification_did) grid += '<span class="ww-label">ID (RD/DiD):</span><span class="ww-val">'+r.identification_rd+' / '+r.identification_did+'</span>';
+        if (grid) wwHtml = '<div class="detail-section" style="background:#fff;margin-bottom:0.8rem;border-left:3px solid #9ca3af;"><h4>What & Who</h4><div class="ww-grid">'+grid+'</div></div>';
+      }
+
+      // ── Literature ──
+      let litHtml = '';
+      const litSat = r.llm_lit_saturation||r.llm_literature_saturation||'';
+      const litReasoning = cleanLLM(r.llm_lit_reasoning||r.llm_literature_reasoning||'');
+      const litStudies = r.llm_known_studies||r.llm_known_similar_studies||'';
+      if (litSat||r.unique_contribution) {
+        litHtml = '<div class="detail-section" style="margin-bottom:0.8rem;border-left:3px solid #6366f1;background:#eef2ff;"><h4>Literature</h4>'
+          +(litSat?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Landscape:</strong> '+(litDisplayMap[litSat]||litSat)+(litReasoning?' — '+escape(litReasoning):'')+'</p>':'');
+        // Known studies: readable list; JSON that cannot be read is hidden instead of printed raw
+        const studies = parseStudies(r.known_studies_parsed || litStudies);
+        if (studies && studies.length > 0) {
+          litHtml += '<div class="studies" style="margin-top:0.4rem;"><strong style="font-size:13px;">Known similar studies:</strong>';
+          studies.forEach((s,i) => {
+            if (!s || typeof s !== 'object') return;
+            const title = s.title||s.citation||'Untitled';
+            litHtml += '<div style="margin:0.3rem 0;font-size:13px;">['+(i+1)+'] <a href="https://scholar.google.com/scholar?q='+encodeURIComponent(title)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-weight:600;">'+escape(title)+'</a>'
+              +(s.citation&&s.title?'<span style="color:#4b5563;"> — '+escape(s.citation)+'</span>':'')
+              +(s.venue?'<span style="color:#4b5563;"> · '+escape(s.venue)+'</span>':'')
+              +'</div>';
+          });
+          litHtml += '</div>';
+        } else if (studies === null && litStudies && typeof litStudies === 'string' && litStudies !== 'None known' && litStudies !== '[]') {
+          litHtml += '<p style="font-size:13px;color:#4b5563;margin:0.25rem 0;"><strong>Known similar:</strong> <a href="https://scholar.google.com/scholar?q='+encodeURIComponent(litStudies)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+escape(litStudies)+'</a></p>';
+        }
+        if (r.unique_contribution) litHtml += '<p style="font-size:13px;color:#4338ca;margin:0.25rem 0;"><strong>Novel contribution:</strong> '+escape(r.unique_contribution)+'</p>';
+        litHtml += '<p class="lit-note">Note: Literature assessment is based on the AI\'s training data (cutoff: Jul 2024). Papers published after this date may not be reflected.</p></div>';
+      }
+
+      // ── Research Angles ──
+      let anglesHtml = '';
+      if (r.research_angles) {
+        try {
+          const angles = typeof r.research_angles === 'string' ? JSON.parse(r.research_angles) : r.research_angles;
+          if (angles && angles.length) {
+            let items = angles.map((a,i) => {
+              let bp = '';
+              if (a.benchmark_paper) {
+                const bpObj = typeof a.benchmark_paper === 'string' ? a.benchmark_paper : a.benchmark_paper;
+                if (typeof bpObj === 'string' && bpObj !== 'None (novel)' && bpObj) {
+                  bp = '<br><span style="color:#4b5563;">Benchmark:</span> <a href="https://scholar.google.com/scholar?q='+encodeURIComponent(bpObj)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-weight:600;">'+escape(bpObj)+'</a>';
+                } else if (typeof bpObj === 'object' && bpObj.citation && bpObj.citation !== 'None (novel)') {
+                  const searchQ = bpObj.title||bpObj.citation||'';
+                  bp = '<br><span style="color:#4b5563;">Benchmark:</span> <a href="https://scholar.google.com/scholar?q='+encodeURIComponent(searchQ)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-weight:600;">'+escape(bpObj.title||bpObj.citation)+'</a>'
+                    +(bpObj.citation&&bpObj.title?'<span style="color:#4b5563;"> — '+escape(bpObj.citation)+'</span>':'')
+                    +(bpObj.venue?'<span style="color:#4b5563;"> · '+escape(bpObj.venue)+'</span>':'');
+                }
+              }
+              return '<div style="margin-top:0.5rem;padding:0.4rem 0.6rem;background:#fff;border:1px solid #e5e7eb;border-radius:4px;font-size:13px;">'
+                +'<strong>Angle '+(i+1)+':</strong> '+escape(a.question||'')
+                +(a.method?'<br><span style="color:#4b5563;">Method:</span> '+escape(a.method):'')
+                +(a.outcome?'<br><span style="color:#4b5563;">Outcome:</span> '+escape(a.outcome):'')
+                +bp+'</div>';
+            }).join('');
+            anglesHtml = '<div class="detail-section" style="margin-bottom:0.8rem;border-left:3px solid #8b5cf6;background:#faf5ff;"><h4>Research Angles</h4>'+items+'</div>';
+          }
+        } catch(e) {}
+      }
+
+      // ── Policy Family ──
+      let familyHtml = "";
+      if (r.policy_family) {
+        try {
+          const members = await fetchGroup(r.policy_family);
+          const others = members.filter(m => m.title !== r.title);
+          if (others.length > 0) {
+            const listHtml = others.slice(0,10).map(m => {
+              const sc = parseFloat(m.composite_score);
+              const scStr = !isNaN(sc)?sc.toFixed(0):"—";
+              const rdDid = [m.rd?"RD":"",m.did?"DiD":""].filter(Boolean).join("/")||"";
+              return '<div style="display:flex;align-items:baseline;gap:0.5rem;margin:0.25rem 0;font-size:13px;">'
+                +'<span style="background:#e0e7ff;color:#3730a3;padding:0.1rem 0.4rem;border-radius:4px;font-size:12px;font-weight:500;white-space:nowrap;">'+escape(m.jurisdiction||"—")+'</span>'
+                +'<span style="flex:1;color:#374151;">'+escape(m.title)+'</span>'
+                +'<span style="font-weight:600;white-space:nowrap;">'+scStr+'</span>'
+                +(rdDid?'<span style="background:#dbeafe;color:#1e40af;padding:0.1rem 0.4rem;border-radius:9999px;font-size:12px;font-weight:600;white-space:nowrap;">'+rdDid+'</span>':'')
+                +'</div>';
+            }).join("");
+            const moreText = others.length>10?'<p style="font-size:13px;color:#4b5563;margin:0.2rem 0;">…and '+(others.length-10)+' more</p>':'';
+            familyHtml = '<div class="detail-section" style="margin-bottom:0.8rem;border-left:3px solid #10b981;background:#ecfdf5;">'
+              +'<h4 style="color:#065f46;">Policy Family: '+escape(r.policy_family.replace(/_/g," "))+' <span style="font-weight:400;font-size:13px;color:#4b5563;">('+(members.totalCount||members.length)+pl(members.totalCount||members.length,' policy text',' policy texts')+')</span></h4>'
+              +'<div style="margin:0.5rem 0;">'+listHtml+'</div>'+moreText
+              +'<a href="policy_groups.html#grp-'+encodeURIComponent(r.policy_family)+'" onclick="event.stopPropagation()" style="display:inline-block;margin-top:0.4rem;padding:0.3rem 0.8rem;background:#1d4ed8;color:#fff;border-radius:5px;font-size:13px;text-decoration:none;font-weight:500;">View full group →</a>'
+              +'</div>';
+          } else {
+            familyHtml = '<div class="detail-section" style="margin-bottom:0.8rem;border-left:3px solid #10b981;background:#ecfdf5;">'
+              +'<h4 style="color:#065f46;">Policy Family: '+escape(r.policy_family.replace(/_/g," "))+'</h4>'
+              +'<p style="font-size:13px;color:#4b5563;margin:0.3rem 0;">No other policies in this family yet.</p></div>';
+          }
+        } catch (e) { familyHtml = ""; }
+      }
+
+      // ── RD Assessment (full) ──
+      let rdHtml = "";
+      if (r.rd) {
+        rdHtml = '<div class="detail-section" style="border-left:3px solid #22c55e;background:#f0fdf4;margin-bottom:0.8rem;"><h4>RD Assessment</h4>'
+          +'<p>'+(escape(cleanLLM(r.rd_info))||'<em>No details</em>')+'</p>'
+          +(r.rd_type?'<p style="font-size:14px;margin:0.25rem 0;"><strong>RD type:</strong> <span style="color:'+(r.rd_type==='fuzzy'?'#c2410c':'#166534')+';font-weight:600;text-transform:capitalize;">'+r.rd_type+'</span>'+(r.rd_type==='fuzzy'?' — requires IV/2SLS estimation':'')+'</p>':'')
+          +(cleanLLM(r.rd_reasoning)?'<p style="margin-top:0.5rem;color:#4b5563;font-size:14px;">'+escape(cleanLLM(r.rd_reasoning))+'</p>':'')
+          +(r.threshold_structure&&r.threshold_structure!=='standard'?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Threshold structure:</strong> <em>'+escape(r.threshold_structure)+'</em>'+(r.threshold_structure==='notch'?' (lump-sum cost → strong bunching incentives)':'')+'</p>':'')
+          +(r.manipulation_channels?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Manipulation channels:</strong> '+escape(r.manipulation_channels)+'</p>':'')
+          +(r.dynamic_selection_risk?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Dynamic selection risk:</strong> <span style="color:'+(r.dynamic_selection_risk==='high'?'#b91c1c':r.dynamic_selection_risk==='medium'?'#c2410c':'#166534')+';font-weight:600;">'+r.dynamic_selection_risk+'</span></p>':'')
+          +(r.manipulation_risk&&r.manipulation_risk!=='low'?'<p style="margin-top:0.5rem;padding:0.5rem;background:#fff3e0;border-radius:4px;font-size:14px;"><strong>Manipulation Risk ('+r.manipulation_risk+'):</strong> '+(escape(r.manipulation_reason)||'Running variable may be manipulated')+'</p>':'')
+          +(r.measurement_mismatch_risk&&r.measurement_mismatch_risk!=='none'?'<p style="font-size:14px;margin:0.25rem 0;color:#b91c1c;"><strong>Measurement mismatch:</strong> '+r.measurement_mismatch_risk+'</p>':'')
+          +(r.power_risk&&r.power_risk!=='adequate'?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Statistical power:</strong> <span style="color:'+(r.power_risk==='insufficient'?'#b91c1c':'#c2410c')+'">'+r.power_risk+'</span></p>':'')
+          +(r.data_access_difficulty&&r.data_access_difficulty!=='public'?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Data access:</strong> <span style="color:#7c3aed;">'+r.data_access_difficulty.replace(/_/g,' ')+'</span></p>':'')
+          +((r.confounding_policies||(r.confound_severity&&r.confound_severity!=='none'))?'<div style="margin-top:0.5rem;padding:0.5rem;background:#fffbeb;border:1px solid #fde68a;border-radius:4px;"><strong style="font-size:13px;">Confounding policies</strong>'+(r.confound_severity&&r.confound_severity!=='none'?' <span style="color:'+(r.confound_severity==='fatal'?'#b91c1c':r.confound_severity==='severe'?'#c2410c':'#92400e')+';font-weight:600;text-transform:uppercase;font-size:13px;">('+r.confound_severity+')</span>':'')+(r.confounding_policies?'<p style="font-size:13px;color:#92400e;margin:0.2rem 0 0 0;">'+escape(r.confounding_policies)+'</p>':'')+'</div>':'')
+          +(r.rd_quote?'<blockquote style="margin:0.5rem 0 0;padding:0.4rem 0.6rem;border-left:3px solid #86efac;background:#ecfdf5;font-size:13px;color:#374151;font-style:italic;">"'+escape(r.rd_quote)+'"</blockquote>':'')
+          +'</div>';
+      }
+
+      // ── DID Assessment (full) ──
+      let didHtml = "";
+      if (r.did) {
+        didHtml = '<div class="detail-section" style="border-left:3px solid #3b82f6;background:#eff6ff;margin-bottom:0.8rem;"><h4>DiD Assessment</h4>'
+          +(cleanLLM(r.did_reasoning)?'<p style="color:#4b5563;font-size:14px;margin:0 0 0.4rem 0;">'+escape(cleanLLM(r.did_reasoning))+'</p>':'')
+          +(r.parallel_trends_risk?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Parallel trends:</strong> <span style="color:'+(r.parallel_trends_risk==='high'?'#b91c1c':r.parallel_trends_risk==='medium'?'#c2410c':'#166534')+';font-weight:600;">'+r.parallel_trends_risk+'</span></p>':'')
+          +(r.staggered_adoption_bias&&r.staggered_adoption_bias!=='none'?'<p style="font-size:14px;margin:0.25rem 0;color:'+(r.staggered_adoption_bias==='high'?'#7c3aed':'#6b7280')+';"><strong>Staggered adoption bias:</strong> '+r.staggered_adoption_bias+(r.staggered_adoption_bias==='high'?' → use Callaway-Sant\'Anna (2021) or Sun-Abraham (2021)':'')+'</p>':'')
+          +(r.anticipation_risk&&r.anticipation_risk!=='low'?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Anticipation risk:</strong> <span style="color:'+(r.anticipation_risk==='high'?'#b91c1c':'#c2410c')+'">'+r.anticipation_risk+'</span></p>':'')
+          +(r.spillover_risk&&r.spillover_risk!=='low'?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Spillover / SUTVA risk:</strong> <span style="color:'+(r.spillover_risk==='high'?'#b91c1c':'#c2410c')+'">'+r.spillover_risk+'</span></p>':'')
+          +(r.policy_endogeneity_risk&&r.policy_endogeneity_risk!=='low'?'<p style="font-size:14px;margin:0.25rem 0;"><strong>Policy endogeneity:</strong> <span style="color:'+(r.policy_endogeneity_risk==='high'?'#b91c1c':'#c2410c')+'">'+r.policy_endogeneity_risk+'</span></p>':'')
+          +(r.did_recommended_estimator&&r.did_recommended_estimator!=='TWFE'?'<p style="font-size:14px;margin:0.35rem 0 0.1rem;color:#1d4ed8;"><strong>Recommended estimator:</strong> '+escape(r.did_recommended_estimator)+'</p>':(r.did_recommended_estimator==='TWFE'?'<p style="font-size:14px;margin:0.35rem 0 0.1rem;color:#166534;"><strong>Recommended estimator:</strong> TWFE (clean design)</p>':''))
+          +(r.pre_period_data_available?'<p style="font-size:13px;color:#4b5563;margin:0.25rem 0;">Pre-period data: <strong>'+r.pre_period_data_available+'</strong></p>':'')
+          +(!r.rd&&(r.confounding_policies||(r.confound_severity&&r.confound_severity!=='none'))?'<div style="margin-top:0.5rem;padding:0.5rem;background:#fffbeb;border:1px solid #fde68a;border-radius:4px;"><strong style="font-size:13px;">Confounding policies</strong>'+(r.confound_severity&&r.confound_severity!=='none'?' <span style="color:'+(r.confound_severity==='fatal'?'#b91c1c':r.confound_severity==='severe'?'#c2410c':'#92400e')+';font-weight:600;text-transform:uppercase;font-size:13px;">('+r.confound_severity+')</span>':'')+(r.confounding_policies?'<p style="font-size:13px;color:#92400e;margin:0.2rem 0 0 0;">'+escape(r.confounding_policies)+'</p>':'')+'</div>':'')
+          +(r.did_quote?'<blockquote style="margin:0.5rem 0 0;padding:0.4rem 0.6rem;border-left:3px solid #93c5fd;background:#eff6ff;font-size:13px;color:#374151;font-style:italic;">"'+escape(r.did_quote)+'"</blockquote>':'')
+          +'</div>';
+      }
+
+      // ── RD + DID combo ──
+      let comboHtml = '';
+      if (r.rd && r.did) {
+        comboHtml = '<div style="padding:0.5rem 0.7rem;background:#fef3c7;border:1px solid #fde68a;border-radius:4px;font-size:13px;color:#92400e;margin-bottom:0.8rem;"><strong>RD + DiD:</strong> Consider Difference-in-Discontinuities design combining both.</div>';
+      } else if (!r.rd && !r.did) {
+        comboHtml = '<div class="detail-section" style="margin-bottom:0.8rem;"><p><em>Not identified as RD or DiD candidate</em></p></div>';
+      }
+
+      // ── Red flags ──
+      let flagsHtml = '';
+      if (cleanLLM(r.red_flags)) {
+        flagsHtml = '<div style="padding:0.5rem 0.7rem;background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #b91c1c;border-radius:4px;font-size:14px;color:#b91c1c;"><strong>Red flags:</strong> '+escape(cleanLLM(r.red_flags))+'</div>';
+      }
+
+      // Chapter-split navigation strip (only when bill has >1 chapter)
+      const chapterStripHtml = containerId ? buildChapterStripHtml(r, containerId) : "";
+
+      // Left column: Overview, Bill Info, Text Provenance, What & Who, Literature, Research Angles, Policy Family
+      // Right column: RD Assessment, DID Assessment, combo, Red flags
+      // Chapter strip spans both columns when present (wrapped in a grid-column:1/-1 div).
+      return (r.title ? '<div class="detail-title">'+escape(r.title)+'</div>' : '')
+        +(chapterStripHtml ? '<div style="grid-column:1/-1;">'+chapterStripHtml+'</div>' : '')
+        +'<div class="detail-col">'+overviewHtml+billInfoHtml+provenanceHtml+wwHtml+litHtml+anglesHtml+familyHtml+'</div>'
+        +'<div class="detail-col detail-col-sticky">'+rdHtml+didHtml+comboHtml+flagsHtml+'</div>';
+    }
+
+    /* ============================================================
+       Sort arrows
+       ============================================================ */
+    function updateSortArrows() {
+      document.querySelectorAll(".sort-arrow").forEach(el => { el.classList.remove("active"); el.textContent = ""; });
+      const arrow = document.getElementById("arrow-" + state.sort);
+      if (arrow) { arrow.classList.add("active"); arrow.textContent = state.dir === "asc" ? "▲" : "▼"; }
+    }
+
+    /* ============================================================
+       Events
+       ============================================================ */
+    function wireEventListeners() {
+      document.getElementById("searchInput").addEventListener("input", e => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => { state.q = e.target.value.trim(); state.page = 1; fetchPolicies(); }, 300);
+      });
+      document.querySelectorAll(".filter-btn[data-filter]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".filter-btn[data-filter]").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          state.design = btn.dataset.filter; state.page = 1; fetchPolicies();
+        });
+      });
+      const filterMap = {yearSelect:"year",jurSelect:"jur",sourceSelect:"source_family",litSelect:"lit",biteSelect:"best_design",feasSelect:"feas",statusSelect:"status",topicSelect:"topic"};
+      for (const [id, key] of Object.entries(filterMap)) {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener("change", () => { state[key] = el.value; state.page = 1; fetchPolicies(); });
+      }
+      const igBtn = document.getElementById("ignoreDataBtn");
+      igBtn.addEventListener("click", () => {
+        state.ignore_data = !state.ignore_data;
+        igBtn.classList.toggle("active", state.ignore_data);
+        if (state.ignore_data) { igBtn.style.background="#e0e7ff"; igBtn.style.color="#3730a3"; igBtn.style.borderColor="#a5b4fc"; }
+        else { igBtn.style.background=""; igBtn.style.color=""; igBtn.style.borderColor=""; }
+        state.page = 1; fetchPolicies();
+      });
+      document.getElementById("resetBtn").addEventListener("click", () => {
+        state.page=1; state.q=""; state.design="all"; state.jur="all";
+        state.source_family="all"; state.year="all"; state.topic="all";
+        state.feas="all"; state.lit="all"; state.status="all";
+        state.best_design="all"; state.ignore_data=false;
+        state.sort="composite_score"; state.dir="desc";
+        document.getElementById("searchInput").value = "";
+        document.querySelectorAll(".filter-btn[data-filter]").forEach(b => b.classList.toggle("active", b.dataset.filter==="all"));
+        Object.keys(filterMap).forEach(id => { const el=document.getElementById(id); if(el) el.value="all"; });
+        igBtn.classList.remove("active"); igBtn.style.background=""; igBtn.style.color=""; igBtn.style.borderColor="";
+        updateSortArrows();
+        fetchPolicies();
+      });
+      document.getElementById("pageSizeSelect").addEventListener("change", e => { state.size=parseInt(e.target.value,10); state.page=1; fetchPolicies(); });
+      document.getElementById("btnPrev").addEventListener("click", () => { if(state.page>1){state.page--;fetchPolicies();} });
+      document.getElementById("btnNext").addEventListener("click", () => { state.page++; fetchPolicies(); });
+      document.querySelectorAll("th[data-sort]").forEach(th => {
+        if(th.dataset.sort==="none") return;
+        th.addEventListener("click", () => {
+          if(state.sort===th.dataset.sort) state.dir=state.dir==="desc"?"asc":"desc";
+          else { state.sort=th.dataset.sort; state.dir="desc"; }
+          state.page=1; updateSortArrows(); fetchPolicies();
+        });
+      });
+    }
+
+    function closeDatasetModal() { document.getElementById("datasetModal").classList.remove("show"); }
+
+    /* ============================================================
+       Init
+       ============================================================ */
+    async function fetchInit() {
+      try {
+        const p = new URLSearchParams();
+        p.set("page", state.page); p.set("size", state.size);
+        if (state.sort) p.set("sort", state.sort);
+        if (state.dir) p.set("dir", state.dir);
+        const resp = await fetch("/api/init?" + p);
+        const data = await resp.json();
+        renderStats(data.stats);
+        populateFilters(data.filters);
+        renderTable(data.policies);
+      } catch (e) {
+        console.error("Init failed, falling back:", e);
+        fetchStats(); fetchFilters(); fetchPolicies();
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchInit();
+      wireEventListeners();
+    });
+  </script>
+  </main>
+<!-- NX:FOOTER:START -->
+<footer class="site-footer" data-nx-chrome="footer"><p class="ft-l"><span>Open to any collaborations and PhD opportunities!</span><a href="mailto:fangyu@usc.edu">Get in touch: fangyu@usc.edu</a></p><p class="ft-l"><span>Author: Fangyu Liu</span></p></footer>
+<!-- NX:FOOTER:END -->
+<script id="public-details-links">
+(function(){
+  function openTarget(){
+    var id;try{id=decodeURIComponent(location.hash.slice(1))}catch(e){return}
+    var target=document.getElementById(id);if(!target)return;
+    var node=target;
+    while(node){if(node.tagName==='DETAILS')node.open=true;node=node.parentElement}
+    target.scrollIntoView({block:'start'});
+  }
+  window.addEventListener('hashchange',openTarget);
+  document.addEventListener('click',function(e){
+    var link=e.target.closest('a[href]');if(!link)return;
+    var url=new URL(link.href,location.href);
+    if(url.origin===location.origin&&url.pathname===location.pathname&&url.hash===location.hash)
+      openTarget();
+  });
+  openTarget();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1706 @@
+{
+  "baseline_sha256": "92bcbbff4eeed7fa615a2599ec285f10913d1fd9bfbcc14055f2d6e863d9be91",
+  "cards": {
+    "00db7ba50ba8471bc70d64d91f681604c59e9fc99b33b6458047a5c6a8dc7ccf": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "constant_definition_window",
+      "version": "v51"
+    },
+    "0110e3205027ec3801161ee1182a8da5f3270a1e577d6c7119a74372d2b16b1a": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "drop_disputed_audit_error",
+      "version": "v1"
+    },
+    "0151a16f5573c957e649233d3f471b74b4442927ebc6e57f6f88eb8799ac8e1e": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WA",
+      "version": "v51"
+    },
+    "019138b86aeb79ed8c65a4833b1a2714609175f438bd56025b5af3e7cbaa4b85": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_TN",
+      "version": "v1"
+    },
+    "01983aba9902a4460b950cd6cb0ce607a5aee7d5a4ccde7fcd4988bfe536606d": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2011",
+      "version": "v51"
+    },
+    "0476ba67823ef33b6b852dcf0a7e7cf56b23bc7f3951942d5c158a535a55fb71": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MI",
+      "version": "v1"
+    },
+    "04e555361c83e7b168e1ca0a54fe9872ee110f365848d4b80e2c7b7cc882403e": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "start_minus_one",
+      "version": "v1"
+    },
+    "0693e7301c0bcb790bb847ab922e05eec25642a90016276e7536d34b2d927dbd": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AL",
+      "version": "v1"
+    },
+    "073b2c9ae9611475d500822acb016ca10631e59239d15e2cc3f8af3a1cfaa68d": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_PA",
+      "version": "v53"
+    },
+    "074120b67078c93131e49498f1524888bc22e0a94add84de82223e61f8a476bd": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "not_yet_controls",
+      "version": "v53"
+    },
+    "09de778cdf6857bf1cddcad6cf3fb5a05361eff1bdc80e3f6fcac6b5bc5c5fa7": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OR",
+      "version": "v1"
+    },
+    "0a88e0867fd1a5c44b2d8a5956674e436c76280b965fd3246562f9d7f1c98cbf": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_decentralized_tuition/v1/card.json",
+      "design_id": "run2_decentralized_tuition",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "0ba795925b74cf5edde5ad44b597b407d33bb03fc323a03a4349ac79010528ef": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2022",
+      "version": "v53"
+    },
+    "102756211e3c5f847d33b81d160d866c58e63eb85c021dbb380bd426ef783534": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "exclude_competing_mechanism",
+      "version": "v1"
+    },
+    "1029c6de2a77f6c766f3775e620890448a59f96c55d9c9a953ad8466f0c371b4": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AK",
+      "version": "v1"
+    },
+    "1041d227d401703b3f139c2c3dd449b12f3d417ee8bad0ee337ec3d6fac3f273": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "drop_disputed_audit_error",
+      "version": "v1"
+    },
+    "10e689a4f134465e19e9c9f9dabf8bd6206eb28d4f36aaeaa49af8950d0c0216": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WA",
+      "version": "v51"
+    },
+    "112fcf8c7f71b6365f4a7745617b1e42435eb34379978f7d0c20bd88bc54b598": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2015",
+      "version": "v1"
+    },
+    "1211a42a7b4cba3a0f052ce97610d877024e30fac4208032e7ac9838c6668cd7": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2014",
+      "version": "v1"
+    },
+    "122381e9af391a190480d02be0b120f43a6720aca4d5a879f425f9cafd4acb85": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_DC",
+      "version": "v51"
+    },
+    "125a052f26c888ecd05582f326b4fe12ea96a6a3fe0b9e78b6ae0528d5313de9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_CO",
+      "version": "v1"
+    },
+    "1379f0b3b60a572b81d30e3bf71d7315feb3a054ef1672f4c144b0cfe289ed18": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_CA",
+      "version": "v1"
+    },
+    "145f1eb2aa07019f6d2fe514a9cecc1067aaf5ecf4558a2a9278f41ec9f57024": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WV",
+      "version": "v51"
+    },
+    "1658bcfc02e1539a1fad4804a6f5db05042f38e3e402266369999ef0e44336e0": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IL",
+      "version": "v51"
+    },
+    "17058648029e0de88a14df07ab774fad289daca74fdc3057cd4c77ca12c3338a": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "start_plus_one",
+      "version": "v51"
+    },
+    "185cfd4c4708fc0ac9a96189baf64bfb2a04d71af0958f134fad422259f0060a": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_CT",
+      "version": "v1"
+    },
+    "19069476c2ca7734aa4ed729dee9a17a1aa687b9e65fc425907339ab4c94edaa": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OK",
+      "version": "v1"
+    },
+    "191000a5728328cdb92c72f1bf3c4708cac686cfbea2db04c104a35cb13921d8": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c12/work/run8_universal_background_check/v13/card.json",
+      "design_id": "run8_universal_background_check",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v13"
+    },
+    "197be281245dd078d8c458f0e4bb4ac79d1c2f14c2e41b81222c7bba4e6f78ed": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "not_yet_controls",
+      "version": "v51"
+    },
+    "19b06cede55e2293b9bb0c606b8dbee8edbe7737771bdd09fa7c8ebdbb9aa697": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WI",
+      "version": "v1"
+    },
+    "1a32d161d4b1148d95c0ce5609186487296afafb35dcc7a52bc5e53f249f32ee": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2023",
+      "version": "v53"
+    },
+    "1a97907ba9af15b33a94a01ab91a0c90a6725a47b6c4b26dd63fec3122121052": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_energy_public_benefit_fund/v1/card.json",
+      "design_id": "run2_energy_public_benefit_fund",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "1bc619076e4c705b2e215c963616ba25c723e39283ae1adf4d6e1227cdd1bcf8": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2013",
+      "version": "v51"
+    },
+    "1be07b9a7adcc8709f125a1e5bc3f7e2dae0589395972da2d894f7833199d2c6": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c11/work/run8_large_capacity_magazine_ban/v12/card.json",
+      "design_id": "run8_large_capacity_magazine_ban",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_suicide_deaths",
+      "version": "v12"
+    },
+    "1ccf70ff19162e7fa229df26842f3a46376be4ff51ef7d1828fd9db5cd5cf2e6": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2021",
+      "version": "v53"
+    },
+    "1d14f7f78020b5cc6baf9c1b3d0463c90bcedb36cf3e45cc73ae99cdd4136f4b": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "exclude_convention_controls",
+      "version": "v51"
+    },
+    "1e2138795c1c968580badf5f56d4da356470c36ba17ce3794d7c18855b72cce3": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "start_minus_one",
+      "version": "v53"
+    },
+    "1e2d9abf753af1b03d944daf0681cf00036b6323f23656e3f6b2f4a3ccb7ed24": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AZ",
+      "version": "v1"
+    },
+    "206feb74e4079144cdffd10f6cc4b394ddba52215432e09873ebf0db5420dc20": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NM",
+      "version": "v1"
+    },
+    "20d20480e1570808b061b2a6d5d553eed7f55b24ac7df61a26d6a2783d310707": {
+      "card_path": "data/l2_pipeline/jobs/run4/work/run4_lit_family_planning_income_waiver/v3/card.json",
+      "design_id": "run4_lit_family_planning_income_waiver",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v3"
+    },
+    "20f0ca7cad0ba02f96a7f9523ae2104f9bc487b28a6f40d97341262725a0a879": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_UT",
+      "version": "v53"
+    },
+    "2100d47a343f73d25debe50691efbdee235a51b920f8028f3435a19e9a36b6d8": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c12/work/run8_gunshow_background_check/v13/card.json",
+      "design_id": "run8_gunshow_background_check",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_homicide_deaths",
+      "version": "v13"
+    },
+    "210d3584cb5aafec82d06077798f24661727a85e2d901db4c93333836880b7ed": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MT",
+      "version": "v1"
+    },
+    "23e2fb5e0231039f350569d79e9119cfc6a654673d1ca5a6adf82b905f57d80b": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "exclude_2020_2021",
+      "version": "v51"
+    },
+    "2568921e10b42ac04cd29fb3e56c772c33e4ff36dd915d4adc71426bbd1d1fd9": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2009",
+      "version": "v51"
+    },
+    "26f732996f71c952ff53d669c86b6a4f8a77e098b9219e438fafebdd7d275631": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "include_2020_2021",
+      "version": "v1"
+    },
+    "271719579bcbed7587276e6ac5896e3f3e1aec963c066037bc61ba002155b5b0": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "277edd3864241b4d26a703ef9f2821ad5037ee821b710134ac9baeba621db19d": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c11/work/run8_extreme_risk_protection_order/v12/card.json",
+      "design_id": "run8_extreme_risk_protection_order",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_suicide_deaths",
+      "version": "v12"
+    },
+    "28497c5077c409211d2eec2c45b6c06f63e1ce98b244cf3835c8f570dff8cc10": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WV",
+      "version": "v1"
+    },
+    "2952209546f4e033fbd31fe8f033372d298bd709bfbfc92071e2fbffea98549f": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_SC",
+      "version": "v1"
+    },
+    "2f8a3b85d58cd7f1db2b0c4dac5aad9534d1b3f47d4651f4fefbefcea735af58": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NE",
+      "version": "v51"
+    },
+    "2fc291afc1f95cf871df303ef5a1276bfc4faaa25ca416cdb81808e0cf329dbe": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_GA",
+      "version": "v51"
+    },
+    "3090ebab0c641a7b1428e845678be8a12e7bf1048610ea99a0f63366bfbc6d83": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "start_plus_one",
+      "version": "v53"
+    },
+    "3129e3cb28b689266a764532ef6a34b7262c30d366281adc65238871f049dc52": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OR",
+      "version": "v51"
+    },
+    "32c558e5929c1f47a5f29b226472e8379b2a04d6356ff5f45814546b58f5dbf6": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MS",
+      "version": "v51"
+    },
+    "35f79a1dffb9fa430817d7cb95aefbec0c6c0342de85937434992ebf46d4747d": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2023",
+      "version": "v51"
+    },
+    "37368f3ade322a36d2c9c89dabac5a2038790e1f893403be8cf789045e39dd4c": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NC",
+      "version": "v1"
+    },
+    "374a95a960b972928f4fd624fbbc98ae444ace712fdc9fea3f8b216b28120e8c": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_electronic_waste_recycling/v1/card.json",
+      "design_id": "run2_electronic_waste_recycling",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "38392785c96f3536dd00be1de11665a16eea21525fc797049c902967031bc383": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ME",
+      "version": "v1"
+    },
+    "38542645735cd67879a4d8aad8e545bee57e26aeceb30d750d6881424fe8a4c9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ND",
+      "version": "v1"
+    },
+    "388ccd36117c9c712ac6fe424964c1fc1d4679dd71097ee5822a7079b36c9823": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NY",
+      "version": "v1"
+    },
+    "3bda864c7ae03e24834e90f87efcb194cd067e874b88b7f6bae895057e318249": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MO",
+      "version": "v1"
+    },
+    "3bfcdc7cb3c88fd2ed4979d15de4e985533319b96c60d1210832b1af230f5b2c": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AZ",
+      "version": "v1"
+    },
+    "3c1dee6711ed183d3bb4c37604b52f8be925d9818114c7dc175d1c3acfa037b9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2017",
+      "version": "v1"
+    },
+    "3dbd9fc5cf51f92bae128e9f9d951016c092c47472ac5763d8f0e4bafe8ef052": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "start_plus_one",
+      "version": "v51"
+    },
+    "3f8d091b5065259833d881465b4afc97279290988aa0a14ab6b99d5e45bfe68e": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2006",
+      "version": "v1"
+    },
+    "40c594f6bcf27cb81d16cf8ee3863e94f9503f04147fdd8b5ce08a162dbd9c6d": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "4105896a0d6cf09aa264d4fb9bc85f038c8580c20bb64275835df6ba4e547ae6": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "start_minus_one",
+      "version": "v51"
+    },
+    "441db210ddb5bf48077b6a741fe9f055fd322cc21d0394f21b4f0629923f336d": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_CO",
+      "version": "v1"
+    },
+    "44f054b4b4a80743e27988292e7cbd6e39f2a59841d79dd1ac2001703372d2bb": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AR",
+      "version": "v51"
+    },
+    "46663a89814578615057b971ea8d9c56a394516d84320b3141b3b66fa76d796f": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MS",
+      "version": "v1"
+    },
+    "479db9e70b7d4d24af392e53ecda7cb8de54c664367b6209197bbfa7ff919e39": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NV",
+      "version": "v1"
+    },
+    "47c2683c3f1369e7261ff6199ddbc64a8a864df94134531136d3917b5eaa992f": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_PA",
+      "version": "v1"
+    },
+    "47d1988e23b653fa979bee0537971a504ab3fc5515df90160e1e269913043417": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "start_plus_one",
+      "version": "v1"
+    },
+    "4830c9127a86a6cf08e205a51d785841b6780c2621a10f6c667897acd9613533": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2016",
+      "version": "v1"
+    },
+    "48e58837b2bade7c25a2826158f1b81a6bdb8f6423f58c45cdaf09c6a83bd70d": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2001",
+      "version": "v1"
+    },
+    "4b0c446918e431f7083ec441827061d177499c95b924709afba3b32a2f5c2d4c": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IA",
+      "version": "v1"
+    },
+    "4b2e7673e2d80054ac2d0e4453aa9f264177c76694ee515090c61619cce2704b": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2003",
+      "version": "v51"
+    },
+    "4c156c271382e1310c4cb9c37c31e92c563436b9eed5fa7c4cc5bfe66673a3ae": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2019",
+      "version": "v1"
+    },
+    "4c42d86a4bf98fd32f16c3887578ceab05a1b3beed95a845e3d69219e663ea4e": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2021",
+      "version": "v51"
+    },
+    "4c55ca80234838a79b6af4665000a9e709762ec74ea6308f55b5ea509f62e99c": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "exclude_2020_2021",
+      "version": "v1"
+    },
+    "4c639def962a98a91da4ac5e8d9c54389af57c159e1a4531d8c4dd225ebb7fa4": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2009",
+      "version": "v1"
+    },
+    "4d93897a4664254324aed682212910c826b11ce12a83b236b165cff5c3188a47": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_UT",
+      "version": "v1"
+    },
+    "4db63c842d5c131486f6d08ffbc334191a9919596f9078ec0b5bfbf556ff91c7": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v1"
+    },
+    "4f9a7b193eeee42f3bfbfc4e147f1315cfe1a584333f1550f2c58b63b6367edd": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ND",
+      "version": "v51"
+    },
+    "5146c96469907116aae9c168b6ec5cdb566e8c81b2e8a3e6196cd0a0dd8fb2b7": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_SD",
+      "version": "v1"
+    },
+    "51b1d61d134fb0cb90504d3a84798363ed45a5d6ff30a3fbc5e201c83694bb59": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c11/work/run8_large_capacity_magazine_ban/v12/card.json",
+      "design_id": "run8_large_capacity_magazine_ban",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v12"
+    },
+    "52616e6498bcd081bead4909c2b3b0b981424596d286fe03c3e8c3240d589e49": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v1"
+    },
+    "52d8921ca1095247bf687a0ee5dd927d1917eca499423121d775a527fdc430a6": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WV",
+      "version": "v53"
+    },
+    "5729d2ca4035cda408d41142a4fa7a6dc77fdea03711976754e8b47678c69086": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_contraception_insurance/v1/card.json",
+      "design_id": "run2_contraception_insurance",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "57376251ce2ca86531f97fbd0d6bc120766d76a9c5d52519bc995cecfdde55e8": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IL",
+      "version": "v1"
+    },
+    "5e9caab4018dd1d08e5653adb1e84e99b48fd0388f53b4f533fc54d053fa268e": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c12/work/run8_gunshow_background_check/v13/card.json",
+      "design_id": "run8_gunshow_background_check",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v13"
+    },
+    "5ff5ec31af57207e4b3fc88ae8cafc0ae7bcfe1553208c6fb2525b07fe4e979a": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "exclude_convention_controls",
+      "version": "v51"
+    },
+    "60ed13b8dd2bc4100ef371143ae9002b775225ab0478187c53f96744a7c7b386": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2010",
+      "version": "v51"
+    },
+    "60fe75bc3d5d85721ee5f11b798ff680abe0b5f9b5a18fc39919b47af2f8d242": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MD",
+      "version": "v51"
+    },
+    "649b3010c07d0d04fa13c64a028bdd2ed9fa854c91ae91290d436bfadd3f5a2e": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2004",
+      "version": "v51"
+    },
+    "654d18243d595d3a8c9a963be1bce2003e20ff74b84c234614b939dc32abad9d": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c12/work/run8_universal_background_check/v13/card.json",
+      "design_id": "run8_universal_background_check",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_suicide_deaths",
+      "version": "v13"
+    },
+    "65a7759c0a3e067f6959893cf1ca200ca2d9b20e0739356a6aa9b3255f1f2cad": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_young_adult_dependent_coverage/v1/card.json",
+      "design_id": "run2_young_adult_dependent_coverage",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "667c04053168e7d0ff610f2d336904f0b0253c1f1d4d7a943e016db7e2069973": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v51"
+    },
+    "67d680fb8cb3cf4c68b8d01bdd8b3c93a4e7f4b0fd6abb25a39ca9d4ee89321b": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_colorectal_screening_coverage/v1/card.json",
+      "design_id": "run2_colorectal_screening_coverage",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "68b4269471abd33430cfb8e270bdbcb6eb38a1b70a642d6997191d4718f36330": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_TX",
+      "version": "v51"
+    },
+    "68ca4088dd73c47c42bd416af0147b58c0bcd0a64d10b148585bdc44380ce373": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "not_yet_controls",
+      "version": "v51"
+    },
+    "691a5d14d4ea10f87976aad9d83bdd5f27eb4a76e18bfffa3a3c3ae9e7546c03": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "include_scope_ambiguous",
+      "version": "v1"
+    },
+    "69fa557e94ce5844a34696e19e4178ecd06b68c728a75049bb51fbfa35822753": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_UT",
+      "version": "v51"
+    },
+    "6a18409502262cb3843cf7408dfc30f3cdb446cacde8c8cedce5da1311e8e3bf": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MT",
+      "version": "v1"
+    },
+    "6a917fd56f4f2e77a728746bc2c34c280d6c2643ba04782ed5eda53558c3df8f": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c11/work/run8_extreme_risk_protection_order/v12/card.json",
+      "design_id": "run8_extreme_risk_protection_order",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_homicide_deaths",
+      "version": "v12"
+    },
+    "6cb9653f94acb77c058005de1286018595d2d831126bbf4fe337b8d5b59335d8": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_RI",
+      "version": "v1"
+    },
+    "6cf524abc994e54295a21e9eece6d8f7fdb78d209f902073fd86d106b24d5cf7": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IA",
+      "version": "v1"
+    },
+    "6d63436705d78282d7b6d57aece4ed9a347fe0c4bc516c17bde15195a53c10cf": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_FL",
+      "version": "v1"
+    },
+    "6f3921892c9d85deec8f85375e058a014fd5906b0cece6943c43273cb4c538c7": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OH",
+      "version": "v1"
+    },
+    "701a6c5c6f3a5d8263de4b6932391370f4e2cf5cd653e022cfd15bcceb16d5f9": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MA",
+      "version": "v51"
+    },
+    "71a5270ba5783da0d183a07c6f2b0c5ab02178c37e4de3ea52b740f1a2e773a0": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_SC",
+      "version": "v51"
+    },
+    "7297ebf38837738d5dbe50660037494365331ddae690f197a137f7559c7b5faf": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MO",
+      "version": "v51"
+    },
+    "734d67ac47e579bcd76ede123219f9a615865416ed22a49dde6215b58cd21157": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_VA",
+      "version": "v1"
+    },
+    "737914ae1ac9717d2a21cb5660dc26ce933a16daea208954b556a3653185c2c9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WI",
+      "version": "v1"
+    },
+    "754be0f097d280b2e1dad33131779735bc2b774f9e3097e519f822f8dba51e1c": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_SD",
+      "version": "v1"
+    },
+    "785fe0a2c5f3ef67471ea51f635e99e6cadb3a2e8582f2449bd4e435fb80eb1c": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NV",
+      "version": "v1"
+    },
+    "7c03ca107891d00e54308398e18c6f2b987d3e45a320a20a8bf419d089af8b8b": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_CT",
+      "version": "v1"
+    },
+    "7da4a3b7113c1659a779b46c1505c8c037cbd9882aa8c77c3b6e2fea57a6ca5b": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "include_scope_ambiguous",
+      "version": "v1"
+    },
+    "7df6b9558be410c22f659da2eaac13783fb4b8e6bb4bd1af7df83a458baa321b": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "exclude_2020_2021",
+      "version": "v53"
+    },
+    "7e0a883142717153fe0ec6a586ba39fa079e60a6306069f8b394463efcf51190": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "drop_narrow_coverage",
+      "version": "v1"
+    },
+    "80cb7cf0ae9e297d7db878a4989e9512364b8c45632cc7ee2b7b01d160ca10f5": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "include_2020_2021",
+      "version": "v1"
+    },
+    "81ca3d47b6ef74ac8e31512237fb01547e800da49f1c52573afb9f9a63b95727": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ND",
+      "version": "v53"
+    },
+    "822a3ca904e473dc76a271b9c5c166c321687ce397cdbf12ae1175c01d07b022": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NH",
+      "version": "v1"
+    },
+    "83fc7d01830ec0a57df5ce6f05e750d67f1b9fee0d9ebdee2d96ec4d70af30f6": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2015",
+      "version": "v1"
+    },
+    "84ee39f256346461467454d4e75581b804f91476f56c95bd79c5e5e301f6a788": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_KS",
+      "version": "v1"
+    },
+    "854dfd307fe5677da2b567b9a75c5343b24de5bc5bc222a794f6309975f9330e": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2005",
+      "version": "v51"
+    },
+    "85a591996075447b997d964a597c57ac4d57b685dce886d75ae6fd2491e77383": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OK",
+      "version": "v1"
+    },
+    "8881b6f223fcacd35f66fa692973b2b682773d5c189e79a72eb55c59df240fb1": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_KY",
+      "version": "v1"
+    },
+    "89034dc4b93b4abf60024e4a1d6cbfab2e48325438f96959487806c9ed4c43d6": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2024",
+      "version": "v53"
+    },
+    "897cc3c7889df6815917867cad8284cdad561ec551a27646f3a6365990b9b48a": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OR",
+      "version": "v51"
+    },
+    "8a7576077290a09fab09e2da5b9e6c1af90fb4ee33e83b44bada595dc844d1c9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "start_minus_one",
+      "version": "v1"
+    },
+    "8bc461037ddf9bc5c85b0cf42d59d217aab291539190663e29a4aefcf0c2beec": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OK",
+      "version": "v51"
+    },
+    "8cf5266cbff79463a92a8f0bf114d9dfcdccce5c6016fb430bfb78abe833193a": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_PA",
+      "version": "v51"
+    },
+    "8db9e96ab844a52bf4ca7dc6a744539eaf3fd78a5b28124e8891de46ab661f4d": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ID",
+      "version": "v1"
+    },
+    "8dccca21d04f3780ac420ad41dcf26a39fe165225a639be5c898561913956308": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IN",
+      "version": "v51"
+    },
+    "90499e90931b635038862c960e4a7f754b3b5b6f6647e904940cf56a380e569d": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "exclude_2020_2021",
+      "version": "v1"
+    },
+    "9099fd46c82a0f07360f1d97d9305b9f495a4363b7addfbb4a7d6e6aeeb573ee": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2022",
+      "version": "v51"
+    },
+    "91db7a5f8ee1dfe5e4c9be742c655385b5a65addd58f1e27ba9ed040ad55cc97": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MN",
+      "version": "v1"
+    },
+    "923d4f31b7cf8f98edb6086bb346c335795e9ba5b289ea6aa42b9d2350f25d87": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2018",
+      "version": "v1"
+    },
+    "93c61f0be75ed31c470ca8da1ebed4c391bc25c64f7198edde4db494dedf572e": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v53"
+    },
+    "947e261a6f71b5ee5ead9e6d817864d3862e3749aa2bbff27378def7a9c51343": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IN",
+      "version": "v1"
+    },
+    "95d7fcddf9d6c54c5472d5767ceadbd4f36444a5a310c3b9799c7bc7856562b2": {
+      "card_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/c10/fresh_audit_jobs/c12/work/run7_minor_abortion_parental_involvement/v13/card.json",
+      "design_id": "run7_minor_abortion_parental_involvement",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v13"
+    },
+    "96ace4caa5a5dadcbdd1f090fb8d5fb74b7bd5b2479677dde303c2cd2d6c0d0d": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2005",
+      "version": "v1"
+    },
+    "971cded07f0f3d57677006a9dc3b6431d98b336c215071be6a2e4042f91f619b": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "start_plus_one",
+      "version": "v1"
+    },
+    "99084df53c2834dde1e89d5b31b3f781523a44f7f67b9f4bba7b8e9ead5c9908": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2017",
+      "version": "v1"
+    },
+    "991be00ebc9744014de434aa61ffee8d2ecf1511df0d6c8a3707dfdedd4ce413": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NJ",
+      "version": "v1"
+    },
+    "99900bf67b7bc5daf1abd46b5fc1e451cef563bb1ffafcafffab73273171a614": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "not_yet_controls",
+      "version": "v1"
+    },
+    "999fbfa52ce820ca676323c7e83fcf5839c2fb481b6a578df5dd609cfa59d336": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_GA",
+      "version": "v1"
+    },
+    "9a43842d77c101de029344cbf995409b57469bafe431d2c949963dae3b932fc1": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_VT",
+      "version": "v1"
+    },
+    "9b347d4acd34d0d06a1d42815db477e3fe07b0bad5775c38fe7320b190083ce7": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2020",
+      "version": "v51"
+    },
+    "9b530fd178af37004a2ea7266eb6b179c1a7eceadc1e45b2e3490046d8294968": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MD",
+      "version": "v1"
+    },
+    "9d56de9675c779c1837d46e164c28e1f57abff44f49f0b15cb444f83dbd796a1": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NE",
+      "version": "v1"
+    },
+    "a13446772ff473c31416e184cd2e66619e56ce619eec589ccdc66453e09741e8": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "exclude_convention_controls",
+      "version": "v53"
+    },
+    "a23cb655edf7327d702dfd2c982133d2495922d26f1285ef822f3ece23f7dbe0": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "start_minus_one",
+      "version": "v51"
+    },
+    "a370cac038273ee88c1eaed9a5f56f488c73eb0dc0306a520f10da4651fea85b": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_meth_precursor_restrictions/v1/card.json",
+      "design_id": "run2_meth_precursor_restrictions",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "a4058f4e2238a021f758eb7ed040f49978dced0a55ec833d77a7e76c1b8280fd": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NY",
+      "version": "v51"
+    },
+    "a5604b9e7390b326e38468094c631380cbb6ed459dbd16fb9d5157e61dd61b3a": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "exclude_2020_2021",
+      "version": "v51"
+    },
+    "a790bb6543926cb9dbbbe2faba019f9e112e54d1505acde2975932361aaba72b": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2021",
+      "version": "v1"
+    },
+    "a799ce2483710b0f35fe2897c1345c95e5c56ed624ba0b5b62e517faf6d62140": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_RI",
+      "version": "v1"
+    },
+    "a8d332436eb87c36d7112e9ae6cb3d45a9141a601c775bf4797a0c99b0c62d82": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_GA",
+      "version": "v1"
+    },
+    "a8d4ea555a01521967b73c06f53d3a8dc8881cc0e0474ec81f00945bb74fa509": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_DE",
+      "version": "v1"
+    },
+    "a8f9cc90c4f00be54a447f046e58326f08947f25dbdbbfbf1fb4f6f5c5c3f5cc": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AZ",
+      "version": "v51"
+    },
+    "a9e26704a1708dfb4cf3f50edfaf2f8aeeeaa46debf1cce2bf607ac2a4428d87": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MD",
+      "version": "v1"
+    },
+    "aadd041035a7549d24a5af299e2ba930532806a364b35341af70f7a599b5d012": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MT",
+      "version": "v51"
+    },
+    "aae66d7861e8fc73bf8a7e48f64fea1be54569b2f8f97a40ce5f122e9393dd78": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NJ",
+      "version": "v51"
+    },
+    "abfce235a2b295c7ad7a6dce786e0fea782c2d9722f419668dec765eae4630e2": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_gender_identity_employment/v1/card.json",
+      "design_id": "run2_gender_identity_employment",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "ac57489a02a968e23d24f073e518deb88c72b2acbf25d45988269ce3f6e7f85f": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NV",
+      "version": "v53"
+    },
+    "aedfdb0be879c494b1dc503bdada937f5a85c5acf02709e4eb24c6027fa8223d": {
+      "card_path": "data/l2_pipeline/jobs/run4/work/run4_lit_nurse_licensure_compact/v4/card.json",
+      "design_id": "run4_lit_nurse_licensure_compact",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v4"
+    },
+    "af248ad7c81b2c2e4a881835d3dc80fd4ec60911b4f1b240243c01407ace3dc8": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WV",
+      "version": "v1"
+    },
+    "afc3b54e3fd2cc765c50f9b35080da92d6b3e73bb723c46107b9b28f0cbaade0": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MO",
+      "version": "v53"
+    },
+    "afe0b9a461500092a1c7a4e3caae81b7072d8e4a6f4467655a1ccead61d65913": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_TN",
+      "version": "v51"
+    },
+    "b01a3911f1c71c129db60ed6bbda34815732fae25b4290ee8a8bf09df1c83db7": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2007",
+      "version": "v51"
+    },
+    "b2c82c9225378d43a3e8acededaba9eaba4334ed7b3ec88b65e76706d5daab75": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_CT",
+      "version": "v51"
+    },
+    "b32ec4fa8e22dc806e7cc1a4555890d53456c78d64a2c88a6f686c16e44889fe": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_VA",
+      "version": "v51"
+    },
+    "b3484b237de2e7bba5d694a5bb1bfd256b086a75579a840016c86c077628c197": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MA",
+      "version": "v1"
+    },
+    "b350f70cf8d1457b409cc044f7e7fe209405a3ecef70c7aa1bfdec0b797a0e6b": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WI",
+      "version": "v51"
+    },
+    "b3bab3e42c583f55e9e93286a61ac126cfb3f8178826678fc2a17b1f892b38f8": {
+      "card_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/c10/fresh_audit_jobs/c12/work/run7_refundable_eitc/v13/card.json",
+      "design_id": "run7_refundable_eitc",
+      "original_scale": "source_measurement",
+      "variant": "drop_uncertain_history_states",
+      "version": "v13"
+    },
+    "b3f5914c1db867a37ee42775b76a3acb0145724b9fdffb774b806a9ac192b7a4": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c11/work/run8_large_capacity_magazine_ban/v12/card.json",
+      "design_id": "run8_large_capacity_magazine_ban",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_homicide_deaths",
+      "version": "v12"
+    },
+    "b499fffb9f8977797f95243619427fb66f1736ed7b230aca6e6da75df2a79b37": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_community_college_bachelor/v1/card.json",
+      "design_id": "run2_community_college_bachelor",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "b57aae4db47ae43f16e17d5bae011b68fde02ee138ad2cbf10d3189f8904fc46": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_FL",
+      "version": "v1"
+    },
+    "b6a01bd8b216d44c9818a3cfbb777cc3998d11ae522b9c0bafcc63f78350fae5": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NC",
+      "version": "v51"
+    },
+    "b926ae86d35ad95ad49379f9b33bdf5a5d0599fa4a7b97aea0a93b0bb0c40529": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IL",
+      "version": "v1"
+    },
+    "ba7679ff927b7656cc90f9e82a9715923a6139797ebb974613bedbfc3c0499cd": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OH",
+      "version": "v51"
+    },
+    "bb9068a6269b5cc85f4e632f429b965064664adbdda49aefcedb4887157e9b5a": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ID",
+      "version": "v1"
+    },
+    "bda6a7da4ab5e749ab159db6f3b554b57d997084dd29cff91758938421543082": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MO",
+      "version": "v51"
+    },
+    "bf8b46b839d6f69d23f90e06c00d08c0e7c9da4fed12bd3958d913bafe9eedb8": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WY",
+      "version": "v1"
+    },
+    "bfe6aae6ca305d2a9f6ba95f6527ce3303197611284056927a1d356659747c2a": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_TN",
+      "version": "v1"
+    },
+    "c21eefab9a382802090c4375b6660a1baba4abf8c5637be7036278c98be3496d": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_KY",
+      "version": "v51"
+    },
+    "c32c53cedf96f2f61e88283da3f22d83a4d3a42f84e9deb7e984433925aa1aa4": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_SC",
+      "version": "v1"
+    },
+    "c5860fe4945995886ada720b0135f9495f4cbd9915936ea5b324d3f8cedecbe9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NY",
+      "version": "v1"
+    },
+    "c8d50a2200e894847be79d6aebb5480f996d0235f3a212746a8943adc3acbdd9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MS",
+      "version": "v1"
+    },
+    "ca03ae7e24b25c5f1c763f8a7e01a7038bd4c6aa7f59a7a878fe5babb8437083": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_CO",
+      "version": "v51"
+    },
+    "cafe43ff15d5d7f7045bd847c6a8db9ed174ee947358d8858d4320ee3fb78111": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WV",
+      "version": "v51"
+    },
+    "cb4ba31e230ff14cef4dbf34bd9cb04824771fd887fe026f525cbbc3e9d62f30": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2020",
+      "version": "v1"
+    },
+    "cc58737bb336a94b49f7bb26804b297c51b05c1506e1448a062f1014582cb3c9": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AL",
+      "version": "v1"
+    },
+    "cec73a30010a26de9c6b1d0f5ee1e9ef874f9fbb52d082d730b62b1e36252b35": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_KY",
+      "version": "v1"
+    },
+    "cf5a089f855e1f1fa5eabd150979c81414fad481b93c3c225f3d4b150d401123": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2006",
+      "version": "v51"
+    },
+    "cf8b70f2b5cce7b98a2894dfaa78b1dc04b69cb0f0c95eafda520d318e431d3f": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "drop_uncertain_history_states",
+      "version": "v51"
+    },
+    "cff5ca2c8ab500a5bc763449a7fb4e7ae7ce3c1c7bde696e79204b3ad6d5e651": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_SD",
+      "version": "v51"
+    },
+    "d13de7e3d9b2764efe23f8d60cc2af83003146e19e401bcff8047aea680e1525": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_individual_development_accounts/v1/card.json",
+      "design_id": "run2_individual_development_accounts",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "d1d6fc8e61250a217f3f29e71971fc4382cd3b9515b54c508bcd450d958dd377": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NJ",
+      "version": "v51"
+    },
+    "d3818ddf47c7897b051f183ede4f7aed650fb7d8d3678a4b6ddd378d25b9644a": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AR",
+      "version": "v1"
+    },
+    "d3cf81a18faff32ed82c12283591b6d866e157d80235fed8db5a71f393b800cf": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "exclude_competing_mechanism",
+      "version": "v1"
+    },
+    "d3d2635a0c53bb42f9de027cadd42ab146dc4bb56d453de19d8e9850c0273344": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_AR",
+      "version": "v1"
+    },
+    "d3e7b986dbcc0b8cfff8b9eb86aab64ee7a2d923b2e4f36452a1cff69e86629d": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_DE",
+      "version": "v51"
+    },
+    "dbb38e9d19327f060b290c9c1303aadee161313743df7b57826ac2b0bf668a27": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OH",
+      "version": "v1"
+    },
+    "dc2e5f35bfe2dbc551993a83c9782f1f700e6dacb1d878bb6a5a5fcc3c0bc943": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NH",
+      "version": "v1"
+    },
+    "dd6685df161da78b6cfe84ffd1329d3285f6cbe06ae636f8f610a86d14caa03b": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "exclude_convention_controls",
+      "version": "v1"
+    },
+    "e166b257e6ee6f608d8486b8f6f89176c00c90b67b0fbc4d026112ec3f77b41a": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IA",
+      "version": "v51"
+    },
+    "e18584a0ba5fd1bc10b06f59bd47c25bbcad1178576e7ca79ae91ed6e5ba6095": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_NM",
+      "version": "v1"
+    },
+    "e20b77deacc8773ed1e44074de95be708a70f60454cdd58fe42eaf0e95ac0c24": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WA",
+      "version": "v1"
+    },
+    "e289905943e5017126ff3b9e2fce528cacc171820b0cc5fd7ffe41b566a84913": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IN",
+      "version": "v53"
+    },
+    "e29e27d25de163027a9b1fa4b107a6d91023eb188b59eff4d658989d5b8d5470": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2016",
+      "version": "v1"
+    },
+    "e2a22c5a36751364f3b8aa584b084187daf58393b4c51a960f13d64095570b1a": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_UT",
+      "version": "v1"
+    },
+    "e3a44d221861d4f1a7e46413455edd0e6895f6b5f16e0b25b27b13d89a87eac1": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "exclude_convention_controls",
+      "version": "v1"
+    },
+    "e4a9a8df4fa2737c65b3bbc245bca49f10c8261d36c7f719331bb9299adace12": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_IN",
+      "version": "v1"
+    },
+    "e52526667dae410aca1101e894a263e7621661307435d9896659ee33f7a1d7cc": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_TX",
+      "version": "v1"
+    },
+    "e5a971975e3ba9c68de1c8ba4d3ee746cb019afcf79fd71d7adedd17426068e3": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ND",
+      "version": "v1"
+    },
+    "e6066ac909023c21d751b72639eaf0c4c5c579213f2beb3dde7e734fc3380d26": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_PA",
+      "version": "v1"
+    },
+    "e94e7548985985e91db2d69c17d8483039bad8072ef10911e0da883a7abf36b7": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v51"
+    },
+    "e983162f90a6db5126cdd9bb2a782a02444353a5bc5b6f1d0baad00395a479bb": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_TX",
+      "version": "v51"
+    },
+    "ed76f5a737c196f8dd7a2c800bd2f8d77f4c452e4a83fa5525f9d2b772057425": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_nurse_overtime/v51/card.json",
+      "design_id": "run1_nurse_overtime",
+      "original_scale": "source_measurement",
+      "variant": "retain_ended_exposure",
+      "version": "v51"
+    },
+    "ed85f25e458087d0c95ef08763a04401978b27aa3cc5dcfa111d74c626679275": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_OR",
+      "version": "v1"
+    },
+    "ee997954c254800ef513b91f4c97f6103fbe7bec3f336d2c61ca273f73a980e3": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_LA",
+      "version": "v51"
+    },
+    "eecd293f77ea3fddd33b2d28255e494d5a2e552034b370eae948f951194f248e": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "not_yet_controls",
+      "version": "v1"
+    },
+    "f0708c04ef6fd833453a665a116ebce6c11e42a3b2ba02263a2962604171536f": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_VT",
+      "version": "v1"
+    },
+    "f14da820cbba639d38f0c802afa51aa755737b1250c848733a546c2753e31bdb": {
+      "card_path": "data/l2_pipeline/jobs/run2/postdispatch/work/run2_breast_density_notification/v1/card.json",
+      "design_id": "run2_breast_density_notification",
+      "original_scale": "source_measurement",
+      "variant": "primary",
+      "version": "v1"
+    },
+    "f1a99f66c001d856a311acf21016de7ad044287a28f18a6e3f8a8d33304097b4": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MO",
+      "version": "v1"
+    },
+    "f284fbfcf4b9817c1a00273babfa0234b5dc8c91cab4bb688b410c7082413f83": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_KS",
+      "version": "v1"
+    },
+    "f2cd387acc192f589cceff3ca5cafee0f4903ebad5167c9104113f914e5b70eb": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_TN",
+      "version": "v53"
+    },
+    "f37fa15ce02aff53295b81d62d9379b36bc26be4dfa0e5bf8f95408eabe888ef": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_ems_compact/v53/card.json",
+      "design_id": "run1_ems_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_ID",
+      "version": "v53"
+    },
+    "f4131ce3c17e8ed02581976d191751406e99b21bff4f3fcd4441aa99b770c59d": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c12/work/run8_universal_background_check/v13/card.json",
+      "design_id": "run8_universal_background_check",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_homicide_deaths",
+      "version": "v13"
+    },
+    "f501570ce8afe7f969e206c41f2a686304072f5fc39ca43a90d654381eb30246": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c12/work/run8_gunshow_background_check/v13/card.json",
+      "design_id": "run8_gunshow_background_check",
+      "original_scale": "source_measurement",
+      "variant": "secondary_wonder_firearm_suicide_deaths",
+      "version": "v13"
+    },
+    "f567334d7e8cfddf55ad407608033a5c72d0277c1a45576cd3f8a52a33a059a9": {
+      "card_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/c10/fresh_audit_jobs/c12/work/run7_refundable_eitc/v13/card.json",
+      "design_id": "run7_refundable_eitc",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v13"
+    },
+    "f8793d4adf4d09859ad064a4adcd49d1a1ddc843876b13c96462d1800ebfebc6": {
+      "card_path": "data/l2_pipeline/sources/research_panel/v8b_20261009/fresh_audit_jobs/confirmed_c10/c11/work/run8_extreme_risk_protection_order/v12/card.json",
+      "design_id": "run8_extreme_risk_protection_order",
+      "original_scale": "source_measurement",
+      "variant": "drop_unresolved_audit_dates",
+      "version": "v12"
+    },
+    "f8f78ce5548c3cdf722e97b2ff0a3789d5e2534e7a371fe6ea51a3e700f80007": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_WY",
+      "version": "v1"
+    },
+    "f9ba4f6508b37a660fcb94f154c6acafc02d4adbe38ac0ddfde9a17dbdfc6bf4": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2024",
+      "version": "v51"
+    },
+    "fa588173791ab746f2593a81969f1223ea091a01fe15160270ad3edeb8be46f3": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_DE",
+      "version": "v1"
+    },
+    "fcc3b982fcb04b8811672e523864b1aad5c72cf5bd0970603c3b6853843462aa": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pregnancy_accommodation/v1/card.json",
+      "design_id": "pregnancy_accommodation",
+      "original_scale": "source_measurement",
+      "variant": "omit_state_MN",
+      "version": "v1"
+    },
+    "fd34123c3c67ec4098323b6904b689c2d0fd00f2f0a70a822329083907b134a4": {
+      "card_path": "data/l2_pipeline/jobs/run1/_v5/work/run1_pt_compact/v51/card.json",
+      "design_id": "run1_pt_compact",
+      "original_scale": "source_measurement",
+      "variant": "omit_cohort_2019",
+      "version": "v51"
+    },
+    "ffb04c9502b1e07f50c409b9560f8f1674640a5199a6782ffaefbe4097b62751": {
+      "card_path": "data/l2_pipeline/acceptance/batch4/pay_secrecy/v1/card.json",
+      "design_id": "pay_secrecy",
+      "original_scale": "source_measurement",
+      "variant": "drop_narrow_coverage",
+      "version": "v1"
+    }
+  },
+  "ignored_runtime_fields": [
+    "_card_path"
+  ],
+  "outcome_association_calls": 0,
+  "purpose": "Exact frozen/finished primary and registered variant mappings before C16b; any scientific mutation revokes exemption",
+  "regeneration": "python3 -B -m scripts.l2_pipeline.connectors.snapshot_legacy_scales --baseline <pre-change LEGACY_VARIANTS_BEFORE.json> --output scripts/l2_pipeline/connectors/LEGACY_OUTCOME_SCALES.json",
+  "schema": "exact_legacy_outcome_scales_v1"
+}

@@ -1,0 +1,405 @@
+{
+ "question": "Q2 time to first visible effect",
+ "plan_sha256": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+ "seed": 20261024,
+ "n_perm": 5000,
+ "consistency_check": "roster overall_att and beyond_noise equal live point_estimate / beyond_noise: OK (77 designs)",
+ "n_eligible_primary": 69,
+ "n_eligible_secondary": 43,
+ "n_expected_primary": 69,
+ "primary": {
+  "n": 69,
+  "by_domain": {
+   "crime": {
+    "n": 13,
+    "median_T": 1.0,
+    "share_visible_by_year2": 0.8461538461538461,
+    "share_never_visible": 0.07692307692307693,
+    "mostly_not_visible_within_5_years": false
+   },
+   "environment": {
+    "n": 5,
+    "median_T": 3.0,
+    "share_visible_by_year2": 0.4,
+    "share_never_visible": 0.2,
+    "mostly_not_visible_within_5_years": false
+   },
+   "health": {
+    "n": 19,
+    "median_T": 1.0,
+    "share_visible_by_year2": 0.7368421052631579,
+    "share_never_visible": 0.21052631578947367,
+    "mostly_not_visible_within_5_years": false
+   },
+   "labor": {
+    "n": 16,
+    "median_T": 5.0,
+    "share_visible_by_year2": 0.375,
+    "share_never_visible": 0.5,
+    "mostly_not_visible_within_5_years": false
+   },
+   "other": {
+    "n": 10,
+    "median_T": 2.0,
+    "share_visible_by_year2": 0.6,
+    "share_never_visible": 0.4,
+    "mostly_not_visible_within_5_years": false
+   },
+   "public_finance": {
+    "n": 6,
+    "median_T": 2.0,
+    "share_visible_by_year2": 0.5,
+    "share_never_visible": 0.3333333333333333,
+    "mostly_not_visible_within_5_years": false
+   }
+  },
+  "qualifying_groups": [
+   "crime",
+   "health",
+   "labor",
+   "other"
+  ],
+  "min_check": {
+   "total_ok": true,
+   "groups_ok": true,
+   "total": 69,
+   "min_total": 30,
+   "min_group": 8,
+   "group_sizes": {
+    "health": 19,
+    "crime": 13,
+    "public_finance": 6,
+    "labor": 16,
+    "other": 10,
+    "environment": 5
+   }
+  },
+  "status": "ok",
+  "gap": 4.0,
+  "pair_hi_lo": [
+   "labor",
+   "crime"
+  ],
+  "null_p95": 5.0,
+  "null_mean": 2.5443,
+  "null_p50": 2.5,
+  "null_p5": 1.0,
+  "null_p99": 6.0,
+  "p_gap": 0.15396920615876825,
+  "rule_gap_ge_2": true,
+  "rule_above_p95": false,
+  "pattern": false
+ },
+ "secondary": {
+  "n": 43,
+  "by_domain": {
+   "crime": {
+    "n": 11,
+    "median_T": 6.0,
+    "share_visible_by_year2": 0.09090909090909091,
+    "share_never_visible": 0.9090909090909091,
+    "mostly_not_visible_within_5_years": true
+   },
+   "environment": {
+    "n": 3,
+    "median_T": 6.0,
+    "share_visible_by_year2": 0.0,
+    "share_never_visible": 1.0,
+    "mostly_not_visible_within_5_years": true
+   },
+   "health": {
+    "n": 9,
+    "median_T": 6.0,
+    "share_visible_by_year2": 0.2222222222222222,
+    "share_never_visible": 0.6666666666666666,
+    "mostly_not_visible_within_5_years": true
+   },
+   "labor": {
+    "n": 13,
+    "median_T": 6.0,
+    "share_visible_by_year2": 0.0,
+    "share_never_visible": 0.9230769230769231,
+    "mostly_not_visible_within_5_years": true
+   },
+   "other": {
+    "n": 3,
+    "median_T": 6.0,
+    "share_visible_by_year2": 0.0,
+    "share_never_visible": 1.0,
+    "mostly_not_visible_within_5_years": true
+   },
+   "public_finance": {
+    "n": 4,
+    "median_T": 6.0,
+    "share_visible_by_year2": 0.25,
+    "share_never_visible": 0.75,
+    "mostly_not_visible_within_5_years": true
+   }
+  },
+  "qualifying_groups": [
+   "crime",
+   "health",
+   "labor"
+  ],
+  "min_check": {
+   "total_ok": true,
+   "groups_ok": true,
+   "total": 43,
+   "min_total": 30,
+   "min_group": 8,
+   "group_sizes": {
+    "health": 9,
+    "crime": 11,
+    "public_finance": 4,
+    "labor": 13,
+    "other": 3,
+    "environment": 3
+   }
+  },
+  "status": "ok",
+  "gap": 0.0,
+  "pair_hi_lo": [
+   "crime",
+   "health"
+  ],
+  "null_p95": 0.0,
+  "null_mean": 0.002,
+  "null_p50": 0.0,
+  "null_p5": 0.0,
+  "null_p99": 0.0,
+  "p_gap": 1.0,
+  "rule_gap_ge_2": false,
+  "rule_above_p95": false,
+  "pattern": false
+ },
+ "guards": {
+  "one_vote_per_law": {
+   "n_laws": 52,
+   "gap": 3.0,
+   "pair_hi_lo": [
+    "labor",
+    "crime"
+   ],
+   "null_p95": 4.0,
+   "rule_gap_ge_2": true,
+   "rule_above_p95": false,
+   "pattern": false,
+   "group_sizes": {
+    "health": 10,
+    "labor": 14,
+    "other": 8,
+    "public_finance": 5,
+    "crime": 11,
+    "environment": 4
+   },
+   "medians": {
+    "crime": 1.0,
+    "health": 1.0,
+    "labor": 4.0,
+    "other": 1.0
+   }
+  },
+  "leave_one_law_out": {
+   "n_drops": 52,
+   "min_gap": 3.0,
+   "max_gap": 5.0,
+   "n_drops_gap_below_2": 0,
+   "laws_dropping_below_2": [],
+   "gap_ge_2_in_all": true
+  }
+ },
+ "sensitivities": {
+  "censor5": {
+   "n": 69,
+   "status": "ok",
+   "gap": 3.5,
+   "pair_hi_lo": [
+    "labor",
+    "crime"
+   ],
+   "null_p95": 4.5,
+   "pattern": false,
+   "by_domain": {
+    "crime": {
+     "n": 13,
+     "median_T": 1.0,
+     "share_visible_by_year2": 0.8461538461538461,
+     "share_never_visible": 0.07692307692307693,
+     "mostly_not_visible_within_5_years": false
+    },
+    "environment": {
+     "n": 5,
+     "median_T": 3.0,
+     "share_visible_by_year2": 0.4,
+     "share_never_visible": 0.2,
+     "mostly_not_visible_within_5_years": false
+    },
+    "health": {
+     "n": 19,
+     "median_T": 1.0,
+     "share_visible_by_year2": 0.7368421052631579,
+     "share_never_visible": 0.21052631578947367,
+     "mostly_not_visible_within_5_years": false
+    },
+    "labor": {
+     "n": 16,
+     "median_T": 4.5,
+     "share_visible_by_year2": 0.375,
+     "share_never_visible": 0.5,
+     "mostly_not_visible_within_5_years": false
+    },
+    "other": {
+     "n": 10,
+     "median_T": 2.0,
+     "share_visible_by_year2": 0.6,
+     "share_never_visible": 0.4,
+     "mostly_not_visible_within_5_years": false
+    },
+    "public_finance": {
+     "n": 6,
+     "median_T": 2.0,
+     "share_visible_by_year2": 0.5,
+     "share_never_visible": 0.3333333333333333,
+     "mostly_not_visible_within_5_years": false
+    }
+   }
+  },
+  "drop_thin": {
+   "n": 59,
+   "status": "ok",
+   "gap": 5.5,
+   "pair_hi_lo": [
+    "labor",
+    "crime"
+   ],
+   "null_p95": 6.0,
+   "pattern": false,
+   "by_domain": {
+    "crime": {
+     "n": 12,
+     "median_T": 0.5,
+     "share_visible_by_year2": 0.8333333333333334,
+     "share_never_visible": 0.08333333333333333,
+     "mostly_not_visible_within_5_years": false
+    },
+    "environment": {
+     "n": 4,
+     "median_T": 1.5,
+     "share_visible_by_year2": 0.5,
+     "share_never_visible": 0.25,
+     "mostly_not_visible_within_5_years": false
+    },
+    "health": {
+     "n": 16,
+     "median_T": 1.0,
+     "share_visible_by_year2": 0.6875,
+     "share_never_visible": 0.25,
+     "mostly_not_visible_within_5_years": false
+    },
+    "labor": {
+     "n": 14,
+     "median_T": 6.0,
+     "share_visible_by_year2": 0.35714285714285715,
+     "share_never_visible": 0.5714285714285714,
+     "mostly_not_visible_within_5_years": true
+    },
+    "other": {
+     "n": 8,
+     "median_T": 2.0,
+     "share_visible_by_year2": 0.625,
+     "share_never_visible": 0.375,
+     "mostly_not_visible_within_5_years": false
+    },
+    "public_finance": {
+     "n": 5,
+     "median_T": 0.0,
+     "share_visible_by_year2": 0.6,
+     "share_never_visible": 0.4,
+     "mostly_not_visible_within_5_years": false
+    }
+   }
+  },
+  "unstratified_shuffle": {
+   "n": 69,
+   "status": "ok",
+   "gap": 4.0,
+   "pair_hi_lo": [
+    "labor",
+    "crime"
+   ],
+   "null_p95": 5.0,
+   "pattern": false,
+   "by_domain": {
+    "crime": {
+     "n": 13,
+     "median_T": 1.0,
+     "share_visible_by_year2": 0.8461538461538461,
+     "share_never_visible": 0.07692307692307693,
+     "mostly_not_visible_within_5_years": false
+    },
+    "environment": {
+     "n": 5,
+     "median_T": 3.0,
+     "share_visible_by_year2": 0.4,
+     "share_never_visible": 0.2,
+     "mostly_not_visible_within_5_years": false
+    },
+    "health": {
+     "n": 19,
+     "median_T": 1.0,
+     "share_visible_by_year2": 0.7368421052631579,
+     "share_never_visible": 0.21052631578947367,
+     "mostly_not_visible_within_5_years": false
+    },
+    "labor": {
+     "n": 16,
+     "median_T": 5.0,
+     "share_visible_by_year2": 0.375,
+     "share_never_visible": 0.5,
+     "mostly_not_visible_within_5_years": false
+    },
+    "other": {
+     "n": 10,
+     "median_T": 2.0,
+     "share_visible_by_year2": 0.6,
+     "share_never_visible": 0.4,
+     "mostly_not_visible_within_5_years": false
+    },
+    "public_finance": {
+     "n": 6,
+     "median_T": 2.0,
+     "share_visible_by_year2": 0.5,
+     "share_never_visible": 0.3333333333333333,
+     "mostly_not_visible_within_5_years": false
+    }
+   }
+  }
+ },
+ "secondary_pattern": false,
+ "pattern_rule_check": {
+  "primary_minimum_met": true,
+  "primary_gap_ge_2_years": true,
+  "primary_gap_above_shuffle_p95": false,
+  "secondary_minimum_met": true,
+  "secondary_gap_ge_2_years": false,
+  "secondary_gap_above_shuffle_p95": false,
+  "primary_pattern": false,
+  "secondary_pattern_required_too_stricter_reading": false,
+  "guards_one_vote_per_law_and_leave_one_law_out_hold": false
+ },
+ "PATTERN": false,
+ "verdict": "no difference",
+ "guards_note": "guards are reported; the pattern decision follows the plan rule (primary gap and shuffle, plus the secondary rule on its own minimum, stricter reading); guards_hold is listed beside it",
+ "plain": {
+  "line1": "Result: no difference.",
+  "line2": "Largest gap between medians of two domain groups (>= 8 designs each) 4.0 years (labor later than crime); shuffle 95th percentile 5.0; median onset by domain (6 = not yet visible): crime 1.0, environment 3.0, health 1.0, labor 5.0, other 2.0, public_finance 2.0.",
+  "line3": "n = 69 designs (primary), 43 (secondary); secondary gap 0.0; verdict follows the plan rule only."
+ },
+ "inputs_sha256": {
+  "plan": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+  "live_json": "f5941f590049d1484c81ce43332a33f2436a8d36e191ff08c5f6d408e95586e8",
+  "design_roster.csv": "75471faa2ee0eddd98c780dce56bccb378558d8b144397d77554786975a2f6d6",
+  "event_study_export.csv": "6dde1706dec746da656cab5acbad646bbbe4a880d890e99b6efc688ad3e481f6",
+  "policy_keys.csv": "6fdd596d1f2f728497e59213f80571b32018c66dddca0d66f2ae64615a80d15e"
+ }
+}

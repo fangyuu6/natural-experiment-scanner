@@ -1,0 +1,24 @@
+{
+  "policy_id": "paid_sick_leave",
+  "verified_by": "agent-V3",
+  "as_of": "2025-12-31",
+  "n_states_blind": 18,
+  "n_agree": 18,
+  "n_year_diff": 0,
+  "n_only_them": 0,
+  "n_only_us": 0,
+  "details": {},
+  "notes": {
+    "blind_phase": "Blind list from NPWF July 2026 chart (19 jurisdictions incl. DC and VA 2027), Wikipedia table, ABB list, law-firm/state pages; built before opening research states. Same 18 adopters and years as research. Caveat: the researcher also used NPWF/ABB, so agreement is not fully independent; I therefore re-opened primary or law-firm pages for DC, MD, MI, NE, AK, CO, MO, VA.",
+    "known_doubts_settled": {
+      "DC_vs_CT": "DC counts (51-unit panel): ASSLA 2008, employer duties from 2008-11-13; CT 2012 is the first STATE. Kept DC 2008.",
+      "MI": "Kept 2019: Paid Medical Leave Act (PA 369 of 2018, eff 2019-03-29, 50+ employers) was a paid sick leave mandate until ESTA reinstated 2025-02-21 (NPWF/ABB show only 2025). Definitional call; alternative 2025 recorded in note, confidence medium.",
+      "NY": "Kept 2020 (law effective 2020-09-30, accrual began); leave usable from 2021-01-01; alternative 2021 in note.",
+      "MO": "Excluded: Prop A leave 2025-05-01 to 2025-08-27, repealed by HB 567 (signed 2025-07-10); nothing in force at as-of.",
+      "VA": "Excluded: signed 2026-05-20, effective July 2027.",
+      "ME_NV_IL": "Excluded: NPWF lists them as any-purpose PTO laws (ME 1/2021, NV 1/2020, IL 1/2024), not paid sick days.",
+      "CO": "2021 kept: accrual from 2021-01-01 for 16+ employers (all employers 2022); 2020 provisions were COVID public-health-emergency leave."
+    },
+    "search_budget": "WebSearch budget ran out during the TNC blind phase; PSL checks were completed before that."
+  }
+}

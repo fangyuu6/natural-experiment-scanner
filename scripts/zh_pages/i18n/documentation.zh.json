@@ -1,0 +1,171 @@
+[
+  {
+    "en": "483,414 unique policy texts: 41,496 state legislative, 315,727 federal regulatory, 125,919 federal legislative and 272 state executive orders. Sources: Open States, Federal Register, Regulations.gov, eCFR and GovInfo.",
+    "zh": "483,414 份不重复政策文本：州立法 41,496、联邦法规 315,727、联邦立法 125,919、州行政命令 272。来源：Open States、Federal Register、Regulations.gov、eCFR 与 GovInfo。",
+    "all": true
+  },
+  {
+    "en": "The checks need data beyond the policy text: for RD, manipulation around the cutoff and other policies at the threshold; for DiD, parallel trends, anticipation, spillovers and reasons for adoption.",
+    "zh": "这些检验需要政策文本之外的数据：断点回归检验断点附近的操纵及同一阈值上的其他政策；双重差分检验平行趋势、预期效应、溢出与政策采纳原因。",
+    "all": true
+  },
+  {
+    "en": "No adoption wave: exclude a state policy if sampled texts show its policy type enacted in three or more states or DC within a year before or after.",
+    "zh": "无采纳潮：若抽样文本显示同类政策前后各一年内已在至少三个州或哥伦比亚特区颁布，则剔除该州政策。",
+    "all": true
+  },
+  {
+    "en": "<a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6487478\">Earlier public draft (June 2026)</a>. Current figures come from the revised draft dated September 30, 2026.",
+    "zh": "<a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6487478\">较早公开稿（2026 年 6 月）</a>。当前数字来自 2026 年 9 月 30 日的<span class=\"nx-seg\">修订稿。</span>",
+    "all": true
+  },
+  {
+    "en": "AI screens policy texts for numerical thresholds, eligibility cutoffs and variation across states or time. The candidate list uses earlier assessments than the benchmark.",
+    "zh": "AI 筛查政策文本中的数值阈值、资格断点及跨州或跨时间的差异。候选清单使用比基准更早的评估。",
+    "all": true
+  },
+  {
+    "en": "content=\"Method for Natural Experiment Scanner: we screen US policy texts for RD and DiD research, re-estimate published papers with independently written code, and study patterns across policies.\"",
+    "zh": "content=\"自然实验扫描器研究方法：筛查政策文本、重新估计已发表论文与研究跨政策的规律。\""
+  },
+  {
+    "en": "The estimate comparison uses independently written AI code and the code’s first estimate of each paper’s selected coefficient. The adoption study’s sample and analysis plan were set in advance.",
+    "zh": "估计比较使用 AI 独立编写的代码，以及该代码对各论文选定系数的首次估计；采纳研究的样本与分析计划均事先确定。",
+    "all": true
+  },
+  {
+    "en": "We screen US policy texts for regression discontinuity (RD) and difference-in-differences (DiD) research, re-estimate published papers with independently written code, and study patterns across policies.",
+    "zh": "我们筛查<wbr>适合<wbr>断点回归（RD）<wbr>与双重差分（DiD）<wbr>研究的<wbr>美国政策文本，<wbr>用独立编写的代码<wbr>重新估计<wbr>已发表论文，<wbr>并研究<wbr>跨政策的规律。",
+    "all": true
+  },
+  {
+    "en": "Research potential: identification, policy significance, treatment intensity and data feasibility each score at least 3 of 5.",
+    "zh": "研究潜力：识别、政策重要性、处理强度、数据可行性均不低于 3 分（满分 5）。",
+    "all": true
+  },
+  {
+    "en": "Data availability: a named dataset must match a public source, or restricted data must be named alongside a dataset that matches no known source.",
+    "zh": "数据可得性：所列数据集中至少有一个与公开来源对应，或在列出受限数据的同时，列有一个不对应任何已知来源的数据集。",
+    "all": true
+  },
+  {
+    "en": "Callaway, B. and Sant’Anna, P. H. C. (2021). “Difference-in-Differences with Multiple Time Periods.” <em>Journal of Econometrics</em> 225(2): 200–230.",
+    "zh": "Callaway, B. 与 Sant’Anna, P. H. C.（2021）。“Difference-in-Differences with Multiple Time Periods.” <em>Journal of Econometrics</em> 225(2): 200–230.",
+    "all": true
+  },
+  {
+    "en": "State bills, 2016–2026: about 10% of enacted, non-ceremonial bills in most states; coverage varies.",
+    "zh": "州法案，2016–2026 年：多数州约 10% 的已颁布、非礼仪性法案；覆盖不一。",
+    "all": true
+  },
+  {
+    "en": "Lee, D. S. and Lemieux, T. (2010). “Regression Discontinuity Designs in Economics.” <em>Journal of Economic Literature</em> 48(2): 281–355.",
+    "zh": "Lee, D. S. 与 Lemieux, T.（2010）。“Regression Discontinuity Designs in Economics.” <em>Journal of Economic Literature</em> 48(2): 281–355.",
+    "all": true
+  },
+  {
+    "en": "Assessments consider the research question, changes in policy exposure, potential comparison groups and available outcome data.",
+    "zh": "评估关注研究问题、政策暴露的变化、潜在对照组与可用的结果数据。",
+    "all": true
+  },
+  {
+    "en": "Roth, J. et al. (2023). “What’s Trending in Difference-in-Differences?” <em>Journal of Econometrics</em> 235(2): 2218–2244.",
+    "zh": "Roth, J. 等（2023）。“What’s Trending in Difference-in-Differences?” <em>Journal of Econometrics</em> 235(2): 2218–2244.",
+    "all": true
+  },
+  {
+    "en": "{{screening_shortlist}} candidates; {{screening_zero_public}} have no matched public dataset.",
+    "zh": "{{screening_shortlist}} 条候选；{{screening_zero_public}} 条无对应的公开数据集。",
+    "all": true
+  },
+  {
+    "en": "content=\"A database of 483,414 unique policy texts scored for causal research potential using RD and DiD designs.\"",
+    "zh": "content=\"包含483,414份不重复政策文本的研究数据库。\""
+  },
+  {
+    "en": "Enacted: federal legislation needs a public-law number.",
+    "zh": "已颁布：联邦立法须有公法编号。",
+    "all": true
+  },
+  {
+    "en": "Outside the COVID period (2020–2021).",
+    "zh": "避开疫情期间（2020–2021 年）。",
+    "all": true
+  },
+  {
+    "en": "<title>Method · Natural Experiment Scanner</title>",
+    "zh": "<title>方法 · 自然实验扫描器</title>"
+  },
+  {
+    "en": "content=\"Method · Natural Experiment Scanner\"",
+    "zh": "content=\"方法 · 自然实验扫描器\""
+  },
+  {
+    "en": "Adoption data and sources",
+    "zh": "采纳数据与来源",
+    "all": true
+  },
+  {
+    "en": "aria-label=\"Toggle navigation\"",
+    "zh": "aria-label=\"切换导航\""
+  },
+  {
+    "en": "Screening results",
+    "zh": "筛查结果",
+    "all": true
+  },
+  {
+    "en": "Estimate comparison",
+    "zh": "估计比较",
+    "all": true
+  },
+  {
+    "en": ">Checking identification<",
+    "zh": ">识别检验<",
+    "all": true
+  },
+  {
+    "en": ">Estimates and adoption<",
+    "zh": ">估计与采纳<",
+    "all": true
+  },
+  {
+    "en": "Adoption study",
+    "zh": "采纳研究",
+    "all": true
+  },
+  {
+    "en": ">Overview<",
+    "zh": ">概览<",
+    "all": true
+  },
+  {
+    "en": ">Research design<",
+    "zh": ">研究设计<",
+    "all": true
+  },
+  {
+    "en": ">Data sources<",
+    "zh": ">数据来源<",
+    "all": true
+  },
+  {
+    "en": ">References<",
+    "zh": ">参考文献<",
+    "all": true
+  },
+  {
+    "en": ">Screening<",
+    "zh": ">筛查<",
+    "all": true
+  },
+  {
+    "en": ">Method<",
+    "zh": ">方法<",
+    "all": true
+  },
+  {
+    "en": "content=\"natural experiment, policy database, regression discontinuity, difference-in-differences, causal inference, policy evaluation\"",
+    "zh": "content=\"自然实验，政策数据库，断点回归，双重差分，因果推断，政策评估\""
+  }
+]

@@ -1,0 +1,22 @@
+/* Home motion figure (the fourteenth round of the motion concept). Light only; the canvas palette is the --v-* tokens below. */
+.mf-sec{margin-top:28px;min-width:0}
+.mf{--v-bg:#ffffff;--v-ink:#111827;--v-text:#4b5563;--v-muted:#6b7280;--v-faint:#9ca3af;--v-hair:#e5e7eb;--v-land:#eceef2;--v-accent:#1d4ed8;--v-accent2:#7ba4f0;
+  --v-b1:#a8c5f9;--v-b2:#7ba4f0;--v-b3:#5283e0;--v-b4:#3263c3;--v-b5:#1e4798;--v-amber:#d97706;--v-match:#2166ac;--v-dir:#9a6700;--v-nc:#64748b;--v-os:#a23b72;--v-slate:#8793a6;
+  position:relative;max-width:var(--mf-max,1100px);margin:0;padding:0;overflow:hidden;background:var(--v-bg);border:1px solid var(--nx-line,#e5e7eb);border-radius:12px;font-family:var(--nx-sans,sans-serif);color:var(--nx-text,#4b5563);min-width:0}
+.mf *{box-sizing:border-box}
+.mf-stage{position:relative;width:100%;aspect-ratio:16/9;min-height:440px;overflow:hidden}
+@media(max-width:719px){.mf-stage{aspect-ratio:358/540;min-height:0;max-height:680px}}
+@media(max-width:379px){.mf-stage{aspect-ratio:auto;height:calc(100vw * 1.62)}}
+.mf-canvas{position:absolute;left:0;top:0;width:100%;height:100%;display:block}
+.mf-ctl{position:absolute;top:2px;right:4px;z-index:3;display:flex}
+.mf-btn{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0;padding:0;border:0;background:transparent;color:var(--nx-ink,#111827);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mf-btn svg{width:28px;height:28px;padding:6px;border:1px solid var(--nx-line-2,#d1d5db);border-radius:50%;background:#fff;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.mf-btn:hover{color:var(--nx-accent,#1d4ed8)}
+.mf-btn:focus-visible{outline:2px solid var(--nx-accent,#1d4ed8);outline-offset:-4px;border-radius:10px}
+.mf-btn .mf-i-play{display:none}
+.mf-btn.is-paused .mf-i-play{display:block}.mf-btn.is-paused .mf-i-pause{display:none}
+/* without script: the text alternative in the page flow; with script it is hidden (the canvas carries it as its label) */
+.mf-nojs{margin:0;padding:20px 24px;font-size:15px;line-height:1.6;color:var(--nx-text,#4b5563)}
+.mf-js .mf-nojs{display:none}
+.mf:not(.mf-js) .mf-stage{display:none}
+@media print{.mf-ctl{display:none}}

@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "status_vocabulary": [
+    "survey_candidate",
+    "source_confirmed",
+    "local_panel_validated"
+  ],
+  "source_note": "Candidate metadata transcribed from the local 2026-10-01 feasibility survey; no source or observed-panel coverage check performed.",
+  "survey_evidence": {
+    "file_name": "did_sample_feasibility.md",
+    "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac"
+  },
+  "records": [
+    {
+      "id": "irs_migration",
+      "family_ids": [
+        "license_recognition"
+      ],
+      "status": "survey_candidate",
+      "series": "IRS SOI migration",
+      "provider": "IRS Statistics of Income",
+      "population": "Tax filers and dependents",
+      "measure": "State-to-state and county-to-county migration",
+      "frequency": "annual",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state/county",
+      "access": "Free CSV; no key",
+      "breaks": "No occupation detail.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 1
+      }
+    },
+    {
+      "id": "acs_licensed_movers",
+      "family_ids": [
+        "license_recognition"
+      ],
+      "status": "survey_candidate",
+      "series": "ACS PUMS",
+      "provider": "US Census Bureau",
+      "population": "In-movers in licensed occupations",
+      "measure": "Share of in-movers working in licensed occupations",
+      "frequency": null,
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Census FTP CSV; IPUMS requires registration",
+      "breaks": "Requires SOC grouping; small cells.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 1
+      }
+    },
+    {
+      "id": "oews_nurses",
+      "family_ids": [
+        "nurse_licensure_compact"
+      ],
+      "status": "survey_candidate",
+      "series": "OEWS registered nurses",
+      "provider": "US Bureau of Labor Statistics",
+      "population": "Registered nurses",
+      "measure": "Employment and wages",
+      "frequency": "annual May",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Free",
+      "breaks": "Methodology and SOC breaks reported for 2019 and 2021.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 2
+      }
+    },
+    {
+      "id": "acs_nurses",
+      "family_ids": [
+        "nurse_licensure_compact"
+      ],
+      "status": "survey_candidate",
+      "series": "ACS PUMS nurses",
+      "provider": "US Census Bureau",
+      "population": "Registered nurses",
+      "measure": "Counts and movers",
+      "frequency": null,
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": null,
+      "breaks": null,
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 2
+      }
+    },
+    {
+      "id": "ahrf_physicians",
+      "family_ids": [
+        "medical_licensure_compact"
+      ],
+      "status": "survey_candidate",
+      "series": "Area Health Resource File",
+      "provider": "HRSA",
+      "population": "Physicians",
+      "measure": "Physician counts",
+      "frequency": "annual",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state/county",
+      "access": "Free",
+      "breaks": null,
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 3
+      }
+    },
+    {
+      "id": "fars_alcohol",
+      "family_ids": [
+        "tnc_framework"
+      ],
+      "status": "survey_candidate",
+      "series": "FARS alcohol-impaired fatalities",
+      "provider": "NHTSA",
+      "population": "Road users",
+      "measure": "Alcohol-impaired fatalities per capita",
+      "frequency": "annual",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Free CSV; no key",
+      "breaks": null,
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 4
+      }
+    },
+    {
+      "id": "nonemployer_tnc",
+      "family_ids": [
+        "tnc_framework"
+      ],
+      "status": "survey_candidate",
+      "series": "Nonemployer Statistics NAICS 4853",
+      "provider": "US Census Bureau",
+      "population": "Nonemployer businesses",
+      "measure": null,
+      "frequency": "annual",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "State-by-industry availability unverified in survey",
+      "breaks": null,
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 4
+      }
+    },
+    {
+      "id": "qcew_private",
+      "family_ids": [
+        "paid_sick_leave"
+      ],
+      "status": "survey_candidate",
+      "series": "QCEW private-sector industry 10",
+      "provider": "US Bureau of Labor Statistics",
+      "population": "Private-sector wage and salary jobs",
+      "measure": "Employment and average weekly wage",
+      "frequency": "quarterly",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Free CSV slices; no key",
+      "breaks": "Excludes self-employed; wages include bonuses.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 5
+      }
+    },
+    {
+      "id": "qcew_food",
+      "family_ids": [
+        "paid_sick_leave",
+        "min_wage_15"
+      ],
+      "status": "survey_candidate",
+      "series": "QCEW accommodation/food and food services",
+      "provider": "US Bureau of Labor Statistics",
+      "population": "Wage and salary jobs in NAICS 72 / 722",
+      "measure": "Employment and average weekly wage",
+      "frequency": "quarterly",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Free",
+      "breaks": "NAICS revisions reported for 2002, 2007, 2012, 2017 and 2022; separate industry definitions.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 8
+      }
+    },
+    {
+      "id": "cps_pfl",
+      "family_ids": [
+        "paid_family_leave"
+      ],
+      "status": "survey_candidate",
+      "series": "CPS MORG",
+      "provider": "NBER CPS MORG",
+      "population": "Mothers of infants",
+      "measure": "Leave-taking and employment",
+      "frequency": null,
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Free Stata files; no registration",
+      "breaks": "No free state aggregate for mothers of infants; requires microdata.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 6
+      }
+    },
+    {
+      "id": "cps_salary",
+      "family_ids": [
+        "salary_history_ban"
+      ],
+      "status": "survey_candidate",
+      "series": "CPS ORG / MORG",
+      "provider": "NBER CPS MORG",
+      "population": "Workers",
+      "measure": "Log hourly wage and female-to-male earnings ratio",
+      "frequency": "annual aggregation",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Free",
+      "breaks": "Small state-year cells; population rules still to be fixed.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 7
+      }
+    },
+    {
+      "id": "acs_salary",
+      "family_ids": [
+        "salary_history_ban"
+      ],
+      "status": "survey_candidate",
+      "series": "ACS PUMS",
+      "provider": "US Census Bureau",
+      "population": "Workers",
+      "measure": "Log hourly wage and female-to-male earnings ratio",
+      "frequency": "annual aggregation",
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": "Census FTP; free",
+      "breaks": "Small state-year cells; population rules still to be fixed.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 7
+      }
+    },
+    {
+      "id": "cps_teen",
+      "family_ids": [
+        "min_wage_15"
+      ],
+      "status": "survey_candidate",
+      "series": "CPS microdata",
+      "provider": null,
+      "population": "Teenagers",
+      "measure": "Employment",
+      "frequency": null,
+      "first_observed_year": null,
+      "last_observed_year": null,
+      "missing_years": null,
+      "geography": "state",
+      "access": null,
+      "breaks": "Requires microdata.",
+      "source_confirmed_metadata": null,
+      "local_panel_validation": null,
+      "survey_evidence": {
+        "file_name": "did_sample_feasibility.md",
+        "sha256": "688f36d90a75927f63e5a30af7642b6ab9fdc053c5cd024eaed944339a9264ac",
+        "section": 8
+      }
+    }
+  ]
+}

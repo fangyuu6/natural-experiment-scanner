@@ -1,0 +1,26 @@
+# L3 meta preregistration skeleton
+
+This is a proposal, without an approval or freeze claim. The research plan is `docs/plans/l3-meta/PREREG_L3_META.md`; `plan.json` is its machine-readable companion. The owner targets 100 distinct L2 designs. With 21 already exposed designs, a signed prospective freeze can contain at most 79 pristine designs at that milestone; the milestone at 50 permits at most 29. The public prototypes remain descriptive.
+
+The CLI uses Python's standard library and implements only:
+
+```sh
+python3 scripts/l3_meta/cli.py plan
+python3 scripts/l3_meta/cli.py power
+python3 scripts/l3_meta/cli.py validate-metadata /explicit/path/to/normalized_metadata.json
+python3 -B -m unittest discover -s scripts/l3_meta -p 'test_*.py' -v
+```
+
+`estimate` always exits 2 with `NOT_IMPLEMENTED`, including under `python3 -O`. There is no estimation, score computation, network client, source registry adapter, result-directory discovery, `run.result` reader, or write-back route. `validate-metadata` reads only the explicit JSON path and rejects fields outside the strict metadata allowlist. The caller must supply normalized metadata, not a raw registry or result bundle. It prints counts/statuses only and never treats a validation result as approval to estimate.
+
+`contracts.schema.json` describes the prospective metadata contract. The CLI additionally checks unique design IDs, one prespecified primary-outcome slot per design, registry identity, exclusive probability sums, forecaster IDs, and a missing reason for every null field. A missing outcome can have nullable outcome ID/definition/unit/alignment with explicit reasons; it still occupies its design denominator. Stopped and unestimated designs remain rows. Timezone-aware enrollment, status-update and terminal timestamps preserve fixed-age60 and censored denominators; terminal dispositions cannot omit their dates. Missing probabilities are null forecast records with reasons, never zero probabilities. Sign alignment is ±1 with a definition fixed before seeing outcomes. Metadata provenance records source IDs and SHA-256 identities; timestamps and lock flags need an independent review and are not self-authenticating.
+
+Forecast metadata must declare either the probability of a positive realized estimator or three mutually exclusive probabilities (above positive noise threshold, inside noise band, below negative threshold), with the threshold specification identified. The latter sum to one and remain descriptive for historical ledgers. The future primary requires five explicit positive-sign forecast slots; their Brier losses are averaged within each design. This differs from scoring an averaged probability. A point/range forecast is not retrofitted into probabilities. Forecast rows are not independent sample units. The final signed forecast contract must additionally lock centers, 80% intervals, units, exposure and diagnostic-event forecasts identified in `plan.json`; current validation is a metadata check, not an eligibility decision. Neither validation nor `power` computes averages, Brier scores, gaps, regressions or placebo comparisons.
+
+`power` gives analytical planning benchmarks at eligible independent N=50/100 and prospective maxima N=29/79. It uses Bonferroni alpha .01 for five questions, two-sided normal mean and correlation approximations, a worst-case 99% proportion precision approximation, and exact one-sided binomial tail inversion against a .05 noise-exceedance null. Pairwise/two-group benchmarks cannot certify six-domain omnibus power. Matching, missing inputs and common shocks further reduce effective N; the final freeze needs synthetic simulations for the actual dependence, Q4 variance correction and Q5 allocation. No real L2 outputs are read to calibrate these values.
+
+The protocol stops enrollment at the 100-design terminal checkpoint or freeze+six calendar months, then closes metadata at age60 for the last enrolled design. N=50 permits metadata review only. Q1–Q4 require at least 20 eligible policy families and validated joint influence scores, with both family-block and shared-state/year error propagation; Q5 requires at least five designs in each of six domains. None of these inference procedures is implemented here. Inadequate support makes the primary unavailable rather than authorizing an independent-design fallback.
+
+The future read-only adapter must whitelist registry design/status/source/spec metadata without touching `run.result`; outcome ingestion needs a separate reviewed module after final signed freeze. Later execution must preserve all source IDs, hash identities, stopped reasons, missingness and versioned text → policy → design denominators. No data were downloaded by these tools.
+
+Enrollment closes at total100 admitted designs or freeze+6 months; all reach processing age60 before analysis closure (month8 latest). Stops cannot be replaced. `other` domain retains historical political/immigration designs; `rct_lottery` preserves the registry track identity. The metadata contract validates ledger references and probability semantics; full new-ledger center/interval/exposure-field verification belongs to the later frozen adapter. Q3 replays scores once per joint resample; Q5 uses a wave-adjusted family wild score null, not a design-exchangeable permutation.

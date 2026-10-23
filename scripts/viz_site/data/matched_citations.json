@@ -1,0 +1,187 @@
+{
+  "about": "Citations of the papers whose numbers match (owner request, 2026-10-14). Surnames and year come from data/replication/paper_catalog_v1.jsonl and were checked against the replication folder of the same paper; sources are paths under data/replication/. restructure_estimates.validate_citations re-checks every entry against the catalogue record and the snapshot on each load. A match without an entry here stays anonymous.",
+  "papers": {
+    "agan2018-b9e22f99": {
+      "authors": ["Agan", "Starr"],
+      "year": 2018,
+      "sources": ["paper_catalog_v1.jsonl", "r1/agan_starr2018_btb/RESULT.json"]
+    },
+    "akcigit2022-8205e57e": {
+      "authors": ["Akcigit", "Grigsby", "Nicholas", "Stantcheva"],
+      "year": 2022,
+      "sources": ["paper_catalog_v1.jsonl", "r1/akcigit_2022_state_income_and_business_t/RESULT.json"]
+    },
+    "anderson2014-a95c7723": {
+      "authors": ["Anderson"],
+      "year": 2014,
+      "sources": ["paper_catalog_v1.jsonl", "r1/anderson_2014_compulsory_schooling/RESULT.json"]
+    },
+    "anderson2024-5af8b040": {
+      "authors": ["Anderson", "Liang", "Sabia"],
+      "year": 2024,
+      "sources": ["paper_catalog_v1.jsonl", "r1/anderson_2024_primary_seat_belt_law/indep/RESULT_INDEP.json"]
+    },
+    "backes2012-301f80a1": {
+      "authors": ["Backes"],
+      "year": 2012,
+      "sources": ["paper_catalog_v1.jsonl", "r1/backes_2012_higher_ed_access/RESULT.json"]
+    },
+    "braslavskiy2025-6b0f2f4e": {
+      "authors": ["Braslavskiy"],
+      "year": 2025,
+      "sources": ["paper_catalog_v1.jsonl", "r1/braslavskiy_2025_cannabis_policy/RESULT.json"]
+    },
+    "brummund2020-657584ac": {
+      "authors": ["Brummund", "Strain"],
+      "year": 2020,
+      "note": "The catalogue flag citation_verified is false because the publisher page was not reached. Re-checked for V5.1 (2026-10-20): both authors are named on the first page of each of the two paper texts kept in the folder (working paper of July 30, 2018; replication tables of April 15, 2020), and RESULT.json and the catalogue record the Journal of Human Resources and the DOI 10.3368/jhr.55.2.1216.8404R2. The catalogue notes cite the author page and the openICPSR deposit \"Replication materials for Brummund and Strain - JHR 2020\" for JHR 55(3) and the year 2020.",
+      "sources": ["paper_catalog_v1.jsonl", "r1/brummund_2020_minimum_wage_indexing/RESULT.json", "r1/brummund_2020_minimum_wage_indexing/paper_evidence/wp_paper.txt", "r1/brummund_2020_minimum_wage_indexing/paper_evidence/local_replication_pdf.txt"]
+    },
+    "caceresdelpiano2012-72596a1d": {
+      "authors": ["Cáceres-Delpiano", "Giolito"],
+      "year": 2012,
+      "sources": ["paper_catalog_v1.jsonl", "r1/caceresdelpian_2012_family_law/RESULT.json"]
+    },
+    "card1994-b78be114": {
+      "authors": ["Card", "Krueger"],
+      "year": 1994,
+      "sources": ["paper_catalog_v1.jsonl", "r1/cardkrueger1994_njmin/RESULT.json"]
+    },
+    "carpenter2019-1eba3d8e": {
+      "authors": ["Carpenter", "Lawler"],
+      "year": 2019,
+      "sources": ["paper_catalog_v1.jsonl", "r1/tdap_carpenter_lawler2019/RESULT.json"]
+    },
+    "cengiz2019-a72ccb47": {
+      "authors": ["Cengiz", "Dube", "Lindner", "Zipperer"],
+      "year": 2019,
+      "sources": ["paper_catalog_v1.jsonl", "r1/cengiz_2019_minimum_wage/RESULT.json"]
+    },
+    "dee2009-a886f10f": {
+      "authors": ["Dee"],
+      "year": 2009,
+      "sources": ["paper_catalog_v1.jsonl", "r1/dee_2009_motorcycle_helmet_law/indep/RESULT_INDEP.json"]
+    },
+    "dube2010-0ceefc2f": {
+      "authors": ["Dube", "Lester", "Reich"],
+      "year": 2010,
+      "sources": ["paper_catalog_v1.jsonl", "r1/dlr2010_minwage_border/RESULT.json"]
+    },
+    "friedberg1998-8358211c": {
+      "authors": ["Friedberg"],
+      "year": 1998,
+      "sources": ["paper_catalog_v1.jsonl", "r1/friedberg_1998_family_law/RESULT.json"]
+    },
+    "goodman2016-c6f7ffbe": {
+      "authors": ["Goodman"],
+      "year": 2016,
+      "sources": ["paper_catalog_v1.jsonl", "r1/goodman_2016_higher_ed_access/RESULT.json"]
+    },
+    "gruber1994-d375ee8c": {
+      "authors": ["Gruber"],
+      "year": 1994,
+      "sources": ["paper_catalog_v1.jsonl", "r1/gruber_1994_private_insurance_b_22d4337a/RESULT.json"]
+    },
+    "grumbach2022-cb806dc0": {
+      "authors": ["Grumbach", "Hill"],
+      "year": 2022,
+      "sources": ["paper_catalog_v1.jsonl", "r1/sdr_grumbach_hill2022/RESULT.json"]
+    },
+    "hinrichs2012-05c49ad9": {
+      "authors": ["Hinrichs"],
+      "year": 2012,
+      "sources": ["paper_catalog_v1.jsonl", "r1/hinrichs_2012_higher_ed_access/RESULT.json"]
+    },
+    "holbein2016-5dd89e09": {
+      "authors": ["Holbein", "Hillygus"],
+      "year": 2016,
+      "sources": ["paper_catalog_v1.jsonl", "r1/holbein_2016_voting_registration/RESULT.json"]
+    },
+    "huseynov2018-c6cd04af": {
+      "authors": ["Huseynov", "Palma"],
+      "year": 2018,
+      "sources": ["paper_catalog_v1.jsonl", "r1/huseynov_2018_climate_carbon/RESULT.json"]
+    },
+    "jacobsen2013-8f3fae1c": {
+      "authors": ["Jacobsen", "Kotchen"],
+      "year": 2013,
+      "sources": ["paper_catalog_v1.jsonl", "r1/jacobsen_2013_energy_efficiency_building/indep/RESULT_INDEP.json"]
+    },
+    "jayaratne1996-9d8d9ce9": {
+      "authors": ["Jayaratne", "Strahan"],
+      "year": 1996,
+      "sources": ["paper_catalog_v1.jsonl", "r1/jayaratne_1996_misc_regulation/RESULT.json", "r1/jayaratne_1996_misc_regulation/source/JayaratneStrahan-1996_liuyanecon.txt"]
+    },
+    "keele2013-98e8b3d7": {
+      "authors": ["Keele", "Malhotra", "McCubbins"],
+      "year": 2013,
+      "sources": ["paper_catalog_v1.jsonl", "r1/keele_2013_election_institutions/RESULT.json", "r1/keele_2013_election_institutions/codebook.txt", "shared_data/keele_2013_election_institutions/dataverse_metadata.json"]
+    },
+    "lindo2020-6adc1000": {
+      "authors": ["Lindo", "Myers", "Schlosser", "Cunningham"],
+      "year": 2020,
+      "sources": ["paper_catalog_v1.jsonl", "r1/hb2_lindo2020/RESULT.json"]
+    },
+    "mcghee2014-2aabc0ff": {
+      "authors": ["McGhee", "Masket", "Shor", "Rogers", "McCarty"],
+      "year": 2014,
+      "sources": ["paper_catalog_v1.jsonl", "r1/mcghee_2014_election_institutions/RESULT.json"]
+    },
+    "morris2021-6c12d1f8": {
+      "authors": ["Morris"],
+      "year": 2021,
+      "sources": ["paper_catalog_v1.jsonl", "r1/morris_2021_felony_enfranchisement/RESULT.json"]
+    },
+    "myers2017-99c9b319": {
+      "authors": ["Myers"],
+      "year": 2017,
+      "sources": ["paper_catalog_v1.jsonl", "r1/pill_myers2017/RESULT.json"]
+    },
+    "rees2019-234de41c": {
+      "authors": ["Rees", "Sabia", "Argys", "Dave", "Latshaw"],
+      "year": 2019,
+      "note": "Authors in the catalogue order (the journal order). The NBER working paper kept in the folder lists Latshaw before Dave; the page prints the first author only.",
+      "sources": ["paper_catalog_v1.jsonl", "r1/rees_2019_overdose_harm_reduction/RESULT.json", "r1/rees_2019_overdose_harm_reduction/paper/w23171.txt"]
+    },
+    "shover2019-e698786e": {
+      "authors": ["Shover", "Davis", "Gordon", "Humphreys"],
+      "year": 2019,
+      "sources": ["paper_catalog_v1.jsonl", "r1/shover_2019_cannabis_policy/RESULT.json"]
+    },
+    "son2022-96bf154a": {
+      "authors": ["Son"],
+      "year": 2022,
+      "sources": ["paper_catalog_v1.jsonl", "r1/son_2022_private_insurance_benefit_manda/RESULT.json"]
+    },
+    "stevenson2006-8fd23e41": {
+      "authors": ["Stevenson", "Wolfers"],
+      "year": 2006,
+      "sources": ["paper_catalog_v1.jsonl", "r1/stevenson_2006_family_law/RESULT.json"]
+    },
+    "wang2026-c8afd007": {
+      "authors": ["Wang", "Valizadeh", "Nayga", "Bryant", "Fischer"],
+      "year": 2026,
+      "sources": ["paper_catalog_v1.jsonl", "r1/wang2026_snap_bbce/RESULT.json"]
+    },
+    "wolfers2006-86410d4d": {
+      "authors": ["Wolfers"],
+      "year": 2006,
+      "sources": ["paper_catalog_v1.jsonl", "r1/wolfers2006_divorce/RESULT.json"]
+    },
+    "yan2021-b3c3cb05": {
+      "authors": ["Yan"],
+      "year": 2021,
+      "sources": ["paper_catalog_v1.jsonl", "r1/yan_2021_climate_carbon/RESULT.json"]
+    },
+    "yoder2021-58cf8799": {
+      "authors": ["Yoder", "Handan-Nader", "Myers", "Nowacki", "Thompson", "Wu", "Yorgason", "Hall"],
+      "year": 2021,
+      "sources": ["paper_catalog_v1.jsonl", "r1/yoder_2021_voting_methods/RESULT.json", "shared_data/yoder_2021_voting_methods/analysis_file_metadata.xml"]
+    },
+    "zhou2024-65593078": {
+      "authors": ["Zhou", "Koo", "Kallus", "Ropac", "Peterson", "Koppel", "Bergin"],
+      "year": 2024,
+      "sources": ["paper_catalog_v1.jsonl", "r1/bail_zhou2024/RESULT.json"]
+    }
+  }
+}

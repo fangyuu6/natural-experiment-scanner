@@ -1,0 +1,100 @@
+{
+  "version": "l3-meta-proposal-v1",
+  "status": "PROPOSAL_NOT_SIGNED_NOT_FROZEN",
+  "prereg_document": "docs/plans/l3-meta/PREREG_L3_META.md",
+  "known_exposed_designs_at_proposal": 21,
+  "target_registry_designs": 100,
+  "maximum_pristine_designs_at_target": 79,
+  "unit": "one L2 design with one prespecified primary outcome",
+  "denominator": "all admitted registry designs, retaining stopped, unestimated and missing records",
+  "confirmatory_population": "designs whose outcomes were unexposed when the signed final preregistration was frozen",
+  "inference": {
+    "family_alpha": 0.05,
+    "questions": 5,
+    "alpha_each_bonferroni": 0.01,
+    "read_at": "Close enrollment at 100 distinct admitted designs or freeze+6 months, whichever first; close analysis after each reaches processing age60 (month8 latest). No stopped/unavailable replacements.",
+    "milestone_50": "metadata, denominator and coverage review only; no outcome association read",
+    "dependence": "Q1 joint calibrated null replays; Q2/Q4 family bootstrap plus shared state/calendar influence-score covariance; Q3 one centered studentized joint family/state/outcome/calendar block replay of estimators and scores, with forecasts fixed; Q5 wave-adjusted family wild null score. All require pre-outcome synthetic size validation.",
+    "insufficient_support": "report registered question as unresolved; no extension chosen by significance",
+    "bootstrap_replicates": 9999,
+    "seed": 20261007,
+    "age_days_at_final_metadata_close": 60,
+    "minimum_eligible_families_q1_q5": 20
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "name": "Observed noise-exceedance rate",
+      "primary": "share whose absolute frozen estimate exceeds its own prespecified 95% null-reference absolute threshold",
+      "test": "one-sided rate above calibrated null tail; joint null replays preserve cross-design dependence; independent exact binomial is a planning benchmark only",
+      "missing": "retain all designs in registry denominator; estimate rate among eligible plus all-design sharp missing-outcome bounds",
+      "secondary": "latent effect normal sampling-error mixture on theta/noiseSD with grid -10..10 by .1 plus zero; nonnegative likelihood weights; grid +/-20 sensitivity; valid sampling variance and joint covariance required; failure is NOT_IDENTIFIED"
+    },
+    {
+      "id": "Q2",
+      "name": "Aligned literature replication gap",
+      "primary": "mean a_i*(b_literature_i-b_i)/s_pre_i; benchmark direction and clean-preperiod outcome SD fixed before our result",
+      "test": "two-sided mean paired-gap test with common covariance/family-block procedure",
+      "missing": "all registry designs retained; unmatched/estimand-incompatible cases do not become zero gaps",
+      "interpretation": "a replication gap does not identify publication bias without additional selection assumptions"
+    },
+    {
+      "id": "Q3",
+      "name": "Locked forecast Brier skill",
+      "primary": "mean over designs of [.25 - mean over five fixed internal forecast slots of (p_positive - 1{b>0})^2]; mean slot loss, not Brier loss of the averaged probability",
+      "test": "H0 mean design score difference=0; centered studentized joint block bootstrap replays frozen estimator panels once per draw with fixed forecasts, 99% null criticals; no second score measurement-error correction; invalid calibrated size means descriptive only",
+      "target": "realized frozen estimator positivity b>0, not unobserved causal truth",
+      "semantics": "future primary requires five explicit P(b>0) forecasts locked before anchor/calibration/outcome access; historical exclusive noise-category ledgers remain descriptive and cannot be pooled",
+      "secondary": "direction accuracy, 80% predictive coverage, calibration bins/intercept/slope, signed forecast-direction overstatement, diagnostic-event Brier separately",
+      "required_future_ledger_fields": [
+        "center",
+        "explicit P(b>0)",
+        "predictive 80% interval",
+        "units",
+        "exposure disclosure",
+        "joint diagnostic-pass probability conditional on technical readiness"
+      ]
+    },
+    {
+      "id": "Q4",
+      "name": "Adoption and effect strength",
+      "primary": "beta_A in equal-design T_i=alpha_domain+beta_A*A_i+gamma*H_i+error, T_i=(b_i^2-v_i)/s_pre_i^2; retain negative T",
+      "test": "two-sided beta_A with common covariance/blocks, conditional on frozen measured adoption index; residual A variation after domain/horizon controls required",
+      "sampling_variance": "E[b|theta]=theta; v consistently estimates Var(b|theta); a certified interval, placebo SD or RI p alone is insufficient",
+      "secondary": "early/latest adoption thirds, same supported e=0..2 horizon and weights; requires prespecified L2 cohort contrast; overall ATT insufficient; separately frozen adoption-index measurement-error sensitivity",
+      "partisan_index": "absolute difference in Democratic-/Republican-unified-government first-adoption hazards using independently verified Jan-1 party and at-risk state-years; >=20 risk-years/group; standardized from metadata only"
+    },
+    {
+      "id": "Q5",
+      "name": "Evaluability across six domains",
+      "primary": "six-domain technically-estimable status by fixed processing age60; unresolved/stopped/unestimated remain in denominator",
+      "test": "H0 E[estimable|domain,wave]=p_wave; wave-only null fitted, five domain score components aggregated by family; quadratic omnibus with 9999 mean-zero family wild multipliers; require20 independent families,5 designs/domain,full residual rank and artificial-null size validation",
+      "denominator": "design-level primary denominator includes stopped/unestimated; separate L1 text-to-policy-to-design denominators with versioned deduplication",
+      "scope": "project-reportable means fixed support/integrity/diagnostic requirements; sign, significance and journal acceptance excluded"
+    }
+  ],
+  "execution_gate": [
+    "signed final preregistration, roster and timestamp hashes",
+    "frozen outcome mappings, noise thresholds and probability semantics",
+    "verified literature match and adoption covariate specifications",
+    "reviewed dependence and missingness simulations",
+    "read-only outcome adapter separately implemented and reviewed",
+    ">=20 eligible families for every question; >=5 designs/domain and full residual rank for Q5; invalid shared-shock/size checks report unavailable without independent-test substitution"
+  ],
+  "allowed_now": [
+    "plan",
+    "analytic power",
+    "validate explicitly supplied normalized metadata"
+  ],
+  "disabled_now": [
+    "outcome ingestion",
+    "estimation",
+    "forecast scoring",
+    "registry mutation",
+    "network",
+    "deploy",
+    "upload",
+    "paid API"
+  ],
+  "enrollment": "Freeze domain/tie/selection rules now; lock each new design/outcome/spec/forecast before any anchor/calibration/estimation. Fixed domain allocation: labor24, finance16, health14, crime9, education8, environment8. Overlap domains within later monthly waves."
+}

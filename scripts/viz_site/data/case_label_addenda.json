@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "cases": {
+    "renewable_portfolio": {
+      "benchmark_unit": {
+        "en": "cents per kWh; ratio to the pre-passage mean",
+        "zh": "美分／千瓦时；相对于政策通过前均值的比率"
+      },
+      "display_words": {
+        "source_caption": {
+          "en": "Greenstone and Nath (2021), Becker Friedman Institute Working Paper 2019-62, revised November 12, 2021.",
+          "zh": "Greenstone 与 Nath（2021），Becker Friedman Institute 工作论文 2019-62，2021 年 11 月 12 日修订版。"
+        },
+        "treatment": {
+          "en": "State renewable portfolio standards with a binding supplier obligation; treatment starts in the first fully exposed calendar year, using the legal effective date.",
+          "zh": "州可再生能源配额标准规定具有约束力的供应商义务；以法律生效日为准，从首个完整暴露历年起计入处理。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      },
+      "display_outcomes": {
+        "y": {
+          "outcome": {
+            "en": "Log nominal average retail electricity price",
+            "zh": "名义平均零售电价的对数"
+          }
+        }
+      },
+      "display_benchmark": {
+        "renew_share_nonhydro": {
+          "en": "Published retail-price increase seven years after passage: 11% of the pre-passage mean; different treatment clock and horizon.",
+          "zh": "文献零售电价增幅：通过后第 7 年为通过前均值的 11%；处理时点和时期不同。"
+        }
+      }
+    },
+    "cigarette_tax": {
+      "display_words": {
+        "source_caption": {
+          "en": "Azagba, Ebling and Korkmaz (2024), Public Health 231:116–123.",
+          "zh": "Azagba、Ebling 与 Korkmaz（2024），Public Health 231：116–123。"
+        },
+        "treatment": {
+          "en": "First single state excise-tax increase of at least $1.00 per pack of 20 since 2000; treatment starts in the first fully exposed fiscal year. Later increases remain part of the treatment path.",
+          "zh": "2000 年以来首次单次州卷烟消费税每 20 支一包上调至少 1 美元；从首个完整暴露财年起计入处理。后续上调属于处理路径。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; controls unexposed to a qualifying hike, with cumulative positive tax increases below $0.75 in FY1990–2019; equal weights per included post-treatment jurisdiction-fiscal-year.",
+          "zh": "Callaway–Sant'Anna DiD；以未暴露于达标上调、且 1990–2019 财年累计正向税额上调低于 0.75 美元的辖区为对照；纳入的处理后辖区财年等权。"
+        }
+      },
+      "display_benchmark": {
+        "y": {
+          "en": "Continuous tax exposure in a two-way fixed-effects design.",
+          "zh": "以连续税额暴露为处理变量的双向固定效应研究。"
+        }
+      },
+      "display_outcomes": {
+        "y": {
+          "population": {
+            "en": "Residents of retained states and DC; tax-paid packs divided by Census population estimates; CDC Tax Burden on Tobacco, Orzechowski and Walker; ODC-By 1.0",
+            "zh": "保留州及华盛顿特区居民；完税卷烟包数除以人口普查局人口估计；CDC《Tax Burden on Tobacco》，Orzechowski 与 Walker；ODC-By 1.0"
+          }
+        }
+      }
+    },
+    "shall_issue": {
+      "display_words": {
+        "source_caption": {
+          "en": "Donohue, Aneja and Weber (2019), Journal of Empirical Legal Studies 16(2):198–247; NBER Working Paper 23510, November 2018 revision.",
+          "zh": "Donohue、Aneja 与 Weber（2019），Journal of Empirical Legal Studies 16（2）：198–247；NBER 工作论文 23510，2018 年 11 月修订版。"
+        },
+        "treatment": {
+          "en": "State concealed-handgun permit law requires issuance to applicants meeting objective statutory criteria; treatment starts in the first fully exposed calendar year.",
+          "zh": "州级隐蔽持枪许可法要求向符合客观条件的申请人发证；从首个完整生效的历年开始计入处理。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      },
+      "display_benchmark": {
+        "y_xrape": {
+          "en": "Published synthetic-control estimate 10 years after adoption: 14.3%, for violent crime including rape.",
+          "zh": "文献合成控制估计：采纳后第 10 年，含强奸的暴力犯罪为 14.3%。"
+        }
+      }
+    },
+    "minimum_wage_step": {
+      "display_words": {
+        "source_caption": {
+          "en": "Cengiz, Dube, Lindner and Zipperer (2019), NBER Working Paper 25434, January 2019, Table 1 column 1.",
+          "zh": "Cengiz、Dube、Lindner 与 Zipperer（2019），NBER 工作论文 25434，2019 年 1 月，表 1 第 1 列。"
+        },
+        "policy": {
+          "en": "State minimum-wage steps",
+          "zh": "州最低工资阶梯式上调"
+        },
+        "treatment": {
+          "en": "First increase of at least $0.75 between consecutive January 12 minimum-wage levels, measured in integer cents; later increases remain part of the treatment path.",
+          "zh": "以整数美分计量，连续两个 1 月 12 日的最低工资水平首次上调至少 0.75 美元；后续上调属于处理路径。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      },
+      "display_benchmark": {
+        "y": {
+          "en": "Published employment elasticity for low-wage jobs across industries: 0.024; these restaurant outcomes are log differences.",
+          "zh": "文献各行业低工资岗位的就业弹性为 0.024；本例餐饮业结果为对数差。"
+        }
+      }
+    },
+    "salary_history_ban": {
+      "display_words": {
+        "source_caption": {
+          "en": "Hansen and McNichols (2020), NBER Working Paper 27054, April 2020, Table A.4; CPS-weighted generalized synthetic control.",
+          "zh": "Hansen 与 McNichols（2020），NBER 工作论文 27054，2020 年 4 月，表 A.4；使用 CPS 权重的广义合成控制。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-quarter.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区季度等权。"
+        },
+        "policy": {
+          "en": "Salary-history bans",
+          "zh": "禁止询问薪资历史"
+        }
+      },
+      "display_outcomes": {
+        "y": {
+          "outcome": {
+            "en": "Log female-to-male mean monthly earnings ratio; stable new hires aged 25–54",
+            "zh": "25–54 岁稳定新入职者女性与男性平均月收入比的对数"
+          },
+          "population": {
+            "en": "Private-sector stable new hires, all industries",
+            "zh": "所有行业私人部门稳定新入职者。"
+          }
+        },
+        "y_age3554": {
+          "outcome": {
+            "en": "Log female-to-male mean monthly earnings ratio; stable new hires aged 35–54",
+            "zh": "35–54 岁稳定新入职者女性与男性平均月收入比的对数"
+          },
+          "population": {
+            "en": "Private-sector stable new hires, all industries",
+            "zh": "所有行业私人部门稳定新入职者。"
+          }
+        }
+      }
+    },
+    "right_to_work": {
+      "display_words": {
+        "source_caption": {
+          "en": "Fortin, Lemieux and Lloyd (2022), NBER Working Paper 30098, Table 2 panel A column 7.",
+          "zh": "Fortin、Lemieux 与 Lloyd（2022），NBER 工作论文 30098，表 2 A 面板第 7 列。"
+        },
+        "treatment": {
+          "en": "Statewide private-sector union-security ban; first fully exposed calendar year. Wisconsin enters in 2017 after the 2016 court injunction and West Virginia in 2018 after the 2017 court suspension.",
+          "zh": "全州私营部门禁止强制工会会员或缴费条款；按首个完整暴露年处理。威斯康星经历 2016 年法院禁令，计入 2017 年；西弗吉尼亚经历 2017 年法院暂停，计入 2018 年。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      },
+      "display_benchmark": {
+        "y": {
+          "en": "Published private-sector union-coverage estimate −0.84 pp; different design and 2007–2019 window.",
+          "zh": "文献私营部门工会覆盖率估计为 −0.84 百分点；研究设计不同，时期为 2007–2019 年。"
+        }
+      },
+      "display_outcomes": {
+        "y": {
+          "population": {
+            "en": "Employed private-sector wage and salary workers aged 16 and over; unionstats.com CPS-ORG, Hirsch, Macpherson and Even",
+            "zh": "16 岁及以上、受雇于私营部门的工资和薪金劳动者；unionstats.com CPS-ORG，Hirsch、Macpherson 与 Even"
+          }
+        },
+        "membership_rate_private": {
+          "population": {
+            "en": "Employed private-sector wage and salary workers aged 16 and over; unionstats.com CPS-ORG, Hirsch, Macpherson and Even",
+            "zh": "16 岁及以上、受雇于私营部门的工资和薪金劳动者；unionstats.com CPS-ORG，Hirsch、Macpherson 与 Even"
+          }
+        }
+      }
+    },
+    "smoke_free_air": {
+      "display_words": {
+        "source_caption": {
+          "en": "Bitler, Carpenter and Zavodny (2010), Health Economics 19(12):1425–1440.",
+          "zh": "Bitler、Carpenter 与 Zavodny（2010），Health Economics 19（12）：1425–1440。"
+        },
+        "treatment": {
+          "en": "CDC STATE System codes private worksites, restaurants and bars as 100 percent smoke-free; treatment starts in the first fully exposed calendar year, using the latest venue effective date.",
+          "zh": "CDC STATE 系统将私人工作场所、餐厅和酒吧均编码为 100% 无烟；以三个场所中最晚生效日为准，从首个完整暴露历年起计入处理。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      },
+      "display_benchmark": {
+        "y": {
+          "en": "Venue-specific laws and worker smoking outcomes.",
+          "zh": "场所别法规与劳动者吸烟结果。"
+        }
+      }
+    },
+    "death_penalty_abolition": {
+      "display_words": {
+        "source_caption": {
+          "en": "Parker (2021), Journal of Empirical Legal Studies 18(3):488–533.",
+          "zh": "Parker（2021），Journal of Empirical Legal Studies 18（3）：488–533。"
+        },
+        "treatment": {
+          "en": "Legal abolition for new offences by statute or final court invalidation; treatment starts in the first fully exposed calendar year.",
+          "zh": "通过立法或终局司法裁决废除对新犯罪的死刑；从首个完整生效年起计入处理。"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      },
+      "display_benchmark": {
+        "y": {
+          "en": "State-specific synthetic controls.",
+          "zh": "逐州合成控制研究。"
+        }
+      }
+    },
+    "adult_use_cannabis": {
+      "display_words": {
+        "source_caption": {
+          "en": "Brown, Cohen and Felix (2023), Federal Reserve Bank of Kansas City RWP 23-10, June 7, 2024 version, Table 8.",
+          "zh": "Brown、Cohen 与 Felix（2023），Federal Reserve Bank of Kansas City RWP 23-10，2024 年 6 月 7 日版本，表 8。"
+        },
+        "policy": {
+          "en": "Adult-use cannabis possession legalization",
+          "zh": "成人用大麻持有合法化"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      }
+    },
+    "primary_seat_belt": {
+      "display_words": {
+        "source_caption": {
+          "en": "Anderson, Liang and Sabia (2023), NBER Working Paper 30851 (January 2023), Appendix Table 5 column 5; IZA Discussion Paper 15843 (December 2022).",
+          "zh": "Anderson、Liang 与 Sabia（2023），NBER 工作论文 30851（2023 年 1 月），附录表 5 第 5 列；IZA 讨论论文 15843（2022 年 12 月）。"
+        },
+        "policy": {
+          "en": "Adult front-seat seat-belt enforcement upgrades",
+          "zh": "成人前排安全带执法升级"
+        },
+        "estimand_line": {
+          "en": "Callaway–Sant'Anna DiD; comparison jurisdictions unexposed throughout the window; equal weights per included post-treatment jurisdiction-year.",
+          "zh": "Callaway–Sant'Anna DiD；以全窗口未暴露辖区为对照；纳入的处理后辖区年等权。"
+        }
+      },
+      "display_outcomes": {
+        "y": {
+          "outcome": {
+            "en": "Log occupant fatalities, including motorcyclists, per 100 million vehicle miles traveled",
+            "zh": "每亿车辆行驶英里的乘员死亡率对数（含摩托车乘员）"
+          }
+        }
+      }
+    }
+  }
+}

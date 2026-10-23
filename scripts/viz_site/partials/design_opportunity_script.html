@@ -1,0 +1,220 @@
+<script>
+(() => {
+  'use strict';
+  const motion = window.NXMotion;
+  const feedback = element => {
+    if (motion) motion.transition(element, ctx => ctx.timer(() => ctx.finish(), 180), {finish() {}, maxDuration:180});
+  };
+  let revealHandle;
+  const content = document.querySelector('.do-content');
+  const revealDuration = motion ? parseFloat(window.getComputedStyle(content).getPropertyValue('--nx-motion-reveal')) || 320 : 320;
+  const data = JSON.parse(document.getElementById('design-opportunity-data').textContent);
+  const familyControl = document.getElementById('design-family');
+  const yearControl = document.getElementById('design-year');
+  const strip = document.getElementById('design-strip');
+  const labels = data.strings;
+  const unknown = value => value === undefined ? labels.unknown : String(value);
+  const make = (tag, text, className) => {
+    const el = document.createElement(tag);
+    if (text !== undefined) el.textContent = text;
+    if (className) el.className = className;
+    return el;
+  };
+  const addSources = (container, row, compact = false) => {
+    const span = make('span', undefined, 'do-date-sources');
+    if (!compact && row.sources.length) span.append(make('span', labels.source, 'do-source-word'));
+    row.sources.forEach((url, i) => {
+      const label = labels.source + ' ' + (i + 1);
+      const link = make('a', String(i + 1));
+      link.href = url;
+      link.setAttribute('aria-label', label);
+      span.append(link);
+    });
+    if (!row.sources.length) span.textContent = labels.unknown;
+    container.append(span);
+  };
+  const selectedFamily = () => data.families.find(f => f.id === familyControl.value);
+  function updateInventory(family) {
+    const fragment = document.createDocumentFragment();
+    family.jurisdictions.forEach(row => {
+      const tr = make('tr');
+      tr.dataset.jurisdiction = row.code;
+      const th = make('th', row.name); th.scope = 'row'; tr.append(th);
+      tr.append(make('td', unknown(row.date ?? row.year)));
+      const status = make('td', row.status_label);
+      if (row.exclusion_reason) status.append(make('span', row.exclusion_reason, 'do-inventory-note'));
+      tr.append(status);
+      const sources = make('td'); addSources(sources, row, true); tr.append(sources);
+      fragment.append(tr);
+    });
+    document.getElementById('design-inventory-body').replaceChildren(fragment);
+  }
+  const TINT = ['#eceef2', '#a8c5f9', '#7ba4f0', '#5283e0', '#3263c3', '#1e4798'];
+  const tint = n => n === 0 ? 0 : n <= 2 ? 1 : n <= 5 ? 2 : n <= 9 ? 3 : n <= 14 ? 4 : 5;
+  const stripButtons = [['all', labels.all], ...data.years.map(y => [String(y), String(y)])].map(([value, label]) => {
+    const button = make('button'); button.type = 'button'; button.dataset.year = value;
+    button.append(make('small', label), make('b'));
+    strip.append(button);
+    return button;
+  });
+  function bringYearIntoView(cell) {
+    const box = document.querySelector('.do-grid-scroll');
+    if (!box || !cell || !box.clientWidth) return;
+    const viewport = box.getBoundingClientRect();
+    const bounds = cell.querySelector('rect').getBoundingClientRect();
+    const delta = bounds.left < viewport.left ? bounds.left - viewport.left - 4 :
+      bounds.right > viewport.right ? bounds.right - viewport.right + 4 : 0;
+    if (delta) box.scrollBy({left:delta, behavior:'instant'});
+  }
+  function update(interaction = true) {
+    if (interaction) {
+      if (revealHandle) revealHandle.finish();
+      feedback(content);
+    }
+    const family = selectedFamily();
+    const year = yearControl.value === 'all' ? undefined : Number(yearControl.value);
+    const heading = document.getElementById('design-selected-heading');
+    heading.replaceChildren(make('span', family.label), document.createTextNode(' '), make('span', '· ' + (year === undefined ? labels.all_years : year), 'do-nb'));
+    document.getElementById('design-selected-clock').textContent = family.clock;
+    const fragment = document.createDocumentFragment();
+    const rows = family.jurisdictions.filter(row => row.strict && (year === undefined || row.year === year));
+    rows.forEach(row => {
+      const li = make('li');
+      li.append(make('span', row.name, 'do-jurisdiction'));
+      li.append(make('span', unknown(row.date ?? row.year), 'do-date'));
+      addSources(li, row);
+      fragment.append(li);
+    });
+    if (!rows.length) fragment.append(make('li', labels.empty, 'do-empty'));
+    const readout = document.getElementById('design-readout');
+    readout.replaceChildren(fragment);
+    if (interaction && motion) motion.transition(readout, ctx => {
+      ctx.animate(readout, [{opacity:0}, {opacity:1}], {duration:revealDuration, easing:'ease-out'});
+      ctx.timer(() => ctx.finish(), revealDuration);
+    }, {finish() {}, maxDuration:revealDuration});
+    document.querySelectorAll('.do-grid-row').forEach(row => row.classList.toggle('is-selected', row.dataset.family === family.id));
+    document.querySelectorAll('.do-cell').forEach(cell => {
+      const selected = cell.dataset.family === family.id && Number(cell.dataset.year) === year;
+      cell.classList.toggle('is-selected', selected);
+      cell.setAttribute('aria-pressed', String(selected));
+      cell.tabIndex = selected || (year === undefined && cell.dataset.family === family.id && Number(cell.dataset.year) === data.years[0]) ? 0 : -1;
+    });
+    bringYearIntoView(document.querySelector('.do-cell.is-selected'));
+    const counts = Object.fromEntries(family.groups.map(g => [g.year, g.count]));
+    stripButtons.forEach(button => {
+      const all = button.dataset.year === 'all';
+      const count = all ? family.summary.strict_dated_jurisdictions : counts[button.dataset.year] || 0;
+      const step = all ? 0 : tint(count);
+      button.children[1].textContent = count || '';
+      button.style.background = TINT[step];
+      button.style.color = step >= 4 ? '#ffffff' : '#111827';
+      button.setAttribute('aria-pressed', String(button.dataset.year === yearControl.value));
+      button.setAttribute('aria-label', (all ? labels.all_years : button.dataset.year) + (data.lang === 'zh' ? '\uff1a' : ': ') + count);
+    });
+    [...yearControl.options].forEach(option => {
+      if (option.value !== 'all') option.textContent = option.value + ' · ' + (counts[option.value] || 0);
+    });
+  }
+  familyControl.addEventListener('change', () => {
+    const family = selectedFamily();
+    yearControl.value = String(family.summary.modal_years[0]);
+    updateInventory(family); update();
+  });
+  yearControl.addEventListener('change', () => update());
+  strip.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    yearControl.value = button.dataset.year;
+    update();
+  });
+  const grid = document.getElementById('design-timing-grid');
+  const cells = [...document.querySelectorAll('.do-cell')];
+  const reveal = target => {
+    const cell = target.closest('.do-cell') || target.closest('.do-grid-row');
+    const h = document.getElementById('design-selected-heading').getBoundingClientRect();
+    const keep = innerHeight - 190;
+    if (h.top <= keep) return;
+    const dy = Math.min(h.top - keep, cell.getBoundingClientRect().top - 72);
+    if (dy > 0) scrollBy({top: dy, behavior: 'instant'});
+  };
+  function selectCell(event) {
+    const cell = event.target.closest('.do-cell');
+    const row = event.target.closest('.do-grid-row');
+    if (!row) return;
+    familyControl.value = row.dataset.family;
+    yearControl.value = cell ? cell.dataset.year : String(selectedFamily().summary.modal_years[0]);
+    updateInventory(selectedFamily()); update();
+    reveal(event.target);
+  }
+  grid.addEventListener('click', selectCell);
+  document.querySelectorAll('.do-grid-labels,.do-grid-totals').forEach(column => column.addEventListener('click', selectCell));
+  grid.addEventListener('keydown', event => {
+    const cell = event.target.closest('.do-cell');
+    if (!cell) return;
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault(); selectCell(event);
+      return;
+    }
+    let column = data.years.indexOf(Number(cell.dataset.year));
+    let row = data.families.findIndex(family => family.id === cell.dataset.family);
+    switch (event.key) {
+      case 'ArrowLeft': column--; break;
+      case 'ArrowRight': column++; break;
+      case 'ArrowUp': row--; break;
+      case 'ArrowDown': row++; break;
+      case 'Home': column = 0; break;
+      case 'End': column = data.years.length - 1; break;
+      default: return;
+    }
+    event.preventDefault();
+    row = Math.max(0, Math.min(row, data.families.length - 1));
+    column = Math.max(0, Math.min(column, data.years.length - 1));
+    const next = cells[row * data.years.length + column];
+    cells.forEach(item => { item.tabIndex = item === next ? 0 : -1; });
+    bringYearIntoView(next);
+    next.focus();
+  });
+  const yearLabels = [...document.querySelectorAll('.do-year-label')];
+  const rows = [...document.querySelectorAll('.do-grid-row')];
+  function crosshair(cell) {
+    feedback(content);
+    yearLabels.forEach(label => label.classList.toggle('is-crosshair', !!cell && label.dataset.year === cell.dataset.year));
+    rows.forEach(row => row.classList.toggle('is-crosshair', !!cell && row.dataset.family === cell.dataset.family));
+  }
+  grid.addEventListener('pointerover', event => crosshair(event.target.closest('.do-cell')));
+  grid.addEventListener('pointerleave', () => crosshair(document.activeElement?.closest('.do-cell')));
+  grid.addEventListener('focusin', event => crosshair(event.target.closest('.do-cell')));
+  grid.addEventListener('focusout', event => crosshair(event.relatedTarget?.closest('.do-cell')));
+  const inventory = document.querySelector('.do-inventory');
+  if (inventory) inventory.addEventListener('toggle', () => feedback(inventory));
+  update(false);
+  if (motion) revealHandle = motion.once(grid, ctx => {
+    cells.forEach((cell, index) => {
+      if (Number(cell.dataset.count) === 0) return;
+      const rect = cell.querySelector('rect');
+      ctx.animate(rect, [{opacity:1, transform:'scale(.85)'}, {opacity:1, transform:'scale(1)'}], {
+        duration:220, delay:(index % data.years.length) * 20 + Math.floor(index / data.years.length) * 25,
+        easing:'ease-out', fill:'both'
+      });
+    });
+    ctx.timer(() => ctx.finish(), 850);
+  }, {
+    prepare() {
+      cells.filter(cell => Number(cell.dataset.count) > 0).forEach(cell => {
+        const rect = cell.querySelector('rect');
+        rect.style.transformBox = 'fill-box';
+        rect.style.transformOrigin = 'center';
+        rect.style.transform = 'scale(.85)';
+      });
+    },
+    finish() {
+      cells.forEach(cell => {
+        const rect = cell.querySelector('rect');
+        rect.style.removeProperty('transform');
+        rect.style.removeProperty('transform-box');
+        rect.style.removeProperty('transform-origin');
+      });
+    }, threshold:.15, maxDuration:1000
+  });
+})();
+</script>

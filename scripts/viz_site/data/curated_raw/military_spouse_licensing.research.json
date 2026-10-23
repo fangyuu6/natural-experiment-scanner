@@ -1,0 +1,562 @@
+{
+ "policy_id": "military_spouse_licensing",
+ "name_en": "Military spouse licensure portability",
+ "name_zh": "军属执照可携带",
+ "definition_en": "State law giving military spouses expedited licensure, temporary licensure, or licensure by endorsement/recognition across occupations (a general statute covering many licensed occupations, not a single profession); year the first such law was signed.",
+ "definition_zh": "州法允许军人配偶在多数职业领域通过加急审批、临时执照或认可已有执照获得本州执照；年份为首部此类综合性（非单一职业）法律的签署年。",
+ "year_basis": "Year the first general military-spouse licensure law was SIGNED (enacted). Spouse-specific; generic endorsement/universal recognition laws and single-profession laws excluded.",
+ "as_of": "2025-12-31",
+ "summary_sources": [
+  "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+  "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Alabama.pdf",
+  "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses",
+  "https://obamawhitehouse.archives.gov/blog/2012/06/26/23-states-have-now-passed-pro-military-spouse-license-portability-measures",
+  "https://statepolicy.militaryonesource.mil/bill/CT/EO/hb6449/2021",
+  "https://www.ncsl.org/labor-and-employment/barriers-to-work-improving-access-to-licensed-occupations-for-veterans-and-military-spouses"
+ ],
+ "states": {
+  "AL": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Alabama.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 638 (2012); excludes attorneys and a few boards (securities, POST, pharmacy, optometry, dental)."
+  },
+  "AK": {
+   "year": 2011,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Alaska.pdf",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": ""
+  },
+  "AZ": {
+   "year": 2011,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Arizona.pdf",
+    "https://www.azleg.gov/ars/32/04302.htm",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "SB 1458 (2011); endorsement with 1 yr experience, codified in A.R.S. 32-4302."
+  },
+  "AR": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Arkansas.pdf"
+   ],
+   "confidence": "high",
+   "note": "Ark. Code 17-1-106 (2013); expanded by HB 1723 (2015) and HB 1184 (2017)."
+  },
+  "CA": {
+   "year": 2012,
+   "date": "2012-09-20",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-California.pdf",
+    "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201120120AB1904"
+   ],
+   "confidence": "high",
+   "note": "AB 1904 (2012) expedites licensure for all DCA boards; AB 186 (2014) added temporary licenses. DoD list omits AB 1904."
+  },
+  "CO": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Colorado.pdf"
+   ],
+   "confidence": "medium",
+   "note": "HB12-1059 (2012) temporary practice for DORA professions. HB10-1175 (2010) was generic endorsement/competency, not spouse-specific."
+  },
+  "CT": {
+   "year": 2021,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Connecticut.pdf",
+    "https://statepolicy.militaryonesource.mil/bill/CT/EO/hb6449/2021"
+   ],
+   "confidence": "medium",
+   "note": "PA 21-152 (HB 6449) requires all boards to license spouses. REACH 2017 found no earlier spouse-specific law."
+  },
+  "DE": {
+   "year": 2012,
+   "date": "2012-05-28",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Delaware.pdf",
+    "https://legis.delaware.gov/SessionLaws/Chapter?id=16832"
+   ],
+   "confidence": "high",
+   "note": "HB 238 (ch. 253): provisional 6-month licenses for spouses across Division of Professional Regulation boards."
+  },
+  "DC": {
+   "year": null,
+   "date": null,
+   "sources": [],
+   "confidence": "unknown",
+   "note": "No general DC military-spouse licensure statute found; B24-0552 (2021) not enacted. Not verified."
+  },
+  "FL": {
+   "year": 2010,
+   "date": "2010-05-26",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Florida.pdf",
+    "https://flsenate.gov/Session/Bill/2010/713",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "HB 713 (ch. 2010-106): temporary license for DBPR professions only; health practitioners added 2011 (SB 1228)."
+  },
+  "GA": {
+   "year": 2013,
+   "date": "2013-04-08",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Georgia.pdf",
+    "https://openstates.org/ga/bills/2013_14/HB188/"
+   ],
+   "confidence": "high",
+   "note": "HB 188 (2013), O.C.G.A. 43-1-34; HB 821 (2016) strengthened it."
+  },
+  "HI": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Hawaii.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 2257 (2012): endorsement/reciprocity, expedite, temporary licenses; Act 185 (2013) narrowed."
+  },
+  "ID": {
+   "year": 2013,
+   "date": "2013-04-01",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Idaho.pdf",
+    "https://legislature.idaho.gov/sessioninfo/2013/legislation/S1068/"
+   ],
+   "confidence": "medium",
+   "note": "SB 1068 (S.L. 2013 ch. 211): 'certain professions'; DOPL boards 'may' expedite; mandatory universal rules only in 2019."
+  },
+  "IL": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Illinois.pdf"
+   ],
+   "confidence": "high",
+   "note": "SB 275 (2012), Military Family Licensing Act: expedited temporary licenses."
+  },
+  "IN": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Indiana.pdf"
+   ],
+   "confidence": "high",
+   "note": "HEA 1116 (2012); HEA 219 (2016) extended."
+  },
+  "IA": {
+   "year": 2022,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Iowa.pdf",
+    "https://www.legis.iowa.gov/docs/code/272C.12A.pdf",
+    "https://www.legis.iowa.gov/docs/code/272C.12.pdf"
+   ],
+   "confidence": "medium",
+   "note": "272C.12A (2022 Acts ch.1134) expedite+temporary for spouses. 272C.12 (2020) is universal recognition, not spouse-specific."
+  },
+  "KS": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Kansas.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 2178 (2012): reciprocity/endorsement or probationary license; HB 2154 (2015)."
+  },
+  "KY": {
+   "year": 2011,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Kentucky.pdf",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "HB 301 (2011): temporary or permanent license within 30 days."
+  },
+  "LA": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Louisiana.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 732 (2012) licensure by endorsement; HB 1142 (2016) broader."
+  },
+  "ME": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Maine.pdf"
+   ],
+   "confidence": "high",
+   "note": "LD 1137, P.L. 2013 ch. 311: endorsement or temporary license for spouses."
+  },
+  "MD": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Maryland.pdf"
+   ],
+   "confidence": "high",
+   "note": "Veterans Full Employment Act of 2013 (HB 225/SB 273): expedite and temporary licenses."
+  },
+  "MA": {
+   "year": 2012,
+   "date": "2012-05-31",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Massachusetts.pdf",
+    "https://malegislature.gov/Laws/SessionLaws/Acts/2012/Chapter108"
+   ],
+   "confidence": "high",
+   "note": "VALOR Act, ch. 108 of Acts of 2012: expedited license or temporary license for spouses. REACH misdates it 2013."
+  },
+  "MI": {
+   "year": 2014,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Michigan.pdf"
+   ],
+   "confidence": "high",
+   "note": "Occupational Code MCL 339.213 (2014): temporary license; HB 4060 (2015) added fee waiver."
+  },
+  "MN": {
+   "year": 2014,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Minnesota.pdf",
+    "https://www.revisor.mn.gov/statutes/cite/197.4552"
+   ],
+   "confidence": "high",
+   "note": "Minn. Stat. 197.4552 (2014 c.312): boards must expedite and offer temporary licenses."
+  },
+  "MS": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Mississippi.pdf"
+   ],
+   "confidence": "high",
+   "note": "SB 2419 (2013): license to spouses with equivalent license."
+  },
+  "MO": {
+   "year": 2011,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Missouri.pdf",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "2011 law (H.B./S.B. 136): temporary license for non-resident military spouses."
+  },
+  "MT": {
+   "year": 2011,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Montana.pdf",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "medium",
+   "note": "HB 94 (2011): reciprocity/temporary permit on affidavit. REACH says not spouse-specific; DoD counts it as spouse expedite."
+  },
+  "NE": {
+   "year": 2017,
+   "date": "2017-04-25",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Nebraska.pdf",
+    "https://www.nebraskalegislature.gov/bills/view_bill.php?DocumentID=31054",
+    "https://veterans.nebraska.gov/sites/default/files/doc/9.%202018%2010%2023%20-%20LR%20436%20Report%20-%20FINAL.pdf"
+   ],
+   "confidence": "medium",
+   "note": "LB 88 (2017): temporary licenses under Uniform Credentialing Act (DHHS health professions only; excludes real estate)."
+  },
+  "NV": {
+   "year": 2015,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Nevada.pdf",
+    "https://www.leg.state.nv.us/nrs/nrs-622.html"
+   ],
+   "confidence": "high",
+   "note": "AB 89 (2015), NRS 622.510: reciprocity opportunities for spouses; board may license by endorsement."
+  },
+  "NH": {
+   "year": 2014,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-New_Hampshire.pdf"
+   ],
+   "confidence": "high",
+   "note": "RSA 332-G:7 (2014): boards facilitate licensing of transferred spouses (board discretion)."
+  },
+  "NJ": {
+   "year": 2014,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-New_Jersey.pdf"
+   ],
+   "confidence": "high",
+   "note": "P.L. 2013 c.264, approved Jan 2014: boards license spouses, temporary license; board discretion."
+  },
+  "NM": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-New_Mexico.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 180 (2013): boards expedite licenses for spouses."
+  },
+  "NY": {
+   "year": 2016,
+   "date": "2016-09-09",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-New_York.pdf",
+    "https://www.nysenate.gov/legislation/bills/2015/A4394"
+   ],
+   "confidence": "high",
+   "note": "Ch. 299 of 2016: expedited review and 50% fee cut, Education Law professions only (A7417 of 2013 died)."
+  },
+  "NC": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-North_Carolina.pdf",
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_93B/GS_93B-15.1.html"
+   ],
+   "confidence": "high",
+   "note": "HB 799 enacted as S.L. 2012-196 (G.S. 93B-15.1); REACH cites 2011 session year."
+  },
+  "ND": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-North_Dakota.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 1246/1296 (2013); excludes some boards (accountancy, electrical, real estate, medical, dental)."
+  },
+  "OH": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Ohio.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 490 (2012): temporary/provisional license for spouses."
+  },
+  "OK": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Oklahoma.pdf"
+   ],
+   "confidence": "high",
+   "note": "SB 1863 (2012): boards expedite endorsement for spouses."
+  },
+  "OR": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Oregon.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 2037 (2013): boards shall license spouses; may issue temporary licenses."
+  },
+  "PA": {
+   "year": 2022,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Pennsylvania.pdf",
+    "https://www.pa.gov/agencies/dos/resources/professional-licensing-resources/military-and-veterans-licensure"
+   ],
+   "confidence": "medium",
+   "note": "Act 35 of 2022 (63 Pa.C.S.): expedited review, temporary licenses, fee waiver. REACH 2017 found none earlier."
+  },
+  "RI": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Rhode_Island.pdf"
+   ],
+   "confidence": "high",
+   "note": "SB 629/HB 5712 (2013): boards expedite licensing for spouses."
+  },
+  "SC": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-South_Carolina.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 3710 and S 1107 (2012): temporary licenses; SB 417 (2013) added."
+  },
+  "SD": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-South_Dakota.pdf"
+   ],
+   "confidence": "high",
+   "note": "SB 177 (2013): expedited endorsement or temporary license."
+  },
+  "TN": {
+   "year": 2011,
+   "date": "2011-05-25",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Tennessee.pdf",
+    "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=HB0968&GA=107",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "HB 968 / Public Chapter 230 (2011): boards must expedite licensure or issue temporary permit (Titles 4, 62, 68)."
+  },
+  "TX": {
+   "year": 2011,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Texas.pdf",
+    "https://capitol.texas.gov/tlodocs/82R/analysis/doc/SB01733H.doc",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "SB 1733 (2011); SB 162 (2013) added endorsement/temporary/expedited requirements."
+  },
+  "UT": {
+   "year": 2011,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Utah.pdf",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "HB 384 (2011): spouses may practice with out-of-state license."
+  },
+  "VT": {
+   "year": 2014,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Vermont.pdf"
+   ],
+   "confidence": "high",
+   "note": "Act 177 of 2014 (H.681): endorsement or 60-day temporary license."
+  },
+  "VA": {
+   "year": 2012,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Virginia.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 937 (2012) plus HB 346/543; HB 1247 (2014) and HB 405 (2016) extended."
+  },
+  "WA": {
+   "year": 2011,
+   "date": "2011-12-20",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Washington.pdf",
+    "https://app.leg.wa.gov/billsummary?BillNumber=5969&Year=2011",
+    "https://obamawhitehouse.archives.gov/blog/2012/02/15/first-lady-and-dr-biden-urge-state-action-support-military-spouses-state-licenses"
+   ],
+   "confidence": "high",
+   "note": "SB 5969 (ch. 5, 2011 2nd sp. sess.); REACH misdates it 2012."
+  },
+  "WV": {
+   "year": 2014,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-West_Virginia.pdf"
+   ],
+   "confidence": "high",
+   "note": "HB 4151 (2014): full license or 6-month temporary license within 30 days."
+  },
+  "WI": {
+   "year": 2012,
+   "date": "2012-04-04",
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Wisconsin.pdf",
+    "https://docs.legis.wisconsin.gov/2011/proposals/sb550"
+   ],
+   "confidence": "high",
+   "note": "SB 550 = 2011 Wisconsin Act 210, signed Apr 2012 (REACH says 2011 = session year)."
+  },
+  "WY": {
+   "year": 2013,
+   "date": null,
+   "sources": [
+    "https://download.militaryonesource.mil/12038/MOS/Reports/barriers-to-portability-of-occupational-licenses-between-states.pdf",
+    "https://reachfamilies.umn.edu/sites/default/files/2023-02/State_Report-Wyoming.pdf"
+   ],
+   "confidence": "high",
+   "note": "SB 74 (2013): endorsement procedures and temporary licenses."
+  }
+ },
+ "n_with_law": 50,
+ "year_min": 2010,
+ "year_max": 2022,
+ "researched_by": "agent",
+ "method_notes": "Years from DoD 2018 report App. B (governor-signed dates) cross-checked with UMN REACH 2017 state reports; disputed states checked on legislature pages. Dates only where state-verified. Umbrella health/DBPR laws kept, scope noted. DC unverified."
+}

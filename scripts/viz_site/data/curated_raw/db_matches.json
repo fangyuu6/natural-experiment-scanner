@@ -1,0 +1,4509 @@
+{
+ "generated": "2026-10-01",
+ "source": "data/output/policy_db_20260415_483k.csv (State Legislation rows, deduped by policy_id)",
+ "verdict_codes": {
+  "T": "enacting/establishing law",
+  "A": "clearly substantive amendment"
+ },
+ "candidates": {
+  "compacts": {
+   "label": "Interstate occupational licensure compacts (nurse, PT, medical, psychology, counseling, social work, OT, ASLP, PA, EMS, dietitian, teacher, cosmetology, dental)",
+   "labor": true,
+   "rule": "(?=.*compact)(?=.*(licens|nurse|medical|physic|therap|psycholog|counsel|social work|dietit|audiolog|speech|emergency medical|teacher|dentist|dental|cosmetolog|respiratory|occupational|assistant|EMS|mobility))",
+   "exclude": "tribal|gaming|fluorescent|dairy|earthquake|juvenile|corrections|supervision|crime prevention|adult offender|oil and gas|balanced budget|mental health compact|meatpacking|metrorail|stream commission|popular vote|radioactive|modular|student exchange|forest|fisheries",
+   "matched": 56,
+   "T": 51,
+   "A": 1,
+   "precision": 0.929,
+   "true_states": [
+    "AK",
+    "AL",
+    "AR",
+    "CO",
+    "DE",
+    "FL",
+    "GA",
+    "IA",
+    "ID",
+    "KS",
+    "KY",
+    "MD",
+    "ME",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "OH",
+    "OK",
+    "RI",
+    "SD",
+    "TN",
+    "UT",
+    "WA",
+    "WY"
+   ],
+   "true_states_T_only": [
+    "AK",
+    "AL",
+    "AR",
+    "CO",
+    "DE",
+    "FL",
+    "GA",
+    "IA",
+    "ID",
+    "KS",
+    "KY",
+    "MD",
+    "ME",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "OH",
+    "OK",
+    "RI",
+    "SD",
+    "TN",
+    "UT",
+    "WA",
+    "WY"
+   ],
+   "dc_true": false,
+   "span": "2016-2025 (NLC 2000; PT 2016+; PSYPACT 2019+; most others 2020+)",
+   "real_adopters_approx": "approx 35-45 states per major compact; approx 40 states for PT/NLC by 2025",
+   "site_area": "occupational licensing",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Physical Therapy Licensure Compact",
+     "policy_id": "1713156",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/33?Root=SB74",
+     "db_date": "2024-10-09"
+    },
+    {
+     "state": "AK",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Aud. & Speech-lang Interstate Compact",
+     "policy_id": "1713403",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/33?Root=SB75",
+     "db_date": "2024-10-09"
+    },
+    {
+     "state": "AL",
+     "year": 2017,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Emergency Medical Services Personnel Licensure Interstate Compact, established, Sec. 22-18-50 added; Sec. 22-18-6 am'd.",
+     "policy_id": "964930",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB250&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2017-05-17"
+    },
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Nursing, Board of, authority to enter, coordinated license information, multistate practice, Enhanced Nurse Licensure Compact, Secs. 34-21-20.01, 34-21-120 to 34-21-130, inclusive, added; Secs. 34-21-1, 34-21-2, 34-21-21, 34-21-22, 34-21-25 am'd.",
+     "policy_id": "1223724",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB38&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-04-30"
+    },
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Physical Therapy Licensure Compact, adopted, licensed physical therapists authorized to practice among compact member states",
+     "policy_id": "1427034",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB82&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-03-11"
+    },
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Psychologists, Psychology Interjurisdictional Compact, licensed psychologists authorized to practice on a limited basis among compact member states",
+     "policy_id": "1427562",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB102&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-03-11"
+    },
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Audiology and Speech-Language Pathology Interstate Compact, adopted, licensees authorized to practice among compact member states",
+     "policy_id": "1434177",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB130&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-03-11"
+    },
+    {
+     "state": "AL",
+     "year": 2022,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Professional counseling, Counseling Compact, licensed professional counselors authorized to practice on a limited basis among compact member states",
+     "policy_id": "1558297",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB99&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2022-03-01"
+    },
+    {
+     "state": "AL",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Interstate Compact -Social Work Examiners",
+     "policy_id": "1860700",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2024-05-09"
+    },
+    {
+     "state": "AL",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "School Psychologist Interstate Licensure Compact",
+     "policy_id": "1955984",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2025-04-22"
+    },
+    {
+     "state": "AL",
+     "year": 2025,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Interstate compact, respiratory therapists",
+     "policy_id": "1977035",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2025-04-17"
+    },
+    {
+     "state": "AR",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To Establish The Interstate Medical Licensure Compact.",
+     "policy_id": "AR-SB119-95th General Assembly",
+     "url": "https://legiscan.com/AR/bill/SB119/2025",
+     "db_date": "2025-03-12"
+    },
+    {
+     "state": "AR",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To Establish The Social Work Licensure Compact In This State.",
+     "policy_id": "AR-HB1712-95th General Assembly",
+     "url": "https://legiscan.com/AR/bill/HB1712/2025",
+     "db_date": "2025-04-16"
+    },
+    {
+     "state": "CO",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Interstate Medical Licensure Compact",
+     "policy_id": "CO-HB1047-Regular Session",
+     "url": "https://legiscan.com/CO/bill/HB1047/2016",
+     "db_date": "2016-06-08"
+    },
+    {
+     "state": "DE",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "An Act To Amend Title 24 Of The Delaware Code Relating To The Physical Therapy Licensure Compact.",
+     "policy_id": "1257234",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=47400",
+     "db_date": "2019-07-30"
+    },
+    {
+     "state": "DE",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "An Act To Amend Titles 18 And 24 Of The Delaware Code Relating To Preserving Telehealth And Adopting The Interstate Medical Licensure Compact.",
+     "policy_id": "1500724",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=58579",
+     "db_date": "2021-06-23"
+    },
+    {
+     "state": "DE",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "An Act To Amend Title 24 Of The Delaware Code Relating To Professions And Occupations And The Audiology And Speech-language Pathology Interstate Compact.",
+     "policy_id": "1617640",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=109396",
+     "db_date": "2022-08-04"
+    },
+    {
+     "state": "DE",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "An Act To Amend Title 24 Of The Delaware Code Relating To A Physician Assistants Licensure Compact.",
+     "policy_id": "1762817",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=130336",
+     "db_date": "2023-07-21"
+    },
+    {
+     "state": "FL",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Creates Nurse Licensure Compact; provides for recognition of licenses in party states; provides requirements for obtaining & retaining multistate license; provides effect on current licensees; requires all party states to participate in coordinated l...",
+     "policy_id": "FL-H1061-Regular Session",
+     "url": "http://www.flsenate.gov/Session/Bill/2016/1061",
+     "db_date": "2016-03-28"
+    },
+    {
+     "state": "GA",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Audiology and Speech-Language Pathology Interstate Compact Act; enact",
+     "policy_id": "1383990",
+     "url": "https://www.legis.ga.gov/legislation/58823",
+     "db_date": "2021-05-10"
+    },
+    {
+     "state": "IA",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "A bill for an act establishing a physical therapy licensure compact. (Formerly HF 2296.) Effective 7-1-18.",
+     "policy_id": "IA-HF2425-87th General Assembly",
+     "url": "https://legiscan.com/IA/bill/HF2425/2017",
+     "db_date": "2018-04-04"
+    },
+    {
+     "state": "IA",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "A bill for an act enacting the physician assistant licensure compact. (Formerly HSB 87.) Effective date: 07/01/2025.",
+     "policy_id": "IA-HF300-91st General Assembly",
+     "url": "https://www.legis.iowa.gov/legislation/BillBook?ga=91&ba=HF300",
+     "db_date": "2025-05-27"
+    },
+    {
+     "state": "ID",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amends and adds to existing law to provide for Idaho's participation in the Audiology and Speech-Language Pathology Interstate Compact and to provide that applicants for audiology and speech-language pathology licensure shall submit fingerprints.",
+     "policy_id": "1593390",
+     "url": "https://legislature.idaho.gov/sessioninfo/2022/legislation/H0664/",
+     "db_date": "2022-03-24"
+    },
+    {
+     "state": "KS",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Enacting the psychology interjurisdictional compact to provide for interjurisdictional authorization to practice telepsychology and temporary in-person, face-to-face psychology and enacting the physical therapy licensure compact and authorizing crimi...",
+     "policy_id": "KS-SB170-Regular Session",
+     "url": "https://legiscan.com/KS/bill/SB170/2021",
+     "db_date": "2021-05-26"
+    },
+    {
+     "state": "KY",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Create a new section of KRS Chapter 319A to include Kentucky in an interstate compact for licensure as an occupational therapist; set the compact's purpose, definitions, and requirements for state participation; allow a practitioner to hold both a ho...",
+     "policy_id": "KY-HB213-Regular Session",
+     "url": "https://apps.legislature.ky.gov/record/22RS/hb213.html",
+     "db_date": "2022-04-08"
+    },
+    {
+     "state": "MD",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Entering into the Interstate Medical Licensure Compact; providing the purpose of the Compact is to strengthen access to health care by developing a process to complement existing licensing and provide a streamlined method to allow physicians to becom...",
+     "policy_id": "MD-SB234-Regular Session",
+     "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/SB0234?ys=2018rs",
+     "db_date": "2018-05-08"
+    },
+    {
+     "state": "MD",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Entering into the Interstate Occupational Therapy Licensure Compact; stating the purpose of the Compact; requiring a state to meet certain requirements to participate in the Compact; establishing certain duties of member states; authorizing a certain...",
+     "policy_id": "MD-HB540-Regular Session",
+     "url": "https://legiscan.com/MD/bill/HB540/2021",
+     "db_date": "2021-04-13"
+    },
+    {
+     "state": "MD",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Entering into the Audiology and Speech-Language Pathology Interstate Compact; stating the purpose of the Compact; requiring a state to meet certain requirements to participate in the Compact; requiring certain audiologists and speech-language patholo...",
+     "policy_id": "MD-HB288-Regular Session",
+     "url": "https://legiscan.com/MD/bill/HB288/2021",
+     "db_date": "2021-05-18"
+    },
+    {
+     "state": "MD",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Entering into the Social Work Licensure Compact for the purpose of authorizing regulated social workers who hold multistate licenses to practice social work in member states; establishing requirements for multistate licensure; establishing the Social...",
+     "policy_id": "MD-SB174-Regular Session",
+     "url": "https://legiscan.com/MD/bill/SB174/2025",
+     "db_date": "2025-04-08"
+    },
+    {
+     "state": "ME",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "An Act to Add the State of Maine to the Compact for Licensing Physician Assistants",
+     "policy_id": "1791675",
+     "url": "https://legislature.maine.gov/legis/bills/display_ps.asp?LD=2043&snum=131",
+     "db_date": "2024-04-10"
+    },
+    {
+     "state": "ND",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "AN ACT to create and enact chapter 43-40.1 of the North Dakota Century Code, relating to the occupational therapy licensure compact.",
+     "policy_id": "ND-SB2146-69th Legislative Assembly",
+     "url": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo2146.html",
+     "db_date": "2025-04-04"
+    },
+    {
+     "state": "NE",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Change credentialing provisions for health care professions and occupations and licensure provisions for health care facilities and services and school-age child care programs and adopt the EMS Personnel Licensure Interstate Compact and the Psycholog...",
+     "policy_id": "NE-LB1034-105th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=34440",
+     "db_date": "2018-04-23"
+    },
+    {
+     "state": "NE",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Adopt the Interstate Teacher Mobility Compact and require school districts and the State Department of Education to collect and report information regarding dyslexia and other learning disabilities and to establish dress code and grooming policies",
+     "policy_id": "NE-LB298-108th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=50239",
+     "db_date": "2023-06-01"
+    },
+    {
+     "state": "NH",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Adopting the emergency medical services personnel licensure interstate compact.",
+     "policy_id": "1036093",
+     "url": "https://gencourt.state.nh.us/bill_status/legacy/bs2016/bill_status.aspx?lsr=2739&sy=2018&sortoption=&txtsessionyear=2018&txtbillnumber=SB370",
+     "db_date": "2018-07-05"
+    },
+    {
+     "state": "NJ",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Enters New Jersey into Interstate Physician Assistant Licensure Compact.",
+     "policy_id": "NJ-A4328-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2024/A4328",
+     "db_date": "2026-01-09"
+    },
+    {
+     "state": "NM",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Social Work Licensure Interstate Compact",
+     "policy_id": "NM-HB50-Regular Session",
+     "url": "https://www.nmlegis.gov/Legislation/Legislation?chamber=H&legtype=B&legno=50&year=26",
+     "db_date": "2026-02-09"
+    },
+    {
+     "state": "OH",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Enter Audiology / Speech-Language Pathology Interstate Compact",
+     "policy_id": "OH-HB252-134th General Assembly",
+     "url": "https://www.legislature.ohio.gov/legislation/legislation-summary?id=GA134-HB-252",
+     "db_date": "2021-06-23"
+    },
+    {
+     "state": "OH",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Enter the Counseling Compact",
+     "policy_id": "OH-SB204-134th General Assembly",
+     "url": "https://www.legislature.ohio.gov/legislation/legislation-summary?id=GA134-SB-204",
+     "db_date": "2022-05-25"
+    },
+    {
+     "state": "OH",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Enter the Dietitian Licensure Compact",
+     "policy_id": "OH-SB211-135th General Assembly",
+     "url": "https://www.legislature.ohio.gov/legislation/135/sb211",
+     "db_date": "2025-04-09"
+    },
+    {
+     "state": "OK",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Physical therapy; creating the Physical Therapy Licensure Compact; permits; multistate compact license; effective date.",
+     "policy_id": "OK-HB3336-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=hb3336&Session=1800",
+     "db_date": "2018-05-03"
+    },
+    {
+     "state": "OK",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Teachers; creating the Interstate Teacher Mobility Compact Act; providing for creation of Interstate Teacher Mobility Compact Commission. Effective date. Emergency.",
+     "policy_id": "OK-SB467-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb467&Session=2400",
+     "db_date": "2023-05-02"
+    },
+    {
+     "state": "RI",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amends the interstate nurse licensure compact and adopts an enhanced and more comprehensive version of the compact, to allow nurses to hold a multi-state license allowing them to practice across state lines without having to obtain multiple licenses.",
+     "policy_id": "RI-S0275-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2023-06-24"
+    },
+    {
+     "state": "RI",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "BUSINESSES AND PROFESSIONS -- RHODE ISLAND PHYSICAL THERAPIST LICENSURE COMPACT ACT - Allows the state to become a member of the physical therapist licensure compact adopted by twenty-five (25) states in order to facilitate the interstate practice of...",
+     "policy_id": "RI-S2876-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2024-06-25"
+    },
+    {
+     "state": "SD",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Authorize the state's participation in the interstate compact on occupational therapy licensure.",
+     "policy_id": "SD-HB1183-Regular Session",
+     "url": "https://sdlegislature.gov/#/Session/Bill/23794",
+     "db_date": "2023-03-27"
+    },
+    {
+     "state": "SD",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Establish a criminal background check requirement for multistate licensure under the social work licensure compact.",
+     "policy_id": "SD-HB1028-Regular Session",
+     "url": "https://sdlegislature.gov/#/Session/Bill/26669",
+     "db_date": "2026-02-17"
+    },
+    {
+     "state": "TN",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, enacts the \"Physical Therapy Licensure Compact\". - Amends TCA Title 4, Chapter 29 and Title 63, Chapter 13.",
+     "policy_id": "TN-HB2433-109th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=HB2433&ga=109",
+     "db_date": "2016-04-26"
+    },
+    {
+     "state": "TN",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, creates the \"Nurse Licensure Compact.\" - Amends and repeals portions of TCA Title 4 and Title 63, Chapter 7.",
+     "policy_id": "TN-SB1725-109th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=SB1725&ga=109",
+     "db_date": "2016-03-22"
+    },
+    {
+     "state": "TN",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, enacts the \"Social Work Licensure Compact.\" - Amends TCA Title 4; Title 63 and Title 68.",
+     "policy_id": "TN-SB2134-113th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=SB2134&ga=113",
+     "db_date": "2024-05-31"
+    },
+    {
+     "state": "TN",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, enacts the \"Cosmetology Licensure Compact.\" - Amends TCA Title 4; Title 49 and Title 62.",
+     "policy_id": "TN-HB2781-113th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=HB2781&ga=113",
+     "db_date": "2024-06-03"
+    },
+    {
+     "state": "UT",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Nurse Licensure Compact",
+     "policy_id": "UT-SB0048-Regular Session",
+     "url": "https://le.utah.gov/~2017/bills/static/SB0048.html",
+     "db_date": "2017-03-15"
+    },
+    {
+     "state": "WA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Concerning the dentist and dental hygienist compact.",
+     "policy_id": "WA-HB1576-Regular Session",
+     "url": "https://app.leg.wa.gov/billsummary?BillNumber=1576&Year=2023&Initiative=false",
+     "db_date": "2023-05-04"
+    },
+    {
+     "state": "WY",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "AN ACT relating to professional licensing; adopting the Psychology Interjurisdictional Compact; authorizing the temporary and telemedicine based provision of psychology services by psychologists not licensed to practice psychology in Wyoming; providi...",
+     "policy_id": "WY-SF0026-General Session",
+     "url": "https://www.wyoleg.gov/Legislation/2023/SF0026",
+     "db_date": "2023-02-15"
+    }
+   ]
+  },
+  "scope": {
+   "label": "Scope-of-practice expansions (NP/APRN full practice, pharmacist prescribing, anesthesiologist assistants, dental, optometry)",
+   "labor": true,
+   "rule": "full practice|scope of practice|collaborative practice|independent practice|practice authority|anesthesiologist assistant|dental therap|pharmacists?.{0,40}prescrib|prescrib.{0,40}pharmacists?|hormonal contraceptive|supervising physician|licensed nurse practitioner|advanced practice (registered )?nurs|nurse practice act|nurse anesthetist|anesthesia workforce|nurse practitioner",
+   "exclude": "Week|Day$|recogni|Honoring|oan-repayment|study|Analysis|working group|Working Group|architecture|chair|Chair|Task Force|council on|Board of Nursing, membership|appropriation|Appropriation|reimburse licensed physician|Medicaid home|loan|Resolution|RESOLUTION|certifying provider|naloxone|buprenorphine|disabilit|lactation|bone marrow|drivers",
+   "matched": 43,
+   "T": 4,
+   "A": 30,
+   "precision": 0.791,
+   "true_states": [
+    "AL",
+    "AR",
+    "AZ",
+    "CT",
+    "DE",
+    "ID",
+    "IL",
+    "KS",
+    "ME",
+    "MT",
+    "NE",
+    "NH",
+    "NV",
+    "NY",
+    "OK",
+    "OR",
+    "RI",
+    "TN",
+    "UT",
+    "VA",
+    "WA",
+    "WV",
+    "WY"
+   ],
+   "true_states_T_only": [
+    "AR",
+    "IL",
+    "OR",
+    "UT"
+   ],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 27 states + DC NP full practice by 2024 (about 10 added 2016-2024); approx 30 states pharmacist-prescribed contraception",
+   "site_area": "occupational licensing",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2018,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Nurse practitioners and nurse midwives authorized to sign certain forms which may be signed by a physician, procedure to add other forms",
+     "policy_id": "1090766",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB429&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2018-03-22"
+    },
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Pharmacists, collaborative practice agreements with a physician, agreements to be submitted to Bd. of Pharmacy and St. Bd. of Medical Examiners, Sec. 34-23-77 added",
+     "policy_id": "1205614",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB35&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-05-30"
+    },
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Nurse Anesthetists, certified registered (CRNA's), insurance and health benefit plans, direct payments for services, definition of CRNA for purposes of law updated, Sec. 27-46-3 am'd.",
+     "policy_id": "1242467",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB245&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-05-22"
+    },
+    {
+     "state": "AL",
+     "year": 2022,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Nurse Anesthetists, Certified Registered, scope of practice is in coordination with licensed physician or podiatrist, Sec. 34-21-81 am'd.",
+     "policy_id": "1582309",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB268&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2022-04-05"
+    },
+    {
+     "state": "AL",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Scope of practice of physical therapists",
+     "policy_id": "1855304",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2024-05-16"
+    },
+    {
+     "state": "AL",
+     "year": 2025,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Medical Examiners Board and Nursing Board collaborative practice; joint committee, membership and procedures revised",
+     "policy_id": "1958272",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2025-05-14"
+    },
+    {
+     "state": "AR",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To Grant Full Practice Authority To Certified Nurse Midwives.",
+     "policy_id": "AR-HB1215-93rd General Assembly",
+     "url": "https://legiscan.com/AR/bill/HB1215/2021",
+     "db_date": "2021-04-07"
+    },
+    {
+     "state": "AR",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To Authorize An Advanced Practice Registered Nurse To Delegate Certain Tasks To Medical Assistants And Other Unlicensed Staff.",
+     "policy_id": "AR-HB1131-95th General Assembly",
+     "url": "https://legiscan.com/AR/bill/HB1131/2025",
+     "db_date": "2025-04-21"
+    },
+    {
+     "state": "AZ",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Pharmacists; scope of practice",
+     "policy_id": "AZ-SB1269-Fifty-third Legislature 1st Regular",
+     "url": "https://apps.azleg.gov/BillStatus/BillOverview/69050",
+     "db_date": "2017-03-29"
+    },
+    {
+     "state": "AZ",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Dentists; scope of practice",
+     "policy_id": "AZ-SB1074-Fifty-fifth Legislature 2nd Regular",
+     "url": "https://legiscan.com/AZ/bill/SB1074/2022",
+     "db_date": "2022-03-18"
+    },
+    {
+     "state": "AZ",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Pharmacists; collaborative practice agreements",
+     "policy_id": "AZ-HB2582-Fifty-sixth Legislature 2nd Regular",
+     "url": "https://apps.azleg.gov/BillStatus/BillOverview/80441",
+     "db_date": "2024-04-09"
+    },
+    {
+     "state": "CT",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To expand the podiatric scope of practice to include surgical treatment of complications within the tibial diaphysis related to the use of external fixation pins, the performance of total ankle replacements and the treatment of tibial pilon fractures...",
+     "policy_id": "CT-HB05196-General Assembly",
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=HB05196&which_year=2024",
+     "db_date": "2024-06-04"
+    },
+    {
+     "state": "DE",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "An Act To Amend Title 24 Of The Delaware Code Relating To Advanced Practice Registered Nurses.",
+     "policy_id": "1489685",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=58536",
+     "db_date": "2021-08-04"
+    },
+    {
+     "state": "ID",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Amends existing law to provide that pharmacists may prescribe immunizations for persons 6 years or older.",
+     "policy_id": "844013",
+     "url": "http://www.legislature.idaho.gov/legislation/2016/S1294.htm",
+     "db_date": "2016-03-16"
+    },
+    {
+     "state": "IL",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "APRN FULL PRACTICE AUTHORITY",
+     "policy_id": "IL-SB 105-102nd",
+     "url": "https://ilga.gov/legislation/BillStatus.asp?DocNum=105&GAID=16&DocTypeID=SB&LegId=128440&SessionID=110&GA=102",
+     "db_date": "2021-07-09"
+    },
+    {
+     "state": "IL",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "NURSE PRACTICE ACT MIDWIVES",
+     "policy_id": "1955583",
+     "url": "https://www.ilga.gov/Legislation/BillStatus?DocNum=2688&GAID=18&DocTypeID=HB&SessionID=114&GA=104",
+     "db_date": "2025-08-15"
+    },
+    {
+     "state": "KS",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Amending public health provisions relating to behavioral sciences regulatory board professional licensure, naturopathic doctor scope of practice and adult care home licensure and receivership.",
+     "policy_id": "KS-SB15-Regular Session",
+     "url": "https://legiscan.com/KS/bill/SB15/2019",
+     "db_date": "2019-05-01"
+    },
+    {
+     "state": "ME",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "An Act To Amend the Requirements for Licensure as an Independent Practice Dental Hygienist",
+     "policy_id": "993471",
+     "url": "http://legislature.maine.gov/legis/bills/display_ps.asp?LD=1085&snum=128",
+     "db_date": "2017-05-23"
+    },
+    {
+     "state": "MT",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Revise pharmacist prescribing authority",
+     "policy_id": "1642189",
+     "url": "https://laws.leg.mt.gov/legprd/LAW0210W$BSIV.ActionQuery?P_BILL_NO1=112&P_BLTP_BILL_TYP_CD=SB&Z_ACTION=Find&P_SESS=20231",
+     "db_date": "2023-05-01"
+    },
+    {
+     "state": "NE",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Change licensure and scope of practice for dental assistants and dental hygienists",
+     "policy_id": "NE-LB18-105th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=30786",
+     "db_date": "2017-03-29"
+    },
+    {
+     "state": "NH",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Prohibiting health carriers from establishing payment or reimbursement provisions based solely on a participating advanced practice registered nurse's licensure.",
+     "policy_id": "1793067",
+     "url": "https://gencourt.state.nh.us/bill_status/legacy/bs2016/bill_status.aspx?lsr=3088&sy=2024&sortoption=&txtsessionyear=2024&txtbillnumber=SB556",
+     "db_date": "2024-07-30"
+    },
+    {
+     "state": "NV",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "AN ACT relating to hospitals; authorizing the admission of an advanced practice registered nurse to membership on the medical staff of a hospital; prohibiting a hospital from automatically granting or denying such admission for certain reasons; and p...",
+     "policy_id": "NV-SB456-80th Legislature",
+     "url": "https://www.leg.state.nv.us/App/NELIS/REL/80th2019/Bill/6852/Overview",
+     "db_date": "2019-05-30"
+    },
+    {
+     "state": "NY",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Relates to the dispensing of self-administered hormonal contraceptives; authorizes a licensed physician and a certified nurse practitioner to prescribe and order a non-patient specific order to a pharmacist licensed and located in the state for the d...",
+     "policy_id": "NY-A01060-General Assembly",
+     "url": "https://www.nysenate.gov/legislation/bills/2023/A1060",
+     "db_date": "2023-05-02"
+    },
+    {
+     "state": "OK",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Professions and occupations; optometry; scope of practice; effective date.",
+     "policy_id": "OK-HB2680-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=hb2680&Session=2100",
+     "db_date": "2021-04-26"
+    },
+    {
+     "state": "OK",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Practice of pharmacy; allowing licensed pharmacist to prescribe nonprescription drugs under certain conditions. Effective date.",
+     "policy_id": "OK-SB827-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb827&Session=2300",
+     "db_date": "2023-04-26"
+    },
+    {
+     "state": "OR",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Allows pharmacists to prescribe and administer injectable hormonal contraceptives and prescribe and dispense self-administered hormonal contraceptives. Allows pharmacists to prescribe and administer injectable hormonal contraceptives and prescribe an...",
+     "policy_id": "OR-HB2527-Regular Session",
+     "url": "https://olis.oregonlegislature.gov/liz/2017R1/Measures/Overview/HB2527",
+     "db_date": "2017-06-22"
+    },
+    {
+     "state": "RI",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Expands the number of pharmacists eligible to engage in collaborative pharmacy practice with physicians by including all licensed pharmacists and provides for biennial review of collaborative practice agreements.",
+     "policy_id": "RI-H7949-Regular Session",
+     "url": "https://legiscan.com/RI/bill/H7949/2016",
+     "db_date": "2016-06-13"
+    },
+    {
+     "state": "TN",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "As enacted, authorizes advanced practice registered nurses who provide services in a free clinic or engage in the voluntary provision of healthcare services and physician assistants who provide services in a free or reduced fee clinic under the Volun...",
+     "policy_id": "TN-HB2422-109th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=HB2422&ga=109",
+     "db_date": "2016-04-26"
+    },
+    {
+     "state": "TN",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "As enacted, allows the practice of physical therapy to be under the written or oral referral of a nurse practitioner or physician assistant; removes certain minimum education requirements to engage in the independent practice of physical therapy. - A...",
+     "policy_id": "TN-SB0072-113th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=SB0072&ga=113",
+     "db_date": "2023-04-18"
+    },
+    {
+     "state": "UT",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Anesthesiologist Assistant Licensing Act",
+     "policy_id": "UT-SB0121-General Session",
+     "url": "https://le.utah.gov/~2022/bills/static/SB0121.html",
+     "db_date": "2022-03-23"
+    },
+    {
+     "state": "VA",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Health carriers; nurse practitioners. Requires health insurers and health services plan providers whose policies or contracts cover services that may be legally performed by licensed nurse practitioners to provide equal coverage for such services whe...",
+     "policy_id": "VA-SB1178-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+sum+SB1178",
+     "db_date": "2019-03-12"
+    },
+    {
+     "state": "WA",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Addressing the anesthesia workforce shortage by reducing barriers and expanding educational opportunities to increase the supply of certified registered nurse anesthetists in Washington.",
+     "policy_id": "WA-SB6286-Regular Session",
+     "url": "https://app.leg.wa.gov/billsummary?BillNumber=6286&Year=2023&Initiative=false",
+     "db_date": "2024-03-29"
+    },
+    {
+     "state": "WV",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "The purpose of this bill is to prevent entities providing insurance for requiring an advanced practice registered nurse or physician assistant to participate in a collaborative relationship to obtain payment for services.",
+     "policy_id": "WV-HB4175-Regular Session",
+     "url": "http://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=4175&year=2018&sessiontype=RS&btype=bill",
+     "db_date": "2018-04-16"
+    },
+    {
+     "state": "WY",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "AN ACT relating to the occupation of nursing; revising the Nurse Practice Act; specifying applicability to advanced practice registered nurses, registered nurses, licensed practical nurses or certified nursing assistants; conforming provisions; and p...",
+     "policy_id": "WY-SF0111-Regular Session",
+     "url": "http://legisweb.state.wy.us/2017/Digest/SF0111.pdf",
+     "db_date": "2017-03-08"
+    }
+   ]
+  },
+  "apprentice": {
+   "label": "Apprenticeship programmes / apprenticeship tax credits / youth and teacher apprenticeships",
+   "labor": true,
+   "rule": "apprentice",
+   "exclude": "hunt|hunter|scallop|funeral|mortuary|Confirmation|Auctioneers|Insurance|Licensing Committee|plumber's apprentice",
+   "matched": 31,
+   "T": 13,
+   "A": 12,
+   "precision": 0.806,
+   "true_states": [
+    "AK",
+    "AL",
+    "DE",
+    "ID",
+    "IN",
+    "MD",
+    "ME",
+    "MI",
+    "MT",
+    "NJ",
+    "NV",
+    "OR",
+    "RI",
+    "UT",
+    "VA",
+    "WV"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "DE",
+    "ID",
+    "MD",
+    "ME",
+    "NJ",
+    "RI",
+    "UT",
+    "VA",
+    "WV"
+   ],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 30+ states with new programmes 2016-2025",
+   "site_area": "workforce / none of the 8 areas (adjacent: occupational licensing)",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2020,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Electrician & Plumber Apprenticeships",
+     "policy_id": "1348100",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/31?Root=HB301",
+     "db_date": "2020-05-18"
+    },
+    {
+     "state": "AL",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Taxation, tax credit for employers employing apprentices, Apprenticeship Tax Credit Act",
+     "policy_id": "835201",
+     "url": "http://alisondb.legislature.state.al.us/alison/SESSBillResult.ASPX?WIN_TYPE=BillResult&BILL=SB90",
+     "db_date": "2016-05-03"
+    },
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Apprenticeships, completion of apprenticeship and fulfillment of other requirements to entitle applicant to receive occupational license, age requirements for apprenticeships further provided, Secs. 25-8-33, 25-8-35, and 25-8-43 am'd.",
+     "policy_id": "1257310",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB570&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-05-31"
+    },
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Alabama Industry Recognized and Registered Apprenticeship Program Act, Alabama Office of Apprenticeship created to administer state programs in lieu of federal office, apprenticeship tax credit and aggregate apprenticeship tax credit increases, Secs. 40-18-422, 40-18-423, 40-18-424 am'd.",
+     "policy_id": "1252642",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB295&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-05-30"
+    },
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Nursing, Board of, authorized to establish standards for student nurse apprenticeships and to issue apprentice permits, Sec. 34-21-2 am'd.",
+     "policy_id": "1436232",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB179&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-04-15"
+    },
+    {
+     "state": "DE",
+     "year": 2023,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "An Act To Amend Title 29 Of The Delaware Code Relating To The Council On Apprenticeship And Training.",
+     "policy_id": "1769616",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=140487",
+     "db_date": "2023-06-29"
+    },
+    {
+     "state": "DE",
+     "year": 2023,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "An Act To Amend Title 14 Of The Delaware Code Relating To Teacher Apprenticeships.",
+     "policy_id": "1761426",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=130312",
+     "db_date": "2023-08-23"
+    },
+    {
+     "state": "ID",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amends existing law to establish an apprenticeship program for certain high school students.",
+     "policy_id": "1598362",
+     "url": "https://legislature.idaho.gov/sessioninfo/2022/legislation/S1354/",
+     "db_date": "2022-03-25"
+    },
+    {
+     "state": "ID",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amends existing law to provide for teacher apprenticeships.",
+     "policy_id": "1703877",
+     "url": "https://legislature.idaho.gov/sessioninfo/2023/legislation/S1069/",
+     "db_date": "2023-03-29"
+    },
+    {
+     "state": "IN",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Apprentice plumbers. Allows an individual to register as a registered apprentice plumber and to work under a licensed plumbing contractor or journeyman plumber for one year, so long as the registered apprentice plumber has applied for acceptance into an apprenticeship program and is awaiting acceptance or has been placed on the program's waiting list. Provides that a registered apprentice plumber must discontinue working under a licensed plumbing contractor or journeyman plumber if certain events occur.",
+     "policy_id": "1140760",
+     "url": "http://iga.in.gov/legislative/2019/bills/house/1171/",
+     "db_date": "2019-04-29"
+    },
+    {
+     "state": "MD",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Establishing the Apprenticeship Career Training Pilot Program for Formerly Incarcerated Individuals; establishing the purpose and method for administering the Program; requiring the Department of Labor, Licensing, and Regulation to administer the Pro...",
+     "policy_id": "MD-HB1167-Regular Session",
+     "url": "https://legiscan.com/MD/bill/HB1167/2019",
+     "db_date": "2019-05-25"
+    },
+    {
+     "state": "MD",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Altering the definition of \"eligible student\" to provide that students who are enrolled directly in a registered apprenticeship program that partners with a public community college in the State are eligible for Workforce Development Sequence Scholar...",
+     "policy_id": "MD-HB905-Regular Session",
+     "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB0905?ys=2021RS",
+     "db_date": "2021-04-13"
+    },
+    {
+     "state": "MD",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Altering the Law Enforcement Cadet Apprenticeship Program in the Maryland Department of Labor to be the Public Safety Apprenticeship Program; expanding the purpose and scope of the Program to promote careers with certain public safety agencies; alter...",
+     "policy_id": "MD-HB597-Regular Session",
+     "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB0597?ys=2024RS",
+     "db_date": "2024-05-16"
+    },
+    {
+     "state": "ME",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "An Act To Improve the Lives of Maine Workers by Supporting Apprenticeships That Lead to Good-paying Jobs",
+     "policy_id": "1469541",
+     "url": "https://legislature.maine.gov/legis/bills/display_ps.asp?LD=648&snum=130",
+     "db_date": "2021-06-07"
+    },
+    {
+     "state": "MI",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Occupations: barbers; barber apprenticeship requirements for licensure; provide for. Amends sec. 1108 of 1980 PA 299 (MCL 339.1108).",
+     "policy_id": "1445051",
+     "url": "http://legislature.mi.gov/doc.aspx?2021-HB-4207",
+     "db_date": "2021-11-09"
+    },
+    {
+     "state": "MT",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Generally revise employee tax credit laws to include apprentices",
+     "policy_id": "2016356",
+     "url": "https://bills.legmt.gov/#/laws/bill/2/LC1364",
+     "db_date": "2025-05-13"
+    },
+    {
+     "state": "NJ",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Establishes five year Apprentice Assistance and Support Services Pilot Program.",
+     "policy_id": "NJ-S3067-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2018/S3067",
+     "db_date": "2020-01-21"
+    },
+    {
+     "state": "NV",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "AN ACT relating to apprenticeships; revising provisions regarding discrimination in apprenticeship programs; revising the membership and operations of the State Apprenticeship Council; and providing other matters properly relating thereto.",
+     "policy_id": "NV-AB68-80th Legislature",
+     "url": "https://www.leg.state.nv.us/App/NELIS/REL/80th2019/Bill/6010/Overview",
+     "db_date": "2019-06-05"
+    },
+    {
+     "state": "OR",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Requires Department of Education to develop and provide to public high schools written materials regarding apprenticeship opportunities. Requires public high schools to disseminate materials to students and to parents or guardians of students. Declar...",
+     "policy_id": "OR-HB3340-Regular Session",
+     "url": "https://olis.oregonlegislature.gov/liz/2017R1/Measures/Overview/HB3340",
+     "db_date": "2017-06-28"
+    },
+    {
+     "state": "OR",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Requires state contracting agency that awards public improvement contract with contract price of more than $5 million to require contractor to employ apprentices to perform 10 percent of work hours on public improvement that workers in apprenticeable...",
+     "policy_id": "OR-HB2162-Regular Session",
+     "url": "https://olis.oregonlegislature.gov/liz/2017R1/Measures/Overview/HB2162",
+     "db_date": "2017-07-11"
+    },
+    {
+     "state": "RI",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Creates a non-trade apprenticeship incentive program for board approved industries.",
+     "policy_id": "RI-H7097-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2016-08-11"
+    },
+    {
+     "state": "UT",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Utah Apprenticeship Act",
+     "policy_id": "UT-SB0138-General Session",
+     "url": "https://le.utah.gov/~2019/bills/static/SB0138.html",
+     "db_date": "2019-03-27"
+    },
+    {
+     "state": "VA",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Virginia Rural Information Technology Apprenticeship Grant Fund and Program. Establishes the Virginia Rural Information Technology Apprenticeship Grant Fund and Program, to be administered by the Southwest Virginia Higher Education Center, for the pu...",
+     "policy_id": "VA-HB2185-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+sum+HB2185",
+     "db_date": "2019-03-19"
+    },
+    {
+     "state": "VA",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Apprenticeship program; Bd. of Workforce Development to prepare recommendations for primary office.",
+     "policy_id": "VA-SB 661-2022",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+sum+SB661",
+     "db_date": "2022-04-11"
+    },
+    {
+     "state": "WV",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "The purpose of this bill is to create the Youth Apprenticeship Program and expanding registered apprenticeship programs.",
+     "policy_id": "WV-HB5162-Regular Session",
+     "url": "http://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=5162&year=2024&sessiontype=RS&btype=bill",
+     "db_date": "2024-04-22"
+    }
+   ]
+  },
+  "naloxone": {
+   "label": "Naloxone access / overdose Good Samaritan",
+   "labor": false,
+   "rule": "naloxone|opioid antagonist|good samaritan overdose",
+   "exclude": "buprenorphine|Fatality|stadium|Warning|Council|libraries|LIBRARIES|training program|nightlife|sports|hospital|Hospitals|alcoholic|retail",
+   "matched": 21,
+   "T": 4,
+   "A": 15,
+   "precision": 0.905,
+   "true_states": [
+    "AZ",
+    "CT",
+    "DE",
+    "HI",
+    "IL",
+    "KS",
+    "MI",
+    "NY",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "VA",
+    "WV"
+   ],
+   "true_states_T_only": [
+    "HI",
+    "KS",
+    "SC",
+    "VA"
+   ],
+   "dc_true": false,
+   "span": "2013-2020 (mostly before DB window)",
+   "real_adopters_approx": "approx 50 states by 2017",
+   "site_area": "none",
+   "rows": [
+    {
+     "state": "AZ",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Pharmacists; prescribing; naloxone; reporting",
+     "policy_id": "AZ-SB1211-Fifty-sixth Legislature 2nd Regular",
+     "url": "https://legiscan.com/AZ/bill/SB1211/2024",
+     "db_date": "2024-06-21"
+    },
+    {
+     "state": "CT",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To (1) require a law enforcement unit to train its police officers in the use of opioid antagonists and epinephrine cartridge injectors, and (2) permit such trained officers to carry and administer opioid antagonists and epinephrine cartridge injecto...",
+     "policy_id": "CT-SB01011-General Assembly",
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB01011&which_year=2021",
+     "db_date": "2021-06-30"
+    },
+    {
+     "state": "DE",
+     "year": 2017,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "An Act To Amend Title 16 Of The Delaware Code Relating To Naloxone.",
+     "policy_id": "1001662",
+     "url": "http://legis.delaware.gov/BillDetail?LegislationId=25564",
+     "db_date": "2017-07-20"
+    },
+    {
+     "state": "HI",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Opioid Antagonist; Naloxone Hydrochloride; Drug Overdose Prevention; Emergency Response; Medical Immunity",
+     "policy_id": "826136",
+     "url": "http://www.capitol.hawaii.gov/measure_indiv.aspx?billtype=SB&billnumber=2392&year=2016",
+     "db_date": "2016-06-17"
+    },
+    {
+     "state": "IL",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "INSURANCE-NALOXONE-NO CO-PAY",
+     "policy_id": "IL-HB 4408-102nd",
+     "url": "https://ilga.gov/legislation/BillStatus.asp?DocNum=4408&GAID=16&DocTypeID=HB&LegId=137744&SessionID=110&GA=102",
+     "db_date": "2022-06-02"
+    },
+    {
+     "state": "KS",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Standards governing the use and administration of emergency opioid antagonists.",
+     "policy_id": "KS-HB2217-Regular Session",
+     "url": "https://legiscan.com/KS/bill/HB2217/2017",
+     "db_date": "2017-05-01"
+    },
+    {
+     "state": "MI",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Health: other; immunity from certain liability for the administration of opioid antagonists by certain governmental agencies and individuals; modify. Amends sec. 107 of 2019 PA 39 (MCL 15.677). TIE BAR WITH: SB 0418'19, SB 0417'19",
+     "policy_id": "1359386",
+     "url": "http://legislature.mi.gov/doc.aspx?2020-SB-0844",
+     "db_date": "2020-12-30"
+    },
+    {
+     "state": "MI",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Controlled substances: opioids; distribution of opioid antagonists by community based-organizations under a standing order; allow and limit certain liability. Amends sec. 17744e of 1978 PA 368 (MCL 333.17744e).",
+     "policy_id": "1518110",
+     "url": "http://legislature.mi.gov/doc.aspx?2021-HB-5166",
+     "db_date": "2022-07-20"
+    },
+    {
+     "state": "NY",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Relates to the possession of opioid antagonists and receipt into evidence.",
+     "policy_id": "NY-A02354-General Assembly",
+     "url": "https://www.nysenate.gov/legislation/bills/2021/A2354",
+     "db_date": "2021-10-07"
+    },
+    {
+     "state": "RI",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "FOOD AND DRUGS -- THE GOOD SAMARITAN OVERDOSE PREVENTION ACT OF 2016 - Requires that every institution of higher education provide training in the administration of opioid antagonists to every staff member on the institution's campus.",
+     "policy_id": "RI-H5595-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2025-06-26"
+    },
+    {
+     "state": "SC",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Naloxone",
+     "policy_id": "SC-S0571-124th General Assembly",
+     "url": "https://www.scstatehouse.gov/billsearch.php?billnumbers=0571&session=124&summary=B",
+     "db_date": "2021-04-28"
+    },
+    {
+     "state": "SD",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Authorize employers to acquire and make available opioid antagonists.",
+     "policy_id": "SD-HB1162-Regular Session",
+     "url": "https://sdlegislature.gov/#/Session/Bill/24030",
+     "db_date": "2023-03-09"
+    },
+    {
+     "state": "TN",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "As enacted, authorizes a healthcare prescriber to prescribe an opioid antagonist for purposes related to the potential for drug-related overdose, not just opioid-related overdose; permits certain government and non-governmental entities to prescribe ...",
+     "policy_id": "TN-SB2572-112th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=SB2572&ga=112",
+     "db_date": "2022-04-04"
+    },
+    {
+     "state": "TX",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Relating to the recipients of opioid antagonists under the opioid antagonist program.",
+     "policy_id": "TX-SB867-88th Legislature",
+     "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=SB867",
+     "db_date": "2023-06-17"
+    },
+    {
+     "state": "VA",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Naloxone; dispensing for use in opioid overdose reversal, etc.",
+     "policy_id": "VA-SB 848-2017",
+     "url": "http://lis.virginia.gov/cgi-bin/legp604.exe?171+sum+SB848",
+     "db_date": "2017-02-20"
+    },
+    {
+     "state": "VA",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Naloxone; possession and administration, employee or person acting on behalf of a public place.",
+     "policy_id": "VA-SB 836-2020",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+sum+SB836",
+     "db_date": "2020-03-11"
+    },
+    {
+     "state": "VA",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Naloxone; possession and administration. Provides that a person who is not otherwise authorized to administer naloxone or other opioid antagonist used for overdose reversal may administer naloxone or other opioid antagonist used for overdose reversal...",
+     "policy_id": "VA-SB566-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+sum+SB566",
+     "db_date": "2020-04-10"
+    },
+    {
+     "state": "VA",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Opioid antagonists; dispensing and administration by person acting on behalf of an organization. Permits persons acting on behalf of an organization that provides services to individuals at risk of experiencing an opioid overdose or training in the a...",
+     "policy_id": "VA-SB1035-Regular Session",
+     "url": "https://lis.virginia.gov/bill-details/20251/SB1035",
+     "db_date": "2025-03-24"
+    },
+    {
+     "state": "WV",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Relating to opioid antagonists",
+     "policy_id": "WV-HB4102-Regular Session",
+     "url": "http://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=4102&year=2020&sessiontype=RS&btype=bill",
+     "db_date": "2020-04-15"
+    }
+   ]
+  },
+  "teacher_lic": {
+   "label": "Teacher licence reciprocity / alternative or military pathways / teacher apprenticeships / teacher mobility compact",
+   "labor": true,
+   "rule": "teach\\w*.{0,60}(out-of-state|another state|reciproc|endorsement|mobility|military|alternative|residency|apprentice|waiv)|(out-of-state|reciproc|military|alternative|apprentice).{0,40}teach|teacher (certification|licensure|certificate)|limited teacher|teacher residency|(licensed|certified).{0,30}(in|by) another state.{0,30}teach",
+   "exclude": "retire|sick|salary|pension|ethics|professional development|study|native american|trauma|student teaching|domestic violence|Advisory Board|endorsement changes|reprimand",
+   "matched": 19,
+   "T": 15,
+   "A": 4,
+   "precision": 1.0,
+   "true_states": [
+    "AK",
+    "AL",
+    "AZ",
+    "CO",
+    "CT",
+    "DE",
+    "ID",
+    "MT",
+    "NE",
+    "OK",
+    "VA",
+    "WA"
+   ],
+   "true_states_T_only": [
+    "AK",
+    "AL",
+    "AZ",
+    "CO",
+    "CT",
+    "DE",
+    "ID",
+    "MT",
+    "NE",
+    "OK",
+    "VA",
+    "WA"
+   ],
+   "dc_true": false,
+   "span": "2017-2026",
+   "real_adopters_approx": "approx 30+ states 2017-2025",
+   "site_area": "teacher certification",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Limited Teacher Certificates; Languages",
+     "policy_id": "1398052",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/32?Root=HB19",
+     "db_date": "2022-10-05"
+    },
+    {
+     "state": "AK",
+     "year": 2022,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Out Of State Teacher Reciprocity",
+     "policy_id": "1398007",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/32?Root=SB20",
+     "db_date": "2022-10-05"
+    },
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Teachers, St. Board of Education, alternative teaching certificates authorized for qualified former members of Armed Forces, Sec. 16-23-3 am'd.",
+     "policy_id": "1404401",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB16&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-03-11"
+    },
+    {
+     "state": "AL",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Alternative teacher certification, alternative teacher education preparation organization, accreditation further provided for",
+     "policy_id": "1861107",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2024-05-16"
+    },
+    {
+     "state": "AL",
+     "year": 2026,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Teacher certification; Military Veteran Temporary Teaching Certificate established",
+     "policy_id": "2079833",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2026-02-25"
+    },
+    {
+     "state": "AZ",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Teacher certification; reciprocity",
+     "policy_id": "AZ-SB1042-Fifty-third Legislature 1st Regular",
+     "url": "https://apps.azleg.gov/BillStatus/BillOverview/68499",
+     "db_date": "2017-05-02"
+    },
+    {
+     "state": "CO",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Concerning increasing the availability of qualified personnel who are licensed in another state to teach in public schools.",
+     "policy_id": "CO-HB1130-Regular Session",
+     "url": "http://leg.colorado.gov/bills/hb18-1130",
+     "db_date": "2018-03-29"
+    },
+    {
+     "state": "CT",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To authorize the State Board of Education to issue a military spouse teacher permit to the spouse of any member of the armed forces who has been transferred to the state.",
+     "policy_id": "CT-SB00232-General Assembly",
+     "url": "https://legiscan.com/CT/bill/SB00232/2018",
+     "db_date": "2018-06-13"
+    },
+    {
+     "state": "DE",
+     "year": 2023,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "An Act To Amend Title 14 Of The Delaware Code Relating To Teacher Apprenticeships.",
+     "policy_id": "1761426",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=130312",
+     "db_date": "2023-08-23"
+    },
+    {
+     "state": "ID",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amends existing law to provide for teacher apprenticeships.",
+     "policy_id": "1703877",
+     "url": "https://legislature.idaho.gov/sessioninfo/2023/legislation/S1069/",
+     "db_date": "2023-03-29"
+    },
+    {
+     "state": "MT",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Establish teacher residency program",
+     "policy_id": "1740531",
+     "url": "https://laws.leg.mt.gov/legprd/LAW0210W$BSIV.ActionQuery?P_BILL_NO1=833&P_BLTP_BILL_TYP_CD=HB&Z_ACTION=Find&P_SESS=20231",
+     "db_date": "2023-05-18"
+    },
+    {
+     "state": "NE",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Require the issuance of teaching certificates and permits to military spouses",
+     "policy_id": "NE-LB389-107th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=43747",
+     "db_date": "2021-03-31"
+    },
+    {
+     "state": "NE",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Adopt the Interstate Teacher Mobility Compact and require school districts and the State Department of Education to collect and report information regarding dyslexia and other learning disabilities and to establish dress code and grooming policies",
+     "policy_id": "NE-LB298-108th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=50239",
+     "db_date": "2023-06-01"
+    },
+    {
+     "state": "OK",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Schools; creating an early childhood or elementary education alternative teacher certification; effective date.",
+     "policy_id": "OK-HB2748-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=hb2748&Session=2200",
+     "db_date": "2021-04-28"
+    },
+    {
+     "state": "OK",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Teachers; creating the Interstate Teacher Mobility Compact Act; providing for creation of Interstate Teacher Mobility Compact Commission. Effective date. Emergency.",
+     "policy_id": "OK-SB467-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb467&Session=2400",
+     "db_date": "2023-05-02"
+    },
+    {
+     "state": "VA",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Teacher licensure by reciprocity; professional teacher's assessments. Exempts from any professional teacher's assessment requirements any individual who has obtained a valid out-of-state license, with full credentials and without deficiencies, that i...",
+     "policy_id": "VA-HB2352-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?171+sum+HB2352",
+     "db_date": "2017-03-24"
+    },
+    {
+     "state": "VA",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Teacher licensure; one-year license; instructors at regionally accredited institutions of higher education. Declares eligible for a renewable one-year license to teach in public high schools in the Commonwealth any individual who has (i) received a g...",
+     "policy_id": "VA-HB215-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?181+sum+HB215",
+     "db_date": "2018-03-30"
+    },
+    {
+     "state": "VA",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Board of Education; provisional teacher licensure; teachers licensed or certified outside of the United States. Permits the Board of Education to provide for the issuance of a provisional license, valid for a period not to exceed three years, to any ...",
+     "policy_id": "VA-HB979-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+sum+HB979",
+     "db_date": "2022-04-11"
+    },
+    {
+     "state": "WA",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Revised for Passed Legislature: Concerning the licensure and employment of out-of-state teachers.Original: Adopting the interstate teacher mobility compact.",
+     "policy_id": "WA-SB5180-Regular Session",
+     "url": "https://legiscan.com/WA/bill/SB5180/2023",
+     "db_date": "2024-03-28"
+    }
+   ]
+  },
+  "tnc": {
+   "label": "Ride-hailing (transportation network company) statutes",
+   "labor": true,
+   "rule": "transportation network compan",
+   "exclude": "^$",
+   "matched": 14,
+   "T": 5,
+   "A": 8,
+   "precision": 0.929,
+   "true_states": [
+    "AK",
+    "AL",
+    "AZ",
+    "CA",
+    "DE",
+    "MD",
+    "NM",
+    "NV",
+    "OK",
+    "OR",
+    "VT"
+   ],
+   "true_states_T_only": [
+    "AK",
+    "AL",
+    "NM",
+    "VT"
+   ],
+   "dc_true": false,
+   "span": "2014-2018 (DB window catches tail)",
+   "real_adopters_approx": "approx 48 states 2014-2018",
+   "site_area": "insurance regulation (adjacent) / occupational licensing",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Transportation Network Companies/drivers",
+     "policy_id": "905685",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/30?Root=SB14",
+     "db_date": "2018-06-27"
+    },
+    {
+     "state": "AL",
+     "year": 2016,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Transportation, transportation network companies, insurance coverage and disclosure requirements, provided for",
+     "policy_id": "850376",
+     "url": "http://alisondb.legislature.state.al.us/alison/SESSBillResult.ASPX?WIN_TYPE=BillResult&BILL=SB262",
+     "db_date": "2016-05-04"
+    },
+    {
+     "state": "AL",
+     "year": 2018,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Transportation network companies, providing ride sharing for compensation, Public Service Commission permit required to operate, minimum requirements imposed",
+     "policy_id": "1057601",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB190&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2018-02-15"
+    },
+    {
+     "state": "AZ",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Transportation network company vehicles; inspections",
+     "policy_id": "AZ-HB2273-Fifty-fifth Legislature 2nd Regular",
+     "url": "https://legiscan.com/AZ/bill/HB2273/2022",
+     "db_date": "2022-04-14"
+    },
+    {
+     "state": "CA",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Transportation network companies: personal vehicles.",
+     "policy_id": "CA-AB2763-Regular Session",
+     "url": "http://www.leginfo.ca.gov/cgi-bin/postquery?bill_number=ab_2763&sess=1516&house=A",
+     "db_date": "2016-09-28"
+    },
+    {
+     "state": "DE",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "An Act To Amend Title 2 Of The Delaware Code Relating To Transportation Network Companies.",
+     "policy_id": "877696",
+     "url": "http://legis.delaware.gov/LIS/lis148.nsf/2bede841c6272c888025698400433a04/21822810f4b66f1685257f47006d57bd?OpenDocument",
+     "db_date": "2016-08-10"
+    },
+    {
+     "state": "MD",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Expanding the types of motor vehicle liability insurers that may exclude coverage to operators providing transportation network services; prohibiting a person from operating a transportation network company in the State without a permit issued by the...",
+     "policy_id": "MD-SB54-Regular Session",
+     "url": "https://legiscan.com/MD/bill/SB54/2016",
+     "db_date": "2016-04-07"
+    },
+    {
+     "state": "NM",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Transportation Network Company Services Act",
+     "policy_id": "NM-HB168-Regular Session",
+     "url": "https://www.nmlegis.gov/lcs/legislation.aspx?chamber=H&legtype=B&legno=168&year=16",
+     "db_date": "2016-02-10"
+    },
+    {
+     "state": "NM",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Transportation Network Company Act Changes",
+     "policy_id": "NM-HB77-Regular Session",
+     "url": "https://www.nmlegis.gov/Legislation/Legislation?chamber=H&legtype=B&legno=77&year=17",
+     "db_date": "2017-01-29"
+    },
+    {
+     "state": "NV",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "AN ACT relating to limousines; authorizing a transportation network company to contract with a limousine motor carrier to provide limousine services through the use of the digital network or software application service of the transportation network ...",
+     "policy_id": "NV-AB444-81st Legislature",
+     "url": "https://www.leg.state.nv.us/App/NELIS/REL/81st2021/Bill/8113/Overview",
+     "db_date": "2021-06-04"
+    },
+    {
+     "state": "OK",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Motor vehicles; creating the Independent Driver Classification Act; requiring Transportation Network Company drivers be independent contractors if certain conditions are met; detailing certain conditions; effective date.",
+     "policy_id": "OK-HB2464-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=hb2464&Session=2300",
+     "db_date": "2023-04-24"
+    },
+    {
+     "state": "OR",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Requires transportation network company and taxi company to provide motor vehicle liability insurance policy with personal injury protection benefits to each driver who operates personal motor vehicle in affiliation with transportation network compan...",
+     "policy_id": "OR-HB2393-Regular Session",
+     "url": "https://olis.oregonlegislature.gov/liz/2021R1/Measures/Overview/HB2393",
+     "db_date": "2021-09-25"
+    },
+    {
+     "state": "VT",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "An act relating to automobile insurance requirements and transportation network companies",
+     "policy_id": "934426",
+     "url": "https://legislature.vermont.gov/bill/status/2018/H.143",
+     "db_date": "2017-05-10"
+    }
+   ]
+  },
+  "wc_presump": {
+   "label": "Workers' compensation presumptions: first-responder PTSD, firefighter cancer, mental-injury claims",
+   "labor": true,
+   "rule": "post-?traumatic|ptsd|presumption|workers'? compensation.{0,80}(mental|emotional|cancer|first responder|firefight|police|presum)|firefight\\w*.{0,30}cancer|cancer.{0,30}firefight|mental or emotional impairment|mental injury",
+   "exclude": "custody|visitation|crime|child support|adoption|sex offender|credit and debit|MWBE|minority|guardian|murder|domestic|Alternative Therapies|Safety Equipment|Cancer Relief Network|cancer registry|supplemental insurance|Missing|incarcerated obligors|joint",
+   "matched": 26,
+   "T": 3,
+   "A": 12,
+   "precision": 0.577,
+   "true_states": [
+    "CT",
+    "FL",
+    "IL",
+    "ME",
+    "NY",
+    "RI",
+    "TN",
+    "TX",
+    "VA",
+    "WV",
+    "WY"
+   ],
+   "true_states_T_only": [
+    "CT",
+    "FL",
+    "ME"
+   ],
+   "dc_true": false,
+   "span": "2016-2026",
+   "real_adopters_approx": "approx 25-30 states for PTSD presumptions 2016-2023; all states for firefighter cancer",
+   "site_area": "workers' compensation",
+   "rows": [
+    {
+     "state": "CT",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To expand workers' compensation coverage in certain situations that result in mental or emotional impairment.",
+     "policy_id": "CT-SB00164-General Assembly",
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB00164&which_year=2019",
+     "db_date": "2019-06-18"
+    },
+    {
+     "state": "CT",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To expand workers' compensation benefits for certain mental or emotional impairments suffered by health care providers in connection with COVID-19.",
+     "policy_id": "CT-SB00660-General Assembly",
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB00660&which_year=2021",
+     "db_date": "2021-06-30"
+    },
+    {
+     "state": "CT",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To adopt the recommendations of the task force to study cancer relief benefits for firefighters.",
+     "policy_id": "CT-SB00313-General Assembly",
+     "url": "https://legiscan.com/CT/bill/SB00313/2022",
+     "db_date": "2022-05-27"
+    },
+    {
+     "state": "CT",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To expand the presumption of workers' compensation coverage for the death or disability of a police officer or firefighter to include deaths or disabilities resulting from a cerebrovascular incident or pulmonary embolism and expand the period of time...",
+     "policy_id": "CT-HB05279-General Assembly",
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=HB05279&which_year=2024",
+     "db_date": "2024-05-14"
+    },
+    {
+     "state": "FL",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Providing that, under certain circumstances, posttraumatic stress disorder suffered by a first responder is an occupational disease compensable by workers' compensation benefits; specifying that benefits do not require a physical injury and are not s...",
+     "policy_id": "FL-S0376-Regular Session",
+     "url": "https://legiscan.com/FL/bill/S0376/2018",
+     "db_date": "2018-03-28"
+    },
+    {
+     "state": "FL",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Provides that time for specified notice in certain cases is measured from time of qualifying event or diagnosis of disorder, rather than manifestation of disorder, whichever is later; provides that posttraumatic stress disorder suffered by correction...",
+     "policy_id": "FL-H0689-Regular Session",
+     "url": "https://www.flsenate.gov/Session/Bill/2022/689",
+     "db_date": "2022-06-01"
+    },
+    {
+     "state": "IL",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "WORKER COMP MRSA PRESUMPTION",
+     "policy_id": "IL-HB 3662-102nd",
+     "url": "https://ilga.gov/legislation/BillStatus.asp?DocNum=3662&GAID=16&DocTypeID=HB&LegId=132707&SessionID=110&GA=102",
+     "db_date": "2021-08-20"
+    },
+    {
+     "state": "ME",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "An Act To Support Law Enforcement Officers and First Responders Diagnosed with Post-traumatic Stress Disorder",
+     "policy_id": "981677",
+     "url": "http://legislature.maine.gov/legis/bills/display_ps.asp?LD=848&snum=128",
+     "db_date": "2017-07-20"
+    },
+    {
+     "state": "NY",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Relates to claims for mental injury premised upon extraordinary work-related stress incurred at work, including claims for post-traumatic stress disorder, acute stress disorder or major depressive disorder resulting from work-related stress when demo...",
+     "policy_id": "NY-S00755-General Assembly",
+     "url": "https://www.nysenate.gov/legislation/bills/2025/S755",
+     "db_date": "2025-02-14"
+    },
+    {
+     "state": "RI",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "TOWNS AND CITIES -- RELIEF OF INJURED AND DECEASED FIRE FIGHTERS AND POLICE OFFICERS - Extends injured-on-duty (IOD) benefits to police officers and firefighters that suffer from diagnosed post-traumatic stress disorders, except under certain conditi...",
+     "policy_id": "RI-H7464-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2024-06-20"
+    },
+    {
+     "state": "TN",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "As introduced, expands the applicability of the presumption that a firefighter's cancer was caused by the firefighter's employment to include arson investigators. - Amends TCA Title 7; Title 8; Title 50 and Title 56.",
+     "policy_id": "TN-HB1489-114th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/Default?BillNumber=HB1489&ga=114",
+     "db_date": "2026-03-04"
+    },
+    {
+     "state": "TX",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Relating to certain presumptions applicable to claims for benefits or compensation for certain medical conditions brought by certain first responders.",
+     "policy_id": "TX-HB331-89th Legislature",
+     "url": "https://legiscan.com/TX/bill/HB331/2025",
+     "db_date": "2025-05-24"
+    },
+    {
+     "state": "VA",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Workers' compensation; occupational disease presumptions. Adds correctional officers and full-time sworn members of the enforcement division of the Department of Motor Vehicles to the list of public safety employees who are entitled to a presumption ...",
+     "policy_id": "VA-SB345-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+sum+SB345",
+     "db_date": "2020-04-11"
+    },
+    {
+     "state": "WV",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "The purpose of this bill is to include three types of cancer for which rebuttable presumption of injury from employment exists for firefighters and provides that the presumption for the three types of cancer expires July 1, 2027, unless extended by t...",
+     "policy_id": "WV-SB170-Regular Session",
+     "url": "http://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=170&year=2024&sessiontype=RS&btype=bill",
+     "db_date": "2024-04-23"
+    },
+    {
+     "state": "WY",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "AN ACT relating to labor and employment; authorizing firefighters to receive annual cancer screenings under the Wyoming worker's compensation act; making conforming amendments; providing definitions; requiring rulemaking; and providing for effective ...",
+     "policy_id": "WY-HB0066-Budget Session",
+     "url": "https://www.wyoleg.gov/Legislation/2024/HB0066",
+     "db_date": "2024-03-04"
+    }
+   ]
+  },
+  "mil_spouse": {
+   "label": "Military-spouse / veteran occupational licence portability",
+   "labor": true,
+   "rule": "military (spouse|family)|post-military|military.{0,40}(licens|certif|reciproc)|(licens|certif).{0,40}military|veterans? and spouses|military member.{0,20}waiver",
+   "exclude": "driver|vehicle|plate|hunting|fishing|honor|day$|month|burial|school district|CDL|memorial|adopt|child protect|advocacy|hiring|commercial driver|Elizabeth|designation|identification",
+   "matched": 16,
+   "T": 7,
+   "A": 7,
+   "precision": 0.875,
+   "true_states": [
+    "AK",
+    "AL",
+    "AZ",
+    "CT",
+    "GA",
+    "KY",
+    "MN",
+    "MT",
+    "NE",
+    "OK"
+   ],
+   "true_states_T_only": [
+    "AK",
+    "AL",
+    "CT",
+    "GA",
+    "KY",
+    "NE",
+    "OK"
+   ],
+   "dc_true": false,
+   "span": "2011-2021 (most states by 2019)",
+   "real_adopters_approx": "approx 50 states by 2019 (most enacted before 2016; window captures later waves)",
+   "site_area": "occupational licensing",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Military Spouse Courtesy License",
+     "policy_id": "1398076",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/32?Root=SB12",
+     "db_date": "2021-09-14"
+    },
+    {
+     "state": "AL",
+     "year": 2018,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Military Family Jobs Opportunity Act, professional licensing boards required to issue licenses and certificates to military spouses who hold licenses and certificates from other states, required to issue temporary licenses and certificates in certain instances when other state has lesser requirements, Sec. 31-1-6 am'd.",
+     "policy_id": "1084823",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB388&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2018-03-28"
+    },
+    {
+     "state": "AL",
+     "year": 2023,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Relating to the Military Family Jobs Opportunity Act; to amend Section 31-1-6, Code of Alabama 1975, as amended by Act 2022-92, 2022 Regular Session, to extend professional license reciprocity to spouses of United States Department of Defense civil servants.",
+     "policy_id": "1729206",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2023-05-03"
+    },
+    {
+     "state": "AL",
+     "year": 2026,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Teacher certification; Military Veteran Temporary Teaching Certificate established",
+     "policy_id": "2079833",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2026-02-25"
+    },
+    {
+     "state": "AZ",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Emergency medical technicians; military reciprocity",
+     "policy_id": "AZ-HB2589-Fifty-sixth Legislature 1st Regular",
+     "url": "https://apps.azleg.gov/BillStatus/BillOverview/79438",
+     "db_date": "2023-04-12"
+    },
+    {
+     "state": "CT",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To authorize the State Board of Education to issue a military spouse teacher permit to the spouse of any member of the armed forces who has been transferred to the state.",
+     "policy_id": "CT-SB00232-General Assembly",
+     "url": "https://legiscan.com/CT/bill/SB00232/2018",
+     "db_date": "2018-06-13"
+    },
+    {
+     "state": "GA",
+     "year": 2016,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "\"Military Spouses and Veterans Licensure Act\"; enact",
+     "policy_id": "825596",
+     "url": "https://www.legis.ga.gov/legislation/47724",
+     "db_date": "2016-04-26"
+    },
+    {
+     "state": "GA",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Professional Standards Commission; establish process by which military spouses may qualify for temporary certificates; provide",
+     "policy_id": "944386",
+     "url": "https://www.legis.ga.gov/legislation/50215",
+     "db_date": "2017-05-08"
+    },
+    {
+     "state": "GA",
+     "year": 2018,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Firefighter certification; military firefighter training may be accepted as required basic training; provide",
+     "policy_id": "1064823",
+     "url": "https://www.legis.ga.gov/legislation/52068",
+     "db_date": "2018-05-03"
+    },
+    {
+     "state": "KY",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amend KRS 311A.142 to require reciprocity of certification or licensure for any member of the United States military who is registered by the National Registry of Emergency Medical Technicians as an emergency medical responder, emergency medical tech...",
+     "policy_id": "KY-HB357-Regular Session",
+     "url": "https://legiscan.com/KY/bill/HB357/2020",
+     "db_date": "2020-03-17"
+    },
+    {
+     "state": "MN",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Qualified active duty military members and veterans and spouses granted waiver for licensing experience requirement for broker's examination.",
+     "policy_id": "MN-HF3252-89th Legislature",
+     "url": "https://www.revisor.mn.gov/bills/bill.php?b=House&f=HF3252&ssn=0&y=2015",
+     "db_date": "2016-05-04"
+    },
+    {
+     "state": "MT",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Provide licensure exemptions for military family child care providers",
+     "policy_id": "1683399",
+     "url": "https://laws.leg.mt.gov/legprd/LAW0210W$BSIV.ActionQuery?P_BILL_NO1=336&P_BLTP_BILL_TYP_CD=HB&Z_ACTION=Find&P_SESS=20231",
+     "db_date": "2023-04-20"
+    },
+    {
+     "state": "NE",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Require the issuance of teaching certificates and permits to military spouses",
+     "policy_id": "NE-LB389-107th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=43747",
+     "db_date": "2021-03-31"
+    },
+    {
+     "state": "OK",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Post-Military Service Occupation, Education and Credentialing Act; providing violation. Effective date.",
+     "policy_id": "OK-SB1141-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb1141&Session=1800",
+     "db_date": "2018-04-24"
+    }
+   ]
+  },
+  "telehealth": {
+   "label": "Telehealth payment/coverage parity",
+   "labor": false,
+   "rule": "(telehealth|telemedicine).{0,90}(insur|coverage|reimburs|payment|parity)|(insur|coverage|reimburs|payment).{0,90}(telehealth|telemedicine)",
+   "exclude": null,
+   "matched": 13,
+   "T": 3,
+   "A": 8,
+   "precision": 0.846,
+   "true_states": [
+    "AK",
+    "CT",
+    "HI",
+    "LA",
+    "MI",
+    "NJ",
+    "OK",
+    "RI",
+    "TN",
+    "VA"
+   ],
+   "true_states_T_only": [
+    "AK",
+    "HI",
+    "OK"
+   ],
+   "dc_true": false,
+   "span": "2000-2024",
+   "real_adopters_approx": "approx 24 states with payment parity",
+   "site_area": "insurance regulation",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Insurance Coverage For Telemedicine",
+     "policy_id": "810370",
+     "url": "https://www.legis.state.ak.us/basis/get_bill.asp?session=29&bill=HB234",
+     "db_date": "2016-06-14"
+    },
+    {
+     "state": "CT",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To require the Commissioner of Social Services to expand Medicaid coverage of telehealth services state wide whenever such coverage meets federal Medicaid requirements for efficiency, economy and quality of care.",
+     "policy_id": "CT-SB01052-General Assembly",
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB01052&which_year=2019",
+     "db_date": "2019-06-28"
+    },
+    {
+     "state": "HI",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Telehealth; Insurance; Medicaid; Covered Services; Liability Insurance; Reimbursement; Disclosure; Requirements; EUTF",
+     "policy_id": "825985",
+     "url": "http://www.capitol.hawaii.gov/measure_indiv.aspx?billtype=SB&billnumber=2395&year=2016",
+     "db_date": "2016-07-08"
+    },
+    {
+     "state": "LA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Provides relative to health coverage plan benefits for occupational therapy services delivered via telehealth (EN NO IMPACT See Note)",
+     "policy_id": "1720260",
+     "url": "https://www.legis.la.gov/legis/BillInfo.aspx?s=23rs&b=HB41&sbi=y",
+     "db_date": "2023-06-12"
+    },
+    {
+     "state": "MI",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Insurance: health insurers; coverage for health care services provided through telemedicine; modify. Amends sec. 3476 of 1956 PA 218 (MCL 500.3476).",
+     "policy_id": "1718261",
+     "url": "https://legislature.mi.gov/Bills/Bill?ObjectName=2023-HB-4131",
+     "db_date": "2024-06-06"
+    },
+    {
+     "state": "NJ",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Requires health insurance and Medicaid coverage for testing of coronavirus disease 2019 and for telemedicine and telehealth during coronavirus disease 2019 state of emergency.",
+     "policy_id": "NJ-A3843-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2020/A3843",
+     "db_date": "2020-03-20"
+    },
+    {
+     "state": "OK",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Telemedicine; requiring certain coverage and reimbursement of health care services; prohibiting certain exclusions, limits, restrictions and utilization review. Effective date.",
+     "policy_id": "OK-SB674-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb674&Session=2200",
+     "db_date": "2021-05-05"
+    },
+    {
+     "state": "RI",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Amends the provisions of the telemedicine coverage act and provide coverage for telemedicine under Rhode Island Medicaid.",
+     "policy_id": "RI-H6032-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2021-07-06"
+    },
+    {
+     "state": "TN",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "As enacted, extends the statutory provision regulating reimbursements for healthcare services provided during a telehealth encounter beyond April 1, 2022; tolls, for the duration of any state of emergency, the 16-month period that a provider can offe...",
+     "policy_id": "TN-HB2655-112th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=HB2655&ga=112",
+     "db_date": "2022-04-12"
+    },
+    {
+     "state": "VA",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Telemedicine services; payment and coverage of services.",
+     "policy_id": "VA-SB 1221-2019",
+     "url": "http://lis.virginia.gov/cgi-bin/legp604.exe?191+sum+SB1221",
+     "db_date": "2019-03-05"
+    },
+    {
+     "state": "VA",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Telemedicine; coverage of telehealth services by an insurer, etc.",
+     "policy_id": "VA-HB 1987-2021",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?212+sum+HB1987",
+     "db_date": "2021-03-24"
+    }
+   ]
+  },
+  "univ_recog": {
+   "label": "Universal occupational licence recognition / licensing by endorsement of out-of-state licences",
+   "labor": true,
+   "rule": "universal (licens|recogn)|licens\\w* by (endorsement|reciprocity)|out-of-state (applicant|licens|credential|practition)|licensed in another state|licen[sc]e.{0,100}(another|other) state|another state.{0,40}licens|(licensed|certified)( or certified)? by another state|reciprocity of certification or licensure|professional licensing reciprocity",
+   "exclude": "driver|vehicle|alcohol|liquor|beer|wine|handgun|insurer|insurance|retirement|support|fuel|compact|military spouse|teacher|mortuary|funeral|fishing|hunting",
+   "matched": 13,
+   "T": 6,
+   "A": 3,
+   "precision": 0.692,
+   "true_states": [
+    "CO",
+    "IA",
+    "LA",
+    "MD",
+    "MO",
+    "ND",
+    "NH",
+    "TN",
+    "WV"
+   ],
+   "true_states_T_only": [
+    "CO",
+    "IA",
+    "MD",
+    "MO",
+    "ND",
+    "NH"
+   ],
+   "dc_true": false,
+   "span": "2019-2025 (Arizona 2019 first)",
+   "real_adopters_approx": "approx 25-30 states 2019-2025",
+   "site_area": "occupational licensing",
+   "rows": [
+    {
+     "state": "CO",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Concerning increasing the availability of qualified personnel who are licensed in another state to teach in public schools.",
+     "policy_id": "CO-HB1130-Regular Session",
+     "url": "http://leg.colorado.gov/bills/hb18-1130",
+     "db_date": "2018-03-29"
+    },
+    {
+     "state": "IA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "A bill for an act relating to licenses issued by the board of educational examiners to applicants from other states or countries. (Formerly HF 221.) Effective date: 07/01/2023.",
+     "policy_id": "IA-HF614-90th General Assembly",
+     "url": "https://www.legis.iowa.gov/legislation/BillBook?ga=90&ba=HF614",
+     "db_date": "2023-05-26"
+    },
+    {
+     "state": "LA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Authorizes the utilization of court reporters licensed in another state in certain circumstances. (8/1/23)",
+     "policy_id": "1751517",
+     "url": "https://www.legis.la.gov/legis/BillInfo.aspx?s=23rs&b=SB142&sbi=y",
+     "db_date": "2023-06-12"
+    },
+    {
+     "state": "MD",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Requiring the State Board of Dental Examiners to issue a license or certification to applicants licensed or certified by another state within 15 business days after receiving the completed application; requiring that a dental radiation technologist c...",
+     "policy_id": "MD-SB749-Regular Session",
+     "url": "https://legiscan.com/MD/bill/SB749/2025",
+     "db_date": "2025-04-08"
+    },
+    {
+     "state": "MO",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Modifies provisions relating to professional licensing reciprocity.",
+     "policy_id": "MO-HB1511-Regular Session",
+     "url": "https://legiscan.com/MO/bill/HB1511/2020",
+     "db_date": "2020-04-21"
+    },
+    {
+     "state": "ND",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "AN ACT to create and enact a new chapter to title 43 of the North Dakota Century Code, relating to universal licensure and board operations.",
+     "policy_id": "ND-SB2395-69th Legislative Assembly",
+     "url": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo2395.html",
+     "db_date": "2025-04-04"
+    },
+    {
+     "state": "NH",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Relative to the licensure of out-of-state applicants to boards or commissions organized under the office of professional licensure and certification.",
+     "policy_id": "1653914",
+     "url": "https://gencourt.state.nh.us/bill_status/legacy/bs2016/bill_status.aspx?lsr=417&sy=2023&sortoption=&txtsessionyear=2023&txtbillnumber=HB594",
+     "db_date": "2023-06-29"
+    },
+    {
+     "state": "TN",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "As enacted, permits tattoo artists who have been licensed in this state for fewer than three years but licensed in another state for 10 years or more to receive a tattoo artist licensure in this state; requires the tattoo artist to provide the tattoo...",
+     "policy_id": "TN-HB0373-114th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/Default?BillNumber=HB0373&ga=114",
+     "db_date": "2025-04-29"
+    },
+    {
+     "state": "WV",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "The purpose of this bill is to remove requirements to take an examination for a license to practice in this state, to create a provisional license to practice in this state by an applicant with an expired license from another state; and, direct the b...",
+     "policy_id": "WV-HB2307-Regular Session",
+     "url": "http://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=2307&year=2019&sessiontype=RS&btype=bill",
+     "db_date": "2019-04-11"
+    }
+   ]
+  },
+  "hair": {
+   "label": "Hair-braiding / threading / cosmetology and barber licence relaxations",
+   "labor": true,
+   "rule": "braiding|threading|natural hair (stylist|style)|limited license to provide hair|blow ?dry|barber and cosmetology services act|exempts persons providing hair|barber.{0,40}(shampoo|location other)|hairdress|barber/cosmetology|mobile salon",
+   "exclude": "Students: Allow Nat|DOMESTIC",
+   "matched": 12,
+   "T": 5,
+   "A": 4,
+   "precision": 0.75,
+   "true_states": [
+    "AK",
+    "AL",
+    "FL",
+    "ID",
+    "KS",
+    "KY",
+    "MD",
+    "NJ"
+   ],
+   "true_states_T_only": [
+    "ID",
+    "KS",
+    "KY",
+    "MD",
+    "NJ"
+   ],
+   "dc_true": false,
+   "span": "2016-2022",
+   "real_adopters_approx": "approx 30 states exempt/relaxed hair braiding 2000-2022",
+   "site_area": "occupational licensing",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2018,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Barber/hairdress;tattoo;braiding;coloring",
+     "policy_id": "905648",
+     "url": "https://www.akleg.gov/basis/Bill/Detail/30?Root=SB4",
+     "db_date": "2018-06-27"
+    },
+    {
+     "state": "AL",
+     "year": 2017,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Cosmetology and Barbering Board, natural hair stylist, licensure requirements based on experience in a licensed shop further provided for, Secs. 34-7B-1, 34-7B-20 am'd.",
+     "policy_id": "964906",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB262&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2017-05-09"
+    },
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Cosmetology and Barbering, Board of, mobile salons, licensure and regulation, Sec. 34-7B-30 added; Sec. 34-7B-1 am'd.",
+     "policy_id": "1434303",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB274&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-05-04"
+    },
+    {
+     "state": "FL",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Authorizes barber to shampoo, cut, or arrange hair in location other than registered barbershop without specified arrangements.",
+     "policy_id": "FL-H0855-Regular Session",
+     "url": "https://legiscan.com/FL/bill/H0855/2021",
+     "db_date": "2021-07-06"
+    },
+    {
+     "state": "ID",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Repeals and adds to existing law to create the Barber and Cosmetology Services Act.",
+     "policy_id": "1096652",
+     "url": "https://legislature.idaho.gov/sessioninfo/2018/legislation/S1324/",
+     "db_date": "2018-03-22"
+    },
+    {
+     "state": "KS",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Exempting the practice of threading from the practice of cosmetology.",
+     "policy_id": "KS-SB348-Regular Session",
+     "url": "https://legiscan.com/KS/bill/SB348/2021",
+     "db_date": "2022-04-25"
+    },
+    {
+     "state": "KY",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amend KRS 317A.010 to define \"blow drying services\" and \"limited beauty salon\"; amend KRS 317A.050 to establish who may be licensed to perform blow drying services in a licensed limited beauty salon; create accompanying fees; amend KRS 317A.062 to se...",
+     "policy_id": "KY-SB106-Regular Session",
+     "url": "http://www.lrc.ky.gov/record/18RS/SB106.htm",
+     "db_date": "2018-03-29"
+    },
+    {
+     "state": "MD",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Establishing a limited license to provide hair services - blow drying; requiring the State Board of Cosmetologists to establish by regulation specified curriculum standards for providing hair services - blow drying for use by specified entities for a...",
+     "policy_id": "MD-HB1291-Regular Session",
+     "url": "https://legiscan.com/MD/bill/HB1291/2016",
+     "db_date": "2016-05-10"
+    },
+    {
+     "state": "NJ",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Exempts persons providing hair braiding services from licensure requirement, requires registration of hair braiding establishments.",
+     "policy_id": "NJ-A 3754-218",
+     "url": "http://www.njleg.state.nj.us/downloads.asp",
+     "db_date": "2018-10-04"
+    }
+   ]
+  },
+  "cannabis": {
+   "label": "Adult-use cannabis legalization / regulation acts",
+   "labor": false,
+   "rule": "adult[- ]use|retail marijuana|marijuana (control|establishment|regulat|tax|reg;|conversion)|cannabis (control|establishment|regulat|tax|conversion)|recreational (marijuana|cannabis)|retail cannabis",
+   "exclude": null,
+   "matched": 17,
+   "T": 2,
+   "A": 7,
+   "precision": 0.529,
+   "true_states": [
+    "AK",
+    "CT",
+    "DE",
+    "IL",
+    "ME",
+    "NJ",
+    "OH",
+    "VA"
+   ],
+   "true_states_T_only": [
+    "DE",
+    "VA"
+   ],
+   "dc_true": false,
+   "span": "2012-2026",
+   "real_adopters_approx": "approx 24 states + DC",
+   "site_area": "none (adjacent: alcohol licensing / sales tax)",
+   "rows": [
+    {
+     "state": "AK",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Marijuana Reg;clubs;munis;local Opt Elect",
+     "policy_id": "695791",
+     "url": "https://www.legis.state.ak.us/basis/get_bill.asp?session=29&bill=HB75",
+     "db_date": "2016-07-28"
+    },
+    {
+     "state": "CT",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To: (1) Define \"edible cannabis product\"; (2) establish off-site event permits for retailers and hybrid retailers of adult-use cannabis; (3) redefine \"bona fide labor organization\"; (4) transfer certain duties concerning labor peace agreements to the...",
+     "policy_id": "CT-HB06699-General Assembly",
+     "url": "https://legiscan.com/CT/bill/HB06699/2023",
+     "db_date": "2023-06-26"
+    },
+    {
+     "state": "DE",
+     "year": 2023,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "An Act To Amend Titles 4, 11, 16, And 30 Of The Delaware Code Relating To Creation Of The Delaware Marijuana Control Act.",
+     "policy_id": "1672518",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=129969",
+     "db_date": "2023-04-27"
+    },
+    {
+     "state": "DE",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "An Act To Amend Title 4 Of The Delaware Code Relating To Marijuana Conversion Licenses.",
+     "policy_id": "1878897",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=141410",
+     "db_date": "2024-07-17"
+    },
+    {
+     "state": "IL",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "CANNABIS REGULATION-VARIOUS",
+     "policy_id": "1207094",
+     "url": "https://www.ilga.gov/legislation/BillStatus.asp?DocNum=1557&GAID=15&DocTypeID=SB&SessionID=108&GA=101",
+     "db_date": "2019-12-04"
+    },
+    {
+     "state": "ME",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "An Act to Amend the Adult Use Cannabis Laws",
+     "policy_id": "1760736",
+     "url": "https://legislature.maine.gov/legis/bills/display_ps.asp?LD=1880&snum=131",
+     "db_date": "2023-06-22"
+    },
+    {
+     "state": "NJ",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Revises certain restrictions on cannabis establishments' owners; expands scope of review of cannabis establishment license applications and related materials.",
+     "policy_id": "NJ-A4151-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2022/A4151",
+     "db_date": "2023-09-25"
+    },
+    {
+     "state": "OH",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Revise medical and adult-use marijuana laws; levy marijuana taxes",
+     "policy_id": "OH-SB56-136th General Assembly",
+     "url": "https://www.legislature.ohio.gov/legislation/136/sb56",
+     "db_date": "2026-03-20"
+    },
+    {
+     "state": "VA",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Cannabis control; establishes framework for creation of retail marijuana market, penalties, report.",
+     "policy_id": "VA-HB 642-2026",
+     "url": "https://lis.virginia.gov/bill-details/20261/HB642",
+     "db_date": "2026-01-28"
+    }
+   ]
+  },
+  "ui_rules": {
+   "label": "Unemployment-insurance benefit-duration / work-search / eligibility rule changes",
+   "labor": true,
+   "rule": "unemployment.{0,90}(maximum|duration|weeks|work[- ]search|search for work|disqualif|eligib|average unemployment|extended benefit|partial|striking|lockout|shared work|benefit amount|suitable)|work[- ]search|shared work|strik\\w+ or lockout|KRS 341\\.|suitable work|find work for unemployment",
+   "exclude": null,
+   "matched": 11,
+   "T": 5,
+   "A": 3,
+   "precision": 0.727,
+   "true_states": [
+    "AL",
+    "KY",
+    "MD",
+    "NE",
+    "RI",
+    "TN",
+    "WA"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "KY",
+    "TN",
+    "WA"
+   ],
+   "dc_true": false,
+   "span": "2011-2025",
+   "real_adopters_approx": "approx 14 states cut duration 2011-2023; most states changed work-search rules",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Unemployment benefits, maximum amount paid to an individual revised contingent on the state's average unemployment rate, maximum weekly benefits revised, terms of losing benefits due to disqualification, Secs. 25-4-72, 25-4-74, 25-4-78 am'd.",
+     "policy_id": "1248119",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB193&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-05-14"
+    },
+    {
+     "state": "AL",
+     "year": 2022,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Unemployment compensation, individual required to search for work a certain number of times per week to be eligible to receive benefits, Sec. 25-4-77 am'd.",
+     "policy_id": "1592221",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB224&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2022-04-06"
+    },
+    {
+     "state": "KY",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amend KRS 341.005 to define \"enhanced federal benefits\" and \"state average unemployment rate\"; amend KRS 341.100 to define \"suitable work\" under certain circumstances; amend KRS 341.270 and KRS 341.272 to reduce the minimum period of time for an empl...",
+     "policy_id": "KY-HB4-Regular Session",
+     "url": "https://legiscan.com/KY/bill/HB4/2022",
+     "db_date": "2022-03-22"
+    },
+    {
+     "state": "MD",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Altering the period that constitutes an extended benefit period and when a State \"on\" indicator exists; specifying the total amount of certain extended unemployment benefits that are payable to an eligible individual; authorizing the Secretary of Lab...",
+     "policy_id": "MD-SB655-Regular Session",
+     "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/SB0655?ys=2022RS",
+     "db_date": "2022-05-29"
+    },
+    {
+     "state": "NE",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Change provisions relating to maximum annual unemployment benefits and disqualification for benefits and authorize electronic notice",
+     "policy_id": "NE-LB203-105th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=31076",
+     "db_date": "2017-05-23"
+    },
+    {
+     "state": "RI",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Extends until June 30, 2023, an increase in the total amount of earnings a partial-unemployment insurance claimant can receive before being entirely disqualified for unemployment insurance benefits.",
+     "policy_id": "RI-S2816-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2022-06-21"
+    },
+    {
+     "state": "TN",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, establishes a voluntary shared work unemployment benefits program that allows certain employers to submit to the department of labor and workforce development for approval a plan to reduce employee work hours in exchange for employee acce...",
+     "policy_id": "TN-HB1274-112th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=HB1274&ga=112",
+     "db_date": "2022-06-01"
+    },
+    {
+     "state": "WA",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Concerning unemployment insurance benefits for striking or lockout workers.",
+     "policy_id": "WA-SB5041-Regular Session",
+     "url": "https://app.leg.wa.gov/billsummary?BillNumber=5041&Year=2025&Initiative=false",
+     "db_date": "2025-05-19"
+    }
+   ]
+  },
+  "worker_class": {
+   "label": "Worker classification: independent-contractor / marketplace-contractor / misclassification laws",
+   "labor": true,
+   "rule": "independent contractor|misclassif|marketplace contractor|freelance worker|worker status|portable benefits|employee classification",
+   "exclude": "^$",
+   "matched": 14,
+   "T": 5,
+   "A": 4,
+   "precision": 0.643,
+   "true_states": [
+    "AL",
+    "CA",
+    "IL",
+    "NJ",
+    "OK",
+    "RI",
+    "SD"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "IL",
+    "OK",
+    "SD"
+   ],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 10 states passed marketplace-contractor laws; approx 20 with misclassification penalties",
+   "site_area": "none (labor); adjacent: workers' compensation",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Labor, definitions of employment, marketplace contractors under certain conditions not an employee of marketplace platform, Sec. 25-4-121 repealed; Sec. 25-4-10, 25-5-1 am'd.",
+     "policy_id": "1579384",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB150&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2022-03-31"
+    },
+    {
+     "state": "AL",
+     "year": 2025,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Labor and employment, independent contractors, establishment of portable benefits accounts",
+     "policy_id": "1956091",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2025-04-10"
+    },
+    {
+     "state": "CA",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Worker status: employees and independent contractors: newspaper distributors and carriers.",
+     "policy_id": "CA-AB1506-Regular Session",
+     "url": "https://legiscan.com/CA/bill/AB1506/2021",
+     "db_date": "2021-09-27"
+    },
+    {
+     "state": "IL",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "FREELANCE WORKER PROTECTION",
+     "policy_id": "1654416",
+     "url": "https://www.ilga.gov/legislation/BillStatus.asp?DocNum=1122&GAID=17&DocTypeID=HB&SessionID=112&GA=103",
+     "db_date": "2023-08-04"
+    },
+    {
+     "state": "NJ",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Concerns penalties for misclassification of employees.",
+     "policy_id": "NJ-A5839-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2018/A5839",
+     "db_date": "2020-01-20"
+    },
+    {
+     "state": "NJ",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Requires employers to post notice for employees on employee misclassification.",
+     "policy_id": "NJ-A5843-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2018/A5843",
+     "db_date": "2020-01-20"
+    },
+    {
+     "state": "OK",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Motor vehicles; creating the Independent Driver Classification Act; requiring Transportation Network Company drivers be independent contractors if certain conditions are met; detailing certain conditions; effective date.",
+     "policy_id": "OK-HB2464-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=hb2464&Session=2300",
+     "db_date": "2023-04-24"
+    },
+    {
+     "state": "RI",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Increases the criminal penalties for wage theft and employee misclassification.",
+     "policy_id": "RI-S1079-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2023-06-22"
+    },
+    {
+     "state": "SD",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Clarify when a delivery facilitation contractor may be considered an independent contractor.",
+     "policy_id": "SD-HB1118-Regular Session",
+     "url": "https://sdlegislature.gov/#/Session/Bill/23149",
+     "db_date": "2022-03-08"
+    }
+   ]
+  },
+  "child_labor": {
+   "label": "Child-labor / youth-employment law changes (rollbacks and tightening)",
+   "labor": true,
+   "rule": "child labor|youth employment|minors? working|employment of minors|work permit",
+   "exclude": null,
+   "matched": 16,
+   "T": 2,
+   "A": 6,
+   "precision": 0.5,
+   "true_states": [
+    "AL",
+    "IA",
+    "MI",
+    "ND",
+    "NE",
+    "NJ",
+    "OR"
+   ],
+   "true_states_T_only": [
+    "IA",
+    "MI"
+   ],
+   "dc_true": false,
+   "span": "2021-2025",
+   "real_adopters_approx": "approx 10-15 states 2021-2025",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Child labor, increasing civil and criminal penalties for employers who violate child labor laws",
+     "policy_id": "1850817",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2024-05-09"
+    },
+    {
+     "state": "IA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "A bill for an act relating to youth employment, providing for a minor driver's license interim study committee, and making penalties applicable. (Formerly SF 167.) Effective date: 07/01/2023.",
+     "policy_id": "IA-SF542-90th General Assembly",
+     "url": "https://www.legis.iowa.gov/legislation/BillBook?ga=90&ba=SF542",
+     "db_date": "2023-05-26"
+    },
+    {
+     "state": "MI",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Labor: youth employment; youth employment standards act; modify work permit issuance procedures. Amends secs. 2, 4, 5, 7, 8 & 20 of 1978 PA 90 (MCL 409.102 et seq.) & adds secs. 4a, 4b, 4c & 4d.",
+     "policy_id": "1864118",
+     "url": "https://legislature.mi.gov/Bills/Bill?ObjectName=2024-HB-5594",
+     "db_date": "2024-12-23"
+    },
+    {
+     "state": "ND",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "AN ACT to create and enact a new section to chapter 34-07 of the North Dakota Century Code, relating to minors working in hazardous occupations; and to provide for a legislative management study.",
+     "policy_id": "ND-SB2170-68th Legislative Assembly",
+     "url": "https://ndlegis.gov/assembly/68-2023/regular/bill-overview/bo2170.html",
+     "db_date": "2023-05-18"
+    },
+    {
+     "state": "NE",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Change provisions relating to child labor laws",
+     "policy_id": "NE-LB906-108th Legislature",
+     "url": "https://nebraskalegislature.gov/bills/view_bill.php?DocumentID=55094",
+     "db_date": "2024-04-02"
+    },
+    {
+     "state": "NJ",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Amends current child labor laws to protect minor working as vlogger in certain circumstances.",
+     "policy_id": "NJ-S704-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2026/S704",
+     "db_date": "2026-01-13"
+    },
+    {
+     "state": "NJ",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Amends current child labor laws to protect minor working as vlogger in certain circumstances.",
+     "policy_id": "NJ-A4302-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2024/A4302",
+     "db_date": "2026-01-20"
+    },
+    {
+     "state": "OR",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "The Act changes the state law that governs civil penalties imposed against a person who violates child labor laws. The Act goes into effect 91 days after session ends. (Flesch Readability Score: 60.8). [Digest: The Act changes the state law that gove...",
+     "policy_id": "OR-HB4004-Regular Session",
+     "url": "https://olis.oregonlegislature.gov/liz/2024R1/Measures/Overview/HB4004",
+     "db_date": "2024-03-12"
+    }
+   ]
+  },
+  "wage_theft": {
+   "label": "Wage-theft / wage-payment law strengthening",
+   "labor": true,
+   "rule": "wage theft|wage payment|payment of wages|unpaid wage|wage claim|collect wages|failure to pay wages|wage payment statements",
+   "exclude": "deceased|Congressional Review",
+   "matched": 9,
+   "T": 2,
+   "A": 6,
+   "precision": 0.889,
+   "true_states": [
+    "ID",
+    "IL",
+    "NY",
+    "RI",
+    "VA",
+    "WV"
+   ],
+   "true_states_T_only": [
+    "RI",
+    "VA"
+   ],
+   "dc_true": false,
+   "span": "2010-2025",
+   "real_adopters_approx": "approx 20 states with new wage-theft statutes 2010-2024",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "ID",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Amends existing law to increase the time period when a claim to collect wages, penalties, or interest must be commenced.",
+     "policy_id": "1198099",
+     "url": "https://legislature.idaho.gov/sessioninfo/2019/legislation/H0113/",
+     "db_date": "2019-03-18"
+    },
+    {
+     "state": "IL",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "WAGE PAYMENT & COLLECTION",
+     "policy_id": "1575944",
+     "url": "https://www.ilga.gov/legislation/BillStatus.asp?DocNum=5412&GAID=16&DocTypeID=HB&SessionID=110&GA=102",
+     "db_date": "2022-06-10"
+    },
+    {
+     "state": "NY",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Increases the threshold for applicability of wage payment protections for certain persons employed in a bona fide executive, administrative, or professional capacity, from $900 to $1,300 per week.",
+     "policy_id": "NY-S05572-General Assembly",
+     "url": "https://www.nysenate.gov/legislation/bills/2023/S5572",
+     "db_date": "2023-09-15"
+    },
+    {
+     "state": "RI",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Grants employees several additional avenues to help them collect their wages from nonpaying employers, set forth penalties for nonpayment of wages by an employer, and implements a new procedure for filing of claims.",
+     "policy_id": "RI-S2475-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2016-07-12"
+    },
+    {
+     "state": "RI",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Increases the criminal penalties for wage theft and employee misclassification.",
+     "policy_id": "RI-S1079-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2023-06-22"
+    },
+    {
+     "state": "VA",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Willful failure to pay wages; penalty. Clarifies that wages owed to more than one employee may be aggregated in determining whether an employer's willful failure to pay wages is a misdemeanor or a felony. Currently, an employer who willfully and with...",
+     "policy_id": "VA-HB1150-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?161+sum+HB1150",
+     "db_date": "2016-04-01"
+    },
+    {
+     "state": "VA",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Wage payment statements. Requires each employer to provide on each regular pay date a written statement, by a paystub or online accounting, that shows the name and address of the employer, the number of hours worked during the pay period, and the rat...",
+     "policy_id": "VA-HB2664-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+sum+HB2664",
+     "db_date": "2019-04-03"
+    },
+    {
+     "state": "WV",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Revising wage payment and collection",
+     "policy_id": "WV-SB245-Regular Session",
+     "url": "http://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=245&year=2022&sessiontype=RS&btype=bill",
+     "db_date": "2022-04-20"
+    }
+   ]
+  },
+  "insulin": {
+   "label": "Insulin copay / cost-sharing caps",
+   "labor": false,
+   "rule": "insulin",
+   "exclude": "^$",
+   "matched": 7,
+   "T": 4,
+   "A": 2,
+   "precision": 0.857,
+   "true_states": [
+    "AL",
+    "DE",
+    "IL",
+    "ME",
+    "NV",
+    "WA"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "DE",
+    "IL",
+    "NV"
+   ],
+   "dc_true": false,
+   "span": "2019-2025",
+   "real_adopters_approx": "approx 25-30 states 2019-2025",
+   "site_area": "insurance regulation",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Health benefit plans, insulin prescription drugs, co-pay limited, Secs. 10A-20-6.16, 27-21A-23 am'd.",
+     "policy_id": "1434373",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB249&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-04-13"
+    },
+    {
+     "state": "DE",
+     "year": 2020,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "An Act To Amend Title 18 And Title 29 Of The Delaware Code Relating To Cost Sharing In Prescription Insulin Drugs.",
+     "policy_id": "1300920",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=47925",
+     "db_date": "2020-07-16"
+    },
+    {
+     "state": "IL",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "PRICING-PRESCRIPTION INSULIN",
+     "policy_id": "1184742",
+     "url": "https://www.ilga.gov/legislation/BillStatus.asp?DocNum=667&GAID=15&DocTypeID=SB&SessionID=108&GA=101",
+     "db_date": "2020-01-24"
+    },
+    {
+     "state": "ME",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "An Act to Provide Greater Transparency About the Cost of Insulin and to Promote the Availability of Low-cost Insulin in the State",
+     "policy_id": "1868067",
+     "url": "https://legislature.maine.gov/legis/bills/display_ps.asp?LD=2282&snum=131",
+     "db_date": "2024-04-03"
+    },
+    {
+     "state": "NV",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "AN ACT relating to insurance; establishing a maximum cost-sharing amount that certain health insurers may impose for a 30-day supply of prescription insulin drugs; and providing other matters properly relating thereto.",
+     "policy_id": "NV-AB555-83rd Legislature",
+     "url": "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12878/Overview",
+     "db_date": "2025-06-06"
+    },
+    {
+     "state": "WA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Revised for 1st Substitute: Removing the expiration date on the cost-sharing cap for insulin.Original: Extending the expiration date on the cost-sharing cap for insulin.",
+     "policy_id": "WA-SB5729-Regular Session",
+     "url": "https://app.leg.wa.gov/billsummary?BillNumber=5729&Year=2023&Initiative=false",
+     "db_date": "2023-03-30"
+    }
+   ]
+  },
+  "fair_chance_lic": {
+   "label": "Fair-chance (criminal-record) occupational licensing reform / Fresh Start acts",
+   "labor": true,
+   "rule": "fresh start|(criminal|conviction|felony|felon|offense|offender|ex-offender|incarcerat|crime).{0,60}licens|licens.{0,60}(criminal|conviction|felon|offender|offense|incarcerat|crime|disqualif)",
+   "exclude": "driver|vehicle|highway|alcohol|liquor|beer|wine|firearm|weapon|concealed|handgun|gun|pistol|marijuana|cannabis|explosive|sex offender|child care|daycare|domestic violence|hunting|fish|game|Crime Stoppers",
+   "matched": 16,
+   "T": 5,
+   "A": 2,
+   "precision": 0.438,
+   "true_states": [
+    "AL",
+    "AZ",
+    "IN",
+    "MS",
+    "TN",
+    "TX"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "IN",
+    "MS",
+    "TN",
+    "TX"
+   ],
+   "dc_true": false,
+   "span": "2015-2022",
+   "real_adopters_approx": "approx 30 states 2015-2022",
+   "site_area": "occupational licensing",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Occupational licensees, process created to allow persons convicted of crime to apply for if granted relief by court",
+     "policy_id": "1243015",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB163&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-05-29"
+    },
+    {
+     "state": "AL",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Convicted felons; restrictions on obtaining occupational licenses by convicted felons revised; certificate of employability for convicted felons created; immunity to employers provided",
+     "policy_id": "1959385",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2025-05-14"
+    },
+    {
+     "state": "AZ",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "License denial; prohibition; drug convictions",
+     "policy_id": "AZ-HB2319-Fifty-fifth Legislature 1st Regular",
+     "url": "https://legiscan.com/AZ/bill/HB2319/2021",
+     "db_date": "2021-03-24"
+    },
+    {
+     "state": "IN",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Occupational licensing. Provides that the state and a local governmental unit (unit) shall explicitly list the crimes that will disqualify an individual from receiving an occupational license. Provides that the use of an individual's conviction of a crime as a disqualifying criminal conviction is limited to a crime that specifically and directly relates to the duties and responsibilities of the occupation for which the individual is applying for or holds a license. Provides that the period of disqualification may not exceed five years unless the individual: (1) was convicted of a crime of violence or an offense relating to a",
+     "policy_id": "1058793",
+     "url": "http://iga.in.gov/legislative/2018/bills/house/1245/",
+     "db_date": "2018-03-21"
+    },
+    {
+     "state": "MS",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "An Act To Create The \"fresh Start Act Of 2019\"; To Provide That No Person Shall Be Disqualified From Pursuing, Practicing Or Engaging In Any Occupation For Which A License Is Required Solely Or In Part Because Of A Prior Conviction Of A Crime, Unless...",
+     "policy_id": "MS-SB2781-Regular Session",
+     "url": "https://billstatus.ls.state.ms.us/2019/pdf/history/SB/SB2781.xml",
+     "db_date": "2019-04-16"
+    },
+    {
+     "state": "TN",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, enacts the \"Fresh Start Act\". - Amends TCA Title 62, Chapter 76, Part 1 and Title 63, Chapter 1.",
+     "policy_id": "TN-SB2465-110th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=SB2465&ga=110",
+     "db_date": "2018-04-23"
+    },
+    {
+     "state": "TX",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Relating to the eligibility for certain occupational licenses and the use of a person's criminal history as grounds for certain actions related to the license.",
+     "policy_id": "TX-SB1531-86th Legislature",
+     "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=86R&Bill=SB1531",
+     "db_date": "2019-06-02"
+    }
+   ]
+  },
+  "cocktails": {
+   "label": "Cocktails-to-go / off-premises alcohol delivery",
+   "labor": false,
+   "rule": "cocktails? to go|to-go|mixed drinks?.{0,40}(sealed|to go)|delivery service license|alcohol\\w*.{0,25}deliver|curbside|drive-thru|carryout sales and delivery|delivery of alcoholic",
+   "exclude": "bags|Postal|charging|recycled",
+   "matched": 8,
+   "T": 3,
+   "A": 4,
+   "precision": 0.875,
+   "true_states": [
+    "AL",
+    "MI",
+    "OK",
+    "OR",
+    "TN"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "OK",
+    "OR"
+   ],
+   "dc_true": false,
+   "span": "2020-2024",
+   "real_adopters_approx": "approx 35 states + DC 2020-2021",
+   "site_area": "alcohol licensing",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Alcoholic beverages, delivery service license, established, requirements for issuance, limits on delivery of beer, wine, and spirits, Secs. 28-1-4, 28-3-1, 28-3A-13, 28-3A-14 am'd.",
+     "policy_id": "1431988",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=SB126&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-04-07"
+    },
+    {
+     "state": "AL",
+     "year": 2022,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Alcoholic beverage retailers, authorize drive-thru and walk-up service to purchase alcoholic beverages for off-premises consumption",
+     "policy_id": "1557921",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB119&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2022-04-07"
+    },
+    {
+     "state": "MI",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Liquor: licenses; carryout sales and delivery of alcoholic liquor by an on-premises licensee; eliminate sunset. Amends sec. 537a of 1998 PA 58 (MCL 436.1537a).",
+     "policy_id": "1728722",
+     "url": "https://legislature.mi.gov/Bills/Bill?ObjectName=2023-SB-0141",
+     "db_date": "2023-07-20"
+    },
+    {
+     "state": "OK",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Alcoholic beverages; Oklahoma Cocktails To Go Act of 2021; cocktails or mixed drinks to go; effective date; emergency.",
+     "policy_id": "OK-HB2122-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=hb2122&Session=2200",
+     "db_date": "2021-05-10"
+    },
+    {
+     "state": "OK",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Alcoholic beverages; allowing certain licensee to participate in curbside pickup or delivery of sealed alcoholic beverages. Effective date.",
+     "policy_id": "OK-SB809-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb809&Session=2400",
+     "db_date": "2024-06-14"
+    },
+    {
+     "state": "OR",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Allows holder of full on-premises sales license to make retail sales of mixed drinks and single servings of wine in sealed containers for off-premises consumption. Allows holder of full on-premises sales license to make retail sales of mixed drinks a...",
+     "policy_id": "OR-SB317-Regular Session",
+     "url": "https://olis.oregonlegislature.gov/liz/2021R1/Measures/Overview/SB317",
+     "db_date": "2021-06-30"
+    },
+    {
+     "state": "TN",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "As enacted, authorizes a delivery service licensee to charge a fee based on a percentage of the sales of the alcoholic beverages or beer being delivered; limits the fee to no more than 10 percent of the price of each alcoholic beverage or beer sold. ...",
+     "policy_id": "TN-HB0866-112th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=HB0866&ga=112",
+     "db_date": "2021-05-03"
+    }
+   ]
+  },
+  "paid_leave": {
+   "label": "Paid sick leave and paid family and medical leave mandates",
+   "labor": true,
+   "rule": "sick (leave|days?|time)|earned sick|paid (family|leave|sick)|family and medical leave|family medical leave|temporary disability insurance|kin care",
+   "exclude": "bank|retirement|Retirement|Bereavement|bereavement|COVID|task force|study|state employees|public education|school|disability insurance policies|insurers to|data|Disclosable|Tier II|conversion|organ|Trial Court|Judiciary|Department of|Division|Correction|Mental Health|Children and Families|Parole|Registry|Disability Services|Conservation|Maritime|Sheriff|Superintendent|adoption|poll|volunteer|family leave insurance; definition|Paid family leave$|Family leave$",
+   "matched": 18,
+   "T": 1,
+   "A": 7,
+   "precision": 0.444,
+   "true_states": [
+    "CA",
+    "DE",
+    "NJ",
+    "NV",
+    "RI"
+   ],
+   "true_states_T_only": [
+    "NJ"
+   ],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 15 states paid sick mandates 2016-2024 (incl. earlier CT/OR/CA); approx 13 states + DC PFML",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "CA",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Employee: sick leave: kin care.",
+     "policy_id": "CA-AB2017-Regular Session",
+     "url": "https://legiscan.com/CA/bill/AB2017/2019",
+     "db_date": "2020-09-28"
+    },
+    {
+     "state": "CA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Sick days: paid sick days accrual and use.",
+     "policy_id": "CA-SB616-Regular Session",
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202320240SB616",
+     "db_date": "2023-10-04"
+    },
+    {
+     "state": "CA",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Paid family leave: eligibility: care for designated persons.",
+     "policy_id": "CA-SB590-Regular Session",
+     "url": "https://legiscan.com/CA/bill/SB590/2025",
+     "db_date": "2025-10-13"
+    },
+    {
+     "state": "DE",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "An Act To Amend Title 19 Of The Delaware Code Relating To Family And Medical Leave Insurance Program.",
+     "policy_id": "1866500",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=141222",
+     "db_date": "2024-06-30"
+    },
+    {
+     "state": "DE",
+     "year": 2025,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "An Act To Amend Title 19 Of The Delaware Code Relating To The Family And Medical Leave Insurance Program.",
+     "policy_id": "2024951",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=142589",
+     "db_date": "2025-07-30"
+    },
+    {
+     "state": "NJ",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Concerns earned sick leave to employees.*",
+     "policy_id": "NJ-A1827-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2018/A1827",
+     "db_date": "2018-05-02"
+    },
+    {
+     "state": "NV",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "AN ACT relating to employment; requiring, with certain exceptions, private employers that provide employees with sick leave to allow an employee to use such leave to assist a member of the employee's immediate family with certain medical needs; p...",
+     "policy_id": "NV-AB190-81st Legislature",
+     "url": "https://www.leg.state.nv.us/App/NELIS/REL/81st2021/Bill/7578/Overview",
+     "db_date": "2021-05-31"
+    },
+    {
+     "state": "RI",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "LABOR AND LABOR RELATIONS -- TEMPORARY DISABILITY INSURANCE -- BENEFITS - Makes care recipients eligible for temporary caregiver benefits and increase the maximum temporary caregiver benefit weeks from six (6) to eight (8) weeks over of period of two...",
+     "policy_id": "RI-S2121-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2024-06-25"
+    }
+   ]
+  },
+  "min_wage15": {
+   "label": "Minimum wage increase to $15 (first enacting law)",
+   "labor": true,
+   "rule": "(increas|raise|gradual).{0,60}minimum (fair )?wage|minimum wage.{0,80}(\\$15|fifteen)|minimum wage/|fight for",
+   "exclude": null,
+   "matched": 4,
+   "T": 4,
+   "A": 0,
+   "precision": 1.0,
+   "true_states": [
+    "CT",
+    "IL",
+    "RI",
+    "VA"
+   ],
+   "true_states_T_only": [
+    "CT",
+    "IL",
+    "RI",
+    "VA"
+   ],
+   "dc_true": false,
+   "span": "2016-2023 (CA/NY 2016 ... RI 2021 ... VA 2026 in DB)",
+   "real_adopters_approx": "approx 12 states + DC enacted $15 laws 2016-2023",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "CT",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To provide more economic security to Connecticut families by increasing the minimum fair wage.",
+     "policy_id": "CT-HB05004-General Assembly",
+     "url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=HB05004&which_year=2019",
+     "db_date": "2019-05-28"
+    },
+    {
+     "state": "IL",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "MINIMUM WAGE/INCOME TAX CREDIT",
+     "policy_id": "IL-SB 1-101st",
+     "url": "http://ilga.gov/legislation/BillStatus.asp?DocNum=1&GAID=15&DocTypeID=SB&LegId=113573&SessionID=108&GA=101",
+     "db_date": "2019-02-19"
+    },
+    {
+     "state": "RI",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Gradually increase the minimum wage from eleven dollars and fifty cents ($11.50) per hour to fifteen dollars ($15.00) per hour, over 4 years.",
+     "policy_id": "RI-S0001-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2021-05-20"
+    },
+    {
+     "state": "VA",
+     "year": 2026,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Minimum wage; increases incrementally to $15.00 per hour by January 1, 2028.",
+     "policy_id": "VA-SB 1-2026",
+     "url": "https://lis.virginia.gov/bill-details/20261/SB1",
+     "db_date": "2026-01-23"
+    }
+   ]
+  },
+  "pay_equity": {
+   "label": "Pay-equity / salary-history ban / pay-range transparency",
+   "labor": true,
+   "rule": "salary history|wage history|pay history|compensation history|pay (transparency|range|equity|disparit|secrecy)|wage (transparency|disclosure|discrimination|gap)|equal pay for equal|discrimination in wages|wage record",
+   "exclude": "Day$|Day |Week|Task Force|scale|sheriff|Congrats|Early Childhood Educator|Court reporters|State employees",
+   "matched": 4,
+   "T": 1,
+   "A": 3,
+   "precision": 1.0,
+   "true_states": [
+    "AL",
+    "CA",
+    "CO",
+    "RI"
+   ],
+   "true_states_T_only": [
+    "AL"
+   ],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 20+ salary-history bans; approx 12 pay-range laws",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2019,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Discrimination in wages, prohib. employer from paying employees of another sex or race for equal work less wage rates, except pursuant to seniority system, a merit system, and system that measures earnings by quantity or quality of production",
+     "policy_id": "1241557",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB225&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2019-05-31"
+    },
+    {
+     "state": "CA",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Employers: wage discrimination.",
+     "policy_id": "CA-AB46-Regular Session",
+     "url": "https://legiscan.com/CA/bill/AB46/2017",
+     "db_date": "2017-10-14"
+    },
+    {
+     "state": "CO",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Concerning the implementation of measures to ensure equal pay for equal work, and, in connection therewith, making an appropriation.",
+     "policy_id": "CO-SB105-Regular Session",
+     "url": "https://legiscan.com/CO/bill/SB105/2023",
+     "db_date": "2023-06-05"
+    },
+    {
+     "state": "RI",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Comprehensively addresses wage discrimination, based on sex by expanding employee protections and the scope of the remedies available to employees who have experienced wage discrimination.",
+     "policy_id": "RI-H5261-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2021-07-06"
+    }
+   ]
+  },
+  "red_flag": {
+   "label": "Extreme risk protection order (red flag) laws",
+   "labor": false,
+   "rule": "extreme risk|red flag|risk protection|gun violence restraining|firearms?.{0,25}removal from persons",
+   "exclude": "municipal risk|financial exploitation",
+   "matched": 6,
+   "T": 2,
+   "A": 4,
+   "precision": 1.0,
+   "true_states": [
+    "CA",
+    "MI",
+    "NY",
+    "VA"
+   ],
+   "true_states_T_only": [
+    "NY",
+    "VA"
+   ],
+   "dc_true": true,
+   "span": "2016-2024",
+   "real_adopters_approx": "approx 21 states + DC",
+   "site_area": "none",
+   "rows": [
+    {
+     "state": "CA",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Temporary emergency gun violence restraining orders.",
+     "policy_id": "CA-AB2526-Regular Session",
+     "url": "http://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=201720180AB2526",
+     "db_date": "2018-09-28"
+    },
+    {
+     "state": "CA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Gun violence restraining orders: body armor.",
+     "policy_id": "CA-AB301-Regular Session",
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202320240AB301",
+     "db_date": "2023-09-26"
+    },
+    {
+     "state": "DC",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Extreme Risk Protection Order Implementation Working Group Emergency Amendment Act of 2020",
+     "policy_id": "DC-B23-0685-23rd Council",
+     "url": "https://lims.dccouncil.gov/Legislation/B23-0685",
+     "db_date": "2020-03-27"
+    },
+    {
+     "state": "MI",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Civil procedure: service of process; service of process for extreme risk protection order actions; provide for, and waive court fees. Amends secs. 1908, 2529 & 2559 of 1961 PA 236 (MCL 600.1908 et seq.). TIE BAR WITH: SB 0083'23",
+     "policy_id": "1722922",
+     "url": "https://legislature.mi.gov/Bills/Bill?ObjectName=2023-HB-4147",
+     "db_date": "2023-05-23"
+    },
+    {
+     "state": "NY",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Establishes extreme risk protection orders as a court-issued order of protection prohibiting a person from purchasing, possessing or attempting to purchase or possess a firearm, rifle or shotgun.",
+     "policy_id": "NY-S02451-General Assembly",
+     "url": "https://www.nysenate.gov/legislation/bills/2019/S2451",
+     "db_date": "2019-02-25"
+    },
+    {
+     "state": "VA",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Firearms; removal from persons posing substantial risk; penalties. Creates a procedure by which any attorney for the Commonwealth or law-enforcement officer may apply to a general district court, circuit court, or juvenile and domestic relations dist...",
+     "policy_id": "VA-HB674-Regular Session",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+sum+HB674",
+     "db_date": "2020-04-08"
+    }
+   ]
+  },
+  "tobacco21": {
+   "label": "Tobacco 21 (minimum sale age 21)",
+   "labor": false,
+   "rule": "(?=.*(tobacco|nicotine|vap|cigarette))(?=.*(\\b21\\b|twenty-one|legal sales age))(?=.*(age|raise|increas))",
+   "exclude": "under 21 years|under twenty-one|persons under|crime|sentenc|tax|income|guardian|marijuana|wagering|lodging",
+   "matched": 4,
+   "T": 4,
+   "A": 0,
+   "precision": 1.0,
+   "true_states": [
+    "AL",
+    "KS",
+    "NJ",
+    "NV"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "KS",
+    "NJ",
+    "NV"
+   ],
+   "dc_true": false,
+   "span": "2015-2023",
+   "real_adopters_approx": "approx 40 states by 2020 (pre- and post-federal 2019)",
+   "site_area": "none",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Nicotine, age raised to buy, possess, or use nicotine products to 21, restrictions on marketing of certain nicotine products, Secs. 28-11-17.1, 28-11-20, 28-11-21 added; Secs. 13A-12-3, 13A-12-3.1, 28-11-1, 28-11-2, 28-11-3, 28-11-4, 28-11-5, 28-11-6.1, 28-11-6.2, 28-11-11, 28-11-13, 28-11-14, 28-11-15, 28-11-16, 28-11-18 am'd.",
+     "policy_id": "1434544",
+     "url": "http://alisondb.legislature.state.al.us/Alison/SESSBillStatusResult.aspx?BILL=HB273&WIN_TYPE=SELECTED_STATUS",
+     "db_date": "2021-05-06"
+    },
+    {
+     "state": "KS",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Amending the Kansas cigarette and tobacco products act to raise the minimum age to 21 years old for the sale, purchase or possession of cigarettes, electronic cigarettes or tobacco products.",
+     "policy_id": "KS-HB2269-Regular Session",
+     "url": "https://kslegislature.org/li/b2023_24/measures/hb2269/",
+     "db_date": "2023-04-24"
+    },
+    {
+     "state": "NJ",
+     "year": 2017,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Raises minimum age for purchase and sale of tobacco products and electronic smoking devices from 19 to 21.",
+     "policy_id": "NJ-S359-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2016/S359",
+     "db_date": "2017-07-21"
+    },
+    {
+     "state": "NV",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "AN ACT relating to tobacco; increasing the minimum legal sales age for tobacco products; revising the punishment for certain prohibited acts relating to the sale of tobacco products; revising provisions relating to delivery sales of tobacco products;...",
+     "policy_id": "NV-AB59-81st Legislature",
+     "url": "https://www.leg.state.nv.us/App/NELIS/REL/81st2021/Bill/7312/Overview",
+     "db_date": "2021-05-27"
+    }
+   ]
+  },
+  "social_media": {
+   "label": "Social-media / minors' online safety and age-verification laws",
+   "labor": false,
+   "rule": "social media|age[- ]verif|app store|harmful to minors|online.{0,25}(minor|child)",
+   "exclude": "human trafficking|school",
+   "matched": 7,
+   "T": 6,
+   "A": 0,
+   "precision": 0.857,
+   "true_states": [
+    "AL",
+    "AR",
+    "TN",
+    "UT"
+   ],
+   "true_states_T_only": [
+    "AL",
+    "AR",
+    "TN",
+    "UT"
+   ],
+   "dc_true": false,
+   "span": "2023-2026",
+   "real_adopters_approx": "approx 20 states 2023-2025",
+   "site_area": "none",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Consumer Protection; online distribution of material harmful to minors, prohibited; online age-verification requirements, required",
+     "policy_id": "1846509",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2024-04-24"
+    },
+    {
+     "state": "AL",
+     "year": 2026,
+     "status": "unknown",
+     "verdict": "T",
+     "title": "Consumer protection, app store providers and developers required to take certain actions related to age verification and parental consent, Attorney General authorized to bring action for violations as deceptive trade practice, parents authorized to bring civil action",
+     "policy_id": "2073230",
+     "url": "https://alison.legislature.state.al.us/bill-search",
+     "db_date": "2026-02-17"
+    },
+    {
+     "state": "AR",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "To Create A Private Right Of Action Against A Social Media Platform That Causes Harm; And To Impose A Civil Penalty On A Social Media Platform That Knowingly And Willfully Contributes To A Minor's Suicide Or Suicide Attempt.",
+     "policy_id": "AR-SB612-95th General Assembly",
+     "url": "https://legiscan.com/AR/bill/SB612/2025",
+     "db_date": "2025-04-22"
+    },
+    {
+     "state": "TN",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, creates the \"Protecting Children from Social Media Act.\" - Amends TCA Title 47, Chapter 18.",
+     "policy_id": "TN-SB2097-113th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/default.aspx?BillNumber=SB2097&ga=113",
+     "db_date": "2024-05-13"
+    },
+    {
+     "state": "TN",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "As enacted, enacts the \"Teen Social Media and Internet Safety Act.\" - Amends TCA Title 49.",
+     "policy_id": "TN-HB0825-114th General Assembly",
+     "url": "https://wapp.capitol.tn.gov/apps/Billinfo/Default?BillNumber=HB0825&ga=114",
+     "db_date": "2025-04-28"
+    },
+    {
+     "state": "UT",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "App Store Accountability Act",
+     "policy_id": "UT-SB0142-General Session",
+     "url": "https://le.utah.gov/~2025/bills/static/SB0142.html",
+     "db_date": "2025-03-26"
+    }
+   ]
+  },
+  "privacy": {
+   "label": "Comprehensive consumer data privacy acts",
+   "labor": false,
+   "rule": "consumer(s'?)?.{0,10}(personal )?data|data privacy|privacy act|consumer privacy|collection and disclosure of personal data|child data protection",
+   "exclude": "student|breach|judge|public (records|employees)|motor vehicle|Genetic|insurance|facial|device location",
+   "matched": 5,
+   "T": 2,
+   "A": 2,
+   "precision": 0.8,
+   "true_states": [
+    "CA",
+    "NJ",
+    "NY",
+    "TX"
+   ],
+   "true_states_T_only": [
+    "NJ",
+    "TX"
+   ],
+   "dc_true": false,
+   "span": "2018-2025",
+   "real_adopters_approx": "approx 19-20 states 2018-2025",
+   "site_area": "none",
+   "rows": [
+    {
+     "state": "CA",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "California Consumer Privacy Act of 2018: monetary thresholds: grants.",
+     "policy_id": "CA-AB3286-Regular Session",
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202320240AB3286",
+     "db_date": "2024-07-15"
+    },
+    {
+     "state": "NJ",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Requires notification to consumers of collection and disclosure of personal data by certain entities.",
+     "policy_id": "NJ-S332-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2022/S332",
+     "db_date": "2024-01-16"
+    },
+    {
+     "state": "NY",
+     "year": 2024,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Establishes the New York child data protection act to protect minors from having their personal data accessed; provides exceptions in certain circumstances.",
+     "policy_id": "NY-S07695-General Assembly",
+     "url": "https://www.nysenate.gov/legislation/bills/2023/S7695",
+     "db_date": "2024-06-20"
+    },
+    {
+     "state": "TX",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Relating to the regulation of the collection, use, processing, and treatment of consumers' personal data by certain business entities; imposing a civil penalty.",
+     "policy_id": "TX-HB4-88th Legislature",
+     "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=HB4",
+     "db_date": "2023-06-18"
+    }
+   ]
+  },
+  "sports_bet": {
+   "label": "Legal sports betting acts (post-2018)",
+   "labor": false,
+   "rule": "sports?\\s*(betting|wager|gaming|book)|sportsbook",
+   "exclude": "^$",
+   "matched": 12,
+   "T": 3,
+   "A": 4,
+   "precision": 0.583,
+   "true_states": [
+    "KY",
+    "LA",
+    "NH",
+    "VA"
+   ],
+   "true_states_T_only": [
+    "KY",
+    "LA"
+   ],
+   "dc_true": true,
+   "span": "2018-2025",
+   "real_adopters_approx": "approx 38 states + DC 2018-2025",
+   "site_area": "none (adjacent: alcohol/gaming licensing)",
+   "rows": [
+    {
+     "state": "DC",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Sports Wagering Procurement Practices Reform Exemption Emergency Amendment Act of 2019",
+     "policy_id": "DC-B23-0137-23rd Council",
+     "url": "https://legiscan.com/DC/bill/B23-0137/2019",
+     "db_date": "2019-03-01"
+    },
+    {
+     "state": "DC",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Sports Wagering Lottery Congressional Review Emergency Amendment Act of 2019",
+     "policy_id": "DC-B23-0221-23rd Council",
+     "url": "https://lims.dccouncil.gov/Legislation/B23-0221",
+     "db_date": "2019-04-26"
+    },
+    {
+     "state": "KY",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Create a new section of KRS Chapter 230 to establish the wagering administration fund from sports wagering taxes and fees; direct use of that fund toward related administrative expenses of the Public Protection Cabinet; deposit all remaining funds in...",
+     "policy_id": "KY-HB551-Regular Session",
+     "url": "https://apps.legislature.ky.gov/record/23RS/hb551.html",
+     "db_date": "2023-03-31"
+    },
+    {
+     "state": "LA",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Provides for a proposition election to determine whether sports wagering activities and operations will be permitted in a parish. (See Act)",
+     "policy_id": "1349257",
+     "url": "http://www.legis.la.gov/legis/BillInfo.aspx?s=20rs&b=SB130&sbi=y",
+     "db_date": "2020-06-11"
+    },
+    {
+     "state": "LA",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Provides for sports wagering (EN INCREASE SD RV See Note)",
+     "policy_id": "1502774",
+     "url": "http://www.legis.la.gov/legis/BillInfo.aspx?s=21rs&b=HB697&sbi=y",
+     "db_date": "2021-06-04"
+    },
+    {
+     "state": "NH",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Relative to the local option for sports betting.",
+     "policy_id": "1396482",
+     "url": "https://gencourt.state.nh.us/bill_status/legacy/bs2016/bill_status.aspx?lsr=516&sy=2021&sortoption=&txtsessionyear=2021&txtbillnumber=HB354",
+     "db_date": "2021-04-26"
+    },
+    {
+     "state": "VA",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Sports betting; clarifies certain procedures.",
+     "policy_id": "VA-HB 1847-2021",
+     "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?212+sum+HB1847",
+     "db_date": "2021-03-25"
+    }
+   ]
+  },
+  "bail": {
+   "label": "Cash-bail / pretrial release reform",
+   "labor": false,
+   "rule": "bail and pretrial release|pretrial release|pretrial services|pretrial detention",
+   "exclude": "^$",
+   "matched": 10,
+   "T": 1,
+   "A": 4,
+   "precision": 0.5,
+   "true_states": [
+    "DE",
+    "MD",
+    "OK",
+    "UT"
+   ],
+   "true_states_T_only": [
+    "UT"
+   ],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 10 states with major reform",
+   "site_area": "none",
+   "rows": [
+    {
+     "state": "DE",
+     "year": 2024,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "An Act To Amend Title 11 Of The Delaware Code And Chapter 72, Volume 83 Of The Laws Of Delaware Relating To Pretrial Release And Detention.",
+     "policy_id": "1875983",
+     "url": "https://legis.delaware.gov/BillDetail?LegislationId=141291",
+     "db_date": "2024-09-30"
+    },
+    {
+     "state": "MD",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Establishing the Pretrial Services Program Grant Fund to provide grants to eligible counties to establish or improve pretrial services programs; requiring the Executive Director of the Governor's Office of Crime Control and Prevention to administer t...",
+     "policy_id": "MD-HB447-Regular Session",
+     "url": "https://legiscan.com/MD/bill/HB447/2018",
+     "db_date": "2018-05-15"
+    },
+    {
+     "state": "MD",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Authorizing the St. Mary's County Sheriff to establish a pretrial release program and a prerelease program; authorizing a certain inmate to leave a certain detention center for certain purposes; repealing a provision authorizing the Sheriff and the B...",
+     "policy_id": "MD-HB110-Regular Session",
+     "url": "https://legiscan.com/MD/bill/HB110/2018",
+     "db_date": "2018-05-15"
+    },
+    {
+     "state": "OK",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Pretrial Release Act; authorizing special judges to determine eligibility for certain release. Emergency.",
+     "policy_id": "OK-SB363-Regular Session",
+     "url": "http://www.oklegislature.gov/BillInfo.aspx?Bill=sb363&Session=1800",
+     "db_date": "2018-03-08"
+    },
+    {
+     "state": "UT",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Bail and Pretrial Release Amendments",
+     "policy_id": "UT-HB0206-General Session",
+     "url": "https://le.utah.gov/~2020/bills/static/HB0206.html",
+     "db_date": "2020-03-28"
+    }
+   ]
+  },
+  "eitc": {
+   "label": "State earned income tax credit adoption / expansion",
+   "labor": true,
+   "rule": "earned income (tax )?credit|eitc|working famil",
+   "exclude": "Congrats|exclude from the definition|Assistance Program|notice of the maximum|caseload|CONGRATS",
+   "matched": 4,
+   "T": 0,
+   "A": 4,
+   "precision": 1.0,
+   "true_states": [
+    "DE",
+    "MD",
+    "NJ"
+   ],
+   "true_states_T_only": [],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 31 states + DC have EITCs; approx 15 expansions 2016-2025",
+   "site_area": "none (labor / tax credit)",
+   "rows": [
+    {
+     "state": "DE",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "An Act To Amend Title 30 Of The Delaware Code Relating To Earned Income Tax Credit.",
+     "policy_id": "1003709",
+     "url": "http://legis.delaware.gov/BillDetail?LegislationId=25616",
+     "db_date": "2018-07-01"
+    },
+    {
+     "state": "MD",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Altering the Maryland earned income tax credit to allow certain individuals without certain qualifying children to claim the credit; applying the Act to all taxable years beginning after December 31, 2017; and making the Act contingent on the taking ...",
+     "policy_id": "MD-HB856-Regular Session",
+     "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB0856?ys=2018rs",
+     "db_date": "2018-05-15"
+    },
+    {
+     "state": "NJ",
+     "year": 2018,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Increases New Jersey Earned Income Tax Credit; provides credit for child or dependent care expenses; taxes\"investment management services.\" *",
+     "policy_id": "NJ-A3088-Regular Session",
+     "url": "https://www.njleg.state.nj.us/bill-search/2018/A3088",
+     "db_date": "2018-07-01"
+    },
+    {
+     "state": "NJ",
+     "year": 2020,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "Expands eligibility under New Jersey earned income tax credit program to allow taxpayers who are at least 21 years of age to qualify.*",
+     "policy_id": "NJ-A 838-219",
+     "url": "http://www.njleg.state.nj.us/downloads.asp",
+     "db_date": "2020-09-29"
+    }
+   ]
+  },
+  "noncompete": {
+   "label": "Non-compete agreement limits / bans",
+   "labor": true,
+   "rule": "non-?compet|noncompet|covenants? not to compete|restrictive covenants?.{0,40}(employ|worker|wage)",
+   "exclude": "procurement|deed|recordation",
+   "matched": 3,
+   "T": 2,
+   "A": 1,
+   "precision": 1.0,
+   "true_states": [
+    "AR",
+    "CA",
+    "RI"
+   ],
+   "true_states_T_only": [
+    "CA",
+    "RI"
+   ],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 12 states with new limits 2016-2025",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "AR",
+     "year": 2025,
+     "status": "enacted",
+     "verdict": "A",
+     "title": "To Clarify That A Covenant Not To Compete Agreement Is Unenforceable For Certain Licensed Medical Professionals.",
+     "policy_id": "AR-SB139-95th General Assembly",
+     "url": "https://legiscan.com/AR/bill/SB139/2025",
+     "db_date": "2025-03-04"
+    },
+    {
+     "state": "CA",
+     "year": 2023,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Contracts in restraint of trade: noncompete agreements.",
+     "policy_id": "CA-AB1076-Regular Session",
+     "url": "https://legiscan.com/CA/bill/AB1076/2023",
+     "db_date": "2023-10-13"
+    },
+    {
+     "state": "RI",
+     "year": 2019,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Creates a comprehensive statutory scheme to address all aspects of noncompetition agreements.",
+     "policy_id": "RI-H6019-Regular Session",
+     "url": "https://status.rilegislature.gov/",
+     "db_date": "2019-07-15"
+    }
+   ]
+  },
+  "menstrual": {
+   "label": "Sales-tax exemption for menstrual products",
+   "labor": false,
+   "rule": "feminine hygiene.{0,20}(tax|exempt)|(tax|exempt).{0,30}(feminine hygiene|menstrual)|menstrual product.{0,20}exempt|use/occ tx-feminine|sale of feminine hygiene",
+   "exclude": "^$",
+   "matched": 2,
+   "T": 2,
+   "A": 0,
+   "precision": 1.0,
+   "true_states": [
+    "IL",
+    "MI"
+   ],
+   "true_states_T_only": [
+    "IL",
+    "MI"
+   ],
+   "dc_true": false,
+   "span": "2016-2024",
+   "real_adopters_approx": "approx 24 states 2016-2024",
+   "site_area": "sales tax exemption",
+   "rows": [
+    {
+     "state": "IL",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "USE/OCC TX-FEMININE HYGIENE",
+     "policy_id": "848746",
+     "url": "http://www.ilga.gov/legislation/BillStatus.asp?DocNum=2746&GAID=13&DocTypeID=SB&SessionID=88&GA=99",
+     "db_date": "2016-08-19"
+    },
+    {
+     "state": "MI",
+     "year": 2021,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Use tax: exemptions; sale of feminine hygiene products; exempt. Amends secs. 4 & 21 of 1937 PA 94 (MCL 205.94 & 205.111).",
+     "policy_id": "1455061",
+     "url": "http://legislature.mi.gov/doc.aspx?2021-SB-0153",
+     "db_date": "2021-11-09"
+    }
+   ]
+  },
+  "rtw": {
+   "label": "Right-to-work enactments / repeals (and related union-security rules)",
+   "labor": true,
+   "rule": "right[- ]to[- ]work|union security|agency fee|labor organization membership",
+   "exclude": "^$",
+   "matched": 6,
+   "T": 0,
+   "A": 2,
+   "precision": 0.333,
+   "true_states": [
+    "AL",
+    "DE"
+   ],
+   "true_states_T_only": [],
+   "dc_true": false,
+   "span": "2012-2024",
+   "real_adopters_approx": "approx 4 enactments 2016+ (WV 2016, KY 2017, MO 2017 repealed by referendum 2018) and MI repeal 2023",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "AL",
+     "year": 2016,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "Right to work public, policy declared, membership in or payment of dues to labor union may not be required for employment, const. amend.",
+     "policy_id": "833379",
+     "url": "http://alisondb.legislature.state.al.us/alison/SESSBillResult.ASPX?WIN_TYPE=BillResult&BILL=HB37",
+     "db_date": "2016-03-17"
+    },
+    {
+     "state": "DE",
+     "year": 2018,
+     "status": "unknown",
+     "verdict": "A",
+     "title": "An Act To Amend Title 19 Of The Delaware Code Relating To Union Security Agreements.",
+     "policy_id": "1108626",
+     "url": "http://legis.delaware.gov/BillDetail?LegislationId=26412",
+     "db_date": "2018-06-30"
+    }
+   ]
+  },
+  "ban_box": {
+   "label": "Ban-the-box / fair-chance hiring (employment)",
+   "labor": true,
+   "rule": "ban the box|fair chance|fair hiring|criminal (history|record|conviction)s?.{0,40}(employ|hiring|applicant)|(employ|hiring|applicant).{0,40}criminal (history|record|conviction)",
+   "exclude": "background check|check|volunteer|teacher|credential|child|school|Law Enforcement",
+   "matched": 1,
+   "T": 1,
+   "A": 0,
+   "precision": 1.0,
+   "true_states": [
+    "LA"
+   ],
+   "true_states_T_only": [
+    "LA"
+   ],
+   "dc_true": false,
+   "span": "2010-2022",
+   "real_adopters_approx": "approx 37 states (public jobs) / approx 15 private-employer laws",
+   "site_area": "none (labor)",
+   "rows": [
+    {
+     "state": "LA",
+     "year": 2016,
+     "status": "enacted",
+     "verdict": "T",
+     "title": "Prohibits certain questions regarding criminal history during the employment process for certain positions",
+     "policy_id": "857702",
+     "url": "http://www.legis.la.gov/legis/BillInfo.aspx?s=16rs&b=HB266&sbi=y",
+     "db_date": "2016-06-08"
+    }
+   ]
+  },
+  "everify": {
+   "label": "Employer E-Verify mandates",
+   "labor": true,
+   "rule": "e-?verify|employment eligibility verification|work authorization",
+   "exclude": "^$",
+   "matched": 1,
+   "T": 0,
+   "A": 0,
+   "precision": 0.0,
+   "true_states": [],
+   "true_states_T_only": [],
+   "dc_true": false,
+   "span": "2006-2017",
+   "real_adopters_approx": "approx 22 states",
+   "site_area": "none (labor)",
+   "rows": []
+  },
+  "pred_sched": {
+   "label": "Predictive scheduling / fair workweek",
+   "labor": true,
+   "rule": "fair work ?week|predictive schedul|schedule changes|scheduling.{0,20}(employee|worker)",
+   "exclude": "salary schedule|Salary Schedule|school",
+   "matched": 1,
+   "T": 0,
+   "A": 0,
+   "precision": 0.0,
+   "true_states": [],
+   "true_states_T_only": [],
+   "dc_true": false,
+   "span": "2016-2025",
+   "real_adopters_approx": "approx 1 state (OR 2017) + cities",
+   "site_area": "none (labor)",
+   "rows": []
+  }
+ }
+}

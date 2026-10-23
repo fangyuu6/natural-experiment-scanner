@@ -1,0 +1,291 @@
+{
+ "schema": "l3_stories/1",
+ "as_of": "2026-10-22",
+ "source": "docs/plans/l3-meta/NEW_ANGLES_A_STATUS_20261021_T232.md and NEW_ANGLES_B_STATUS_20261021_T233.md ; docs/plans/l3-meta/PROMISE_DELIVERY_STATUS_20261022_T249.md and FUNNEL_STATUS_20261021_T229.md (V5.6, T255)",
+ "notes": "T237 (V5.5): exploratory stories printed on Explore before the technical checks. head, why and numbers are page copy; audit lists every number the numbers line prints (a build test compares them).",
+ "groups": {
+  "when": {
+   "en": "When and where policies work",
+   "zh": "政策何时、何处见效"
+  },
+  "how": {
+   "en": "How states make policy",
+   "zh": "各州如何制定政策"
+  },
+  "which": {
+   "en": "Which policies can be evaluated",
+   "zh": "哪些政策能被评估"
+  }
+ },
+ "items": [
+  {
+   "id": "NEED",
+   "group": "when",
+   "en": {
+    "head": "Where the gap before adoption was larger, the change after it was larger too",
+    "why": "Arithmetic alone would give the opposite pattern.",
+    "numbers": "Slope of the change after adoption on the gap between adopting and not-yet-adopting states the year before adoption: +0.33, against −0.20 from arithmetic alone (3.9 standard deviations apart); it stays between 3.0 and 4.2 when any one of 34 policy groups is left out; clearest for earnings and public finance, absent for crime and traffic; 50 studies, 106 outcome series."
+   },
+   "zh": {
+    "head": "采纳前的差距越大，采纳后的变化也越大",
+    "why": "仅靠算术，得到的会是相反的模式。",
+    "numbers": "采纳后的变化对采纳前一年“采纳州与尚未采纳州之间差距”的斜率为 +0.33，仅靠算术得到的是 −0.20（相差 3.9 个标准差）；任意去掉 34 个政策类别中的一个，相差仍在 3.0 到 4.2 个标准差之间；收入与公共财政最明显，犯罪与交通看不到；50 项研究，106 个结果序列。"
+   },
+   "audit": [
+    "0.33",
+    "0.20",
+    "3.9",
+    "34",
+    "3.0",
+    "4.2",
+    "50",
+    "106"
+   ],
+   "source": "docs/plans/l3-meta/NEW_ANGLES_A_STATUS_20261021_T232.md section 3 (RESULTS_Q3.json)"
+  },
+  {
+   "id": "FADE",
+   "group": "when",
+   "en": {
+    "head": "Of the effects that show up, none faded",
+    "why": "Two thirds held and one third grew.",
+    "numbers": "Of 64 studies followed at least six years, 46 show no clear effect in years 0 to 2 or years 3 to 5; of the 18 that do, 0 faded, 12 held and 6 grew, five of them health laws."
+   },
+   "zh": {
+    "head": "出现的效应中，没有一项消退",
+    "why": "三分之二持平，三分之一增强。",
+    "numbers": "64 项研究追踪了至少六年，其中 46 项在第 0 到 2 年和第 3 到 5 年都没有明确的效应；有效应的 18 项中，0 项消退，12 项持平，6 项增强，其中五项是健康类法律。"
+   },
+   "audit": [
+    "64",
+    "46",
+    "0",
+    "2",
+    "3",
+    "5",
+    "18",
+    "12",
+    "6"
+   ],
+   "source": "NEW_ANGLES_A_STATUS section 2 (RESULTS_Q2.json); 12/18 and 6/18"
+  },
+  {
+   "id": "PIONEERS",
+   "group": "when",
+   "en": {
+    "head": "Early and late adopters of a law show no clear difference in results",
+    "why": "Order of adoption shows no pattern in how well a law worked.",
+    "numbers": "Late adopters did better in 31 of 60 studies (52%), a coin flip; the median gap is +0.03 in units of each study’s noise, inside the −0.53 to +0.54 that chance gives when the order is shuffled; an order effect of about half a unit or more would have shown."
+   },
+   "zh": {
+    "head": "一项法律的先行与后来采纳州，结果看不出明确差别",
+    "why": "采纳的先后，看不出与法律效果好坏有什么规律。",
+    "numbers": "60 项研究中，后采纳州表现更好的有 31 项（52%），相当于抛硬币；中位差为 +0.03（以各研究自身噪声为单位），落在打乱先后顺序时随机得到的 −0.53 到 +0.54 之内；约半个单位以上的先后差异本来是看得出来的。"
+   },
+   "audit": [
+    "31",
+    "60",
+    "52",
+    "0.03",
+    "0.53",
+    "0.54"
+   ],
+   "source": "NEW_ANGLES_A_STATUS section 1 (RESULTS_Q1.json)"
+  },
+  {
+   "id": "PARTY",
+   "group": "when",
+   "en": {
+    "head": "Party control at adoption shows no clear link to a law’s measured effect",
+    "why": "The same holds for how liberal the state was.",
+    "numbers": "Unified Democratic versus unified Republican control: −0.75 in units of each study’s noise, inside the −1.33 to +1.26 that chance gives when labels are shuffled (23 studies); more versus less liberal states: −0.42, inside −0.68 to +0.68 (46 studies); gaps smaller than about 1.3 and 0.7 would not show."
+   },
+   "zh": {
+    "head": "采纳时的党派控制，与法律的测得效应看不出明确关联",
+    "why": "州的自由派程度也是如此。",
+    "numbers": "民主党统一执政与共和党统一执政相比：−0.75（以各研究自身噪声为单位），落在打乱标签时随机得到的 −1.33 到 +1.26 之内（23 项研究）；较自由派与较不自由派的州相比：−0.42，落在 −0.68 到 +0.68 之内（46 项研究）；小于约 1.3 和 0.7 的差异本来看不出来。"
+   },
+   "audit": [
+    "0.75",
+    "1.33",
+    "1.26",
+    "23",
+    "0.42",
+    "0.68",
+    "46",
+    "1.3",
+    "0.7"
+   ],
+   "source": "NEW_ANGLES_A_STATUS section 4 (RESULTS_Q5.json; Cut B -0.415 rounded)"
+  },
+  {
+   "id": "PROMISE",
+   "group": "when",
+   "en": {
+    "head": "Few of the laws we could check clearly delivered what was promised",
+    "why": "Most show no detectable change, which mostly means the data cannot tell.",
+    "numbers": "16 laws whose promised outcome, as recalled by an AI model, is the outcome we measured: 2 moved as promised, 12 showed no detectable change and 2 moved the opposite way."
+   },
+   "zh": {
+    "head": "在能核对的法律中，很少有明确兑现了当初的承诺",
+    "why": "多数检测不到变化，这大多意味着数据无法判断。",
+    "numbers": "16 项法律，其当初承诺的结果（由 AI 模型回忆得出）正是我们测量的结果：2 项按承诺的方向变动，12 项检测不到变化，2 项朝相反方向变动。"
+   },
+   "audit": [
+    "16",
+    "2",
+    "12"
+   ],
+   "source": "docs/plans/l3-meta/PROMISE_DELIVERY_STATUS_20261022_T249.md (n = 15 on pin r2: 2 / 11 / 2); T265 re-ran analyze.py on pin r3: n = 16, 2 / 12 / 2 (data/l3_meta/promise_delivery_20261022/RESULTS_PROMISE_DELIVERY_pin_refresh_20261022_r3_T265base.json; new row c35_cspp_earlvot, no detectable change)"
+  },
+  {
+   "id": "LEADERS",
+   "group": "how",
+   "en": {
+    "head": "Some states lead again and again, but their laws show no clear difference in effects",
+    "why": "The habitual leaders are richer, more urban and more liberal states.",
+    "numbers": "California, Minnesota, Connecticut, Rhode Island, New York, Idaho, Massachusetts and Washington tend to adopt early. The ranking from half the policies predicts the ranking from the other half (0.46, against 0.29 or less by chance; 375 policies). In 34 studies, cohorts from 13 habitual-leader states differ from other states by −0.05 in units of each study’s noise, inside the −1.03 to +1.14 that chance gives."
+   },
+   "zh": {
+    "head": "有些州一再领先，但它们的法律效果看不出明确差别",
+    "why": "一贯领先的是较富、城市化程度较高、较自由派的州。",
+    "numbers": "加利福尼亚、明尼苏达、康涅狄格、罗得岛、纽约、爱达荷、马萨诸塞和华盛顿往往较早采纳。用一半政策得出的排名可以预测另一半政策的排名（0.46，随机情形下不超过 0.29；375 项政策）。在 34 项研究中，13 个一贯领先州的采纳批次与其他州相差 −0.05（以各研究自身噪声为单位），落在随机得到的 −1.03 到 +1.14 之内。"
+   },
+   "audit": [
+    "0.46",
+    "0.29",
+    "375",
+    "34",
+    "13",
+    "0.05",
+    "1.03",
+    "1.14"
+   ],
+   "source": "NEW_ANGLES_B_STATUS_20261021_T233.md rank 8 (q8): habitual set of 13 states"
+  },
+  {
+   "id": "TIMING",
+   "group": "how",
+   "en": {
+    "head": "Laws are not timed to election years or downturns",
+    "why": "Laws that began in a downturn show no clear difference in how often they delivered.",
+    "numbers": "45.2% of adoptions fall in a lower-house election year against 46.1% expected by chance, and 36.3% follow a weak income year against 36.0% (418 policies); national waves are no stronger than chance; the downturn laws’ delivery share is −5.4 points, inside the −11.9 to +12.2 that chance gives (35 studies)."
+   },
+   "zh": {
+    "head": "法律的采纳不挑选选举年或经济低迷期",
+    "why": "在经济低迷期开始实施的法律，见效的比例看不出明确差别。",
+    "numbers": "45.2% 的采纳落在众议院选举年，随机情形下预期为 46.1%；36.3% 紧随收入偏弱的年份，预期为 36.0%（418 项政策）；全国性的采纳浪潮不比随机更强；低迷期开始的法律，见效比例相差 −5.4 个百分点，落在随机得到的 −11.9 到 +12.2 之内（35 项研究）。"
+   },
+   "audit": [
+    "45.2",
+    "46.1",
+    "36.3",
+    "36.0",
+    "418",
+    "5.4",
+    "11.9",
+    "12.2",
+    "35"
+   ],
+   "source": "NEW_ANGLES_B_STATUS rank 6 (q6)"
+  },
+  {
+   "id": "SPEED",
+   "group": "how",
+   "en": {
+    "head": "How fast a law spreads shows no clear link to how big its effect is",
+    "why": "The link changes sign between policy fields.",
+    "numbers": "Correlation of spread speed and effect size 0.14, inside the −0.36 to +0.35 that chance gives when labels are shuffled; positive in four policy fields and negative in two; 51 groups of evaluated laws."
+   },
+   "zh": {
+    "head": "一项法律扩散得多快，与它的效应大小看不出明确关联",
+    "why": "这一关联在不同政策领域的方向并不一致。",
+    "numbers": "扩散速度与效应大小的相关系数为 0.14，落在打乱标签时随机得到的 −0.36 到 +0.35 之内；四个政策领域为正，两个为负；51 组被评估的法律。"
+   },
+   "audit": [
+    "0.14",
+    "0.36",
+    "0.35",
+    "51"
+   ],
+   "source": "NEW_ANGLES_B_STATUS rank 4 (q4); domain signs: crime, health, other, public finance +; labor, environment -"
+  },
+  {
+   "id": "NEIGHBORS",
+   "group": "how",
+   "en": {
+    "head": "A neighbor’s improvement after adopting shows no clear link to a state adopting sooner",
+    "why": "A placebo that looks two years ahead gives as large an effect.",
+    "numbers": "Effect per typical annual change 0.05 (95% interval −0.08 to 0.18), inside the −0.04 to 0.12 that chance gives when labels are shuffled; the two-years-ahead placebo gives 0.08; 37 studies, 304 adoptions, 5,562 state-years."
+   },
+   "zh": {
+    "head": "邻州采纳后的改善，与本州更早采纳看不出明确关联",
+    "why": "向后看两年的对照，得到的效应一样大。",
+    "numbers": "每个典型年度变化对应的效应为 0.05（95% 区间 −0.08 到 0.18），落在打乱标签时随机得到的 −0.04 到 0.12 之内；向后看两年的对照得到 0.08；37 项研究，304 次采纳，5,562 个州—年。"
+   },
+   "audit": [
+    "95",
+    "0.05",
+    "0.08",
+    "0.18",
+    "0.04",
+    "0.12",
+    "37",
+    "304",
+    "5,562"
+   ],
+   "source": "NEW_ANGLES_B_STATUS rank 9 (q9)"
+  },
+  {
+   "id": "BUNDLES",
+   "group": "how",
+   "en": {
+    "head": "Within a few topics, laws often reach the same states close in time",
+    "why": "So one law’s measured effect may carry its partners’ effects.",
+    "numbers": "In civil rights, energy, government operations and transportation, laws reach the same states within three years of each other more often than chance. 53% of 375 laws have a close partner (same states, within three years; 44% without likely duplicates); the evaluated laws we could match are no different: 8 of 12 (7 without likely duplicates)."
+   },
+   "zh": {
+    "head": "在少数几个领域里，法律常常在相近的时间进入同一批州",
+    "why": "所以一项法律测得的效应，可能包含了与它成束的其他法律的效应。",
+    "numbers": "在民权、能源、政府运作和交通领域，法律在三年之内进入同一批州的情况比随机更常见。375 项法律中 53% 有一项紧密的伙伴法律（同一批州、三年之内；剔除可能重复的后为 44%）；能匹配的被评估法律也没有不同：12 项中的 8 项（剔除后 7 项）。"
+   },
+   "audit": [
+    "53",
+    "375",
+    "44",
+    "8",
+    "12",
+    "7",
+    "3"
+   ],
+   "source": "NEW_ANGLES_B_STATUS rank 7 (q7)"
+  },
+  {
+   "id": "EVALUABLE",
+   "group": "which",
+   "en": {
+    "head": "Every hand-run design reached an estimate; most automatic runs did not",
+    "why": "Checked roughly, designs without an estimate are about as often positive as those with one.",
+    "numbers": "155 designs: 81 ended with an estimate and 74 did not. 48 were run by hand, all estimated; 97 were run automatically, 33 estimated; 10 more stopped early. Among the automatic runs, policy field and adoption era show no clear link to getting an estimate. A rough before-and-after comparison of adopting with other states on 54 of the 74 without an estimate gives 24 with a positive sign, against 35 of the 81 with one."
+   },
+   "zh": {
+    "head": "人工运行的设计全部得到了估计，自动运行的多数没有",
+    "why": "粗略检查显示，没有估计的设计与有估计的设计，结果为正的比例相近。",
+    "numbers": "155 个设计：81 个得到了估计，74 个没有。48 个由人工运行，全部得到估计；97 个自动运行，33 个得到估计；另有 10 个中途停止。在自动运行的设计中，政策领域和采纳年代与能否得到估计都看不出明确关联。对没有估计的 74 个中的 54 个做粗略的前后对比（采纳州与其他州），24 个符号为正；有估计的 81 个中有 35 个符号为正。"
+   },
+   "audit": [
+    "155",
+    "81",
+    "74",
+    "48",
+    "97",
+    "33",
+    "10",
+    "54",
+    "24",
+    "35"
+   ],
+   "source": "data/l3_meta/refresh/20261022_r3/live/l2_set_live.json (155 / 81 / 74; by source 48 hand-run, 10 early stops, 97 automatic with 33 estimated); T229 FUNNEL_STATUS_20261021_T229.md (rough check); c5 (T266) restored the predictors sentence in its narrower form (policy field and adoption era only) after re-running the T229 tests unchanged on the r3 set: data/l3_meta/funnel_20261023_r3/ and docs/plans/l3-meta/T229_FUNNEL_R3_20261023.md (automatic runs, 97 designs: policy field p = 0.25, adoption era p = 1.0; the screening score of the policy family was dropped because its family-block test gives p = 0.0497 and the related shortlisted-text count p = 0.023, so no clear absence of a link); 24 of 54 re-derived on r3 (T266, data/l3_meta/funnel_20261023_r3/ne_only/effect_size_vs_estimability.csv; closed rows = T229 coarse_did_closures.csv rows with an estimate whose id is in the r3 not-evaluable set; none of the 4 designs new in r3 is not-evaluable, so no row was missing); 35 of 81 positive from r3 point estimates (46 negative)"
+  }
+ ]
+}

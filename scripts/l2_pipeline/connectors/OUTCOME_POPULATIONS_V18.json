@@ -1,0 +1,4871 @@
+{
+  "catalog_id": "first_order_outcomes_v18",
+  "construct_equivalences": {
+    "path": "scripts/l2_pipeline/connectors/CONSTRUCT_EQUIVALENCES_C49.json",
+    "sha256": "1728b94151a5d69041163b5c83690ffa0a4ed258b6277fdb42316a054b7fdfee"
+  },
+  "inherited_population_metadata": {
+    "path": "scripts/l2_pipeline/connectors/OUTCOME_POPULATIONS_V17B.json",
+    "sha256": "b9544f7d9ae532caabab391c81a50cf249c5f16ab431adbcc850c805e667bb40"
+  },
+  "outcome_association_calls": 0,
+  "outcome_values_read": 0,
+  "schema": "l2_population_catalog_v63",
+  "series": {
+    "acs1_college_enrollment_share_age18_24": {
+      "ages": [
+        18,
+        24
+      ],
+      "construct": "college_enrollment",
+      "filters": {
+        "age_max": 24,
+        "age_min": 18,
+        "measure": "college_enrollment"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "Resident ages18\u201324; college or graduate school enrollment",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "acs1_dropout_share_age16_19": {
+      "ages": [
+        16,
+        19
+      ],
+      "construct": "high_school_noncompletion",
+      "filters": {
+        "age_max": 19,
+        "age_min": 16,
+        "measure": "not_enrolled_not_highschool_graduate"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "Resident ages16\u201319; not enrolled and not high school graduate",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "acs1_employment_population_ratio_with_disability_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "employment_status",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "disability": "with_disability",
+        "measure": "employment_population_ratio"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population18\u201364 with_disability",
+      "restrictions": {
+        "disability": "with_disability"
+      }
+    },
+    "acs1_employment_population_ratio_without_disability_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "employment_status",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "disability": "without_disability",
+        "measure": "employment_population_ratio"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population18\u201364 without_disability",
+      "restrictions": {
+        "disability": "without_disability"
+      }
+    },
+    "acs1_insurance_coverage_age_18_24": {
+      "ages": [
+        18,
+        24
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "18_24",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; historical published age 18_24",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_19_25": {
+      "ages": [
+        19,
+        25
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "19_25",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 19_25",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_25_34": {
+      "ages": [
+        25,
+        34
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "25_34",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; historical published age 25_34",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_26_34": {
+      "ages": [
+        26,
+        34
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "26_34",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 26_34",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_35_44": {
+      "ages": [
+        35,
+        44
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "35_44",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 35_44",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_45_54": {
+      "ages": [
+        45,
+        54
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "45_54",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 45_54",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_55_64": {
+      "ages": [
+        55,
+        64
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "55_64",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 55_64",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_65_74": {
+      "ages": [
+        65,
+        74
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "65_74",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 65_74",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_6_17": {
+      "ages": [
+        6,
+        17
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "6_17",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; historical published age 6_17",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_6_18": {
+      "ages": [
+        6,
+        18
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "6_18",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 6_18",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_75_plus": {
+      "ages": [
+        75,
+        120
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "75_plus",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age 75_plus",
+      "restrictions": {}
+    },
+    "acs1_insurance_coverage_age_under6": {
+      "ages": [
+        0,
+        5
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_group": "under6",
+        "sex": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Civilian noninstitutionalized population; both sexes; published age under6",
+      "restrictions": {}
+    },
+    "acs1_public_college_enrollment_share_age18_24": {
+      "ages": [
+        18,
+        24
+      ],
+      "construct": "public_college_enrollment",
+      "filters": {
+        "age_max": 24,
+        "age_min": 18,
+        "measure": "public_college_enrollment"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "Resident ages18\u201324; college or graduate school enrollment",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "acs1_snap_household_receipt_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "snap_participation",
+      "filters": {},
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "Households reporting receipt of Food Stamps/SNAP in past12 months",
+      "population_unit": "household",
+      "restrictions": {}
+    },
+    "bls_ces_private_employment": {
+      "ages": [
+        16,
+        120
+      ],
+      "construct": "payroll_jobs",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "all employees on private nonfarm establishment payrolls; workplace state",
+      "restrictions": {
+        "sector": "private_nonfarm",
+        "unit": "payroll_job"
+      }
+    },
+    "bls_ces_private_weekly_earnings": {
+      "ages": [
+        16,
+        120
+      ],
+      "construct": "private_sector_weekly_wage",
+      "filters": {},
+      "metadata_basis": "BLS published all-private establishment wages; no demographic attribution; C56 requested wage metadata",
+      "population_basis": "all employees on private nonfarm establishment payrolls; workplace state",
+      "population_unit": "payroll_job",
+      "restrictions": {}
+    },
+    "bls_laus_employment": {
+      "ages": [
+        16,
+        120
+      ],
+      "construct": "employment_status",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "civilian noninstitutional residents age16+; employed",
+      "restrictions": {}
+    },
+    "bls_laus_employment_population_ratio": {
+      "ages": [
+        16,
+        120
+      ],
+      "construct": "employment_status",
+      "filters": {},
+      "metadata_basis": "NAMED_PANEL Q2: LAUS employment divided by the LAUS civilian noninstitutional population age 16+; no outcome values",
+      "population_basis": "civilian noninstitutional residents age16+; employed share",
+      "restrictions": {}
+    },
+    "bls_laus_unemployment_rate": {
+      "ages": [
+        16,
+        120
+      ],
+      "construct": "unemployment_rate",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "civilian labor force age16+",
+      "restrictions": {
+        "labor_force": "in_labor_force"
+      }
+    },
+    "bls_qcew_child_day_care_employment_local": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "child_day_care_payroll_employment",
+      "filters": {
+        "industry": "6244",
+        "ownership": "private"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Private UI-covered payroll jobs in NAICS6244 Child Day Care Services; workplace state",
+      "population_unit": "payroll_job",
+      "restrictions": {}
+    },
+    "bls_qcew_private_agriculture_avg_weekly_wage": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "agriculture_wages",
+      "filters": {
+        "industry": "11",
+        "ownership": "private"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private-ownership average weekly wage in NAICS sector 11, state, covered employment",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "bls_qcew_private_agriculture_employment": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "agriculture_employment",
+      "filters": {
+        "industry": "11",
+        "ownership": "private"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private-ownership employment in NAICS sector 11 (agriculture, forestry, fishing and hunting), state, annual average of covered employment",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "bls_qcew_private_child_day_care_avg_weekly_wage": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "child_care_wages",
+      "filters": {
+        "industry": "6244",
+        "ownership": "private"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private-ownership average weekly wage in NAICS 6244 (child day care services), state, covered employment",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "bls_qcew_private_child_day_care_employment": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "child_day_care_payroll_employment",
+      "filters": {
+        "industry": "6244",
+        "ownership": "private"
+      },
+      "metadata_basis": "C56 source definitions; no empirical eligible-subgroup shares or outcome associations",
+      "population_basis": "Private UI-covered jobs in NAICS6244 Child Day Care Services; workplace state; no worker/child demographics",
+      "population_unit": "payroll_job",
+      "restrictions": {}
+    },
+    "bls_qcew_private_child_day_care_establishments": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "child_care_establishments",
+      "filters": {
+        "industry": "6244",
+        "ownership": "private"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private-ownership establishments in NAICS 6244 (child day care services), state, annual average",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "bls_qcew_private_weekly_wage": {
+      "ages": [
+        16,
+        120
+      ],
+      "construct": "private_sector_weekly_wage",
+      "filters": {},
+      "metadata_basis": "BLS published all-private establishment wages; no demographic attribution; C56 requested wage metadata",
+      "population_basis": "private ownership5 UI-covered jobs, total industry10; workplace state",
+      "population_unit": "payroll_job",
+      "restrictions": {}
+    },
+    "brfss_binge_drinking_pct": {
+      "ages": [
+        18,
+        120
+      ],
+      "construct": "adult_binge_drinking",
+      "filters": {
+        "age_min": 18,
+        "breakout": "Overall",
+        "measure": "brfss_binge_drinking_pct"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "BRFSS surveyed adults age18+; weighted crude prevalence",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "brfss_binge_drinking_pct_legacy_spliced": {
+      "ages": [
+        18,
+        120
+      ],
+      "construct": "adult_binge_drinking",
+      "filters": {
+        "age_max": 120,
+        "age_min": 18,
+        "breakout": "Overall",
+        "measure": "brfss_binge_drinking_pct_legacy_spliced"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "BRFSS weighted crude prevalence; brfss_binge_drinking_pct_legacy_spliced",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "brfss_current_ecigarette_pct": {
+      "ages": [
+        18,
+        120
+      ],
+      "construct": "adult_ecigarette_use",
+      "filters": {
+        "age_min": 18,
+        "breakout": "Overall",
+        "measure": "brfss_current_ecigarette_pct"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "BRFSS surveyed adults age18+; weighted crude prevalence",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "brfss_current_smoking_pct": {
+      "ages": [
+        18,
+        120
+      ],
+      "construct": "adult_cigarette_smoking",
+      "filters": {
+        "age_min": 18,
+        "breakout": "Overall",
+        "measure": "brfss_current_smoking_pct"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "BRFSS surveyed adults age18+; weighted crude prevalence",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "brfss_current_smoking_pct_legacy_spliced": {
+      "ages": [
+        18,
+        120
+      ],
+      "construct": "adult_cigarette_smoking",
+      "filters": {
+        "age_max": 120,
+        "age_min": 18,
+        "breakout": "Overall",
+        "measure": "brfss_current_smoking_pct_legacy_spliced"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "BRFSS weighted crude prevalence; brfss_current_smoking_pct_legacy_spliced",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "brfss_ever_colorectal_endoscopy_age50plus_legacy": {
+      "ages": [
+        50,
+        120
+      ],
+      "construct": "colorectal_screening",
+      "filters": {
+        "age_max": 120,
+        "age_min": 50,
+        "breakout": "Overall",
+        "measure": "brfss_ever_colorectal_endoscopy_age50plus_legacy"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "BRFSS weighted crude prevalence; brfss_ever_colorectal_endoscopy_age50plus_legacy",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "brfss_health_coverage_pct_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "health_insurance_coverage",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "breakout": "Overall",
+        "measure": "health_coverage"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "BRFSS surveyed adults ages18\u201364; weighted crude prevalence",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "brfss_mammogram_past2years_women40plus_legacy": {
+      "ages": [
+        40,
+        120
+      ],
+      "construct": "mammography_screening",
+      "filters": {
+        "age_max": 120,
+        "age_min": 40,
+        "breakout": "Overall",
+        "measure": "brfss_mammogram_past2years_women40plus_legacy",
+        "sex": "female"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "BRFSS weighted crude prevalence; brfss_mammogram_past2years_women40plus_legacy",
+      "population_unit": "person",
+      "restrictions": {
+        "sex": "female"
+      }
+    },
+    "brfss_mammogram_past2years_women50plus_legacy": {
+      "ages": [
+        50,
+        120
+      ],
+      "construct": "mammography_screening",
+      "filters": {
+        "age_max": 120,
+        "age_min": 50,
+        "breakout": "Overall",
+        "measure": "brfss_mammogram_past2years_women50plus_legacy",
+        "sex": "female"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "BRFSS weighted crude prevalence; brfss_mammogram_past2years_women50plus_legacy",
+      "population_unit": "person",
+      "restrictions": {
+        "sex": "female"
+      }
+    },
+    "cdc_opioid_dispensing_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "opioid_prescription_dispensing",
+      "filters": {
+        "measure": "opioid_dispensing",
+        "population": "all_residents"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "All residents; IQVIA retail dispensing",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_any_exemption_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "school_vaccine_exemption",
+      "filters": {
+        "dose": "Any Exemption",
+        "vaccine": "Exemption"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; Any Exemption",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_dtap_coverage_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "dtap_vaccination_coverage",
+      "filters": {
+        "dose": "",
+        "vaccine": "DTP, DTaP, or DT"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; DTP, DTaP, or DT coverage",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_hepb_coverage_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "hepatitis_b_vaccination_coverage",
+      "filters": {
+        "dose": "",
+        "vaccine": "Hepatitis B"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; Hepatitis B coverage",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_medical_exemption_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "school_vaccine_medical_exemption",
+      "filters": {
+        "dose": "Medical Exemption",
+        "vaccine": "Exemption"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; Medical Exemption",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_mmr_coverage_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "mmr_vaccination_coverage",
+      "filters": {
+        "dose": "",
+        "vaccine": "MMR"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; MMR coverage",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_nonmedical_exemption_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "school_vaccine_nonmedical_exemption",
+      "filters": {
+        "dose": "Non-Medical Exemption",
+        "vaccine": "Exemption"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; Non-Medical Exemption",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_polio_coverage_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "polio_vaccination_coverage",
+      "filters": {
+        "dose": "",
+        "vaccine": "Polio"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; Polio coverage",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_varicella_1dose_coverage_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "varicella_1dose_vaccination_coverage",
+      "filters": {
+        "dose": "1 Dose (or disease history)",
+        "vaccine": "Varicella"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; 1 Dose (or disease history)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_svv_kindergarten_varicella_2dose_coverage_pct": {
+      "ages": [
+        4,
+        7
+      ],
+      "construct": "varicella_2dose_vaccination_coverage",
+      "filters": {
+        "dose": "2 Doses (or disease history)",
+        "vaccine": "Varicella"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Kindergarten students in public and private schools, state of the school; 2 Doses (or disease history)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cdc_teen_birth_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Maternal residence, ages 15\u201317, 18\u201319 or 15\u201319",
+      "restrictions": {},
+      "role": "age_specific_rate",
+      "variants": [
+        {
+          "ages": [
+            15,
+            17
+          ],
+          "filters": {
+            "age_group": "15-17"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            18,
+            19
+          ],
+          "filters": {
+            "age_group": "18-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            15,
+            19
+          ],
+          "filters": {
+            "age_group": "15-19"
+          },
+          "restrictions": {}
+        }
+      ]
+    },
+    "cdc_teen_births": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Maternal residence, ages 15\u201317, 18\u201319 or 15\u201319",
+      "restrictions": {},
+      "role": "birth_count",
+      "variants": [
+        {
+          "ages": [
+            15,
+            17
+          ],
+          "filters": {
+            "age_group": "15-17"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            18,
+            19
+          ],
+          "filters": {
+            "age_group": "18-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            15,
+            19
+          ],
+          "filters": {
+            "age_group": "15-19"
+          },
+          "restrictions": {}
+        }
+      ]
+    },
+    "census_asfin_direct_capital_outlay_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_capital_outlay",
+      "filters": {
+        "aggregate_code": "SF0178"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Expenditure - Direct Expenditure - Total Capital Outlay; state governments; fiscal year divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_asfin_direct_current_operations_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_current_operations_expenditure",
+      "filters": {
+        "aggregate_code": "SF0177"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Expenditure - Direct Expenditure - Total Current Operations; state governments; fiscal year divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_asfin_direct_elementary_secondary_education_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_direct_elementary_secondary_education_expenditure",
+      "filters": {
+        "aggregate_code": "SF0204"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Expenditure - Direct Expenditure - General Expenditure - Total Elementary and Secondary Education; state governments; fiscal year divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_asfin_general_expenditure_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "general_state_expenditure",
+      "filters": {
+        "aggregate_code": "SF0133"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Expenditure - Total General Expenditure; state governments; fiscal year divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_asfin_total_expenditure_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "total_state_expenditure",
+      "filters": {
+        "aggregate_code": "SF0132"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Expenditure - Total Expenditure; state governments; fiscal year divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_bds_estabs_entry_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "business_dynamics_establishment_entry",
+      "filters": {
+        "measure": "estabs_entry_rate"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private nonfarm employer establishments and jobs in the state; DHS-denominator rates, year t compared with t-1 (March 12 reference)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "census_bds_estabs_exit_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "business_dynamics_establishment_exit",
+      "filters": {
+        "measure": "estabs_exit_rate"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private nonfarm employer establishments and jobs in the state; DHS-denominator rates, year t compared with t-1 (March 12 reference)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "census_bds_job_creation_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "business_dynamics_job_creation",
+      "filters": {
+        "measure": "job_creation_rate"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private nonfarm employer establishments and jobs in the state; DHS-denominator rates, year t compared with t-1 (March 12 reference)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "census_bds_job_creation_rate_births": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "business_dynamics_job_creation_births",
+      "filters": {
+        "measure": "job_creation_rate_births"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private nonfarm employer establishments and jobs in the state; DHS-denominator rates, year t compared with t-1 (March 12 reference)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "census_bds_job_destruction_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "business_dynamics_job_destruction",
+      "filters": {
+        "measure": "job_destruction_rate"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private nonfarm employer establishments and jobs in the state; DHS-denominator rates, year t compared with t-1 (March 12 reference)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "census_bds_net_job_creation_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "business_dynamics_net_job_creation",
+      "filters": {
+        "measure": "net_job_creation_rate"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private nonfarm employer establishments and jobs in the state; DHS-denominator rates, year t compared with t-1 (March 12 reference)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "census_bds_reallocation_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "business_dynamics_job_reallocation",
+      "filters": {
+        "measure": "reallocation_rate"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Private nonfarm employer establishments and jobs in the state; DHS-denominator rates, year t compared with t-1 (March 12 reference)",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "census_bps_housing_units_authorized_per_1000": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "housing_units_authorized",
+      "filters": {
+        "coverage": "including_imputation",
+        "measure": "total_units_authorized"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "New privately owned residential housing units authorized by building permits per 1,000 residents",
+      "population_unit": "housing_unit",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_corrections_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_correction",
+      "filters": {
+        "item_codes": [
+          "E04",
+          "E05",
+          "F04",
+          "F05",
+          "G04",
+          "G05"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); corrections, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_higher_education_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_higher_education",
+      "filters": {
+        "item_codes": [
+          "E16",
+          "E18",
+          "E19",
+          "J19",
+          "F16",
+          "F18",
+          "G16",
+          "G18"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); higher education, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_highways_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_highways",
+      "filters": {
+        "item_codes": [
+          "E44",
+          "E45",
+          "F44",
+          "F45",
+          "G44",
+          "G45"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); highways, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_hospitals_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_hospitals",
+      "filters": {
+        "item_codes": [
+          "E36",
+          "F36",
+          "G36"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); hospitals, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_lottery_ticket_sales_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_lottery_sales",
+      "filters": {
+        "item_codes": [
+          "Z51"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); lottery ticket sales, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_police_protection_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_police_protection",
+      "filters": {
+        "item_codes": [
+          "E62",
+          "F62",
+          "G62"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); police protection, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_total_salaries_and_wages_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_state_payroll",
+      "filters": {
+        "item_codes": [
+          "Z00"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); total salaries and wages, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_unemployment_compensation_benefits_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_unemployment_insurance_benefits",
+      "filters": {
+        "item_codes": [
+          "Y05",
+          "Y06"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); unemployment compensation benefits, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_state_finance_hist_workers_compensation_benefits_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "state_finance_hist_workers_compensation_benefits",
+      "filters": {
+        "item_codes": [
+          "Y14"
+        ]
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "State governments (not local); workers compensation benefits, fiscal year, divided by resident population",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_stc_corporate_income_tax_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "corporate_income_tax_revenue",
+      "filters": {
+        "tax_code": "T41"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "State government tax collections divided by all resident population; fiscal year ending in labeled year",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_stc_estate_and_gift_tax_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "death_and_gift_tax_revenue",
+      "filters": {
+        "tax_code": "T50"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "State government tax collections divided by all resident population; fiscal year ending in labeled year",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_stc_general_sales_tax_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "general_sales_tax_revenue",
+      "filters": {
+        "tax_code": "T09"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "State government tax collections divided by all resident population; fiscal year ending in labeled year",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_stc_individual_income_tax_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "individual_income_tax_revenue",
+      "filters": {
+        "tax_code": "T40"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "State government tax collections divided by all resident population; fiscal year ending in labeled year",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "census_stc_total_taxes_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "total_tax_revenue",
+      "filters": {
+        "tax_code": "C105"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "State government tax collections divided by all resident population; fiscal year ending in labeled year",
+      "population_unit": "state_fiscal_measure",
+      "restrictions": {}
+    },
+    "cps_asec_female_male_median_annual_earnings_ratio_ftyr": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "gender_annual_earnings_ratio",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "earnings": "positive_annual_earnings",
+        "measure": "female_male_median_annual_earnings_ratio_ftyr",
+        "usual_hours": "35_or_more",
+        "weeks_worked": "50_or_more"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; female male median annual earnings ratio ftyr",
+      "population_unit": "person",
+      "restrictions": {
+        "earnings": "positive_annual_earnings",
+        "usual_hours": "35_or_more",
+        "weeks_worked": "50_or_more"
+      }
+    },
+    "cps_asec_insured_pct_all": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_max": 120,
+        "age_min": 0,
+        "measure": "insured_pct_all"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; insured pct all",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "cps_asec_insured_pct_hispanic_noncitizen_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "citizenship": "noncitizen",
+        "ethnicity": "Hispanic",
+        "measure": "insured_pct_hispanic_noncitizen_age18_64"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; insured pct hispanic noncitizen age18 64",
+      "population_unit": "person",
+      "restrictions": {
+        "citizenship": "noncitizen",
+        "ethnicity": "Hispanic"
+      }
+    },
+    "cps_asec_insured_pct_noncitizen_children": {
+      "ages": [
+        0,
+        17
+      ],
+      "construct": "insurance_coverage",
+      "filters": {
+        "age_max": 17,
+        "age_min": 0,
+        "citizenship": "noncitizen",
+        "measure": "insured_pct_noncitizen_children"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; insured pct noncitizen children",
+      "population_unit": "person",
+      "restrictions": {
+        "citizenship": "noncitizen"
+      }
+    },
+    "cps_asec_mean_annual_earnings_cognitive_difficulty_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "annual_earnings",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "disability": "cognitive_difficulty",
+        "earnings": "positive_annual_earnings",
+        "measure": "mean_annual_earnings_cognitive_difficulty_age18_64"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; mean annual earnings cognitive difficulty age18 64",
+      "population_unit": "person",
+      "restrictions": {
+        "disability": "cognitive_difficulty",
+        "earnings": "positive_annual_earnings"
+      }
+    },
+    "cps_asec_mean_annual_earnings_disability_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "annual_earnings",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "disability": "any_of_six_difficulties",
+        "earnings": "positive_annual_earnings",
+        "measure": "mean_annual_earnings_disability_age18_64"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; mean annual earnings disability age18 64",
+      "population_unit": "person",
+      "restrictions": {
+        "disability": "any_of_six_difficulties",
+        "earnings": "positive_annual_earnings"
+      }
+    },
+    "cps_asec_mean_annual_earnings_private_household_workers_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "annual_earnings",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "earnings": "positive_annual_earnings",
+        "longest_job_class": "private_household",
+        "measure": "mean_annual_earnings_private_household_workers_age18_64"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; mean annual earnings private household workers age18 64",
+      "population_unit": "person",
+      "restrictions": {
+        "earnings": "positive_annual_earnings",
+        "longest_job_class": "private_household"
+      }
+    },
+    "cps_asec_poverty_pct_all": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "poverty",
+      "filters": {
+        "age_max": 120,
+        "age_min": 0,
+        "measure": "poverty_pct_all",
+        "universe": "official_poverty_universe"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; poverty pct all",
+      "population_unit": "person",
+      "restrictions": {
+        "universe": "official_poverty_universe"
+      }
+    },
+    "cps_asec_poverty_pct_children": {
+      "ages": [
+        0,
+        17
+      ],
+      "construct": "poverty",
+      "filters": {
+        "age_max": 17,
+        "age_min": 0,
+        "measure": "poverty_pct_children",
+        "universe": "official_poverty_universe"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; poverty pct children",
+      "population_unit": "person",
+      "restrictions": {
+        "universe": "official_poverty_universe"
+      }
+    },
+    "cps_asec_poverty_pct_disability_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "poverty",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "disability": "any_of_six_difficulties",
+        "measure": "poverty_pct_disability_age18_64",
+        "universe": "official_poverty_universe"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; poverty pct disability age18 64",
+      "population_unit": "person",
+      "restrictions": {
+        "disability": "any_of_six_difficulties",
+        "universe": "official_poverty_universe"
+      }
+    },
+    "cps_asec_poverty_pct_noncitizen_children": {
+      "ages": [
+        0,
+        17
+      ],
+      "construct": "poverty",
+      "filters": {
+        "age_max": 17,
+        "age_min": 0,
+        "citizenship": "noncitizen",
+        "measure": "poverty_pct_noncitizen_children",
+        "universe": "official_poverty_universe"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; poverty pct noncitizen children",
+      "population_unit": "person",
+      "restrictions": {
+        "citizenship": "noncitizen",
+        "universe": "official_poverty_universe"
+      }
+    },
+    "cps_asec_retirement_plan_access_pct_private_workers_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "employer_retirement_plan_offering",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "longest_job_class": "private_wage_salary",
+        "measure": "retirement_plan_access_pct_private_workers_age18_64",
+        "plan_measure": "employer_offers_plan_to_any_employees"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC private-sector longest-job workers age18\u201364; share whose employer offers a retirement plan to any employees; respondent eligibility is not measured",
+      "population_unit": "person",
+      "restrictions": {
+        "longest_job_class": "private_wage_salary",
+        "plan_measure": "employer_offers_plan_to_any_employees"
+      }
+    },
+    "cps_asec_retirement_plan_participation_pct_private_workers_age18_64": {
+      "ages": [
+        18,
+        64
+      ],
+      "construct": "retirement_plan_participation",
+      "filters": {
+        "age_max": 64,
+        "age_min": 18,
+        "longest_job_class": "private_wage_salary",
+        "measure": "retirement_plan_participation_pct_private_workers_age18_64"
+      },
+      "metadata_basis": "C59 source-declared construct and population; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "CPS ASEC; retirement plan participation pct private workers age18 64",
+      "population_unit": "person",
+      "restrictions": {
+        "longest_job_class": "private_wage_salary"
+      }
+    },
+    "cps_single_mother_employment": {
+      "ages": [
+        18,
+        54
+      ],
+      "construct": "employment_status",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "civilian noninstitutional residents age18\u201354; women PEMARITL3\u20136 with CPS-observed own child under18 PRCHLD1\u201315",
+      "restrictions": {
+        "family": "single_mother",
+        "sex": "female"
+      }
+    },
+    "cps_teen_employment": {
+      "ages": [
+        16,
+        19
+      ],
+      "construct": "employment_status",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "civilian noninstitutional residents age16\u201319",
+      "restrictions": {}
+    },
+    "cps_young_adult_employment": {
+      "ages": [
+        20,
+        24
+      ],
+      "construct": "employment_status",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "civilian noninstitutional residents age20\u201324",
+      "restrictions": {}
+    },
+    "dol_eta5159_state_ui_continued_weeks_claimed": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "ui_benefit_receipt",
+      "filters": {
+        "measure": "continued_weeks_claimed",
+        "program": "state_UI_regular"
+      },
+      "metadata_basis": "C59 source-declared population; construct widened to the UI benefit-receipt family by HUB_RULING_20261017_W3_OPEN_ITEMS item 1; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Regular state unemployment insurance program; excludes standalone UCFE/UCX, EB, EUC/PEUC and workshare tables",
+      "population_unit": "ui_program_event",
+      "restrictions": {}
+    },
+    "dol_eta5159_state_ui_first_payments": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "ui_benefit_receipt",
+      "filters": {
+        "measure": "first_payments",
+        "program": "state_UI_regular"
+      },
+      "metadata_basis": "C59 source-declared population; construct widened to the UI benefit-receipt family by HUB_RULING_20261017_W3_OPEN_ITEMS item 1; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Regular state unemployment insurance program; excludes standalone UCFE/UCX, EB, EUC/PEUC and workshare tables",
+      "population_unit": "ui_program_event",
+      "restrictions": {}
+    },
+    "dol_eta5159_state_ui_initial_claims": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "ui_benefit_receipt",
+      "filters": {
+        "measure": "initial_claims",
+        "program": "state_UI_regular"
+      },
+      "metadata_basis": "C59 source-declared population; construct widened to the UI benefit-receipt family by HUB_RULING_20261017_W3_OPEN_ITEMS item 1; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Regular state unemployment insurance program; excludes standalone UCFE/UCX, EB, EUC/PEUC and workshare tables",
+      "population_unit": "ui_program_event",
+      "restrictions": {}
+    },
+    "dol_eta5159_state_ui_weeks_compensated": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "ui_benefit_receipt",
+      "filters": {
+        "measure": "weeks_compensated",
+        "program": "state_UI_regular"
+      },
+      "metadata_basis": "C59 source-declared population; construct widened to the UI benefit-receipt family by HUB_RULING_20261017_W3_OPEN_ITEMS item 1; outcome-only descriptive aggregation; no policy associations",
+      "population_basis": "Regular state unemployment insurance program; excludes standalone UCFE/UCX, EB, EUC/PEUC and workshare tables",
+      "population_unit": "ui_program_event",
+      "restrictions": {}
+    },
+    "eia_electric_power_co2_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "electric_power_co2_emissions",
+      "filters": {},
+      "metadata_basis": "C56 source definitions; no empirical eligible-subgroup shares or outcome associations",
+      "population_basis": "Total electric power industry CO2 emissions divided by SEDS resident population including Armed Forces",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "eia_nonhydro_renewable_generation_share": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "nonhydro_renewable_generation",
+      "filters": {},
+      "metadata_basis": "C56 source definitions; no empirical eligible-subgroup shares or outcome associations",
+      "population_basis": "State electricity generation; total electric power industry; non-hydro renewables",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "eia_retail_price_all_sectors": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "electricity_retail_price",
+      "filters": {},
+      "metadata_basis": "C56 source definitions; no empirical eligible-subgroup shares or outcome associations",
+      "population_basis": "Electricity sales to ultimate customers; all sectors",
+      "population_unit": "electricity_kWh",
+      "restrictions": {}
+    },
+    "eia_retail_price_residential": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "electricity_retail_price",
+      "filters": {},
+      "metadata_basis": "C56 source definitions; no empirical eligible-subgroup shares or outcome associations",
+      "population_basis": "Residential electricity sales to ultimate customers",
+      "population_unit": "electricity_kWh",
+      "restrictions": {}
+    },
+    "eia_retail_sales_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "electricity_retail_consumption",
+      "filters": {},
+      "metadata_basis": "C56 source definitions; no empirical eligible-subgroup shares or outcome associations",
+      "population_basis": "All-sector electricity retail sales divided by SEDS resident population including Armed Forces",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "fars_all_road_fatality_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "traffic_fatalities_all_road_users",
+      "filters": {
+        "population": "all_traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "All road users; crash state",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_child_occupant_fatality_rate_age0_4": {
+      "ages": [
+        0,
+        4
+      ],
+      "construct": "motor_vehicle_occupant_traffic_deaths",
+      "filters": {
+        "age_max": 4,
+        "age_min": 0,
+        "person_type": "child0_4",
+        "population": "traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "Crash-state child0_4; Census resident denominator ages0\u20134",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_drinking_driver_crash_fatality_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "filters": {
+        "crash_selection": "ACCIDENT.DRUNK_DR > 0",
+        "population": "all_traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "All road users killed in crashes with at least one reported drinking driver; crash state; all-age resident denominator",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_driver_fatality_rate_age15_20": {
+      "ages": [
+        15,
+        20
+      ],
+      "construct": "driver_traffic_deaths",
+      "filters": {
+        "age_max": 20,
+        "age_min": 15,
+        "person_type": "driver15_20",
+        "population": "traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "Crash-state driver15_20; Census resident denominator ages15\u201320",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_driver_fatality_rate_age16_17": {
+      "ages": [
+        16,
+        17
+      ],
+      "construct": "driver_traffic_deaths",
+      "filters": {
+        "age_max": 17,
+        "age_min": 16,
+        "person_type": "driver16_17",
+        "population": "traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "Crash-state driver16_17; Census resident denominator ages16\u201317",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_motor_vehicle_occupant_fatality_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "motor_vehicle_occupant_traffic_deaths",
+      "filters": {
+        "person_type": "occupant",
+        "population": "all_traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "All-age motor vehicle occupants; crash state",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_motorcyclist_fatality_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "motorcyclist_traffic_deaths",
+      "filters": {
+        "person_type": "motorcyclist",
+        "population": "traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "Crash-state motorcyclist; Census resident denominator all ages",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_pedalcyclist_fatality_rate_age5_14": {
+      "ages": [
+        5,
+        14
+      ],
+      "construct": "pedalcyclist_traffic_deaths",
+      "filters": {
+        "age_max": 14,
+        "age_min": 5,
+        "person_type": "pedalcyclist",
+        "population": "traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "Pedalcyclists aged exactly5\u201314; crash state",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fars_pedalcyclist_fatality_rate_all_ages": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "pedalcyclist_traffic_deaths",
+      "filters": {
+        "person_type": "pedalcyclist",
+        "population": "traffic_fatalities"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "Crash-state pedalcyclist; Census resident denominator all ages",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_hate_crime_incident_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "reported_hate_crime_incidents",
+      "filters": {
+        "measure": "reported_hate_crime_incidents",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "FBI reported incidents by agency state over resident population",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_aggravated_assault_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "aggravated_assault",
+      "filters": {
+        "measure": "aggravated_assault",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age resident population; FBI estimated aggravated_assault",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_burglary_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "burglary",
+      "filters": {
+        "measure": "burglary",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age resident population; FBI estimated burglary",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_homicide_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "homicide_offenses",
+      "filters": {
+        "offense": "homicide",
+        "series": "estimated_crimes"
+      },
+      "metadata_basis": "C48 additive V9: declared source population, filters and units; no outcome associations",
+      "population_basis": "State population; FBI UCR estimated offenses",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_larceny_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "larceny",
+      "filters": {
+        "measure": "larceny",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age resident population; FBI estimated larceny",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_motor_vehicle_theft_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "motor_vehicle_theft",
+      "filters": {
+        "measure": "motor_vehicle_theft",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age resident population; FBI estimated motor_vehicle_theft",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_property_crime_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "reported_property_crime",
+      "filters": {
+        "measure": "property_crime",
+        "population": "all_residents"
+      },
+      "metadata_basis": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71/2; source population, no outcome associations",
+      "population_basis": "All-age resident state population; reported UCR estimated property_crime",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_rape_legacy_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "rape",
+      "filters": {
+        "measure": "rape_legacy",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age resident population; FBI estimated rape_legacy",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_rape_revised_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "rape",
+      "filters": {
+        "measure": "rape_revised",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age resident population; FBI estimated rape_revised",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_robbery_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "robbery",
+      "filters": {
+        "measure": "robbery",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age resident population; FBI estimated robbery",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fbi_ucr_violent_crime_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "reported_violent_crime",
+      "filters": {
+        "measure": "violent_crime",
+        "population": "all_residents"
+      },
+      "metadata_basis": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71/2; source population, no outcome associations",
+      "population_basis": "All-age resident state population; reported UCR estimated violent_crime",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "fns_snap_average_monthly_benefit_per_person": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "snap_average_benefit",
+      "filters": {},
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Persons participating in the Supplemental Nutrition Assistance Program (SNAP) in the state, fiscal year Oct-Sep",
+      "population_unit": "program_measure",
+      "restrictions": {}
+    },
+    "fns_snap_benefits_per_capita": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "snap_benefits",
+      "filters": {},
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Persons participating in the Supplemental Nutrition Assistance Program (SNAP) in the state, fiscal year Oct-Sep",
+      "population_unit": "program_measure",
+      "restrictions": {}
+    },
+    "fns_snap_participation_pct_of_population": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "snap_participation",
+      "filters": {},
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Persons participating in the Supplemental Nutrition Assistance Program (SNAP) in the state, fiscal year Oct-Sep",
+      "population_unit": "program_measure",
+      "restrictions": {}
+    },
+    "ftc_csn_idtheft_reports_per_100k": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "reported_identity_theft",
+      "filters": {
+        "measure": "identity_theft_reports",
+        "population": "all_residents"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "All-age residents; reported identity-theft complaints by victim state",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "ipeds_completions_per_population": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "college_credential_completion",
+      "filters": {
+        "geography": "institution_state",
+        "institution_scope": "all_HD_component_participants",
+        "measure": "completions"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "IPEDS institutions in state over all resident population",
+      "population_unit": "institution_award",
+      "restrictions": {}
+    },
+    "ipeds_enrollment_per_population": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "college_enrollment",
+      "filters": {
+        "geography": "institution_state",
+        "institution_scope": "all_HD_component_participants",
+        "measure": "enrollment"
+      },
+      "metadata_basis": "C70 published source population and C66 coverage ruling; no policy/outcome associations",
+      "population_basis": "IPEDS institutions in state over all resident population",
+      "population_unit": "institution_student",
+      "restrictions": {}
+    },
+    "nces_acgr_public_hs_4yr_graduation_rate": {
+      "ages": [
+        14,
+        19
+      ],
+      "construct": "high_school_graduation",
+      "filters": {},
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Public high school students in the 9th-grade entering cohort, adjusted for transfers, four-year ACGR, state",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "nces_afgr_public_hs_graduation_rate": {
+      "ages": [
+        14,
+        19
+      ],
+      "construct": "high_school_graduation_afgr",
+      "filters": {},
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Public high school diplomas awarded in the spring divided by an average of 8th-, 9th- and 10th-grade enrollments in earlier years, state",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "nchs_historical_drug_overdose_age_adjusted_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "all_drug_overdose_deaths",
+      "filters": {
+        "age_group": "All Ages",
+        "race_ethnicity": "All Races-All Origins",
+        "sex": "Both Sexes"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "All resident drug-poisoning deaths; both sexes, all ages, all races/origins",
+      "restrictions": {}
+    },
+    "nchs_historical_drug_overdose_crude_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "all_drug_overdose_deaths",
+      "filters": {
+        "age_group": "All Ages",
+        "race_ethnicity": "All Races-All Origins",
+        "sex": "Both Sexes"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "All resident drug-poisoning deaths; both sexes, all ages, all races/origins",
+      "restrictions": {}
+    },
+    "nchs_historical_drug_overdose_deaths": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "all_drug_overdose_deaths",
+      "filters": {
+        "age_group": "All Ages",
+        "race_ethnicity": "All Races-All Origins",
+        "sex": "Both Sexes"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "All resident drug-poisoning deaths; both sexes, all ages, all races/origins",
+      "restrictions": {}
+    },
+    "nchs_state_birth_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "C56 source definitions; no empirical eligible-subgroup shares or outcome associations",
+      "population_basis": "All live births by maternal residence / total resident population",
+      "population_unit": "state_measure",
+      "restrictions": {}
+    },
+    "nchs_summary_age_specific_birth_rate": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Maternal residence, published maternal age bin",
+      "restrictions": {},
+      "role": "age_specific_rate",
+      "variants": [
+        {
+          "ages": [
+            10,
+            14
+          ],
+          "filters": {
+            "age_group": "10-14"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            15,
+            19
+          ],
+          "filters": {
+            "age_group": "15-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            15,
+            17
+          ],
+          "filters": {
+            "age_group": "15-17"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            18,
+            19
+          ],
+          "filters": {
+            "age_group": "18-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            20,
+            24
+          ],
+          "filters": {
+            "age_group": "20-24"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            25,
+            29
+          ],
+          "filters": {
+            "age_group": "25-29"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            30,
+            34
+          ],
+          "filters": {
+            "age_group": "30-34"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            35,
+            39
+          ],
+          "filters": {
+            "age_group": "35-39"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            40,
+            44
+          ],
+          "filters": {
+            "age_group": "40-44"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            45,
+            49
+          ],
+          "filters": {
+            "age_group": "45-49"
+          },
+          "restrictions": {}
+        }
+      ]
+    },
+    "nchs_summary_births": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "All live births by maternal residence, all maternal ages/races/origins",
+      "restrictions": {},
+      "role": "birth_count"
+    },
+    "nchs_summary_fertility_rate": {
+      "ages": [
+        15,
+        44
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "All live births divided by resident females aged 15\u201344",
+      "restrictions": {},
+      "role": "general_fertility_rate"
+    },
+    "niaaa_apparent_ethanol_gallons_per_capita_age14plus_all_beverages": {
+      "ages": [
+        14,
+        120
+      ],
+      "construct": "alcohol_consumption",
+      "filters": {
+        "age_min": 14,
+        "beverage": "all_beverages"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Resident population age 14 and older; apparent consumption from state sales, taxation or receipt data",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "niaaa_apparent_ethanol_gallons_per_capita_age14plus_beer": {
+      "ages": [
+        14,
+        120
+      ],
+      "construct": "beer_consumption",
+      "filters": {
+        "age_min": 14,
+        "beverage": "beer"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Resident population age 14 and older; apparent consumption from state sales, taxation or receipt data",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "niaaa_apparent_ethanol_gallons_per_capita_age14plus_spirits": {
+      "ages": [
+        14,
+        120
+      ],
+      "construct": "spirits_consumption",
+      "filters": {
+        "age_min": 14,
+        "beverage": "spirits"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Resident population age 14 and older; apparent consumption from state sales, taxation or receipt data",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "niaaa_apparent_ethanol_gallons_per_capita_age14plus_wine": {
+      "ages": [
+        14,
+        120
+      ],
+      "construct": "wine_consumption",
+      "filters": {
+        "age_min": 14,
+        "beverage": "wine"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Resident population age 14 and older; apparent consumption from state sales, taxation or receipt data",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "niaaa_apparent_ethanol_gallons_per_capita_age21plus_all_beverages": {
+      "ages": [
+        21,
+        120
+      ],
+      "construct": "alcohol_consumption_age21plus",
+      "filters": {
+        "age_min": 21,
+        "beverage": "all_beverages"
+      },
+      "metadata_basis": "V18 published source population and construct; no policy/outcome associations",
+      "population_basis": "Resident population age 21 and older; apparent consumption from state sales, taxation or receipt data",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "turnout_vep_highest_office_rate": {
+      "ages": [
+        18,
+        120
+      ],
+      "construct": "voter_turnout",
+      "filters": {
+        "numerator": "highest_office",
+        "population": "voting_eligible"
+      },
+      "metadata_basis": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71/2; source population, no outcome associations",
+      "population_basis": "Voting-eligible state population; published VEP",
+      "population_unit": "person",
+      "restrictions": {}
+    },
+    "wonder_birth_rate_by_maternal_age": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "age-specific birth rate",
+      "restrictions": {},
+      "role": "age_specific_rate",
+      "variants": [
+        {
+          "ages": [
+            15,
+            17
+          ],
+          "filters": {
+            "age_group": "15-17"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            18,
+            19
+          ],
+          "filters": {
+            "age_group": "18-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            20,
+            24
+          ],
+          "filters": {
+            "age_group": "20-24"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            25,
+            29
+          ],
+          "filters": {
+            "age_group": "25-29"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            30,
+            34
+          ],
+          "filters": {
+            "age_group": "30-34"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            35,
+            39
+          ],
+          "filters": {
+            "age_group": "35-39"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            40,
+            44
+          ],
+          "filters": {
+            "age_group": "40-44"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            45,
+            49
+          ],
+          "filters": {
+            "age_group": "45-49"
+          },
+          "restrictions": {}
+        }
+      ]
+    },
+    "wonder_births_by_maternal_age": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "live births by maternal age",
+      "restrictions": {},
+      "role": "birth_count",
+      "variants": [
+        {
+          "ages": [
+            0,
+            14
+          ],
+          "filters": {
+            "age_group": "under15"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            15,
+            17
+          ],
+          "filters": {
+            "age_group": "15-17"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            18,
+            19
+          ],
+          "filters": {
+            "age_group": "18-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            15,
+            19
+          ],
+          "filters": {
+            "age_group": "15-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            20,
+            24
+          ],
+          "filters": {
+            "age_group": "20-24"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            25,
+            29
+          ],
+          "filters": {
+            "age_group": "25-29"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            30,
+            34
+          ],
+          "filters": {
+            "age_group": "30-34"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            35,
+            39
+          ],
+          "filters": {
+            "age_group": "35-39"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            40,
+            44
+          ],
+          "filters": {
+            "age_group": "40-44"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            45,
+            49
+          ],
+          "filters": {
+            "age_group": "45-49"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            50,
+            120
+          ],
+          "filters": {
+            "age_group": "50+"
+          },
+          "restrictions": {}
+        }
+      ]
+    },
+    "wonder_drug_overdose_deaths": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "all_drug_overdose_deaths",
+      "filters": {
+        "underlying_icd10": [
+          "X40-X44",
+          "X60-X64",
+          "X85",
+          "Y10-Y14"
+        ]
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "drug overdose, all drugs",
+      "restrictions": {}
+    },
+    "wonder_fertility_rate_by_maternal_age": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "births",
+      "filters": {},
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "Maternal-residence age-specific fertility; female age-group population denominator",
+      "restrictions": {},
+      "role": "age_specific_rate",
+      "variants": [
+        {
+          "ages": [
+            15,
+            17
+          ],
+          "filters": {
+            "age_group": "15-17"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            18,
+            19
+          ],
+          "filters": {
+            "age_group": "18-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            15,
+            19
+          ],
+          "filters": {
+            "age_group": "15-19"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            20,
+            24
+          ],
+          "filters": {
+            "age_group": "20-24"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            25,
+            29
+          ],
+          "filters": {
+            "age_group": "25-29"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            30,
+            34
+          ],
+          "filters": {
+            "age_group": "30-34"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            35,
+            39
+          ],
+          "filters": {
+            "age_group": "35-39"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            40,
+            44
+          ],
+          "filters": {
+            "age_group": "40-44"
+          },
+          "restrictions": {}
+        },
+        {
+          "ages": [
+            45,
+            49
+          ],
+          "filters": {
+            "age_group": "45-49"
+          },
+          "restrictions": {}
+        }
+      ]
+    },
+    "wonder_firearm_deaths": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "firearm_deaths_all_intents",
+      "filters": {
+        "injury_intent": "all",
+        "injury_mechanism": "firearm"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "firearm, all intents",
+      "restrictions": {}
+    },
+    "wonder_firearm_homicide_deaths": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "firearm_homicide_deaths",
+      "filters": {
+        "injury_intent": "homicide",
+        "injury_mechanism": "firearm"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "firearm homicide",
+      "restrictions": {}
+    },
+    "wonder_homicide_deaths": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "homicide_deaths",
+      "filters": {
+        "injury_intent": "homicide",
+        "injury_mechanism": "all"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "all-mechanism homicide, all ages and sexes",
+      "restrictions": {}
+    },
+    "wonder_infant_deaths": {
+      "ages": [
+        0,
+        0
+      ],
+      "construct": "infant_deaths",
+      "filters": {
+        "age": "under1 year"
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "resident deaths under age1",
+      "restrictions": {}
+    },
+    "wonder_opioid_overdose_deaths": {
+      "ages": [
+        0,
+        120
+      ],
+      "construct": "opioid_involved_overdose_deaths",
+      "filters": {
+        "logic": "underlying overdose AND at least one opioid multiple-cause code",
+        "multiple_cause_icd10": [
+          "T40.0-T40.4",
+          "T40.6"
+        ],
+        "underlying_icd10": [
+          "X40-X44",
+          "X60-X64",
+          "X85",
+          "Y10-Y14"
+        ]
+      },
+      "metadata_basis": "Existing V8 population, units, filters and required age groups; no outcome values",
+      "population_basis": "opioid-involved overdose",
+      "restrictions": {}
+    },
+    "yrbs_alc_current_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_alcohol_use",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_binge_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_binge_drinking",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_cig_current_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_cigarette_smoking",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_drink_drive_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_drinking_and_driving",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_evp_current_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_electronic_vapor_use",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_mj_current_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_marijuana_use",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_ride_drinking_driver_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_riding_with_drinking_driver",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_seatbelt_rarely_never_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_seat_belt_nonuse",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_suicide_attempt_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "adolescent_suicide_attempt",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    },
+    "yrbs_text_driving_prevalence": {
+      "ages": [
+        14,
+        18
+      ],
+      "construct": "youth_texting_while_driving",
+      "filters": {
+        "breakout": "Overall",
+        "grades": "9-12"
+      },
+      "restrictions": {}
+    }
+  },
+  "targets": [
+    {
+      "ages": [
+        15,
+        44
+      ],
+      "aliases": [
+        "births",
+        "fertility",
+        "contraceptive_use",
+        "contraceptive_use_prevalence",
+        "unintended_pregnancy_incidence"
+      ],
+      "construct": "births",
+      "fallback": {
+        "filters": {
+          "age_group": "20-24"
+        },
+        "series_id": "wonder_fertility_rate_by_maternal_age"
+      },
+      "family": "contraceptive_insurance_mandate",
+      "preferred_role": "general_fertility_rate",
+      "restrictions": {},
+      "rule": "HUB_RULINGS_C63.md \u00a76: contraceptive coverage mandates use births/fertility as first-order welfare target"
+    },
+    {
+      "ages": [
+        0,
+        18
+      ],
+      "aliases": [
+        "insurance_coverage",
+        "health_insurance_coverage",
+        "insurance_coverage_of_lawfully_residing_immigrant_children",
+        "point_in_time_health_insurance_coverage_of_lawfully_residing_immigrant_children"
+      ],
+      "construct": "insurance_coverage",
+      "restrictions": {},
+      "rule": "V6.3 \u00a73 ICHIA comparison scope 0\u201318; state-specific legal eligibility remains in purpose evidence"
+    },
+    {
+      "ages": [
+        15,
+        44
+      ],
+      "aliases": [
+        "births",
+        "births_fertility_policy",
+        "fertility_from_contraceptive_access"
+      ],
+      "construct": "births",
+      "restrictions": {},
+      "rule": "V6.3 births construct"
+    },
+    {
+      "ages": [
+        15,
+        44
+      ],
+      "aliases": [
+        "unintended_pregnancy_incidence"
+      ],
+      "construct": "births",
+      "fallback": {
+        "filters": {
+          "age_group": "20-24"
+        },
+        "series_id": "wonder_fertility_rate_by_maternal_age"
+      },
+      "family": "pharmacist_contraception_prescribing",
+      "preferred_role": "general_fertility_rate",
+      "restrictions": {},
+      "rule": "V6.3 \u00a73 explicitly chooses births/GFR for pharmacist contraception; this does not authorize other pregnancy-to-birth substitutions"
+    },
+    {
+      "ages": [
+        16,
+        120
+      ],
+      "aliases": [
+        "employment_status",
+        "employment",
+        "employment_status_of_job_applicants_and_workers_exposed_to_employer_credit_screening"
+      ],
+      "construct": "employment_status",
+      "preferred_series": "bls_laus_employment_population_ratio",
+      "restrictions": {},
+      "rule": "V6.3; employment is confirmed in two studies; age16+ is the available resident measurement scope, not a statutory age threshold"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "prescription_opioid_overdose_deaths",
+        "prescription_opioid_overdose_mortality"
+      ],
+      "construct": "prescription_opioid_overdose_deaths",
+      "restrictions": {},
+      "rule": "Located PDMP studies define T40.2\u2013T40.4; heroin T40.1/all-drug deaths are different death-kind constructs"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "opioid_involved_overdose_deaths",
+        "opioid_involved_overdose_mortality",
+        "fatal_opioid_overdose_prevention"
+      ],
+      "construct": "opioid_involved_overdose_deaths",
+      "restrictions": {},
+      "rule": "Existing V8 opioid-involved-overdose construct"
+    },
+    {
+      "ages": [
+        0,
+        17
+      ],
+      "aliases": [
+        "firearm_deaths_all_intents",
+        "child_firearm_mortality_all_intents"
+      ],
+      "construct": "firearm_deaths_all_intents",
+      "restrictions": {},
+      "rule": "C46 \u00a73 / V6.3 CAP precedent; homicide is a different death kind"
+    },
+    {
+      "ages": [
+        15,
+        44
+      ],
+      "aliases": [
+        "late_abortions",
+        "late_abortion_incidence"
+      ],
+      "construct": "late_abortions",
+      "restrictions": {},
+      "rule": "Gestational-limit precedent; infant mortality is downstream"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "adult_binge_drinking"
+      ],
+      "construct": "adult_binge_drinking",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "adult_cigarette_smoking",
+        "cigarette_smoking"
+      ],
+      "construct": "adult_cigarette_smoking",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "adult_ecigarette_use"
+      ],
+      "construct": "adult_ecigarette_use",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "college_credential_completion"
+      ],
+      "construct": "college_credential_completion",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "college_enrollment"
+      ],
+      "construct": "college_enrollment",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "drinking_driver_crash_deaths",
+        "alcohol_involved_crash_deaths",
+        "drinking_driver_crash_fatalities"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "driver_traffic_deaths"
+      ],
+      "construct": "driver_traffic_deaths",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "high_school_noncompletion",
+        "school_dropout"
+      ],
+      "construct": "high_school_noncompletion",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "homicide_offenses",
+        "homicide"
+      ],
+      "construct": "homicide_offenses",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "motor_vehicle_occupant_traffic_deaths"
+      ],
+      "construct": "motor_vehicle_occupant_traffic_deaths",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "motorcyclist_traffic_deaths"
+      ],
+      "construct": "motorcyclist_traffic_deaths",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "pedalcyclist_traffic_deaths"
+      ],
+      "construct": "pedalcyclist_traffic_deaths",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "reported_hate_crime_incidents"
+      ],
+      "construct": "reported_hate_crime_incidents",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "snap_participation",
+        "SNAP participation (receipt of SNAP/food-stamp benefits)",
+        "SNAP participation",
+        "household_snap_receipt",
+        "snap_household_receipt"
+      ],
+      "construct": "snap_participation",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "traffic_fatalities_all_road_users",
+        "motor_vehicle_crash_deaths",
+        "all_road_traffic_deaths"
+      ],
+      "construct": "traffic_fatalities_all_road_users",
+      "restrictions": {},
+      "rule": "C48 / V6.3 same-construct population selection; legal eligible ages/restrictions come from verified purpose"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "traffic_fatalities_all_road_users",
+        "driver_traffic_deaths",
+        "drinking_driver_crash_deaths"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "family": "bac_per_se_008",
+      "restrictions": {},
+      "rule": "C48 \u00a73 alcohol-driving policy primary: ACCIDENT.DRUNK_DR > 0 crash deaths; all-road deaths secondary"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "traffic_fatalities_all_road_users",
+        "driver_traffic_deaths",
+        "drinking_driver_crash_deaths"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "family": "youth_alcohol_impaired_driving",
+      "restrictions": {},
+      "rule": "C48 \u00a73 alcohol-driving policy primary: ACCIDENT.DRUNK_DR > 0 crash deaths; all-road deaths secondary"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "traffic_fatalities_all_road_users",
+        "driver_traffic_deaths",
+        "drinking_driver_crash_deaths"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "family": "beer_keg_registration",
+      "restrictions": {},
+      "rule": "C48 \u00a73 alcohol-driving policy primary: ACCIDENT.DRUNK_DR > 0 crash deaths; all-road deaths secondary"
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "voter turnout"
+      ],
+      "construct": "voter_turnout",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "turnout_vep_highest_office_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "general election turnout"
+      ],
+      "construct": "voter_turnout",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "turnout_vep_highest_office_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "young-adult turnout"
+      ],
+      "construct": "voter_turnout",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "turnout_vep_highest_office_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "voter_turnout_in_elections"
+      ],
+      "construct": "voter_turnout",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "turnout_vep_highest_office_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "general_election_voter_turnout"
+      ],
+      "construct": "voter_turnout",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "turnout_vep_highest_office_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "young_adult_voter_turnout_rate"
+      ],
+      "construct": "voter_turnout",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "turnout_vep_highest_office_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "motor-vehicle crash deaths"
+      ],
+      "construct": "traffic_fatalities_all_road_users",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_all_road_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "traffic fatalities (all road users)"
+      ],
+      "construct": "traffic_fatalities_all_road_users",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_all_road_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "motor_vehicle_crash_deaths"
+      ],
+      "construct": "traffic_fatalities_all_road_users",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_all_road_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "alcohol-related fatal crashes"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_drinking_driver_crash_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "alcohol-involved fatal crashes"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_drinking_driver_crash_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "drinking-driver crashes"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_drinking_driver_crash_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "alcohol_related_fatal_motor_vehicle_crash_involvement"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_drinking_driver_crash_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "alcohol_related_fatal_crashes_involving_drinking_drivers_younger_than_21"
+      ],
+      "construct": "drinking_driver_crash_deaths",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "preferred_series": "fars_drinking_driver_crash_fatality_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "reported crime incidence"
+      ],
+      "construct": "reported_violent_crime",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "preferred_series": "fbi_ucr_violent_crime_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "secondary_series": [
+        "fbi_ucr_property_crime_rate"
+      ]
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "UCR violent crime rates"
+      ],
+      "construct": "reported_violent_crime",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "preferred_series": "fbi_ucr_violent_crime_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "reported_crime_incidence_measured_as_ucr_violent_and_property_offense_rates"
+      ],
+      "construct": "reported_violent_crime",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "preferred_series": "fbi_ucr_violent_crime_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "secondary_series": [
+        "fbi_ucr_property_crime_rate"
+      ]
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "UCR property crime rates"
+      ],
+      "construct": "reported_property_crime",
+      "equivalence_citation": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "preferred_series": "fbi_ucr_property_crime_rate",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71 / \u00a72",
+      "secondary_series": []
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "voter_turnout"
+      ],
+      "construct": "voter_turnout",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71/2"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "reported_violent_crime"
+      ],
+      "construct": "reported_violent_crime",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71/2"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "reported_property_crime"
+      ],
+      "construct": "reported_property_crime",
+      "restrictions": {},
+      "rule": "docs/plans/l2-pipeline/HUB_RULINGS_C49.md \u00a71/2"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "births"
+      ],
+      "construct": "births",
+      "restrictions": {},
+      "rule": "C56 explicit published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "child_day_care_payroll_employment"
+      ],
+      "construct": "child_day_care_payroll_employment",
+      "restrictions": {},
+      "rule": "C56 explicit published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "electric_power_co2_emissions"
+      ],
+      "construct": "electric_power_co2_emissions",
+      "restrictions": {},
+      "rule": "C56 explicit published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "electricity_retail_consumption"
+      ],
+      "construct": "electricity_retail_consumption",
+      "restrictions": {},
+      "rule": "C56 explicit published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "electricity_retail_price"
+      ],
+      "construct": "electricity_retail_price",
+      "restrictions": {},
+      "rule": "C56 explicit published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "nonhydro_renewable_generation"
+      ],
+      "construct": "nonhydro_renewable_generation",
+      "restrictions": {},
+      "rule": "C56 explicit published construct"
+    },
+    {
+      "ages": [
+        16,
+        120
+      ],
+      "aliases": [
+        "private_sector_weekly_wage",
+        "wage_level"
+      ],
+      "construct": "private_sector_weekly_wage",
+      "preferred_series": "bls_qcew_private_weekly_wage",
+      "restrictions": {},
+      "rule": "C56: UI-covered private jobs include sectors outside CES private nonfarm; no worker demographics or employer-size eligibility attribution"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "total_tax_revenue",
+        "total_tax_revenue_per_capita"
+      ],
+      "construct": "total_tax_revenue",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "individual_income_tax_revenue",
+        "individual_income_tax_revenue_per_capita"
+      ],
+      "construct": "individual_income_tax_revenue",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "corporate_income_tax_revenue",
+        "corporate_income_tax_revenue_per_capita"
+      ],
+      "construct": "corporate_income_tax_revenue",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "death_and_gift_tax_revenue",
+        "death_and_gift_tax_revenue_per_capita"
+      ],
+      "construct": "death_and_gift_tax_revenue",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "general_sales_tax_revenue",
+        "general_sales_tax_revenue_per_capita"
+      ],
+      "construct": "general_sales_tax_revenue",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "total_state_expenditure",
+        "total_state_expenditure_per_capita"
+      ],
+      "construct": "total_state_expenditure",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "general_state_expenditure",
+        "general_state_expenditure_per_capita"
+      ],
+      "construct": "general_state_expenditure",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_current_operations_expenditure",
+        "state_current_operations_expenditure_per_capita"
+      ],
+      "construct": "state_current_operations_expenditure",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_capital_outlay",
+        "state_capital_outlay_per_capita"
+      ],
+      "construct": "state_capital_outlay",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_direct_elementary_secondary_education_expenditure",
+        "state_direct_elementary_secondary_education_expenditure_per_capita"
+      ],
+      "construct": "state_direct_elementary_secondary_education_expenditure",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "housing_units_authorized",
+        "building_permits",
+        "building_permits_per_capita"
+      ],
+      "construct": "housing_units_authorized",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "brfss_binge_drinking_pct_legacy_spliced"
+      ],
+      "construct": "adult_binge_drinking",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        120
+      ],
+      "aliases": [
+        "brfss_current_smoking_pct_legacy_spliced"
+      ],
+      "construct": "adult_cigarette_smoking",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        50,
+        120
+      ],
+      "aliases": [
+        "brfss_ever_colorectal_endoscopy_age50plus_legacy"
+      ],
+      "construct": "colorectal_screening",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        40,
+        120
+      ],
+      "aliases": [
+        "brfss_mammogram_past2years_women40plus_legacy"
+      ],
+      "construct": "mammography_screening",
+      "restrictions": {
+        "sex": "female"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        50,
+        120
+      ],
+      "aliases": [
+        "brfss_mammogram_past2years_women50plus_legacy"
+      ],
+      "construct": "mammography_screening",
+      "restrictions": {
+        "sex": "female"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_female_male_median_annual_earnings_ratio_ftyr"
+      ],
+      "construct": "gender_annual_earnings_ratio",
+      "restrictions": {
+        "earnings": "positive_annual_earnings",
+        "usual_hours": "35_or_more",
+        "weeks_worked": "50_or_more"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "cps_asec_insured_pct_all"
+      ],
+      "construct": "insurance_coverage",
+      "restrictions": {},
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_insured_pct_hispanic_noncitizen_age18_64"
+      ],
+      "construct": "insurance_coverage",
+      "restrictions": {
+        "citizenship": "noncitizen",
+        "ethnicity": "Hispanic"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        17
+      ],
+      "aliases": [
+        "cps_asec_insured_pct_noncitizen_children"
+      ],
+      "construct": "insurance_coverage",
+      "restrictions": {
+        "citizenship": "noncitizen"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_mean_annual_earnings_cognitive_difficulty_age18_64"
+      ],
+      "construct": "annual_earnings",
+      "restrictions": {
+        "disability": "cognitive_difficulty",
+        "earnings": "positive_annual_earnings"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_mean_annual_earnings_disability_age18_64"
+      ],
+      "construct": "annual_earnings",
+      "restrictions": {
+        "disability": "any_of_six_difficulties",
+        "earnings": "positive_annual_earnings"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_mean_annual_earnings_private_household_workers_age18_64"
+      ],
+      "construct": "annual_earnings",
+      "restrictions": {
+        "earnings": "positive_annual_earnings",
+        "longest_job_class": "private_household"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "cps_asec_poverty_pct_all"
+      ],
+      "construct": "poverty",
+      "restrictions": {
+        "universe": "official_poverty_universe"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        17
+      ],
+      "aliases": [
+        "cps_asec_poverty_pct_children"
+      ],
+      "construct": "poverty",
+      "restrictions": {
+        "universe": "official_poverty_universe"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_poverty_pct_disability_age18_64"
+      ],
+      "construct": "poverty",
+      "restrictions": {
+        "disability": "any_of_six_difficulties",
+        "universe": "official_poverty_universe"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        0,
+        17
+      ],
+      "aliases": [
+        "cps_asec_poverty_pct_noncitizen_children"
+      ],
+      "construct": "poverty",
+      "restrictions": {
+        "citizenship": "noncitizen",
+        "universe": "official_poverty_universe"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_retirement_plan_access_pct_private_workers_age18_64"
+      ],
+      "construct": "employer_retirement_plan_offering",
+      "restrictions": {
+        "longest_job_class": "private_wage_salary",
+        "plan_measure": "employer_offers_plan_to_any_employees"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "cps_asec_retirement_plan_participation_pct_private_workers_age18_64"
+      ],
+      "construct": "retirement_plan_participation",
+      "restrictions": {
+        "longest_job_class": "private_wage_salary"
+      },
+      "rule": "C59 source-defined exact construct"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_cigarette_smoking",
+        "yrbs_cig_current_prevalence"
+      ],
+      "construct": "youth_cigarette_smoking",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_electronic_vapor_use",
+        "yrbs_evp_current_prevalence"
+      ],
+      "construct": "youth_electronic_vapor_use",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_alcohol_use",
+        "yrbs_alc_current_prevalence"
+      ],
+      "construct": "youth_alcohol_use",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_binge_drinking",
+        "yrbs_binge_prevalence"
+      ],
+      "construct": "youth_binge_drinking",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "adolescent_suicide_attempt",
+        "yrbs_suicide_attempt_prevalence"
+      ],
+      "construct": "adolescent_suicide_attempt",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_texting_while_driving",
+        "yrbs_text_driving_prevalence"
+      ],
+      "construct": "youth_texting_while_driving",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_marijuana_use",
+        "yrbs_mj_current_prevalence"
+      ],
+      "construct": "youth_marijuana_use",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_seat_belt_nonuse",
+        "yrbs_seatbelt_rarely_never_prevalence"
+      ],
+      "construct": "youth_seat_belt_nonuse",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_riding_with_drinking_driver",
+        "yrbs_ride_drinking_driver_prevalence"
+      ],
+      "construct": "youth_riding_with_drinking_driver",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        14,
+        18
+      ],
+      "aliases": [
+        "youth_drinking_and_driving",
+        "yrbs_drink_drive_prevalence"
+      ],
+      "construct": "youth_drinking_and_driving",
+      "restrictions": {},
+      "rule": "C63: high-school YRBS survey population, no NYA statewide splice"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "rape"
+      ],
+      "construct": "rape",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "robbery"
+      ],
+      "construct": "robbery",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "aggravated_assault"
+      ],
+      "construct": "aggravated_assault",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "burglary"
+      ],
+      "construct": "burglary",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "larceny"
+      ],
+      "construct": "larceny",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "motor_vehicle_theft"
+      ],
+      "construct": "motor_vehicle_theft",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        18,
+        24
+      ],
+      "aliases": [
+        "public_college_enrollment"
+      ],
+      "construct": "public_college_enrollment",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        18,
+        64
+      ],
+      "aliases": [
+        "health_insurance_coverage"
+      ],
+      "construct": "health_insurance_coverage",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "reported_identity_theft"
+      ],
+      "construct": "reported_identity_theft",
+      "restrictions": {},
+      "rule": "C70 exact published construct"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "ui_benefit_receipt",
+        "ui_continued_weeks_claimed",
+        "ui_first_payments",
+        "ui_initial_claims",
+        "ui_weeks_compensated"
+      ],
+      "construct": "ui_benefit_receipt",
+      "preferred_series": "dol_eta5159_state_ui_initial_claims",
+      "restrictions": {},
+      "rule": "HUB_RULING_20261017_W3_OPEN_ITEMS.md item 1: UI benefit-receipt family; primary dol_eta5159_state_ui_initial_claims; fixed order initial_claims > first_payments > weeks_compensated > continued_weeks_claimed, set before any outcome; the PDMP all-drug target is a different construct",
+      "series_order": [
+        "dol_eta5159_state_ui_initial_claims",
+        "dol_eta5159_state_ui_first_payments",
+        "dol_eta5159_state_ui_weeks_compensated",
+        "dol_eta5159_state_ui_continued_weeks_claimed"
+      ]
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "alcohol_consumption"
+      ],
+      "construct": "alcohol_consumption",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "alcohol_consumption_per_capita"
+      ],
+      "construct": "alcohol_consumption_per_capita",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        21,
+        120
+      ],
+      "aliases": [
+        "alcohol_consumption_age21plus"
+      ],
+      "construct": "alcohol_consumption_age21plus",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        21,
+        120
+      ],
+      "aliases": [
+        "alcohol_consumption_age21plus_per_capita"
+      ],
+      "construct": "alcohol_consumption_age21plus_per_capita",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "beer_consumption"
+      ],
+      "construct": "beer_consumption",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "beer_consumption_per_capita"
+      ],
+      "construct": "beer_consumption_per_capita",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "wine_consumption"
+      ],
+      "construct": "wine_consumption",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "wine_consumption_per_capita"
+      ],
+      "construct": "wine_consumption_per_capita",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "spirits_consumption"
+      ],
+      "construct": "spirits_consumption",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        120
+      ],
+      "aliases": [
+        "spirits_consumption_per_capita"
+      ],
+      "construct": "spirits_consumption_per_capita",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "business_dynamics_establishment_entry"
+      ],
+      "construct": "business_dynamics_establishment_entry",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "business_dynamics_establishment_exit"
+      ],
+      "construct": "business_dynamics_establishment_exit",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "business_dynamics_job_creation"
+      ],
+      "construct": "business_dynamics_job_creation",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "business_dynamics_job_creation_births"
+      ],
+      "construct": "business_dynamics_job_creation_births",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "business_dynamics_job_destruction"
+      ],
+      "construct": "business_dynamics_job_destruction",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "business_dynamics_net_job_creation"
+      ],
+      "construct": "business_dynamics_net_job_creation",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "business_dynamics_job_reallocation"
+      ],
+      "construct": "business_dynamics_job_reallocation",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "mmr_vaccination_coverage"
+      ],
+      "construct": "mmr_vaccination_coverage",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "dtap_vaccination_coverage"
+      ],
+      "construct": "dtap_vaccination_coverage",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "polio_vaccination_coverage"
+      ],
+      "construct": "polio_vaccination_coverage",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "hepatitis_b_vaccination_coverage"
+      ],
+      "construct": "hepatitis_b_vaccination_coverage",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "varicella_1dose_vaccination_coverage"
+      ],
+      "construct": "varicella_1dose_vaccination_coverage",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "varicella_2dose_vaccination_coverage"
+      ],
+      "construct": "varicella_2dose_vaccination_coverage",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "school_vaccine_exemption"
+      ],
+      "construct": "school_vaccine_exemption",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "school_vaccine_nonmedical_exemption"
+      ],
+      "construct": "school_vaccine_nonmedical_exemption",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        4,
+        7
+      ],
+      "aliases": [
+        "school_vaccine_medical_exemption"
+      ],
+      "construct": "school_vaccine_medical_exemption",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        19
+      ],
+      "aliases": [
+        "high_school_graduation"
+      ],
+      "construct": "high_school_graduation",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        14,
+        19
+      ],
+      "aliases": [
+        "high_school_graduation_afgr"
+      ],
+      "construct": "high_school_graduation_afgr",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_correction"
+      ],
+      "construct": "state_finance_hist_correction",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_police_protection"
+      ],
+      "construct": "state_finance_hist_police_protection",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_highways"
+      ],
+      "construct": "state_finance_hist_highways",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_hospitals"
+      ],
+      "construct": "state_finance_hist_hospitals",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_higher_education"
+      ],
+      "construct": "state_finance_hist_higher_education",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_unemployment_insurance_benefits"
+      ],
+      "construct": "state_finance_hist_unemployment_insurance_benefits",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_workers_compensation_benefits"
+      ],
+      "construct": "state_finance_hist_workers_compensation_benefits",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_lottery_sales"
+      ],
+      "construct": "state_finance_hist_lottery_sales",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "state_finance_hist_state_payroll"
+      ],
+      "construct": "state_finance_hist_state_payroll",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "snap_participation_rate"
+      ],
+      "construct": "snap_participation_rate",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "snap_benefits"
+      ],
+      "construct": "snap_benefits",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "snap_average_benefit"
+      ],
+      "construct": "snap_average_benefit",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "agriculture_employment"
+      ],
+      "construct": "agriculture_employment",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "agriculture_wages"
+      ],
+      "construct": "agriculture_wages",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "child_care_wages"
+      ],
+      "construct": "child_care_wages",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    },
+    {
+      "ages": [
+        0,
+        120
+      ],
+      "aliases": [
+        "child_care_establishments"
+      ],
+      "construct": "child_care_establishments",
+      "restrictions": {},
+      "rule": "V18 exact published construct; outcome-only"
+    }
+  ]
+}

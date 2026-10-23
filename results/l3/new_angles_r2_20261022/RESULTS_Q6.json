@@ -1,0 +1,1272 @@
+{
+ "question": "Q6 does the same law pay off more in richer or more urban states?",
+ "n_perm": 5000,
+ "seed": 20261028,
+ "stamp": {
+  "rule_id": "EX-1",
+  "plan": "docs/plans/l3-meta/PREPLAN_T256_R2_20261022.md",
+  "plan_sha256": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+  "seed": 20261022,
+  "code_sha256": "39c02561f6032c792f93725616b528dbcf3633f0cf3d066a7332b64a406fbaa1",
+  "input_sha256": {
+   "docs/plans/l3-meta/PREPLAN_T256_R2_20261022.md": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+   "data/l3_meta/new_angles_20261021/inputs/design_roster.csv": "75471faa2ee0eddd98c780dce56bccb378558d8b144397d77554786975a2f6d6",
+   "data/l3_meta/new_angles_20261021/inputs/policy_keys.csv": "6fdd596d1f2f728497e59213f80571b32018c66dddca0d66f2ae64615a80d15e",
+   "data/l3_meta/new_angles_20261021/states_decide/mapping/FINAL_codes.csv": "2aea38113924c440941c83b2675a2fceef5673d3fd72fb95daeee16904f8ba73",
+   "data/l3_meta/new_angles_20261021/inputs/group_time_export.csv": "b55a5e0da09ccf79e4bf9c55ccd5bf8c99d77bcb6ad0cd16d87fe6e45f580f1c",
+   "data/l3_meta/new_angles_20261021/inputs/cohort_states.csv": "639d152d8d6cedd637750a61f4db49e910a99f800beb5ef81cf49a1cb3c82467",
+   "data/l3_meta/covariates/state_year_v2.csv": "548b6563a0c10a54aa0d6cdc6cc863d68d04073e7a56275c789e6777a028626e",
+   "data/l3_meta/refresh/20261022_r2/live/l2_set_live.json": "f5941f590049d1484c81ce43332a33f2436a8d36e191ff08c5f6d408e95586e8"
+  },
+  "run_utc": "2026-10-22T21:22:42Z",
+  "python": "numpy 1.26.4"
+ },
+ "design_selection": {
+  "n_roster": 77,
+  "n_kept_with_state_list_and_cells": 63,
+  "dropped": {
+   "not_direction_and_sd": 13,
+   "quarterly_not_calendar": 1
+  },
+  "n_with_ge4_eligible_cohorts": 35,
+  "n_cohorts_total": 290,
+  "year_rule": "covariate read at calendar year g-1 (plan text); cohorts without any known stored onset year dropped; states missing the covariate skipped"
+ },
+ "primary": {
+  "income": {
+   "covariate": "income",
+   "n_designs_ge4_cohorts": 35,
+   "n_designs_any": 63,
+   "n_designs_both_halves": 35,
+   "n_cohorts_high": 126,
+   "n_cohorts_low": 126,
+   "minimum": {
+    "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+    "available": 35,
+    "met": true,
+    "gap": 0
+   },
+   "primary": {
+    "n_designs": 35,
+    "share_positive": 0.5142857142857142,
+    "n_positive": 18,
+    "n_negative": 17,
+    "binom_p": 1.0,
+    "outside_035_065": false,
+    "fe_contrast": 0.2716068197178994,
+    "null_mean": 0.002279599937643896,
+    "band_2_5": -0.6907577277855171,
+    "band_97_5": 0.700749880109261,
+    "outside_band": false,
+    "p_two_sided": 0.4605078984203159
+   },
+   "share_null_band_2_5_97_5": [
+    0.34285714285714286,
+    0.6571428571428571
+   ],
+   "median_D": 0.011827344898335646,
+   "by_domain_group_descriptive": {
+    "crime": {
+     "n_designs": 9,
+     "share_positive": 0.5555555555555556,
+     "binom_p": 1.0,
+     "fe_contrast": 0.7809200087549795,
+     "band_2_5": -0.8241467511424166,
+     "band_97_5": 0.7797032287197986,
+     "outside_band": true
+    },
+    "environment": {
+     "n_designs": 2,
+     "note": "fewer than 8 designs, not shown"
+    },
+    "health": {
+     "n_designs": 13,
+     "share_positive": 0.46153846153846156,
+     "binom_p": 1.0,
+     "fe_contrast": -0.4176087447192488,
+     "band_2_5": -0.9146035591622447,
+     "band_97_5": 0.9315589306963766,
+     "outside_band": false
+    },
+    "labor": {
+     "n_designs": 2,
+     "note": "fewer than 8 designs, not shown"
+    },
+    "other": {
+     "n_designs": 9,
+     "share_positive": 0.3333333333333333,
+     "binom_p": 0.5078125,
+     "fe_contrast": 0.5936065615770149,
+     "band_2_5": -1.9276831271095025,
+     "band_97_5": 1.9504088824145722,
+     "outside_band": false
+    }
+   },
+   "guard_one_vote_per_law": {
+    "n_laws": 28,
+    "share_positive": 0.5714285714285714,
+    "binom_p": 0.5715881884098053,
+    "fe_contrast": 0.7122724855900839,
+    "band_2_5": -0.8228486154630275,
+    "band_97_5": 0.8021656188855875,
+    "outside_band": false
+   },
+   "guard_leave_one_law_out": {
+    "n": 28,
+    "fe_sign_kept": true,
+    "share_side_kept": false,
+    "n_still_outside_band": 0,
+    "fe_min": 0.04713454909609763,
+    "fe_max": 0.475638482697134
+   },
+   "guard_leave_one_domain_out": [
+    {
+     "left_out": "crime",
+     "n_designs": 26,
+     "share_positive": 0.5,
+     "fe_contrast": 0.1310367080557106,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": false
+    },
+    {
+     "left_out": "environment",
+     "n_designs": 33,
+     "share_positive": 0.48484848484848486,
+     "fe_contrast": 0.28627320542742707,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": false
+    },
+    {
+     "left_out": "health",
+     "n_designs": 22,
+     "share_positive": 0.5454545454545454,
+     "fe_contrast": 0.6679920981021239,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": true
+    },
+    {
+     "left_out": "labor",
+     "n_designs": 33,
+     "share_positive": 0.48484848484848486,
+     "fe_contrast": 0.2151912673614417,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": false
+    },
+    {
+     "left_out": "other",
+     "n_designs": 26,
+     "share_positive": 0.5769230769230769,
+     "fe_contrast": 0.1254111110976111,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": true
+    }
+   ],
+   "pattern_rule": {
+    "share_outside_035_065": false,
+    "share_binom_p_lt_0_05": false,
+    "fe_contrast_outside_2_5_97_5_band": false,
+    "same_sign_after_leave_one_domain_out": false
+   },
+   "pattern": false,
+   "strict_reading_extra_item_share_and_fe_same_direction": true,
+   "pattern_strict_reading": false,
+   "result": "no difference"
+  },
+  "urbanity": {
+   "covariate": "urbanity",
+   "n_designs_ge4_cohorts": 35,
+   "n_designs_any": 63,
+   "n_designs_both_halves": 35,
+   "n_cohorts_high": 126,
+   "n_cohorts_low": 126,
+   "minimum": {
+    "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+    "available": 35,
+    "met": true,
+    "gap": 0
+   },
+   "primary": {
+    "n_designs": 35,
+    "share_positive": 0.5714285714285714,
+    "n_positive": 20,
+    "n_negative": 15,
+    "binom_p": 0.49955983320251107,
+    "outside_035_065": false,
+    "fe_contrast": -0.1241127451136289,
+    "null_mean": -0.004936416132076848,
+    "band_2_5": -0.7036675219619408,
+    "band_97_5": 0.6845630445701809,
+    "outside_band": false,
+    "p_two_sided": 0.757248550289942
+   },
+   "share_null_band_2_5_97_5": [
+    0.34285714285714286,
+    0.6571428571428571
+   ],
+   "median_D": 0.15776316768944976,
+   "by_domain_group_descriptive": {
+    "crime": {
+     "n_designs": 9,
+     "share_positive": 0.5555555555555556,
+     "binom_p": 1.0,
+     "fe_contrast": -0.016843065407201027,
+     "band_2_5": -0.7687581773080346,
+     "band_97_5": 0.7951924579029324,
+     "outside_band": false
+    },
+    "environment": {
+     "n_designs": 2,
+     "note": "fewer than 8 designs, not shown"
+    },
+    "health": {
+     "n_designs": 13,
+     "share_positive": 0.5384615384615384,
+     "binom_p": 1.0,
+     "fe_contrast": 0.3087037813224727,
+     "band_2_5": -0.944023951701083,
+     "band_97_5": 0.9024540628998,
+     "outside_band": false
+    },
+    "labor": {
+     "n_designs": 2,
+     "note": "fewer than 8 designs, not shown"
+    },
+    "other": {
+     "n_designs": 9,
+     "share_positive": 0.4444444444444444,
+     "binom_p": 1.0,
+     "fe_contrast": -0.99416512473881,
+     "band_2_5": -1.9719887168255459,
+     "band_97_5": 1.9430695667392495,
+     "outside_band": false
+    }
+   },
+   "guard_one_vote_per_law": {
+    "n_laws": 28,
+    "share_positive": 0.6071428571428571,
+    "binom_p": 0.34492845088243484,
+    "fe_contrast": -0.008098635487607878,
+    "band_2_5": -0.8201342563573225,
+    "band_97_5": 0.7999177784786773,
+    "outside_band": false
+   },
+   "guard_leave_one_law_out": {
+    "n": 28,
+    "fe_sign_kept": false,
+    "share_side_kept": true,
+    "n_still_outside_band": 0,
+    "fe_min": -0.25280582402184787,
+    "fe_max": 0.1962181144384249
+   },
+   "guard_leave_one_domain_out": [
+    {
+     "left_out": "crime",
+     "n_designs": 26,
+     "share_positive": 0.5769230769230769,
+     "fe_contrast": -0.15471928876158397,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": true
+    },
+    {
+     "left_out": "environment",
+     "n_designs": 33,
+     "share_positive": 0.5454545454545454,
+     "fe_contrast": -0.14583650727617647,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": true
+    },
+    {
+     "left_out": "health",
+     "n_designs": 22,
+     "share_positive": 0.5909090909090909,
+     "fe_contrast": -0.3680472864479789,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": true
+    },
+    {
+     "left_out": "labor",
+     "n_designs": 33,
+     "share_positive": 0.5454545454545454,
+     "fe_contrast": -0.18523499393925325,
+     "outside_band": false,
+     "fe_sign_kept": true,
+     "share_side_kept": true
+    },
+    {
+     "left_out": "other",
+     "n_designs": 26,
+     "share_positive": 0.6153846153846154,
+     "fe_contrast": 0.24260558367828228,
+     "outside_band": false,
+     "fe_sign_kept": false,
+     "share_side_kept": true
+    }
+   ],
+   "pattern_rule": {
+    "share_outside_035_065": false,
+    "share_binom_p_lt_0_05": false,
+    "fe_contrast_outside_2_5_97_5_band": false,
+    "same_sign_after_leave_one_domain_out": false
+   },
+   "pattern": false,
+   "strict_reading_extra_item_share_and_fe_same_direction": false,
+   "pattern_strict_reading": false,
+   "result": "no difference"
+  }
+ },
+ "sensitivities": {
+  "year_rule_T232_stored_state_onset": {
+   "n_designs_with_cells": 63,
+   "n_ge4_cohorts": 35,
+   "dropped": {
+    "not_direction_and_sd": 13,
+    "quarterly_not_calendar": 1
+   },
+   "income": {
+    "covariate": "income",
+    "n_designs_ge4_cohorts": 35,
+    "n_designs_any": 63,
+    "n_designs_both_halves": 35,
+    "n_cohorts_high": 126,
+    "n_cohorts_low": 126,
+    "minimum": {
+     "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+     "available": 35,
+     "met": true,
+     "gap": 0
+    },
+    "primary": {
+     "n_designs": 35,
+     "share_positive": 0.5142857142857142,
+     "n_positive": 18,
+     "n_negative": 17,
+     "binom_p": 1.0,
+     "outside_035_065": false,
+     "fe_contrast": 0.255868725504385,
+     "null_mean": 0.0032874643406849806,
+     "band_2_5": -0.7017746819549816,
+     "band_97_5": 0.6690822097292494,
+     "outside_band": false,
+     "p_two_sided": 0.5137431284357821
+    },
+    "share_null_band_2_5_97_5": [
+     0.34285714285714286,
+     0.6571428571428571
+    ],
+    "median_D": 0.011827344898335646,
+    "by_domain_group_descriptive": {
+     "crime": {
+      "n_designs": 9,
+      "share_positive": 0.5555555555555556,
+      "binom_p": 1.0,
+      "fe_contrast": 0.7809200087549795,
+      "band_2_5": -0.7393917746379557,
+      "band_97_5": 0.7842756575732647,
+      "outside_band": false
+     },
+     "environment": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "health": {
+      "n_designs": 13,
+      "share_positive": 0.46153846153846156,
+      "binom_p": 1.0,
+      "fe_contrast": -0.4176087447192488,
+      "band_2_5": -0.9404194666102961,
+      "band_97_5": 0.9461264194434129,
+      "outside_band": false
+     },
+     "labor": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "other": {
+      "n_designs": 9,
+      "share_positive": 0.3333333333333333,
+      "binom_p": 0.5078125,
+      "fe_contrast": 0.5384308731267557,
+      "band_2_5": -1.896290727852766,
+      "band_97_5": 1.9175929847971638,
+      "outside_band": false
+     }
+    },
+    "guard_one_vote_per_law": {
+     "n_laws": 28,
+     "share_positive": 0.5714285714285714,
+     "binom_p": 0.5715881884098053,
+     "fe_contrast": 0.6918030936541806,
+     "band_2_5": -0.8102851643508623,
+     "band_97_5": 0.7906857145791089,
+     "outside_band": false
+    },
+    "guard_leave_one_law_out": {
+     "n": 28,
+     "fe_sign_kept": true,
+     "share_side_kept": false,
+     "n_still_outside_band": 0,
+     "fe_min": 0.03074611257474954,
+     "fe_max": 0.4572551077991953
+    },
+    "guard_leave_one_domain_out": [
+     {
+      "left_out": "crime",
+      "n_designs": 26,
+      "share_positive": 0.5,
+      "fe_contrast": 0.11104456584654318,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "environment",
+      "n_designs": 33,
+      "share_positive": 0.48484848484848486,
+      "fe_contrast": 0.2692006311078849,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "health",
+      "n_designs": 22,
+      "share_positive": 0.5454545454545454,
+      "fe_contrast": 0.6420458025652924,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "labor",
+      "n_designs": 33,
+      "share_positive": 0.48484848484848486,
+      "fe_contrast": 0.1989330489514941,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "other",
+      "n_designs": 26,
+      "share_positive": 0.5769230769230769,
+      "fe_contrast": 0.1254111110976111,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     }
+    ],
+    "pattern_rule": {
+     "share_outside_035_065": false,
+     "share_binom_p_lt_0_05": false,
+     "fe_contrast_outside_2_5_97_5_band": false,
+     "same_sign_after_leave_one_domain_out": false
+    },
+    "pattern": false,
+    "strict_reading_extra_item_share_and_fe_same_direction": true,
+    "pattern_strict_reading": false,
+    "result": "no difference"
+   },
+   "urbanity": {
+    "covariate": "urbanity",
+    "n_designs_ge4_cohorts": 35,
+    "n_designs_any": 63,
+    "n_designs_both_halves": 35,
+    "n_cohorts_high": 126,
+    "n_cohorts_low": 126,
+    "minimum": {
+     "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+     "available": 35,
+     "met": true,
+     "gap": 0
+    },
+    "primary": {
+     "n_designs": 35,
+     "share_positive": 0.5714285714285714,
+     "n_positive": 20,
+     "n_negative": 15,
+     "binom_p": 0.49955983320251107,
+     "outside_035_065": false,
+     "fe_contrast": -0.1241127451136289,
+     "null_mean": -0.014612787141887082,
+     "band_2_5": -0.7004970041832892,
+     "band_97_5": 0.6919065050351155,
+     "outside_band": false,
+     "p_two_sided": 0.767616191904048
+    },
+    "share_null_band_2_5_97_5": [
+     0.34285714285714286,
+     0.6571428571428571
+    ],
+    "median_D": 0.15776316768944976,
+    "by_domain_group_descriptive": {
+     "crime": {
+      "n_designs": 9,
+      "share_positive": 0.5555555555555556,
+      "binom_p": 1.0,
+      "fe_contrast": -0.016843065407201027,
+      "band_2_5": -0.8083577535925697,
+      "band_97_5": 0.7378558539998946,
+      "outside_band": false
+     },
+     "environment": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "health": {
+      "n_designs": 13,
+      "share_positive": 0.5384615384615384,
+      "binom_p": 1.0,
+      "fe_contrast": 0.3087037813224727,
+      "band_2_5": -0.9331391636347892,
+      "band_97_5": 0.9128240163100012,
+      "outside_band": false
+     },
+     "labor": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "other": {
+      "n_designs": 9,
+      "share_positive": 0.4444444444444444,
+      "binom_p": 1.0,
+      "fe_contrast": -0.99416512473881,
+      "band_2_5": -1.9921896979218487,
+      "band_97_5": 1.901581509628274,
+      "outside_band": false
+     }
+    },
+    "guard_one_vote_per_law": {
+     "n_laws": 28,
+     "share_positive": 0.6071428571428571,
+     "binom_p": 0.34492845088243484,
+     "fe_contrast": -0.008098635487607878,
+     "band_2_5": -0.8410725708594718,
+     "band_97_5": 0.7985069230763123,
+     "outside_band": false
+    },
+    "guard_leave_one_law_out": {
+     "n": 28,
+     "fe_sign_kept": false,
+     "share_side_kept": true,
+     "n_still_outside_band": 0,
+     "fe_min": -0.25280582402184787,
+     "fe_max": 0.1962181144384249
+    },
+    "guard_leave_one_domain_out": [
+     {
+      "left_out": "crime",
+      "n_designs": 26,
+      "share_positive": 0.5769230769230769,
+      "fe_contrast": -0.15471928876158397,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "environment",
+      "n_designs": 33,
+      "share_positive": 0.5454545454545454,
+      "fe_contrast": -0.14583650727617647,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "health",
+      "n_designs": 22,
+      "share_positive": 0.5909090909090909,
+      "fe_contrast": -0.3680472864479789,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "labor",
+      "n_designs": 33,
+      "share_positive": 0.5454545454545454,
+      "fe_contrast": -0.18523499393925325,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "other",
+      "n_designs": 26,
+      "share_positive": 0.6153846153846154,
+      "fe_contrast": 0.24260558367828228,
+      "outside_band": false,
+      "fe_sign_kept": false,
+      "share_side_kept": true
+     }
+    ],
+    "pattern_rule": {
+     "share_outside_035_065": false,
+     "share_binom_p_lt_0_05": false,
+     "fe_contrast_outside_2_5_97_5_band": false,
+     "same_sign_after_leave_one_domain_out": false
+    },
+    "pattern": false,
+    "strict_reading_extra_item_share_and_fe_same_direction": false,
+    "pattern_strict_reading": false,
+    "result": "no difference"
+   }
+  },
+  "extended_set_sign_overall_S2_for_dir0_or_no_sd": {
+   "n_designs_with_cells": 76,
+   "n_ge4_cohorts": 40,
+   "dropped": {
+    "quarterly_not_calendar": 1
+   },
+   "income": {
+    "covariate": "income",
+    "n_designs_ge4_cohorts": 40,
+    "n_designs_any": 76,
+    "n_designs_both_halves": 40,
+    "n_cohorts_high": 151,
+    "n_cohorts_low": 151,
+    "minimum": {
+     "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+     "available": 40,
+     "met": true,
+     "gap": 0
+    },
+    "primary": {
+     "n_designs": 40,
+     "share_positive": 0.525,
+     "n_positive": 21,
+     "n_negative": 19,
+     "binom_p": 0.8746293123804207,
+     "outside_035_065": false,
+     "fe_contrast": 0.2510620452755815,
+     "null_mean": -0.004563922839545439,
+     "band_2_5": -0.5788963946100892,
+     "band_97_5": 0.5996554655541033,
+     "outside_band": false,
+     "p_two_sided": 0.4172913543228386
+    },
+    "share_null_band_2_5_97_5": [
+     0.35,
+     0.65
+    ],
+    "median_D": 0.03331785787749002,
+    "by_domain_group_descriptive": {
+     "crime": {
+      "n_designs": 9,
+      "share_positive": 0.5555555555555556,
+      "binom_p": 1.0,
+      "fe_contrast": 0.7809200087549795,
+      "band_2_5": -0.8091842960107242,
+      "band_97_5": 0.7797426218801216,
+      "outside_band": true
+     },
+     "environment": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "health": {
+      "n_designs": 13,
+      "share_positive": 0.46153846153846156,
+      "binom_p": 1.0,
+      "fe_contrast": -0.4176087447192488,
+      "band_2_5": -0.8933340858480052,
+      "band_97_5": 0.958292192529308,
+      "outside_band": false
+     },
+     "labor": {
+      "n_designs": 5,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "other": {
+      "n_designs": 9,
+      "share_positive": 0.3333333333333333,
+      "binom_p": 0.5078125,
+      "fe_contrast": 0.5936065615770149,
+      "band_2_5": -1.9194687998443511,
+      "band_97_5": 1.9738737323676767,
+      "outside_band": false
+     },
+     "public_finance": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     }
+    },
+    "guard_one_vote_per_law": {
+     "n_laws": 32,
+     "share_positive": 0.59375,
+     "binom_p": 0.37708558747544885,
+     "fe_contrast": 0.655346106664277,
+     "band_2_5": -0.6879767596532763,
+     "band_97_5": 0.7113586924618666,
+     "outside_band": false
+    },
+    "guard_leave_one_law_out": {
+     "n": 32,
+     "fe_sign_kept": true,
+     "share_side_kept": true,
+     "n_still_outside_band": 0,
+     "fe_min": 0.06597743844931811,
+     "fe_max": 0.41157967460277844
+    },
+    "guard_leave_one_domain_out": [
+     {
+      "left_out": "crime",
+      "n_designs": 31,
+      "share_positive": 0.5161290322580645,
+      "fe_contrast": 0.13516592469620942,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "environment",
+      "n_designs": 38,
+      "share_positive": 0.5,
+      "fe_contrast": 0.2616972831571085,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "health",
+      "n_designs": 27,
+      "share_positive": 0.5555555555555556,
+      "fe_contrast": 0.5333005379247822,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "labor",
+      "n_designs": 35,
+      "share_positive": 0.5142857142857142,
+      "fe_contrast": 0.2841835994613924,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "other",
+      "n_designs": 31,
+      "share_positive": 0.5806451612903226,
+      "fe_contrast": 0.13720289983802744,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "public_finance",
+      "n_designs": 38,
+      "share_positive": 0.5,
+      "fe_contrast": 0.19408681167013034,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     }
+    ],
+    "pattern_rule": {
+     "share_outside_035_065": false,
+     "share_binom_p_lt_0_05": false,
+     "fe_contrast_outside_2_5_97_5_band": false,
+     "same_sign_after_leave_one_domain_out": false
+    },
+    "pattern": false,
+    "strict_reading_extra_item_share_and_fe_same_direction": true,
+    "pattern_strict_reading": false,
+    "result": "no difference"
+   },
+   "urbanity": {
+    "covariate": "urbanity",
+    "n_designs_ge4_cohorts": 40,
+    "n_designs_any": 76,
+    "n_designs_both_halves": 40,
+    "n_cohorts_high": 151,
+    "n_cohorts_low": 151,
+    "minimum": {
+     "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+     "available": 40,
+     "met": true,
+     "gap": 0
+    },
+    "primary": {
+     "n_designs": 40,
+     "share_positive": 0.5,
+     "n_positive": 20,
+     "n_negative": 20,
+     "binom_p": 1.0,
+     "outside_035_065": false,
+     "fe_contrast": -0.2547021961100532,
+     "null_mean": -0.0072498981776403645,
+     "band_2_5": -0.6089825501188324,
+     "band_97_5": 0.575167692023879,
+     "outside_band": false,
+     "p_two_sided": 0.4382808595702149
+    },
+    "share_null_band_2_5_97_5": [
+     0.35,
+     0.65
+    ],
+    "median_D": -0.021199141963287454,
+    "by_domain_group_descriptive": {
+     "crime": {
+      "n_designs": 9,
+      "share_positive": 0.5555555555555556,
+      "binom_p": 1.0,
+      "fe_contrast": -0.016843065407201027,
+      "band_2_5": -0.7637023059231036,
+      "band_97_5": 0.7488713780244324,
+      "outside_band": false
+     },
+     "environment": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "health": {
+      "n_designs": 13,
+      "share_positive": 0.5384615384615384,
+      "binom_p": 1.0,
+      "fe_contrast": 0.3087037813224727,
+      "band_2_5": -0.9077641577259684,
+      "band_97_5": 0.925283630059313,
+      "outside_band": false
+     },
+     "labor": {
+      "n_designs": 5,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "other": {
+      "n_designs": 9,
+      "share_positive": 0.4444444444444444,
+      "binom_p": 1.0,
+      "fe_contrast": -0.99416512473881,
+      "band_2_5": -2.0122358696274523,
+      "band_97_5": 1.912183967448936,
+      "outside_band": false
+     },
+     "public_finance": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     }
+    },
+    "guard_one_vote_per_law": {
+     "n_laws": 32,
+     "share_positive": 0.53125,
+     "binom_p": 0.860050065908581,
+     "fe_contrast": -0.16788906013245963,
+     "band_2_5": -0.7088055472976854,
+     "band_97_5": 0.6815527526926933,
+     "outside_band": false
+    },
+    "guard_leave_one_law_out": {
+     "n": 32,
+     "fe_sign_kept": true,
+     "share_side_kept": false,
+     "n_still_outside_band": 0,
+     "fe_min": -0.3632790140796511,
+     "fe_max": -0.00025260476429949524
+    },
+    "guard_leave_one_domain_out": [
+     {
+      "left_out": "crime",
+      "n_designs": 31,
+      "share_positive": 0.4838709677419355,
+      "fe_contrast": -0.3069660019790485,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "environment",
+      "n_designs": 38,
+      "share_positive": 0.47368421052631576,
+      "fe_contrast": -0.28276710355694684,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "health",
+      "n_designs": 27,
+      "share_positive": 0.48148148148148145,
+      "fe_contrast": -0.4897206020713417,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "labor",
+      "n_designs": 35,
+      "share_positive": 0.5142857142857142,
+      "fe_contrast": -0.2833792137278712,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "other",
+      "n_designs": 31,
+      "share_positive": 0.5161290322580645,
+      "fe_contrast": -0.01763177107760918,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "public_finance",
+      "n_designs": 38,
+      "share_positive": 0.5263157894736842,
+      "fe_contrast": -0.17437113558226827,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     }
+    ],
+    "pattern_rule": {
+     "share_outside_035_065": false,
+     "share_binom_p_lt_0_05": false,
+     "fe_contrast_outside_2_5_97_5_band": false,
+     "same_sign_after_leave_one_domain_out": false
+    },
+    "pattern": false,
+    "strict_reading_extra_item_share_and_fe_same_direction": false,
+    "pattern_strict_reading": false,
+    "result": "no difference"
+   }
+  },
+  "S2_scale_all_designs": {
+   "n_designs_with_cells": 76,
+   "n_ge4_cohorts": 40,
+   "dropped": {
+    "quarterly_not_calendar": 1
+   },
+   "income": {
+    "covariate": "income",
+    "n_designs_ge4_cohorts": 40,
+    "n_designs_any": 76,
+    "n_designs_both_halves": 40,
+    "n_cohorts_high": 151,
+    "n_cohorts_low": 151,
+    "minimum": {
+     "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+     "available": 40,
+     "met": true,
+     "gap": 0
+    },
+    "primary": {
+     "n_designs": 40,
+     "share_positive": 0.525,
+     "n_positive": 21,
+     "n_negative": 19,
+     "binom_p": 0.8746293123804207,
+     "outside_035_065": false,
+     "fe_contrast": 0.1345927354089225,
+     "null_mean": 0.007473294922582322,
+     "band_2_5": -0.39257128543995873,
+     "band_97_5": 0.40707990189971693,
+     "outside_band": false,
+     "p_two_sided": 0.5542228885557221
+    },
+    "share_null_band_2_5_97_5": [
+     0.35,
+     0.65
+    ],
+    "median_D": 0.037489387789380366,
+    "by_domain_group_descriptive": {
+     "crime": {
+      "n_designs": 9,
+      "share_positive": 0.5555555555555556,
+      "binom_p": 1.0,
+      "fe_contrast": 0.7015694487976085,
+      "band_2_5": -0.8576460523575745,
+      "band_97_5": 0.90472763211319,
+      "outside_band": false
+     },
+     "environment": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "health": {
+      "n_designs": 13,
+      "share_positive": 0.46153846153846156,
+      "binom_p": 1.0,
+      "fe_contrast": -0.4609619507810494,
+      "band_2_5": -0.8334630196289683,
+      "band_97_5": 0.8909252290084018,
+      "outside_band": false
+     },
+     "labor": {
+      "n_designs": 5,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "other": {
+      "n_designs": 9,
+      "share_positive": 0.3333333333333333,
+      "binom_p": 0.5078125,
+      "fe_contrast": 0.23346990653774174,
+      "band_2_5": -0.6629374621174868,
+      "band_97_5": 0.6673849363411714,
+      "outside_band": false
+     },
+     "public_finance": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     }
+    },
+    "guard_one_vote_per_law": {
+     "n_laws": 32,
+     "share_positive": 0.59375,
+     "binom_p": 0.37708558747544885,
+     "fe_contrast": 0.46162272576965724,
+     "band_2_5": -0.43432695473604077,
+     "band_97_5": 0.45474793298205574,
+     "outside_band": true
+    },
+    "guard_leave_one_law_out": {
+     "n": 32,
+     "fe_sign_kept": true,
+     "share_side_kept": true,
+     "n_still_outside_band": 0,
+     "fe_min": 0.03319765402792867,
+     "fe_max": 0.359316964090099
+    },
+    "guard_leave_one_domain_out": [
+     {
+      "left_out": "crime",
+      "n_designs": 31,
+      "share_positive": 0.5161290322580645,
+      "fe_contrast": 0.010634430450326256,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "environment",
+      "n_designs": 38,
+      "share_positive": 0.5,
+      "fe_contrast": 0.10576449342333448,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "health",
+      "n_designs": 27,
+      "share_positive": 0.5555555555555556,
+      "fe_contrast": 0.38815101872768754,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "labor",
+      "n_designs": 35,
+      "share_positive": 0.5142857142857142,
+      "fe_contrast": 0.17498413639366062,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "other",
+      "n_designs": 31,
+      "share_positive": 0.5806451612903226,
+      "fe_contrast": 0.10156278221922399,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": true
+     },
+     {
+      "left_out": "public_finance",
+      "n_designs": 38,
+      "share_positive": 0.5,
+      "fe_contrast": 0.07483662979529576,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     }
+    ],
+    "pattern_rule": {
+     "share_outside_035_065": false,
+     "share_binom_p_lt_0_05": false,
+     "fe_contrast_outside_2_5_97_5_band": false,
+     "same_sign_after_leave_one_domain_out": false
+    },
+    "pattern": false,
+    "strict_reading_extra_item_share_and_fe_same_direction": true,
+    "pattern_strict_reading": false,
+    "result": "no difference"
+   },
+   "urbanity": {
+    "covariate": "urbanity",
+    "n_designs_ge4_cohorts": 40,
+    "n_designs_any": 76,
+    "n_designs_both_halves": 40,
+    "n_cohorts_high": 151,
+    "n_cohorts_low": 151,
+    "minimum": {
+     "required": "25 designs with at least 4 eligible mapped cohorts (2 per half)",
+     "available": 40,
+     "met": true,
+     "gap": 0
+    },
+    "primary": {
+     "n_designs": 40,
+     "share_positive": 0.5,
+     "n_positive": 20,
+     "n_negative": 20,
+     "binom_p": 1.0,
+     "outside_035_065": false,
+     "fe_contrast": -0.1461924259400988,
+     "null_mean": 0.008617863780735086,
+     "band_2_5": -0.39961035573276654,
+     "band_97_5": 0.41675129351544393,
+     "outside_band": false,
+     "p_two_sided": 0.47226386806596704
+    },
+    "share_null_band_2_5_97_5": [
+     0.35,
+     0.65
+    ],
+    "median_D": -0.010932997410483994,
+    "by_domain_group_descriptive": {
+     "crime": {
+      "n_designs": 9,
+      "share_positive": 0.5555555555555556,
+      "binom_p": 1.0,
+      "fe_contrast": -0.38297439114905835,
+      "band_2_5": -0.840021183959906,
+      "band_97_5": 0.850528309167933,
+      "outside_band": false
+     },
+     "environment": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "health": {
+      "n_designs": 13,
+      "share_positive": 0.5384615384615384,
+      "binom_p": 1.0,
+      "fe_contrast": 0.21873238138156523,
+      "band_2_5": -0.8874620297936159,
+      "band_97_5": 0.9635499294919297,
+      "outside_band": false
+     },
+     "labor": {
+      "n_designs": 5,
+      "note": "fewer than 8 designs, not shown"
+     },
+     "other": {
+      "n_designs": 9,
+      "share_positive": 0.4444444444444444,
+      "binom_p": 1.0,
+      "fe_contrast": -0.16482288202083922,
+      "band_2_5": -0.6581688277157348,
+      "band_97_5": 0.6615715967046059,
+      "outside_band": false
+     },
+     "public_finance": {
+      "n_designs": 2,
+      "note": "fewer than 8 designs, not shown"
+     }
+    },
+    "guard_one_vote_per_law": {
+     "n_laws": 32,
+     "share_positive": 0.59375,
+     "binom_p": 0.37708558747544885,
+     "fe_contrast": -0.06047337909613466,
+     "band_2_5": -0.4441017516253181,
+     "band_97_5": 0.44007909448518623,
+     "outside_band": false
+    },
+    "guard_leave_one_law_out": {
+     "n": 32,
+     "fe_sign_kept": true,
+     "share_side_kept": false,
+     "n_still_outside_band": 0,
+     "fe_min": -0.25742069267108886,
+     "fe_max": -0.0541161688043127
+    },
+    "guard_leave_one_domain_out": [
+     {
+      "left_out": "crime",
+      "n_designs": 31,
+      "share_positive": 0.4838709677419355,
+      "fe_contrast": -0.09641069601202656,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "environment",
+      "n_designs": 38,
+      "share_positive": 0.47368421052631576,
+      "fe_contrast": -0.18815008477247222,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "health",
+      "n_designs": 27,
+      "share_positive": 0.48148148148148145,
+      "fe_contrast": -0.2973829919247073,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "labor",
+      "n_designs": 35,
+      "share_positive": 0.5142857142857142,
+      "fe_contrast": -0.1236713370618504,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "other",
+      "n_designs": 31,
+      "share_positive": 0.5161290322580645,
+      "fe_contrast": -0.13970195871813684,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     },
+     {
+      "left_out": "public_finance",
+      "n_designs": 38,
+      "share_positive": 0.5263157894736842,
+      "fe_contrast": -0.0627368360975544,
+      "outside_band": false,
+      "fe_sign_kept": true,
+      "share_side_kept": false
+     }
+    ],
+    "pattern_rule": {
+     "share_outside_035_065": false,
+     "share_binom_p_lt_0_05": false,
+     "fe_contrast_outside_2_5_97_5_band": false,
+     "same_sign_after_leave_one_domain_out": false
+    },
+    "pattern": false,
+    "strict_reading_extra_item_share_and_fe_same_direction": false,
+    "pattern_strict_reading": false,
+    "result": "no difference"
+   }
+  }
+ },
+ "not_claimed": "party and ideology correlate with state wealth (T232): even a clear gap is not a wealth effect; no similar-state reference is run here",
+ "result": "no difference",
+ "plain": [
+  "Result: no difference.",
+  "income: 18/35 designs higher in richer/more urban half (share 0.51, exact p 1.000); pooled contrast 0.272 noise units vs shuffle band [-0.691, 0.701]; result no difference",
+  "urbanity: 20/35 designs higher in richer/more urban half (share 0.57, exact p 0.500); pooled contrast -0.124 noise units vs shuffle band [-0.704, 0.685]; result no difference. n = 35 designs (income), 35 (urbanity)."
+ ]
+}

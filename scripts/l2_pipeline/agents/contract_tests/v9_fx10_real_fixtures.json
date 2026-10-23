@@ -1,0 +1,37 @@
+[
+  {
+    "design_id": "run7_abortion_informed_consent",
+    "role": "B",
+    "submission_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/work/run7_abortion_informed_consent/v2/agents/B/attempts/v9_20261009/submission.json",
+    "sha256": "8f61cbc9a894e0a256e80589283b039b0a21d53339ba538e1c17b180348b23e1",
+    "job_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/S1/run7_abortion_informed_consent/B.v9_20261009.md"
+  },
+  {
+    "design_id": "run7_minor_abortion_parental_involvement",
+    "role": "A",
+    "submission_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/work/run7_minor_abortion_parental_involvement/v2/agents/A/attempts/v9_20261009/submission.json",
+    "sha256": "71b8d6e7b1ac6710ffc4f2feabcb959899fe94e412376cb96c66928123463a97",
+    "job_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/S1/run7_minor_abortion_parental_involvement/A.v9_20261009.md"
+  },
+  {
+    "design_id": "run7_minor_abortion_parental_involvement",
+    "role": "B",
+    "submission_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/work/run7_minor_abortion_parental_involvement/v2/agents/B/attempts/v9_20261009/submission.json",
+    "sha256": "28e89690977b4635a622da214c9026e56cba85a10c80795d4aa2e18ec16445b0",
+    "job_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/S1/run7_minor_abortion_parental_involvement/B.v9_20261009.md"
+  },
+  {
+    "design_id": "run7_pharmacy_ec_access",
+    "role": "A",
+    "submission_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/work/run7_pharmacy_ec_access/v2/agents/A/attempts/v9_20261009/submission.json",
+    "sha256": "af27ac601a720c28e0abd5576b8c33266c439b6cdb8537ead565eba67a37a9dc",
+    "job_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/S1/run7_pharmacy_ec_access/A.v9_20261009.md"
+  },
+  {
+    "design_id": "run7_pharmacy_ec_access",
+    "role": "B",
+    "submission_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/work/run7_pharmacy_ec_access/v2/agents/B/attempts/v9_20261009/submission.json",
+    "sha256": "daa3f0ba7ef166781eb5ef2b3f93400ba0637cf388795d1dce65086e2f97075a",
+    "job_path": "data/l2_pipeline/runs/run7/v62_official_history/jobs/v9_20261009/S1/run7_pharmacy_ec_access/B.v9_20261009.md"
+  }
+]

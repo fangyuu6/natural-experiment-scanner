@@ -1,0 +1,546 @@
+{
+  "policy_id": "nurse_licensure_compact",
+  "name_en": "Enhanced Nurse Licensure Compact (eNLC)",
+  "name_zh": "护士执照协定（增强版）",
+  "definition_en": "Year the state enacted (signed into law) legislation joining the enhanced Nurse Licensure Compact (eNLC), the NCSBN multistate RN/LPN licence; original-NLC states use the year of their eNLC enabling law.",
+  "definition_zh": "州长签署加入增强版护士执照协定（eNLC，护士凭一张多州执照在成员州执业）的立法年份；原NLC成员州取其eNLC授权立法年份。",
+  "year_basis": "Year the eNLC-enabling bill was signed (enacted); implementation dates ignored; as of 2025-12-31.",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://www.nursecompact.com/",
+    "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact",
+    "https://www.ncsbn.org/news/connecticut-enacts-nurse-licensure-compact",
+    "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html",
+    "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/",
+    "https://yearinreview2018.ncsbn.org/stories/03-2018"
+  ],
+  "states": {
+    "AL": {
+      "year": 2019,
+      "date": null,
+      "sources": [
+        "https://www.wbrc.com/2019/06/06/new-ala-law-lets-nurses-work-across-state-lines-with-compact-license/",
+        "https://www.alreporter.com/2019/04/26/legislature-passes-bill-to-allow-alabama-nurses-to-obtain-multi-state-licenses/",
+        "https://www.abn.alabama.gov/wp-content/uploads/2024/02/Article7.pdf"
+      ],
+      "confidence": "high",
+      "note": "SB 38 (Act 2019-102); ceremonial signing about 6 Jun 2019; exact signing date not confirmed."
+    },
+    "AK": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "AZ": {
+      "year": 2016,
+      "date": "2016-05-17",
+      "sources": [
+        "https://www.azleg.gov/legtext/52leg/2R/laws/0294.htm",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "HB 2362 (Ch. 294) repealed the prior NLC; AZ was an original NLC member."
+    },
+    "AR": {
+      "year": 2017,
+      "date": "2017-03-13",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2017/03/22/942970/0/en/Arkansas-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://healthy.arkansas.gov/boards-commissions/boards/nursing-arkansas-state-board/compact/",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "Replaced original NLC (AR was an original member); Acts 2017 No. 454."
+    },
+    "CA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "CO": {
+      "year": 2018,
+      "date": "2018-01-18",
+      "sources": [
+        "https://leg.colorado.gov/bills/SB18-027",
+        "https://dpo.colorado.gov/Nursing/Compact"
+      ],
+      "confidence": "high",
+      "note": "SB18-027 repealed the prior NLC (CO was an original member)."
+    },
+    "CT": {
+      "year": 2024,
+      "date": "2024-05-30",
+      "sources": [
+        "https://www.ncsbn.org/news/connecticut-enacts-nurse-licensure-compact",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "medium",
+      "note": "42nd jurisdiction to enact; first-time NLC member; implemented 2025-10-01."
+    },
+    "DE": {
+      "year": 2017,
+      "date": "2017-06-30",
+      "sources": [
+        "https://legis.delaware.gov/BillDetail?LegislationId=25612",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "SB 59 replaced the original NLC (DE was an original member)."
+    },
+    "DC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "DC is not an eNLC member as of 2025-12-31."
+    },
+    "FL": {
+      "year": 2016,
+      "date": "2016-03-25",
+      "sources": [
+        "https://www.flsenate.gov/Session/Bill/2016/1061",
+        "https://floridasnursing.gov/nurse-licensure-compact-bill-passed-fl-legislature/",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "HB 1061 (Ch. 2016-139); SB 1316 was a companion laid on table."
+    },
+    "GA": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.globenewswire.com/en/news-release/2017/05/11/983132/0/en/Georgia-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://www.jdsupra.com/legalnews/georgia-enacts-nurse-licensure-compact-61076/"
+      ],
+      "confidence": "high",
+      "note": "SB 109 signed 8 or 9 May 2017 (sources differ by one day)."
+    },
+    "HI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "ID": {
+      "year": 2016,
+      "date": "2016-03-16",
+      "sources": [
+        "https://legislature.idaho.gov/sessioninfo/2016/legislation/S1251/",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "SB 1251 (Ch. 56); ID left the original NLC when the eNLC took effect 2018-01-19."
+    },
+    "IL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "IN": {
+      "year": 2019,
+      "date": "2019-04-29",
+      "sources": [
+        "https://legiscan.com/IN/bill/HB1344/2019",
+        "https://www.wave3.com/2019/07/01/indiana-now-eligible-join-others-interstate-nursing-license-compact/",
+        "https://www.prnewswire.com/news-releases/indiana-implements-the-nurse-licensure-compact-301084656.html"
+      ],
+      "confidence": "high",
+      "note": "HEA 1344 (PL 135); ceremonial signing 2019-06-27; implemented 2020-07-01."
+    },
+    "IA": {
+      "year": 2017,
+      "date": "2017-04-21",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2017/05/01/975100/0/en/Iowa-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "KS": {
+      "year": 2018,
+      "date": "2018-04-10",
+      "sources": [
+        "https://www.globenewswire.com/en/news-release/2018/04/12/1469555/0/en/Kansas-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://yearinreview2018.ncsbn.org/stories/03-2018"
+      ],
+      "confidence": "high",
+      "note": "30th eNLC member; implementation set for 2019."
+    },
+    "KY": {
+      "year": 2017,
+      "date": "2017-03-21",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2017/03/27/945530/0/en/Kentucky-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "LA": {
+      "year": 2018,
+      "date": "2018-05-31",
+      "sources": [
+        "https://www.lsbn.state.la.us/About/NewsEvents/tabid/114/articleType/ArticleView/articleId/244/Louisiana-Enacts-Enhanced-Nurse-Licensure-Compact.aspx",
+        "https://yearinreview2018.ncsbn.org/stories/03-2018"
+      ],
+      "confidence": "high",
+      "note": "SB 202 (31st state); LA never joined the original NLC; implemented 2019-07-01."
+    },
+    "ME": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://www.mainelegislature.org/legis/statutes/32/title32sec2171.html",
+        "https://legislature.maine.gov/legis/bills/bills_128th/billtexts/SP048801.asp",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "PL 2017 c.258 Pt. A (LD 1410); signing date not confirmed."
+    },
+    "MD": {
+      "year": 2017,
+      "date": "2017-05-25",
+      "sources": [
+        "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0041?ys=2017RS",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "SB 41 (Ch. 669) revised the compact; MD was an original NLC member."
+    },
+    "MA": {
+      "year": 2024,
+      "date": "2024-11-20",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact",
+        "https://www.mass.gov/doc/evaluation-of-the-commonwealths-entry-into-the-nurse-licensure-compact/download"
+      ],
+      "confidence": "medium",
+      "note": "Date per NCSBN (43rd jurisdiction); bill not re-opened. Implementation tentatively May 2027."
+    },
+    "MI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "MN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "MS": {
+      "year": 2017,
+      "date": "2017-03-20",
+      "sources": [
+        "https://billstatus.ls.state.ms.us/documents/2017/html/HB/0400-0499/HB0488SG.htm",
+        "https://msbn.ms.gov/sites/default/files/documents/ENHANCED%20NURSE%20LICENSURE%20COMPACT.pdf",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "HB 488 (Laws 2017 ch. 359); original NLC implemented 2001."
+    },
+    "MO": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/",
+        "https://dci.mo.gov/node/1426",
+        "https://www.bon.texas.gov/pdfs/board_meetings_pdfs/2016/July/6-1.pdf"
+      ],
+      "confidence": "high",
+      "note": "Original NLC state; eNLC bill was on governor's desk Jul 2016; signing date and bill not confirmed."
+    },
+    "MT": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://mca.legmt.gov/bills/mca/title_0370/chapter_0080/part_0050/section_0010/0370-0080-0050-0010.html",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "eNLC enabling law Ch. 445, L. 2017; MT had joined the original NLC in Oct 2015."
+    },
+    "NE": {
+      "year": 2017,
+      "date": "2017-04-25",
+      "sources": [
+        "https://www.globenewswire.com/en/news-release/2017/05/04/979261/0/en/Nebraska-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NV": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "NH": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://gc.nh.gov/rsa/html/XXX/326-B/326-B-46.htm",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "2016 ch. 238 (RSA 326-B:46); NH was an original NLC member (2005)."
+    },
+    "NJ": {
+      "year": 2019,
+      "date": "2019-07-19",
+      "sources": [
+        "https://pub.njleg.gov/bills/2018/AL19/172_.HTM",
+        "https://www.njspotlightnews.org/2019/07/19-07-25-nj-signs-multistate-nursing-licensing-compact/"
+      ],
+      "confidence": "high",
+      "note": "P.L. 2019 c.172 (S954/A1597); full implementation 2021-11-15."
+    },
+    "NM": {
+      "year": 2018,
+      "date": "2018-01-18",
+      "sources": [
+        "https://www.nmlegis.gov/Legislation/Legislation?chamber=S&legType=B&legNo=1&year=18",
+        "https://www.nmlegis.gov/sessions/18%20Regular/firs/SB0001.PDF"
+      ],
+      "confidence": "high",
+      "note": "SB 1 (Ch. 1) replaced the original NLC (NM was an original member)."
+    },
+    "NY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "NC": {
+      "year": 2017,
+      "date": "2017-07-20",
+      "sources": [
+        "https://campaignforaction.org/one-state-away-from-ratifying-enhanced-nurse-licensure-compact/",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "S.L. 2017-140 (HB 550); 26th state triggered eNLC; replaced original NLC."
+    },
+    "ND": {
+      "year": 2017,
+      "date": null,
+      "sources": [
+        "https://ndlegis.gov/assembly/65-2017/regular/bill-overview/bo1097.html",
+        "https://www.library.nd.gov/statedocs/NursingBoard/Annual/2017-2018.pdf"
+      ],
+      "confidence": "high",
+      "note": "HB 1097; filed with Secretary of State 2017-04-04."
+    },
+    "OH": {
+      "year": 2021,
+      "date": "2021-07-01",
+      "sources": [
+        "https://www.ncsbn.org/news/ohio-enacts-nurse-licensure-compact-nlc",
+        "https://natlawreview.com/article/interstate-license-compacts-arrive-ohio-physicians-nurses-and-audiologyspeech"
+      ],
+      "confidence": "medium",
+      "note": "Per NCSBN: signed 2021-07-01, 38th jurisdiction; implementation 2023-01-01."
+    },
+    "OK": {
+      "year": 2016,
+      "date": "2016-04-26",
+      "sources": [
+        "https://oknursingtimes.com/031215/oklahoma-enacts-enhanced-nurse-licensure-compact-nlc/",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "HB 2482."
+    },
+    "OR": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.nursecompact.com/",
+        "https://en.wikipedia.org/wiki/Nurse_Licensure_Compact"
+      ],
+      "confidence": "high",
+      "note": "Not an eNLC member as of 2025-12-31 (43 jurisdictions = 41 states + Guam + USVI)."
+    },
+    "PA": {
+      "year": 2021,
+      "date": "2021-07-01",
+      "sources": [
+        "https://www.ncsbn.org/news/pennsylvania-enacts-nurse-licensure-compact-nlc",
+        "https://www.porh.psu.edu/pennsylvania-nurse-licensure-compact-signed-into-law/"
+      ],
+      "confidence": "high",
+      "note": "37th jurisdiction; not previously a member; fully implemented 2025-07-07."
+    },
+    "RI": {
+      "year": 2023,
+      "date": "2023-06-24",
+      "sources": [
+        "https://www.ncsbn.org/news/rhode-island-enacts-nurse-licensure-compact-nlc",
+        "https://www.leaderstat.com/knowledge-base/nurse-licensure-compact-recap-which-states-joined-the-compact-in-2023",
+        "https://governor.ri.gov/press-releases/governor-mckee-announces-rhode-island-has-joined-compact-interstate-nurse-licensing"
+      ],
+      "confidence": "high",
+      "note": "41st jurisdiction to enact."
+    },
+    "SC": {
+      "year": 2017,
+      "date": "2017-05-10",
+      "sources": [
+        "https://www.scstatehouse.gov/sess122_2017-2018/bills/3349.htm",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "H 3349 (Act 41); SC enacted the original NLC in 2005 (Act 87)."
+    },
+    "SD": {
+      "year": 2016,
+      "date": null,
+      "sources": [
+        "https://mylrc.sdlegislature.gov/api/Documents/40810.html?Year=2016",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/",
+        "https://www.library.nd.gov/statedocs/NursingBoard/DakotaNurse/201723.pdf"
+      ],
+      "confidence": "high",
+      "note": "SB 29 (SL 2016 ch. 194); reported first state to enact the eNLC; original NLC member."
+    },
+    "TN": {
+      "year": 2016,
+      "date": "2016-03-10",
+      "sources": [
+        "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=HB1678&GA=109",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "HB 1678/SB 1725, Public Chapter 591."
+    },
+    "TX": {
+      "year": 2017,
+      "date": "2017-06-09",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2017/06/13/1018379/0/en/Texas-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "Original NLC signed 1999-06-19; eNLC bill signed 2017-06-09."
+    },
+    "UT": {
+      "year": 2017,
+      "date": "2017-03-15",
+      "sources": [
+        "https://le.utah.gov/~2017/bills/static/SB0048.html",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": "SB 48 (Ch. 26) supersedes the original NLC (Utah Code 58-31c)."
+    },
+    "VT": {
+      "year": 2021,
+      "date": "2021-06-07",
+      "sources": [
+        "https://www.ncsbn.org/news/vermont-enacts-nurse-licensure-compact-nlc",
+        "https://sos.vermont.gov/nursing/statutes-rules-resources/nurse-licensure-compact"
+      ],
+      "confidence": "high",
+      "note": "Act 64; 36th jurisdiction to enact."
+    },
+    "VA": {
+      "year": 2016,
+      "date": "2016-03-01",
+      "sources": [
+        "https://www.richmondsunlight.com/bill/2016/sb265/",
+        "https://law.lis.virginia.gov/compacts/nurse-licensure-compact/",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "SB 265 (Ch. 108) replaced the original NLC."
+    },
+    "WA": {
+      "year": 2023,
+      "date": "2023-04-21",
+      "sources": [
+        "https://www.ncsbn.org/news/washington-enacts-nurse-licensure-compact-nlc",
+        "https://www.leaderstat.com/knowledge-base/nurse-licensure-compact-recap-which-states-joined-the-compact-in-2023"
+      ],
+      "confidence": "high",
+      "note": "SB 5499; 40th jurisdiction to enact."
+    },
+    "WV": {
+      "year": 2017,
+      "date": "2017-04-26",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2017/05/02/975780/0/en/West-Virginia-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html",
+        "https://www.globenewswire.com/news-release/2017/07/24/1056226/0/en/Enhanced-Nurse-Licensure-Compact-eNLC-Enactment-A-Modern-Nurse-Licensure-Solution-for-the-21st-Century.html"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "WI": {
+      "year": 2017,
+      "date": "2017-12-11",
+      "sources": [
+        "https://docs.legis.wisconsin.gov/2017/related/lcactmemo/act135",
+        "https://www.wisconsinnurses.org/governor-walker-sign-enhanced-nurse-licensure-compact-bill-december-11-2017/",
+        "https://www.globenewswire.com/news-release/2017/12/21/1268813/0/en/Wisconsin-Enacts-Enhanced-Nurse-Licensure-Compact-eNLC.html"
+      ],
+      "confidence": "high",
+      "note": "2017 Act 135 (SB 417) replaced the original NLC ratified in 1999; 27th state."
+    },
+    "WY": {
+      "year": 2016,
+      "date": "2016-03-01",
+      "sources": [
+        "https://wyoleg.gov/2016/Enroll/HB0055.pdf",
+        "https://wyoleg.gov/2016/Digest/HB0055.pdf",
+        "https://campaignforaction.org/good-health-knows-no-boundaries-or-shouldnt/"
+      ],
+      "confidence": "high",
+      "note": "HB 0055 (Enrolled Act 2)."
+    }
+  },
+  "researched_by": "agent",
+  "method_notes": "Enactment years/dates from legislature bill pages, NCSBN and state-board releases, cross-checked with NCSBN ordinal counts (26th=NC Jul 2017 ... 43rd=MA). Pages read via fetch only; no downloads, no logins.",
+  "n_with_law": 41,
+  "year_min": 2016,
+  "year_max": 2024
+}

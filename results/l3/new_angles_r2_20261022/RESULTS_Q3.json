@@ -1,0 +1,252 @@
+{
+ "question": "Q3 same law, different states",
+ "plan_sha256": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+ "seed": 20261025,
+ "n_included": 64,
+ "n_by_source": {
+  "A_se": 38,
+  "B_placebo": 26
+ },
+ "n_expected": {
+  "A": 48,
+  "B": 29
+ },
+ "excluded": {
+  "fewer_than_3_eligible_cohorts": 13
+ },
+ "calibration": {
+  "pooled_loo_rate_p_lt_10": 0.09916705956309917,
+  "n_draws": 25452,
+  "exceeds_15pct": false,
+  "design_max": 0.09975961538461539
+ },
+ "reference_rate": 0.1,
+ "minimum": {
+  "total_designs": 64,
+  "required": 40,
+  "met": true,
+  "gap": 0,
+  "source_A_n": 38,
+  "source_A_below_25_reported_separately": false
+ },
+ "descriptive": {
+  "pooled": {
+   "n": 64,
+   "k": 40,
+   "share": 0.625
+  },
+  "A": {
+   "n": 38,
+   "k": 32,
+   "share": 0.8421052631578947
+  },
+  "B": {
+   "n": 26,
+   "k": 8,
+   "share": 0.3076923076923077
+  },
+  "A_independence_se": {
+   "n": 38,
+   "k": 36,
+   "share": 0.9473684210526315
+  },
+  "B_ddof0": {
+   "n": 26,
+   "k": 10,
+   "share": 0.38461538461538464
+  },
+  "by_domain": {
+   "crime": {
+    "n": 11,
+    "k": 10,
+    "share": 0.9090909090909091
+   },
+   "health": {
+    "n": 17,
+    "k": 6,
+    "share": 0.35294117647058826
+   },
+   "labor": {
+    "n": 16,
+    "k": 13,
+    "share": 0.8125
+   },
+   "other": {
+    "n": 10,
+    "k": 5,
+    "share": 0.5
+   }
+  }
+ },
+ "pattern_rule_check": {
+  "n": 64,
+  "k": 40,
+  "share": 0.625,
+  "binom_p_one_sided": 2.1377643235907576e-24,
+  "share_ge_20pct": true,
+  "binom_p_lt_01": true,
+  "share_ge_15pct_in_each_source_with_ge_15": true,
+  "by_source": {
+   "A_se": {
+    "n": 38,
+    "k": 32,
+    "share": 0.8421052631578947
+   },
+   "B_placebo": {
+    "n": 26,
+    "k": 8,
+    "share": 0.3076923076923077
+   }
+  },
+  "pattern": true
+ },
+ "sensitivities": {
+  "independence_se_for_A": {
+   "n": 64,
+   "k": 44,
+   "share": 0.6875,
+   "binom_p_one_sided": 2.508738622033422e-29,
+   "share_ge_20pct": true,
+   "binom_p_lt_01": true,
+   "share_ge_15pct_in_each_source_with_ge_15": true,
+   "by_source": {
+    "A_se": {
+     "n": 38,
+     "k": 36,
+     "share": 0.9473684210526315
+    },
+    "B_placebo": {
+     "n": 26,
+     "k": 8,
+     "share": 0.3076923076923077
+    }
+   },
+   "pattern": true
+  },
+  "variance_ddof0_for_B": {
+   "n": 64,
+   "k": 42,
+   "share": 0.65625,
+   "binom_p_one_sided": 8.38726986174073e-27,
+   "share_ge_20pct": true,
+   "binom_p_lt_01": true,
+   "share_ge_15pct_in_each_source_with_ge_15": true,
+   "by_source": {
+    "A_se": {
+     "n": 38,
+     "k": 32,
+     "share": 0.8421052631578947
+    },
+    "B_placebo": {
+     "n": 26,
+     "k": 10,
+     "share": 0.38461538461538464
+    }
+   },
+   "pattern": true
+  },
+  "reference_rate_10pct_fixed": {
+   "n": 64,
+   "k": 40,
+   "share": 0.625,
+   "binom_p_one_sided": 2.1377643235907576e-24,
+   "share_ge_20pct": true,
+   "binom_p_lt_01": true,
+   "share_ge_15pct_in_each_source_with_ge_15": true,
+   "by_source": {
+    "A_se": {
+     "n": 38,
+     "k": 32,
+     "share": 0.8421052631578947
+    },
+    "B_placebo": {
+     "n": 26,
+     "k": 8,
+     "share": 0.3076923076923077
+    }
+   },
+   "pattern": true
+  }
+ },
+ "guards": {
+  "one_vote_per_law": {
+   "n": 49,
+   "k": 32,
+   "share": 0.6530612244897959,
+   "binom_p_one_sided": 1.1493416701430548e-20,
+   "share_ge_20pct": true,
+   "binom_p_lt_01": true,
+   "share_ge_15pct_in_each_source_with_ge_15": true,
+   "by_source": {
+    "A_se": {
+     "n": 35,
+     "k": 26,
+     "share": 0.7428571428571429
+    },
+    "B_placebo": {
+     "n": 14,
+     "k": 6,
+     "share": 0.42857142857142855
+    }
+   },
+   "pattern": true
+  },
+  "leave_one_law_out": {
+   "min_share": 0.6129032258064516,
+   "max_binom_p": 9.431696868260001e-23,
+   "n_drops": 49,
+   "all_patterns_hold": true,
+   "drops_failing": []
+  },
+  "leave_one_domain_out": {
+   "min_share": 0.5625,
+   "max_binom_p": 2.6618319880450683e-15,
+   "n_drops": 6,
+   "all_patterns_hold": true,
+   "drops_failing": []
+  },
+  "one_vote_ties_counted_as_no_hit": true
+ },
+ "PATTERN": true,
+ "verdict": "pattern",
+ "plain": {
+  "line1": "Result: pattern.",
+  "line2": "Share of laws with more cohort-to-cohort spread than expected from noise (p < 0.10; 10% expected): pooled 62% (40/64), one-sided exact binomial p 2.14e-24.",
+  "line3": "By source: A_se 84% (n=38), B_placebo 31% (n=26); n = 64."
+ },
+ "inputs_sha256": {
+  "plan": "a503c461f99954215ced45f789b1c74def7ceab635b5a5c9b33dfcd0f7d5f661",
+  "live_json": "f5941f590049d1484c81ce43332a33f2436a8d36e191ff08c5f6d408e95586e8",
+  "design_roster.csv": "75471faa2ee0eddd98c780dce56bccb378558d8b144397d77554786975a2f6d6",
+  "group_time_export.csv": "b55a5e0da09ccf79e4bf9c55ccd5bf8c99d77bcb6ad0cd16d87fe6e45f580f1c",
+  "policy_keys.csv": "6fdd596d1f2f728497e59213f80571b32018c66dddca0d66f2ae64615a80d15e",
+  "autopilot_result_files": {
+   "b1010_handheld_ban_all": "d64371eaf402a279252c5c50eb3d7fc986c43243e83216883a59db542fd2e2a2",
+   "b1010_interlock_all_offender": "f396909b5caf5fece4372f6a33b4396d4fd0f0279adf0e6ddb9cf67fbab48464",
+   "b1010_permitless_carry": "f790728b5b931c90cf5b5cb098a255bc1378a58a0e3d05e7c44a1be9c2dbb30a",
+   "b1010_primary_seatbelt": "22e5c903342ed782c28e55c66d0195b0b82414404e9db724798234027ddd008a",
+   "b1010b_bicycle_passing_3ft": "e7f0524124a0044910f4f9a58aca7f540f3b80b86c3b2232c21083fd241ef638",
+   "b1010b_child_restraint_booster_age5": "95a04fad5808b3cffeef79d0634564bb785469c8b6f3ff2bee8c194dc9b407e7",
+   "b1010b_pdmp_mandatory_query": "be1e8a8df0dbe59302ca7aa918122237cb7fa16da587b7d2e58b21436cbf2550",
+   "b1010b_zero_tolerance_under21": "75b55716df2b172d6e96888fca2435e34b1fe474a5a3fdadc82de3713ac7c84f",
+   "b1011c_electricity_retail_choice": "352e11c9bfab1bff03d438c0433bfa9f9d1b95d1fd4d68b7c5f366681a3bdf68",
+   "b1011c_rps_binding_standard": "7d0cec0c6adf236abc8a043428946030e45fcb3ca553c34491894f65fd3e7f61",
+   "b1011cfl_click_through_affiliate_nexus_sales_tax": "9439c66df1297a0bb2a4bf6724690613ae16bbcbd1d9073df39f6c9f800f8e20",
+   "b1011cfl_state_constitutional_tax_expenditure_limit": "44f70f34e2676a985f2caff43c1837df5df3dec154bebcad7a508d75ab77cc8f",
+   "b1011cfl_ui_alternative_base_period": "2cd0f419aa3669519f01647f198dcf3b6f12059dd0c1dd44c61b09ce4147f77c",
+   "b1011tl_noncompete_lowwage_ban": "06b9f6a70e627e467ab6985c16d6c956317bb12c66d8c1dddd9b03f6407eb26c",
+   "b1012cr_medical_cannabis_law": "5d7679028912a9da0cf0d44770b152cfa25109db216d1da792b0709f41a93b7a",
+   "b1015q3_adult_use_cannabis_legalization_adult_binge_drinking": "49bfcbe622aa2f96d3dea18f04b7d945b52251800decdbd766a223562dd5d89a",
+   "b1015q3_adult_use_cannabis_legalization_traffic_deaths": "15d7949f29ad16240fa307e4ae39ece5ae0d0391c4f944a292b74b9c8a9914e5",
+   "b1015q3_medical_cannabis_law_adult_binge_drinking": "d979f190c055e80e7584734ae56f8ab448e405017413e1aaa83d2592f23d39a1",
+   "b1015q3_pdmp_mandatory_query_opioid_overdose_deaths": "774f8bf4c7dc7637d7fb584a84047ff34515b6096daf760625c3c3a2631db364",
+   "b1016q4_adult_use_cannabis_legalization_property_crime": "75a6670f5360761afcf6b7fcada97a999ae2c6b5a916b468080b887df27a3049",
+   "b1016q4_handheld_ban_all_motor_vehicle_occupant_fatalities": "4d17c773ef09d6af41d70b578c0e207b6bbee88e7d9323f9a4fbeb361a2c78bc",
+   "b1016q4_medical_cannabis_law_drinking_driver_crash_deaths": "64abc4d4a07f2e8f5928929fda514953c50957b81eb846f569a9c526cbae58f0",
+   "b1016q4_medical_cannabis_law_property_crime": "2d354ab987e7840f0438c1a1ce4914a5ce7e77a0c53b4889a2a91a9b1148d3de",
+   "b1016q4_pdmp_mandatory_query_drug_overdose_deaths": "f488c1b7de3616f7b1ab5194a5704327f275b343d2593b91a5104d49d98ff065",
+   "b1016q4_shall_issue_carry_ucr_robbery": "ebf7bca6820ff09b4735bfbf8fdc980b7358c974f37a1bf14de422511a604cd1",
+   "b1016q4_ui_alternative_base_period_ui_weeks_compensated": "d1e002247f8f2e69eb3a62120ca049c66c5664845bcc74436c09433425689b33"
+  }
+ }
+}

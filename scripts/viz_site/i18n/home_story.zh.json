@@ -1,0 +1,16 @@
+{
+  "story.aria": "研究入口",
+  "preview.title": "自然实验扫描器",
+  "preview.stub": "研究入口",
+  "story.thesis_html": "从<span class=\"home-nb\">政策文本</span>到<span class=\"home-key\">洞见</span>",
+  "story.intro_html": "筛查<wbr>美国政策文本中的<wbr>自然实验，<wbr>重新估计<wbr>已发表的<wbr>州政策研究，<wbr>再看<wbr>跨政策的规律。",
+  "story.route": "阅读路线",
+  "story.map.sources": "各州日期与来源",
+  "story.levels.h": "研究层级",
+  "story.screen.word": "筛查",
+  "story.screen.line_html": "<span class=\"nx-seg\">{texts} 份不重复政策文本</span> <span class=\"nx-screen-arrow\" aria-hidden=\"true\">→</span> <span class=\"nx-candidates\">{candidates} 条候选记录</span>",
+  "story.estimate.word": "估计",
+  "story.estimate.line_html": "<span class=\"nx-seg\">已重新估计 {papers} 篇论文</span>，<span class=\"nx-seg\">{matched} 篇差距不超过 10%</span>",
+  "story.explore.word": "探索",
+  "story.explore.line_html": "<span class=\"nx-seg\">{questions} 个问题 ·</span> <span class=\"nx-seg\">{finished} 个已完成</span>"
+}

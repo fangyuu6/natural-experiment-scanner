@@ -1,0 +1,19 @@
+{
+  "researchFlow.heading": "从政策记录到研究洞见",
+  "researchFlow.aria": "政策筛查、研究与跨政策评估",
+  "researchFlow.description": "流程示意，不代表定量数据：广泛的政策记录汇入L1筛查，形成候选。L2核验政策实施、构建结果面板、在不看结果变量的情况下检查识别支持条件、确定主规格与敏感性分析、冻结盲预测，执行双重差分DiD估计与诊断。效应估计是独立产出。L1、L2（包括停止的候选）和效应估计的评估信息单向汇入L3，寻找跨政策洞见与规律。",
+  "researchFlow.sources": "政策记录",
+  "researchFlow.l1": "筛查",
+  "researchFlow.candidates": "候选政策",
+  "researchFlow.l2": "研究",
+  "researchFlow.effects": "效应估计",
+  "researchFlow.l3": "评估",
+  "researchFlow.patterns": "洞见与规律",
+  "researchFlow.across": "跨政策比较",
+  "researchFlow.policy": "政策核验",
+  "researchFlow.data": "面板与支持条件",
+  "researchFlow.freeze": "规格与预测冻结",
+  "researchFlow.estimate": "DiD 估计",
+  "researchFlow.pause": "暂停动画",
+  "researchFlow.resume": "继续动画"
+}

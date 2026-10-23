@@ -1,0 +1,19 @@
+{
+  "researchFlow.heading": "From policy records to research insights",
+  "researchFlow.aria": "Policy screening, research, and cross-policy evaluation",
+  "researchFlow.description": "A schematic flow, with no quantitative data: a broad field of policy records converges into L1 screening and emerges as candidates. L2 verifies policy implementation, assembles outcome panels, checks identification support without using outcomes, specifies primary and sensitivity analyses, freezes blind predictions, and runs DiD estimation and diagnostics. Effect estimates are a separate output. One-way evidence streams from L1, L2 including stopped candidates, and effect estimates converge in L3 evaluation to find insights and patterns across policies.",
+  "researchFlow.sources": "Policy records",
+  "researchFlow.l1": "Screen",
+  "researchFlow.candidates": "Candidates",
+  "researchFlow.l2": "Research",
+  "researchFlow.effects": "Effect estimates",
+  "researchFlow.l3": "Evaluate",
+  "researchFlow.patterns": "Insights & patterns",
+  "researchFlow.across": "Across policies",
+  "researchFlow.policy": "Verify policy",
+  "researchFlow.data": "Panels & support",
+  "researchFlow.freeze": "Specify & freeze",
+  "researchFlow.estimate": "Estimate DiD",
+  "researchFlow.pause": "Pause motion",
+  "researchFlow.resume": "Resume motion"
+}

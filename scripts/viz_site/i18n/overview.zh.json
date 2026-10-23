@@ -1,0 +1,21 @@
+{
+  "page.title": "筛选漏斗与政策领域 · 自然实验扫描器",
+  "page.description": "政策文本的两个视图：筛选漏斗，以及按州和年份查看各政策领域数据库覆盖的视图。",
+  "intro.h": "筛选漏斗与政策领域",
+  "intro.p_html": "漏斗将政策文本筛为候选清单。政策领域视图显示各辖区在抽样州法案数据库中的首条标注记录。",
+  "scope.label": "范围。",
+  "scope.text": "美国联邦立法与法规、州法案及行政令。有日期的州法案跨越 {y0}–{y1} 年。",
+  "funnel.h": "筛选漏斗",
+  "funnel.desc": "五道关卡将政策文本筛为候选清单。剔除原因分为信息缺失和未通过规则。",
+  "funnel.stat1": "政策文本 → 候选清单（占全部 {pct}）",
+  "funnel.go": "打开筛选漏斗 →",
+  "adoption.h": "政策领域",
+  "adoption.desc": "按政策领域查看数据库覆盖。州法案抽样数据库中首次带该标签的记录。",
+  "adoption.go": "打开政策领域视图 →",
+  "prov.generated": "数据生成日期：漏斗 {funnel}，覆盖 {coverage}，政策领域 {adoption}。来源：政策数据库。",
+  "prov.generated_same": "数据生成于 {date}。来源：政策数据库。",
+  "prov.docs": "方法说明：文档 →",
+  "noscript": "这些核心数字需要启用 JavaScript。",
+  "adoption.stat1_one": "个政策领域",
+  "adoption.stat1_other": "个政策领域"
+}

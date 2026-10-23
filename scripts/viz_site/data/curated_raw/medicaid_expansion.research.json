@@ -1,0 +1,576 @@
+{
+  "policy_id": "medicaid_expansion",
+  "name_en": "ACA Medicaid expansion",
+  "name_zh": "医疗补助扩张",
+  "definition_en": "Calendar year in which a state's ACA adult Medicaid expansion (adults up to 138% FPL) first took effect (coverage start year); null if not expanded by 2025-12-31.",
+  "definition_zh": "该州《平价医疗法案》下成人医疗补助（覆盖至联邦贫困线138%）首次实际生效的日历年；截至2025年底未扩张则为空。",
+  "year_basis": "Coverage start year of the ACA new adult group (up to 138% FPL)",
+  "as_of": "2025-12-31",
+  "summary_sources": [
+    "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+    "https://en.wikipedia.org/wiki/Medicaid_expansion",
+    "https://www.healthinsurance.org/medicaid/expansion/"
+  ],
+  "states": {
+    "AL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    },
+    "AK": {
+      "year": 2015,
+      "date": "2015-09-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/alaska/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "AZ": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/arizona/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "AR": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/arkansas/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "CA": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/california/",
+        "https://www.disabilityrightsca.org/publications/medicaid-policy-changes-in-california-who-what-when-and-why"
+      ],
+      "confidence": "high",
+      "note": "Early partial expansion pre-2014 (KFF); full ACA adult group (138% FPL) counted from 2014."
+    },
+    "CO": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/colorado/"
+      ],
+      "confidence": "high",
+      "note": "Early partial expansion pre-2014 (KFF); full ACA adult group (138% FPL) counted from 2014."
+    },
+    "CT": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/connecticut/"
+      ],
+      "confidence": "high",
+      "note": "Early partial expansion pre-2014 (KFF); full ACA adult group (138% FPL) counted from 2014."
+    },
+    "DE": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/delaware/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "DC": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/dc/",
+        "https://dhcf.dc.gov/release/facts-about-medicaid-and-affordable-care-act-district-columbia"
+      ],
+      "confidence": "medium",
+      "note": "Early expansion began 2010 (HI.org); full 138% FPL ACA adult group 2014 per KFF, used here."
+    },
+    "FL": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    },
+    "GA": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/georgia/"
+      ],
+      "confidence": "high",
+      "note": "Not expanded to 138% FPL; Pathways is partial (<=100% FPL, work requirement)."
+    },
+    "HI": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/hawaii/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "ID": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/idaho/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "IL": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/illinois/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "IN": {
+      "year": 2015,
+      "date": "2015-02-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/indiana/"
+      ],
+      "confidence": "high",
+      "note": "ACA expansion via HIP 2.0; coverage from 2015-02-01."
+    },
+    "IA": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/iowa/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "KS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    },
+    "KY": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/kentucky/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "LA": {
+      "year": 2016,
+      "date": "2016-07-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/louisiana/"
+      ],
+      "confidence": "high",
+      "note": "HI.org says 2016-06-01, KFF 2016-07-01; same year."
+    },
+    "ME": {
+      "year": 2019,
+      "date": "2019-01-10",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/maine/"
+      ],
+      "confidence": "medium",
+      "note": "Voters approved 2017; coverage began 2019-01-10, retroactive to 2018-07-02; coded 2019."
+    },
+    "MD": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/maryland/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MA": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/massachusetts/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MI": {
+      "year": 2014,
+      "date": "2014-04-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/michigan/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "MN": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/minnesota/"
+      ],
+      "confidence": "high",
+      "note": "Early partial expansion pre-2014 (KFF); full ACA adult group (138% FPL) counted from 2014."
+    },
+    "MS": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    },
+    "MO": {
+      "year": 2021,
+      "date": "2021-10-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/missouri/"
+      ],
+      "confidence": "high",
+      "note": "Applications from 2021-10-01; coverage retroactive to 2021-07-01 (same year)."
+    },
+    "MT": {
+      "year": 2016,
+      "date": "2016-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/montana/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NE": {
+      "year": 2020,
+      "date": "2020-10-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/nebraska/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NV": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/nevada/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NH": {
+      "year": 2014,
+      "date": "2014-08-15",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/new-hampshire/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NJ": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/new-jersey/"
+      ],
+      "confidence": "high",
+      "note": "Early partial expansion pre-2014 (KFF); full ACA adult group (138% FPL) counted from 2014."
+    },
+    "NM": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/new-mexico/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NY": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/new-york/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "NC": {
+      "year": 2023,
+      "date": "2023-12-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/north-carolina/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "ND": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/north-dakota/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "OH": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/ohio/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "OK": {
+      "year": 2021,
+      "date": "2021-07-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/oklahoma/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "OR": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://www.healthinsurance.org/medicaid/oregon/",
+        "https://en.wikipedia.org/wiki/Oregon_Health_Plan"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "PA": {
+      "year": 2015,
+      "date": "2015-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/pennsylvania/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "RI": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/rhode-island/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "SC": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    },
+    "SD": {
+      "year": 2023,
+      "date": "2023-07-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/south-dakota/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "TN": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    },
+    "TX": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    },
+    "UT": {
+      "year": 2020,
+      "date": "2020-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/utah/"
+      ],
+      "confidence": "high",
+      "note": "Partial expansion to 100% FPL began 2019-04-01; full 138% FPL expansion 2020-01-01."
+    },
+    "VT": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/vermont/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "VA": {
+      "year": 2019,
+      "date": "2019-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/virginia/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "WA": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/washington/"
+      ],
+      "confidence": "high",
+      "note": "Early partial expansion pre-2014 (KFF); full ACA adult group (138% FPL) counted from 2014."
+    },
+    "WV": {
+      "year": 2014,
+      "date": "2014-01-01",
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/west-virginia/"
+      ],
+      "confidence": "high",
+      "note": ""
+    },
+    "WI": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion",
+        "https://www.healthinsurance.org/medicaid/wisconsin/"
+      ],
+      "confidence": "high",
+      "note": "Not expanded to 138% FPL; BadgerCare covers adults to 100% FPL via waiver."
+    },
+    "WY": {
+      "year": null,
+      "date": null,
+      "sources": [
+        "https://www.kff.org/affordable-care-act/state-indicator/state-activity-around-expanding-medicaid-under-the-affordable-care-act/",
+        "https://en.wikipedia.org/wiki/Medicaid_expansion"
+      ],
+      "confidence": "high",
+      "note": "Not expanded as of 2025-12-31 (KFF)."
+    }
+  },
+  "n_with_law": 41,
+  "year_min": 2014,
+  "year_max": 2023,
+  "researched_by": "agent",
+  "method_notes": "KFF expansion tracker (read Aug 2026 version, consistent with 2025-12-31 status) cross-checked with Wikipedia and healthinsurance.org state pages. Pre-2014 early partial expansions ignored; Maine/DC flagged medium."
+}

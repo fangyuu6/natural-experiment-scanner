@@ -1,0 +1,37 @@
+{
+  "archival_primary_equivalence": {
+    "canonical_primary_bytes": 31477,
+    "design": "automatic_voter",
+    "official_result_written": false,
+    "sha256": "881775ef95e2786bdd9cb9bbcbe59f8f10193872f3cdc7d5abad70e9f5cb7f0c"
+  },
+  "changes": [
+    "Explicit caller-owned declarations instead of fixed case IDs/package paths",
+    "Pure local calendar/exposure/arithmetic dependencies",
+    "Explicit frozen interval evaluation path",
+    "Complete source/replacement/metadata binding",
+    "Generic synthetic calibration and interval candidates; fixed default Protocol v2 seeds/counts",
+    "Prospective RI feasibility exclusion without redraw retained"
+  ],
+  "operation": "copy-and-generalize; frozen originals remain untouched",
+  "schema": "l2_pipeline_engine_lineage_v1",
+  "source_sha256": {
+    "scripts/did_samples/calibrate.py": "ec078991d85acf3fafa58899d9bc2fa27d608b716cb6b45dee21068d043a7332",
+    "scripts/did_samples/cases/case_calibrate.py": "52fe96a1f8f216ef22cdc9c8034a00d9c7099814470094f6ca600f91c9bccabc",
+    "scripts/did_samples/cases/case_engine.py": "a651b6a027b2dac58bec2efe5b62624ef4006c2651daa4d663db9231de4eb0dd",
+    "scripts/did_samples/cases/case_panel_view.py": "8fde0b98560684beb54e38ce8de67aac477ab2595e60ed0c2d2000a6c2bf365d",
+    "scripts/did_samples/cases/case_validate.py": "c2a069f3f04f99e8a89366961894e9636bc1020b8465245ed1c79b1f7606adf4",
+    "scripts/did_samples/cs.py": "e526994b8aa347fab71578db83b621a521a0fdc4e557945c5072520f0ed64c46",
+    "scripts/l2_batch1/runner_support.py": "fd27d8e41a1d1e419b7a471a4bc7151d21d967480825d0fa5ee136188ab28a90",
+    "scripts/l2_batch1/support_checks.py": "2179e2f9e49099795e62dab72d3e4995dce15b8eeb13de7c20d90522ce0208c8",
+    "scripts/l2_batch2/calibrate.py": "501b690b9e127907683f03c437c6395104c7308305c708824eb2875701c2b939",
+    "scripts/l2_batch2/intervals.py": "4e1bb52e8817dbcc96b7163880f3ddb22ffa5f1c7d11f578192212a9816f5711",
+    "scripts/l2_batch2/panel_loader.py": "e9f1128cb85140ea71b7fee71af26a2bc8f469278000a48910c1904867c86ec6",
+    "scripts/l2_batch2/ri_support.py": "894e55a4048f7e872abe1bb8b2634bd2ae47e758540d9ef9b0f174330753fa98",
+    "scripts/l2_batch2/runner.py": "cbccde10bc67d033ce2d9f2ec5921d2d126287888c6dcf9cce098546af9e05b9",
+    "scripts/l2_batch2/runner_support.py": "ccd9e5dc10cdae0f5405d2340748511ca081b1dbe3c5c3436f42171c105dccbb",
+    "scripts/l2_batch3/calibrate.py": "d7e04b4d6d00d33fb0d2a2013106713f297e765dde1f2b1c124172d199d6ccd7",
+    "scripts/l2_batch3/intervals.py": "b14ad175ba0548d5dbdb9d20a9cf022ac03f8d857b994d2a0fc3d7ea0ae6a290",
+    "scripts/l2_batch3/runner_support.py": "5cdebb1155025abff365bde1ac81f59af77b4120cc1e8e992f7c5588e7005dad"
+  }
+}
